@@ -1,0 +1,1113 @@
+[
+  {
+    "id": "ch6-001",
+    "categoryId": "ch6",
+    "question": "TransformerアーキテクチャのAttention機構において、クエリ（Q）・キー（K）・バリュー（V）の役割として最も適切なものはどれか。",
+    "choices": [
+      {
+        "text": "Q・K・VはそれぞれCNNの畳み込みフィルタ、プーリング、出力を指す"
+      },
+      {
+        "text": "Qは問い合わせ、Kは照合対象、Vは実際に集約する情報であり、QとKの類似度を重みとしてVを加重平均することで注目すべき情報を抽出する"
+      },
+      {
+        "text": "Q・K・VはRNNの入力ゲート・忘却ゲート・出力ゲートに相当する"
+      },
+      {
+        "text": "Q・K・VはTransformerの量子化に使う3種類のパラメータ"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "TransformerのAttentionでは、Q（クエリ）は問い合わせ、K（キー）は照合対象、V（バリュー）は実際に集約する情報。QとKの内積（類似度）からSoftmaxで注意重みを計算し、その重みでVを加重平均することで文脈を考慮した情報を抽出する。",
+    "relatedTermIds": [
+      "transformer"
+    ],
+    "difficulty": 3,
+    "tags": [
+      "Transformer",
+      "Attention",
+      "QKV"
+    ],
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60,8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+  },
+  {
+    "id": "ch6-002",
+    "categoryId": "ch6",
+    "question": "BERT（Bidirectional Encoder Representations from Transformers）の特徴として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "Transformerのデコーダ部分を応用し、次のトークンを自己回帰的に生成するモデル"
+      },
+      {
+        "text": "Transformerのエンコーダ部分を応用し、左右両方向の文脈から双方向に言語理解を行うモデル"
+      },
+      {
+        "text": "拡散モデルを言語処理に応用したモデル"
+      },
+      {
+        "text": "画像と言語を統合処理するマルチモーダルモデル"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "BERTはTransformerのエンコーダ部分を応用し、文章の左右両側の文脈を同時に考慮する双方向の事前学習を行うモデル。マスク言語モデリング（MLM）と次文予測（NSP）で事前学習し、各種NLPタスクのファインチューニングに使われる。",
+    "relatedTermIds": [
+      "bert",
+      "transformer"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "BERT",
+      "自然言語処理"
+    ],
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+  },
+  {
+    "id": "ch6-003",
+    "categoryId": "ch6",
+    "question": "GPTシリーズについて、ChatGPTのベースとなるGPTの基本的な特徴として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "Transformerのエンコーダとデコーダをバランスよlyく組み合わせたモデル"
+      },
+      {
+        "text": "Transformerのデコーダ部分を応用し、直前のトークン列から次のトークンを予測することで言語を自己回帰的に生成するモデル"
+      },
+      {
+        "text": "画像を入力としてテキストを生成するビジョンモデル"
+      },
+      {
+        "text": "強化学習のみで学習を行い、報酬によってテキスト生成を改善するモデル"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "GPT（Generative Pre-trained Transformer）はTransformerのデコーダ部分を応用し、直前のトークン列から次のトークンを予測することで言語を自己回帰的に生成するモデル。大規模なデータで事前学習後に各タスクへファインチューニングする。",
+    "relatedTermIds": [
+      "gpt",
+      "transformer"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "GPT",
+      "LLM"
+    ],
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+  },
+  {
+    "id": "ch6-004",
+    "categoryId": "ch6",
+    "question": "スケーリング則（Scaling Law）の説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "モデルを小型化するほど推論コストが削減され性能が維持されるという法則"
+      },
+      {
+        "text": "モデルのパラメータ数・学習データ量・計算資源の3要素を増やすほど、予測可能な形でAIの性能が向上するという法則"
+      },
+      {
+        "text": "データの正規化スケールが性能に比例するという法則"
+      },
+      {
+        "text": "バッチサイズを増やすほど学習が安定化するという法則"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "スケーリング則（Scaling Law）とは、モデルのパラメータ数・学習データ量・計算資源（FLOPs）の3要素を増やすほど、AIの性能が予測可能な形で向上するという法則。GPTなどのLLMの発展の理論的根拠となっている。過去問（2024#4）でも出題。",
+    "relatedTermIds": [
+      "scaling_law",
+      "llm"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "スケーリング則",
+      "LLM"
+    ],
+    "source_ref": "d05cf4cd-fc06-461a-bdf1-dcf054956340"
+  },
+  {
+    "id": "ch6-005",
+    "categoryId": "ch6",
+    "question": "RAG（Retrieval-Augmented Generation）の説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "人間のフィードバックを用いてモデルを強化学習で調整する手法"
+      },
+      {
+        "text": "少数の低ランク行列を追加してLLMを効率的にファインチューニングする手法"
+      },
+      {
+        "text": "LLMが回答を生成する際に外部知識ベースを検索し、その結果を参照して回答精度を高める手法"
+      },
+      {
+        "text": "モデルのパラメータを全て更新する完全なファインチューニング手法"
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "RAG（Retrieval-Augmented Generation：検索拡張生成）は、LLMが回答を生成する際に外部の知識ベース（社内文書など）を検索し、その検索結果を文脈として参照することでハルシネーション（もっともらしい嘘）を抑制し、回答精度を高める手法。",
+    "relatedTermIds": [
+      "rag"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "RAG",
+      "LLM",
+      "ハルシネーション"
+    ],
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+  },
+  {
+    "id": "ch6-006",
+    "categoryId": "ch6",
+    "question": "LoRA（Low-Rank Adaptation）の説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "LLMを大量のデータで最初から学習し直す手法"
+      },
+      {
+        "text": "LLMのパラメータを全て更新せず、少数の低ランク行列のみを追加・学習することで少ない計算資源でファインチューニングする手法"
+      },
+      {
+        "text": "外部知識ベースを検索してLLMの回答精度を高める手法"
+      },
+      {
+        "text": "Transformerのアーキテクチャを変更して処理速度を向上させる手法"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "LoRA（Low-Rank Adaptation：低ランク適応）は、LLMの全パラメータを更新する代わりに少数の低ランク行列を追加して学習することで、大幅に少ない計算資源でLLMをファインチューニングできる効率的な手法。",
+    "relatedTermIds": [
+      "lora",
+      "fine_tuning"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "LoRA",
+      "ファインチューニング"
+    ],
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+  },
+  {
+    "id": "ch6-007",
+    "categoryId": "ch6",
+    "question": "RLHF（Reinforcement Learning from Human Feedback）の説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "人間の行動データからアルゴリズムを逆推定して模倣学習する手法"
+      },
+      {
+        "text": "人間の評価・フィードバックを報酬信号として使い、LLMの出力を人間の意図や価値観に合わせる強化学習手法"
+      },
+      {
+        "text": "データを自動収集し継続的にモデルを更新する自己学習手法"
+      },
+      {
+        "text": "複数の人間がAIの学習を分担して行う分散学習手法"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "RLHF（人間によるフィードバックを用いた強化学習）は、AIの出力に対する人間の評価・フィードバックを報酬信号として強化学習を行い、LLMの出力を人間の意図・価値観・安全性基準（アライメント）に合わせる手法。ChatGPTなどに使われた。",
+    "relatedTermIds": [
+      "rlhf",
+      "reinforcement_learning"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "RLHF",
+      "アライメント"
+    ],
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+  },
+  {
+    "id": "ch6-008",
+    "categoryId": "ch6",
+    "question": "拡散モデル（Diffusion Model）の動作原理として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "生成器と識別器を競わせることで高品質な画像を生成する"
+      },
+      {
+        "text": "データに段階的にノイズを加えていく前向き過程の逆を学習し（逆拡散過程）、ノイズから元のデータを復元することで高品質なデータを生成する"
+      },
+      {
+        "text": "入力を低次元に圧縮してから再構成することでデータを生成する"
+      },
+      {
+        "text": "強化学習の報酬を用いて生成物を人間の好みに合わせる"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "拡散モデルは、データに段階的にガウスノイズを加えていく前向き過程を学習し、その逆過程（逆拡散）をニューラルネットワークで学習する。推論時は純粋なノイズから逆拡散過程でデータを復元することで高品質な画像などを生成する。Stable Diffusionなどで採用。",
+    "relatedTermIds": [
+      "diffusion_model"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "拡散モデル",
+      "生成AI"
+    ],
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+  },
+  {
+    "id": "ch6-009",
+    "categoryId": "ch6",
+    "question": "マルチモーダルAIの説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "複数の機械学習モデルを組み合わせて精度を向上させるアンサンブル手法"
+      },
+      {
+        "text": "テキスト・画像・音声・動画など、異なる種類（モダリティ）のデータを統合して処理・学習するAI"
+      },
+      {
+        "text": "複数の言語を同時に処理できる多言語対応の言語モデル"
+      },
+      {
+        "text": "複数のユーザーが同時にアクセスできるAIサービスの提供形態"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "マルチモーダルAIは、テキスト・画像・音声・動画など異なる種類（モダリティ）のデータを統合して処理・学習するAI。例えばGPT-4VやGeminiは画像とテキストの両方を処理できるマルチモーダルモデル。",
+    "relatedTermIds": [
+      "multimodal"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "マルチモーダル",
+      "生成AI"
+    ],
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+  },
+  {
+    "id": "ch6-010",
+    "categoryId": "ch6",
+    "question": "XAI（説明可能なAI：Explainable AI）の目的として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "AIモデルの学習時間を短縮してコストを削減すること"
+      },
+      {
+        "text": "AIの判断・予測の根拠を人間が理解できるように説明し、ブラックボックス化を防いで透明性を確保すること"
+      },
+      {
+        "text": "AIを用いて自然言語での説明を自動生成すること"
+      },
+      {
+        "text": "AIモデルのパラメータ数を最小化して軽量化すること"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "XAI（説明可能なAI）は、ブラックボックス化しやすいAI（特にディープラーニング）の判断・予測の根拠を人間が理解できるように説明する技術・アプローチ。医療・金融・法律などの高リスク領域でのAI活用において透明性・信頼性の確保のために重要。",
+    "relatedTermIds": [
+      "xai",
+      "transparency"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "XAI",
+      "説明可能AI"
+    ],
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+  },
+  {
+    "id": "ch6-011",
+    "categoryId": "ch6",
+    "question": "ImageNet Large Scale Visual Recognition Challenge（ILSVRC）に関する説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "自然言語処理モデルの精度を競う国際コンペティション"
+      },
+      {
+        "text": "100万枚超の画像データセット（ImageNet）を使い画像認識精度を競う国際コンペティションで、2012年にディープラーニングモデルが圧倒的な精度で優勝し第3次AIブームの契機となった"
+      },
+      {
+        "text": "Googleが主催する強化学習エージェントの性能を評価するコンペティション"
+      },
+      {
+        "text": "医療画像の診断精度を競う学術大会"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "ILSVRCはImageNetを使った画像認識の国際コンペティション。2012年にAlexNetがディープラーニングを用いて圧倒的な精度差で優勝し、この出来事が現在の第3次AIブームの決定的な転換点となった。以後、VGG・GoogLeNet・ResNetなどのCNNモデルが相次いで登場した。",
+    "relatedTermIds": [
+      "imagenet",
+      "cnn"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "ImageNet",
+      "ILSVRC",
+      "画像認識"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776,d05cf4cd-fc06-461a-bdf1-dcf054956340"
+  },
+  {
+    "id": "ch6-012",
+    "categoryId": "ch6",
+    "question": "ResNetの特徴として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "3×3の小さなフィルタを重ねることで深いネットワークを構築したモデル"
+      },
+      {
+        "text": "インセプションモジュールと1×1畳み込みで計算コストを削減したモデル"
+      },
+      {
+        "text": "層を飛び越えて信号を伝えるスキップ結合（残差接続）を導入し、勾配消失問題を解決して150層超の深いネットワークを可能にしたモデル"
+      },
+      {
+        "text": "深さ・幅・解像度を同時にスケーリングして高精度と効率を両立したモデル"
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "ResNet（Residual Network）はスキップ結合（残差接続）を導入したCNNモデル。層を飛び越えて信号を伝えることで深いネットワークで発生する勾配消失問題を解決し、150層を超える極めて深いネットワークの学習を可能にした。なお3×3フィルタはVGG、インセプションモジュールはGoogLeNet、スケーリングはEfficientNetの特徴。",
+    "relatedTermIds": [
+      "resnet",
+      "skip_connection"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "ResNet",
+      "スキップ結合",
+      "画像認識"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776,d05a5803-3c45-4c70-8e00-d4f77b0e8496"
+  },
+  {
+    "id": "ch6-013",
+    "categoryId": "ch6",
+    "question": "VGGとGoogLeNetの特徴の組み合わせとして正しいものはどれか。",
+    "choices": [
+      {
+        "text": "VGG：スキップ結合で勾配消失を解決 / GoogLeNet：転移学習専用のモデル"
+      },
+      {
+        "text": "VGG：3×3の小さなフィルタを重ねたシンプルな深いネットワーク / GoogLeNet：インセプションモジュールと1×1畳み込みで計算コストを抑えながら多層化"
+      },
+      {
+        "text": "VGG：1×1畳み込みで次元削減 / GoogLeNet：3×3フィルタのみを使用"
+      },
+      {
+        "text": "VGG：深さ・幅・解像度のスケーリング / GoogLeNet：自己注意機構（Self-Attention）の導入"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "VGGは3×3の小さなフィルタを重ねることでシンプルな構造のまま深いネットワークを実現したモデル。転移学習のベースとして広く利用される。GoogLeNetはインセプションモジュールを導入し、1×1畳み込みで次元削減（チャネル圧縮）を行いながら計算コストを抑えつつ多層化を実現したモデル。",
+    "relatedTermIds": [
+      "vgg",
+      "googlenet"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "VGG",
+      "GoogLeNet",
+      "画像認識"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-014",
+    "categoryId": "ch6",
+    "question": "物体検出（Object Detection）の手法の中で、YOLOの最大の特徴はどれか。",
+    "choices": [
+      {
+        "text": "候補領域を先に抽出し、その後CNNで分類するという2段階処理により高精度を実現する"
+      },
+      {
+        "text": "画像全体を一度見るだけで、候補領域の特定と物体のクラス分類を同時に行う1段階処理で高速な物体検出を実現する"
+      },
+      {
+        "text": "複数の解像度の特徴マップを使い小さな物体の検出精度を高める"
+      },
+      {
+        "text": "ピクセル単位で物体の境界を識別するセグメンテーションを行う"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "YOLO（You Only Look Once）は画像全体を一度だけ見て、物体の位置特定とクラス分類を1回のネットワーク通過で同時に行う1段階（one-stage）の物体検出手法。リアルタイム処理が可能なほど高速で、自動運転などに活用される。R-CNNは2段階処理で精度は高いが低速。SSDも1段階処理だが階層的特徴マップを使う。",
+    "relatedTermIds": [
+      "yolo",
+      "object_detection"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "YOLO",
+      "物体検出"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776,3dc8aa23-a24b-40ae-ab12-0fc270db8bd8"
+  },
+  {
+    "id": "ch6-015",
+    "categoryId": "ch6",
+    "question": "セマンティックセグメンテーションとインスタンスセグメンテーションの違いとして正しいものはどれか。",
+    "choices": [
+      {
+        "text": "セマンティックセグメンテーションは画像全体に1つのラベルを付け、インスタンスセグメンテーションはバウンディングボックスで物体を囲む"
+      },
+      {
+        "text": "セマンティックセグメンテーションは全画素にクラスラベルを付けるが同クラスの個体を区別しない。インスタンスセグメンテーションは同じクラスでも個々の物体（インスタンス）を別々に識別して領域を抽出する"
+      },
+      {
+        "text": "セマンティックセグメンテーションは個体を識別し、インスタンスセグメンテーションはクラスのみを識別する"
+      },
+      {
+        "text": "両者に違いはなく、同じ技術を指す"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "セマンティックセグメンテーションは全ピクセルにクラスラベルを付けるが、同じクラスの複数の物体（例：2台の車）を1つの領域として扱う。インスタンスセグメンテーションはさらに進んで同クラスの個々の物体を別々のインスタンスとして識別・分離する。両方の能力を持つものをパノプティックセグメンテーションという。",
+    "relatedTermIds": [
+      "semantic_segmentation",
+      "instance_segmentation"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "セグメンテーション",
+      "画像認識"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776,54c8e69c-a0b6-4243-a5e5-53324956223c"
+  },
+  {
+    "id": "ch6-016",
+    "categoryId": "ch6",
+    "question": "R-CNNと比較したYOLO・SSDの物体検出アプローチの違いとして正しいものはどれか。",
+    "choices": [
+      {
+        "text": "R-CNNは1段階で処理するため高速、YOLOとSSDは2段階で処理するため高精度"
+      },
+      {
+        "text": "R-CNNは候補領域の抽出と分類を別々に行う2段階処理で処理が遅い。YOLOとSSDは領域特定と分類を1回のネットワーク通過で行う1段階処理で高速"
+      },
+      {
+        "text": "R-CNN・YOLO・SSDはいずれも同じ1段階処理を採用しているが、使用するCNNアーキテクチャが異なる"
+      },
+      {
+        "text": "YOLOはセグメンテーションを行い、SSDは分類のみを行う"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "R-CNN系（R-CNN・Fast R-CNN・Faster R-CNN）は候補領域の抽出とCNNによる分類という2段階処理を行うため精度は高いが処理が遅い。YOLOとSSDは1段階（one-stage）で物体の位置特定とクラス分類を同時に行うため高速。SSDは異なるスケールの階層的特徴マップを使い小さな物体への対応を改善した点が特徴。",
+    "relatedTermIds": [
+      "rcnn",
+      "yolo",
+      "ssd"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "R-CNN",
+      "YOLO",
+      "SSD",
+      "物体検出"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-017",
+    "categoryId": "ch6",
+    "question": "Word2Vecの説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "Transformerのエンコーダを用いて単語の文脈的な意味を双方向に学習するモデル"
+      },
+      {
+        "text": "単語を多次元のベクトルで表現する分散表現の手法で、意味の近い単語が近いベクトルになるように学習するが、文脈によって意味が変わる語義の区別は苦手"
+      },
+      {
+        "text": "テキストをトークンに分割してからEmbeddingする処理全体の名称"
+      },
+      {
+        "text": "画像と単語を対応付けるマルチモーダルな埋め込み手法"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Word2Vecは単語を多次元ベクトル（分散表現）として表現する手法。意味の近い単語ほどベクトル空間上で近い位置に配置されるように学習する。「王様 - 男性 + 女性 ≒ 女王」のような意味演算が可能。ただし単語ごとに固定のベクトルが割り当てられるため、文脈によって意味が変わる多義語（例：「はし」）の区別は苦手。",
+    "relatedTermIds": [
+      "word2vec",
+      "distributed_representation"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "Word2Vec",
+      "分散表現",
+      "自然言語処理"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-018",
+    "categoryId": "ch6",
+    "question": "T5（Text-to-Text Transfer Transformer）の特徴として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "Transformerのデコーダのみを使い、次のトークンを自己回帰的に生成するモデル"
+      },
+      {
+        "text": "Transformerのエンコーダのみを使い、マスク言語モデリングで双方向に事前学習するモデル"
+      },
+      {
+        "text": "翻訳・要約・分類などあらゆるNLPタスクを「テキストを入力してテキストを出力する」統一フォーマットで解くモデル"
+      },
+      {
+        "text": "画像とテキストを統合して処理するマルチモーダルモデル"
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "T5（Text-to-Text Transfer Transformer）はGoogleが開発したモデルで、翻訳・要約・質問応答・分類などあらゆる自然言語処理タスクを「テキストを入力してテキストを出力する」という共通フォーマットに統一して扱う。一つのモデルで多様なタスクに対応できる柔軟性が特徴。デコーダのみはGPT、エンコーダのみはBERTの特徴。",
+    "relatedTermIds": [
+      "t5",
+      "transformer"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "T5",
+      "自然言語処理",
+      "Transformer"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-019",
+    "categoryId": "ch6",
+    "question": "In-Context Learning（文脈内学習）の説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "モデルのパラメータを大量のデータで更新する大規模な事前学習プロセス"
+      },
+      {
+        "text": "モデルのパラメータを更新（再学習）することなく、プロンプト内に含めた数個の例示（コンテキスト）のみで新しいタスクを学習・実行させる手法"
+      },
+      {
+        "text": "LoRAを使って少数の低ランク行列のみを更新する効率的なファインチューニング手法"
+      },
+      {
+        "text": "外部知識ベースを参照してLLMの回答精度を高めるRAGと同義の手法"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "In-Context Learningはモデルのパラメータを一切更新しないまま、プロンプトに含めたいくつかの入出力例（コンテキスト）を見るだけでモデルが新しいタスクを実行できる現象・手法。GPT-3以降の大規模モデルで顕著に現れ、Few-Shot Learningの一形態としても知られる。新シラバス追加の重要キーワード。",
+    "relatedTermIds": [
+      "in_context_learning",
+      "few_shot_learning"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "In-Context Learning",
+      "Few-Shot",
+      "LLM"
+    ],
+    "source_ref": "d05a5803-3c45-4c70-8e00-d4f77b0e8496"
+  },
+  {
+    "id": "ch6-020",
+    "categoryId": "ch6",
+    "question": "プロンプトエンジニアリングの説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "LLMのパラメータを特定タスク向けに更新するファインチューニングの技術"
+      },
+      {
+        "text": "LLMのアーキテクチャを変更してモデル自体の性能を改善する手法"
+      },
+      {
+        "text": "LLMから望ましい出力を引き出すために、入力プロンプトの構成・表現・指示の仕方を工夫・最適化する技術"
+      },
+      {
+        "text": "LLMの推論速度を向上させるためにモデルを量子化・蒸留する手法"
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "プロンプトエンジニアリングはLLMに与える入力テキスト（プロンプト）の設計・最適化を行う技術。役割指定（Role Prompting）・Chain-of-Thought（思考の連鎖）・Few-Shot例示などの技法で、モデルのパラメータを変えずに出力の品質・精度・安全性を改善できる。新シラバルの最重要技術の一つ。",
+    "relatedTermIds": [
+      "prompt_engineering"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "プロンプトエンジニアリング",
+      "LLM"
+    ],
+    "source_ref": "d05a5803-3c45-4c70-8e00-d4f77b0e8496"
+  },
+  {
+    "id": "ch6-021",
+    "categoryId": "ch6",
+    "question": "QLoRAの説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "モデルを全パラメータ更新してファインチューニングする標準的な手法"
+      },
+      {
+        "text": "外部ドキュメントを検索してLLMの回答精度を高めるRAGの改良版"
+      },
+      {
+        "text": "LoRAに量子化（Quantization）技術を組み合わせた手法で、モデルの精度を維持しながらメモリ消費量をさらに削減し、より安価なGPUでのファインチューニングを可能にする"
+      },
+      {
+        "text": "人間のフィードバックを用いた強化学習をLLMに適用する際の効率化手法"
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "QLoRA（Quantized LoRA）はLoRAに量子化技術を組み合わせた手法。事前学習済みモデルを4ビット量子化することでメモリ消費を大幅に削減し、低ランク行列のみ学習するLoRAの仕組みと組み合わせることで、一般的なコンシューマGPU（例：24GB VRAM）でも数十億パラメータのLLMをファインチューニングできる。PEFTの代表的手法の一つ。",
+    "relatedTermIds": [
+      "qlora",
+      "lora",
+      "peft"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "QLoRA",
+      "LoRA",
+      "PEFT",
+      "ファインチューニング"
+    ],
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+  },
+  {
+    "id": "ch6-022",
+    "categoryId": "ch6",
+    "question": "PEFT（Parameter-Efficient Fine-Tuning）の説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "事前学習済みモデルの全パラメータを新しいタスクのデータで更新する完全ファインチューニングの別称"
+      },
+      {
+        "text": "モデルの全パラメータを更新するのではなく、一部の少数パラメータのみを効率的に学習させるファインチューニング手法の総称。LoRAやQLoRAがその代表例"
+      },
+      {
+        "text": "モデルのパラメータを凍結したまま、プロンプトのみを変更してタスクを実行するIn-Context Learningの別称"
+      },
+      {
+        "text": "モデルを量子化・蒸留して軽量化することでエッジデバイスでの推論を可能にする手法"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "PEFT（Parameter-Efficient Fine-Tuning：パラメータ効率的ファインチューニング）は、大規模な事前学習済みモデルの全パラメータを更新せず、一部の少数パラメータだけを学習させることで計算資源とメモリを大幅に削減するファインチューニング手法の総称。LoRA・QLoRA・Prefix Tuningなどが代表的な手法。",
+    "relatedTermIds": [
+      "peft",
+      "lora"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "PEFT",
+      "ファインチューニング",
+      "LLM"
+    ],
+    "source_ref": "3b31102f-5c51-46d7-9275-428f2e0e1b65"
+  },
+  {
+    "id": "ch6-023",
+    "categoryId": "ch6",
+    "question": "WaveNetの説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "音声データをテキストに変換する音声認識モデルのアーキテクチャ"
+      },
+      {
+        "text": "Googleが開発した音声波形を直接生成する深層生成モデルで、非常に自然な音声合成を実現した"
+      },
+      {
+        "text": "周波数領域で音声の特徴量を抽出する従来の信号処理手法"
+      },
+      {
+        "text": "音声データをBERTで処理するための前処理パイプライン"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "WaveNetはGoogleのDeepMindが開発した、生の音声波形（オーディオサンプル）を直接生成する深層生成モデル。拡張因果畳み込み（dilated causal convolution）を使い、長い時系列の依存関係を効率的に学習することで非常に自然で人間らしい音声合成を実現した。音声合成・音声認識の発展に大きく貢献した。",
+    "relatedTermIds": [
+      "wavenet",
+      "speech_synthesis"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "WaveNet",
+      "音声合成",
+      "音声認識"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-024",
+    "categoryId": "ch6",
+    "question": "ディープラーニングを用いた自動運転において、YOLOのような物体検出モデルが重要視される理由として最も適切なものはどれか。",
+    "choices": [
+      {
+        "text": "自動運転には音声認識が中心的な役割を担うため、音声処理モデルとして使われる"
+      },
+      {
+        "text": "自動運転にはリアルタイムで周囲の車・歩行者・道路標識などを高速に検出する必要があり、1段階処理で高速な物体検出が可能なYOLOなどが実用化に不可欠"
+      },
+      {
+        "text": "自動運転の主要なタスクは自然言語による経路案内であり、GPTのような言語モデルが中心的に使われる"
+      },
+      {
+        "text": "自動運転では精度よりもモデルのパラメータ数の最小化が優先されるため、最小サイズのCNNが使われる"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "自動運転では走行中にリアルタイムで周囲の車・歩行者・道路標識・信号機などを検出する必要があり、高速処理が求められる。YOLOのような1段階（one-stage）物体検出モデルは画像全体を一度見るだけで高速に検出できるため自動運転への応用に適している。ディープラーニングが「見る」能力を持ったことがこの分野を革新した。",
+    "relatedTermIds": [
+      "yolo",
+      "autonomous_driving"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "自動運転",
+      "物体検出",
+      "YOLO"
+    ],
+    "source_ref": "d05cf4cd-fc06-461a-bdf1-dcf054956340,3dc8aa23-a24b-40ae-ab12-0fc270db8bd8"
+  },
+  {
+    "id": "ch6-025",
+    "categoryId": "ch6",
+    "question": "Stable Diffusionの動作原理として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "生成器と識別器を競わせるGANのアーキテクチャを採用した画像生成モデル"
+      },
+      {
+        "text": "入力テキストをRNNで処理し、ピクセルを逐次的に生成する自己回帰型画像生成モデル"
+      },
+      {
+        "text": "拡散モデル（Diffusion Model）を基盤に、テキストプロンプトなどの条件入力に基づきノイズから高品質な画像を生成するモデル"
+      },
+      {
+        "text": "大規模な画像データセットでVAEを学習させ、潜在空間から画像をサンプリングする"
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "Stable Diffusionは拡散モデル（Diffusion Model）を基盤とした画像生成AIの代表的モデル。テキストプロンプトなどの条件付き入力を受け取り、ランダムノイズから逆拡散過程を経て高品質な画像を生成する。計算効率化のため潜在拡散モデル（Latent Diffusion Model）を採用し、ピクセル空間ではなく圧縮された潜在空間で拡散過程を行う。",
+    "relatedTermIds": [
+      "stable_diffusion",
+      "diffusion_model"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "Stable Diffusion",
+      "拡散モデル",
+      "画像生成"
+    ],
+    "source_ref": "702103f1-9b1e-4245-88cc-fdc9ac6df415,54c8e69c-a0b6-4243-a5e5-53324956223c"
+  },
+  {
+    "id": "ch6-026",
+    "categoryId": "ch6",
+    "question": "EfficientNetの特徴として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "スキップ結合（残差接続）を導入し深いネットワークを学習可能にしたモデル"
+      },
+      {
+        "text": "3×3フィルタのみを使いシンプルな構造で深さを追求したモデル"
+      },
+      {
+        "text": "ネットワークの深さ・幅・入力画像の解像度の3要素をバランスよく複合スケーリングすることで高精度と計算効率を同時に実現したCNNモデル"
+      },
+      {
+        "text": "インセプションモジュールで並列に異なるサイズのフィルタを適用するモデル"
+      }
+    ],
+    "correctIndex": 2,
+    "explanation": "EfficientNetはGoogleが提案したCNNモデルで、ネットワークの「深さ（Depth）」「幅（Width）」「入力画像の解像度（Resolution）」という3要素を複合スケーリング係数でバランスよく同時にスケーリングすることで、少ない計算量で高い精度を実現した。ResNet（スキップ結合）、VGG（3×3フィルタ）、GoogLeNet（インセプションモジュール）とは異なる。",
+    "relatedTermIds": [
+      "efficientnet",
+      "cnn"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "EfficientNet",
+      "画像認識",
+      "CNN"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-027",
+    "categoryId": "ch6",
+    "question": "ハルシネーション（Hallucination）とは何か、またRAGがそれに対処する仕組みとして正しいものはどれか。",
+    "choices": [
+      {
+        "text": "ハルシネーションとはモデルが学習データを丸暗記してしまう過学習現象。RAGはドロップアウトで対策する"
+      },
+      {
+        "text": "ハルシネーションとはLLMが事実と異なる情報をもっともらしく生成する現象。RAGは外部知識ベースを検索してその結果をプロンプトに組み込むことで根拠のある回答を生成させ、ハルシネーションを抑制する"
+      },
+      {
+        "text": "ハルシネーションとはモデルが入力の一部を無視して応答する現象。RAGはAttentionを強化して対策する"
+      },
+      {
+        "text": "ハルシネーションとはAIが人間の意図と異なる行動を取るアライメント問題。RLHFで対策する"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "ハルシネーション（幻覚）はLLMが事実と異なる情報を、自信を持った口調でもっともらしく生成してしまう現象。RAG（Retrieval-Augmented Generation）は回答生成前に外部の知識ベース（社内文書・最新情報など）を検索し、その検索結果をプロンプトに含めることで根拠に基づいた回答を生成させ、ハルシネーションを抑制する。",
+    "relatedTermIds": [
+      "hallucination",
+      "rag"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "ハルシネーション",
+      "RAG",
+      "LLM"
+    ],
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+  },
+  {
+    "id": "ch6-028",
+    "categoryId": "ch6",
+    "question": "ChatGPTの開発で採用されたRLHFのプロセスを最も正確に表しているものはどれか。",
+    "choices": [
+      {
+        "text": "大量テキストで事前学習 → 人間の評価者が生成文を採点して報酬モデルを作成 → 報酬モデルを使った強化学習（PPO等）でLLMを人間の意図に沿うよう調整"
+      },
+      {
+        "text": "人間がモデルの全パラメータを手動で調整 → 大量データで再学習"
+      },
+      {
+        "text": "外部知識ベースを検索して回答を生成 → 人間がフィードバックして検索インデックスを更新"
+      },
+      {
+        "text": "少数の低ランク行列のみを学習 → 人間がフィードバックしてLoRAの重みを更新"
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "ChatGPT（InstructGPT）のRLHFプロセスは大きく3段階。(1)大量のテキストでGPTを事前学習、(2)人間のアノテーターが複数の生成文を比較評価して報酬モデル（Reward Model）を訓練、(3)強化学習（PPO：近似方策最適化など）を使って報酬モデルの評価を高めるようLLMのパラメータを調整し、人間の意図・価値観に沿った出力（アライメント）を実現する。",
+    "relatedTermIds": [
+      "rlhf",
+      "chatgpt"
+    ],
+    "difficulty": 3,
+    "tags": [
+      "RLHF",
+      "ChatGPT",
+      "アライメント"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-029",
+    "categoryId": "ch6",
+    "question": "音声認識と音声合成の違いとして正しいものはどれか。",
+    "choices": [
+      {
+        "text": "音声認識と音声合成は同じ技術を指し、どちらも音声からテキストを生成する"
+      },
+      {
+        "text": "音声認識は音声データをテキストに変換する技術（Speech-to-Text）。音声合成はテキストから音声波形を生成する技術（Text-to-Speech）。ディープラーニングにより両者ともに大幅に精度が向上した"
+      },
+      {
+        "text": "音声認識はテキストから音声を生成し、音声合成は音声からテキストを生成する"
+      },
+      {
+        "text": "音声認識はCNNで実現され、音声合成はTransformerのみで実現される"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "音声認識（Speech Recognition / ASR）は音声データをテキストに変換する技術（Speech-to-Text）。音声合成（Speech Synthesis / TTS）はテキストから音声波形を生成する技術（Text-to-Speech）。ディープラーニングの進歩により両者とも大幅に品質が向上し、音声合成ではWaveNetなどが人間に近い自然な音声を実現した。",
+    "relatedTermIds": [
+      "speech_recognition",
+      "speech_synthesis"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "音声認識",
+      "音声合成"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-030",
+    "categoryId": "ch6",
+    "question": "GPT・BERT・T5のアーキテクチャの組み合わせとして正しいものはどれか。",
+    "choices": [
+      {
+        "text": "GPT：エンコーダのみ / BERT：デコーダのみ / T5：エンコーダ+デコーダ"
+      },
+      {
+        "text": "GPT：デコーダのみ（自己回帰型生成）/ BERT：エンコーダのみ（双方向理解）/ T5：エンコーダ+デコーダ（テキスト-to-テキスト）"
+      },
+      {
+        "text": "GPT・BERT・T5はいずれもエンコーダ+デコーダの完全なTransformerを使用"
+      },
+      {
+        "text": "GPT：RNNベース / BERT：CNNベース / T5：Transformerベース"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "TransformerのどのパーツをベースにするかでGPT・BERT・T5は異なる。GPTはデコーダのみを使用し次のトークンを自己回帰的に生成する（テキスト生成向き）。BERTはエンコーダのみを使用し左右の文脈を双方向に理解する（テキスト理解・分類向き）。T5はエンコーダとデコーダ両方を使用しあらゆるNLPタスクをテキスト→テキストで統一的に解く。",
+    "relatedTermIds": [
+      "gpt",
+      "bert",
+      "t5",
+      "transformer"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "GPT",
+      "BERT",
+      "T5",
+      "Transformer"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-031",
+    "categoryId": "ch6",
+    "question": "Chain-of-Thought（CoT）プロンプティングの説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "LLMのパラメータをステップごとに更新する段階的な学習手法"
+      },
+      {
+        "text": "プロンプトに「ステップバイステップで考えてください」などの中間推論過程を促す指示を加えることで、LLMの複雑な推論能力を引き出すプロンプトエンジニアリング手法"
+      },
+      {
+        "text": "複数のLLMを連鎖（チェーン）させて順番に回答を生成させるアンサンブル手法"
+      },
+      {
+        "text": "RLHFで使われる、人間の評価をステップごとに集める報酬設計手法"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Chain-of-Thought（CoT）プロンプティングはプロンプトエンジニアリングの重要技法の一つ。「ステップバイステップで考えてください（Let's think step by step）」などの指示を加えることで、LLMに中間推論過程を明示的に生成させ、複雑な数学・論理・多段階推論タスクの精度を大幅に改善する手法。Zero-Shot CoTとFew-Shot CoTがある。",
+    "relatedTermIds": [
+      "chain_of_thought",
+      "prompt_engineering"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "Chain-of-Thought",
+      "プロンプトエンジニアリング",
+      "LLM"
+    ],
+    "source_ref": "d05a5803-3c45-4c70-8e00-d4f77b0e8496"
+  },
+  {
+    "id": "ch6-032",
+    "categoryId": "ch6",
+    "question": "Vision Transformer（ViT）の特徴として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "CNNの畳み込み層を多数重ねることでVGGよりも深い画像認識モデルを実現したアーキテクチャ"
+      },
+      {
+        "text": "画像をパッチ（小領域）に分割してトークン化し、Transformerのエンコーダで処理することで画像認識を行うモデル"
+      },
+      {
+        "text": "ResNetのスキップ結合をTransformerのAttentionに置き換えたハイブリッドモデル"
+      },
+      {
+        "text": "YOLOの物体検出アーキテクチャにTransformerを組み込んだモデル"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "Vision Transformer（ViT）はGoogleが提案した画像認識モデルで、画像を固定サイズのパッチ（例：16×16ピクセル）に分割してフラット化し、それをトークンとしてTransformerのエンコーダで処理する。CNNを使わずにTransformerのみで高精度な画像認識を達成し、大規模データで学習すれば既存のCNNモデルを凌ぐ性能を示した。",
+    "relatedTermIds": [
+      "vit",
+      "transformer"
+    ],
+    "difficulty": 2,
+    "tags": [
+      "Vision Transformer",
+      "ViT",
+      "画像認識"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-033",
+    "categoryId": "ch6",
+    "question": "CLIPモデルの説明として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "テキストのみを処理するLLMで、画像キャプションを生成するために最適化されたモデル"
+      },
+      {
+        "text": "画像エンコーダとテキストエンコーダを同時に学習し、画像とテキストの類似度を学習するコントラスト学習ベースのマルチモーダルモデル"
+      },
+      {
+        "text": "音声と画像を対応付けるマルチモーダルモデル"
+      },
+      {
+        "text": "画像をパッチに分割してTransformerで処理するVision Transformerの別名"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "CLIP（Contrastive Language-Image Pre-Training）はOpenAIが開発したモデルで、大量の画像とテキストのペアを用いたコントラスト学習により、画像エンコーダとテキストエンコーダを同時に学習する。画像とテキストを同じ潜在空間に埋め込むことで「この画像に最も合うテキストはどれか」を計算できる。Stable Diffusionのテキスト理解部分にも応用されている。",
+    "relatedTermIds": [
+      "clip",
+      "multimodal",
+      "contrastive_learning"
+    ],
+    "difficulty": 3,
+    "tags": [
+      "CLIP",
+      "マルチモーダル",
+      "コントラスト学習"
+    ],
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+  },
+  {
+    "id": "ch6-034",
+    "categoryId": "ch6",
+    "question": "転移学習（Transfer Learning）とファインチューニング（Fine-tuning）の関係として正しいものはどれか。",
+    "choices": [
+      {
+        "text": "転移学習は別タスクで学習済みのモデルの知識を新タスクに活用する概念の総称。ファインチューニングはその手法の一つで、事前学習済みモデルの全部または一部のパラメータを新タスクのデータで追加学習する"
+      },
+      {
+        "text": "転移学習とファインチューニングは全く同じ意味で使われる同義語"
+      },
+      {
+        "text": "ファインチューニングは転移学習の上位概念で、転移学習はファインチューニングの一手法"
+      },
+      {
+        "text": "転移学習はパラメータを固定したまま使い、ファインチューニングは最初から学習し直す手法"
+      }
+    ],
+    "correctIndex": 0,
+    "explanation": "転移学習は大規模データで事前学習（Pre-training）したモデルの知識を異なるタスクに転用するアプローチの総称。ファインチューニングはその代表的な手法で、事前学習済みモデルのパラメータの全部または一部を新タスクの（少量の）データで追加学習する。LoRAなどのPEFTも転移学習の枠組みに含まれる効率的なファインチューニング手法。",
+    "relatedTermIds": [
+      "transfer_learning",
+      "fine_tuning"
+    ],
+    "difficulty": 1,
+    "tags": [
+      "転移学習",
+      "ファインチューニング"
+    ],
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+  },
+  {
+    "id": "ch6-035",
+    "categoryId": "ch6",
+    "question": "LoRAが全パラメータのファインチューニングより有利な点として最も適切なものはどれか。",
+    "choices": [
+      {
+        "text": "LoRAはモデルのパラメータを完全に凍結するため、学習データが不要"
+      },
+      {
+        "text": "LoRAは事前学習済みモデルの重み行列の変化分を低ランク行列の積で近似することで、更新するパラメータ数を大幅に削減し、必要なGPUメモリと学習時間を大きく削減できる"
+      },
+      {
+        "text": "LoRAは全パラメータのファインチューニングよりも最終的なモデル精度が常に高い"
+      },
+      {
+        "text": "LoRAはRLHFを内包しているため、人間のフィードバックなしにアライメントを達成できる"
+      }
+    ],
+    "correctIndex": 1,
+    "explanation": "LoRA（Low-Rank Adaptation）は事前学習済みモデルの重み行列Wの変化分ΔWを2つの低ランク行列（A×B）の積で近似し、A・Bのみを学習する手法。例えば元のモデルが数十億パラメータでも、LoRAで学習するパラメータは数百万程度に抑えられる。これにより必要なGPUメモリが大幅に削減され、限られた計算資源でも大規模LLMのファインチューニングが現実的になる。",
+    "relatedTermIds": [
+      "lora",
+      "peft",
+      "fine_tuning"
+    ],
+    "difficulty": 3,
+    "tags": [
+      "LoRA",
+      "PEFT",
+      "ファインチューニング"
+    ],
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c,d05a5803-3c45-4c70-8e00-d4f77b0e8496"
+  }
+]

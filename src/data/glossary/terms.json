@@ -1,0 +1,1292 @@
+[
+  {
+    "id": "artificial_intelligence",
+    "term": "人工知能",
+    "termEn": "Artificial Intelligence",
+    "categoryId": "ch1",
+    "definition": "人間の知的活動（推論・学習・判断など）をコンピュータ上で再現・模倣しようとする技術の総称。",
+    "detail": "AIに統一された単一の定義は存在せず、専門家によって様々な観点から定義されている。現在は特化型AIが主流であり、画像認識や自然言語処理など特定タスクで高い性能を発揮する。近年はディープラーニングの台頭により、AIの能力が飛躍的に向上した。",
+    "relatedTermIds": ["narrow_ai", "artificial_general_intelligence", "ai_level_classification"],
+    "importance": 1
+  },
+  {
+    "id": "ai_level_classification",
+    "term": "AIの4レベル分類",
+    "termEn": "AI Level Classification",
+    "categoryId": "ch1",
+    "definition": "AIを能力や仕組みにより4段階（単純制御・古典的AI・機械学習・ディープラーニング）に分類した体系。",
+    "detail": "レベル1は温度調節などの単純な制御プログラム、レベル2はルールベースの古典的AI（チェスプログラム等）、レベル3はデータからルールを自動学習する機械学習、レベル4は特徴量自体をAIが自律学習するディープラーニングを指す。",
+    "relatedTermIds": ["artificial_intelligence", "machine_learning_definition", "narrow_ai"],
+    "importance": 1
+  },
+  {
+    "id": "narrow_ai",
+    "term": "特化型AI",
+    "termEn": "Narrow AI",
+    "categoryId": "ch1",
+    "definition": "特定のタスク（画像認識・翻訳など）のみを遂行することに特化したAIであり、現在の主流技術。",
+    "detail": "特化型AIは一つの領域で人間を超える性能を発揮できる場合があるが、他の領域への汎用的な応用はできない。現在存在するほぼすべてのAIシステムは特化型である。汎用型AI（AGI）とは対比される概念。",
+    "relatedTermIds": ["artificial_general_intelligence", "artificial_intelligence"],
+    "importance": 1
+  },
+  {
+    "id": "artificial_general_intelligence",
+    "term": "汎用型AI",
+    "termEn": "Artificial General Intelligence",
+    "categoryId": "ch1",
+    "definition": "人間のように異なる領域の多様なタスクを柔軟にこなせるAIであり、現時点では実現していない概念。",
+    "detail": "AGIとも略され、特定タスクに限定されず、新しい問題にも自律的に対応できる知的能力を持つAIを指す。現在研究が進んでいるが、実現には多くの技術的課題が残る。強いAIの概念と関連が深い。",
+    "relatedTermIds": ["narrow_ai", "strong_ai", "singularity"],
+    "importance": 2
+  },
+  {
+    "id": "strong_ai",
+    "term": "強いAI",
+    "termEn": "Strong AI",
+    "categoryId": "ch1",
+    "definition": "人間のような「心」や「意識」を持ち、自律的に思考・理解できるAIを指す哲学的・理論的概念。",
+    "detail": "哲学者ジョン・サールが提唱した区分で、真の意味での知性や意識を持つAIを「強いAI」と呼ぶ。現在の技術では実現されておらず、中国語の部屋の思考実験でその実現可能性が問われている。弱いAIとは対比される。",
+    "relatedTermIds": ["weak_ai", "artificial_general_intelligence", "turing_test"],
+    "importance": 2
+  },
+  {
+    "id": "weak_ai",
+    "term": "弱いAI",
+    "termEn": "Weak AI",
+    "categoryId": "ch1",
+    "definition": "特定の知的な作業を模倣するだけの、道具としてのAIを指し、現在実用化されているAIはこれに該当する。",
+    "detail": "弱いAIは「知性を持っているように振る舞う」が、真の意味での理解や意識は持たない。画像認識・音声認識・チャットボットなど現在のAIはすべて弱いAIとみなされる。強いAIとの区別はAI研究の重要なテーマ。",
+    "relatedTermIds": ["strong_ai", "narrow_ai"],
+    "importance": 2
+  },
+  {
+    "id": "turing_test",
+    "term": "チューリングテスト",
+    "termEn": "Turing Test",
+    "categoryId": "ch1",
+    "definition": "アラン・チューリングが提唱した、機械に知能があるかを判定するための対話テスト。",
+    "detail": "人間の判定者が相手が人間か機械か分からない状態で対話し、機械を人間と判定すれば知性があるとみなす。現代ではAIの知性判定には不十分とも指摘されている。チューリングはAI研究の先駆者として知られる。",
+    "relatedTermIds": ["strong_ai", "artificial_intelligence"],
+    "importance": 1
+  },
+  {
+    "id": "frame_problem",
+    "term": "フレーム問題",
+    "termEn": "Frame Problem",
+    "categoryId": "ch1",
+    "definition": "AIは有限の処理能力しか持たないため、現実に起こりうる問題すべてに対処することができないという課題。",
+    "detail": "タスクに関係のある事項と関係のない事項の境界（フレーム）を正しく判断することが極めて困難であるという問題。例えば飲み物を買ってくるよう指示されたAIは、廊下の人をよけるか壁にぶつからないかなど考慮すべき事項が無限に存在する。現実世界へのAI適用の根本的な課題とされる。",
+    "relatedTermIds": ["symbol_grounding_problem", "toy_problem", "artificial_intelligence"],
+    "importance": 1
+  },
+  {
+    "id": "symbol_grounding_problem",
+    "term": "シンボルグラウンディング問題",
+    "termEn": "Symbol Grounding Problem",
+    "categoryId": "ch1",
+    "definition": "AIが扱う記号（言葉など）と、それが現実世界で意味する実体（感覚的理解）が結びついていない問題。",
+    "detail": "「リンゴ」という記号を知っていても、その味・触感・匂いを体感として理解していないことを指す。言語を操作できるAIが必ずしも意味を「理解」しているわけではないことを示す。現在のLLMにおいても議論が続く根本的問題。",
+    "relatedTermIds": ["frame_problem", "strong_ai"],
+    "importance": 1
+  },
+  {
+    "id": "singularity",
+    "term": "シンギュラリティ",
+    "termEn": "Singularity",
+    "categoryId": "ch1",
+    "definition": "AIが自分自身よりも賢いAIを作り出せるようになり、人間の知能を超えるポイントを指す技術的特異点。",
+    "detail": "レイ・カーツワイルが提唱した概念で、2045年頃に到来するとも言われる。シンギュラリティ以降は技術進化が人間の予測を超えるとされる。その実現可能性や影響については様々な議論がある。",
+    "relatedTermIds": ["artificial_general_intelligence", "strong_ai"],
+    "importance": 2
+  },
+  {
+    "id": "toy_problem",
+    "term": "トイ・プロブレム",
+    "termEn": "Toy Problem",
+    "categoryId": "ch1",
+    "definition": "ルールが明確な限定的空間の問題（迷路・チェスなど）であり、第1次AIブームで取り組まれたが現実世界の複雑な課題には対応できなかった。",
+    "detail": "トイ・プロブレムはAIが解ける「おもちゃの問題」を意味し、第1次AIブームの限界を示す概念。現実世界ではルールが明確でなく、考慮すべき要素が無限にあるためAIの適用が困難だった。フレーム問題とも関連する。",
+    "relatedTermIds": ["frame_problem", "first_ai_boom"],
+    "importance": 2
+  },
+  {
+    "id": "intelligence",
+    "term": "知能",
+    "termEn": "Intelligence",
+    "categoryId": "ch1",
+    "definition": "問題を認識し、推論・学習・判断などの知的活動を行う能力の総称。",
+    "detail": "知能の定義も専門家によって様々であり、AIの定義と深く関連する。人間の知能は言語・論理・空間・音楽など多様な側面を持つとされる（多重知能理論）。AIが人間の知能を模倣・再現することがAI研究の核心。",
+    "relatedTermIds": ["artificial_intelligence", "strong_ai"],
+    "importance": 3
+  },
+  {
+    "id": "robot",
+    "term": "ロボット",
+    "termEn": "Robot",
+    "categoryId": "ch1",
+    "definition": "センサー・アクチュエータ・制御システムを持ち、物理的な作業を自律または半自律的に行う機械。",
+    "detail": "AIとロボットは別の概念であり、ロボットはAIなしでも動作し、AIはロボットなしでも機能する。AIを搭載したロボットは「AIロボット」と呼ばれ、自律的な判断と物理的作業を組み合わせる。産業用ロボットから人型ロボットまで多様な種類がある。",
+    "relatedTermIds": ["artificial_intelligence"],
+    "importance": 3
+  },
+  {
+    "id": "nlp_definition",
+    "term": "自然言語処理",
+    "termEn": "Natural Language Processing",
+    "categoryId": "ch1",
+    "definition": "人間が日常的に使う自然言語（日本語・英語など）をコンピュータで処理・理解・生成する技術分野。",
+    "detail": "形態素解析・構文解析・意味解析などの技術を含み、機械翻訳・文書要約・質問応答・感情分析などに応用される。ディープラーニングの発展により精度が飛躍的に向上し、ChatGPTなどの大規模言語モデルの基盤となっている。",
+    "relatedTermIds": ["artificial_intelligence", "machine_learning_definition"],
+    "importance": 2
+  },
+  {
+    "id": "machine_learning_definition",
+    "term": "機械学習（定義）",
+    "termEn": "Machine Learning (Definition)",
+    "categoryId": "ch1",
+    "definition": "大量のデータからルールやパターンを自律的に学習し、予測・分類・判断を行う技術の総称。",
+    "detail": "人間がルールを明示的にプログラムするのではなく、データからAI自身がルールを発見する点が特徴。教師あり・教師なし・強化学習などの学習パラダイムがある。第3次AIブームの中核技術であり、ディープラーニングは機械学習の一手法。",
+    "relatedTermIds": ["artificial_intelligence", "ai_level_classification", "supervised_learning"],
+    "importance": 1
+  },
+  {
+    "id": "first_ai_boom",
+    "term": "第1次AIブーム",
+    "termEn": "First AI Boom",
+    "categoryId": "ch2",
+    "definition": "1950〜60年代に起きたAIブームで、探索・推論による問題解決が中心的な研究課題だった時期。",
+    "detail": "チェスや迷路などのトイ・プロブレムを解くことはできたが、複雑な現実問題には対応できずブームは終息した。チューリングテストの提唱もこの時期にあたる。探索木やゲーム木などの手法が発展した。",
+    "relatedTermIds": ["toy_problem", "search_and_inference", "second_ai_boom"],
+    "importance": 1
+  },
+  {
+    "id": "second_ai_boom",
+    "term": "第2次AIブーム",
+    "termEn": "Second AI Boom",
+    "categoryId": "ch2",
+    "definition": "1980年代に起きたAIブームで、エキスパートシステムや知識表現が中心的な研究課題だった時期。",
+    "detail": "専門家の知識をIf-Thenルールとして組み込んだエキスパートシステムが実用化された。しかし知識の獲得・維持コストの高さから「知識のボトルネック」が露呈し、ブームは終息した。意味ネットワークやオントロジーなどの知識表現技術が発展した。",
+    "relatedTermIds": ["expert_system", "knowledge_representation", "first_ai_boom", "third_ai_boom"],
+    "importance": 1
+  },
+  {
+    "id": "third_ai_boom",
+    "term": "第3次AIブーム",
+    "termEn": "Third AI Boom",
+    "categoryId": "ch2",
+    "definition": "2010年代以降に起きたAIブームで、ビッグデータとディープラーニングの台頭が牽引する現在も続く時期。",
+    "detail": "ImageNet競技会（ILSVRC）でのディープラーニングの圧倒的な勝利が象徴的な出来事。GPUの普及・ビッグデータの蓄積・アルゴリズムの改良の三拍子が揃い、AIが実用的な性能を発揮するようになった。生成AIの発展も第3次ブームの延長線上にある。",
+    "relatedTermIds": ["deep_learning", "big_data", "gpu", "second_ai_boom"],
+    "importance": 1
+  },
+  {
+    "id": "search_and_inference",
+    "term": "探索・推論",
+    "termEn": "Search and Inference",
+    "categoryId": "ch2",
+    "definition": "目標状態に到達するための手順を状態空間の中から探し出す手法（探索）と、既存知識から新たな結論を導く手法（推論）の総称。",
+    "detail": "第1次AIブームの中心技術で、深さ優先探索・幅優先探索・ヒューリスティック探索（A*など）が代表的。探索空間の爆発的増大（組み合わせ爆発）が限界として露呈した。チェスや将棋AIには今日も探索技術が活用されている。",
+    "relatedTermIds": ["first_ai_boom", "expert_system"],
+    "importance": 2
+  },
+  {
+    "id": "expert_system",
+    "term": "エキスパートシステム",
+    "termEn": "Expert System",
+    "categoryId": "ch2",
+    "definition": "専門家からヒアリングした大量のIf-Thenルールを組み込み、専門家のように振る舞うシステム。",
+    "detail": "第2次AIブームの代表的技術で、医療診断や化学分析など実用システムが開発された。しかしルールの作成・維持コストが膨大で、常識的知識の組み込みが困難という限界があった。現在の機械学習によるデータ駆動型アプローチとは対照的な手法。",
+    "relatedTermIds": ["knowledge_representation", "second_ai_boom", "semantic_network"],
+    "importance": 1
+  },
+  {
+    "id": "semantic_network",
+    "term": "意味ネットワーク",
+    "termEn": "Semantic Network",
+    "categoryId": "ch2",
+    "definition": "概念をノード、概念間の関係をリンク（矢印）で結んだネットワーク構造で知識を表現する手法。",
+    "detail": "「犬はほ乳類である」「ポチは犬である」などの関係を有向グラフで表現する。知識表現の古典的手法であり、現代のナレッジグラフの前身にあたる。オントロジーとも関連し、AIの推論基盤として活用された。",
+    "relatedTermIds": ["knowledge_representation", "expert_system"],
+    "importance": 2
+  },
+  {
+    "id": "knowledge_representation",
+    "term": "知識表現",
+    "termEn": "Knowledge Representation",
+    "categoryId": "ch2",
+    "definition": "コンピュータが推論・問題解決に利用できる形式で知識を記述・組織化する技術の総称。",
+    "detail": "意味ネットワーク・フレーム・プロダクションルール（If-Then）・論理式など様々な表現形式がある。第2次AIブームの中心テーマで、エキスパートシステムの基盤技術。膨大な常識知識の表現が困難という「知識のボトルネック」が課題だった。",
+    "relatedTermIds": ["semantic_network", "expert_system", "second_ai_boom"],
+    "importance": 2
+  },
+  {
+    "id": "neural_network",
+    "term": "ニューラルネットワーク",
+    "termEn": "Neural Network",
+    "categoryId": "ch2",
+    "definition": "人間の神経細胞（ニューロン）のネットワーク構造を模倣した機械学習モデルの総称。",
+    "detail": "パーセプトロンを基本単位とし、層を重ねることで複雑な関数を表現できる。第2次ブームで誤差逆伝播法が提案され、第3次ブームでディープラーニングとして実用化した。画像・音声・テキストなど多様なデータ処理に適用される。",
+    "relatedTermIds": ["deep_learning", "neuron", "backpropagation"],
+    "importance": 1
+  },
+  {
+    "id": "deep_learning",
+    "term": "ディープラーニング",
+    "termEn": "Deep Learning",
+    "categoryId": "ch2",
+    "definition": "多層のニューラルネットワークを用いて、データからの特徴量抽出から予測までをエンドツーエンドで学習する手法。",
+    "detail": "従来の機械学習では人間が特徴量を設計する必要があったが、ディープラーニングではAIが自律的に特徴量を学習する点が革新的。ImageNetでの成功（2012年）が第3次ブームの起点とされる。CNNやRNN、Transformerなど多様なアーキテクチャがある。",
+    "relatedTermIds": ["neural_network", "third_ai_boom", "gpu"],
+    "importance": 1
+  },
+  {
+    "id": "big_data",
+    "term": "ビッグデータ",
+    "termEn": "Big Data",
+    "categoryId": "ch2",
+    "definition": "従来のデータ処理技術では扱いが困難なほど大容量・多様・高速に生成されるデータの総称。",
+    "detail": "Volume（量）・Variety（多様性）・Velocity（速度）の3Vで特徴付けられる。第3次AIブームを牽引した要素の一つで、大規模データによる機械学習・ディープラーニングの高精度化を可能にした。SNS・IoT・Webログなどが主な発生源。",
+    "relatedTermIds": ["deep_learning", "third_ai_boom"],
+    "importance": 2
+  },
+  {
+    "id": "gpu",
+    "term": "GPU",
+    "termEn": "Graphics Processing Unit",
+    "categoryId": "ch2",
+    "definition": "並列演算に特化したプロセッサで、ディープラーニングの大規模行列演算を高速に処理するために活用される。",
+    "detail": "GPUは元々ゲーム・CG描画用に開発されたが、行列演算の並列処理能力がニューラルネットワーク学習に適していることが判明した。GPGPU（汎用GPU計算）により計算時間が劇的に短縮され、ディープラーニング実用化の立役者となった。",
+    "relatedTermIds": ["deep_learning", "third_ai_boom", "big_data"],
+    "importance": 2
+  },
+  {
+    "id": "halting_problem",
+    "term": "ハルティング問題",
+    "termEn": "Halting Problem",
+    "categoryId": "ch2",
+    "definition": "任意のプログラムが与えられた入力に対して停止するかどうかを判定するアルゴリズムが存在しないことを示す問題。",
+    "detail": "チューリングが1936年に証明した計算可能性理論の基礎的定理。このことはAIにも適用される計算の根本的限界を示す。すべての問題が計算によって解けるわけではないという「計算不可能性」の代表例として重要。",
+    "relatedTermIds": ["search_and_inference", "first_ai_boom"],
+    "importance": 3
+  },
+  {
+    "id": "supervised_learning",
+    "term": "教師あり学習",
+    "termEn": "Supervised Learning",
+    "categoryId": "ch3",
+    "definition": "入力データとそれに対応する正解ラベル（教師データ）のペアを用いてモデルを学習させる機械学習の基本パラダイム。",
+    "detail": "回帰（数値予測）と分類（カテゴリ予測）の2種類があり、線形回帰・ロジスティック回帰・決定木・SVM・ランダムフォレストなどが代表的アルゴリズム。訓練データに含まれないパターンへの汎化能力が重要な評価指標となる。",
+    "relatedTermIds": ["unsupervised_learning", "reinforcement_learning", "linear_regression", "decision_tree"],
+    "importance": 1
+  },
+  {
+    "id": "unsupervised_learning",
+    "term": "教師なし学習",
+    "termEn": "Unsupervised Learning",
+    "categoryId": "ch3",
+    "definition": "正解ラベルなしに、データの構造・パターン・グループを自律的に発見する機械学習の学習パラダイム。",
+    "detail": "クラスタリング（k-means等）・次元削減（PCA等）・密度推定などが主要な手法。ラベルなしデータを大量に活用できる利点があり、生成モデルの学習にも用いられる。教師あり学習との組み合わせ（半教師あり学習）も重要。",
+    "relatedTermIds": ["supervised_learning", "k_means", "pca", "semi_supervised_learning"],
+    "importance": 1
+  },
+  {
+    "id": "reinforcement_learning",
+    "term": "強化学習",
+    "termEn": "Reinforcement Learning",
+    "categoryId": "ch3",
+    "definition": "エージェントが環境と相互作用し、報酬を最大化する行動方策を試行錯誤によって学習する機械学習のパラダイム。",
+    "detail": "ゲームAI（AlphaGoなど）やロボット制御に有効。状態・行動・報酬・方策が主要な概念。RLHF（人間フィードバックによる強化学習）はChatGPTなどの大規模言語モデルの学習にも応用されている。",
+    "relatedTermIds": ["supervised_learning", "unsupervised_learning"],
+    "importance": 1
+  },
+  {
+    "id": "semi_supervised_learning",
+    "term": "半教師あり学習",
+    "termEn": "Semi-Supervised Learning",
+    "categoryId": "ch3",
+    "definition": "少量のラベルありデータと大量のラベルなしデータを組み合わせて学習する機械学習の手法。",
+    "detail": "ラベル付けコストが高い場合に有効な手法で、教師あり学習と教師なし学習の中間に位置する。自己学習・ラベル伝播・生成モデルを利用したアプローチなどがある。実務では完全なラベルデータが得られないケースが多く、実用上重要。",
+    "relatedTermIds": ["supervised_learning", "unsupervised_learning"],
+    "importance": 3
+  },
+  {
+    "id": "linear_regression",
+    "term": "線形回帰",
+    "termEn": "Linear Regression",
+    "categoryId": "ch3",
+    "definition": "入力変数（特徴量）の線形結合によって連続値の出力を予測する最もシンプルな回帰モデル。",
+    "detail": "最小二乗法によってパラメータを推定し、MSE・RMSEで評価する。単回帰（入力1変数）と重回帰（入力複数変数）がある。正則化を加えたRidge回帰・Lasso回帰も頻繁に使用される。ディープラーニングの線形変換層の基礎となる概念。",
+    "relatedTermIds": ["supervised_learning", "logistic_regression", "mse", "rmse"],
+    "importance": 2
+  },
+  {
+    "id": "logistic_regression",
+    "term": "ロジスティック回帰",
+    "termEn": "Logistic Regression",
+    "categoryId": "ch3",
+    "definition": "シグモイド関数を用いて入力を確率値（0〜1）に変換し、二値分類を行う教師あり学習モデル。",
+    "detail": "名称に「回帰」とあるが分類モデルであり、二値分類の基礎的手法として広く使われる。出力がクラス所属確率として解釈できる点が特徴。多値分類へのsoftmax拡張も重要。ニューラルネットワークの出力層との関連が深い。",
+    "relatedTermIds": ["linear_regression", "sigmoid_function", "supervised_learning"],
+    "importance": 2
+  },
+  {
+    "id": "decision_tree",
+    "term": "決定木",
+    "termEn": "Decision Tree",
+    "categoryId": "ch3",
+    "definition": "データを特徴量の条件で分岐させ、ツリー構造により分類・回帰を行う解釈性の高い機械学習モデル。",
+    "detail": "情報利得・ジニ係数などの指標で最適な分岐条件を選択する。解釈性が高く、特徴量の重要度が把握しやすい。単独では過学習しやすいため、ランダムフォレスト・勾配ブースティングなどアンサンブル法と組み合わせることが多い。",
+    "relatedTermIds": ["random_forest", "ensemble_learning", "supervised_learning"],
+    "importance": 2
+  },
+  {
+    "id": "random_forest",
+    "term": "ランダムフォレスト",
+    "termEn": "Random Forest",
+    "categoryId": "ch3",
+    "definition": "複数の決定木をバギング（ランダムサンプリング）と特徴量のランダム選択で学習し、多数決で予測するアンサンブル学習法。",
+    "detail": "単一の決定木より汎化性能が高く、過学習に強い。特徴量の重要度を推定できる利点もある。バギングの代表例であり、勾配ブースティング（XGBoost等）とともに表形式データで広く使われる手法。",
+    "relatedTermIds": ["decision_tree", "ensemble_learning", "overfitting"],
+    "importance": 2
+  },
+  {
+    "id": "svm",
+    "term": "サポートベクトルマシン",
+    "termEn": "Support Vector Machine",
+    "categoryId": "ch3",
+    "definition": "マージン最大化の原理に基づき、クラス間の境界（超平面）を学習する分類・回帰アルゴリズム。",
+    "detail": "カーネルトリックにより非線形な決定境界も表現できる。スパースな解を持ちサポートベクトルのみで境界が決まる。小〜中規模データで高い性能を示すが、大規模データでは計算コストが高くなる傾向がある。",
+    "relatedTermIds": ["supervised_learning", "logistic_regression"],
+    "importance": 2
+  },
+  {
+    "id": "k_means",
+    "term": "k-means法",
+    "termEn": "k-means Clustering",
+    "categoryId": "ch3",
+    "definition": "データをk個のクラスタに分割する教師なし学習のクラスタリングアルゴリズムで、各点を最近傍の重心に割り当てることを繰り返す。",
+    "detail": "初期の重心の設定に依存し、局所最適解に陥ることがある。k-means++による初期化改善が一般的。クラスタ数kを事前に指定する必要がある点が課題。階層的クラスタリングやDBSCANと並ぶ代表的なクラスタリング手法。",
+    "relatedTermIds": ["unsupervised_learning", "pca"],
+    "importance": 2
+  },
+  {
+    "id": "pca",
+    "term": "主成分分析",
+    "termEn": "Principal Component Analysis",
+    "categoryId": "ch3",
+    "definition": "データの分散が最大になる方向を主成分として、高次元データを低次元に圧縮する次元削減手法。",
+    "detail": "固有値分解・特異値分解（SVD）を用いて主成分を求める。可視化・前処理・次元の呪い対策として用いられる。次元削減により情報量は一部失われるが、ノイズ除去や計算効率向上の効果がある。",
+    "relatedTermIds": ["unsupervised_learning", "k_means"],
+    "importance": 2
+  },
+  {
+    "id": "overfitting",
+    "term": "過学習",
+    "termEn": "Overfitting",
+    "categoryId": "ch3",
+    "definition": "訓練データに過度に適合し、未知のデータ（テストデータ）に対する汎化性能が低下する現象。",
+    "detail": "モデルが複雑すぎる場合や訓練データが少ない場合に発生しやすい。正則化・ドロップアウト・データ拡張・早期終了（Early Stopping）などが対策として用いられる。バイアス・バリアンストレードオフと密接に関連する概念。",
+    "relatedTermIds": ["regularization", "cross_validation", "random_forest"],
+    "importance": 1
+  },
+  {
+    "id": "regularization",
+    "term": "正則化",
+    "termEn": "Regularization",
+    "categoryId": "ch3",
+    "definition": "モデルの複雑さにペナルティを与えることで過学習を抑制し、汎化性能を向上させる手法の総称。",
+    "detail": "L1正則化（Lasso）はスパースな解を生成し特徴量選択に使える。L2正則化（Ridge）は重みを全体的に小さくする。ニューラルネットワークではドロップアウトや重み減衰（Weight Decay）も正則化の一種として扱われる。",
+    "relatedTermIds": ["overfitting", "cross_validation"],
+    "importance": 2
+  },
+  {
+    "id": "cross_validation",
+    "term": "交差検証",
+    "termEn": "Cross-Validation",
+    "categoryId": "ch3",
+    "definition": "データをk個に分割し、k回繰り返してモデルの評価を行うことで汎化性能を安定的に推定する手法。",
+    "detail": "k分割交差検証（k-fold CV）が代表的で、すべてのデータを訓練と検証に使えるため少ないデータでも有効。ハイパーパラメータ選択（モデル選択）や評価指標の信頼区間推定に使われる。過学習検出にも重要な役割を果たす。",
+    "relatedTermIds": ["overfitting", "regularization"],
+    "importance": 2
+  },
+  {
+    "id": "ensemble_learning",
+    "term": "アンサンブル学習",
+    "termEn": "Ensemble Learning",
+    "categoryId": "ch3",
+    "definition": "複数のモデル（弱学習器）を組み合わせることで、単一モデルより高い予測性能を達成する手法の総称。",
+    "detail": "バギング（並列学習・多数決）とブースティング（逐次学習・誤り補正）が主要な方式。ランダムフォレストはバギングの代表例、XGBoost・LightGBMはブースティングの代表例。データ分析コンペ（Kaggle等）で高い人気を誇る。",
+    "relatedTermIds": ["random_forest", "decision_tree", "overfitting"],
+    "importance": 2
+  },
+  {
+    "id": "precision",
+    "term": "適合率",
+    "termEn": "Precision",
+    "categoryId": "ch3",
+    "definition": "モデルが陽性と予測したデータのうち、実際に陽性だった割合を示す分類評価指標。",
+    "detail": "Precision = TP / (TP + FP)。偽陽性（誤検出）を減らしたい場合に重視する指標。スパムフィルタなど誤検出コストが高い場面で重要。再現率とのトレードオフ関係があり、F値で両者のバランスを取る。",
+    "relatedTermIds": ["recall", "f_score", "supervised_learning"],
+    "importance": 1
+  },
+  {
+    "id": "recall",
+    "term": "再現率",
+    "termEn": "Recall",
+    "categoryId": "ch3",
+    "definition": "実際に陽性のデータのうち、モデルが正しく陽性と予測できた割合を示す分類評価指標。",
+    "detail": "Recall = TP / (TP + FN)。偽陰性（見逃し）を減らしたい場合に重視する指標。がん検診など見逃しコストが高い場面で重要。適合率とのトレードオフ関係があり、閾値の変化でPRカーブが描ける。",
+    "relatedTermIds": ["precision", "f_score", "supervised_learning"],
+    "importance": 1
+  },
+  {
+    "id": "f_score",
+    "term": "F値",
+    "termEn": "F-Score (F1-Score)",
+    "categoryId": "ch3",
+    "definition": "適合率と再現率の調和平均として計算され、両者のバランスを一つの指標で表す分類評価指標。",
+    "detail": "F1 = 2 × (Precision × Recall) / (Precision + Recall)。クラス不均衡なデータセットでAccuracyより有用な指標。重み付きF値（Fβ）により適合率と再現率の重要度を調整できる。マクロ平均・マイクロ平均など複数クラスへの拡張もある。",
+    "relatedTermIds": ["precision", "recall"],
+    "importance": 1
+  },
+  {
+    "id": "mse",
+    "term": "平均二乗誤差",
+    "termEn": "Mean Squared Error",
+    "categoryId": "ch3",
+    "definition": "予測値と実際の値の差（誤差）を二乗した値の平均で、回帰モデルの損失関数・評価指標として用いる。",
+    "detail": "MSE = (1/n) Σ(yi - ŷi)². 誤差が大きいサンプルに対してより大きなペナルティを与える。外れ値の影響を受けやすい点がMAEとの違い。ニューラルネットワークの損失関数としても広く用いられる。",
+    "relatedTermIds": ["rmse", "linear_regression", "supervised_learning"],
+    "importance": 2
+  },
+  {
+    "id": "rmse",
+    "term": "二乗平均平方根誤差",
+    "termEn": "Root Mean Squared Error",
+    "categoryId": "ch3",
+    "definition": "MSEの平方根を取った値で、予測誤差を目的変数と同じ単位で解釈できる回帰評価指標。",
+    "detail": "RMSE = √MSE。目的変数と同じスケールで誤差を表現できるため解釈しやすい。データの外れ値の影響をMSEと同様に受ける。回帰モデルの評価として最も広く使われる指標の一つ。",
+    "relatedTermIds": ["mse", "linear_regression"],
+    "importance": 2
+  },
+  {
+    "id": "neuron",
+    "term": "ニューロン",
+    "termEn": "Neuron",
+    "categoryId": "ch4",
+    "definition": "生物の神経細胞を模倣した計算単位で、複数の入力に重みを掛けて足し合わせ、活性化関数を通じて出力を生成する。",
+    "detail": "入力値×重み（シナプス結合強度）の総和にバイアスを加え、活性化関数に通すことで出力を生成する。ニューラルネットワークの基本構成単位であり、多数のニューロンを層状に接続することで複雑な関数を表現できる。",
+    "relatedTermIds": ["perceptron", "activation_function", "neural_network"],
+    "importance": 1
+  },
+  {
+    "id": "perceptron",
+    "term": "パーセプトロン",
+    "termEn": "Perceptron",
+    "categoryId": "ch4",
+    "definition": "入力の線形結合をステップ関数で二値出力する最も単純なニューラルネットワークモデル。",
+    "detail": "フランク・ローゼンブラットが1957年に提案した。XOR問題（線形分離不可能な問題）が解けないという限界があったが、多層化（多層パーセプトロン）により克服された。現代のニューラルネットワークの原型となる重要な概念。",
+    "relatedTermIds": ["neuron", "multilayer_perceptron", "activation_function"],
+    "importance": 2
+  },
+  {
+    "id": "multilayer_perceptron",
+    "term": "多層パーセプトロン",
+    "termEn": "Multilayer Perceptron",
+    "categoryId": "ch4",
+    "definition": "入力層・1つ以上の隠れ層・出力層から構成される全結合ニューラルネットワーク。",
+    "detail": "非線形活性化関数（ReLU・シグモイド等）を用いることで線形分離不可能な問題も解ける。誤差逆伝播法による学習が可能。DNN（ディープニューラルネットワーク）はMLPを多層化したものであり、ディープラーニングの基本構造。",
+    "relatedTermIds": ["perceptron", "dnn", "backpropagation", "activation_function"],
+    "importance": 2
+  },
+  {
+    "id": "dnn",
+    "term": "ディープニューラルネットワーク",
+    "termEn": "Deep Neural Network",
+    "categoryId": "ch4",
+    "definition": "多数の隠れ層を持つニューラルネットワークで、ディープラーニングの基本アーキテクチャ。",
+    "detail": "層を深くすることで、より抽象的な特徴表現を学習できる。層数が増えるに従い表現力が高まるが、勾配消失問題・計算コスト増大などの課題も生じる。バッチ正規化・残差接続（ResNet）などの技術により深いネットワークの学習が安定化した。",
+    "relatedTermIds": ["multilayer_perceptron", "vanishing_gradient", "activation_function"],
+    "importance": 1
+  },
+  {
+    "id": "activation_function",
+    "term": "活性化関数",
+    "termEn": "Activation Function",
+    "categoryId": "ch4",
+    "definition": "ニューラルネットワークの各ニューロンにおける入力の線形結合に非線形変換を加える関数。",
+    "detail": "非線形活性化関数がなければ、多層ネットワークも単一の線形変換と等価になってしまう。シグモイド・tanh・ReLUが代表的で、現代はReLUとその派生（Leaky ReLU・ELU等）が主流。出力層の活性化関数はタスクに応じて選択する（二値分類：シグモイド、多値分類：ソフトマックス等）。",
+    "relatedTermIds": ["sigmoid_function", "relu", "tanh_function", "neuron"],
+    "importance": 1
+  },
+  {
+    "id": "sigmoid_function",
+    "term": "シグモイド関数",
+    "termEn": "Sigmoid Function",
+    "categoryId": "ch4",
+    "definition": "入力を0〜1の範囲の値に変換するS字型の活性化関数で、二値分類の出力層などに用いられる。",
+    "detail": "σ(x) = 1 / (1 + exp(-x))。出力を確率として解釈できる利点がある。一方で、深い層では勾配消失問題を起こしやすい欠点がある。ロジスティック回帰の出力関数としても使われる。",
+    "relatedTermIds": ["activation_function", "relu", "vanishing_gradient"],
+    "importance": 2
+  },
+  {
+    "id": "relu",
+    "term": "ReLU",
+    "termEn": "Rectified Linear Unit",
+    "categoryId": "ch4",
+    "definition": "入力が正の場合はそのまま出力し、負の場合は0を出力するシンプルな活性化関数。",
+    "detail": "ReLU(x) = max(0, x)。計算が簡単で勾配消失問題が起きにくく、現代の深いニューラルネットワークで最も広く使われる。ただし入力が負の場合は勾配が0になる「Dying ReLU」問題がある。Leaky ReLU・ELU・Swishなどの派生版も存在する。",
+    "relatedTermIds": ["activation_function", "sigmoid_function", "vanishing_gradient"],
+    "importance": 1
+  },
+  {
+    "id": "tanh_function",
+    "term": "tanh関数",
+    "termEn": "Hyperbolic Tangent Function",
+    "categoryId": "ch4",
+    "definition": "入力を-1〜1の範囲に変換するS字型の活性化関数で、シグモイド関数の改善版として位置づけられる。",
+    "detail": "tanh(x) = (exp(x) - exp(-x)) / (exp(x) + exp(-x))。出力が0中心であるためシグモイドより学習が安定しやすい。ただしシグモイド同様に勾配消失問題を起こしやすい。RNNの隠れ層活性化関数として現在も広く使われる。",
+    "relatedTermIds": ["activation_function", "sigmoid_function", "relu"],
+    "importance": 2
+  },
+  {
+    "id": "backpropagation",
+    "term": "誤差逆伝播法",
+    "termEn": "Backpropagation",
+    "categoryId": "ch4",
+    "definition": "出力層の誤差を連鎖律（チェーンルール）を用いて入力層方向に伝播させ、各重みの勾配を効率的に計算する学習アルゴリズム。",
+    "detail": "1986年にルメルハート・ヒントンらによって提唱された多層ネットワークの学習法。勾配降下法と組み合わせて重みを更新することで損失関数を最小化する。深い層での勾配消失問題が課題で、ReLUやバッチ正規化などで改善されている。",
+    "relatedTermIds": ["gradient_descent", "vanishing_gradient", "loss_function"],
+    "importance": 1
+  },
+  {
+    "id": "gradient_descent",
+    "term": "勾配降下法",
+    "termEn": "Gradient Descent",
+    "categoryId": "ch4",
+    "definition": "損失関数の勾配（偏微分）の逆方向にパラメータを更新し、損失を最小化する最適化アルゴリズムの基本手法。",
+    "detail": "学習率（ステップサイズ）の設定が重要で、大きすぎると発散し小さすぎると収束が遅い。ミニバッチSGD・モメンタム・Adam等はこれを発展させた手法。局所最適解に陥るリスクがあるが、深いネットワークでは実用上問題になりにくい。",
+    "relatedTermIds": ["sgd", "adam", "backpropagation", "loss_function"],
+    "importance": 1
+  },
+  {
+    "id": "sgd",
+    "term": "確率的勾配降下法",
+    "termEn": "Stochastic Gradient Descent",
+    "categoryId": "ch4",
+    "definition": "訓練データからランダムに選んだ少数のサンプル（ミニバッチ）で勾配を計算してパラメータを更新する最適化手法。",
+    "detail": "全データを使うバッチ勾配降下法より計算コストが低く、確率的なノイズが局所最適解の脱出に役立つ場合がある。ミニバッチサイズの選択が重要なハイパーパラメータ。AdamやRMSPropなど改良版の出発点となる手法。",
+    "relatedTermIds": ["gradient_descent", "adam", "hyperparameter"],
+    "importance": 2
+  },
+  {
+    "id": "adam",
+    "term": "Adam",
+    "termEn": "Adam (Adaptive Moment Estimation)",
+    "categoryId": "ch4",
+    "definition": "勾配の1次・2次モーメントを適応的に推定し、各パラメータに適した学習率を自動調整する最適化アルゴリズム。",
+    "detail": "モメンタムとRMSPropを組み合わせた手法で、学習率の手動調整を減らせる利点がある。現代のディープラーニングで最も広く使われる最適化手法の一つ。収束が速い一方、汎化性能でSGDに劣る場合があることも報告されている。",
+    "relatedTermIds": ["sgd", "gradient_descent", "hyperparameter"],
+    "importance": 2
+  },
+  {
+    "id": "vanishing_gradient",
+    "term": "勾配消失問題",
+    "termEn": "Vanishing Gradient Problem",
+    "categoryId": "ch4",
+    "definition": "深いネットワークの誤差逆伝播で勾配が層を遡るに従って指数的に小さくなり、入力層近くの重みがほとんど更新されなくなる現象。",
+    "detail": "シグモイド・tanh関数の出力範囲が狭く、偏微分値が最大でも1以下であることが原因。ReLUの導入・バッチ正規化・残差接続（ResNet）・LSTMのゲート機構などが対策として開発された。深いネットワーク学習の基本的課題として理解が必須。",
+    "relatedTermIds": ["backpropagation", "relu", "sigmoid_function", "dnn"],
+    "importance": 1
+  },
+  {
+    "id": "hyperparameter",
+    "term": "ハイパーパラメータ",
+    "termEn": "Hyperparameter",
+    "categoryId": "ch4",
+    "definition": "学習前に人間が設定する、モデルの学習プロセスや構造を制御するパラメータの総称。",
+    "detail": "学習率・バッチサイズ・エポック数・層数・正則化係数などが代表例。モデルが学習により最適化する「パラメータ（重み）」とは区別される。ハイパーパラメータ探索（グリッドサーチ・ランダムサーチ・ベイズ最適化）が重要な実務スキル。",
+    "relatedTermIds": ["gradient_descent", "sgd", "cross_validation"],
+    "importance": 2
+  },
+  {
+    "id": "loss_function",
+    "term": "損失関数",
+    "termEn": "Loss Function",
+    "categoryId": "ch4",
+    "definition": "モデルの予測値と実際の正解値との誤差を定量化し、学習の目標となるスカラー値を出力する関数。",
+    "detail": "回帰ではMSE・MAE、二値分類では交差エントロピー（バイナリクロスエントロピー）、多値分類ではカテゴリカルクロスエントロピーが代表的。損失関数の選択がモデルの学習方向を決定するため、タスクに適切な関数を選ぶことが重要。",
+    "relatedTermIds": ["backpropagation", "gradient_descent", "mse"],
+    "importance": 2
+  },
+  {
+    "id": "cnn",
+    "term": "畳み込みニューラルネットワーク",
+    "termEn": "Convolutional Neural Network",
+    "categoryId": "ch5",
+    "definition": "畳み込み層とプーリング層を組み合わせ、画像などの空間的データから局所的特徴を自動的に抽出するニューラルネットワーク。",
+    "detail": "畳み込み演算によりフィルタ（カーネル）が画像上を走査し特徴マップを生成する。プーリング層で空間サイズを圧縮し位置不変性を得る。VGG・GoogLeNet・ResNetなどの代表的なCNNモデルが画像認識競技で革新的な成果を上げた。",
+    "relatedTermIds": ["convolutional_layer", "pooling_layer", "fully_connected_layer", "deep_learning"],
+    "importance": 1
+  },
+  {
+    "id": "convolutional_layer",
+    "term": "畳み込み層",
+    "termEn": "Convolutional Layer",
+    "categoryId": "ch5",
+    "definition": "フィルタ（カーネル）を入力データ上でスライドさせ、局所的な特徴（エッジ・テクスチャなど）を抽出して特徴マップを生成するCNNの基本層。",
+    "detail": "フィルタの重みは学習により最適化され、複数のフィルタで複数の特徴マップを生成する。ストライドやパディングの設定により出力サイズを調整できる。深い層ほど抽象的な特徴（物体・顔など）を捉えるようになる。",
+    "relatedTermIds": ["cnn", "pooling_layer", "activation_function"],
+    "importance": 1
+  },
+  {
+    "id": "pooling_layer",
+    "term": "プーリング層",
+    "termEn": "Pooling Layer",
+    "categoryId": "ch5",
+    "definition": "特徴マップの空間サイズを縮小し、位置のずれ（平行移動）に対する不変性を高めるCNNの構成層。",
+    "detail": "最大プーリング（Max Pooling）が最も一般的で、領域内の最大値を取ることで代表的な特徴を保持する。計算量削減とオーバーフィッティング抑制の効果もある。グローバル平均プーリング（GAP）は全結合層の代替として使われることもある。",
+    "relatedTermIds": ["cnn", "convolutional_layer", "fully_connected_layer"],
+    "importance": 1
+  },
+  {
+    "id": "fully_connected_layer",
+    "term": "全結合層",
+    "termEn": "Fully Connected Layer",
+    "categoryId": "ch5",
+    "definition": "前の層のすべてのニューロンと後の層のすべてのニューロンが結合している層で、特徴から最終的な予測を行うニューラルネットワークの基本構造。",
+    "detail": "CNNでは畳み込み・プーリング層で抽出した特徴を全結合層で集約して分類出力を行う。パラメータ数が多く過学習しやすいため、ドロップアウトやグローバル平均プーリングによる代替が行われることがある。MLPと等価の構造。",
+    "relatedTermIds": ["cnn", "dropout", "multilayer_perceptron"],
+    "importance": 2
+  },
+  {
+    "id": "rnn",
+    "term": "リカレントニューラルネットワーク",
+    "termEn": "Recurrent Neural Network",
+    "categoryId": "ch5",
+    "definition": "前のステップの出力を次のステップの入力として再帰的に利用するループ構造を持ち、時系列・シーケンスデータの処理に適したニューラルネットワーク。",
+    "detail": "隠れ状態（hidden state）が時系列の文脈情報を保持することで、音声認識や機械翻訳などに活用された。ただし長期依存関係の学習が困難で、勾配消失問題が生じやすい。LSTMやGRUによりこの問題が大幅に改善された。",
+    "relatedTermIds": ["lstm", "gru", "vanishing_gradient", "attention_mechanism"],
+    "importance": 1
+  },
+  {
+    "id": "lstm",
+    "term": "LSTM",
+    "termEn": "Long Short-Term Memory",
+    "categoryId": "ch5",
+    "definition": "ゲート機構（忘却ゲート・入力ゲート・出力ゲート）とセル状態を導入することで、RNNの長期依存関係学習の困難さを解決した再帰的ネットワーク。",
+    "detail": "忘却ゲートが不要な情報を選択的に消去し、入力ゲートが新情報の取り込み量を制御し、出力ゲートが出力量を調整する。自然言語処理・音声認識・時系列予測などに幅広く使われた。Transformerの登場後もシーケンシャルな処理に利用される。",
+    "relatedTermIds": ["rnn", "gru", "vanishing_gradient", "transformer"],
+    "importance": 1
+  },
+  {
+    "id": "gru",
+    "term": "GRU",
+    "termEn": "Gated Recurrent Unit",
+    "categoryId": "ch5",
+    "definition": "LSTMを簡略化し、リセットゲートと更新ゲートの2つのゲートのみで長期依存関係を学習できるようにした再帰的ネットワーク。",
+    "detail": "LSTMより構造がシンプルでパラメータ数が少なく、計算コストが低い。多くのタスクでLSTMに匹敵する性能を示すことから、リソース制約がある場面でよく選択される。リセットゲートが過去の状態を「忘れる」量を制御し、更新ゲートが状態の更新量を決定する。",
+    "relatedTermIds": ["rnn", "lstm", "attention_mechanism"],
+    "importance": 2
+  },
+  {
+    "id": "attention_mechanism",
+    "term": "Attention機構",
+    "termEn": "Attention Mechanism",
+    "categoryId": "ch5",
+    "definition": "入力の各要素に対して動的に重み（注意度）を計算し、重要な部分に集中してエンコードする仕組みで、現代の生成AIの基盤技術。",
+    "detail": "クエリ・キー・バリューの三つ組で計算されるスコアに基づいて入力を加重集約する。机械翻訳のseq2seqでの文脈対応付けから発展し、Self-AttentionをTransformerが発展させた。LSTMの長期依存問題を大幅に改善した重要なメカニズム。",
+    "relatedTermIds": ["self_attention", "transformer", "rnn", "lstm"],
+    "importance": 1
+  },
+  {
+    "id": "self_attention",
+    "term": "セルフアテンション",
+    "termEn": "Self-Attention",
+    "categoryId": "ch5",
+    "definition": "同一シーケンス内の各要素が他のすべての要素との関係性を動的に計算する注意機構で、Transformerの核心的コンポーネント。",
+    "detail": "入力の各トークンがクエリ・キー・バリューを自身から生成し、全トークン間の相関をスコア化する。並列計算が可能なためRNNより学習が高速。マルチヘッドAttentionとして複数の注意パターンを並列に学習する。GPTやBERTはこの機構に基づく。",
+    "relatedTermIds": ["attention_mechanism", "transformer", "bert", "gpt"],
+    "importance": 1
+  },
+  {
+    "id": "transformer",
+    "term": "Transformer",
+    "termEn": "Transformer",
+    "categoryId": "ch5",
+    "definition": "Self-AttentionとFeed-Forward層を積み重ねたアーキテクチャで、RNNを使わずにシーケンスを並列処理し現代のLLMの基盤となっているモデル。",
+    "detail": "2017年の論文「Attention Is All You Need」で発表。エンコーダ・デコーダ構成で機械翻訳に使われたが、後にGPT（デコーダのみ）・BERT（エンコーダのみ）などの派生が生まれた。位置エンコーディングで系列順序を表現する点も特徴。",
+    "relatedTermIds": ["self_attention", "attention_mechanism", "bert", "gpt", "llm"],
+    "importance": 1
+  },
+  {
+    "id": "autoencoder",
+    "term": "オートエンコーダ",
+    "termEn": "Autoencoder",
+    "categoryId": "ch5",
+    "definition": "入力データをエンコーダで低次元の潜在表現に圧縮し、デコーダで元のデータを再構成することで、教師なしで特徴表現を学習するニューラルネットワーク。",
+    "detail": "次元削減・異常検知・データ生成の前処理に利用される。エンコーダとデコーダの間のボトルネック層が潜在空間を形成する。VAE（変分オートエンコーダ）に発展して生成モデルとしても機能するようになった。",
+    "relatedTermIds": ["vae", "dropout", "dnn"],
+    "importance": 2
+  },
+  {
+    "id": "dropout",
+    "term": "ドロップアウト",
+    "termEn": "Dropout",
+    "categoryId": "ch5",
+    "definition": "学習中にランダムに一定割合のニューロンを無効化することで、特定のニューロンへの依存を減らし過学習を抑制する正則化手法。",
+    "detail": "各訓練ステップでランダムに選ばれたニューロンがゼロにされ、残りのニューロンで学習を進める。推論時は全ニューロンを使用し出力値をドロップ率でスケール調整する。アンサンブル的な効果があり汎化性能の向上に貢献する。",
+    "relatedTermIds": ["overfitting", "regularization", "batch_normalization"],
+    "importance": 1
+  },
+  {
+    "id": "batch_normalization",
+    "term": "バッチ正規化",
+    "termEn": "Batch Normalization",
+    "categoryId": "ch5",
+    "definition": "各層の入力をミニバッチ単位で平均0・分散1に正規化することで学習を高速化・安定化し、勾配消失を緩和する技術。",
+    "detail": "2015年に提案された手法で、内部共変量シフト（Internal Covariate Shift）を軽減し、より大きな学習率を使えるようになる。正規化後にスケールとシフトのパラメータ（γ・β）を学習する。Transformerではレイヤー正規化が主流となっている。",
+    "relatedTermIds": ["normalization_layer", "dropout", "vanishing_gradient", "dnn"],
+    "importance": 1
+  },
+  {
+    "id": "normalization_layer",
+    "term": "正規化層",
+    "termEn": "Normalization Layer",
+    "categoryId": "ch5",
+    "definition": "ニューラルネットワークの各層の活性化を統計的に正規化し、学習を安定化させる層の総称で、バッチ正規化・レイヤー正規化・グループ正規化などがある。",
+    "detail": "バッチ正規化（Batch Norm）はミニバッチ方向、レイヤー正規化（Layer Norm）は特徴量方向に正規化する。Transformerアーキテクチャではレイヤー正規化が標準的に使用される。正規化層により深いネットワークの安定学習が実現される。",
+    "relatedTermIds": ["batch_normalization", "transformer", "vanishing_gradient"],
+    "importance": 2
+  },
+  {
+    "id": "skip_connection",
+    "term": "スキップ結合",
+    "termEn": "Skip Connection",
+    "categoryId": "ch5",
+    "definition": "層をスキップして入力をそのまま後段に加算する接続で、深いネットワークの勾配消失問題を解決し安定した学習を可能にする。",
+    "detail": "ResNetで提案された残差接続（Residual Connection）が代表例で、F(x)+xの残差を学習するという設計。100層を超える深いネットワークの学習を可能にし、画像認識の精度を大幅に向上させた。TransformerやDenseNetにも採用されている重要な技術。",
+    "relatedTermIds": ["resnet", "vanishing_gradient", "cnn", "dnn"],
+    "importance": 1
+  },
+  {
+    "id": "transfer_learning",
+    "term": "転移学習",
+    "termEn": "Transfer Learning",
+    "categoryId": "ch5",
+    "definition": "大量のデータで事前学習されたモデルの知識を、少量データの別タスクに活用することで効率的に高性能モデルを構築する手法。",
+    "detail": "事前学習済みモデルの特徴抽出器部分を固定し、タスク固有の層だけを学習する「特徴量抽出」と、全体を再学習する「ファインチューニング」がある。ImageNetで事前学習されたCNNや、大規模テキストで事前学習されたBERT・GPTが典型例。少ないデータで高い性能を実現できる。",
+    "relatedTermIds": ["fine_tuning", "bert", "gpt", "cnn"],
+    "importance": 1
+  },
+  {
+    "id": "fine_tuning",
+    "term": "ファインチューニング",
+    "termEn": "Fine-Tuning",
+    "categoryId": "ch5",
+    "definition": "事前学習済みモデルのパラメータを特定のタスクのデータでさらに学習更新し、ターゲットタスクに適応させる手法。",
+    "detail": "転移学習の一形態で、全パラメータを再学習する完全ファインチューニングと、一部の層のみ更新する部分ファインチューニングがある。LLMの場合はLoRAなどのパラメータ効率的なファインチューニング手法が広く使われる。ドメイン特化や指示追従能力の付与に重要。",
+    "relatedTermIds": ["transfer_learning", "lora", "bert", "gpt"],
+    "importance": 1
+  },
+  {
+    "id": "data_augmentation",
+    "term": "データ拡張",
+    "termEn": "Data Augmentation",
+    "categoryId": "ch5",
+    "definition": "既存の訓練データに回転・反転・クロッピングなどの変換を加えて人工的にデータ量を増やし、汎化性能を向上させる手法。",
+    "detail": "画像では水平反転・輝度変化・ランダムクロップ、テキストでは同義語置換・翻訳往復などが代表的。データ量が少ない場合の過学習対策として非常に効果的。MixupやCutMixなど高度な拡張手法も開発されている。",
+    "relatedTermIds": ["overfitting", "cnn", "transfer_learning"],
+    "importance": 2
+  },
+  {
+    "id": "early_stopping",
+    "term": "早期打ち切り",
+    "termEn": "Early Stopping",
+    "categoryId": "ch5",
+    "definition": "検証データの損失が改善しなくなった時点で学習を打ち切り、過学習が始まる前にモデルを保存する正則化の一手法。",
+    "detail": "エポック数をハイパーパラメータとして手動設定する代わりに、検証損失の最小点で自動停止する。モデルの学習曲線を監視して忍耐パラメータ（patience）を設定することが多い。計算コストの削減にもなる実用的な過学習対策。",
+    "relatedTermIds": ["overfitting", "hyperparameter", "cross_validation"],
+    "importance": 2
+  },
+  {
+    "id": "model_compression",
+    "term": "モデル圧縮",
+    "termEn": "Model Compression",
+    "categoryId": "ch5",
+    "definition": "大規模なニューラルネットワークを、性能をできるだけ保ちながら軽量化する手法の総称で、枝刈り・量子化・蒸留などが含まれる。",
+    "detail": "エッジデバイスや組み込みシステムへのAI展開において不可欠な技術群。計算量・メモリ使用量・消費電力を削減しつつ、元の大規模モデルに近い精度を維持することを目標とする。各手法を組み合わせて使うことも多い。",
+    "relatedTermIds": ["pruning", "quantization", "knowledge_distillation", "edge_ai"],
+    "importance": 2
+  },
+  {
+    "id": "pruning",
+    "term": "枝刈り",
+    "termEn": "Pruning",
+    "categoryId": "ch5",
+    "definition": "学習済みモデルの重要度が低い（ゼロに近い）重みやニューロン・フィルタを削除し、モデルをスパース化・軽量化する手法。",
+    "detail": "非構造化枝刈り（個別の重みを削除）と構造化枝刈り（フィルタや層全体を削除）に分類される。刈り込み後に再学習（フォールバック学習）を行って精度回復することが多い。量子化と組み合わせてエッジAI向けに活用される。",
+    "relatedTermIds": ["model_compression", "quantization", "knowledge_distillation"],
+    "importance": 3
+  },
+  {
+    "id": "quantization",
+    "term": "量子化",
+    "termEn": "Quantization",
+    "categoryId": "ch5",
+    "definition": "モデルの重みや活性化の数値精度を32ビット浮動小数点から8ビット整数などに落とすことで、メモリ使用量を削減し推論を高速化する手法。",
+    "detail": "INT8量子化が最も一般的で、精度の低下を最小限に抑えつつ4倍のメモリ削減と高速化が得られる。学習後量子化（PTQ）とQAT（Quantization-Aware Training）の2種類がある。スマートフォンや組み込みデバイスへの展開で重要。",
+    "relatedTermIds": ["model_compression", "pruning", "edge_ai"],
+    "importance": 3
+  },
+  {
+    "id": "knowledge_distillation",
+    "term": "蒸留",
+    "termEn": "Knowledge Distillation",
+    "categoryId": "ch5",
+    "definition": "大規模な教師モデルの出力（ソフトラベル）を使って小規模な生徒モデルを学習させ、知識を継承しながら軽量化する手法。",
+    "detail": "教師モデルのソフトマックス出力（ソフトラベル）には、クラス間の類似構造など正解ラベルより豊富な情報が含まれる。生徒モデルはそのソフトラベルを目標に学習することで、ハードラベルだけで学習するより高い汎化性能を得られる。LLMの軽量化にも応用される。",
+    "relatedTermIds": ["model_compression", "pruning", "quantization"],
+    "importance": 2
+  },
+  {
+    "id": "edge_ai",
+    "term": "エッジAI",
+    "termEn": "Edge AI",
+    "categoryId": "ch5",
+    "definition": "クラウドではなくスマートフォン・IoT機器・組み込みデバイスなどのエッジ端末上でAI推論を実行するアーキテクチャ。",
+    "detail": "クラウドへの通信不要で低遅延・プライバシー保護・オフライン動作が可能になる。モデル圧縮（量子化・枝刈り・蒸留）によりリソース制約のあるデバイスでも高速推論が実現できる。製造業・医療・自動車など幅広い分野での実装が進んでいる。",
+    "relatedTermIds": ["model_compression", "quantization", "pruning"],
+    "importance": 2
+  },
+  {
+    "id": "vae",
+    "term": "VAE",
+    "termEn": "Variational Autoencoder",
+    "categoryId": "ch5",
+    "definition": "オートエンコーダを確率論的に拡張し、潜在空間を正規分布でモデル化することで新しいデータを生成できる深層生成モデル。",
+    "detail": "エンコーダが潜在空間の平均と分散を出力し、そこからサンプリングして潜在ベクトルを得る。再構成誤差とKLダイバージェンスの和を最小化するように学習する。画像生成・異常検知・データ拡張など幅広い応用があり、拡散モデルの前身技術の一つ。",
+    "relatedTermIds": ["autoencoder", "gan", "diffusion_model"],
+    "importance": 2
+  },
+  {
+    "id": "llm",
+    "term": "大規模言語モデル",
+    "termEn": "Large Language Model",
+    "categoryId": "ch6",
+    "definition": "数十億〜数千億規模のパラメータを持つTransformerベースの言語モデルで、膨大なテキストデータから自然言語の幅広い能力を獲得したAI。",
+    "detail": "GPT・Claude・PaLM・Llamaなどが代表例。スケーリング則により、パラメータ数・データ量・計算量を増やすほど性能が予測可能に向上する。ゼロショット・フューショット学習により多様なタスクに対応する。RLHF・RAG・LoRAなどの技術で実用化が進む。",
+    "relatedTermIds": ["gpt", "bert", "transformer", "scaling_law", "rag"],
+    "importance": 1
+  },
+  {
+    "id": "gpt",
+    "term": "GPT",
+    "termEn": "Generative Pre-trained Transformer",
+    "categoryId": "ch6",
+    "definition": "Transformerのデコーダ部分をベースに、次のトークンを予測する自己回帰的な事前学習を行った大規模言語モデル。",
+    "detail": "OpenAIが開発し、GPT-3以降はIn-Context Learningにより追加学習なしで多様なタスクをこなせるようになった。ChatGPTはGPT-4にRLHFで指示追従性を付与したもの。デコーダのみのアーキテクチャで逐次的にテキストを生成するのが特徴。",
+    "relatedTermIds": ["transformer", "llm", "bert", "rlhf", "in_context_learning"],
+    "importance": 1
+  },
+  {
+    "id": "bert",
+    "term": "BERT",
+    "termEn": "Bidirectional Encoder Representations from Transformers",
+    "categoryId": "ch6",
+    "definition": "Transformerのエンコーダ部分をベースに、マスク言語モデリングにより双方向に文脈を理解する事前学習済み言語モデル。",
+    "detail": "Googleが2018年に発表し、NLPの各種タスクで当時の最高性能を達成した。文の両方向の文脈を同時に学習できるため、文章理解・質問応答・感情分析などに優れる。テキスト生成より理解・分類向きで、GPTとは対照的なアーキテクチャ。",
+    "relatedTermIds": ["transformer", "gpt", "llm", "transfer_learning"],
+    "importance": 1
+  },
+  {
+    "id": "transformer_application",
+    "term": "Transformer応用",
+    "termEn": "Transformer Applications",
+    "categoryId": "ch6",
+    "definition": "Transformerアーキテクチャを画像・音声・マルチモーダルなどテキスト以外のドメインにも適用した技術・モデル群の総称。",
+    "detail": "Vision Transformer（ViT）は画像をパッチに分割してTransformerで処理し画像認識を実現する。音声認識・タンパク質構造予測（AlphaFold）・物体検出（DETR）などにも応用が広がる。Attention機構の汎用性の高さが多様なドメインへの展開を可能にしている。",
+    "relatedTermIds": ["transformer", "multimodal", "bert", "gpt"],
+    "importance": 2
+  },
+  {
+    "id": "diffusion_model",
+    "term": "拡散モデル",
+    "termEn": "Diffusion Model",
+    "categoryId": "ch6",
+    "definition": "データにノイズを段階的に加える前向き過程と、ノイズから元データを段階的に復元する逆過程を学習する深層生成モデル。",
+    "detail": "Stable DiffusionやDALL-Eなど高品質な画像生成で主流となっている技術。GANと比べて学習が安定しており多様なサンプルを生成できる。テキストからの画像生成ではテキストエンコーダと組み合わせた潜在拡散モデル（Latent Diffusion Model）が標準的。",
+    "relatedTermIds": ["gan", "vae", "multimodal"],
+    "importance": 1
+  },
+  {
+    "id": "gan",
+    "term": "GAN",
+    "termEn": "Generative Adversarial Network",
+    "categoryId": "ch6",
+    "definition": "生成器（Generator）と識別器（Discriminator）が互いに競い合うことで、本物に近い高品質なデータを生成できる深層生成モデル。",
+    "detail": "生成器は識別器を騙すような本物らしいデータを生成し、識別器は本物と偽物を識別しようとする。この敵対的な学習により双方が改善していく。画像生成・データ拡張・スタイル変換などに活用されたが、学習の不安定性（モード崩壊など）が課題。",
+    "relatedTermIds": ["vae", "diffusion_model", "deep_learning"],
+    "importance": 2
+  },
+  {
+    "id": "nerf",
+    "term": "NeRF",
+    "termEn": "Neural Radiance Fields",
+    "categoryId": "ch6",
+    "definition": "複数の視点画像からニューラルネットワークが3Dシーンの放射輝度場を学習し、任意の視点からの画像を合成する手法。",
+    "detail": "2020年に提案され、リアルな3D場面の新規視点画像を生成できる。位置と視線方向を入力として色と密度を出力するMLPで3D空間を暗黙的に表現する。3Dコンテンツ生成・ゲーム・映画・自動運転シミュレーションなど幅広い応用が期待される。",
+    "relatedTermIds": ["diffusion_model", "transformer_application"],
+    "importance": 3
+  },
+  {
+    "id": "rag",
+    "term": "RAG",
+    "termEn": "Retrieval-Augmented Generation",
+    "categoryId": "ch6",
+    "definition": "回答生成時に外部知識ベースから関連文書を検索して参照することで、LLMのハルシネーションを抑制し最新情報への対応を実現する技術。",
+    "detail": "LLMのパラメータに含まれない情報を動的に補完できるため、社内文書QAや最新情報が必要な質問応答に有効。埋め込みベクトル検索（ベクトルDB）と組み合わせるのが一般的。LLMの再学習なしに知識を追加・更新できる実用的な手法。",
+    "relatedTermIds": ["llm", "gpt", "prompt_engineering"],
+    "importance": 1
+  },
+  {
+    "id": "lora",
+    "term": "LoRA",
+    "termEn": "Low-Rank Adaptation",
+    "categoryId": "ch6",
+    "definition": "LLMの全パラメータを更新せず、低ランク行列の積として追加する少量のパラメータのみを学習することで、少ない計算量でファインチューニングを実現する手法。",
+    "detail": "元の重み行列を固定し、低ランク行列A・Bの積(ΔW=BA)を加算する形で適応させる。全パラメータの更新と比較して1/10〜1/1000程度のパラメータで同等の性能が得られる。消費者向けGPUでもLLMをカスタマイズできる実用的な手法として広く普及した。",
+    "relatedTermIds": ["fine_tuning", "llm", "transfer_learning"],
+    "importance": 1
+  },
+  {
+    "id": "rlhf",
+    "term": "RLHF",
+    "termEn": "Reinforcement Learning from Human Feedback",
+    "categoryId": "ch6",
+    "definition": "人間の評価者がAIの出力を採点した報酬モデルを用いて強化学習することで、LLMを人間の意図や価値観に合わせて調整する手法。",
+    "detail": "ChatGPTの学習に採用され大きな注目を集めた。人間のフィードバックから報酬モデルを学習し、そのモデルを報酬関数としてPPOなどの強化学習で言語モデルを最適化する。指示追従性・安全性・倫理性の向上に貢献するアライメント技術。",
+    "relatedTermIds": ["llm", "gpt", "reinforcement_learning", "fine_tuning"],
+    "importance": 1
+  },
+  {
+    "id": "scaling_law",
+    "term": "スケーリング則",
+    "termEn": "Scaling Law",
+    "categoryId": "ch6",
+    "definition": "モデルのパラメータ数・学習データ量・計算量を増やすほど、LLMの性能が予測可能な冪乗則に従って向上するという経験的な法則。",
+    "detail": "OpenAIのKaplanらが2020年に発表し、GPT-3の開発指針となった。モデルサイズ・データ量・計算量の3要素がバランスよく増大することが重要。この法則に基づきパラメータ数を数千億規模まで増やし続けることがLLM発展の原動力となっている。",
+    "relatedTermIds": ["llm", "gpt", "transformer"],
+    "importance": 1
+  },
+  {
+    "id": "multimodal",
+    "term": "マルチモーダル",
+    "termEn": "Multimodal",
+    "categoryId": "ch6",
+    "definition": "テキスト・画像・音声・動画など複数種類のデータを統合して処理・理解・生成するAIのアーキテクチャや手法の総称。",
+    "detail": "GPT-4V・Claude・Geminiなど最新のLLMはマルチモーダル対応が進んでいる。テキストと画像を同一空間にマッピングするCLIPが基盤技術として重要。医療画像診断・自動運転・ロボット制御など複合的な入力が必要な実用システムに不可欠。",
+    "relatedTermIds": ["llm", "transformer_application", "diffusion_model"],
+    "importance": 2
+  },
+  {
+    "id": "in_context_learning",
+    "term": "In-Context Learning",
+    "termEn": "In-Context Learning",
+    "categoryId": "ch6",
+    "definition": "LLMのプロンプト内にタスクの例示（デモンストレーション）を含めるだけで、モデルの再学習なしに新しいタスクを遂行させる能力。",
+    "detail": "ゼロショット（例なし）・ワンショット（1例）・フューショット（数例）学習に分類される。モデルパラメータを更新せずタスク適応が可能な点が特徴。GPT-3で初めて顕著に示され、大規模モデルが持つ新興能力（Emergent Ability）の一つ。",
+    "relatedTermIds": ["gpt", "llm", "prompt_engineering"],
+    "importance": 2
+  },
+  {
+    "id": "prompt_engineering",
+    "term": "プロンプトエンジニアリング",
+    "termEn": "Prompt Engineering",
+    "categoryId": "ch6",
+    "definition": "LLMから望ましい出力を引き出すために、入力文（プロンプト）の内容・構造・例示を設計・最適化する技術。",
+    "detail": "Chain-of-Thought（段階的に考えさせる）・Few-Shot（例示を含める）・Role-based（役割設定）などの手法がある。モデル自体を変更せずに出力品質を向上できる実用的な手法。RAGやツール呼び出しとの組み合わせも重要。",
+    "relatedTermIds": ["llm", "in_context_learning", "rag"],
+    "importance": 2
+  },
+  {
+    "id": "resnet",
+    "term": "ResNet",
+    "termEn": "Residual Network",
+    "categoryId": "ch6",
+    "definition": "スキップ結合（残差接続）を導入することで100層以上の深いネットワーク学習を可能にし、ImageNet認識競技で革新的な性能を達成したCNNアーキテクチャ。",
+    "detail": "2015年にMicrosoftが発表し、ImageNetのTop-5誤差で3.6%という人間並みの性能を達成した。残差接続F(x)+xにより勾配が深い層まで安定して伝わる。ResNet-50やResNet-101が転移学習のベースモデルとして広く使用されている。",
+    "relatedTermIds": ["skip_connection", "cnn", "transfer_learning"],
+    "importance": 2
+  },
+  {
+    "id": "poc",
+    "term": "PoC",
+    "termEn": "Proof of Concept",
+    "categoryId": "ch7",
+    "definition": "本格的な開発・投資の前に、収集したデータで期待する精度が出るか、ビジネス上の価値があるかをプロトタイプで検証するフェーズ。",
+    "detail": "AIプロジェクトではデータの質・量・精度達成可能性を事前に確かめることが重要。PoC成功後も本番環境では精度が下がる場合があり、本番環境でのデータ品質確認が次の課題となる。失敗コストを抑えながら価値検証できる開発フローとして不可欠。",
+    "relatedTermIds": ["mlops", "ai_project_lifecycle", "data_leakage"],
+    "importance": 1
+  },
+  {
+    "id": "mlops",
+    "term": "MLOps",
+    "termEn": "Machine Learning Operations",
+    "categoryId": "ch7",
+    "definition": "機械学習モデルの開発・テスト・デプロイ・モニタリングを自動化・効率化し、継続的にモデルを改善・運用する体制・文化・ツール群の総称。",
+    "detail": "DevOpsの考え方を機械学習に適用したもので、CI/CDパイプライン・モデルレジストリ・モデル監視（ヘルスモニタリング）・データバージョン管理などを含む。モデルドリフトへの対応・再学習自動化・コスト管理が主要な課題。本番AIシステムの信頼性維持に不可欠。",
+    "relatedTermIds": ["model_drift", "health_monitoring", "poc", "data_leakage"],
+    "importance": 1
+  },
+  {
+    "id": "data_leakage",
+    "term": "データリーケージ",
+    "termEn": "Data Leakage",
+    "categoryId": "ch7",
+    "definition": "本来学習時に使用すべきでない情報（予測時には得られない将来情報など）が訓練・検証データに混入し、実際の本番精度と評価精度が乖離する問題。",
+    "detail": "検証では高精度に見えながら本番導入後に精度が大幅低下する「カンニング的な問題」。時系列データで将来データが訓練に混入する場合・ターゲット変数に依存する特徴量を使う場合などが典型例。前処理パイプラインの適切な設計で防止できる。",
+    "relatedTermIds": ["model_drift", "mlops", "cross_validation"],
+    "importance": 1
+  },
+  {
+    "id": "model_drift",
+    "term": "モデルドリフト",
+    "termEn": "Model Drift",
+    "categoryId": "ch7",
+    "definition": "社会環境・ユーザー行動・入力データの性質が変化することで、導入済みAIモデルの精度が時間とともに低下する現象。",
+    "detail": "概念ドリフト（目的変数の分布変化）とデータドリフト（入力特徴量の分布変化）に分類される。定期的なヘルスモニタリングで早期検知し、再学習・モデル更新で対処する。MLOpsの中心的課題の一つで、長期運用には継続的な監視体制が必要。",
+    "relatedTermIds": ["mlops", "health_monitoring", "data_leakage"],
+    "importance": 1
+  },
+  {
+    "id": "health_monitoring",
+    "term": "ヘルスモニタリング",
+    "termEn": "Health Monitoring",
+    "categoryId": "ch7",
+    "definition": "稼働中のAIモデルの予測精度・入力データの分布・システム指標などを継続的に監視し、モデルドリフトや異常を早期検知する仕組み。",
+    "detail": "精度指標・予測値分布・入力特徴量分布・遅延時間などを継続監視する。閾値を超えた場合にアラートを発し、再学習や手動介入につなげる。MLOpsパイプラインの重要コンポーネントで、AIシステムの信頼性を長期的に維持するために不可欠。",
+    "relatedTermIds": ["model_drift", "mlops", "poc"],
+    "importance": 2
+  },
+  {
+    "id": "ai_project_lifecycle",
+    "term": "AIプロジェクトライフサイクル",
+    "termEn": "AI Project Lifecycle",
+    "categoryId": "ch7",
+    "definition": "AIシステムの企画・データ収集・モデル開発・評価・デプロイ・運用・保守という一連の工程を体系化したプロジェクト管理の枠組み。",
+    "detail": "一般的なソフトウェア開発と異なりデータとモデル性能に強く依存するため、PoC段階での実現可能性検証が特に重要。運用フェーズでのモニタリング・再学習サイクルが継続的に必要であることが特徴。MLOpsがこのライフサイクル全体を支える基盤。",
+    "relatedTermIds": ["poc", "mlops", "model_drift"],
+    "importance": 2
+  },
+  {
+    "id": "ai_utilization_levels",
+    "term": "AIの4段階活用",
+    "termEn": "AI Utilization Levels",
+    "categoryId": "ch7",
+    "definition": "組織がAIをどのように活用するかを、AIサービスの利用・ツール開発・カスタムモデル構築・基盤モデル開発の4段階で分類した枠組み。",
+    "detail": "レベル1はAPI活用（ChatGPTなどを利用）、レベル2はMLライブラリを用いた開発、レベル3は自社データでのカスタムモデル構築、レベル4は基盤モデル自体の開発を指す。組織のAI成熟度評価や戦略策定の参考になる。",
+    "relatedTermIds": ["poc", "ai_project_lifecycle", "mlops"],
+    "importance": 2
+  },
+  {
+    "id": "ml_bias",
+    "term": "機械学習バイアス",
+    "termEn": "Machine Learning Bias",
+    "categoryId": "ch7",
+    "definition": "学習データに含まれる偏りや不均衡が原因で、AIが特定の人種・性別・社会集団に対して差別的・不公平な予測を行ってしまう問題。",
+    "detail": "採用AIが女性を不当に低評価したり、顔認識AIが黒人の認識精度が低いなどの事例が報告されている。データ収集時のサンプリングバイアス・ラベルバイアス・歴史的偏りが原因となる。AIガバナンスの観点から継続的な監視・評価が必要。",
+    "relatedTermIds": ["fairness", "ai_governance", "xai"],
+    "importance": 2
+  },
+  {
+    "id": "data_augmentation_ops",
+    "term": "データクレンジング",
+    "termEn": "Data Cleansing",
+    "categoryId": "ch7",
+    "definition": "収集したデータから欠損値・外れ値・重複・誤りなどを検出・修正・除去し、モデル学習に適した高品質なデータセットを整備するプロセス。",
+    "detail": "AIモデルの精度はデータ品質に強く依存するため、前処理・クレンジングが最重要工程の一つとされる（Garbage In, Garbage Out）。欠損値補完・カテゴリ変数エンコーディング・正規化・外れ値処理などが含まれる。アノテーション品質管理とも密接に関係する。",
+    "relatedTermIds": ["data_leakage", "mlops", "ml_bias"],
+    "importance": 2
+  },
+  {
+    "id": "ai_operator_guideline",
+    "term": "AI事業者ガイドライン",
+    "termEn": "AI Operator Guidelines",
+    "categoryId": "ch7",
+    "definition": "日本政府が2024年に公表した、AI開発者・提供者・利用者それぞれが守るべき行動規範を定めたガイドライン。",
+    "detail": "広島AIプロセスの国際的な議論を踏まえて策定された。安全性・透明性・公平性・セキュリティ・プライバシーなどの原則を示し、AI事業者が自主的に準拠することを促す。EU AI法のような法的義務ではなく自主規制的な性格を持つ。",
+    "relatedTermIds": ["ai_governance", "hiroshima_ai_process", "xai"],
+    "importance": 2
+  },
+  {
+    "id": "model_lightweighting",
+    "term": "モデルの軽量化",
+    "termEn": "Model Lightweighting",
+    "categoryId": "ch7",
+    "definition": "大規模AIモデルをエッジデバイスや低リソース環境で動作させるため、精度を保ちながらモデルサイズ・計算量・メモリを削減する手法の総称。",
+    "detail": "枝刈り・量子化・知識蒸留・モバイルネット（MobileNet）などの軽量アーキテクチャ設計が主な手法。社会実装においてエッジAIを実現するための重要技術であり、製造現場・医療・モバイルアプリなど多様な場面での展開を支える。",
+    "relatedTermIds": ["model_compression", "edge_ai", "knowledge_distillation", "mlops"],
+    "importance": 2
+  },
+  {
+    "id": "xai",
+    "term": "説明可能AI",
+    "termEn": "Explainable AI",
+    "categoryId": "ch7",
+    "definition": "AIモデルの判断根拠やプロセスを人間が理解できる形で説明・可視化する技術の総称で、透明性確保とブラックボックス問題の解決を目指す。",
+    "detail": "LIME・SHAP・Grad-CAMなどが代表的な手法。EU AI法では高リスクAIに説明可能性が義務付けられる場合がある。医療・金融・採用など重要意思決定を行うAIシステムで特に重要。モデルの信頼性・公平性・デバッグにも貢献する。",
+    "relatedTermIds": ["ai_governance", "fairness", "transparency", "ml_bias"],
+    "importance": 1
+  },
+  {
+    "id": "copyright_act_30_4",
+    "term": "著作権法30条の4",
+    "termEn": "Copyright Act Article 30-4",
+    "categoryId": "ch8",
+    "definition": "日本の著作権法の規定で、思想・感情の享受を目的としない情報解析（AI学習を含む）に著作物を無許諾で利用できることを定めた条文。",
+    "detail": "2018年の改正で導入され、営利・非営利を問わずAIの機械学習目的なら著作権者の許諾なく著作物を利用できる。ただし「享受目的」すなわち人間がコンテンツを楽しむことを主目的とする場合は認められない。日本のAI開発に有利な環境を提供する世界的に先進的な規定。",
+    "relatedTermIds": ["personal_information_protection_act", "ai_ethics", "ai_governance"],
+    "importance": 1
+  },
+  {
+    "id": "pseudonymized_information",
+    "term": "仮名加工情報",
+    "termEn": "Pseudonymized Information",
+    "categoryId": "ch8",
+    "definition": "他の情報と照合しない限り特定の個人を識別できないように加工した個人情報で、社内での利活用が主な用途。",
+    "detail": "2021年の個人情報保護法改正で導入された区分。匿名加工情報より緩い加工基準で作成でき、社内での分析・AI学習などに利用できるが、第三者提供は原則禁止。匿名加工情報（第三者提供可）と区別して理解することが試験で頻出。",
+    "relatedTermIds": ["anonymized_information", "personal_information_protection_act", "privacy"],
+    "importance": 2
+  },
+  {
+    "id": "anonymized_information",
+    "term": "匿名加工情報",
+    "termEn": "Anonymized Information",
+    "categoryId": "ch8",
+    "definition": "特定の個人を識別できず、かつ復元できないように加工した情報で、第三者への提供が認められる個人情報の加工区分。",
+    "detail": "個人情報保護法で定められた区分で、仮名加工情報と比較して高い加工基準が必要。一方で第三者提供が可能になるため、データ流通・活用の促進に活用できる。加工方法の公表・安全管理措置・提供先の公表が義務付けられる。",
+    "relatedTermIds": ["pseudonymized_information", "personal_information_protection_act", "privacy"],
+    "importance": 2
+  },
+  {
+    "id": "personal_information_protection_act",
+    "term": "個人情報保護法",
+    "termEn": "Personal Information Protection Act",
+    "categoryId": "ch8",
+    "definition": "個人情報の適切な取り扱いを義務付け、個人の権利・利益を保護する日本の法律。",
+    "detail": "個人情報・要配慮個人情報・仮名加工情報・匿名加工情報などの区分を定め、収集・利用・提供・管理に関する義務を規定する。2022年・2024年の改正で本人の権利保護が強化され、AI活用時の個人データ取り扱いに重要な法的枠組みを提供する。",
+    "relatedTermIds": ["pseudonymized_information", "anonymized_information", "privacy", "gdpr"],
+    "importance": 1
+  },
+  {
+    "id": "eu_ai_act",
+    "term": "EU AI法",
+    "termEn": "EU Artificial Intelligence Act",
+    "categoryId": "ch8",
+    "definition": "世界初の包括的なAI規制法で、AIをリスクの高さに応じて4段階に分類し、高リスクAIに厳格な義務を課すEUの規制枠組み。",
+    "detail": "AIを「許容できないリスク（禁止）」「高リスク（厳格義務）」「限定的リスク（透明性義務）」「最小限リスク（自主規制）」の4段階に分類するリスクベースアプローチを採用。社会的スコアリング・バイオメトリック監視などは原則禁止。日本を含む各国のAI規制に影響を与えている。",
+    "relatedTermIds": ["gdpr", "hiroshima_ai_process", "ai_governance", "xai_ethics"],
+    "importance": 1
+  },
+  {
+    "id": "hiroshima_ai_process",
+    "term": "広島AIプロセス",
+    "termEn": "Hiroshima AI Process",
+    "categoryId": "ch8",
+    "definition": "2023年のG7広島サミットで発足した、生成AIの急速な普及に対して国際的なガードレールを構築するための政策プロセス。",
+    "detail": "G7各国が安全で信頼できるAIのための行動規範・指針の作成を合意した枠組み。日本の「AI事業者ガイドライン」にも反映されている。人権・民主主義・法の支配に合致したAIの開発・利用を促進することを目的とする。",
+    "relatedTermIds": ["eu_ai_act", "ai_governance", "ai_operator_guideline"],
+    "importance": 1
+  },
+  {
+    "id": "gdpr",
+    "term": "GDPR",
+    "termEn": "General Data Protection Regulation",
+    "categoryId": "ch8",
+    "definition": "EUの一般データ保護規則で、EU市民の個人データの収集・処理・移転に関する厳格な義務をEU内外の企業に課す法規制。",
+    "detail": "データポータビリティ権（自分のデータを他社へ移行させる権利）・忘れられる権利・自動処理のみによる重大決定を拒否する権利などを規定。日本企業もEU市民のデータを扱う場合は準拠義務がある。違反時の制裁金は年間売上高の4%または2000万ユーロの高い方。",
+    "relatedTermIds": ["personal_information_protection_act", "eu_ai_act", "privacy"],
+    "importance": 2
+  },
+  {
+    "id": "xai_ethics",
+    "term": "XAI（倫理的文脈）",
+    "termEn": "Explainable AI (Ethics Context)",
+    "categoryId": "ch8",
+    "definition": "AIの判断の説明可能性を倫理・法的義務の観点から捉えた概念で、AIの透明性・説明責任・公平性を確保するための原則と実践。",
+    "detail": "EU AI法では高リスクAIに説明可能性が義務付けられる。人事・融資・医療など個人の権利・利益に影響するAI判断においては、判断根拠の開示が倫理的に求められる。技術的なXAI手法（SHAP・LIME等）と組み合わせて実装される。",
+    "relatedTermIds": ["xai", "eu_ai_act", "transparency", "accountability"],
+    "importance": 2
+  },
+  {
+    "id": "deepfake",
+    "term": "ディープフェイク",
+    "termEn": "Deepfake",
+    "categoryId": "ch8",
+    "definition": "ディープラーニング（特にGANや拡散モデル）を用いて、人物の顔・声・動作を本物そっくりに合成・改変した偽の画像・動画・音声。",
+    "detail": "政治家・著名人のフェイク動画によるフェイクニュース拡散や、なりすまし・名誉毀損・詐欺などの悪用が深刻な社会問題となっている。真偽判定技術（ディープフェイク検出AI）の開発も進んでいる。規制強化・リテラシー教育が対策として求められる。",
+    "relatedTermIds": ["gan", "diffusion_model", "ai_ethics"],
+    "importance": 2
+  },
+  {
+    "id": "fairness",
+    "term": "公平性",
+    "termEn": "Fairness",
+    "categoryId": "ch8",
+    "definition": "AIの予測・意思決定が特定の属性（人種・性別・年齢など）に基づいて差別的・不平等にならないことを確保するAI倫理の核心原則。",
+    "detail": "公平性の定義には複数のアプローチ（個人の公平性・グループ公平性・反事実的公平性など）があり、数学的に両立しない場合がある。学習データのバイアス除去・公平性指標の継続監視が対策として重要。EU AI法やAI事業者ガイドラインでも重要原則とされる。",
+    "relatedTermIds": ["transparency", "accountability", "ml_bias", "xai_ethics"],
+    "importance": 1
+  },
+  {
+    "id": "transparency",
+    "term": "透明性",
+    "termEn": "Transparency",
+    "categoryId": "ch8",
+    "definition": "AIシステムの仕組み・学習データ・判断根拠・リスクを外部から検証・確認できる状態を確保するAI倫理の基本原則。",
+    "detail": "モデルの説明可能性・ログ管理・監査可能性・情報開示などが透明性確保の具体的手段。GAIの出力物がAI生成であることを明示する義務もEU AI法などで求められる。透明性は公平性・説明責任と並ぶAI倫理の三本柱の一つ。",
+    "relatedTermIds": ["fairness", "accountability", "xai_ethics"],
+    "importance": 1
+  },
+  {
+    "id": "accountability",
+    "term": "説明責任",
+    "termEn": "Accountability",
+    "categoryId": "ch8",
+    "definition": "AIシステムの開発者・運営者が、AIの判断・影響・リスクについて説明し、問題が生じた際に責任を負う義務と体制。",
+    "detail": "AIが自律的に判断を行う場合でも、設計・運用者が人間として最終責任を持つ「人間の監督（Human Oversight）」が原則。AI事業者ガイドラインやEU AI法でも組織としての説明責任体制の整備が求められる。公平性・透明性とともにAIガバナンスの中核原則。",
+    "relatedTermIds": ["transparency", "fairness", "xai_ethics", "ai_governance"],
+    "importance": 1
+  },
+  {
+    "id": "privacy",
+    "term": "プライバシー",
+    "termEn": "Privacy",
+    "categoryId": "ch8",
+    "definition": "個人が自分に関する情報の収集・利用・公開を管理する権利で、AI開発・運用において保護が求められる基本的権利。",
+    "detail": "AIが大量の個人データを学習・利用するため、プライバシー侵害リスクが高まる。プライバシー・バイ・デザイン（設計段階からのプライバシー組み込み）・データ最小化・目的限定が重要な原則。個人情報保護法・GDPRなどの法規制が保護枠組みを提供する。",
+    "relatedTermIds": ["personal_information_protection_act", "gdpr", "fairness"],
+    "importance": 2
+  },
+  {
+    "id": "ai_ethics",
+    "term": "AI倫理",
+    "termEn": "AI Ethics",
+    "categoryId": "ch8",
+    "definition": "AIの開発・利用・影響に関して社会的に望ましい行動・原則・価値観を定める学際的な研究・実践分野。",
+    "detail": "公平性・透明性・説明責任・プライバシー・安全性・人間の監督・環境への配慮などが主要原則として議論される。OECD AI原則・アシロマAI原則・IEEE倫理ガイドラインなど国際的な枠組みも策定されている。技術者だけでなく法律・哲学・社会科学の専門家との連携が必要。",
+    "relatedTermIds": ["fairness", "transparency", "accountability", "privacy"],
+    "importance": 2
+  },
+  {
+    "id": "ai_governance",
+    "term": "AIガバナンス",
+    "termEn": "AI Governance",
+    "categoryId": "ch8",
+    "definition": "AIシステムの開発・利用における原則・ポリシー・リスク管理体制・監督機能を組織・社会レベルで整備・運営する取り組み。",
+    "detail": "組織内でのAIリスク評価・倫理審査・ポリシー策定・人材育成・インシデント対応などが含まれる。国際的には広島AIプロセス・EU AI法・各国ガイドラインが枠組みを提供する。AIの便益を最大化しつつリスクを管理する体制構築が企業・政府に求められている。",
+    "relatedTermIds": ["ai_ethics", "eu_ai_act", "hiroshima_ai_process", "accountability"],
+    "importance": 1
+  }
+]
