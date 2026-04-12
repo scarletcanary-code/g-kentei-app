@@ -2,9 +2,13 @@ import {
   createContext,
   useContext,
   useCallback,
+  useEffect,
+  useRef,
   type ReactNode,
 } from 'react';
 import { usePersistedState } from '../hooks/usePersistedState';
+import { useAuth } from './auth-context';
+import { loadProgressFromCloud, saveProgressToCloud } from '../lib/firestore-sync';
 import type { UserProgress, CategoryStats, QuestionHistory } from '../types/progress';
 
 // ---- initial state ----
@@ -37,6 +41,58 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
     PROGRESS_KEY,
     createInitialProgress()
   );
+
+  const { user } = useAuth();
+  const cloudLoadedRef = useRef(false);
+  const prevUidRef = useRef<string | null>(null);
+
+  // Load from Firestore on login
+  useEffect(() => {
+    if (!user) {
+      cloudLoadedRef.current = false;
+      prevUidRef.current = null;
+      return;
+    }
+
+    if (prevUidRef.current === user.uid) return;
+    prevUidRef.current = user.uid;
+
+    loadProgressFromCloud(user.uid).then((cloud) => {
+      if (cloud && cloud.totalAnswered > 0) {
+        // Merge: use whichever has more answers
+        setProgress((local) => {
+          if (cloud.totalAnswered >= local.totalAnswered) {
+            return cloud;
+          }
+          // Local has more data — upload local to cloud
+          saveProgressToCloud(user.uid, local);
+          return local;
+        });
+      } else {
+        // No cloud data — upload local
+        setProgress((local) => {
+          if (local.totalAnswered > 0) {
+            saveProgressToCloud(user.uid, local);
+          }
+          return local;
+        });
+      }
+      cloudLoadedRef.current = true;
+    });
+  }, [user, setProgress]);
+
+  // Save to Firestore on progress change (debounced)
+  const saveTimerRef = useRef<ReturnType<typeof setTimeout>>(undefined);
+  useEffect(() => {
+    if (!user || !cloudLoadedRef.current) return;
+
+    clearTimeout(saveTimerRef.current);
+    saveTimerRef.current = setTimeout(() => {
+      saveProgressToCloud(user.uid, progress);
+    }, 2000);
+
+    return () => clearTimeout(saveTimerRef.current);
+  }, [progress, user]);
 
   const recordAnswer = useCallback(
     (questionId: string, categoryId: string, isCorrect: boolean) => {
@@ -83,7 +139,6 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           overallTotalAnswered > 0 ? overallTotalCorrect / overallTotalAnswered : 0;
 
         // --- weak question ids ---
-        // Build per-question attempt/correct counts across all categories
         const questionAttemptsMap: Record<string, { attempts: number; correct: number }> = {};
         for (const stats of Object.values(newCategoryStats)) {
           for (const h of stats.questionHistory) {

@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import ThemeToggle from '../shared/ThemeToggle';
+import UserMenu from '../shared/UserMenu';
 import { cn } from '../../lib/utils';
 
 const NAV_ITEMS = [
@@ -41,7 +42,10 @@ export default function Header() {
             </Link>
           ))}
         </nav>
-        <ThemeToggle />
+        <div className="flex items-center gap-2">
+          <UserMenu />
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );
