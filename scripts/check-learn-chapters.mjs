@@ -332,11 +332,25 @@ for (const ch of chapters) {
 
   // 新規追加チェック
 
-  // 9. sections.length >= 3 && sections.length <= 5
-  if (ch.sections.length >= 3 && ch.sections.length <= 5) {
-    pass(`${label}: sections.length = ${ch.sections.length} (3〜5)`);
+  // 9. sections.length >= 3 (上限なし：Phase6.5で6以上を許可)
+  if (ch.sections.length >= 3) {
+    pass(`${label}: sections.length = ${ch.sections.length} >= 3`);
   } else {
-    fail(`${label}: sections.length = ${ch.sections.length} (expected 3〜5)`);
+    fail(`${label}: sections.length = ${ch.sections.length} < 3`);
+  }
+
+  // 9b. overview + sections.body 合計字数 >= 1800
+  // Phase6.5 タスク 0020 の対象章（ch2/ch3/ch5/ch6/ch7/ch8）のみ強制適用
+  // ch1/ch4 は現時点で 1800 字未満だが Phase6.5 スコープ外のため警告のみ
+  const TARGET_1800_CHAPTERS = new Set(['ch2', 'ch3', 'ch5', 'ch6', 'ch7', 'ch8']);
+  const totalSectionsBodyLength = ch.sections.reduce((sum, s) => sum + (s.body ? s.body.length : 0), 0);
+  const totalChars = ch.overviewLength + totalSectionsBodyLength;
+  if (totalChars >= 1800) {
+    pass(`${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} >= 1800`);
+  } else if (TARGET_1800_CHAPTERS.has(label)) {
+    fail(`${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} < 1800`);
+  } else {
+    process.stdout.write(`WARN: ${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} < 1800 (Phase6.5スコープ外章のため警告のみ)\n`);
   }
 
   // 10. 各 section.heading が 10〜60 文字

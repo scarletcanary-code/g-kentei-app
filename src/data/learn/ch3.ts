@@ -11,7 +11,7 @@ export const learnCh3: LearnChapter = {
     {
       heading: '機械学習の3つのパラダイム：教師あり・なし・強化学習',
       body: '機械学習は「どんなデータでどう学ぶか」によって3つのパラダイムに分類されます。「教師あり学習」は正解ラベル付きデータで学習し、メール迷惑フィルタや画像分類などに使われます。出力が「分類（カテゴリ）」か「回帰（数値）」かでさらに分かれます。「教師なし学習」はラベルなしデータからパターンを発見します。似たデータをグループ化する「クラスタリング（k-means等）」と、データの次元を圧縮する「次元削減（PCA等）」が代表的な手法です。「強化学習」は環境との試行錯誤を通じて「報酬」を最大化する行動を学びます。ゲームAIや自動運転の意思決定などに活用されます。G検定ではこの3分類とそれぞれの代表アルゴリズムの理解が必須です。',
-      termIds: ['supervised_learning', 'unsupervised_learning', 'reinforcement_learning'],
+      termIds: ['supervised_learning', 'unsupervised_learning', 'reinforcement_learning', 'logistic_regression'],
     },
     {
       heading: '代表的なアルゴリズム：決定木・SVM・ランダムフォレスト',
@@ -27,6 +27,11 @@ export const learnCh3: LearnChapter = {
       heading: 'モデル評価指標：適合率・再現率・F値・MSE・RMSE',
       body: 'モデルの性能を測る評価指標は、タスクによって使い分けます。分類タスクでは「適合率（Precision）」と「再現率（Recall）」が基本です。適合率は「陽性と予測したうち本当に陽性の割合」で、誤検知を減らしたい場合（スパムフィルタ等）に重視します。再現率は「本当の陽性のうち陽性と予測できた割合」で、見逃しを減らしたい場合（がん検診等）に重視します。「F値（F1スコア）」は適合率と再現率の調和平均で、両者のバランスをとった指標です。回帰タスクでは「MSE（平均二乗誤差）」と「RMSE（平均二乗誤差の平方根）」が代表的です。MSEは予測値と正解の差の二乗平均で外れ値に敏感、RMSEはMSEの平方根で元の単位と同じスケールになるため解釈が容易です。',
       termIds: ['precision', 'recall', 'f_score', 'mse', 'rmse'],
+    },
+    {
+      heading: 'ロジスティック回帰・ナイーブベイズ・勾配ブースティング：分類の主要アルゴリズム',
+      body: '教師あり学習には決定木・SVM以外にも重要なアルゴリズムがあります。「ロジスティック回帰」は名前に「回帰」が付きますが、実際は二値分類に用いる代表的な手法です。シグモイド関数を使って出力を0〜1の確率に変換し、「スパムか否か」などの判断に活用されます。線形モデルであるため解釈しやすく、医療・金融など説明責任が求められる場面で広く使われます。「ナイーブベイズ」はベイズ定理を基に、各特徴量が「条件付き独立（互いに独立して目的変数に影響する）」という仮定のもとで分類します。実際にはこの仮定が成立しない場面も多いですが、テキスト分類などで計算効率が高く実用的な結果を出します。「勾配ブースティング」はアンサンブル学習の一種で、弱学習器（浅い決定木）を順次追加しながら前モデルの誤差を修正していく手法です。XGBoost・LightGBMなどの実装が競技データ分析で高精度を発揮し、実務でも広く採用されています。',
+      termIds: ['logistic_regression', 'sigmoid_function', 'ensemble_learning'],
     },
   ],
   keyTermIds: [
@@ -54,7 +59,13 @@ export const learnCh3: LearnChapter = {
   exampleQuestionIds: ['ch3-001', 'ch3-003', 'ch3-010'],
   source_refs: [
     'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:f82a549c-19b8-4815-b53a-047df3502595 機械学習パラダイム・教師あり/なし学習・強化学習・決定木・SVM・アンサンブル',
-    'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:6a05d5ec-fce7-4f73-84a9-6100b0374a60 過学習・正則化・交差検証・評価指標（適合率・再現率・F値・MSE・RMSE）',
+    'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:6a05d5ec-fce7-4f73-84a9-6100b0374a60 過学習・正則化・交差検証・評価指標（適合率・再現率・F値・MSE・RMSE）・ロジスティック回帰・ナイーブベイズ・勾配ブースティング',
+  ],
+  source_ref_supplements: [
+    'https://zero2one.jp/ai-word/gradient-boosting/?srsltid=AfmBOooHqI46d2eYnBLJVPbfPrp_DDUuDvvpMPctihjlVjLe-lpqoooS',
+    'https://note.com/coroeri/n/nc8f717e2e0f8',
+    'https://ai4mdx.com/g/study_flow.html',
+    'https://note.com/firm_bonobo7417/n/nda44f11e9c2b',
   ],
   relatedChapters: ['ch4'],
 };

@@ -35,6 +35,7 @@ const VALID_CHAPTER_IDS = Object.keys(CHAPTER_TITLES);
 // コマンドライン引数のパース
 const args = process.argv.slice(2);
 const chapterArgIdx = args.indexOf('--chapter');
+const topicArgIdx = args.indexOf('--topic');
 
 // --chapter 未指定時
 if (chapterArgIdx === -1 || chapterArgIdx + 1 >= args.length) {
@@ -61,8 +62,15 @@ if (!apiKey || apiKey.trim() === '') {
 const chapterNumber = parseInt(chapterId.replace('ch', ''), 10);
 const chapterTitle = CHAPTER_TITLES[chapterId];
 
+// --topic オプションがあれば追加トピックをクエリに含める
+const topicStr = (topicArgIdx !== -1 && topicArgIdx + 1 < args.length)
+  ? args[topicArgIdx + 1]
+  : null;
+
 // クエリ文字列を構築
-const query = `G検定 第${chapterNumber}章 ${chapterTitle} を初学者向けに 300 文字で解説してください`;
+const query = topicStr
+  ? `G検定 第${chapterNumber}章 ${chapterTitle}：${topicStr} を初学者向けに詳しく解説してください`
+  : `G検定 第${chapterNumber}章 ${chapterTitle} を初学者向けに 300 文字で解説してください`;
 
 // Felo API を呼び出す
 const FELO_API_URL = 'https://openapi.felo.ai/v2/chat';
@@ -107,6 +115,26 @@ try {
 
   process.stdout.write(resultText);
   process.stdout.write('\n');
+
+  // citations を stderr に出力（source_ref_supplements 記録用）
+  let citations = [];
+  if (data && data.data && data.data.resources && Array.isArray(data.data.resources)) {
+    citations = data.data.resources.map(s => s.link || s.url || s.source || JSON.stringify(s)).filter(Boolean);
+  } else if (data && data.data && data.data.sources) {
+    citations = data.data.sources.map(s => s.url || s.link || s.source || JSON.stringify(s)).filter(Boolean);
+  } else if (data && data.sources) {
+    citations = data.sources.map(s => s.url || s.link || s.source || JSON.stringify(s)).filter(Boolean);
+  } else if (data && data.citations) {
+    citations = data.citations;
+  } else if (data && data.data && data.data.citations) {
+    citations = data.data.citations;
+  }
+  if (citations.length > 0) {
+    process.stderr.write(`\n[citations]\n${citations.join('\n')}\n`);
+  } else {
+    process.stderr.write(`\n[no citations found]\n`);
+  }
+
   process.exit(0);
 
 } catch (error) {

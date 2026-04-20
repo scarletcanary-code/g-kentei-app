@@ -21,7 +21,12 @@ export const learnCh2: LearnChapter = {
     {
       heading: 'AlphaGoからChatGPT・生成AIへ',
       body: '第3次ブームを象徴するマイルストーンが「AlphaGo」です。2016年、DeepMindのAlphaGoが深層強化学習を用いて囲碁の世界チャンピオンを打ち破り、「AIは囲碁では人間に勝てない」という常識を覆しました。そして2022年末、OpenAIが公開した「ChatGPT」は生成AIの能力を一般向けに示し、わずか2ヶ月で1億ユーザーを突破する歴史的な普及を遂げました。ChatGPTの基盤は2017年に発表された「Transformer」アーキテクチャです。Transformerは「Attention機構」により入力全体の関係を並列処理できる画期的な設計で、現在の大規模言語モデル（LLM）の基盤技術となっています。',
-      termIds: ['neural_network', 'knowledge_representation'],
+      termIds: ['neural_network', 'transformer', 'llm'],
+    },
+    {
+      heading: 'AIブームを支えたハードウェアとデータ基盤',
+      body: '第3次AIブームが過去と決定的に異なる理由の一つが「ハードウェアとデータ基盤の革新」です。GPU（グラフィックス処理装置）は元々ゲームグラフィック用に開発されましたが、大規模な行列演算を並列実行できる特性がニューラルネットワークの学習に最適でした。NVIDIAが提供するCUDA（Compute Unified Device Architecture）というプログラミング基盤により、研究者はGPUを汎用計算に活用できるようになり、ディープラーニングの学習速度が劇的に向上しました。データ面では「ImageNet」が転換点となりました。1,400万枚以上の画像に手動でラベルを付けた大規模データセットで、このデータを使ったILSVRC（大規模視覚認識コンテスト）でAlexNetが2012年に圧勝し、CNN＋GPU＋大規模データの組み合わせが実用的であることを世界に証明しました。さらにクラウドコンピューティングの普及により、個人・スタートアップでも大規模計算資源へのアクセスが可能となり、AIの民主化が加速しています。',
+      termIds: ['gpu', 'deep_learning', 'big_data'],
     },
   ],
   keyTermIds: [
@@ -50,6 +55,12 @@ export const learnCh2: LearnChapter = {
   source_refs: [
     'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:f82a549c-19b8-4815-b53a-047df3502595 3つのAIブーム・エキスパートシステム・探索推論・知識表現・知識獲得ボトルネック',
     'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:6a05d5ec-fce7-4f73-84a9-6100b0374a60 ビッグデータ・GPU・ディープラーニング台頭・AlexNet・ILSVRC・AlphaGo',
+  ],
+  source_ref_supplements: [
+    'https://arstechnica.com/ai/2024/11/how-a-stubborn-computer-scientist-accidentally-launched-the-deep-learning-boom/',
+    'https://blogs.nvidia.co.jp/blog/accelerating-ai-artificial-intelligence-gpus/',
+    'https://note.com/medicalconsult/n/n8c5ff6ee79a7',
+    'https://zenn.dev/kmitsu76/books/975652dc36299b/viewer/207192',
   ],
   relatedChapters: ['ch1', 'ch3'],
 };

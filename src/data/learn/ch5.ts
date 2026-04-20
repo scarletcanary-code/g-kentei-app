@@ -15,7 +15,7 @@ export const learnCh5: LearnChapter = {
     },
     {
       heading: 'RNNの時系列処理の動機と限界',
-      body: 'テキスト・音声・センサーデータのような「時系列データ」を通常の全結合ネットワークで処理すると、時間的なつながり（文脈）を保持できません。例えば「私は昨日図書館で本を______」の空欄を埋めるには、前の文脈を覚えておく必要があります。RNN（再帰型ニューラルネットワーク）は「隠れ状態（hidden state）」と呼ばれる記憶を持ち、前のステップの情報を次のステップに引き継ぎながら逐次処理します。しかし通常のRNNには「長期依存関係」の問題があります。「私は5年前に東京の図書館で読んだ本を______」のように時間的に遠い情報に依存するとき、誤差逆伝播でその遠い部分への勾配が消えてしまい（勾配消失）、学習が困難になります。',
+      body: 'テキスト・音声・センサーデータのような「時系列データ」を通常の全結合ネットワークで処理すると、時間的なつながり（文脈）を保持できません。例えば「私は昨日図書館で本を______」の空欄を埋めるには、前の文脈を覚えておく必要があります。RNN（再帰型ニューラルネットワーク）は「隠れ状態（hidden state）」と呼ばれる記憶を持ち、前のステップの情報を次のステップに引き継ぎながら逐次処理します。しかし通常のRNNには「長期依存関係」の問題があります。「私は5年前に東京の図書館で読んだ本を______」のように時間的に遠い情報に依存するとき、誤差逆伝播でその遠い部分への勾配が消えてしまい（勾配消失）、学習が困難になります。RNNの学習アルゴリズムはBPTT（Backpropagation Through Time：時間方向への逆伝播）と呼ばれ、時間軸を展開したネットワークに通常の誤差逆伝播を適用します。しかし系列が長くなるほど勾配が指数的に消滅または爆発するため、LSTMによるゲート機構でこの問題を緩和します。',
       termIds: ['rnn', 'vanishing_gradient'],
     },
     {
@@ -25,13 +25,18 @@ export const learnCh5: LearnChapter = {
     },
     {
       heading: 'Transformerの注意機構とRNNとの根本的な違い',
-      body: 'Transformer（2017年「Attention Is All You Need」）はRNNを完全に排し、「Self-Attention（自己注意機構）」のみで系列処理を実現する革新的なアーキテクチャです。RNNが時刻ステップを順番に処理するのに対し、Transformerは入力系列全体を一度に並列処理できます。Self-Attentionは各トークンが系列内の他のすべてのトークンとの関連度（注意スコア）を計算し、文脈に応じて重み付きで情報を集約します。例えば「川岸に犬がいた。それは水を飲んでいた」の「それ」が「犬」を指すと自動的に関連付けられます。並列処理可能なため大規模なデータと計算資源を活用でき、GPT・BERTなどの大規模言語モデル（LLM）の基盤となっています。',
+      body: 'Transformer（2017年「Attention Is All You Need」）はSelf-Attention（自己注意機構）のみで系列処理を実現します。Self-AttentionはQ（Query）・K（Key）・V（Value）の3行列を用い、QとKの内積を次元数の平方根で割った「スケールドドットプロダクト」にsoftmaxを適用してVを重み付け集約します。この計算により「川岸に犬がいた。それは水を飲んでいた」の「それ」が「犬」を指すと自動的に関連付けられます。また、TransformerはRNNのような逐次処理がなく位置情報を持たないため、サイン・コサイン波を組み合わせた「Positional Encoding」を入力に加算してトークンの順序を表現します。これにより全トークンを並列処理しつつ語順も考慮でき、GPT・BERTなどLLMの基盤となっています。',
       termIds: ['transformer', 'attention_mechanism', 'self_attention'],
     },
     {
       heading: '転移学習・ファインチューニングとモデル圧縮',
       body: '大規模なデータで学習済みのモデルを別のタスクに流用する「転移学習」は、少ないデータでも高性能を実現する重要な技術です。例えばImageNetで学習した画像認識モデルを医療画像診断に応用する場合、初期重みとして活用できます。「ファインチューニング」は事前学習モデルの一部または全パラメータを新しいタスクのデータで微調整する手法です。LLMのファインチューニングでは「LoRA」のような効率的な手法も広く使われます。「モデル圧縮」はエッジデバイス（スマートフォン等）への展開のために欠かせません。「量子化」は重みの精度を下げて軽量化、「枝刈り（プルーニング）」は重要度の低い重みを削除、「知識蒸留」は大きなモデルの知識を小さなモデルに転移します。',
       termIds: ['transfer_learning', 'fine_tuning', 'model_compression'],
+    },
+    {
+      heading: 'バッチ正規化・ドロップアウト・スキップ結合：深いNNを安定させる3技術',
+      body: '深いニューラルネットワークを学習させる際に欠かせない安定化技術が3つあります。「バッチ正規化（Batch Normalization）」はミニバッチ内の各層への入力を平均0・分散1に正規化する手法です。CNNでは畳み込み層の後に挿入し、内部共変量シフトを抑えて大きな学習率での安定学習を実現します。Transformerでは代わりにLayer Normalizationが使われます。「ドロップアウト」は学習時にランダムに一定割合のニューロンを無効化する正則化手法で、過学習を防ぎます。Transformer系モデルでは各サブ層の後に適用されます。「スキップ結合（残差接続）」はResNetで導入された手法で、入力を数層先にそのまま足し合わせる経路を追加します。これにより勾配消失を回避して100層以上の深いネットワークを学習でき、現代のCNNやTransformerアーキテクチャに広く組み込まれています。',
+      termIds: ['batch_normalization', 'dropout', 'skip_connection'],
     },
   ],
   keyTermIds: [
@@ -58,8 +63,14 @@ export const learnCh5: LearnChapter = {
   ],
   exampleQuestionIds: ['ch5-001', 'ch5-005', 'ch5-010'],
   source_refs: [
-    'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:f82a549c-19b8-4815-b53a-047df3502595 CNN・RNN・LSTM・GRU・Transformer・Attention機構・Self-Attention',
+    'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:f82a549c-19b8-4815-b53a-047df3502595 CNN・RNN・LSTM・GRU・Transformer・Attention機構・Self-Attention・Q/K/V・Positional Encoding・BPTT',
     'notebook:fb01512e-7e46-4df1-bb14-eff57a413bc3 source:6a05d5ec-fce7-4f73-84a9-6100b0374a60 ドロップアウト・バッチ正規化・スキップ結合・転移学習・ファインチューニング・モデル圧縮',
+  ],
+  source_ref_supplements: [
+    'https://note.com/gfiddich12years/n/ned8d33e427dc',
+    'https://zenn.dev/tasse/articles/7413600fb1796d',
+    'https://www.jdla.org/certificate/general/issues/',
+    'https://www.jdla.org/certificate/general/start/',
   ],
   relatedChapters: ['ch4', 'ch6'],
 };
