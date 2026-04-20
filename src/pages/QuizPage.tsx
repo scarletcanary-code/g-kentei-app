@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { ALL_QUESTIONS } from '../data/questions/index';
-import { filterQuestions, shuffleQuestions } from '../lib/quiz-engine';
+import { filterQuestions, shuffleQuestions, shuffleChoices } from '../lib/quiz-engine';
 import { useQuiz } from '../hooks/useQuiz';
 import { useProgress } from '../hooks/useProgress';
 import type { CategoryId } from '../types/category';
@@ -42,9 +42,10 @@ export default function QuizPage() {
     }
     const filtered = filterQuestions(ALL_QUESTIONS, {
       categoryIds,
-      limit: limit === 0 ? undefined : limit,
     });
-    return shuffleQuestions(filtered).slice(0, limit === 0 ? undefined : limit);
+    const shuffled = shuffleQuestions(filtered);
+    const sliced = limit === 0 ? shuffled : shuffled.slice(0, limit);
+    return sliced.map((q) => shuffleChoices(q));
   }, []);
 
   const startTimeRef = useRef<number>(Date.now());

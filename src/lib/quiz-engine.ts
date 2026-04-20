@@ -4,7 +4,6 @@ import type { CategoryId } from '../types/category';
 export interface FilterOptions {
   categoryIds?: CategoryId[];
   difficulty?: Difficulty;
-  limit?: number;
 }
 
 export function filterQuestions(
@@ -21,10 +20,6 @@ export function filterQuestions(
     result = result.filter((q) => q.difficulty === options.difficulty);
   }
 
-  if (options.limit !== undefined && options.limit > 0) {
-    result = result.slice(0, options.limit);
-  }
-
   return result;
 }
 
@@ -35,4 +30,23 @@ export function shuffleQuestions(questions: Question[]): Question[] {
     [result[i], result[j]] = [result[j], result[i]];
   }
   return result;
+}
+
+export function shuffleChoices(question: Question): Question {
+  const choices = [...question.choices];
+  const correctText = choices[question.correctIndex].text;
+
+  // Fisher-Yates shuffle
+  for (let i = choices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [choices[i], choices[j]] = [choices[j], choices[i]];
+  }
+
+  const newCorrectIndex = choices.findIndex((c) => c.text === correctText);
+
+  return {
+    ...question,
+    choices,
+    correctIndex: newCorrectIndex,
+  };
 }

@@ -5,6 +5,8 @@ import QuizSetupPage from './pages/QuizSetupPage';
 import QuizPage from './pages/QuizPage';
 import GlossaryPage from './pages/GlossaryPage';
 import ProgressPage from './pages/ProgressPage';
+import LearnIndexPage from './pages/LearnIndexPage';
+import LearnChapterPage from './pages/LearnChapterPage';
 import { AuthProvider } from './store/auth-context';
 import { ProgressProvider } from './store/progress-context';
 
@@ -20,6 +22,8 @@ function App() {
               <Route path="/quiz/session" element={<QuizPage />} />
               <Route path="/glossary" element={<GlossaryPage />} />
               <Route path="/progress" element={<ProgressPage />} />
+              <Route path="/learn" element={<LearnIndexPage />} />
+              <Route path="/learn/:categoryId" element={<LearnChapterPage />} />
             </Routes>
           </Layout>
         </ProgressProvider>

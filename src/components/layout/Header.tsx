@@ -7,6 +7,7 @@ const NAV_ITEMS = [
   { to: '/', label: 'ホーム' },
   { to: '/quiz/setup', label: 'クイズ', matchPrefix: '/quiz' },
   { to: '/glossary', label: '用語集' },
+  { to: '/learn', label: '学習', matchPrefix: '/learn' },
   { to: '/progress', label: '進捗' },
 ] as const;
 

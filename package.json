@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "validate:questions": "node scripts/validate-questions.mjs",
+    "quiz:template": "node scripts/generate-question-template.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
