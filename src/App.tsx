@@ -9,11 +9,13 @@ import LearnIndexPage from './pages/LearnIndexPage';
 import LearnChapterPage from './pages/LearnChapterPage';
 import { AuthProvider } from './store/auth-context';
 import { ProgressProvider } from './store/progress-context';
+import ScrollToTop from './components/layout/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
       <AuthProvider>
+        <ScrollToTop />
         <ProgressProvider>
           <Layout>
             <Routes>
