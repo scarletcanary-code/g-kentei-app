@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment (Phase6.5)
+.env
+.env.*
+!.env.example

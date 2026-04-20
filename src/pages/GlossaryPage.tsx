@@ -1,25 +1,22 @@
-import { useState, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Tabs, TabsList, TabsTrigger } from '../components/ui/tabs';
 import GlossarySearch from '../components/glossary/GlossarySearch';
 import GlossaryList from '../components/glossary/GlossaryList';
 import { useGlossary } from '../hooks/useGlossary';
+import { ALL_TERMS } from '../data/glossary/index';
 import type { CategoryId } from '../types/category';
 
 type CategoryFilter = CategoryId | 'all';
 
 export default function GlossaryPage() {
-  const [searchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useSearchParams();
   const termParam = searchParams.get('term') ?? '';
 
-  const [searchQuery, setSearchQuery] = useState(termParam);
+  const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>('all');
 
-  useEffect(() => {
-    if (termParam) {
-      setSearchQuery(termParam);
-    }
-  }, [termParam]);
+  const highlightTermId = termParam || undefined;
 
   const { filteredTerms, totalCount } = useGlossary({
     searchQuery,
@@ -27,13 +24,29 @@ export default function GlossaryPage() {
     sortKey: 'term',
   });
 
-  const openTermId = termParam || undefined;
+  const displayTerms = useMemo(() => {
+    if (!highlightTermId) return filteredTerms;
+    const alreadyIncluded = filteredTerms.some((t) => t.id === highlightTermId);
+    if (alreadyIncluded) return filteredTerms;
+    const extraTerm = ALL_TERMS.find((t) => t.id === highlightTermId);
+    if (!extraTerm) return filteredTerms;
+    return [...filteredTerms, extraTerm];
+  }, [filteredTerms, highlightTermId]);
+
+  function handleSearchChange(value: string) {
+    setSearchQuery(value);
+    if (value !== '') {
+      const next = new URLSearchParams(searchParams);
+      next.delete('term');
+      setSearchParams(next);
+    }
+  }
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-6 space-y-4">
       <h1 className="text-xl font-bold">用語集</h1>
 
-      <GlossarySearch value={searchQuery} onChange={setSearchQuery} />
+      <GlossarySearch value={searchQuery} onChange={handleSearchChange} />
 
       <Tabs
         value={categoryFilter}
@@ -54,7 +67,7 @@ export default function GlossaryPage() {
 
       <p className="text-sm text-muted-foreground">{totalCount}件</p>
 
-      <GlossaryList terms={filteredTerms} openTermId={openTermId} />
+      <GlossaryList terms={displayTerms} highlightTermId={highlightTermId} />
     </div>
   );
 }

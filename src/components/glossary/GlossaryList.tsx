@@ -3,10 +3,10 @@ import GlossaryCard from './GlossaryCard';
 
 interface GlossaryListProps {
   terms: GlossaryTerm[];
-  openTermId?: string;
+  highlightTermId?: string;
 }
 
-export default function GlossaryList({ terms, openTermId }: GlossaryListProps) {
+export default function GlossaryList({ terms, highlightTermId }: GlossaryListProps) {
   if (terms.length === 0) {
     return (
       <p className="text-sm text-muted-foreground py-8 text-center">
@@ -18,7 +18,7 @@ export default function GlossaryList({ terms, openTermId }: GlossaryListProps) {
   return (
     <div>
       {terms.map((term) => (
-        <GlossaryCard key={term.id} term={term} openTermId={openTermId} />
+        <GlossaryCard key={term.id} term={term} highlightTermId={highlightTermId} />
       ))}
     </div>
   );

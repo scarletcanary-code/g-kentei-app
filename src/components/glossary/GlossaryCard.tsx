@@ -1,3 +1,4 @@
+import { useRef, useEffect, useState } from 'react';
 import {
   Accordion,
   AccordionItem,
@@ -9,7 +10,7 @@ import type { GlossaryTerm, Importance } from '../../types/glossary';
 
 interface GlossaryCardProps {
   term: GlossaryTerm;
-  openTermId?: string;
+  highlightTermId?: string;
 }
 
 function importanceBadge(importance: Importance) {
@@ -22,32 +23,59 @@ function importanceBadge(importance: Importance) {
   return <Badge variant="outline">発展</Badge>;
 }
 
-export default function GlossaryCard({ term, openTermId }: GlossaryCardProps) {
-  const defaultValue = openTermId === term.id ? term.id : undefined;
+export default function GlossaryCard({ term, highlightTermId }: GlossaryCardProps) {
+  const isHighlighted = highlightTermId === term.id;
+  const ref = useRef<HTMLDivElement>(null);
+  const [openValue, setOpenValue] = useState<string | undefined>(
+    isHighlighted ? term.id : undefined
+  );
+  const [showRing, setShowRing] = useState(isHighlighted);
+
+  useEffect(() => {
+    if (highlightTermId === term.id) {
+      setOpenValue(term.id);
+      setShowRing(true);
+      ref.current?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      const timer = setTimeout(() => {
+        setShowRing(false);
+      }, 1500);
+      return () => clearTimeout(timer);
+    } else {
+      setOpenValue(undefined);
+      setShowRing(false);
+    }
+  }, [highlightTermId, term.id]);
 
   return (
-    <Accordion type="single" collapsible defaultValue={defaultValue}>
-      <AccordionItem value={term.id} className="border rounded-md px-4 mb-2">
-        <AccordionTrigger className="hover:no-underline">
-          <div className="flex items-center gap-2 text-left">
-            <span className="font-semibold text-sm">{term.term}</span>
-            {term.termEn && (
-              <span className="text-xs text-muted-foreground">{term.termEn}</span>
-            )}
-            {importanceBadge(term.importance)}
-          </div>
-        </AccordionTrigger>
-        <AccordionContent>
-          <p className="text-sm text-foreground leading-relaxed mb-2">
-            {term.definition}
-          </p>
-          {term.detail && (
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {term.detail}
+    <div ref={ref} className={showRing ? 'ring-2 ring-primary rounded-md mb-2' : 'mb-2'}>
+      <Accordion
+        type="single"
+        collapsible
+        value={openValue}
+        onValueChange={(v) => setOpenValue(v || undefined)}
+      >
+        <AccordionItem value={term.id} className="border rounded-md px-4">
+          <AccordionTrigger className="hover:no-underline">
+            <div className="flex items-center gap-2 text-left">
+              <span className="font-semibold text-sm">{term.term}</span>
+              {term.termEn && (
+                <span className="text-xs text-muted-foreground">{term.termEn}</span>
+              )}
+              {importanceBadge(term.importance)}
+            </div>
+          </AccordionTrigger>
+          <AccordionContent>
+            <p className="text-sm text-foreground leading-relaxed mb-2">
+              {term.definition}
             </p>
-          )}
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+            {term.detail && (
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {term.detail}
+              </p>
+            )}
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+    </div>
   );
 }

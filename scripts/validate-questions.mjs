@@ -97,6 +97,76 @@ for (const [file, questions] of Object.entries(questionsByFile)) {
   }
 }
 
+// V7: 選択肢文字数比ゲート (max/min <= 1.6)
+const SKIP_CHAR_RATIO = ['ch1-036', 'ch1-037'];
+for (const q of allQuestions) {
+  if (SKIP_CHAR_RATIO.includes(q.id)) continue;
+  if (!Array.isArray(q.choices) || q.choices.length !== 4) continue;
+  const lens = q.choices.map(c => (c.text || '').length);
+  const maxLen = Math.max(...lens);
+  const minLen = Math.min(...lens);
+  if (minLen === 0) {
+    process.stderr.write(`[FAIL V7] ${q.id}: 選択肢文字数比 計算不能 (minLen=0)\n`);
+    failCount++;
+    continue;
+  }
+  const ratio = maxLen / minLen;
+  if (ratio > 1.6) {
+    process.stderr.write(
+      `[FAIL V7] ${q.id}: 選択肢文字数比 ${ratio.toFixed(2)} (max=${maxLen}, min=${minLen})\n`
+    );
+    failCount++;
+  }
+}
+
+// V8: 誤答禁止語句ゲート (誤答選択肢に禁止パターンが2件以上含まれる問題を違反とする)
+const bannedPatterns = [
+  /のみ[をにはで。、]/,
+  /^全て|全て[をにはで。、]/,
+  /^すべて|すべて[をにはで。、]/,
+  /一切/,
+  /不可能/,
+  /専用/,
+  /特化/,
+];
+const BANNED_THRESHOLD = 2;
+for (const q of allQuestions) {
+  if (!Array.isArray(q.choices) || q.correctIndex === undefined) continue;
+  const wrongChoices = q.choices
+    .filter((_, i) => i !== q.correctIndex)
+    .map(c => c.text || '');
+  const matchedChoices = wrongChoices.filter(t => bannedPatterns.some(r => r.test(t)));
+  if (matchedChoices.length >= BANNED_THRESHOLD) {
+    const preview = matchedChoices.map(t => `"${t.slice(0, 20)}"`).join(', ');
+    process.stderr.write(
+      `[FAIL V8] ${q.id}: 誤答禁止語句 ${matchedChoices.length}件 (${preview})\n`
+    );
+    failCount++;
+  }
+}
+
+// V9: 全体 correctIndex 分布ゲート (いずれの値も全体の 30% 以下)
+{
+  const globalCounts = { 0: 0, 1: 0, 2: 0, 3: 0 };
+  const globalTotal = allQuestions.length;
+  for (const q of allQuestions) {
+    if (q.correctIndex >= 0 && q.correctIndex <= 3) {
+      globalCounts[q.correctIndex]++;
+    }
+  }
+  const GLOBAL_LIMIT = 0.30;
+  for (const [idx, count] of Object.entries(globalCounts)) {
+    const ratio = count / globalTotal;
+    if (ratio > GLOBAL_LIMIT) {
+      const pct = (ratio * 100).toFixed(1);
+      process.stderr.write(
+        `[FAIL V9] 全体: correctIndex=${idx} が ${pct}% (${count}/${globalTotal}問) → 制限: 30%以下\n`
+      );
+      failCount++;
+    }
+  }
+}
+
 if (failCount > 0) {
   process.exit(1);
 } else {

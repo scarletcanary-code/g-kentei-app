@@ -78,6 +78,73 @@ function extractArrayField(content, fieldName) {
   return items;
 }
 
+/**
+ * sections フィールドを解析して、各 section の heading, body, termIds を返す
+ */
+function extractSections(content) {
+  // sections: [ ... ] ブロックを取り出す
+  const sectionsIdx = content.indexOf('sections:');
+  if (sectionsIdx === -1) return [];
+  const arrStart = content.indexOf('[', sectionsIdx);
+  if (arrStart === -1) return [];
+
+  let depth = 0;
+  let arrEnd = -1;
+  for (let i = arrStart; i < content.length; i++) {
+    if (content[i] === '[') depth++;
+    else if (content[i] === ']') {
+      depth--;
+      if (depth === 0) { arrEnd = i; break; }
+    }
+  }
+  if (arrEnd === -1) return [];
+  const arrContent = content.slice(arrStart + 1, arrEnd);
+
+  // 各 section オブジェクト { ... } を分割する
+  const sections = [];
+  let objDepth = 0;
+  let objStart = -1;
+  for (let i = 0; i < arrContent.length; i++) {
+    if (arrContent[i] === '{') {
+      if (objDepth === 0) objStart = i;
+      objDepth++;
+    } else if (arrContent[i] === '}') {
+      objDepth--;
+      if (objDepth === 0 && objStart !== -1) {
+        const objStr = arrContent.slice(objStart + 1, i);
+        sections.push(parseSection(objStr));
+        objStart = -1;
+      }
+    }
+  }
+  return sections;
+}
+
+function parseSection(objStr) {
+  // heading を抽出
+  let heading = null;
+  const headingMatch = objStr.match(/heading:\s*['"`]([\s\S]*?)['"`],/);
+  if (headingMatch) heading = headingMatch[1];
+
+  // body を抽出（複数行対応）
+  let body = null;
+  const bodyMatch = objStr.match(/body:\s*['"`]([\s\S]*?)['"`],/);
+  if (bodyMatch) body = bodyMatch[1];
+
+  // termIds を抽出
+  const termIdsMatch = objStr.match(/termIds:\s*\[([^\]]*)\]/);
+  let termIds = [];
+  if (termIdsMatch) {
+    const itemRegex = /['"`]([^'"`\n]+)['"`]/g;
+    let m;
+    while ((m = itemRegex.exec(termIdsMatch[1])) !== null) {
+      termIds.push(m[1]);
+    }
+  }
+
+  return { heading, body, termIds };
+}
+
 let failures = 0;
 
 function fail(msg) {
@@ -90,6 +157,8 @@ function pass(msg) {
 }
 
 const chapters = [];
+
+const validChapterIds = new Set(['ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'ch7', 'ch8']);
 
 for (let i = 1; i <= 8; i++) {
   const filePath = join(projectRoot, `src/data/learn/ch${i}.ts`);
@@ -126,7 +195,7 @@ for (let i = 1; i <= 8; i++) {
   // TSの文字列連結パターンに対応
   if (overview === null) {
     // 複数行にわたる文字列
-    const m = content.match(/overview:\s*([\s\S]*?),\s*\n\s+keyTermIds/);
+    const m = content.match(/overview:\s*([\s\S]*?),\s*\n\s+(?:prerequisites|keyTermIds|sections)/);
     if (m) {
       const raw = m[1];
       // シングルクォートを連結しているケースを解除
@@ -143,6 +212,10 @@ for (let i = 1; i <= 8; i++) {
   const keyPoints = extractArrayField(content, 'keyPoints');
   const exampleQuestionIds = extractArrayField(content, 'exampleQuestionIds');
   const sourceRefs = extractArrayField(content, 'source_refs');
+  const sourceRefSupplements = extractArrayField(content, 'source_ref_supplements');
+  const prerequisites = extractArrayField(content, 'prerequisites');
+  const relatedChapters = extractArrayField(content, 'relatedChapters');
+  const sections = extractSections(content);
 
   // overviewの文字数カウント
   // ファイルの実際のoverview文字列長を確実に取得するための別アプローチ
@@ -161,7 +234,7 @@ for (let i = 1; i <= 8; i++) {
         const startQ = line.indexOf("'");
         if (startQ !== -1) overviewLines.push(line.slice(startQ + 1));
       } else if (inOverview) {
-        if (line.includes('keyTermIds:')) break;
+        if (line.includes('keyTermIds:') || line.includes('prerequisites:') || line.includes('sections:')) break;
         overviewLines.push(line.replace(/^\s*'/, '').replace(/'\s*\+?\s*$/, '').replace(/,\s*$/, '').trimEnd());
       }
     }
@@ -177,6 +250,10 @@ for (let i = 1; i <= 8; i++) {
     keyPoints,
     exampleQuestionIds,
     sourceRefs,
+    sourceRefSupplements,
+    prerequisites,
+    relatedChapters,
+    sections,
   });
 }
 
@@ -250,6 +327,82 @@ for (const ch of chapters) {
       pass(`${label}: source_ref length = ${ref.length} >= 5`);
     } else {
       fail(`${label}: source_ref "${ref}" length = ${ref.length} < 5`);
+    }
+  }
+
+  // 新規追加チェック
+
+  // 9. sections.length >= 3 && sections.length <= 5
+  if (ch.sections.length >= 3 && ch.sections.length <= 5) {
+    pass(`${label}: sections.length = ${ch.sections.length} (3〜5)`);
+  } else {
+    fail(`${label}: sections.length = ${ch.sections.length} (expected 3〜5)`);
+  }
+
+  // 10. 各 section.heading が 10〜60 文字
+  for (let si = 0; si < ch.sections.length; si++) {
+    const section = ch.sections[si];
+    if (section.heading === null) {
+      fail(`${label}: sections[${si}].heading is null`);
+    } else {
+      const hLen = section.heading.length;
+      if (hLen >= 10 && hLen <= 60) {
+        pass(`${label}: sections[${si}].heading.length = ${hLen} (10〜60)`);
+      } else {
+        fail(`${label}: sections[${si}].heading.length = ${hLen} (expected 10〜60) heading="${section.heading}"`);
+      }
+    }
+
+    // 11. 各 section.body が 200〜500 文字
+    if (section.body === null) {
+      fail(`${label}: sections[${si}].body is null`);
+    } else {
+      const bLen = section.body.length;
+      if (bLen >= 200 && bLen <= 500) {
+        pass(`${label}: sections[${si}].body.length = ${bLen} (200〜500)`);
+      } else {
+        fail(`${label}: sections[${si}].body.length = ${bLen} (expected 200〜500)`);
+      }
+    }
+
+    // 12. section.termIds の全 ID が terms.json に実在（termIds が存在する場合のみ）
+    for (const tid of section.termIds) {
+      if (termIds.has(tid)) {
+        pass(`${label}: sections[${si}].termId "${tid}" found in terms.json`);
+      } else {
+        fail(`${label}: sections[${si}].termId "${tid}" NOT found in terms.json`);
+      }
+    }
+  }
+
+  // 13. prerequisites の全 ID が ch1〜ch8 に実在し、自章 ID を含まない
+  for (const prereqId of ch.prerequisites) {
+    if (!validChapterIds.has(prereqId)) {
+      fail(`${label}: prerequisites "${prereqId}" is not a valid chapter ID (ch1〜ch8)`);
+    } else if (prereqId === ch.categoryId) {
+      fail(`${label}: prerequisites contains self chapter ID "${prereqId}"`);
+    } else {
+      pass(`${label}: prerequisites "${prereqId}" is valid`);
+    }
+  }
+
+  // 14. relatedChapters の全 ID が ch1〜ch8 に実在し、自章 ID を含まない
+  for (const relId of ch.relatedChapters) {
+    if (!validChapterIds.has(relId)) {
+      fail(`${label}: relatedChapters "${relId}" is not a valid chapter ID (ch1〜ch8)`);
+    } else if (relId === ch.categoryId) {
+      fail(`${label}: relatedChapters contains self chapter ID "${relId}"`);
+    } else {
+      pass(`${label}: relatedChapters "${relId}" is valid`);
+    }
+  }
+
+  // 15. source_ref_supplements が存在する場合、各要素が 5 文字以上
+  for (const sup of ch.sourceRefSupplements) {
+    if (sup.length >= 5) {
+      pass(`${label}: source_ref_supplement length = ${sup.length} >= 5`);
+    } else {
+      fail(`${label}: source_ref_supplement "${sup}" length = ${sup.length} < 5`);
     }
   }
 }
