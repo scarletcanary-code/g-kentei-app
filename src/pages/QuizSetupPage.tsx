@@ -98,8 +98,7 @@ export default function QuizSetupPage() {
           <CardContent className="space-y-2">
             <label className="flex items-center gap-2 cursor-pointer select-none">
               <input
-                type="radio"
-                name="quizMode"
+                type="checkbox"
                 checked={memoryMode}
                 onChange={(e) => {
                   setMemoryMode(e.target.checked);

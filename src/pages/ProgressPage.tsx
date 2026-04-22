@@ -5,7 +5,6 @@ import { CATEGORIES } from '../data/categories';
 import { ALL_QUESTIONS } from '../data/questions/index';
 import CategoryProgress from '../components/progress/CategoryProgress';
 import WeakPointList from '../components/progress/WeakPointList';
-import StudyCalendar from '../components/progress/StudyCalendar';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { getReviewStats } from '../lib/sr-engine';
@@ -13,23 +12,11 @@ import { getReviewStats } from '../lib/sr-engine';
 export default function ProgressPage() {
   const navigate = useNavigate();
   const { progress, weakQuestionIds } = useProgress();
-  const { studyDates } = progress;
 
   const dueCount = useMemo(
     () => getReviewStats(progress.srStates ?? {}, new Date()).due,
     [progress.srStates]
   );
-
-  const dailyCounts = useMemo(() => {
-    const counts: Record<string, number> = {};
-    for (const stats of Object.values(progress.categoryStats)) {
-      for (const h of stats.questionHistory) {
-        const dateStr = h.answeredAt.slice(0, 10);
-        counts[dateStr] = (counts[dateStr] ?? 0) + 1;
-      }
-    }
-    return counts;
-  }, [progress.categoryStats]);
 
   return (
     <div className="max-w-xl mx-auto py-8 px-4 space-y-6">
@@ -77,14 +64,6 @@ export default function ProgressPage() {
         </CardContent>
       </Card>
 
-      <Card>
-        <CardHeader>
-          <CardTitle className="text-base">学習カレンダー</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <StudyCalendar studyDates={studyDates} dailyCounts={dailyCounts} srStates={progress.srStates ?? {}} />
-        </CardContent>
-      </Card>
     </div>
   );
 }
