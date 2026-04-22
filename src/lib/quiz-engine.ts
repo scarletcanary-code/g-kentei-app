@@ -1,5 +1,7 @@
 import type { Question, Difficulty } from '../types/question';
 import type { CategoryId } from '../types/category';
+import type { QuestionSRState } from '../types/progress';
+import { getDueQuestions } from './sr-engine';
 
 export interface FilterOptions {
   categoryIds?: CategoryId[];
@@ -30,6 +32,14 @@ export function shuffleQuestions(questions: Question[]): Question[] {
     [result[i], result[j]] = [result[j], result[i]];
   }
   return result;
+}
+
+export function selectForMemoryReview(
+  allQuestions: Question[],
+  srStates: Record<string, QuestionSRState>,
+  today: Date
+): Question[] {
+  return getDueQuestions(allQuestions, srStates, today);
 }
 
 export function shuffleChoices(question: Question): Question {

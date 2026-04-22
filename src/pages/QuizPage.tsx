@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { ALL_QUESTIONS } from '../data/questions/index';
-import { filterQuestions, shuffleQuestions, shuffleChoices } from '../lib/quiz-engine';
+import { filterQuestions, shuffleQuestions, shuffleChoices, selectForMemoryReview } from '../lib/quiz-engine';
 import { useQuiz } from '../hooks/useQuiz';
 import { useProgress } from '../hooks/useProgress';
 import type { CategoryId } from '../types/category';
@@ -29,12 +29,16 @@ export default function QuizPage() {
     : undefined;
   const limit = limitParam ? Number(limitParam) : 10;
 
-  const { recordAnswer, weakQuestionIds } = useProgress();
+  const { recordAnswer, weakQuestionIds, progress } = useProgress();
 
   const questions = useMemo(() => {
     if (isMockMode) {
       const shuffled = shuffleQuestions(ALL_QUESTIONS);
       return shuffled.slice(0, Math.min(shuffled.length, 160));
+    }
+    if (modeParam === 'memory') {
+      const due = selectForMemoryReview(ALL_QUESTIONS, progress.srStates ?? {}, new Date());
+      return shuffleQuestions(due).map((q) => shuffleChoices(q));
     }
     if (modeParam === 'weak') {
       const weakQuestions = ALL_QUESTIONS.filter((q) => weakQuestionIds.includes(q.id));

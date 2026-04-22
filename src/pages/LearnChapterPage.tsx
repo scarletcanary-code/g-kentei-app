@@ -3,6 +3,8 @@ import { ALL_LEARN_CHAPTERS } from '../data/learn';
 import { ALL_QUESTIONS } from '../data/questions';
 import termsData from '../data/glossary/terms.json';
 import type { GlossaryTerm } from '../types/glossary';
+import { usePersistedState } from '../hooks/usePersistedState';
+import { Button } from '../components/ui/button';
 
 const terms: GlossaryTerm[] = termsData as GlossaryTerm[];
 
@@ -14,6 +16,7 @@ const difficultyLabel: Record<string, string> = {
 
 export default function LearnChapterPage() {
   const { categoryId } = useParams<{ categoryId: string }>();
+  const [isEasy, setIsEasy] = usePersistedState<boolean>('learn-easy-mode', false);
 
   const chapter = ALL_LEARN_CHAPTERS.find((c) => c.categoryId === categoryId);
 
@@ -81,6 +84,27 @@ export default function LearnChapterPage() {
         )}
       </div>
 
+      {/* 解説モードトグル */}
+      <div className="flex items-center gap-2 mb-6">
+        <span className="text-sm text-muted-foreground">解説モード：</span>
+        <Button
+          size="sm"
+          variant={!isEasy ? 'default' : 'outline'}
+          onClick={() => setIsEasy(false)}
+          aria-label="詳しく"
+        >
+          詳しく
+        </Button>
+        <Button
+          size="sm"
+          variant={isEasy ? 'default' : 'outline'}
+          onClick={() => setIsEasy(true)}
+          aria-label="やさしく"
+        >
+          やさしく
+        </Button>
+      </div>
+
       {/* 1. 概要 */}
       <section className="mb-8">
         <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
@@ -105,7 +129,7 @@ export default function LearnChapterPage() {
                 {section.heading}
               </h3>
               <p className="text-sm text-foreground leading-relaxed mb-3">
-                {section.body}
+                {isEasy && section.beginnerBody ? section.beginnerBody : section.body}
               </p>
               {section.termIds && section.termIds.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-2">

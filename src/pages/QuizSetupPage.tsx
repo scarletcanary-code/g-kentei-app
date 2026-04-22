@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CATEGORIES } from '../data/categories';
 import type { CategoryId } from '../types/category';
@@ -6,6 +6,7 @@ import CategorySelector from '../components/quiz/CategorySelector';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { useProgress } from '../hooks/useProgress';
+import { getReviewStats } from '../lib/sr-engine';
 
 const LIMIT_OPTIONS = [
   { label: '10問', value: 10 },
@@ -22,13 +23,27 @@ export default function QuizSetupPage() {
   const [limit, setLimit] = useState<number>(10);
   const [weakMode, setWeakMode] = useState(false);
   const [mockMode, setMockMode] = useState(false);
+  const [memoryMode, setMemoryMode] = useState(false);
 
-  const { weakQuestionIds } = useProgress();
+  const { weakQuestionIds, progress } = useProgress();
   const hasWeakQuestions = weakQuestionIds.length > 0;
+
+  const reviewStats = useMemo(
+    () => getReviewStats(progress.srStates ?? {}, new Date()),
+    [progress.srStates]
+  );
+  // Due count includes unregistered questions (first-time learners)
+  // For the button, we count only registered-and-due entries to avoid showing "all questions due"
+  // on a fresh install. Use reviewStats.due for registered ones only.
+  const registeredDueCount = reviewStats.due;
 
   const handleStart = () => {
     if (mockMode) {
       navigate('/quiz/session?mode=mock');
+      return;
+    }
+    if (memoryMode) {
+      navigate('/quiz/session?mode=memory');
       return;
     }
     if (weakMode) {
@@ -43,7 +58,13 @@ export default function QuizSetupPage() {
     navigate(`/quiz/session?${params.toString()}`);
   };
 
-  const canStart = mockMode ? true : weakMode ? hasWeakQuestions : selectedIds.length > 0;
+  const canStart = mockMode
+    ? true
+    : memoryMode
+    ? registeredDueCount > 0
+    : weakMode
+    ? hasWeakQuestions
+    : selectedIds.length > 0;
 
   return (
     <div className="max-w-xl mx-auto py-8 px-4 space-y-6">
@@ -72,6 +93,34 @@ export default function QuizSetupPage() {
       {!mockMode && (
         <Card>
           <CardHeader>
+            <CardTitle className="text-base">記憶モード（スペースド・リピティション）</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-2">
+            <label className="flex items-center gap-2 cursor-pointer select-none">
+              <input
+                type="radio"
+                name="quizMode"
+                checked={memoryMode}
+                onChange={(e) => {
+                  setMemoryMode(e.target.checked);
+                  if (e.target.checked) setWeakMode(false);
+                }}
+                className="accent-primary h-4 w-4"
+              />
+              <span className="text-sm">記憶モードで復習する</span>
+            </label>
+            {memoryMode && (
+              registeredDueCount > 0
+                ? <p className="text-sm text-muted-foreground">今日の復習: {registeredDueCount} 問</p>
+                : <p className="text-sm text-muted-foreground">復習は完了です</p>
+            )}
+          </CardContent>
+        </Card>
+      )}
+
+      {!mockMode && !memoryMode && (
+        <Card>
+          <CardHeader>
             <CardTitle className="text-base">苦手復習モード</CardTitle>
           </CardHeader>
           <CardContent className="space-y-2">
@@ -91,7 +140,7 @@ export default function QuizSetupPage() {
         </Card>
       )}
 
-      {!mockMode && !weakMode && (
+      {!mockMode && !weakMode && !memoryMode && (
         <>
           <Card>
             <CardHeader>

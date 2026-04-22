@@ -10,9 +10,13 @@ import { usePersistedState } from '../hooks/usePersistedState';
 import { useAuth } from './auth-context';
 import { loadProgressFromCloud, saveProgressToCloud } from '../lib/firestore-sync';
 import type { UserProgress, CategoryStats, QuestionHistory } from '../types/progress';
+import { computeNextSR } from '../lib/sr-engine';
 
-// ---- initial state ----
-const PROGRESS_KEY = 'progress-v1';
+// ---- storage keys ----
+// usePersistedState prepends 'g-kentei-', so:
+//   PROGRESS_KEY = 'progress-v2'  →  localStorage key: 'g-kentei-progress-v2'
+const PROGRESS_KEY = 'progress-v2';
+const LEGACY_STORAGE_KEY = 'g-kentei-progress-v1';
 
 function createInitialProgress(): UserProgress {
   return {
@@ -22,7 +26,36 @@ function createInitialProgress(): UserProgress {
     categoryStats: {},
     studyDates: [],
     weakQuestionIds: [],
+    srStates: {},
   };
+}
+
+function loadInitialProgress(): UserProgress {
+  // Check v2 first (with the prefix that usePersistedState applies)
+  const v2 = localStorage.getItem('g-kentei-progress-v2');
+  if (v2) {
+    try {
+      return JSON.parse(v2) as UserProgress;
+    } catch {
+      // fall through to v1 migration
+    }
+  }
+
+  // Migrate from v1
+  const v1 = localStorage.getItem(LEGACY_STORAGE_KEY);
+  if (v1) {
+    try {
+      const parsed = JSON.parse(v1) as Omit<UserProgress, 'srStates'>;
+      const migrated: UserProgress = { ...parsed, srStates: {} };
+      // Persist migrated data under the new key so usePersistedState picks it up
+      localStorage.setItem('g-kentei-progress-v2', JSON.stringify(migrated));
+      return migrated;
+    } catch {
+      // fall through to default
+    }
+  }
+
+  return createInitialProgress();
 }
 
 // ---- context types ----
@@ -39,7 +72,7 @@ const ProgressContext = createContext<ProgressContextValue | null>(null);
 export function ProgressProvider({ children }: { children: ReactNode }) {
   const [progress, setProgress] = usePersistedState<UserProgress>(
     PROGRESS_KEY,
-    createInitialProgress()
+    loadInitialProgress()
   );
 
   const { user } = useAuth();
@@ -162,6 +195,19 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           ? prev.studyDates
           : [...prev.studyDates, todayStr];
 
+        // --- SR state update ---
+        const now = new Date();
+        const prevSRState = prev.srStates?.[questionId] ?? null;
+        const nextSRState = computeNextSR(
+          prevSRState ? { ...prevSRState, questionId } : null,
+          isCorrect,
+          now
+        );
+        const newSRStates = {
+          ...(prev.srStates ?? {}),
+          [questionId]: { ...nextSRState, questionId },
+        };
+
         return {
           overallAccuracy,
           totalAnswered: overallTotalAnswered,
@@ -169,6 +215,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
           categoryStats: newCategoryStats,
           studyDates,
           weakQuestionIds,
+          srStates: newSRStates,
         };
       });
     },
@@ -178,6 +225,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
   const resetProgress = useCallback(() => {
     setProgress(createInitialProgress());
   }, [setProgress]);
+
 
   return (
     <ProgressContext.Provider value={{ progress, recordAnswer, resetProgress }}>
