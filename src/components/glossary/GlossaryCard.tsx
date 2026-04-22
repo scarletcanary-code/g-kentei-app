@@ -11,6 +11,7 @@ import type { GlossaryTerm, Importance } from '../../types/glossary';
 interface GlossaryCardProps {
   term: GlossaryTerm;
   highlightTermId?: string;
+  isEasy?: boolean;
 }
 
 function importanceBadge(importance: Importance) {
@@ -23,7 +24,7 @@ function importanceBadge(importance: Importance) {
   return <Badge variant="outline">発展</Badge>;
 }
 
-export default function GlossaryCard({ term, highlightTermId }: GlossaryCardProps) {
+export default function GlossaryCard({ term, highlightTermId, isEasy = false }: GlossaryCardProps) {
   const isHighlighted = highlightTermId === term.id;
   const ref = useRef<HTMLDivElement>(null);
   const [openValue, setOpenValue] = useState<string | undefined>(
@@ -68,9 +69,9 @@ export default function GlossaryCard({ term, highlightTermId }: GlossaryCardProp
             <p className="text-sm text-foreground leading-relaxed mb-2">
               {term.definition}
             </p>
-            {term.detail && (
+            {(isEasy && term.beginnerDetail ? term.beginnerDetail : term.detail) && (
               <p className="text-sm text-muted-foreground leading-relaxed">
-                {term.detail}
+                {isEasy && term.beginnerDetail ? term.beginnerDetail : term.detail}
               </p>
             )}
           </AccordionContent>

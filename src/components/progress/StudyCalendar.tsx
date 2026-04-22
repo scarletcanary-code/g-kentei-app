@@ -1,6 +1,10 @@
+import { useMemo } from 'react';
+import type { QuestionSRState } from '../../types/progress';
+
 interface StudyCalendarProps {
   studyDates: string[];
   dailyCounts?: Record<string, number>;
+  srStates: Record<string, QuestionSRState>;
 }
 
 function formatDate(date: Date): string {
@@ -18,18 +22,35 @@ function getIntensityClass(count: number): string {
   return 'bg-success';
 }
 
-export default function StudyCalendar({ studyDates, dailyCounts }: StudyCalendarProps) {
+export default function StudyCalendar({ studyDates, dailyCounts, srStates }: StudyCalendarProps) {
   const studySet = new Set(studyDates);
 
   const today = new Date();
   today.setHours(0, 0, 0, 0);
+  const todayStr = formatDate(today);
 
+  // Build array: past 91 days + today + future 30 days = 122 days
   const days: Date[] = [];
   for (let i = 91; i >= 0; i--) {
     const d = new Date(today);
     d.setDate(today.getDate() - i);
     days.push(d);
   }
+  for (let i = 1; i <= 30; i++) {
+    const d = new Date(today);
+    d.setDate(today.getDate() + i);
+    days.push(d);
+  }
+
+  // Aggregate review counts per date from srStates
+  const reviewCountByDate = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const state of Object.values(srStates)) {
+      const d = state.nextReviewDate; // "YYYY-MM-DD"
+      counts[d] = (counts[d] ?? 0) + 1;
+    }
+    return counts;
+  }, [srStates]);
 
   const firstDayOfWeek = days[0].getDay();
   const paddingCells = firstDayOfWeek;
@@ -59,16 +80,40 @@ export default function StudyCalendar({ studyDates, dailyCounts }: StudyCalendar
           const dateStr = formatDate(day);
           const studied = studySet.has(dateStr);
           const count = dailyCounts?.[dateStr] ?? 0;
-          const intensityClass = dailyCounts
-            ? getIntensityClass(count)
-            : studied ? 'bg-success' : 'bg-muted';
+          const isFuture = dateStr > todayStr;
+          const reviewCount = reviewCountByDate[dateStr] ?? 0;
+
+          let intensityClass: string;
+          if (isFuture) {
+            intensityClass = 'bg-muted/50';
+          } else {
+            intensityClass = dailyCounts
+              ? getIntensityClass(count)
+              : studied ? 'bg-success' : 'bg-muted';
+          }
+
+          let titleText = count > 0 ? `${dateStr}: ${count}問` : dateStr;
+          if (reviewCount > 0) {
+            titleText += `\n復習予定: ${reviewCount}問`;
+          }
+
+          const badgeClass =
+            reviewCount > 0
+              ? dateStr <= todayStr
+                ? 'absolute top-0 right-0 text-[9px] bg-red-500 text-white rounded-full px-1 leading-4 pointer-events-none'
+                : 'absolute top-0 right-0 text-[9px] bg-blue-500 text-white rounded-full px-1 leading-4 pointer-events-none'
+              : null;
 
           return (
             <div
               key={dateStr}
-              title={count > 0 ? `${dateStr}: ${count}問` : dateStr}
-              className={`aspect-square rounded-sm transition-colors ${intensityClass}`}
-            />
+              title={titleText}
+              className={`relative aspect-square rounded-sm transition-colors ${intensityClass}`}
+            >
+              {badgeClass && (
+                <span className={badgeClass}>{reviewCount}</span>
+              )}
+            </div>
           );
         })}
       </div>

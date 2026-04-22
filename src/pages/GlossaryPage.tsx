@@ -1,10 +1,12 @@
 import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Tabs, TabsList, TabsTrigger } from '../components/ui/tabs';
+import { Button } from '../components/ui/button';
 import GlossarySearch from '../components/glossary/GlossarySearch';
 import GlossaryList from '../components/glossary/GlossaryList';
 import { useGlossary } from '../hooks/useGlossary';
 import { ALL_TERMS } from '../data/glossary/index';
+import { usePersistedState } from '../hooks/usePersistedState';
 import type { CategoryId } from '../types/category';
 
 type CategoryFilter = CategoryId | 'all';
@@ -15,6 +17,7 @@ export default function GlossaryPage() {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>('all');
+  const [isEasy, setIsEasy] = usePersistedState<boolean>('g-kentei-learn-easy-mode', false);
 
   const highlightTermId = termParam || undefined;
 
@@ -46,7 +49,27 @@ export default function GlossaryPage() {
     <div className="max-w-3xl mx-auto px-4 py-6 space-y-4">
       <h1 className="text-xl font-bold">用語集</h1>
 
-      <GlossarySearch value={searchQuery} onChange={handleSearchChange} />
+      <div className="flex items-center gap-2">
+        <GlossarySearch value={searchQuery} onChange={handleSearchChange} />
+        <div className="flex items-center gap-1 shrink-0">
+          <Button
+            size="sm"
+            variant={!isEasy ? 'default' : 'outline'}
+            onClick={() => setIsEasy(false)}
+            aria-label="詳しく"
+          >
+            詳しく
+          </Button>
+          <Button
+            size="sm"
+            variant={isEasy ? 'default' : 'outline'}
+            onClick={() => setIsEasy(true)}
+            aria-label="やさしく"
+          >
+            やさしく
+          </Button>
+        </div>
+      </div>
 
       <Tabs
         value={categoryFilter}
@@ -67,7 +90,7 @@ export default function GlossaryPage() {
 
       <p className="text-sm text-muted-foreground">{totalCount}件</p>
 
-      <GlossaryList terms={displayTerms} highlightTermId={highlightTermId} />
+      <GlossaryList terms={displayTerms} highlightTermId={highlightTermId} isEasy={isEasy} />
     </div>
   );
 }

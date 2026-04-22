@@ -82,7 +82,7 @@ export default function ProgressPage() {
           <CardTitle className="text-base">学習カレンダー</CardTitle>
         </CardHeader>
         <CardContent>
-          <StudyCalendar studyDates={studyDates} dailyCounts={dailyCounts} />
+          <StudyCalendar studyDates={studyDates} dailyCounts={dailyCounts} srStates={progress.srStates ?? {}} />
         </CardContent>
       </Card>
     </div>

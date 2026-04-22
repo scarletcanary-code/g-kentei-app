@@ -9,6 +9,7 @@ export interface GlossaryTerm {
   categoryId: CategoryId;
   definition: string;
   detail: string;
+  beginnerDetail?: string;
   relatedTermIds: string[];
   importance: Importance;
 }
