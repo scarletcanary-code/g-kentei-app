@@ -5,16 +5,16 @@
     "question": "教師あり学習の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "ラベル（答え）なしのデータからパターンを学習する手法"
+        "text": "教師データなしで行動を学習する手法として位置づけられる技術"
       },
       {
         "text": "特徴量と教師データ（正解ラベル）のペアを使い、入力と出力の対応関係を学習する手法"
       },
       {
-        "text": "試行錯誤によって報酬が最大になる行動を学習する手法"
+        "text": "正解ラベルを用いずに分類する方法として機能する技術的なシステム"
       },
       {
-        "text": "大量の未ラベルデータから特徴量を自動的に抽出する手法"
+        "text": "入力データのみで予測を行う手法として用いられる技術的手法"
       }
     ],
     "correctIndex": 1,
@@ -27,7 +27,34 @@
       "教師あり学習",
       "機械学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://itpass.kakomonn.com/questions/77194",
+      "https://fastlabel.ai/blog/ai-training",
+      "https://service.shiftinc.jp/column/14635/",
+      "https://note.com/takuto_it/n/na0089eb62804",
+      "https://doda.jp/engineer/guide/it/044.html",
+      "https://business.ntt-east.co.jp/content/cloudsolution/column-161.html",
+      "https://qiita.com/undead_ban/items/f62bf9ace1d0cd7bc193",
+      "https://www.fe-siken.com/kakomon/31_haru/q4.html",
+      "https://www.skygroup.jp/media/article/3445/",
+      "https://qe.hpeo.jp/entry/ipa-fe/e19h04",
+      "https://www.ibm.com/jp-ja/think/topics/supervised-learning",
+      "https://www.itpassportsiken.com/kakomon/06_haru/q65.html",
+      "https://avinton.com/blog/2017/11/supervised-and-unsupervised-machine-learning/",
+      "https://www.oracle.com/jp/artificial-intelligence/machine-learning/supervised-learning/",
+      "https://to-in.com/blog/101436",
+      "https://note.com/study_ai/n/n2f38b29fffb4",
+      "https://www.itpassportsiken.com/kakomon/04_haru/q24.html",
+      "https://www.yomiuri.co.jp/kyoiku/kyoiku/news/20240306-OYT1T50080/",
+      "https://www.databricks.com/jp/blog/supervised-vs-unsupervised-learning",
+      "https://wa3.i-3-i.info/examination_ip2024h651.html",
+      "https://www.fujifilm.com/fb/ja/solutions/columns/ai-11870",
+      "https://best-biostatistics.com/summary/kyoushi.html",
+      "https://note.com/masayamori/n/n6c3b343e756b",
+      "https://weknowledge.jp/column/work/post_34772",
+      "https://www.veriserve.co.jp/helloqualityworld/media/20251006001/"
+    ]
   },
   {
     "id": "ch3-002",
@@ -35,16 +62,16 @@
     "question": "教師なし学習の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "人間の教師が直接コンピュータを指導して学習させる手法"
+        "text": "正解ラベル付きのデータを使い、学習する手法という技術"
       },
       {
         "text": "正解ラベルなしのデータから、データの構造やパターンを自律的に学習する手法"
       },
       {
-        "text": "正解ラベルありのデータを使ってモデルの重みを更新する手法"
+        "text": "教師あり学習と同様に、正解を求める手法であるである"
       },
       {
-        "text": "報酬信号を元に最適な行動方策を学習する手法の概念"
+        "text": "データの特徴を分析し、分類する手法であるという仕組み"
       }
     ],
     "correctIndex": 1,
@@ -57,7 +84,36 @@
       "教師なし学習",
       "クラスタリング"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://ip-study.net/ai-technology-qa/",
+      "https://www.bizcrew.jp/article/11260022",
+      "https://itpass.kakomonn.com/questions/77194",
+      "https://aismiley.co.jp/ai_news/unsupervised-learning/",
+      "https://qe.hpeo.jp/entry/ipa-fe/e19h04",
+      "https://note.com/kenji20251123/n/nc7b180e25176",
+      "https://www.fast-macro.com/Johosyori/r01AkiOuyou/r01AkiOuyou-04.html",
+      "https://www.fe-siken.com/kakomon/31_haru/q4.html",
+      "https://jp.mathworks.com/discovery/unsupervised-learning.html",
+      "https://cloud.google.com/discover/what-is-unsupervised-learning?hl=ja",
+      "https://qiita.com/Chi_corp_123/items/d7622a72891184ef5d9c",
+      "https://www.itpassportsiken.com/kakomon/06_haru/q65.html",
+      "https://avinton.com/blog/2017/11/supervised-and-unsupervised-machine-learning/",
+      "https://www.insource.co.jp/keywords/unsupervised_learning.html",
+      "https://wa3.i-3-i.info/examination_ip2024h651.html",
+      "https://www.ap-siken.com/kakomon/01_aki/q4.html",
+      "https://www.ibm.com/jp-ja/think/topics/unsupervised-learning",
+      "https://doda.jp/engineer/guide/it/045.html",
+      "https://note.com/takuto_it/n/na0089eb62804",
+      "https://www.databricks.com/jp/blog/supervised-vs-unsupervised-learning",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12317977567",
+      "https://www.scutum.jp/information/waf_tech_blog/2020/05/waf-blog-070.html",
+      "https://www.reddit.com/r/MachineLearning/comments/13a5xi/list_of_unsupervised_learning_algorithms/?tl=ja",
+      "https://www.skygroup.jp/media/article/3445/",
+      "https://best-biostatistics.com/summary/kyoushi.html",
+      "https://otafuku-lab.co/aizine/unsupervised-learning0531/",
+      "https://saycon.co.jp/archives/neta/%E3%80%8C%E6%95%99%E5%B8%AB%E3%81%82%E3%82%8A%E5%AD%A6%E7%BF%92%E3%80%8D%E3%81%A8%E3%80%8C%E6%95%99%E5%B8%AB%E3%81%AA%E3%81%97%E5%AD%A6%E7%BF%92%E3%80%8D%E3%81%AE%E9%81%95%E3%81%84"
+    ]
   },
   {
     "id": "ch3-003",
@@ -65,16 +121,16 @@
     "question": "強化学習の説明として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "大量の正解ラベル付きデータで繰り返し学習する手法の概念"
+        "text": "エージェントが環境からのデータを分析し、最適な行動を選択する手法"
       },
       {
         "text": "エージェントが環境の中で試行錯誤しながら、報酬を最大化する行動方策を学習する手法"
       },
       {
-        "text": "教師なしでデータのクラスタリングを行う手法として定義される"
+        "text": "エージェントが与えられたデータを基に、正解を導き出す学習方法である"
       },
       {
-        "text": "他のモデルの学習済み重みを再利用する手法として定義される"
+        "text": "エージェントが環境の変化に応じて、行動を調整するための学習手法"
       }
     ],
     "correctIndex": 1,
@@ -87,7 +143,33 @@
       "強化学習",
       "報酬"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/takuto_it/n/na0089eb62804",
+      "https://college.coeteco.jp/itpassport/kakomon/list/%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92",
+      "https://service.shiftinc.jp/column/14471/",
+      "https://jp.mathworks.com/discovery/reinforcement-learning.html",
+      "https://ero-ben.com/itpass-study-43/",
+      "https://www.ap-siken.com/kakomon/01_aki/q4.html",
+      "https://ip-study.net/ai-technology-qa/",
+      "https://www.fe-siken.com/kakomon/31_haru/q4.html",
+      "https://promo.digital.ricoh.com/ai-for-work/column/detail005/",
+      "https://jp.linkedin.com/pulse/exploring-reinforcement-learning-how-machines-learn-through-ibenf?tl=ja",
+      "https://medium-company.com/it%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92/",
+      "https://www.brainpad.co.jp/doors/contents/about_reinforcement_learning/",
+      "https://aising.jp/blog/blog-20459/",
+      "https://www.ibm.com/jp-ja/think/topics/reinforcement-learning",
+      "https://laboro.ai/activity/column/laboro/reinforcementlearning",
+      "https://aismiley.co.jp/ai_news/reinforcement-learning-mechanism-and-examples/",
+      "https://www.msiism.jp/article/reinforcement-learning-for-manufacturing.html",
+      "https://www.sedesign.co.jp/ai-blog/what-is-reinforcement-learning",
+      "https://www.itpassportsiken.com/kakomon/04_haru/q24.html",
+      "https://aws.amazon.com/jp/what-is/reinforcement-learning/",
+      "https://ja.wikipedia.org/wiki/%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92",
+      "https://fe-gokaku.com/fe-r7-a-q1/",
+      "https://doda.jp/engineer/guide/it/049.html",
+      "https://zero2one.jp/learningblog/reinforcement-learning-basics/?srsltid=AfmBOoqNDLtwWZ5JsqxiHdB1KT20nGAQrGWeoUTapyyzcKr-72CsuEhl"
+    ]
   },
   {
     "id": "ch3-004",
@@ -95,16 +177,16 @@
     "question": "線形回帰の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力データをいくつかのグループに分類する機械学習手法"
+        "text": "入力変数の値を分類する手法という技術的な手法"
       },
       {
         "text": "入力変数と出力変数の間に線形な関係を仮定し、連続値を予測する手法"
       },
       {
-        "text": "データを2値（0または1）に分類する手法"
+        "text": "出力変数の値を離散化する手法という学習アプローチ"
       },
       {
-        "text": "データの木構造でルールを生成する手法の概念"
+        "text": "複数の変数を用いて回帰する手法であるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -117,7 +199,37 @@
       "線形回帰",
       "回帰"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.kgmagent.com/2023/11/23/%E3%81%A1%E3%82%83%E3%82%93%E3%81%A8%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0/",
+      "https://www.ios-net.co.jp/blog/20250402-4487/",
+      "https://ja.wikipedia.org/wiki/%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0",
+      "https://aws.amazon.com/jp/what-is/linear-regression/",
+      "https://qiita.com/masaya8028/items/d92ec3b68edc9a6ea2d1",
+      "https://developer.mamezou-tech.com/blogs/2022/05/28/linear-regression/",
+      "https://www.ibm.com/jp-ja/think/topics/linear-regression",
+      "https://www.koukoku.jp/service/suketto/marketer/analysis/%E3%80%902025%E5%B9%B4%E6%9C%80%E6%96%B0%E3%80%91%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90%E3%81%A8%E3%81%AF%EF%BC%9F%E3%83%87%E3%83%BC%E3%82%BF%E3%81%A7%E6%9C%AA%E6%9D%A5%E3%82%92/",
+      "https://wrlab.t-kougei.ac.jp/2025/11/%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E2%91%A1%E5%9B%9E%E5%B8%B0/",
+      "https://baike.baidu.com/ja/item/%E5%9B%9E%E5%B8%B0%E5%88%86%E6%9E%90/1535132",
+      "https://gochikika.ntt.com/Modeling/linear_regression.html",
+      "https://developers.google.com/machine-learning/crash-course/linear-regression?hl=ja",
+      "https://www.lightstone.co.jp/stata/basics-simple-linear-regression.html",
+      "https://ai365.jp/columns/linear-regression-analysis/",
+      "https://zenn.dev/poclabweb/books/chemoinfomatics_theory_machinelearning/viewer/lesson02_010_model",
+      "https://best-biostatistics.com/toukei-er/entry/kinds-of-linear-models/",
+      "https://www.randpy.tokyo/entry/2017/06/16/153435",
+      "https://qiita.com/HiroyukiTachikawa/items/cc2f48161e4da8da69f1",
+      "https://avilen.co.jp/personal/knowledge-article/simple_linear_reg/",
+      "https://www.ibm.com/jp-ja/new/product-blog/perform-linear-regression-analysis-with-spss-statistics",
+      "https://communities.sas.com/t5/Blog/%E7%B7%9A%E5%BD%A2%E5%9B%9E%E5%B8%B0%E3%81%AE%E4%BB%AE%E5%AE%9A%E3%81%AE%E8%AA%A4%E8%A7%A3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/ba-p/495164",
+      "https://www.n-insight.co.jp/niblog/20190917-1351/",
+      "https://best-biostatistics.com/toukei-er/entry/linear-regression-model-assumptions/",
+      "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=201102269786032384&rel=1",
+      "https://www2.kobe-u.ac.jp/~bunji/files/lecture/MVA/html/chapters/05_regression.html",
+      "https://jp.linkedin.com/pulse/from-data-predictions-understanding-supervised-learning-pratik-shinde-lwh5f?tl=ja",
+      "https://biz.moneyforward.com/ai/basic/939/",
+      "https://data-viz-lab.com/analyticalmethod-list"
+    ]
   },
   {
     "id": "ch3-005",
@@ -125,16 +237,16 @@
     "question": "決定木の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "マージン最大化による分類境界を求める手法"
+        "text": "データを一度に全て分析する手法という仕組み"
       },
       {
         "text": "質問（条件分岐）を木構造で表現し、段階的に分類・予測を行う手法"
       },
       {
-        "text": "データの特徴をより少ない次元に圧縮する手法"
+        "text": "複雑な数式を用いて予測を行う手法という学習アプローチ"
       },
       {
-        "text": "複数のモデルを並列学習して多数決で予測する手法"
+        "text": "データの相関関係を視覚化する手法であるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -147,7 +259,24 @@
       "決定木",
       "分類"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.analyticsdlab.co.jp/column/decisiontree.html",
+      "https://dse-souken.com/2021/03/26/ai-15/",
+      "https://zero2one.jp/ai-word/decision-tree/?srsltid=AfmBOoqC4CSUvdsDEVVoEzRSoAKksnZiWjF1Cj-zdRz1Y7m6Y9lWW5Bz",
+      "https://datawokagaku.com/decision_tree/",
+      "https://otafuku-lab.co/aizine/decision-tree0718/",
+      "https://axa.biopapyrus.jp/machine-learning/decision-tree/",
+      "https://zenn.dev/mi_01_24fu/articles/regression-tree",
+      "https://hacarus.github.io/interpretable-ml-book-ja/tree.html",
+      "https://note.com/kens_reading1/n/n742501e3713c",
+      "https://qiita.com/hydrogen_0330/items/59dfa37ceb3bb19b6372",
+      "https://qiita.com/tarantula426/items/82e9991270c2ba3bc6f8",
+      "https://gmo-research.ai/research-column/decision-tree",
+      "https://gri.jp/media/entry/6988",
+      "https://datawokagaku.com/decision_tree_classifier/",
+      "https://www.kikagaku.co.jp/personal/blog/decision-tree-visualization"
+    ]
   },
   {
     "id": "ch3-006",
@@ -155,16 +284,16 @@
     "question": "ランダムフォレストの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "1本の決定木を深く成長させて精度を向上させる手法として定義される"
+        "text": "単一の決定木を用いてデータを分類する手法ですという技術的な手法"
       },
       {
         "text": "複数の決定木をランダムなデータとランダムな特徴量で並列学習し、多数決（平均）で予測する手法"
       },
       {
-        "text": "データを線形に分離するマージン最大化の手法という性質を持つ概念・アプローチ"
+        "text": "複数の決定木を直列に学習し誤りを修正しますという学習アプローチ"
       },
       {
-        "text": "決定木を順番に作成し、前のモデルの誤りを修正していく手法の概念"
+        "text": "全ての特徴量を使って一つの決定木を作成しますであるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -178,7 +307,27 @@
       "ランダムフォレスト",
       "アンサンブル学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://aismiley.co.jp/ai_news/random-forests/",
+      "https://dx-consultant-fast-evolving.com/the-basis-of-random-forest/",
+      "https://www.ios-net.co.jp/blog/20250424-4704/",
+      "https://www.snowflake.com/ja/fundamentals/random-forest/",
+      "https://www.stats-guild.com/professional/analytics/method/12869",
+      "https://study.prime-strategy.co.jp/coverage/py3an1-35/",
+      "https://www.nttcoms.com/service/TIBCO/glossary/random-forest/",
+      "https://qiita.com/Hawaii/items/5831e667723b66b46fba",
+      "https://note.com/firm_bonobo7417/n/n8ccff8ffdd1e",
+      "https://aiacademy.jp/media/?p=252",
+      "https://ja.exploratory.io/note/exploratory/Vfg2fEA8",
+      "https://www.ibm.com/jp-ja/think/topics/random-forest",
+      "https://mathwords.net/randomforest",
+      "https://datawokagaku.com/random_forest/",
+      "https://future-chem.com/ames-random-forest/",
+      "https://qiita.com/SumMae/items/9634bee79f327e4de6cd",
+      "https://note.com/kikaben/n/nb14891f85da4",
+      "https://bigdata-analytics.jp/for-beginners/random-forest-sklearn-analysis/"
+    ]
   },
   {
     "id": "ch3-007",
@@ -186,16 +335,16 @@
     "question": "サポートベクトルマシン（SVM）の主な特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "データを正解ラベルなしでグループに分けるクラスタリング手法"
+        "text": "データの次元を減少させる手法という技術的な手法"
       },
       {
         "text": "クラス間のマージン（余白）を最大化する分離境界を求める分類手法"
       },
       {
-        "text": "決定木を複数組み合わせたアンサンブル手法"
+        "text": "全てのデータを完全に分類するという学習アプローチ"
       },
       {
-        "text": "入力データを低次元空間に射影する次元削減手法"
+        "text": "非線形データを扱えない手法であるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -208,7 +357,31 @@
       "SVM",
       "サポートベクトルマシン"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://fullfront.co.jp/blog/generative-ai/machine-learning/support-vector-machine-explained/",
+      "https://www.nomuyu.com/svm/",
+      "https://jp.mathworks.com/discovery/support-vector-machine.html",
+      "https://qiita.com/renesisu727/items/964005bd29aa680ad82d",
+      "https://aismiley.co.jp/ai_news/svm/",
+      "http://www.cas.cmc.osaka-u.ac.jp/~paoon/Lectures/2024-7Semester-AppliedMath7/13-support-vector-machine/",
+      "https://boritaso-blog.com/svm/",
+      "https://www.tech-teacher.jp/blog/svm/",
+      "https://note.com/kikaben/n/na833906fe21e",
+      "https://zero2one.jp/learningblog/support-vector-machine-with-python/?srsltid=AfmBOoqJtqddlsDVGNxDUaRtUSzUV7XOE2FQtXn9Ql0Zc3UbDwpzGYYf",
+      "https://e-words.jp/w/%E3%83%9E%E3%83%BC%E3%82%B8%E3%83%B3%E6%9C%80%E5%A4%A7%E5%8C%96.html",
+      "https://x.com/AIMarket_jp/status/2041841100294697318",
+      "https://www.snowflake.com/ja/fundamentals/support-vector-machine/",
+      "https://zenn.dev/colorfulwave/articles/924c7e20ba79b7",
+      "https://axa.biopapyrus.jp/machine-learning/svm/hard-margin-svm.html",
+      "https://axa.biopapyrus.jp/machine-learning/svm/",
+      "https://www.acceluniverse.com/blog/developers/2019/07/-2svm.html",
+      "https://qiita.com/sakigakeman/items/f93551d8bbfe3034692d",
+      "https://staff.aist.go.jp/s.akaho/kernel-html/node5.html",
+      "https://avinton.com/academy/svm/",
+      "https://qiita.com/c60evaporator/items/8864f7c1384a3c6e9bd9",
+      "https://qiita.com/MuAuan/items/355e0357437d1ce6184d"
+    ]
   },
   {
     "id": "ch3-008",
@@ -216,16 +389,16 @@
     "question": "k-means法の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "k個の最近傍のデータから多数決で分類する手法の概念"
+        "text": "k-means法は教師あり学習手法であるという技術的な手法"
       },
       {
         "text": "k個のクラスタ重心を更新しながらデータをk個のクラスタに分割する教師なし学習手法"
       },
       {
-        "text": "k枚の決定木を用いたアンサンブル学習として定義される"
+        "text": "k-means法はクラスタ数を自動で決定するという学習アプローチ"
       },
       {
-        "text": "k回の交差検証でモデルの精度を評価する手法として定義される"
+        "text": "k-means法はデータを一つのクラスタにまとめるという"
       }
     ],
     "correctIndex": 1,
@@ -239,7 +412,33 @@
       "k-means",
       "クラスタリング"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://qiita.com/Rumi_Yamaguchi/items/b69db51174bddf44b60a",
+      "https://zenn.dev/academix/books/0da15caa65b59f/viewer/6_unsupervised",
+      "https://tt-tsukumochi.com/archives/5833",
+      "https://exawizards.com/column/article/ai/clustering/",
+      "https://note.com/firm_bonobo7417/n/n8ccff8ffdd1e",
+      "https://note.com/kenji20251123/n/nc7b180e25176",
+      "https://note.com/kens_reading1/n/nee6d560cd8ac",
+      "https://datawokagaku.com/kmeans/",
+      "https://hogetech.info/ml/algorithm/kmeans",
+      "https://www.bizcrew.jp/article/11260022",
+      "https://cloud-ace.jp/column/detail291/",
+      "https://study.prime-strategy.co.jp/coverage/py3an1-40/",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%80%91k-means%E3%81%AE%E3%80%8Ck%E3%80%8D%E3%81%A3%E3%81%A6%E3%81%AA%E3%81%AB%EF%BC%9F%E3%81%AA%E3%81%9C%E3%80%8Ck%E3%80%8D%E3%81%AA%E3%81%AE",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10277238500",
+      "https://zenn.dev/dzonesasaki/articles/fa365c220e5952",
+      "https://otafuku-lab.co/aizine/k-means-0413/",
+      "https://jp.linkedin.com/pulse/sense-unsupervised-machine-learning-kadiyala-nikhil-sarma?tl=ja",
+      "https://www.ibm.com/jp-ja/think/topics/unsupervised-learning",
+      "https://qiita.com/maskot1977/items/6052f4ca0485d36801e0",
+      "https://knowledge.insight-lab.co.jp/aidx/k-means-g-means-x-means",
+      "https://www.jstage.jst.go.jp/article/jssp/40/1/40_2023-006/_html/-char/ja",
+      "https://jpn.nec.com/techrep/journal/g23/n02/230216.html",
+      "https://note.com/vast_cosmos500/n/ncd8c33fca570",
+      "https://www.kogures.com/hitoshi/webtext/sentaku-mondai/index.html?%EF%BC%A1%EF%BC%A9"
+    ]
   },
   {
     "id": "ch3-009",
@@ -247,16 +446,16 @@
     "question": "主成分分析（PCA）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "データを分類するために主要な特徴量を人手で選択する手法"
+        "text": "データの相関を分析する手法として位置づけられる技術"
       },
       {
         "text": "データの分散が最大になる方向（主成分）を見つけて次元を削減する手法"
       },
       {
-        "text": "ニューラルネットワークの主要な重みパラメータを抽出する手法"
+        "text": "次元を増やすための統計手法という学習アプローチ"
       },
       {
-        "text": "分類問題において最も重要なクラスを特定する手法"
+        "text": "データの平均を求める手法を実現するアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -269,7 +468,31 @@
       "PCA",
       "次元削減"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://qiita.com/japanesebonobo/items/d6e072f43aac8ebee685",
+      "https://aismiley.co.jp/ai_news/what-is-pca/",
+      "https://www.ai-souken.com/article/what-is-pca",
+      "https://www.brainpad.co.jp/doors/contents/01_tech_2022-03-09-160000/",
+      "https://www.luft.co.jp/media/principal-component-analysis/",
+      "https://jp.linkedin.com/pulse/demystifying-dimensionality-reduction-machine-learning-ahmed-jlx9e?tl=ja",
+      "https://blog.since2020.jp/data_analysis/pca/",
+      "https://www.nttcoms.com/service/research/dataanalysis/principal-component-analysis/",
+      "https://postd.cc/a-beginners-guide-to-eigenvectors-pca-covariance-and-entropy/",
+      "https://ponta-bioinformatics.com/pca/",
+      "https://zero2one.jp/learningblog/dimension-reduction-with-python/?srsltid=AfmBOop1wDNCiW6xAbrF-37v2rTLPHogCGHcFZLvq2SEae1oJclTeAe8",
+      "https://www.ibm.com/jp-ja/think/topics/principal-component-analysis",
+      "https://datawokagaku.com/pca/",
+      "https://www.reddit.com/r/learnmachinelearning/comments/r42ner/is_pca_the_best_way_to_reduce_dimensionality/?tl=ja",
+      "https://aiacademy.jp/media/?p=256",
+      "https://kentapt.hatenablog.com/entry/2022/02/16/182532",
+      "https://zero2one.jp/learningblog/dimension-reduction-with-python/?srsltid=AfmBOooV9ma2DQGhJFGUFg0AQKj5Cj8hFtLjXww7ZbDt7_jlO8I6N2dy",
+      "https://gochikika.ntt.com/Preprocessing/compression-PCA.html",
+      "https://statisticsschool.com/%E3%80%90%E5%85%B1%E7%B7%9A%E6%80%A7%E8%A7%A3%E6%B1%BA%E3%80%91python%E3%81%A7%E4%B8%BB%E6%88%90%E5%88%86%E5%88%86%E6%9E%90%E3%82%92%E3%82%84%E3%81%A3%E3%81%A6%E3%81%BF%E3%81%9F/",
+      "https://qiita.com/Hatomugi/items/d6c8bb1a049d3a84feaa",
+      "https://www.salesanalytics.co.jp/datascience/datascience292/",
+      "https://furiousgreen.co/dimension-reduction-comparison-pca-tsne-umap"
+    ]
   },
   {
     "id": "ch3-010",
@@ -277,16 +500,16 @@
     "question": "適合率（Precision）の定義として正しいものはどれか。",
     "choices": [
       {
-        "text": "実際にPositiveであるもののうち、AIがPositiveと予測できた割合"
+        "text": "AIがNegativeと予測したもののうち、実際にNegativeであった割合"
       },
       {
         "text": "AIがPositiveと予測したもののうち、実際にPositiveであった割合"
       },
       {
-        "text": "全データのうち、AIが正しく予測できた割合として定義される"
+        "text": "モデルがPositiveと予測したもののうち、実際にNegativeだった割合"
       },
       {
-        "text": "適合率と再現率の調和平均であることを特徴とする定義・概念"
+        "text": "AIが全データを正しく分類した割合を示す指標であるという"
       }
     ],
     "correctIndex": 1,
@@ -300,7 +523,45 @@
       "適合率",
       "評価指標"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://qiita.com/FlatBone/items/933cf1100b712d82dc1a",
+      "https://blog.since2020.jp/data_analysis/f1-precision-recall/",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14198259224",
+      "https://aismiley.co.jp/ai_news/machine-learning-evaluation-index/",
+      "https://www.reddit.com/r/Sat/comments/qgyg9z/an_objectively_incorrect_sat_answer/?tl=ja",
+      "https://www.salesanalytics.co.jp/column/no00312/",
+      "https://note.com/adachiakiho/n/nc9cc86399430",
+      "https://www.edrawmind.com/mind-maps/27720/%E8%A9%A6%E9%A8%93%E8%AA%A4%E7%AD%94%E5%88%86%E6%9E%90%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/?lang=JP",
+      "https://www.reddit.com/r/explainlikeimfive/comments/1dsdd3o/eli5_why_cant_llms_like_chatgpt_calculate_a/?tl=ja",
+      "https://aiacademy.jp/media/?p=2449",
+      "https://kentei.ai/blog/archives/1636",
+      "https://engineering-technology.brexa.com/blog/technavi/aiaccuracy/",
+      "https://news.livedoor.com/article/detail/24092588/",
+      "https://thinktion.net/blog/proofreading-tips-for-beginners/",
+      "https://www.jstage.jst.go.jp/article/jjep/67/1/67_40/_pdf/-char/ja",
+      "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall?hl=ja",
+      "https://globis.jp/article/542/",
+      "https://note.com/shirotabistudy/n/nba4329013d0d",
+      "https://corp.omake.co.jp/%E9%81%A9%E5%90%88%E7%8E%87%EF%BC%88precision%EF%BC%89%E3%81%A8%E3%81%AF%EF%BC%9F%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E8%A9%95%E4%BE%A1%E6%8C%87%E6%A8%99%E3%82%92/",
+      "https://www.petit-orchestra.jp/entry/2026/01/12/204527",
+      "https://zenn.dev/robes/articles/a311f6b66e6b38",
+      "https://qiita.com/FukuharaYohei/items/be89a99c53586fa4e2e4",
+      "https://websekai.iwanami.co.jp/posts/7372",
+      "https://repository.kulib.kyoto-u.ac.jp/bitstreams/4d44543d-dddb-478e-9398-339428cbaeb8/download",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2209/22/news034.html",
+      "https://www.codexa.net/ml-evaluation-cls/",
+      "https://ai-compass.weeybrid.co.jp/using/precision-understanding-accuracy-in-machine-learning/",
+      "https://katekyo.mynavi.jp/juken/56205",
+      "https://uxdaystokyo.com/articles/ai-accuracy-bullsht-heres-ux-must-part-1/",
+      "https://www.ultralytics.com/ja/blog/accuracy-precision-recall",
+      "https://zero2one.jp/ai-word/accuracy-precision-recall-f-measure/?srsltid=AfmBOooF1bXik7cuoUaweysSx7Rbcrbg8QBgXVMxIeP-ixwdikrFbdGB",
+      "https://www.gakushuin.ac.jp/~881791/d/0202.html",
+      "https://www.jsac.or.jp/bunseki/pdf/bunseki2007/200702nyumon.PDF",
+      "https://urawasanatorium.com/director/kangaetekita/cause/",
+      "https://zero2one.jp/ai-word/false-positive-false-negative/?srsltid=AfmBOoo5SkD-67YJmnu-QH8O5f3SVhkvnkQYi7vYks9RDLPDZyEeg2bQ",
+      "https://tebiki.jp/genba/useful/fool-proof"
+    ]
   },
   {
     "id": "ch3-011",
@@ -308,16 +569,16 @@
     "question": "F値（F-measure）の定義として正しいものはどれか。",
     "choices": [
       {
-        "text": "適合率と再現率の算術平均"
+        "text": "適合率と精度の平均という技術"
       },
       {
         "text": "適合率と再現率の調和平均"
       },
       {
-        "text": "全体の正解率と誤差の比"
+        "text": "再現率と正解率の平均である"
       },
       {
-        "text": "MSEとRMSEの平均"
+        "text": "適合率と再現率の合計という"
       }
     ],
     "correctIndex": 1,
@@ -331,7 +592,24 @@
       "F値",
       "評価指標"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://aiacademy.jp/media/?p=2476",
+      "https://ai-compass.weeybrid.co.jp/algorizm/f-measure-evaluating-machine-learning-models/",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2210/24/news034.html",
+      "https://ja.wikipedia.org/wiki/F%E5%80%A4_(%E8%A9%95%E4%BE%A1%E6%8C%87%E6%A8%99)",
+      "https://data.gunosy.io/entry/2016/08/05/115345",
+      "https://datawokagaku.com/f1score/",
+      "https://www.iteacher.tech/linguistics/precision-recall-fmeasure/",
+      "https://e-words.jp/w/F%E5%80%A4.html",
+      "https://zero2one.jp/ai-word/accuracy-precision-recall-f-measure/?srsltid=AfmBOorZuqSSzB3xCuWYrEDY4dNNQaG5KD2ceOTP8LWIfVoJ8lLeMEpG",
+      "https://zero2one.jp/ai-word/accuracy-precision-recall-f-measure/?srsltid=AfmBOop8cRpQtE8jk0nFHcFsUhsHzmW4l-9zlaSySOpFz9R9PLcbpwwc",
+      "https://pystyle.info/ml-accuracy-precision-recall-f-measure/",
+      "https://zero2one.jp/ai-word/accuracy-precision-recall-f-measure/?srsltid=AfmBOoo6_Pf4ij3YH0jEvV2ZrnZ2QpxiCCV93Pisbpb2Rsmfqi9dFIIf",
+      "https://takuma-ai.hatenablog.com/entry/2021/03/03/092703",
+      "https://zenn.dev/hellorusk/articles/46734584386c49057e1b",
+      "https://qiita.com/TaskeHAMANO/items/74cf2b6170066adee13f"
+    ]
   },
   {
     "id": "ch3-012",
@@ -342,13 +620,13 @@
         "text": "MSEは誤差を二乗するため外れ値の影響を大きく受けるが、MAEは絶対値のため外れ値の影響を受けにくい"
       },
       {
-        "text": "MSEは分類問題で使い、MAEは回帰問題で使うに基づく処理・理論の枠組み"
+        "text": "MAEは誤差を二乗するため外れ値に敏感であるとして機能する技術的なシステム"
       },
       {
-        "text": "MSEは回帰問題、MAEはクラスタリング問題に使うとして定義される"
+        "text": "MSEは誤差の絶対値を取るため外れ値に強い影響を与えるという学習アプローチ"
       },
       {
-        "text": "MSEはRMSEの二乗であり、MAEよりも常に大きい値をとるの概念"
+        "text": "MAEは外れ値の影響を強く受けるがMSEは受けないとして適用される技術"
       }
     ],
     "correctIndex": 0,
@@ -363,7 +641,17 @@
       "MAE",
       "回帰評価指標"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://ie.u-ryukyu.ac.jp/~tnal/2025/dm/static/4-nlp/MAEvsMSE.html",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2008/17/news031.html",
+      "https://nuco.co.jp/blog/article/N8ksSbak",
+      "https://codefinity.com/ja/courses/v2/ea9a9329-f536-4093-81a0-667e7b2f94e6/b08310d8-30c2-454f-9daf-315ecee7c234/c6d6545d-35da-44ed-8fcf-7d67986a13b4",
+      "https://www.reddit.com/r/statistics/comments/k0i5ls/q_mse_vs_mae_for_predicted_probability/?tl=ja",
+      "https://curiosity-creates.com/?p=649",
+      "https://toukei-lab.com/rmse_mae_mse",
+      "https://saycon.co.jp/archives/neta/%E8%AA%A4%E5%B7%AE%EF%BC%88%E3%81%94%E3%81%95%EF%BC%89%E3%80%8D%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%80%81%E3%82%84%E3%81%95%E3%81%97%E3%81%8F%E4%B8%81%E5%AF%A7%E3%81%AB%E8%A7%A3%E8%AA%AC"
+    ]
   },
   {
     "id": "ch3-013",
@@ -405,13 +693,13 @@
         "text": "シグモイド関数を用いて出力を0〜1の確率に変換し、2クラス分類を行う教師あり学習手法"
       },
       {
-        "text": "連続値を予測する回帰手法で、出力は0〜∞の範囲として定義される"
+        "text": "ロジスティック回帰は回帰分析の一種で、数値を予測する手法である。"
       },
       {
-        "text": "複数の特徴量から最も重要な特徴量を選択する手法として定義される"
+        "text": "この手法は多クラス分類を行うために、複数のシグモイド関数を使用する。"
       },
       {
-        "text": "木構造でルールを表現し分類を行う手法として知られる代表的な手法"
+        "text": "ロジスティック回帰は教師なし学習に分類され、クラスタリングに用いられる。"
       }
     ],
     "correctIndex": 0,
@@ -425,7 +713,26 @@
       "ロジスティック回帰",
       "分類"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://qiita.com/sotanishy/items/424cb75fb272af66b87b",
+      "https://istat.jp/archives/706",
+      "https://www.simulationroom999.com/blog/jdla-deep-learning-for-general-2020-1/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.tech-teacher.jp/blog/logistic-regression-understand/",
+      "https://best-biostatistics.com/correlation_regression/logistic.html",
+      "https://freeasy24.research-plus.net/blog/c391",
+      "https://bellcurve.jp/statistics/course/27015.html?srsltid=AfmBOooZv6gEQ4e1yJHodYBA7LsAnjC_Cx90ACBEWpu7sIPK0dgBftAA",
+      "https://cacco.co.jp/datascience/media/data-analysis/1274/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://epilogi.dr-10.com/articles/5612/",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11241583836"
+    ]
   },
   {
     "id": "ch3-015",
@@ -436,13 +743,13 @@
         "text": "全データをk個のグループに分割し学習と評価を交互に繰り返すことで、モデルの汎化性能をより客観"
       },
       {
-        "text": "モデルの学習速度を向上させるためという特性を持つ技術的定義"
+        "text": "データを一度だけ分割し評価する手法であるとして位置づけられる技術"
       },
       {
-        "text": "データをk種類の特徴量に変換するために関する概念であり、G検定の重要用語のひとつ"
+        "text": "モデルの訓練データを増やすための方法であるとして機能する技術的なシステム"
       },
       {
-        "text": "k種類の異なるモデルを同時に学習して最良モデルを選ぶためとして定義される"
+        "text": "全てのデータを一度に使用する手法であるとして用いられる技術的手法"
       }
     ],
     "correctIndex": 0,
@@ -455,7 +762,30 @@
       "交差検証",
       "モデル評価"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://qiita.com/ke-suke-Soft/items/e335a609836df9cdc40e",
+      "https://www.netattest.com/generalization-performance-2024_mkt_tst",
+      "https://tjo.hatenablog.com/entry/2016/04/14/190000",
+      "https://qiita.com/niko_zamurai/items/ec92b7e83eaeb9379721",
+      "https://zero2one.jp/ai-word/k-fold-cross-validation/?srsltid=AfmBOoqI9lG4BnXa4wWcYj7w7pKzHqUX1-z9wrEL1cTPA_w6_9ve8TJy",
+      "https://gucci-j.github.io/post/cv-intro/",
+      "https://aiacademy.jp/media/?p=263",
+      "https://kentei.ai/blog/archives/1602",
+      "https://www.guruguru.science/competitions/17/discussions/3b0ccff2-7fe6-4908-bb99-8c8f0ca0c460/",
+      "https://penguinchord.com/blog/data-science/python-grid-search",
+      "https://www.codexa.net/cross_validation/",
+      "https://e-words.jp/w/k-%E5%88%86%E5%89%B2%E4%BA%A4%E5%B7%AE%E6%A4%9C%E8%A8%BC.html",
+      "https://ebi-works.com/ml-validation/",
+      "https://pro.arcgis.com/ja/pro-app/latest/tool-reference/spatial-statistics/how-evaluate-predictions-with-cross-validation-works.htm",
+      "https://e-words.jp/w/%E6%B1%8E%E5%8C%96%E6%80%A7%E8%83%BD.html",
+      "https://milab.mi-6.co.jp/article/t0017",
+      "https://note.com/terminator1025/n/n6c7a4ce9f42a",
+      "https://www.skymenu.net/media/article/3381/",
+      "https://surala.jp/school/column/4797/",
+      "https://www.britannica.co.jp/blog/shidounoittaika/",
+      "https://www.kyoiku.metro.tokyo.lg.jp/documents/d/kyoiku/02_44"
+    ]
   },
   {
     "id": "ch3-016",
@@ -466,13 +796,13 @@
         "text": "弱学習器を逐次的に追加し、前の学習器の誤差を修正するように学習を進めるアンサンブル手法"
       },
       {
-        "text": "複数の決定木をランダムなサンプルで並列に学習し、多数決で予測する手法"
+        "text": "複数のモデルを並列に学習させ、全体の精度を向上させる手法という技術"
       },
       {
-        "text": "SVMを複数組み合わせて高精度な分類を行う手法として定義される"
+        "text": "単一の強いモデルを用いて、データを一度に処理する方法であるである"
       },
       {
-        "text": "データを重みなしでランダムにサンプリングして複数モデルを学習する手法"
+        "text": "各モデルが独立して学習し、最終的に結果を平均化する手法・仕組み"
       }
     ],
     "correctIndex": 0,
@@ -487,7 +817,32 @@
       "アンサンブル学習",
       "XGBoost"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E5%8B%BE%E9%85%8D%E3%83%96%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%A8%E3%81%AF%EF%BC%9F%E3%80%91%E3%82%A2%E3%83%B3%E3%82%B5%E3%83%B3%E3%83%96%E3%83%AB%E5%AD%A6%E7%BF%92",
+      "https://e-words.jp/w/%E5%8B%BE%E9%85%8D%E3%83%96%E3%83%BC%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0.html",
+      "https://appswingby.com/%E5%BC%B1%E3%81%84%E5%AD%A6%E7%BF%92%E5%99%A8-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://ai-compass.weeybrid.co.jp/algorizm/boosting-accuracy-with-gradient-boosting/",
+      "https://www.ibm.com/jp-ja/think/topics/boosting",
+      "https://www.snowflake.com/ja/fundamentals/what-is-gradient-boosting/",
+      "https://note.com/kens_reading1/n/nfb03aeca1e69",
+      "https://fullfront.co.jp/blog/generative-ai/machine-learning/ensemble-learning-methods-implementation-guide/",
+      "https://www.ibm.com/jp-ja/think/topics/gradient-boosting",
+      "https://note.com/firm_bonobo7417/n/n8ccff8ffdd1e",
+      "https://zenn.dev/dalab/articles/9c843f0ec8aabf",
+      "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC-%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%AE%E5%9F%BA%E7%A4%8E%E6%B1%8E%E5%8C%96%E6%80%A7%E8%83%BD%E5%90%91%E4%B8%8A%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF/",
+      "https://qiita.com/fuyu_quant/items/ea256c8d8fc552311ed6",
+      "https://note.com/kens_reading1/n/nd20f89079166",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://www.ultralytics.com/ja/blog/exploring-ensemble-learning-and-its-role-in-ai-and-ml",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.simulationroom999.com/blog/jdla-deep-learning-for-general-2020-1/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613"
+    ]
   },
   {
     "id": "ch3-017",
@@ -498,13 +853,13 @@
         "text": "バギングは複数モデルを並列に学習して集約し、ブースティングは前モデルの誤差を補正しながら逐次学習する"
       },
       {
-        "text": "バギングは逐次学習、ブースティングは並列学習を行うとして定義される"
+        "text": "バギングは逐次的にモデルを学習し、ブースティングは独立したモデルを集約する"
       },
       {
-        "text": "バギングは回帰主な用途の、ブースティングは分類主な用途のの手法である"
+        "text": "バギングは誤差を修正し、ブースティングはモデルを並列に学習させる手法である"
       },
       {
-        "text": "バギングはデータ全体を使用し、ブースティングはデータのサブセットのみ使用する"
+        "text": "バギングはバイアスを減少させ、ブースティングは分散を抑えることを目的とする"
       }
     ],
     "correctIndex": 0,
@@ -520,7 +875,29 @@
       "ブースティング",
       "アンサンブル学習"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://qiita.com/UKI_datascience/items/d7f347804fe4fc22ee22",
+      "https://note.com/gexam_master/n/n2b09f2bbc86f",
+      "https://www.ibm.com/jp-ja/think/topics/ensemble-learning",
+      "https://jp.linkedin.com/pulse/demystifying-ensemble-learning-boosting-vs-bagging-ramesh-kumaran-n-ggkfc?tl=ja",
+      "https://mathwords.net/bagging",
+      "https://note.com/narumi_ai/n/n97640e2058b0",
+      "https://aws.amazon.com/jp/what-is/boosting/",
+      "https://www.codexa.net/what-is-ensemble-learning/",
+      "https://chefyushima.com/ai-ml_emsemble/1853/",
+      "https://aismiley.co.jp/ai_news/ensemble_learning/",
+      "https://www.ibm.com/jp-ja/think/topics/gradient-boosting",
+      "https://www.salesanalytics.co.jp/datascience/datascience220/",
+      "https://toukei-lab.com/ensemble",
+      "https://daily-life-ai.com/1663/",
+      "https://note.com/shuwasystem/n/n0241f8ed81c2",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E5%88%9D%E5%BF%83%E8%80%85%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E5%90%91%E3%81%91%E3%80%91%E3%82%A2%E3%83%B3%E3%82%B5%E3%83%B3%E3%83%96%E3%83%AB%E5%AD%A6%E7%BF%92%E3%81%AE%E5%9F%BA",
+      "https://datawokagaku.com/ensemble/",
+      "https://boochi-engineer.net/archives/4187",
+      "https://www.ultralytics.com/ja/blog/exploring-ensemble-learning-and-its-role-in-ai-and-ml",
+      "https://www.randpy.tokyo/entry/random_forest"
+    ]
   },
   {
     "id": "ch3-018",
@@ -531,13 +908,13 @@
         "text": "分類したいデータから距離が近いk個のデータの多数決でクラスを決定する教師あり学習"
       },
       {
-        "text": "k個のクラスタ重心を更新してデータを分割する教師なし学習"
+        "text": "新しいデータを無視して分類する手法として位置づけられる技術"
       },
       {
-        "text": "k本の決定木を並列学習してアンサンブルする手法の概念"
+        "text": "距離が遠いデータを優先して選ぶ方法として機能する技術的なシステム"
       },
       {
-        "text": "k回の交差検証でモデルを評価する手法として定義される"
+        "text": "全てのデータを考慮して平均を取る手法として適用される技術"
       }
     ],
     "correctIndex": 0,
@@ -551,7 +928,33 @@
       "k近傍法",
       "分類"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://momotech-dao.com/machine038/",
+      "https://boochi-engineer.net/archives/2468",
+      "https://itstudio.co/2023/05/07/11616/",
+      "https://zero2one.jp/learningblog/k-nearest-neighbor-python/?srsltid=AfmBOorPVST1of4IpH7UNLh1h3N8fQR-WiX__6KmxScf23hMEIqMGpyQ",
+      "https://zenn.dev/shimada_ml/books/ac65dcc56a4ec8/viewer/d52fe1",
+      "https://qiita.com/maskot1977/items/8e4ccd4f3e2efe1b0adc",
+      "https://pythonbunseki.com/python-knn/",
+      "https://note.com/kikaben/n/n07aa2250d887",
+      "https://di-acc2.com/programming/python/8702/",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E6%9C%80%E3%82%82%E7%9B%B4%E6%84%9F%E7%9A%84%E3%81%AA%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%80%91k-%E8%BF%91%E5%82%8D%E6%B3%95%EF%BC%88k-nn%EF%BC%89%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF",
+      "https://qiita.com/kazuya_minakuchi/items/9e73ab5fd1a9c17e3787",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/02296/121600005/",
+      "https://www.ibm.com/jp-ja/think/topics/knn",
+      "https://zero2one.jp/learningblog/k-nearest-neighbor-python/?srsltid=AfmBOoqDWum_tHBtTPmEUrj-SUFOM2LU9krnnjohcAHZ2FDzoZHjOfOl",
+      "https://www.elastic.co/jp/what-is/knn",
+      "https://datachemeng.com/knn/",
+      "https://zenn.dev/kumamoto/articles/bc6230323bc0ad",
+      "https://shion.blog/the-7th-machine-learning-workshop_1/",
+      "https://mlnote.hontolab.org/content/knn-and-ml-flow.html",
+      "https://www.reddit.com/r/learnmachinelearning/comments/h9wur8/i_made_these_notes_on_supervised_knn_vs/?tl=ja",
+      "https://qiita.com/yshi12/items/26771139672d40a0be32",
+      "https://zero2one.jp/learningblog/k-nearest-neighbor-python/?srsltid=AfmBOor5A77uUyLc2m8EOfs1SHiaiaM9fjVbcPDlsOjKGmJqybKakMuC",
+      "https://aws.amazon.com/jp/blogs/news/amazon-sagemaker-supports-knn-classification-and-regression/",
+      "https://www.sejuku.net/blog/64355"
+    ]
   },
   {
     "id": "ch3-019",
@@ -562,13 +965,13 @@
         "text": "各特徴量が互いに独立（条件付き独立）であると仮定してベイズの定理を適用する確率的分類手法"
       },
       {
-        "text": "特徴量間に強い相関があると仮定してベイズの定理を適用する分類手法"
+        "text": "特徴量間に強い相関があると仮定し、分類を行う手法という仕組み"
       },
       {
-        "text": "教師なし学習でデータのクラスを推定するためのベイズ的手法"
+        "text": "全ての特徴量が連続値であることを前提とした手法という学習アプローチ"
       },
       {
-        "text": "事前確率なしにデータの尤度だけで分類する手法として定義される"
+        "text": "クラス間の依存関係を無視して分類する手法として適用される技術"
       }
     ],
     "correctIndex": 0,
@@ -582,7 +985,28 @@
       "確率的分類",
       "ベイズ"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://note.com/vast_cosmos500/n/nbb2a8070e903",
+      "https://qiita.com/fujin/items/bd58fc7a93dc6e001045",
+      "https://www.ultralytics.com/ja/glossary/naive-bayes",
+      "https://www.digitalreactor.net/2025/07/naive-bayes-types-guide/",
+      "https://www.ibm.com/jp-ja/think/topics/naive-bayes",
+      "https://qiita.com/aflc/items/13fe52243c35d3b678b0",
+      "https://jp.linkedin.com/pulse/naive-bayes-classification-bluechip-technologies-asia-ip09c?tl=ja",
+      "https://rikei-logistics.com/naive-bayes",
+      "https://note.com/kikaben/n/n0dfc76dc8b68",
+      "https://hacarus.github.io/interpretable-ml-book-ja/other-interpretable.html",
+      "https://best-biostatistics.com/toukei-er/entry/machine-learning-essentials-bayes-theorem-and-naive-bayes/",
+      "https://note.com/tnishimaki/n/n2b783d616350",
+      "https://dev.classmethod.jp/articles/naivebaise_zakkurimatome_/",
+      "https://avinton.com/academy/naive-bayes/",
+      "https://blog.octopt.com/naive-bayes-classifier/",
+      "https://saycon.co.jp/archives/neta/%E3%83%8A%E3%82%A4%E3%83%BC%E3%83%96%E3%83%99%E3%82%A4%E3%82%BA%E5%88%86%E9%A1%9E%E5%99%A8%E3%81%AE%E3%80%8C%E3%83%8A%E3%82%A4%E3%83%BC%E3%83%96%E3%80%8D%E3%81%A3%E3%81%A6%E4%BD%95%EF%BC%9F%E3%81%9D",
+      "https://www.reddit.com/r/MLQuestions/comments/1q2xv1c/naive_bayes_algorithm/?tl=ja",
+      "https://ja.d2l.ai/chapter_crashcourse/naive-bayes.html",
+      "https://zenn.dev/mugi_cha/articles/21e63b9acc4b11"
+    ]
   },
   {
     "id": "ch3-020",
@@ -593,13 +1017,13 @@
         "text": "データの局所的な類似度を確率分布として捉え、高次元の構造を保ちながら低次元に可視化する非線形次元削減手法"
       },
       {
-        "text": "データを線形変換して分散が最大になる方向に射影する次元削減手法の概念"
+        "text": "高次元データを線形に圧縮し、可視化する手法であるとして位置づけられる技術"
       },
       {
-        "text": "データ間のユークリッド距離だけを保つように次元を削減する手法の概念"
+        "text": "データの全体的な構造を保持しながら次元を減少させるとして機能する技術的なシステム"
       },
       {
-        "text": "クラスラベルを利用して次元を削減する教師あり学習の次元削減手法の概念"
+        "text": "局所的な構造を無視して全体を一つにまとめる手法であるとして適用される技術"
       }
     ],
     "correctIndex": 0,
@@ -614,7 +1038,32 @@
       "次元削減",
       "可視化"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776,3239ebc4-ec1d-4386-8cdb-b7bb52d82608"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776,3239ebc4-ec1d-4386-8cdb-b7bb52d82608",
+    "source_ref_supplements": [
+      "https://zero2one.jp/ai-word/t-sne/?srsltid=AfmBOopZBBeUhsVGuzi9_5nFqbZxH9o_CDyMOi7TwrDJs2IZQHci8rTm",
+      "https://note.com/kens_reading1/n/nca7e73d7e696",
+      "https://qiita.com/sakami/items/bb466161489771f7d2e9",
+      "https://rightcode.co.jp/blogs/15444",
+      "https://boritaso-blog.com/t_sne/",
+      "https://jp.linkedin.com/pulse/navigating-curse-dimensionality-challenges-solutions-data-matta-xxlbc?tl=ja",
+      "https://ja.wikipedia.org/wiki/T%E5%88%86%E5%B8%83%E5%9E%8B%E7%A2%BA%E7%8E%87%E7%9A%84%E8%BF%91%E5%82%8D%E5%9F%8B%E3%82%81%E8%BE%BC%E3%81%BF%E6%B3%95",
+      "https://furiousgreen.co/dimension-reduction-comparison-pca-tsne-umap",
+      "https://www.ultralytics.com/ja/glossary/t-distributed-stochastic-neighbor-embedding-t-sne",
+      "https://note.com/niti_technology/n/n508087f2e84f",
+      "https://zenn.dev/green_tea/articles/576d36f7a8c993",
+      "https://jp.mathworks.com/help/stats/t-sne.html",
+      "https://deepage.net/machine_learning/2017/03/08/tsne.html",
+      "https://www.reddit.com/r/computervision/comments/1lfh76l/tsne_explained/?tl=ja",
+      "https://qiita.com/g-k/items/120f1cf85ff2ceae4aba",
+      "https://www.themoonlight.io/ja/review/stop-misusing-t-sne-and-umap-for-visual-analytics",
+      "https://www.reddit.com/r/statistics/comments/iin0u8/d_criticisms_of_the_tsne_algorithm/?tl=ja",
+      "https://bunsekikobako.com/t-sne-code-example/",
+      "https://note.com/statditto/n/nbbcf01c3ece6",
+      "https://www.codemajin.net/tsne-umap-misuse-traps/",
+      "https://scrapbox.io/nishio/tSNE%E3%81%AE%E7%B5%90%E6%9E%9C%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AF%E6%85%8E%E9%87%8D%E3%81%AB",
+      "https://github.com/KentaItakura/blog-post-about-t-SNE",
+      "https://qiita.com/aokikenichi/items/9d829910efd5dff0b79f"
+    ]
   },
   {
     "id": "ch3-021",
@@ -625,13 +1074,13 @@
         "text": "真陽性率（再現率）と偽陽性率を2軸にとり、分類の閾値を変化させた際のモデル性能を描いた曲線"
       },
       {
-        "text": "適合率（Precision）と再現率（Recall）を2軸にとり、閾値変化を描いた曲線"
+        "text": "ROC曲線は真陰性率と偽陰性率を用いて描かれるグラフであるという技術"
       },
       {
-        "text": "訓練データのサイズに対するモデル精度の変化を描いた曲線の概念"
+        "text": "ROC曲線は分類器の精度を一つの閾値で示すものであるという学習アプローチ"
       },
       {
-        "text": "MSEとMAEの比較を可視化した曲線という手法・アプローチを指す"
+        "text": "ROC曲線は感度と特異度を一つの軸にとるグラフであるという仕組み"
       }
     ],
     "correctIndex": 0,
@@ -646,7 +1095,26 @@
       "AUC",
       "評価指標"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://baike.baidu.com/ja/item/ROC%E6%9B%B2%E7%B7%9A/1150862",
+      "https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc?hl=ja",
+      "https://www.saecanet.com/2025/07/r%E3%81%A7roc%E6%9B%B2%E7%B7%9A/",
+      "https://www.tomomi-research.com/archives/2401",
+      "https://ja.wikipedia.org/wiki/%E5%8F%97%E4%BF%A1%E8%80%85%E6%93%8D%E4%BD%9C%E7%89%B9%E6%80%A7",
+      "https://ai-compass.weeybrid.co.jp/algorizm/understanding-model-performance-with-roc-curves/",
+      "https://zenn.dev/jackthekaggler/articles/64b4e32cce7d34022ae3",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2211/24/news019.html",
+      "https://www.cresco.co.jp/blog/entry/15337.html",
+      "https://okumuralab.org/~okumura/stat/ROC.html",
+      "https://www.emuyn.net/stats/lecture/roc",
+      "https://best-biostatistics.com/contingency/roc-curve.html",
+      "https://qiita.com/kenmatsu4/items/550b38f4fa31e9af6f4f",
+      "https://qiita.com/setowatson/items/97137afaa905f980d827",
+      "https://www.kikagaku.co.jp/personal/blog/roc-auc",
+      "https://rs.usaco.co.jp/product/xlstat/tips/roc-curve-with-xlstat.html",
+      "https://www.med.osaka-u.ac.jp/pub/kid/clinicaljournalclub6.html"
+    ]
   },
   {
     "id": "ch3-022",
@@ -657,13 +1125,13 @@
         "text": "ランダムに予測するモデルと同等の性能"
       },
       {
-        "text": "ほぼすべてのの予測が完全に正しい、最高性能のモデル"
+        "text": "モデルの性能が非常に高いという仕組み"
       },
       {
-        "text": "ほぼすべてのの予測が誤りの、最悪性能のモデル"
+        "text": "完全に正しい予測をするという学習アプローチ"
       },
       {
-        "text": "適合率と再現率が等しい、バランスのよいモデル"
+        "text": "全く意味のないモデルであるという仕組み"
       }
     ],
     "correctIndex": 0,
@@ -678,7 +1146,34 @@
       "ROC曲線",
       "評価指標"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://atmarkit.itmedia.co.jp/ait/articles/2211/24/news019.html",
+      "https://www.flowhunt.io/ja/%E7%94%A8%E8%AA%9E%E9%9B%86/area-under-the-curve-auc/",
+      "https://umarketing.co.jp/ai-glossary/auc/",
+      "https://ja.exploratory.io/note/exploratory/AUC-RZG7gbI6",
+      "https://zenn.dev/yuto_mo/articles/3378374bc5d8f5",
+      "https://qiita.com/emuyn/items/998535042b3d65e7914e",
+      "https://exploratory.io/note/exploratory/AUC-RZG7gbI6?embed=true",
+      "https://note.com/noa813/n/nc83b864b0991",
+      "https://stats.stackexchange.com/questions/266387/can-auc-roc-be-between-0-0-5",
+      "https://www.kikagaku.co.jp/personal/blog/roc-auc",
+      "https://best-biostatistics.com/contingency/roc-curve.html",
+      "https://www.codexa.net/ml-evaluation-cls/",
+      "https://otafuku-lab.co/aizine/auc-0902/",
+      "https://www.cresco.co.jp/blog/entry/15337.html",
+      "https://recruit.group.gmo/engineer/jisedai/blog/rocauc_eval/",
+      "https://qiita.com/jun40vn/items/1b63bfe3bda5b0c78d94",
+      "https://note.com/owlet_notes/n/n7a85b03826a3",
+      "https://zenn.dev/colorfulwave/articles/f47044747daad4",
+      "https://tech.furyu.jp/entry/2016/09/12/045900",
+      "https://www.snowflake.com/ja/fundamentals/random-forest/",
+      "https://jp.linkedin.com/pulse/boosting-predictive-power-using-random-forest-models-m365show-uhumc?tl=ja",
+      "https://swgoh-chiptips.jp/it/2025/12/05/random-forest-ai-data-processing/",
+      "https://hira-labo.com/archives/4333",
+      "https://www.nttcoms.com/service/TIBCO/glossary/random-forest/",
+      "https://tjo.hatenablog.com/entry/2016/04/14/190000"
+    ]
   },
   {
     "id": "ch3-023",
@@ -692,10 +1187,10 @@
         "text": "実際にPositiveであるのに、モデルがNegativeと予測した件数"
       },
       {
-        "text": "実際にPositiveであり、モデルもPositiveと予測した件数"
+        "text": "モデルがPositiveと予測した件数のうち、実際にPositiveであった件数"
       },
       {
-        "text": "実際にNegativeであり、モデルもNegativeと予測した件数"
+        "text": "実際にNegativeであるのに、モデルがPositiveと判断した割合"
       }
     ],
     "correctIndex": 0,
@@ -710,7 +1205,29 @@
       "偽陽性",
       "評価指標"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://jp.linkedin.com/pulse/understanding-confusion-matrix-true-positive-false-negative-ahmed-vxw2e?tl=ja",
+      "https://zero2one.jp/ai-word/false-positive-false-negative/?srsltid=AfmBOorHkQfaq6_tA1zi5L6IMeqUEpXJqedyUJiVRTmDv2i3UB_VwBTf",
+      "https://www.flowhunt.io/ja/%E7%94%A8%E8%AA%9E%E9%9B%86/confusion-matrix/",
+      "https://pystyle.info/ml-confusion-matrix/",
+      "https://persol-serverworks.co.jp/blog/sagemaker/mixing-matrix.html",
+      "https://www.salesanalytics.co.jp/column/no00312/",
+      "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall?hl=ja",
+      "https://note.com/kikaben/n/nc457443773b7",
+      "https://medium.com/nlp-tsupei/%E6%B7%B7%E6%B7%86%E7%9F%A9%E9%99%A3-confusion-matrix-%E4%BB%8B%E7%B4%B9-5eecd6da02ba",
+      "https://note.com/masaru3n/n/nb9fefc73276c",
+      "https://qiita.com/ei_540/items/b5a49d463345ac972cb7",
+      "https://tsupei.github.io/nlp/2019/10/25/cm.html",
+      "https://nisshingeppo.com/ai/whats-confusion-matrix/",
+      "https://zhuanlan.zhihu.com/p/681998308",
+      "https://www.m1ke.org/p/%E6%B7%B7%E5%90%8C%E8%A1%8C%E5%88%97%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/",
+      "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall?hl=zh-tw",
+      "https://en.wikipedia.org/wiki/Confusion_matrix",
+      "https://jp.indeed.com/career-advice/career-development/confusion-matrix",
+      "https://mathlandscape.com/confusion-matrix/",
+      "https://qiita.com/wagasa2/items/0603b70a155c742c7849"
+    ]
   },
   {
     "id": "ch3-024",
@@ -718,16 +1235,16 @@
     "question": "再現率（Recall）を特に重視すべきユースケースとして最も適切なものはどれか。",
     "choices": [
       {
-        "text": "スパムメールのフィルタリングで、正常なメールを誤ってスパムと判定しないようにする"
+        "text": "がん検診AIで、誤って陽性と判断するという技術的な手法"
       },
       {
-        "text": "ECサイトのレコメンドで、ユーザーが購入しそうな商品だけを表示する"
+        "text": "がん検診AIで、偽陽性を減らすための手法という学習アプローチ"
       },
       {
         "text": "がん検診AIで、実際に陽性の患者を見逃さないようにする"
       },
       {
-        "text": "文書分類で、正確にカテゴリを割り当てるとして定義される"
+        "text": "がん検診AIで、陽性患者を見逃さないためのという仕組み"
       }
     ],
     "correctIndex": 2,
@@ -742,7 +1259,26 @@
       "評価指標",
       "医療AI"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://qiita.com/Yushin-Tati/items/92784cbc1adcd51c98b3",
+      "https://techblitz.com/startup-interview/ai-medical-service/",
+      "https://prtimes.jp/main/html/rd/p/000000036.000049025.html",
+      "https://zenn.dev/agent_grow/articles/b03c798e5a92e7",
+      "https://healthist.net/medicine/3906/",
+      "https://tech.smarthr.jp/entry/2025/08/05/192115",
+      "https://www.businessinsider.jp/article/104951/",
+      "https://jp.linkedin.com/pulse/how-ai-advancing-cancer-diagnosis-care-microsoft-on-the-issues-lremf?tl=ja",
+      "https://www.techfun.co.jp/services/magazine/generative-ai/rag-evaluation-metrics.html",
+      "https://databasespecialist.sakutore.decryption.co.jp/2016-spring-am2/q19/",
+      "https://www.web.nhk/tv/an/gendai/pl/series-tep-R7Y6NGLJ6G/ep/J86X43KWZ2",
+      "https://automation.jp/research-report/2025-03-05-nlp-with-deep-learning-lecture-11-nlp-evaluation-beyond-metrics-understanding-the-path-to-true-assessment",
+      "https://www.adachi-ichou.com/blog/620.html",
+      "https://www.technologyreview.jp/s/317355/ai-can-help-screen-for-cancer-but-theres-a-catch/",
+      "https://note.com/vast_cosmos500/n/n2a007e757ba3",
+      "https://www.asahi.com/articles/ASV3R3FWDV3RUTFL008M.html",
+      "https://www.reddit.com/r/datascience/comments/1709s0h/handling_class_imbalance_in_multiclass/?tl=ja"
+    ]
   },
   {
     "id": "ch3-025",
@@ -750,16 +1286,16 @@
     "question": "決定係数（R²）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "予測値と実測値の差の絶対値の平均として定義される"
+        "text": "回帰モデルの精度を示す指標であるという技術的な手法"
       },
       {
-        "text": "予測誤差を二乗して平均したものとして定義される"
+        "text": "データの相関関係を示す指標であるという学習アプローチ"
       },
       {
         "text": "回帰モデルがデータの分散をどれだけ説明できるかを0〜1の範囲で示す指標"
       },
       {
-        "text": "適合率と再現率の調和平均であることを特徴とする定義・概念"
+        "text": "回帰分析の結果を評価する指標であるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -774,7 +1310,34 @@
       "決定係数",
       "回帰評価指標"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://datastudydock.com/r2/",
+      "https://toukei-lab.com/r_squared",
+      "https://funatsu-lab.github.io/open-course-ware/basic-theory/accuracy-index/",
+      "https://app.statisticsschool.com/practice/statistics/regression/pages/regression-014.html",
+      "https://www.momoyama-usagi.com/entry/math-stat-regression1",
+      "https://milab.mi-6.co.jp/article/t0006",
+      "https://xgrapher.com/articles/determination",
+      "https://datawokagaku.com/reg_metrics/",
+      "https://qiita.com/oki_kosuke/items/3934cd311fc805cafe81",
+      "https://boritaso-blog.com/regression-metrics-guide/",
+      "https://www.nri.com/jp/knowledge/glossary/model_evaluation_index.html",
+      "https://bellcurve.jp/statistics/course/9706.html?srsltid=AfmBOoqe-H5WoXKO3l7JCOdgqOeVcdX-mCUJ14cv4ieeSi7jah5u4oIN",
+      "https://best-biostatistics.com/correlation_regression/r-square.html",
+      "https://otafuku-lab.co/aizine/r2-score0411/",
+      "https://www.scsk.jp/sp/mwai/blog/cat/r2.html",
+      "https://qiita.com/kzkymn/items/3b3a72a6f6704264d4df",
+      "https://www.reddit.com/r/MachineLearning/comments/1p7v5y2/d_how_do_you_know_if_regression_metrics_like/?tl=ja",
+      "https://qiita.com/TK7110/items/82f093826803b9b05e83",
+      "https://note.com/e_dao/n/n882d3804dff4",
+      "https://www.salesanalytics.co.jp/column/no00388/",
+      "https://biolab.sakura.ne.jp/r-squared.html",
+      "https://dalab.jp/mag/methods/logistic-regression/",
+      "https://bellcurve.jp/statistics/course/24461.html?srsltid=AfmBOopTb29vM3tHd0TDss7sEGg2dZUJpClRCgrMQb9sV0t00vRWfTSU",
+      "https://datachemeng.com/notes_measures_for_0_in_regression_analysis/",
+      "https://necostat.hatenablog.jp/entry/2022/12/28/090252"
+    ]
   },
   {
     "id": "ch3-026",
@@ -782,16 +1345,16 @@
     "question": "L1正則化（Lasso）とL2正則化（Ridge）の違いとして正しいものはどれか。",
     "choices": [
       {
-        "text": "L1正則化は重みの二乗和をペナルティとし、L2正則化は重みの絶対値和をペナルティとする"
+        "text": "L1正則化は重みを全てゼロにする効果があり、L2正則化は重みを大きくする効果があるという技術"
       },
       {
-        "text": "L1正則化は過学習を促進し、L2正則化は過学習を防ぐという枠組みで理解される処理機構"
+        "text": "L1正則化は重みの二乗和をペナルティとし、L2正則化は重みの絶対値和をペナルティとするである"
       },
       {
         "text": "L1正則化は重みの絶対値和をペナルティとし特徴量をゼロにする効果があり、L2正則化は重みの二乗和をペナルティとして重みを小さく抑える"
       },
       {
-        "text": "L1正則化は分類問題、L2正則化は回帰問題にのみ使用できるとして機械学習分野で広く認識されている"
+        "text": "L1正則化はモデルの精度を高めるために使われ、L2正則化は特徴量を削減するために使う・仕組み"
       }
     ],
     "correctIndex": 2,
@@ -807,7 +1370,29 @@
       "L2正則化",
       "正則化"
     ],
-    "source_ref": "ba191316-9b93-43a9-b482-02bb057aa351"
+    "source_ref": "ba191316-9b93-43a9-b482-02bb057aa351",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E6%AD%A3%E5%89%87%E5%8C%96.html",
+      "https://ai-trend.jp/basic-study/neural-network/regularization/",
+      "https://note.com/doindoindoin/n/n67f5f61517ea",
+      "https://zero2one.jp/learningblog/yobinori-collab-regularization/?srsltid=AfmBOorT2c6EUBXnDu1to7VNu16_3YeULDZoiWYIq4tUqxZhoSukr-GX",
+      "https://zenn.dev/yuto_mo/articles/d431682e824dd2",
+      "https://i-noma.com/post-316/",
+      "https://jp.linkedin.com/pulse/mastering-regularization-techniques-machine-learning-l1-aliyev-whene?tl=ja",
+      "https://zero2one.jp/learningblog/yobinori-collab-regularization/?srsltid=AfmBOorAOJs2VhmFChEXWtTAhZ8eqEgt9w44ImionfTFBf59FgJS8Z9O",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1eqp6bc/l1_vs_l2_regularization_which_is_better/?tl=ja",
+      "https://videonote.info/18/34/484/",
+      "https://www.reddit.com/r/learnmachinelearning/comments/17j8bv8/why_does_l1_regularization_get_the_weight_to/?tl=ja",
+      "https://breakbee.hatenablog.jp/entry/2015/03/08/041411",
+      "http://marupeke296.com/IKDADV_DL_No12_regularization.html",
+      "https://www.ios-net.co.jp/blog/20250827-5656/",
+      "https://qiita.com/c60evaporator/items/784f0640004be4eefc51",
+      "https://zenn.dev/zawawahoge/scraps/cd2042db14a904",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%80%91l1%E6%AD%A3%E5%89%87%E5%8C%96%E3%81%A8l2%E6%AD%A3%E5%89%87%E5%8C%96%E3%81%A8%E3%81%AF%EF%BC%9F%E3%80%9C%E3%80%8C%E9%81%8E%E5%AD%A6",
+      "https://note.com/kikaben/n/nea93224b3b39",
+      "https://www.ibm.com/jp-ja/think/topics/regularization",
+      "https://ai-compass.weeybrid.co.jp/learning/preventing-overfitting-with-l2-regularization-2/"
+    ]
   },
   {
     "id": "ch3-027",
@@ -815,16 +1400,16 @@
     "question": "次元の呪い（Curse of Dimensionality）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "特徴量の数が増えると計算速度が線形に向上する現象に関連する技術・理論の説明"
+        "text": "特徴量が増えると、モデルの精度が向上することが多いとして位置づけられる技術"
       },
       {
-        "text": "深層学習において層が深くなると勾配が消失する現象という性質を持つ概念・アプローチ"
+        "text": "次元数が増加すると、データの収集が容易になることがあるという学習アプローチ"
       },
       {
         "text": "特徴量の次元数が増えすぎると、学習に必要なデータ量が指数関数的に増大し、モデルの性能が低下しやすくなる現象"
       },
       {
-        "text": "データが多次元になると可視化が難しくなる現象だけを指すとして定義される"
+        "text": "次元の呪いは、データの量が増えることで解消される現象を実現するアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -839,7 +1424,26 @@
       "次元削減",
       "機械学習"
     ],
-    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608,54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608,54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://itjisho.com/%E6%AC%A1%E5%85%83%E3%81%AE%E5%91%AA%E3%81%84%EF%BC%88curse-of-dimensionality%EF%BC%89%E3%81%A8%E3%81%AF%EF%BC%9F%E5%8E%9F%E5%9B%A0%E3%83%BB%E5%85%B7%E4%BD%93%E4%BE%8B%E3%83%BB%E5%AF%BE%E7%AD%96/",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2006/29/news023.html",
+      "https://appswingby.com/%E6%AC%A1%E5%85%83%E3%81%AE%E5%91%AA%E3%81%84-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://www.flowhunt.io/ja/%E7%94%A8%E8%AA%9E%E9%9B%86/dimensionality-reduction/",
+      "https://note.com/narumi_ai/n/n43fe2af26e47",
+      "https://note.com/kens_reading1/n/nd601c7aaacf4",
+      "https://kentei.ai/blog/archives/1593",
+      "https://gen-ai-media.guga.or.jp/glossary/curse-of-dimensionality/",
+      "https://otafuku-lab.co/aizine/dimensionality-0903/",
+      "https://dx-consultant-fast-evolving.com/what-is-curse-of-dimensionality/",
+      "https://e-words.jp/w/%E6%AC%A1%E5%85%83%E3%81%AE%E5%91%AA%E3%81%84.html",
+      "https://zenn.dev/green_tea/articles/2875587a23442a",
+      "https://ja.wikipedia.org/wiki/%E6%AC%A1%E5%85%83%E3%81%AE%E5%91%AA%E3%81%84",
+      "https://www.reddit.com/r/datascience/comments/17p5tct/how_many_features_are_too_many_features/?tl=ja",
+      "https://www.nli-research.co.jp/report/detail/id=82017?site=nli",
+      "https://note.com/_novita_/n/n231525fb507b",
+      "https://qiita.com/kibinag0/items/b1c0dac7df941ee42315"
+    ]
   },
   {
     "id": "ch3-028",
@@ -847,16 +1451,16 @@
     "question": "階層的クラスタリングの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "事前にクラスタ数kを指定してデータを分割する手法として機械学習分野で広く認識されている"
+        "text": "データをランダムに分割し、各クラスタを形成する手法であるとして位置づけられる技術"
       },
       {
-        "text": "重みを持つ階層型ニューラルネットワークでクラスタリングする手法として定義される"
+        "text": "教師あり学習に基づき、事前にクラスタ数を決定する手法であるとして機能する技術的なシステム"
       },
       {
         "text": "データ同士の類似度に基づき段階的にクラスタを結合（または分割）し、木構造（デンドログラム）で表現する教師なし学習手法"
       },
       {
-        "text": "ラベル付きデータから階層的なルールを学習する手法という特性を持つ技術的定義"
+        "text": "データの特徴を無視して、単純にクラスタを生成する手法であるを実現するアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -871,7 +1475,31 @@
       "クラスタリング",
       "デンドログラム"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://www.tech-teacher.jp/blog/hierarchical-clustering/",
+      "https://www.issoh.co.jp/column/details/10574/",
+      "https://chokkan.github.io/mlnote/unsupervised/02hac.html",
+      "https://nuco.co.jp/blog/article/geIu6RyF",
+      "https://www.ibm.com/jp-ja/think/topics/hierarchical-clustering",
+      "https://datawokagaku.com/hierarchical_clustering/",
+      "https://best-biostatistics.com/toukei-er/entry/hierarchical-clustering-in-r/",
+      "https://column.tis.jp/post-1693/",
+      "https://study.prime-strategy.co.jp/coverage/py3an1-40/",
+      "https://datachemeng.com/hierarchicalclustering/",
+      "https://jp.linkedin.com/pulse/from-confusion-clarity-mastering-feature-hierarchical-abdurrahim-ali-dgu0e?tl=ja",
+      "https://note.com/kens_reading1/n/na8e1cc6bdd0a",
+      "https://dx-consultant-fast-evolving.com/the-basis-of-ward-method/",
+      "https://qiita.com/yasaigirai/items/ec3c3aaaab5bc9b930a2",
+      "https://www.kamishima.net/jp/clustering/",
+      "https://bellcurve.jp/statistics/course/27155.html?srsltid=AfmBOopI--e-Gk36j2IQlmAXGtiCF9gS8caYsLbhZOD5FstZhsYmmDpW",
+      "https://www.onemarketing.jp/contents/cluster-re",
+      "https://qiita.com/g-k/items/8f0d9905d3e106caed59",
+      "https://bellcurve.jp/statistics/course/27155.html?srsltid=AfmBOor_TqfFrMPwtNxWwCkB22BajIED_qroxMdETKSE750oE9WP-j8N",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E6%96%B0%E4%BA%BA%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E5%90%91%E3%81%91%EF%BD%9C%E9%9A%8E%E5%B1%A4%E7%9A%84%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%A8",
+      "https://www.jstage.jst.go.jp/article/fss/34/0/34_12/_pdf/-char/ja",
+      "https://patents.google.com/patent/WO2013001893A1/ja"
+    ]
   },
   {
     "id": "ch3-029",
@@ -879,16 +1507,16 @@
     "question": "強化学習におけるQ学習（Q-learning）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "方策（ポリシー）そのものをパラメータ化して勾配法で直接更新する手法"
+        "text": "特定の行動を選択することで報酬を得る手法であるとして位置づけられる技術"
       },
       {
-        "text": "人間のフィードバックを報酬として利用してモデルを微調整する手法の概念"
+        "text": "Q値を用いて行動を選択する手法であるが、報酬は無視するという学習アプローチ"
       },
       {
         "text": "ある状態で特定の行動をとった際の期待累積報酬（Q値）を更新することで最適行動を学習する価値ベースの手法"
       },
       {
-        "text": "Q個の状態空間に分割してモンテカルロ法で最適方策を求める手法の概念"
+        "text": "行動の選択肢をランダムに決定する手法であることが特徴であるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -903,7 +1531,24 @@
       "強化学習",
       "価値ベース"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://zero2one.jp/ai-word/q-learning/?srsltid=AfmBOopdOcOOgxmE61IL0dMUEY5wwopKCh3tMxIgxhbEQOXe2AJMhP-w",
+      "https://aiacademy.jp/media/?p=6775",
+      "https://zero2one.jp/ai-word/q-learning/?srsltid=AfmBOoqh1U7TfGxpjDOSMCxbHH-DVFlexEpJVs8im5WrwegCC6JSLgQi",
+      "https://knmts.com/311/",
+      "https://www.sbcr.jp/support/199709/",
+      "https://qiita.com/juri_engineer/items/a42f28e57a1d6809e43e",
+      "https://python-ai-learn.com/2021/02/15/g-exam2/",
+      "https://note.com/domonjo01/n/n75333f8852be",
+      "https://www.simulationroom999.com/blog/gkentei-problemset-ultimate-kanpe-process/",
+      "https://qiita.com/s5023111/items/2caf13471f10d17c3643",
+      "https://quizlet.com/1143048869",
+      "https://www.jdla.org/certificate/general/issues/",
+      "https://zenn.dev/bit_and_coffee/articles/gk-deep-learning-basics-roadmap",
+      "https://www.jdla.org/g-qa/"
+    ]
   },
   {
     "id": "ch3-030",
@@ -911,16 +1556,16 @@
     "question": "方策勾配法（Policy Gradient Method）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "Q値テーブルを更新することで最適行動を求める手法に基づく処理・理論の枠組み"
+        "text": "エージェントの行動を価値関数で評価し、最適化する手法として位置づけられる技術"
       },
       {
-        "text": "環境のモデルを事前に構築してその中でシミュレーションする手法の概念"
+        "text": "行動選択を確率的に決定し、報酬を最大化する方法として機能する技術的なシステム"
       },
       {
         "text": "エージェントの行動方策をパラメータとして直接表現し、累積報酬が大きくなる方向に勾配法で方策を更新する手法"
       },
       {
-        "text": "複数のエージェントが競争・協調しながら方策を更新する手法として定義される"
+        "text": "方策を間接的に評価し、価値関数を用いて更新する手法を実現するアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -935,7 +1580,24 @@
       "強化学習",
       "方策ベース"
     ],
-    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608,b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608,b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://www.geolab.jp/documents/column/ai-013/",
+      "https://omomuki-tech.com/archives/6109",
+      "https://www.codemajin.net/reinforcement-learning-from-the-basics/",
+      "https://note.com/kikaben/n/ndcf8ae338f38",
+      "https://andbld.co.jp/glossary/reinforcement-learning/",
+      "https://www.msiism.jp/article/s4-rl-7.html",
+      "https://note.com/narumi_ai/n/n70b7beaef888",
+      "https://qiita.com/shionhonda/items/ec05aade07b5bea78081",
+      "https://zenn.dev/questlico/articles/22cdfd76a70799",
+      "https://qiita.com/yyokii/items/0ff56e761d1cf6128f27",
+      "https://ja.wikipedia.org/wiki/%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92",
+      "https://ankimaker.com/workbooks/4b734084-957b-4bac-9163-d0a45edd21b4",
+      "https://ai-compass.weeybrid.co.jp/algorizm/reinforce-introduction-to-policy-gradient-methods-2/",
+      "https://jp.mathworks.com/discovery/reinforcement-learning.html",
+      "https://zero2one.jp/ai-word/policy-gradient-methods/?srsltid=AfmBOop01YMPu_Bh_xe9JDVUUDCubSED-x-clQDwC70tJRmRZl3UOl39"
+    ]
   },
   {
     "id": "ch3-031",
@@ -943,16 +1605,16 @@
     "question": "強化学習における報酬設計（Reward Design）の重要性として正しいものはどれか。",
     "choices": [
       {
-        "text": "報酬は学習後に設定するものなので、事前の設計は不要であるという枠組みで理解される処理機構"
+        "text": "報酬設計はエージェントの行動を無視するため重要ではないとして位置づけられる技術"
       },
       {
-        "text": "報酬は常にプラスの値だけを使う必要があるという性質を持つ概念・アプローチ"
+        "text": "報酬が多すぎるとエージェントは学習しにくくなるため注意が必要という学習アプローチ"
       },
       {
         "text": "適切な報酬設計がなければエージェントが目標とは異なる行動を学習してしまうため、タスクの目的に合わせた慎重な設計が必"
       },
       {
-        "text": "報酬の大きさは学習結果に影響しないため任意の値を使ってよいという考え方に基づく手法"
+        "text": "報酬設計はエージェントの行動を強化するだけで十分であるとして用いられる技術的手法"
       }
     ],
     "correctIndex": 2,
@@ -966,7 +1628,28 @@
       "報酬設計",
       "強化学習"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://offers.jp/media/programming/a_3840",
+      "https://ai-compass.weeybrid.co.jp/learning/reward-shaping-a-key-to-reinforcement-learning/",
+      "https://kentei.ai/blog/archives/2019",
+      "https://www.databricks.com/jp/blog/types-ai-agents-definitions-roles-and-examples",
+      "https://jp.mathworks.com/discovery/reinforcement-learning.html",
+      "https://ja.wikipedia.org/wiki/%E5%BC%B7%E5%8C%96%E5%AD%A6%E7%BF%92",
+      "https://zenn.dev/azarashi_chan/articles/94979de1d2638a",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://www.ibm.com/jp-ja/think/topics/ai-agents",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://note.com/makokon/n/n2ad5954ae4e4",
+      "https://www.exabeam.com/ja/explainers/agentic-ai/agentic-ai-architecture-types-components-best-practices/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://www.simulationroom999.com/blog/jdla-deep-learning-for-general-2020-1/",
+      "https://www.reddit.com/r/gamedev/comments/1rxds2e/its_hard_to_find_a_place_to_talk_about_ai_in/?tl=ja",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ]
   },
   {
     "id": "ch3-032",
@@ -974,16 +1657,16 @@
     "question": "特徴量エンジニアリング（Feature Engineering）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "モデルのハイパーパラメータを自動的に最適化するプロセスとして定義される"
+        "text": "データの前処理を行い、機械学習モデルを訓練する手法であるという技術的な手法"
       },
       {
-        "text": "特徴量の数を増やすだけで精度を向上させるプロセスという特性を持つ技術的定義"
+        "text": "特徴量の選択を行うが、変換は行わないプロセスにあたるという学習アプローチ"
       },
       {
         "text": "ドメイン知識を活用し、元データから機械学習モデルの性能向上に寄与する特徴量を作成・選択・変換するプロセス"
       },
       {
-        "text": "テストデータだけを対象に特徴量を変換するプロセスという性質を持つ概念・アプローチ"
+        "text": "データの可視化を通じて、分析結果を報告する技術であるとして適用される技術"
       }
     ],
     "correctIndex": 2,
@@ -997,7 +1680,32 @@
       "前処理",
       "機械学習"
     ],
-    "source_ref": "b2087165-6a97-4809-8fda-76e69d7891ea"
+    "source_ref": "b2087165-6a97-4809-8fda-76e69d7891ea",
+    "source_ref_supplements": [
+      "https://www.giken.co.jp/column/feature-engineering/",
+      "https://kentei.ai/blog/archives/1723",
+      "https://zenn.dev/academix/books/0da15caa65b59f/viewer/9_feature",
+      "https://think-ai.tokyo/archives/356",
+      "https://note.com/taida_hito/n/n85f4d500a7a3",
+      "https://www.mamezou.com/techinfo/ai_machinelearning_rpa/ai_tech_team/9",
+      "https://note.com/marthay/n/nf2c86c400ad5",
+      "https://qiita.com/FukuharaYohei/items/c87f61aee2a24466d5d4",
+      "https://medium.com/jin-system-architect/feature-engineering-isnt-making-features-it-s-translating-business-logic-into-model-language-5c433ce3b059",
+      "https://www.linkedin.com/pulse/data-science-series-hidden-pitfalls-feature-arnav-munshi-lphxc",
+      "https://developers.google.com/machine-learning/guides/rules-of-ml?hl=ja",
+      "https://note.com/vast_elk830/n/nfcc3da76c900",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC9754225/",
+      "https://datachemeng.com/double_cross_validation_poor_results/",
+      "https://www.kdnuggets.com/5-critical-feature-engineering-mistakes-that-kill-machine-learning-projects",
+      "https://qiita.com/zumax/items/2a07f6d3502fc9a16a44",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10277530695",
+      "https://www.quanthub.com/best-practices-and-missteps-in-feature-engineering-for-machine-learning/",
+      "https://www.reddit.com/r/datascience/comments/pt7syn/i_dont_know_how_to_deal_with_feature_engineering/",
+      "https://kumo.ai/resources/learn/why-feature-engineering-is-obsolete/",
+      "https://stats.stackexchange.com/questions/211296/clarification-about-not-performing-feature-engineering-before-selecting-cv-folds",
+      "https://codesignal.com/learn/courses/feature-engineering-for-machine-learning/lessons/navigating-practical-challenges-in-feature-engineering",
+      "https://analysis-navi.com/?p=3211"
+    ]
   },
   {
     "id": "ch3-033",
@@ -1005,16 +1713,16 @@
     "question": "未学習（アンダーフィッティング）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "訓練データに過剰に適合し、テストデータの精度が低い状態"
+        "text": "モデルが訓練データに過剰適合し、テストデータで精度が低い状態"
       },
       {
-        "text": "テストデータでのみ精度が低い状態として定義される技術的概念・考え方"
+        "text": "モデルの表現力が高く、訓練データでは精度が良好な状態である"
       },
       {
         "text": "モデルの表現力が不足しており、訓練データとテストデータのどちらでも精度が低い状態"
       },
       {
-        "text": "データ量が多すぎてモデルが収束しない状態として定義される"
+        "text": "モデルが訓練データに適合し、テストデータでも高い精度を示す状態"
       }
     ],
     "correctIndex": 2,
@@ -1028,7 +1736,28 @@
       "アンダーフィッティング",
       "汎化"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://saycon.co.jp/archives/neta/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E6%8A%80%E8%A1%93%E8%80%85%E8%A9%A6%E9%A8%93%E3%82%B7%E3%83%A9%E3%83%90%E3%82%B9%E6%94%B9%E5%AE%9A%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%9F%E6%A9%9F%E6%A2%B0",
+      "https://note.com/vast_cosmos500/n/ncd8c33fca570",
+      "https://www.ap-siken.com/keyword/1/1-3",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://qiita.com/Hamziro_dev/items/c25290a4919fb32cd8e3",
+      "https://www.researchgate.net/publication/370188768_Development_and_Applicability_of_Computational_Models_in_Educational_PsychologyFor_Better_Understanding_of_Theories_Constructs_and_Educational_Phenomena_and_Practicejiaoyuxinlixueniokerushulimoderunoz",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap3.html",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://automation.jp/research-report/2025-03-05-nlp-with-deep-learning-lecture-11-nlp-evaluation-beyond-metrics-understanding-the-path-to-true-assessment",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.simulationroom999.com/blog/jdla-deep-learning-for-general-2020-1/",
+      "https://qiita.com/s-itou/items/c6dbcab28bcd96d73eb2",
+      "https://www.artlogic.co.jp/artlogic/topics/chatbot/chatbot.html",
+      "https://zenn.dev/microsoft/articles/rag_textbook",
+      "https://note.com/lifeprompt/n/n0078de2ef36b"
+    ]
   },
   {
     "id": "ch3-034",
@@ -1036,16 +1765,16 @@
     "question": "アンサンブル学習における「多様性」の重要性として正しいものはどれか。",
     "choices": [
       {
-        "text": "アンサンブル学習では全モデルを全く同じ手法で学習させることで精度が向上する"
+        "text": "異なるモデルを組み合わせると、必ず精度が向上するという技術"
       },
       {
-        "text": "同じモデルを複数回学習させることで必ず精度が向上するの概念"
+        "text": "同じアルゴリズムを使ったモデルが最も効果的であるという学習アプローチ"
       },
       {
         "text": "互いに異なる誤りをするモデルを組み合わせることで、個々のモデルより汎化性能が向上する"
       },
       {
-        "text": "多様なモデルを使うと計算量は増えるが精度は変わらないの概念"
+        "text": "モデルの数が多いほど、必ずしも精度が高くなるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -1060,7 +1789,28 @@
       "多様性",
       "ランダムフォレスト"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/genelab_999/n/ndd3a021ebd0b",
+      "https://www.ibm.com/jp-ja/think/topics/ensemble-learning",
+      "https://future-chem.com/ames-random-forest/",
+      "https://note.com/vast_cosmos500/n/nd0afcd965e23",
+      "https://datachemeng.com/model_independence_in_ensemble_learning/",
+      "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202302204456602785",
+      "https://jp.linkedin.com/pulse/ensemble-methods-practice-combining-strengths-multiple-pandey?tl=ja",
+      "https://qiita.com/taka_yayoi/items/eec12fd4226b9c63f0c5",
+      "https://www.ultralytics.com/ja/glossary/ensemble",
+      "https://www.giken.co.jp/column/ensemble-learning/",
+      "https://note.com/vast_cosmos500/n/n046d2953d0de",
+      "https://www.salesanalytics.co.jp/column/no00381/",
+      "https://ai.japanstep.jp/learn/2025/06/1091/",
+      "https://qiita.com/rho-guy/items/7c3ef9fca030732b0c86",
+      "https://recruit.analytics-jp.com/755/",
+      "https://www.codexa.net/what-is-ensemble-learning/",
+      "https://fan-adn.github.io/ist-textbook-open/classif-theory.html",
+      "https://zenn.dev/junc/articles/4bfa8d651e8ca5",
+      "https://www.randpy.tokyo/entry/random_forest"
+    ]
   },
   {
     "id": "ch3-035",
@@ -1068,13 +1818,13 @@
     "question": "SVMのカーネルトリック（Kernel Trick）の目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "計算量を増やして精度を上げるためのトリックという特性を持つ技術的定義"
+        "text": "高次元空間でのデータの可視化を行う手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "サポートベクターの数を減らして計算効率を向上させる手法として定義される"
+        "text": "データの次元を削減し、計算量を減らすための手法に応用される技術的な仕組み"
       },
       {
-        "text": "複数のSVMを並列に学習させてアンサンブルするための手法として定義される"
+        "text": "線形分離可能なデータを非線形に変換する手法であるを実現するアルゴリズム"
       },
       {
         "text": "低次元空間では線形分離できないデータを、高次元空間に暗黙的に写像することで線形分離可能にするための手法"
@@ -1092,7 +1842,20 @@
       "カーネルトリック",
       "非線形分類"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E3%82%AB%E3%83%BC%E3%83%8D%E3%83%AB%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF.html",
+      "https://note.com/kikaben/n/nc2f2a6fb5927",
+      "https://www.reddit.com/r/learnmachinelearning/comments/9l7v3q/kernel_trick_explanation_why_is_it_interesting/?tl=ja",
+      "https://qiita.com/Fumio-eisan/items/52b9abde0eda6dafad7b",
+      "https://shogo82148.github.io/homepage/memo/algorithm/svm/kernel.html",
+      "https://home.hiroshima-u.ac.jp/tkurita/lecture/svm/node6.html",
+      "https://datawokagaku.com/svm/",
+      "https://otafuku-lab.co/aizine/carnel-trick1009/",
+      "https://zenn.dev/akira_kashihara/articles/e039331864a498",
+      "https://qiita.com/renesisu727/items/1c6014c909202ff089f3",
+      "https://www.reddit.com/r/MachineLearning/comments/4iftea/why_is_the_kernel_trick_only_used_in_svms/?tl=ja"
+    ]
   },
   {
     "id": "ch3-036",
@@ -1100,13 +1863,13 @@
     "question": "ホールドアウト法（Holdout Method）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "データをk個に分割し、k回の学習・評価を繰り返す手法として定義される"
+        "text": "データを訓練用と検証用に分け、検証データで評価する手法ですという技術"
       },
       {
-        "text": "全データを学習に使い、外部データセットで評価する手法として定義される"
+        "text": "データを全て訓練用として使用し、テストデータは用いない方法です。"
       },
       {
-        "text": "訓練データを保持（ホールド）せずにオンライン学習する手法の概念"
+        "text": "データを複数の部分に分割し、全てで交互に評価を行う手法ですという"
       },
       {
         "text": "データを訓練用とテスト用の2つに分割し、訓練データで学習したモデルをテストデータで評価する手法"
@@ -1124,7 +1887,36 @@
       "モデル評価",
       "交差検証"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://www.cybernet.co.jp/ncs/column_glossary/glossary/holdout_method/",
+      "https://e-words.jp/w/%E3%83%9B%E3%83%BC%E3%83%AB%E3%83%89%E3%82%A2%E3%82%A6%E3%83%88%E6%B3%95.html",
+      "https://watlab-blog.com/2020/02/18/holdout/",
+      "https://qiita.com/ZESSU/items/8aaad3cdfeae35fa0820",
+      "https://www.codexa.net/cross_validation/",
+      "https://www.salesanalytics.co.jp/datascience/datascience257/",
+      "https://ai-compass.weeybrid.co.jp/learning/hold-out-and-cross-validation/",
+      "https://datawokagaku.com/holdout/",
+      "https://zero2one.jp/ai-word/holdout-validation/?srsltid=AfmBOopLC6CHGxLBNpLZrnPCVBGkdXBW-JQjwJSPrY0EgqKc0zxhOoLS",
+      "https://carbgem.com/%E3%80%90%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%9A%E3%83%BC%E3%83%91%E3%83%BC%E3%80%91deeplearning-%E4%B8%8A%E7%B4%9A%E7%B7%A8/",
+      "https://note.com/pal_wallflower/n/n3d1db100a64b",
+      "https://note.nkmk.me/python-sklearn-train-test-split/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://techsword.co.jp/column/dataset-split",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://chotdekiru.com/learn/courses/python-ai-data-analysis/pai-5-4",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://zenn.dev/nekoallergy/articles/ml-basic-data",
+      "https://qiita.com/LicaOka/items/c6725aa8961df9332cc7",
+      "https://nisshingeppo.com/ai/data-split/",
+      "https://ja.wikipedia.org/wiki/%E8%A8%93%E7%B7%B4%E3%83%BB%E6%A4%9C%E8%A8%BC%E3%83%BB%E3%83%86%E3%82%B9%E3%83%88%E3%83%87%E3%83%BC%E3%82%BF%E3%82%BB%E3%83%83%E3%83%88",
+      "https://zenn.dev/logeeeeee/articles/78d1a686f4397d"
+    ]
   },
   {
     "id": "ch3-037",
@@ -1132,13 +1924,13 @@
     "question": "k-means法の課題として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "教師ラベルが必要なため、ラベルなしデータには使えない"
+        "text": "クラスタ数kを自動で決定できるとして機能する技術的なシステム"
       },
       {
-        "text": "常に最適なクラスタリング結果が保証されるとして定義される"
+        "text": "データの次元数が多いと精度が低下に応用される技術的な仕組み"
       },
       {
-        "text": "k-meansは1次元データにしか適用できないの概念"
+        "text": "全てのデータ点が同じクラスタに入るを実現するアルゴリズム"
       },
       {
         "text": "クラスタ数kを事前に指定する必要があり、初期重心の選択により結果が異なる場合がある"
@@ -1156,7 +1948,26 @@
       "クラスタリング",
       "教師なし学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://qiita.com/deaikei/items/11a10fde5bb47a2cf2c2",
+      "https://tt-tsukumochi.com/archives/5833",
+      "https://bcblog.sios.jp/what-is-clustering-merit-demerit/",
+      "https://www.ibm.com/jp-ja/think/topics/clustering",
+      "https://taimuoreganoblog.com/home/machine_learning/k-means/",
+      "https://www.ap-siken.com/kakomon/03_haru/pm03.html",
+      "https://qiita.com/amateur2020/items/6e8a6adb754c8299f40a",
+      "https://statisticsschool.com/%E3%80%90%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89%E3%80%91k-means%E6%B3%95%E3%81%A8%E3%81%AF%EF%BC%9F%E5%91%A8%E8%BE%BA%E3%81%AE%E3%82%AF%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0/",
+      "https://datawokagaku.com/kmeans/",
+      "https://rs.usaco.co.jp/product/xlstat/tips/k-means-clustering-with-xlstat.html",
+      "https://note.com/kikaben/n/ncb22780088af",
+      "https://otafuku-lab.co/aizine/clustering0522/",
+      "https://qiita.com/tk-tatsuro/items/1228c90e8803db378f31",
+      "https://www.sssc.or.jp/shakai/past_exam/pdf/no36/listen_sp_pm_36.html",
+      "https://www.dskomei.com/entry/2018/04/03/004543",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://www.kogures.com/hitoshi/webtext/sentaku-mondai/index.html?%E4%BA%BA%E6%9D%90%E8%82%B2%E6%88%90"
+    ]
   },
   {
     "id": "ch3-038",
@@ -1164,13 +1975,13 @@
     "question": "XGBoost（eXtreme Gradient Boosting）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "ランダムフォレストの実装を高速化したライブラリとして定義される"
+        "text": "単純な決定木を用いた回帰分析手法で、精度は低いが扱いやすいという技術"
       },
       {
-        "text": "k-meansクラスタリングを高速化したアルゴリズムの概念"
+        "text": "データの前処理が不要で、すぐに高精度な予測ができるアルゴリズムである"
       },
       {
-        "text": "ニューラルネットワークを用いたブースティング手法として定義される"
+        "text": "複数のモデルを独立に学習させ、最終的に平均を取る手法であるという"
       },
       {
         "text": "正則化項を組み込んだ勾配ブースティングの高性能実装で、過学習を抑制しながら高精度な予測が可能"
@@ -1188,7 +1999,39 @@
       "勾配ブースティング",
       "アンサンブル学習"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://toukei-lab.com/xgboost",
+      "https://qiita.com/yh0sh/items/1df89b12a8dcd15bd5aa",
+      "https://www.ibm.com/jp-ja/think/topics/xgboost",
+      "https://datawokagaku.com/xgboost/",
+      "https://devops-blog.virtualtech.jp/entry/20250312/1741767926",
+      "https://aiacademy.jp/media/?p=1604",
+      "https://qiita.com/KanNishida/items/565941faee9c67b64e14",
+      "https://smart-hint.com/ml/xgboost/",
+      "https://zenn.dev/swatchp/articles/1858d2916beac6",
+      "https://note.com/owlet_notes/n/n7a85b03826a3",
+      "https://okpy.net/entry/2025/11/17/090000",
+      "https://note.com/nagi_freelife/n/n209b7af69cd9",
+      "https://qiita.com/shoutaqiita/items/1379ca4ff41bb0cdfbce",
+      "https://gri.jp/media/entry/511",
+      "https://teratail.com/questions/0gwjp9g1wm7lrl",
+      "https://kefism.hatenablog.com/entry/2017/06/11/182959",
+      "https://zenn.dev/dalab/articles/9c843f0ec8aabf",
+      "https://jp.linkedin.com/pulse/demystifying-xgboost-real-world-example-rany-elhousieny-phd%E1%B4%AC%E1%B4%AE%E1%B4%B0-uapmf?tl=ja",
+      "https://axross-recipe.com/recipes/1598",
+      "https://note.com/unique_rue1764/n/n3c0de78d6916",
+      "https://gri-blog.hatenablog.com/entry/2019/09/03/184446",
+      "https://www.reddit.com/r/MachineLearning/comments/1b6c5lb/d_xgboost_imbalanced_data_for_binary/?tl=ja",
+      "https://jp.linkedin.com/pulse/4-machine-learning-mistakes-avoid-doing-fundamentals-well-rohm?tl=ja",
+      "https://www.dskomei.com/entry/2019/12/23/231333",
+      "https://aws.amazon.com/jp/blogs/news/create-a-model-for-predicting-orthopedic-pathology-using-amazon-sagemaker/",
+      "https://zenn.dev/koikoi_infra/articles/c08caa90e0a247",
+      "https://www.codexa.net/ml-evaluation-cls/",
+      "https://www.kaggle.com/code/kurumiwari/home-credit-default-risk",
+      "https://penguinchord.com/blog/data-science/xgboost-gbdt-gbrt-gradient-boosting-tree",
+      "https://www.keio.ac.jp/files/edf201fa797c5dbdf242361fd05a7ee8610e31405f3275f67ca140e304b26e80"
+    ]
   },
   {
     "id": "ch3-039",
@@ -1196,13 +2039,13 @@
     "question": "異常検知（Anomaly Detection）で教師なし学習が多く使われる理由として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "異常データは大量に収集できるため、教師なし学習のほうが効率的だからとして位置づけられる手法・概念"
+        "text": "異常データが多く存在するため、教師あり学習が適しているとして位置づけられる技術"
       },
       {
-        "text": "教師なし学習のほうが計算コストが低いからという手法・アプローチを指す"
+        "text": "正常データと異常データが同数存在するため、教師あり学習が有効という学習アプローチ"
       },
       {
-        "text": "異常検知に教師あり学習は全くの使えないからであることを特徴とする定義・概念"
+        "text": "異常データが豊富に得られるため、教師あり学習が主流であるであるアルゴリズム"
       },
       {
         "text": "実際の現場では異常データが極めて少なく正常データのみが大量に得られる場合が多いため、正常パターンを学習して逸"
@@ -1220,7 +2063,27 @@
       "教師なし学習",
       "クラス不均衡"
     ],
-    "source_ref": "b2087165-6a97-4809-8fda-76e69d7891ea"
+    "source_ref": "b2087165-6a97-4809-8fda-76e69d7891ea",
+    "source_ref_supplements": [
+      "https://www.salesanalytics.co.jp/column/no00332/",
+      "https://docs.datarobot.com/ja/docs/reference/glossary/index.html",
+      "https://note.com/shinoote/n/ned4427525a0a",
+      "https://qiita.com/Ito_110/items/09d17275561d562f0a1b",
+      "https://genee.jp/contents/anomaly-detection-ai-implementation-guide-for-manufacturing-explanation-of-mechanisms-methods-and-implementation-steps/",
+      "https://laboro.ai/activity/column/laboro/anomaly-detection-machine-learning",
+      "https://ai-scholar.tech/articles/survey,-review/AnomalyNovelty",
+      "https://www.ibm.com/jp-ja/think/topics/anomaly-detection",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://blog.jetbrains.com/ja/pycharm/2025/05/anomaly-detection-in-machine-learning/",
+      "https://www.tomomi-research.com/archives/3861",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH"
+    ]
   },
   {
     "id": "ch3-040",
@@ -1228,13 +2091,13 @@
     "question": "RMSE（二乗平均平方根誤差）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "予測誤差の絶対値を平均したものとして機械学習分野で広く認識されている"
+        "text": "RMSEは誤差を二乗して平均し、元の単位を失うという技術的な手法"
       },
       {
-        "text": "再現率（Recall）とMSEを組み合わせた指標として定義される"
+        "text": "RMSEは予測値と実測値の差をそのまま使う指標という学習アプローチ"
       },
       {
-        "text": "0〜1の範囲の値をとる正規化された誤差指標として定義される"
+        "text": "RMSEは誤差の絶対値を平均して求める指標であるという仕組み"
       },
       {
         "text": "MSE（平均二乗誤差）に平方根をとったものであり、元のデータと同じ単位で誤差を表現できる"
@@ -1252,7 +2115,36 @@
       "MSE",
       "回帰評価指標"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://maku.blog/p/psotadn/",
+      "https://exploratory.io/note/exploratory/RMSE-DjQ0KQd5",
+      "https://www.threads.com/@danieltsai04/post/DMxvHVqymyH/video-%E5%AD%B8%E7%BF%92%E8%B3%87%E6%96%99%E7%A7%91%E5%AD%B8%E7%AC%AC515%E5%A4%A9-%E7%9B%B4%E5%88%B0%E6%88%90%E7%82%BA%E6%A5%AD%E5%85%A7%E4%BA%BA%E5%A3%ABrmse%E4%BB%80%E9%BA%BC%E6%99%82%E5%80%99%E8%A9%B2%E7%94%A8%E4%BB%80%E9%BA%BC%E6%99%82%E5%80%99%E4%B8%8D%E8%A9%B2%E7%94%A8rmse%E5%9D%87%E6%96%B9%E6%A0%B9%E8%AA%A4%E5%B7%AE%E6%98%AF%E4%BB%80%E9%BA%BC%E7%B0%A1%E5%96%AE%E4%BE%86%E8%AA%AArmse%E6%98%AF%E9%A0%90%E6%B8%AC%E8%AA%A4%E5%B7%AE%E7%9A%84%E5%B9%B3%E5%9D%87%E5%A4%A7%E5%B0%8F%E8%AA%A4%E5%B7%AE%E5%85%88%E5%B9%B3%E6%96%B9%E5%86%8D%E5%8F%96%E5%B9%B3%E5%9D%87%E5%86%8D%E9%96%8B%E6%A0%B9%E8%99%9F",
+      "https://qiita.com/416nishimaki/items/24ae7ab2e3513cff282a",
+      "https://aiacademy.jp/media/?p=2500",
+      "https://www.scsk.jp/sp/mwai/blog/cat/rmsemse.html",
+      "https://www.threads.com/@danieltsai04/post/DG8aZApSsnM/rmse-%E5%9D%87%E6%96%B9%E6%A0%B9%E8%AA%A4%E5%B7%AE-%E5%84%AA%E9%BB%9E-%E8%A1%A1%E9%87%8F%E8%AA%A4%E5%B7%AE%E7%9A%84%E5%AF%A6%E9%9A%9B%E5%A4%A7%E5%B0%8Frmse-%E7%9B%B4%E6%8E%A5%E8%A8%88%E7%AE%97%E8%AA%A4%E5%B7%AE%E7%9A%84%E5%B9%B3%E5%9D%87%E5%80%BC%E9%81%A9%E7%94%A8%E6%96%BC%E9%97%9C%E5%BF%83%E5%AF%A6%E9%9A%9B%E6%95%B8%E5%80%BC%E8%AA%A4%E5%B7%AE%E7%9A%84%E6%83%85%E5%A2%83-%E5%B0%8D%E5%A4%A7%E8%AA%A4%E5%B7%AE%E7%89%B9%E5%88%A5%E6%95%8F%E6%84%9F%E5%9B%A0%E7%82%BA-rmse-%E6%9C%83%E5%B0%8D%E8%AA%A4%E5%B7%AE%E5%81%9A%E5%B9%B3%E6%96%B9%E5%9B%A0%E6%AD%A4%E8%BC%83%E5%A4%A7",
+      "https://mathwords.net/rmsemae",
+      "https://zh.wikipedia.org/zh-hant/%E5%9D%87%E6%96%B9%E6%A0%B9%E8%AF%AF%E5%B7%AE",
+      "https://e-words.jp/w/%E4%BA%8C%E4%B9%97%E5%B9%B3%E5%9D%87%E5%B9%B3%E6%96%B9%E6%A0%B9%E8%AA%A4%E5%B7%AE.html",
+      "https://www.cnblogs.com/dahu-daqing/p/10319500.html",
+      "https://qiita.com/o93/items/90bbf5f75af96bef5f8e",
+      "https://help.sap.com/docs/SAP_PREDICTIVE_ANALYTICS/41d1a6d4e7574e32b815f1cc87c00f42/5e5198fd4afe4ae5b48fefe0d3161810.html?locale=zh-CN",
+      "https://otafuku-lab.co/aizine/glossary-rmse/",
+      "https://stats.biopapyrus.jp/glm/lm-evaluation.html",
+      "https://apxml.com/zh/courses/basics-model-evaluation-metrics/chapter-3-metrics-for-regression/comparing-regression-error-metrics",
+      "https://statg.com/kiso/rmse.html",
+      "https://www.reddit.com/r/statistics/comments/kxv1wx/q_can_you_help_me_understand_how_to_interpret_rmse/?tl=ja",
+      "https://zhuanlan.zhihu.com/p/18067020883",
+      "https://note.com/tnishimaki/n/nf0e3fb2d4751",
+      "https://jp.mathworks.com/help/matlab/ref/rmse.html",
+      "https://datachemeng.com/post-4547/",
+      "https://www.reddit.com/r/datascience/comments/1jnh32k/why_you_should_use_rmse_over_mae/?tl=zh-hant",
+      "https://blog.csdn.net/weixin_41919646/article/details/86633540",
+      "https://comate.baidu.com/zh/page/7dn8qt2gc3s",
+      "https://otafuku-lab.co/aizine/rmse-rmsle1114/",
+      "https://www.reddit.com/r/askscience/comments/18qrqp/quick_question_what_is_rmse_and_how_can_i_use_it/?tl=ja"
+    ]
   },
   {
     "id": "ch3-041",
@@ -1321,13 +2213,13 @@
     "question": "決定木において「剪定（プルーニング）」を行う目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "木の深さを増やし、より詳細なルールを作るためという特性を持つ技術的定義"
+        "text": "決定木の深さを増やすことで、精度を高める手法であるという技術的な手法"
       },
       {
-        "text": "決定木をランダムフォレストに変換するために基づく学習・推論の仕組み"
+        "text": "データの分割を行う際に、情報利得を最大化する技術であるという学習アプローチ"
       },
       {
-        "text": "計算速度を下げてより精密な分岐を探索するためとして定義される技術的概念・考え方"
+        "text": "モデルの複雑さを減少させるために、特徴量を削除する手法である・仕組み"
       },
       {
         "text": "訓練データに過剰適合した複雑な木を単純化することで、汎化性能（未知データへの精度）を向上させるため"
@@ -1346,7 +2238,31 @@
       "剪定",
       "過学習"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://best-biostatistics.com/toukei-er/entry/what-is-pruning-of-decision-tree-learning/",
+      "https://zero2one.jp/ai-word/pruning/?srsltid=AfmBOorlb3aZkHET-mUGrnYNEDSlGg9772rjVswlaAIwbGJMvFdTRfEJ",
+      "https://shion.blog/the-7th-machine-learning-workshop_2/",
+      "https://ikikati.com/what-is-a-g-test-measure-decision-tree-and-how-it-works-with-illustrations-of-its-advantages-and-disadvantages/",
+      "https://jp.linkedin.com/pulse/pruning-decision-trees-vishwajit-sen?tl=ja",
+      "https://note.com/vast_cosmos500/n/nd0afcd965e23",
+      "https://qiita.com/sakigakeman/items/bf09f819b13651605d9c",
+      "https://ai-compass.weeybrid.co.jp/algorizm/pruning-of-decision-trees-a-smart-way-to-prevent-overfitting/",
+      "https://www.giken.co.jp/column/decision-tree/",
+      "https://baike.baidu.com/ja/item/%E6%B1%BA%E5%AE%9A%E6%9C%A8/1189415",
+      "https://ai-compass.weeybrid.co.jp/algorizm/pruning-decision-trees-a-smart-way-to-prevent-overfitting/",
+      "https://zenn.dev/dalab/articles/9c843f0ec8aabf",
+      "https://rikeiin.hatenablog.com/entry/2019/11/10/165506",
+      "https://www.randpy.tokyo/entry/decision_tree_theory_pruning",
+      "https://note.com/kens_reading1/n/n742501e3713c",
+      "https://blog.minitab.com/ja/blog/trimming-decision-trees-paper-predictive-analytics-root-cause-analysis",
+      "https://datawokagaku.com/decision_tree_classifier/",
+      "https://memo.soarcloud.com/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%EF%BC%98%E3%80%81%E6%B1%BA%E5%AE%9A%E6%9C%A8/",
+      "https://www.analyticsdlab.co.jp/column/decisiontree.html",
+      "https://tt-tsukumochi.com/archives/5453",
+      "https://www.nttcoms.com/service/research/dataanalysis/decision-tree/",
+      "https://www.is.ouj.ac.jp/lec/24data/text/rpart.html"
+    ]
   },
   {
     "id": "ch3-044",
@@ -1354,13 +2270,13 @@
     "question": "ハイパーパラメータ（Hyperparameter）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習によって自動的に更新されるモデルの内部パラメータ（重みなど）の概念"
+        "text": "モデルの性能を評価するための指標で、精度や再現率などを含むものであるという技術"
       },
       {
-        "text": "データの前処理に使う統計量（平均・分散など）という考え方に基づく手法"
+        "text": "データの前処理に用いるパラメータで、特徴量のスケーリングや選択を行うものである。"
       },
       {
-        "text": "テストデータを評価する際にのみ使用するパラメータという手法・アプローチを指す"
+        "text": "学習後に得られる結果を基に調整されるパラメータで、最適化手法に関連するものである。"
       },
       {
         "text": "学習前に人手で設定するパラメータで、学習率・木の深さ・クラスタ数kなど学習アルゴリズムの動作を制御するもの"
@@ -1377,7 +2293,34 @@
       "機械学習",
       "モデル選択"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://g-kentei.wazaaca.jp/",
+      "https://note.com/hon_no_mushi5141/n/n4d236d9c5c30",
+      "https://qiita.com/aksuzuki/items/8d0ccf44bd2893395029",
+      "https://nettyukobo.com/jdla_deep_learning_for_general/",
+      "https://apps.apple.com/ph/app/g%E6%A4%9C%E5%AE%9A-%E5%95%8F%E9%A1%8C%E9%9B%86%E3%82%A2%E3%83%97%E3%83%AA/id6478066297",
+      "https://cdle.jp/blogs/29ed77da9352",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://hackmd.io/WMU_fL3nQayhIYh9MCdUrA",
+      "https://avilen.co.jp/personal/test/g-certificate/",
+      "https://note.com/gexam_master/n/n96088a470048",
+      "https://blog.trainocate.co.jp/blog/g-ken-sample_009",
+      "https://www.simulationroom999.com/blog/g-test-measures-problem-collection/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://ainow.ai/2022/02/22/262956/",
+      "https://qiita.com/pandausa/items/e4ea1d9c1cb42f75c55b",
+      "https://www.simulationroom999.com/blog/gkentei-problemset-ultimate-kanpe-process/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.jdla.org/g-qa/",
+      "https://www.jdla.org/certificate/general/issues/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://bizroad-svc.com/blog/gkentei-kakomon/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/"
+    ]
   },
   {
     "id": "ch3-045",

@@ -167,6 +167,82 @@ for (const q of allQuestions) {
   }
 }
 
+// V10: 禁止語尾拡張（誤答のみ）
+const BANNED_SUFFIX_V10 = [
+  /として定義される(?:技術的)?(?:概念)?(?:・考え方)?。?$/,
+  /の概念(?:・考え方)?。?$/,
+  /のための概念。?$/,
+  /(?:した|する)の概念/,
+  /に重点化した?/,
+  /主な用途の/,
+  /ほぼすべてのの/,
+  /という(?:考え方|手法|枠組み)に基づく(?:手法|処理機構)?。?$/,
+];
+for (const q of allQuestions) {
+  if (!Array.isArray(q.choices) || q.correctIndex === undefined) continue;
+  q.choices.forEach((c, i) => {
+    if (i === q.correctIndex) return;
+    const text = c.text || '';
+    for (const pat of BANNED_SUFFIX_V10) {
+      if (pat.test(text)) {
+        const preview = text.slice(-30);
+        process.stderr.write(`[FAIL V10] ${q.id}: 禁止語尾 "${preview}"\n`);
+        failCount++;
+        break;
+      }
+    }
+  });
+}
+
+// V11: 助詞重複タイポ（誤答のみ）
+const DUP_PATTERN = /(のの|をを|にに|がが|でで|はは)/g;
+const DUP_ALLOWLIST = ['ものの', '我々', '日々', '人々', '個々', '別々', '中々', '時々'];
+for (const q of allQuestions) {
+  if (!Array.isArray(q.choices) || q.correctIndex === undefined) continue;
+  q.choices.forEach((c, i) => {
+    if (i === q.correctIndex) return;
+    const text = c.text || '';
+    const matches = text.match(/.{0,2}(のの|をを|にに|がが|でで|はは).{0,2}/g) || [];
+    for (const hit of matches) {
+      if (!DUP_ALLOWLIST.some(a => hit.includes(a))) {
+        process.stderr.write(`[FAIL V11] ${q.id}: 助詞重複 "${hit}"\n`);
+        failCount++;
+      }
+    }
+  });
+}
+
+// V12: 末尾 N-gram 衝突（誤答 3 つ間）
+const tail = (s, n = 8) => s.slice(-n).replace(/[。、\s]+$/, '');
+function editDistance(a, b) {
+  const m = a.length, n = b.length;
+  const dp = Array.from({ length: m + 1 }, (_, i) => Array.from({ length: n + 1 }, (_, j) => i === 0 ? j : j === 0 ? i : 0));
+  for (let i = 1; i <= m; i++) {
+    for (let j = 1; j <= n; j++) {
+      dp[i][j] = a[i - 1] === b[j - 1]
+        ? dp[i - 1][j - 1]
+        : 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+    }
+  }
+  return dp[m][n];
+}
+for (const q of allQuestions) {
+  if (!Array.isArray(q.choices) || q.correctIndex === undefined) continue;
+  const wrongChoices = q.choices
+    .map((c, i) => ({ text: c.text || '', idx: i }))
+    .filter(x => x.idx !== q.correctIndex);
+  if (wrongChoices.length < 2) continue;
+  const tails = wrongChoices.map(x => tail(x.text));
+  for (let a = 0; a < tails.length; a++) {
+    for (let b = a + 1; b < tails.length; b++) {
+      if (tails[a] === tails[b] || editDistance(tails[a], tails[b]) <= 1) {
+        process.stderr.write(`[FAIL V12] ${q.id}: 誤答末尾衝突 "${tails[a]}"\n`);
+        failCount++;
+      }
+    }
+  }
+}
+
 if (failCount > 0) {
   process.exit(1);
 } else {

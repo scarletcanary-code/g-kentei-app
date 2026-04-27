@@ -5,16 +5,16 @@
     "question": "CNN（畳み込みニューラルネットワーク）が画像認識に適している主な理由として正しいものはどれか。",
     "choices": [
       {
-        "text": "ほぼすべてのの画像ピクセルを直接連結した全結合層で処理するため"
+        "text": "CNNは音声認識に特化した技術であるとして位置づけられる技術"
       },
       {
         "text": "畳み込み演算によって位置に依存しない特徴の検出ができ、パラメータ数を削減できるため"
       },
       {
-        "text": "時系列データを逐次処理できる再帰的な構造を持つための概念"
+        "text": "畳み込み層は画像の色調整を行う手法として機能する技術的なシステム"
       },
       {
-        "text": "データのクラスタリングに重点化した構造を持つための概念"
+        "text": "CNNはテキスト解析に用いられる技術であるであるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -27,7 +27,27 @@
       "CNN",
       "畳み込み"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.tomorrow-net.co.jp/topic/topic-blog-20250311/",
+      "https://teratail.com/questions/298939",
+      "https://zero2one.jp/learningblog/cnn-for-beginners/?srsltid=AfmBOoqsPAeyKeA_PIPR9JPp8PGtd6tyu5b70HTNUiUHF7XxLlFwu8bg",
+      "https://www.hitachi-solutions-create.co.jp/column/technology/cnn.html",
+      "https://jp.mathworks.com/discovery/convolutional-neural-network.html",
+      "https://qiita.com/makimuramakoto/items/05de3122ffc992743d2a",
+      "https://www.ibm.com/jp-ja/think/topics/convolutional-neural-networks",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/cnn/",
+      "https://aismiley.co.jp/ai_news/cnn/",
+      "https://ja.wikipedia.org/wiki/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF",
+      "https://ai-market.jp/purpose/image-recognition-cnn/",
+      "https://www.zep.co.jp/magazine/zmag_aiedge-da4/",
+      "https://atcold.github.io/NYU-DLSP20/ja/week01/01-2/",
+      "https://ml4a.github.io/ml4a/jp/convnets/",
+      "https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html",
+      "https://zero2one.jp/learningblog/object-detection-r-cnn/?srsltid=AfmBOooxD5nW-EFtEEgJK25ZCugKFP03G5NV4PwHPgAR4Rttp8STE-X_",
+      "https://skylogiq.co.jp/index.php/2024/02/05/hello-world/",
+      "https://qiita.com/DeepTama/items/379cac9a73c2aed7a082"
+    ]
   },
   {
     "id": "ch5-002",
@@ -35,16 +55,16 @@
     "question": "CNNにおけるプーリング層の役割として正しいものはどれか。",
     "choices": [
       {
-        "text": "畳み込みフィルタを学習するための層として定義される"
+        "text": "特徴マップの情報を圧縮し、計算量を減少させる層という技術"
       },
       {
         "text": "特徴マップの空間的サイズを縮小し、位置ずれ（ズレ）への頑健性を高める層"
       },
       {
-        "text": "バッチごとにデータを正規化する層として定義される"
+        "text": "画像の色彩を調整し、視覚的な明瞭さを向上させる層"
       },
       {
-        "text": "ランダムにニューロンを無効化して過学習を防ぐ層"
+        "text": "データの次元を増加させ、詳細な特徴を強調する層という"
       }
     ],
     "correctIndex": 1,
@@ -55,7 +75,32 @@
       "プーリング",
       "CNN"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://rakutesu.com/test-list/occupation/992/",
+      "https://www.veriserve.co.jp/helloqualityworld/media/20251212001/",
+      "https://jp.linkedin.com/pulse/pooling-layers-convolutional-neural-networks-cnns-beginners-islam-i76ac?tl=ja",
+      "https://www.cis.twcu.ac.jp/~asakawa/2019komazawa/lect04/",
+      "https://www.tech-teacher.jp/blog/machinelearning-cnn/",
+      "https://qiita.com/pandausa/items/72e30c5a4ff1d51e5545",
+      "https://www.hitachi-solutions-create.co.jp/column/technology/cnn.html",
+      "https://ip-study.net/ai-technology-qa/",
+      "https://dotnetdevelopmentinfrastructure.osscons.jp/index.php?%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%EF%BC%88CNN%EF%BC%89",
+      "https://saycon.co.jp/archives/neta/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%A7%E3%82%82%E3%82%8F%E3%81%8B%E3%82%8B%EF%BC%81ai%E3%81%AE%E7%9B%AE%E3%82%92%E3%82%82%E3%81%A3%E3%81%A8%E8%B3%A2%E3%81%8F%E3%81%99%E3%82%8B%E3%80%8Cpooling%E5%B1%A4",
+      "https://rikeiminimalist.blog.jp/archives/6065939.html",
+      "https://www.cybernet.co.jp/ncs/column_glossary/glossary/pooling_layer/",
+      "https://qiita.com/ppza53893/items/fa662a799b76be07baaf",
+      "https://qiita.com/kuroitu/items/48bf6bc42e4dfee52cde",
+      "https://www.imagazine.co.jp/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%80%8C%E5%9F%BA%E7%A4%8E%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%80%8D%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99/",
+      "https://tkengo.github.io/blog/2016/03/11/understanding-convolutional-neural-networks-for-nlp/",
+      "https://note.com/doindoindoin/n/n8ebe211ff7d5",
+      "https://www.reddit.com/r/MachineLearning/comments/49jiyb/convolutional_neural_network_cnn_is_the_pooling/?tl=ja",
+      "https://zenn.dev/academix/books/0da15caa65b59f/viewer/15_cnn",
+      "https://zero2one.jp/ai-word/pooling/?srsltid=AfmBOoo5ApJjCJ4AU7K5skWnOHrgxsMFFxDmAhsDRAd0zT37KayhxiHT",
+      "https://note.com/inagaki2521/n/nf81e95f987fa",
+      "http://asuishin.com/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AFcnn%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%97%E3%83%BC/",
+      "https://shion.blog/the-9th-machine-learning-workshop_3/"
+    ]
   },
   {
     "id": "ch5-003",
@@ -63,16 +108,16 @@
     "question": "RNN（回帰結合ニューラルネットワーク）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "画像の局所的な特徴を抽出するために畳み込みを行うネットワークの概念"
+        "text": "フィードフォワード型ニューラルネットワークで、出力が次の入力に影響しない構造である。"
       },
       {
         "text": "過去の状態（隠れ状態）を保持できる再帰的な接続を持ち、時系列・シーケンスデータの処理に適したネットワーク"
       },
       {
-        "text": "入力データを圧縮・再構成することで特徴を学習するネットワークの概念"
+        "text": "時系列データを扱うが、過去の情報を保持せず、単純な線形回帰に基づく手法である。"
       },
       {
-        "text": "注意機構だけで構成され並列処理が得意なネットワークとして定義される技術的概念・考え方"
+        "text": "画像認識に特化したモデルで、主にCNNを用いて特徴を抽出する技術にあたる。"
       }
     ],
     "correctIndex": 1,
@@ -85,7 +130,37 @@
       "RNN",
       "時系列"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://tt-tsukumochi.com/archives/8910",
+      "https://qiita.com/MeiyByeleth/items/f7b359876f693ea8e480",
+      "https://note.com/yukikkoaimanabi/n/n60583576cee5",
+      "https://diveintocode.jp/blogs/Technology/IntroductionRNN",
+      "https://saycon.co.jp/archives/neta/%E5%9F%BA%E6%9C%AC%E6%83%85%E5%A0%B1%E6%8A%80%E8%A1%93%E8%80%85%E8%A9%A6%E9%A8%93%E3%82%B7%E3%83%A9%E3%83%90%E3%82%B9%E6%94%B9%E5%AE%9A%E3%81%AB%E5%AF%BE%E5%BF%9C%E3%81%97%E3%81%9F%E6%A9%9F%E6%A2%B0",
+      "https://note.com/ohara_designer/n/n23d6ee6f8b48",
+      "https://note.com/vast_cosmos500/n/n7980aab572c4",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://ja.wikipedia.org/wiki/%E5%9B%9E%E5%B8%B0%E5%9E%8B%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF",
+      "https://baike.baidu.com/ja/item/%E3%83%AA%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%88%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/1458964",
+      "https://dango-study.hatenablog.jp/entry/2021/12/30/091340",
+      "https://ip-study.net/ai-technology-qa/",
+      "https://e-words.jp/w/%E5%9B%9E%E5%B8%B0%E7%B5%90%E5%90%88%E5%B1%A4.html",
+      "https://www.reddit.com/r/explainlikeimfive/comments/7buzbs/eli5_what_are_neural_networks_specifically_rnns/?tl=ja",
+      "https://ainow.ai/2022/06/09/265777/",
+      "https://www.slideshare.net/slideshow/deeplearning-10/101374709",
+      "https://note.com/vast_cosmos500/n/n641ebdc1253a",
+      "https://qiita.com/kengo-sk8/items/148cf7c9cab32466e4f5",
+      "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC%EF%BD%9E%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A8%93%EF%BD%9E/",
+      "http://blog.livedoor.jp/itukano/archives/52133452.html",
+      "https://www.nomuyu.com/neural_network1/",
+      "https://tt-tsukumochi.com/archives/11240",
+      "https://qiita.com/mrmrmr/items/cab33bbf300c42bf4862",
+      "https://zenn.dev/academix/books/0da15caa65b59f/viewer/19_rnn",
+      "https://saycon.co.jp/whatwedo-2/ai/g/deep-learning-for-general/deep-learning-for-general4",
+      "https://note.com/brisk_rabbit6105/n/n5c62495f25df",
+      "https://zero2one.jp/learningblog/origin-of-neural-networks/?srsltid=AfmBOorpGVyD-xBl7fEjgo5dEHXpzSg9OSUjlnQYA3LU8erytaDDh1mB",
+      "https://sakai-hiroshi.com/ai-rnn-explained/"
+    ]
   },
   {
     "id": "ch5-004",
@@ -93,16 +168,16 @@
     "question": "LSTMがRNNの弱点を解決するメカニズムとして正しいものはどれか。",
     "choices": [
       {
-        "text": "畳み込み演算を組み合わせることで特徴抽出能力を向上させたとして定義される"
+        "text": "リカレントネットワークは短期記憶を強化し、情報を即座に処理する技術である。"
       },
       {
         "text": "入力ゲート・忘却ゲート・出力ゲートを用いてセル状態で長期記憶を管理し、長距離依存関係の学習を可能にした"
       },
       {
-        "text": "ランダムにニューロンを無効化することで勾配消失問題を解決したの概念"
+        "text": "LSTMは主に画像認識に特化した手法で、データの空間的特徴を捉えることに優れる。"
       },
       {
-        "text": "Attention機構を組み込んで重要な時刻の情報に集中できるようにした"
+        "text": "長期記憶を持つニューラルネットワークは、主に音声認識に利用される手法にあたる。"
       }
     ],
     "correctIndex": 1,
@@ -115,7 +190,30 @@
       "LSTM",
       "ゲート機構"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://digima-class.com/article/35350/",
+      "https://blog.csdn.net/weixin_42610671/article/details/160470543",
+      "https://vocus.cc/article/68bf7ff0fd897800013204e5",
+      "https://cloud.tencent.com/developer/article/1947224",
+      "https://note.com/hotate_nt/n/n323f4b0df55e",
+      "https://note.com/bluestatistics/n/n4b4e0cbae7ff",
+      "https://zhuanlan.zhihu.com/p/639580888",
+      "https://blog.csdn.net/ai_blue_pm/article/details/160234042",
+      "https://www.nowcoder.com/discuss/513493517239332864",
+      "https://wiki.seeedstudio.com/ja/Wio-Terminal-TinyML-Kit-Course/",
+      "https://jp.linkedin.com/pulse/transformers-beyond-evolution-nlp-architectures-anshuman-sarangi-lea2c?tl=ja",
+      "https://brohrer.mcknote.com/zh-Hant/how_machine_learning_works/how_rnns_lstm_work.html",
+      "https://www.reddit.com/r/Futurology/comments/1gnye2i/the_ai_bubble_may_be_about_to_burst_llms_have/?tl=ja",
+      "https://www.techwalker.com/2017/1129/3101178.shtml",
+      "https://www.guyuehome.com/wap/detail?id=1972923438391652353",
+      "https://note.com/lucky_hornet2042/n/ne46dd7c4d2c9",
+      "https://www.bilibili.com/video/BV1kt421t7EF/",
+      "https://www.reddit.com/r/MachineLearning/comments/2lmo0l/ama_geoffrey_hinton/?tl=ja",
+      "https://qiita.com/yuji-arakawa/items/14a26f038740e7b89f3c",
+      "https://speaknotes.io/ja/blog/how-ai-transcription-works",
+      "https://www.ibm.com/jp-ja/think/topics/large-language-models"
+    ]
   },
   {
     "id": "ch5-005",
@@ -123,16 +221,16 @@
     "question": "GRU（Gated Recurrent Unit）についての説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "LSTMと比べてゲート構造が複雑で精度が高いが、計算コストも高い"
+        "text": "GRUは、LSTMと同じく3つのゲートを持つ複雑なモデルである。"
       },
       {
         "text": "LSTMのゲート構造を簡略化したモデルで、リセットゲートと更新ゲートの2つのゲートで構成される"
       },
       {
-        "text": "双方向RNNの1種で、順方向と逆方向の情報を統合するとして定義される"
+        "text": "GRUは、主に画像処理に特化したニューラルネットワークであるである"
       },
       {
-        "text": "画像処理に重点化したRNNの発展型として知られる代表的な手法"
+        "text": "GRUは、過去の情報を完全に忘却するための手法であるという仕組み"
       }
     ],
     "correctIndex": 1,
@@ -145,7 +243,36 @@
       "GRU",
       "RNN"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://boochi-engineer.net/archives/2453",
+      "https://ai-compass.weeybrid.co.jp/algorizm/gru-a-simplified-recurrent-neural-network/",
+      "https://chigai2.fromation.co.jp/archives/24453",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/gru/",
+      "https://qiita.com/mk-mokumoku/items/c74bb651cb63441bc05c",
+      "https://omomuki-tech.com/archives/6158",
+      "https://yhayato1320.hatenablog.com/entry/2021/05/25/145150",
+      "https://umarketing.co.jp/ai-glossary/gru/",
+      "https://note.com/kikaben/n/n3e35e496d29c",
+      "https://tt-tsukumochi.com/archives/7428",
+      "https://e-words.jp/w/%E3%82%B2%E3%83%BC%E3%83%88%E6%A9%9F%E6%A7%8B.html",
+      "https://quizlet.com/jp/475116795/6-deep-learning%E3%81%AE%E7%A0%94%E7%A9%B6%E5%88%86%E9%87%8E%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86%E6%99%82%E7%B3%BB%E5%88%97%E8%A7%A3%E6%9E%90-flash-cards/",
+      "https://disassemble-channel.com/gru/",
+      "https://service.shiftinc.jp/column/11655/",
+      "https://www.namuamidabu.com/entry/2025/08/02/094225",
+      "https://quantcollege.net/deep-learning-gru-explained",
+      "https://www.ultralytics.com/ja/glossary/gated-recurrent-unit-gru",
+      "https://developers.agirobots.com/jp/lstmgruentrance-noformula/",
+      "https://xexeq.jp/blogs/media/it-glossary170",
+      "https://www.mql5.com/ja/articles/15182",
+      "https://tech.aru-zakki.com/pytorch-rnn-gru-text-generation-sample/",
+      "https://note.com/wmilitary/n/n3ec5428f4c3f",
+      "https://atsuginoeigakan-kiki.com/?s=%E6%8A%95%E8%B3%87%E5%AE%B6%E5%90%91%E3%81%91%E6%83%85%E5%A0%B1%E3%82%92%E6%89%B1%E3%81%86%E8%A8%98%E4%BA%8B%E6%A7%8B%E6%88%90%E3%81%A7%E3%81%AF%E3%80%81%E5%B9%B8%E3%81%9B%E3%81%AA%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E8%A8%88%E7%94%BB%E3%81%8C%E4%BF%A1%E9%A0%BC%E6%80%A7%E3%82%92%E8%A3%9C%E5%BC%B7%E3%81%99%E3%82%8B%E4%B8%AD%E5%BF%83%E8%A6%81%E7%B4%A0%E3%81%A8%E3%81%97%E3%81%A6%E6%B4%BB%E7%94%A8%E3%81%95%E3%82%8C%E3%80%81%E5%B9%B8%E3%81%9B%E3%81%AA%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E8%A8%88%E7%94%BB%E3%82%92%E9%81%A9%E5%88%87%E3%81%AB%E9%85%8D%E7%BD%AE%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%81%A7%E6%B5%81%E3%82%8C%E3%81%8C%E6%95%B4%E7%90%86%E3%81%95%E3%82%8C%E3%80%81%E5%B9%B8%E3%81%9B%E3%81%AA%E3%83%A9%E3%82%A4%E3%83%95%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%AB%E8%A8%88%E7%94%BB%E3%81%AE%E5%AD%98%E5%9C%A8%E6%84%9F%E3%81%8C%E6%98%8E%E7%A2%BA%E3%81%AB%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82.gru",
+      "https://qiita.com/eS5tYXRzdWRh/items/53ef145ef73bb1268e17",
+      "https://www.weblio.jp/content/%E3%83%AD%E3%82%B7%E3%82%A2%E9%80%A3%E9%82%A6%E8%BB%8D%E5%8F%82%E8%AC%80%E6%9C%AC%E9%83%A8%E6%83%85%E5%A0%B1%E7%B7%8F%E5%B1%80",
+      "https://innovatopia.jp/cyber-security/cyber-security-news/28329/",
+      "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202002281626390364"
+    ]
   },
   {
     "id": "ch5-006",
@@ -153,16 +280,16 @@
     "question": "Attention機構（注意機構）の説明として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "ネットワークの一部を無効化して過学習を防ぐ手法"
+        "text": "入力データを一律に処理する手法であるという技術"
       },
       {
         "text": "入力データの中で重要な部分に動的に重みを付けて集中的に処理する機構"
       },
       {
-        "text": "バッチデータの分布を正規化して学習を安定化する機構"
+        "text": "重要な情報を無視して処理する技術であるという学習アプローチ"
       },
       {
-        "text": "複数のニューラルネットワークを組み合わせて最終的な予測を行う機構"
+        "text": "全てのデータを同じ重みで扱う手法にあたるという"
       }
     ],
     "correctIndex": 1,
@@ -176,7 +303,27 @@
       "Attention",
       "注意機構"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E3%82%A2%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3.html",
+      "https://developer.mamezou-tech.com/blogs/2023/03/26/using-transformer-03/",
+      "https://udemy.benesse.co.jp/data-science/ai/transformer-attention.html",
+      "https://daily-life-ai.com/627/",
+      "https://note.com/inagaki2521/n/n6f296b8510f5",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/attention-mechanism/",
+      "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3_(%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92)",
+      "https://zenn.dev/mkj/articles/re-entry-attention_20251209",
+      "https://hilinker.hatenablog.com/entry/2018/12/08/002003",
+      "https://www.soarig.co.jp/post/%E8%AB%96%E6%96%87%E8%A7%A3%E8%AA%AC-attention-is-all-you-need%E3%82%92%E8%A7%A3%E8%AA%AC%E3%81%99%E3%82%8B",
+      "https://zenn.dev/nakano_teppei51/articles/da0e5d2552f96c",
+      "https://www.ibm.com/jp-ja/think/topics/attention-mechanism",
+      "https://note.com/ysuie_o/n/na6f2e6583f2e",
+      "https://nlpillustration.tech/?p=185",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/03557/00003/",
+      "https://data-analytics.fun/2020/03/29/understanding-attention/",
+      "https://qiita.com/ps010/items/0bb2931b666fa602d0fc",
+      "https://developers.agirobots.com/jp/attention-mechanism-transformer/"
+    ]
   },
   {
     "id": "ch5-007",
@@ -184,16 +331,16 @@
     "question": "オートエンコーダ（自己符号化器）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力データをラベルに変換する教師あり学習モデルという枠組みで理解される処理機構"
+        "text": "オートエンコーダは教師あり学習の手法であり、ラベル付きデータを必要とする技術である。"
       },
       {
         "text": "入力データを低次元の潜在表現（圧縮）に変換するエンコーダと、そこから元データを再構成するデコーダからなる"
       },
       {
-        "text": "複数のRNNを組み合わせた系列変換モデルとして知られる代表的な手法"
+        "text": "オートエンコーダはデータを圧縮するが、復元することはできない手法にあたる。"
       },
       {
-        "text": "入力データを生成して強化学習のエージェントを学習させるモデルとして知られる代表的な手法"
+        "text": "オートエンコーダは画像処理に特化した技術であり、音声データには適用できない。"
       }
     ],
     "correctIndex": 1,
@@ -206,7 +353,35 @@
       "オートエンコーダ",
       "特徴学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E3%82%AA%E3%83%BC%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%80.html",
+      "https://note.com/kikaben/n/nf855f83993e5",
+      "https://www.sbbit.jp/article/cont1/57345",
+      "https://meetsmore.com/product-services/advanced-persistent-threat/media/123110",
+      "https://jp.mathworks.com/discovery/autoencoder.html",
+      "https://ledge.ai/articles/autoencoder",
+      "https://qiita.com/LicaOka/items/1f4d1131af05fe30674e",
+      "https://zero2one.jp/ai-word/auto-encoder/?srsltid=AfmBOornkKN0CDHbYevsoPNOEmK6hz3vHiJpst4Yw09a9Kv0IxwPzsBN",
+      "https://jp.linkedin.com/pulse/demystifying-autoencoders-architects-data-compression-rany-vs3ac?tl=ja",
+      "https://dotnetdevelopmentinfrastructure.osscons.jp/index.php?%E8%87%AA%E5%B7%B1%E7%AC%A6%E5%8F%B7%E5%8C%96%E5%99%A8%EF%BC%88AE%EF%BC%9A%E3%82%AA%E3%83%BC%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%80%EF%BC%89",
+      "https://atcold.github.io/NYU-DLSP20/ja/week07/07-3/",
+      "https://aismiley.co.jp/ai_news/autoencoder/",
+      "https://note.com/e_dao/n/n953dd2725029",
+      "https://www.skillupai.com/blog/tech/ad-tips-2/",
+      "https://np2lkoo.hatenablog.com/entry/2016/10/09/233050",
+      "https://www.reddit.com/r/MachineLearning/comments/8f3mwk/d_why_extreme_learning_machine_was_publicly/?tl=ja",
+      "https://note.com/delta_ipsilon/n/ne756b2f5857e",
+      "https://kdl-di.hatenablog.com/entry/2022/04/28/090000",
+      "https://www.pangram.com/zh/blog/all-about-false-positives-in-ai-detectors",
+      "https://qiita.com/key353/items/57b4837c0bf2f63c3825",
+      "https://dx-consultant-fast-evolving.com/auto-encoder/",
+      "https://kaken.nii.ac.jp/ja/grant/KAKENHI-PROJECT-20K11884/",
+      "https://www.reddit.com/r/MachineLearning/comments/b08vmu/d_autoencoders_detecting_anomalies_for/?tl=ja",
+      "https://www.tryeting.jp/column/627/",
+      "https://nulmil.net/auto-encoder/",
+      "https://rightcode.co.jp/blogs/14404"
+    ]
   },
   {
     "id": "ch5-008",
@@ -217,13 +392,13 @@
         "text": "学習時にランダムにニューロンを無効化（0にする）し、特定のニューロンへの過依存を防いで過学習を抑制する正則化手法"
       },
       {
-        "text": "バッチデータの平均・分散を正規化して学習を安定化させる手法として定義される"
+        "text": "学習時に全てのニューロンを活性化し、モデルの精度を向上させる手法であるという技術"
       },
       {
-        "text": "層を飛び越えた接続を追加して深いネットワークの学習を助ける手法として定義される"
+        "text": "推論時にのみニューロンを無効化し、過学習を防ぐための技術にあたるという学習アプローチ"
       },
       {
-        "text": "学習率を自動的に調整する最適化手法に相当する概念であり、試験で頻出の定義"
+        "text": "データの前処理として、ノイズを除去するための手法であるとされるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -238,7 +413,31 @@
       "ドロップアウト",
       "正則化"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://kobesoft.co.jp/mikata/words/ai-ml/dropout/",
+      "https://ai-reboot.io/glossary/dropout",
+      "https://zero2one.jp/ai-word/dropout/?srsltid=AfmBOorHP9HkLYLp5wo2D3JpPZBCW2mwtaQmXaDUhG3hO0w3PKx64ziR",
+      "https://www.reddit.com/r/learnmachinelearning/comments/x89qsi/dropout_in_neural_networks_what_it_is_and_how_it/?tl=ja",
+      "https://tech.aru-zakki.com/dropout-pytoch-for-begginers/",
+      "https://jp.linkedin.com/pulse/easily-explained-dropout-vs-unstructured-pruning-neural-badr-b166e?tl=ja",
+      "https://e-shikaku-doujou.com/dropout/",
+      "https://service.shiftinc.jp/column/14165/",
+      "https://zero2one.jp/learningblog/drop-outs-and-drop-connections/?srsltid=AfmBOooM67I1rsnBVgC03YnheKeX96vez7Pb37L986-_zAaKYOXr8jWV",
+      "https://e-words.jp/w/%E3%83%89%E3%83%AD%E3%83%83%E3%83%97%E3%82%A2%E3%82%A6%E3%83%88.html",
+      "https://qiita.com/kuroitu/items/d1bed8c216950d87be74",
+      "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
+      "https://note.com/limber_skink4659/n/nd7aba9aa9d3d",
+      "https://www.nli-research.co.jp/report/detail/id=81160?site=nli",
+      "https://data-analytics.fun/2021/11/13/understanding-dropout/",
+      "https://qiita.com/shu_marubo/items/70b20c3a6c172aaeb8de",
+      "https://kimini.online/blog/archives/52032",
+      "https://deepage.net/deep_learning/2016/10/17/deeplearning_dropout.html",
+      "https://note.com/vast_cosmos500/n/na631c6f589f1",
+      "https://www.ultralytics.com/ja/glossary/dropout-layer",
+      "https://note.com/vast_cosmos500/n/ned0f713acab3",
+      "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC-%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%AE%E5%9F%BA%E7%A4%8E%E6%B1%8E%E5%8C%96%E6%80%A7%E8%83%BD%E5%90%91%E4%B8%8A%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF/"
+    ]
   },
   {
     "id": "ch5-009",
@@ -246,16 +445,16 @@
     "question": "バッチ正規化（Batch Normalization）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "ランダムにニューロンを無効化して過学習を防ぐ手法として知られる代表的な手法"
+        "text": "各層の出力を正規化する手法で、学習の効率を向上させる技術であるという技術"
       },
       {
         "text": "各層の入力をミニバッチ単位で正規化（平均0・分散1に変換）することで、学習の安定化と高速化を図る手法"
       },
       {
-        "text": "複数バッチのデータを同時に処理して計算を効率化する手法として定義される"
+        "text": "ミニバッチの平均を計算し、全体のデータを一度に正規化する手法であるである"
       },
       {
-        "text": "バッチごとに異なる損失関数を使って学習する手法として定義される技術的概念・考え方"
+        "text": "データの前処理として、特徴量をスケーリングする手法にあたるという仕組み"
       }
     ],
     "correctIndex": 1,
@@ -268,7 +467,42 @@
       "バッチ正規化",
       "学習安定化"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://zenn.dev/tasse/articles/979e391c9c7a89",
+      "https://zenn.dev/yuto_mo/articles/1f6478e0d7ae1d",
+      "https://note.com/domonjo01/n/n75333f8852be",
+      "https://zero2one.jp/ai-word/batch-normalization/?srsltid=AfmBOopvZw3mtmlbITZ4WO4rqlkgXiWt9Fwm8BMomSSwr9E54LNhkr8Q",
+      "https://e-words.jp/w/%E3%83%90%E3%83%83%E3%83%81%E6%AD%A3%E8%A6%8F%E5%8C%96.html",
+      "https://www.reddit.com/r/datascience/comments/v8e6og/how_do_i_normalize_a_value_which_has_no_max/?tl=ja",
+      "https://qiita.com/jun40vn/items/2105467cea35f179ea45",
+      "https://jp.linkedin.com/pulse/batch-normalization-deep-learning-what-does-do-difference-po52c?tl=ja",
+      "https://qiita.com/Sooh31/items/af2ccdcd95a57bb8ed4e",
+      "https://www.ultralytics.com/ja/glossary/batch-normalization",
+      "https://tech.aru-zakki.com/batch-normalization-pytoch-for-begginers/",
+      "https://codelabs.developers.google.com/codelabs/cloud-tensorflow-mnist?hl=ja",
+      "https://dx-consultant-fast-evolving.com/batch-normalization/",
+      "https://qiita.com/segavvy/items/8707e4e65aa7fa357d8a",
+      "https://medium.com/biased-algorithms/batch-normalization-explained-04bbf268a031",
+      "https://jp.linkedin.com/pulse/week-3-layer-normalization-vs-batch-transformers-kausik-kumar-j8yic?tl=ja",
+      "https://euske.github.io/introdl/epilogue.html",
+      "https://data-analytics.fun/2021/09/11/understanding-batch-normalization/",
+      "https://www.reddit.com/r/MachineLearning/comments/5i940e/d_how_does_batch_normalization_not_completely/",
+      "https://blog.paperspace.com/busting-the-myths-about-batch-normalization/",
+      "https://en.wikipedia.org/wiki/Batch_normalization",
+      "https://note.com/kikaben/n/nf0dc9446dce3",
+      "https://www.mindee.com/blog/batch-normalization",
+      "https://stackoverflow.com/questions/57457817/adding-batch-normalization-decreases-the-performance",
+      "https://towardsdatascience.com/the-math-behind-batch-normalization-90ebbc0b1b0b/",
+      "https://openreview.net/forum?id=X8mmH03wFlD",
+      "https://ai.stackexchange.com/questions/37640/what-can-go-wrong-using-batch-norm",
+      "https://towardsdatascience.com/batch-norm-explained-visually-how-it-works-and-why-neural-networks-need-it-b18919692739/",
+      "https://www.geeksforgeeks.org/deep-learning/what-is-batch-normalization-in-deep-learning/",
+      "https://medium.com/@piyushkashyap045/understanding-batch-normalization-in-deep-learning-a-beginners-guide-40917c5bebc8",
+      "https://www.reddit.com/r/MachineLearning/comments/ql5hdb/d_why_do_we_apply_batch_normalization_between/",
+      "http://d2l.ai/chapter_convolutional-modern/batch-norm.html",
+      "https://www.coursera.org/articles/what-is-batch-normalization"
+    ]
   },
   {
     "id": "ch5-010",
@@ -276,16 +510,16 @@
     "question": "スキップ結合（Skip Connection）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "RNNにおいて時系列の一部のタイムステップをスキップして処理する手法"
+        "text": "スキップ結合は全結合層にのみ適用される手法であるとして機能する技術的なシステム"
       },
       {
         "text": "層を飛び越えて前の層の出力を後の層の入力に直接加算する接続で、勾配消失を防ぎ深いネットワークの学習を助ける"
       },
       {
-        "text": "ドロップアウトのようにランダムに層をスキップする正則化手法として定義される"
+        "text": "スキップ結合は情報を一方向にのみ伝える技術であるに応用される技術的な仕組み"
       },
       {
-        "text": "畳み込み層のフィルタサイズを変えて異なるスケールの特徴を捉える手法の概念"
+        "text": "スキップ結合は主に音声認識に用いられる手法であるとして用いられる技術的手法"
       }
     ],
     "correctIndex": 1,
@@ -299,7 +533,28 @@
       "スキップ結合",
       "残差接続"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://note.com/narumi_ai/n/nc0525c3ee0f3",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://omomuki-tech.com/archives/6154",
+      "https://e-words.jp/w/%E3%82%B9%E3%82%AD%E3%83%83%E3%83%97%E6%8E%A5%E7%B6%9A.html",
+      "https://note.com/ohara_designer/n/n8ed5bbb9ca87",
+      "https://zenn.dev/student_blog/articles/c905e32166c807",
+      "https://zero2one.jp/ai-word/skip-connection/?srsltid=AfmBOopzOizp8DuiWqh9Rs1EDFkcTA74TKp0cNAsDti0jwED83SEXOqA",
+      "https://zero2one.jp/ai-word/skip-connection/?srsltid=AfmBOoqkY9xHQPkMvhFMfvj0llmZ0O7V7_a1-UHCFFkREAnBjwpl4fMq",
+      "https://appswingby.com/skip-connection-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://zero2one.jp/ai-word/skipconnection/?srsltid=AfmBOoo7EtRNw2fw8IfSR0vIlQimzWPJHTn0MyEvKNS1HO5HkPAX6aOz",
+      "https://zero2one.jp/ai-word/skip-connection/?srsltid=AfmBOooXgrfzRUqhbbeVczVZ8qJUj2gwuz2XzcVSqO3nUYm1g3sZOCuA",
+      "https://saycon.co.jp/whatwedo-2/ai/g/deep-learning-for-general/deep-learning-for-general4",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/skip-connection/",
+      "https://ai-compass.weeybrid.co.jp/algorizm/skip-connection-the-magic-leap-in-deep-learning/",
+      "https://shikaku-expert.com/g-test/quiz/skip-connection/",
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-2/",
+      "https://ai-compass.weeybrid.co.jp/algorizm/skip-connections-advancing-deep-learning/",
+      "https://qiita.com/DS27/items/ea719ba584be9966fd06",
+      "https://www.reddit.com/r/MachineLearning/comments/mbhewa/d_advanced_takeaways_from_fastai_book/?tl=ja"
+    ]
   },
   {
     "id": "ch5-011",
@@ -307,16 +562,16 @@
     "question": "転移学習（Transfer Learning）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "ある国のデータで学習したモデルを他の国のデータに転換する手法"
+        "text": "異なるタスクでのデータを用いて新たに学習する手法である"
       },
       {
         "text": "あるタスクで学習済みのモデルの重みを、別の関連するタスクに再利用する手法"
       },
       {
-        "text": "ひとつのモデルを複数のGPUに分散して学習を高速化する手法"
+        "text": "特定のデータセットに対してのみ適用される技術にあたる"
       },
       {
-        "text": "学習率を段階的に転換して最適解を探索する手法の概念"
+        "text": "機械学習における強化学習の一種であるとされるという"
       }
     ],
     "correctIndex": 1,
@@ -330,7 +585,37 @@
       "転移学習",
       "ファインチューニング"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://biz.kddi.com/content/glossary/t/transfer-learning/",
+      "https://www.ibm.com/jp-ja/think/topics/transfer-learning",
+      "https://aws.amazon.com/jp/what-is/transfer-learning/",
+      "https://jp.mathworks.com/discovery/transfer-learning.html",
+      "https://aismiley.co.jp/ai_news/transfer-learning/",
+      "https://udemy.benesse.co.jp/data-science/deep-learning/transfer-learning.html",
+      "https://syp.vn/jp/article/what-is-transfer-learning",
+      "https://artnasekai.com/deep-learning/dl-step20/",
+      "https://hai.stanford.edu/ai-definitions/what-is-transfer-learning",
+      "https://www.saison-technology.com/column/glossary-54/",
+      "https://biz.hipro-job.jp/column/corporation/transfer-learning/",
+      "https://note.com/doindoindoin/n/nfdbe562291c4",
+      "https://en.wikipedia.org/wiki/Transfer_learning",
+      "https://dev.classmethod.jp/articles/introduce-to-transfer-learning-by-tensorflow-for-beginner/",
+      "https://www.geeksforgeeks.org/machine-learning/ml-introduction-to-transfer-learning/",
+      "https://sites.gatech.edu/omscs7641/2024/02/07/transfer-learning-for-boosting-neural-network-performance/",
+      "https://medium.com/@davidfagb/guide-to-transfer-learning-in-deep-learning-1f685db1fc94",
+      "https://aws.amazon.com/what-is/transfer-learning/",
+      "https://www.ibm.com/think/topics/transfer-learning",
+      "https://ja.wikipedia.org/wiki/%E8%BB%A2%E7%A7%BB%E5%AD%A6%E7%BF%92",
+      "https://caisplusplus.usc.edu/curriculum/special-topics/transfer-learning",
+      "https://blogs.nvidia.com/blog/what-is-transfer-learning/",
+      "https://encord.com/blog/transfer-learning/",
+      "https://quizlet.com/jp/1052324356/%E7%AC%AC5%E5%9B%9E-flash-cards/",
+      "https://www.bigdata-navi.com/aidrops/1/",
+      "https://www.hitachi-solutions-create.co.jp/column/technology/transfer-learning.html",
+      "https://qiita.com/ANNEX_IBS/items/55c7a8984fe88a756965",
+      "https://www.jstage.jst.go.jp/article/jjsai/25/4/25_572/_pdf"
+    ]
   },
   {
     "id": "ch5-012",
@@ -338,16 +623,16 @@
     "question": "ResNet（Residual Network）の主な特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "再帰的な接続（ループ）を持ち時系列データを処理するに基づく学習・推論の仕組み"
+        "text": "畳み込み層を重ねることで精度を向上させる手法であるとして位置づけられる技術"
       },
       {
         "text": "スキップ結合（残差結合）を導入することで100層以上の極めて深いネットワークの学習を可能にした画像認識モデル"
       },
       {
-        "text": "エンコーダとデコーダ構造で画像のセグメンテーションを行うモデルの概念"
+        "text": "スキップ接続を用いずに浅いネットワークを構築する技術であるという学習アプローチ"
       },
       {
-        "text": "複数の異なるサイズの畳み込みフィルタを並列に使うモデルとして定義される"
+        "text": "自然言語処理に特化したモデルであり、画像認識には不向きであるであるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -361,7 +646,35 @@
       "ResNet",
       "残差ネットワーク"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://dx-consultant-fast-evolving.com/resnet/",
+      "https://fullvalue.co.jp/media/resnetresidual-network/",
+      "https://note.com/ugo21/n/nd01332a63170",
+      "https://suno.com/song/253058dc-e72a-4dfa-88ae-5a5146a16154",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/resnet/",
+      "https://ai-research-site.jp/Articles/05_ResNet/",
+      "https://aismiley.co.jp/ai_news/title-resnet-cnn-microsoft-research/",
+      "https://tt-tsukumochi.com/archives/9588",
+      "https://qiita.com/katsunobu1008/items/f8cabc52ac7f21d2f44c",
+      "https://note.com/narumi_ai/n/nc0525c3ee0f3",
+      "https://www.ultralytics.com/ja/blog/what-is-resnet-50-and-what-is-its-relevance-in-computer-vision",
+      "https://profab.co.jp/what-is-resnet/",
+      "https://note.com/ohara_designer/n/n8ed5bbb9ca87",
+      "https://zenn.dev/student_blog/articles/c905e32166c807",
+      "https://daily-life-ai.com/2584/",
+      "https://deepage.net/deep_learning/2016/11/30/resnet.html",
+      "https://note.com/kkuramitsu/n/n9dcf4417b995",
+      "https://zero2one.jp/ai-word/skip-connection/?srsltid=AfmBOoo1RXEwVis-Z_kShw_l_Wzhvqre54wRkoeOS8wCKTOFO7kZE5kG",
+      "https://ai-market.jp/technology/what-resnet/",
+      "https://e-words.jp/w/%E3%82%B9%E3%82%AD%E3%83%83%E3%83%97%E6%8E%A5%E7%B6%9A.html",
+      "https://ai-compass.weeybrid.co.jp/algorizm/skip-connections-advancing-deep-learning/",
+      "https://qiita.com/omiita/items/0c2176a1edc26d69e2c9",
+      "https://pystyle.info/pytorch-resnet/",
+      "https://nn.labml.ai/ja/resnet/index.html",
+      "https://www.ultralytics.com/ja/glossary/residual-networks-resnet",
+      "https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1F5GS1002/_pdf"
+    ]
   },
   {
     "id": "ch5-013",
@@ -372,13 +685,13 @@
         "text": "学習データに変換（反転・回転・色変換など）を加えて学習データのバリエーションを増やし、過学習を防ぐ"
       },
       {
-        "text": "テストデータを増やして評価の精度を高めるとして位置づけられる手法・概念"
+        "text": "データ拡張は新しいデータを生成し、モデルの精度を向上させる手法である。"
       },
       {
-        "text": "ネットワークのパラメータ数を増やしてモデルの表現能力を向上させる"
+        "text": "データ拡張はデータの収集を効率化し、コストを削減するための技術である。"
       },
       {
-        "text": "学習率を段階的に増加させて収束を早めるとして定義される技術的概念・考え方"
+        "text": "データ拡張はデータの暗号化を行い、セキュリティを強化する手法にあたる。"
       }
     ],
     "correctIndex": 0,
@@ -392,7 +705,31 @@
       "データ拡張",
       "過学習対策"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://aws.amazon.com/jp/what-is/data-augmentation/",
+      "https://aws.amazon.com/what-is/data-augmentation/#:~:text=Data%20augmentation%20techniques%20help%20enrich,to%20encounter%20more%20diverse%20features.",
+      "https://zero2one.jp/ai-word/data-augmentation/?srsltid=AfmBOoovkmsAXZjplzZhLRuAZ29m_VMBZaFCoZMNG_hQpw9YZWSRHgNl",
+      "https://www.ibm.com/jp-ja/think/topics/data-augmentation",
+      "https://www.ibm.com/think/topics/data-augmentation",
+      "https://note.com/ippei_suzuki_us/n/n0e7cffbeb107",
+      "https://e-words.jp/w/%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5.html",
+      "https://www.reddit.com/r/computervision/comments/1ay7bhl/why_use_data_augmentation/",
+      "https://www.ultralytics.com/ja/glossary/data-augmentation",
+      "https://service.shiftinc.jp/ai-terminology/data-augmentation/",
+      "https://www.nvidia.com/en-us/glossary/data-augmentation/",
+      "https://ai-reboot.io/glossary/data-augmentation",
+      "https://www.sciencedirect.com/science/article/pii/S2590005622000911",
+      "https://www.globalwalkers.co.jp/data-augmentation/",
+      "https://www.datacamp.com/tutorial/complete-guide-data-augmentation",
+      "https://www.codexa.net/data_augmentation_python_keras/",
+      "https://medium.com/@abhishekjainindore24/data-augmentation-00c72f5f4c54",
+      "https://docs.oracle.com/cd/G55130_01/trans/G49535-04/augmenting-your-data.html",
+      "https://en.wikipedia.org/wiki/Data_augmentation",
+      "https://zero2one.jp/ai-word/data-augmentation/?srsltid=AfmBOoqR0373wC92XHRnp3kBX9m2mFQTDT9ObeivBXK1i5yjX-NrkcC9",
+      "https://encord.com/blog/data-augmentation-guide/",
+      "https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5"
+    ]
   },
   {
     "id": "ch5-014",
@@ -403,13 +740,13 @@
         "text": "同じシーケンス内の各位置が他の全位置との関連性を計算し、文脈を考慮した表現を生成する機構"
       },
       {
-        "text": "エンコーダの出力に注目してデコーダが処理を行う機構の概念"
+        "text": "系列内の単語が順番に処理される手法であるとして位置づけられる技術"
       },
       {
-        "text": "複数の異なるモデルの予測を統合する機構という考え方に基づく手法"
+        "text": "各単語が自分自身にのみ注目する技術であるという学習アプローチ"
       },
       {
-        "text": "入力の重要な特徴を一時的にキャッシュしておく機構として定義される"
+        "text": "異なるシーケンス間の関連性を計算する手法であるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -423,7 +760,34 @@
       "Self-Attention",
       "Transformer"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://shikaku-expert.com/g-test/quiz/attention/",
+      "https://e-words.jp/w/%E3%82%BB%E3%83%AB%E3%83%95%E3%82%A2%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3.html#:~:text=%E3%82%BB%E3%83%AB%E3%83%95%E3%82%A2%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%AF%EF%BC%9F,%E5%9F%BA%E7%9B%A4%E3%81%A8%E3%81%AA%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E3%80%82",
+      "https://zhuanlan.zhihu.com/p/410776234",
+      "https://ai-de-seikei.hatenablog.com/entry/2026/02/07/185852",
+      "https://qiita.com/age884/items/4ae64961e33d718b6fbd",
+      "https://medium.com/@x02018991/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-self-attention-fa6897080a0a",
+      "https://www.reddit.com/r/learnmachinelearning/comments/oxv0qk/eli14_attention_vs_selfattention_in_deep_sequence/?tl=ja",
+      "https://zenn.dev/tech_taka/articles/89e8ede5da08df",
+      "https://blog.csdn.net/jx232515/article/details/136760279",
+      "https://zenn.dev/kitacom_blog/articles/observe_self_attention_p2",
+      "https://qiita.com/GeneLab_999/items/f22c016861b96c0f89f4",
+      "https://geyuyao.com/post/transformer/",
+      "https://note.com/vast_cosmos500/n/nd0afcd965e23",
+      "https://www.meta-intelligence.tech/ja/insight-self-attention",
+      "https://0809zheng.github.io/2020/04/24/self-attention.html",
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-4/",
+      "https://note.com/koshi_ai/n/na0c4c5cc285f",
+      "https://yeasy.gitbook.io/ai_beginner_guide/di-er-bu-fen-he-xin-ji-shu-jie-xi/06_llm/6.3_transformer_attention",
+      "https://deepsquare.jp/2020/07/transformer/",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E3%82%BB%E3%83%AB%E3%83%95%E3%82%A2%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%AF%EF%BC%9F%E3%80%8C%E4%BA%BA%E9%96%93%E3%81%AE%E6%B3%A8%E6%84%8F%E3%80%8D%E3%81%AE%E3%82%88",
+      "https://hackmd.io/@TommyHuang/B1rmGROa1l",
+      "https://atcold.github.io/NYU-DLSP20/ja/week12/12-3/",
+      "https://zenn.dev/kitacom_blog/articles/observe_self_attention_p1",
+      "https://developer.aliyun.com/article/1116816",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10286144365"
+    ]
   },
   {
     "id": "ch5-015",
@@ -434,13 +798,13 @@
         "text": "3×3の小さな畳み込みフィルタを複数積み重ねることで深さを増しながら高い精度を実現したCNNモデル"
       },
       {
-        "text": "スキップ結合を導入し非常に深いネットワークを実現したモデルの概念"
+        "text": "VGGモデルは大きなフィルタを使用し、特徴を一度に抽出する手法である。"
       },
       {
-        "text": "複数の異なるサイズのフィルタを並列に使うInceptionモジュールを特徴とするモデル"
+        "text": "VGGは主に画像のセグメンテーションに特化した技術であるとされるである"
       },
       {
-        "text": "エンコーダ・デコーダ構造で意味的なセグメンテーションを行うモデル"
+        "text": "VGGは音声認識において高い精度を誇る手法にあたるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -454,7 +818,29 @@
       "CNN",
       "画像認識"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://otafuku-lab.co/aizine/glossary-vgg/",
+      "https://dx-consultant-fast-evolving.com/vgg/",
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-2/",
+      "https://www.reddit.com/r/MachineLearning/comments/icti3z/d_waveforms_vs_spectrograms_as_inputs_to_a/?tl=ja",
+      "https://note.com/kikaben/n/nc1e566638463",
+      "https://cqsemi.net/2025/11/04/blog29/",
+      "https://pystyle.info/pytorch-vgg/",
+      "https://blog.project-kk.com/%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%AEcnn%E3%80%81vgg%E3%80%81resnet%E3%81%AE%E5%86%85%E9%83%A8%E6%A7%8B%E9%80%A0%E3%81%A8%E4%BB%95%E7%B5%84%E3%81%BF/",
+      "https://note.com/vast_cosmos500/n/na6ede3b1b595",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/vgg/",
+      "https://zenn.dev/splusl_at/articles/visualize-feature-convolution-layer-in-vgg16",
+      "https://www.geeksforgeeks.org/computer-vision/vgg-16-cnn-model/",
+      "https://qiita.com/ykoji/items/b0f36d649c2af9d3222c",
+      "https://e-words.jp/w/VGG.html",
+      "https://www.kaitoy.xyz/2018/02/06/coursera-deep-learning-convolutional-neural-networks/",
+      "https://e-shikaku-doujou.com/mask-r-cnn/",
+      "https://kino-3.github.io/ml-memo/paper/vgg/",
+      "https://saycon.co.jp/archives/neta/vgg%E3%81%8C%E5%88%87%E3%82%8A%E9%96%8B%E3%81%84%E3%81%9F%E6%B7%B1%E3%81%84%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E4%B8%96%E7%95%8C%EF%BC%81%E5%B1%A4%E3%82%92%E9%87%8D",
+      "https://qiita.com/tarura/items/b318b30249e1d2596009",
+      "https://www.robots.ox.ac.uk/~vgg/practicals/cnn/"
+    ]
   },
   {
     "id": "ch5-016",
@@ -465,13 +851,13 @@
         "text": "フィルタを動かす間隔（歩幅）のことで、ストライドを大きくすると出力特徴マップのサイズは小さくなる"
       },
       {
-        "text": "畳み込みフィルタのサイズ（縦×横）のことという特性を持つ技術的定義"
+        "text": "フィルタのサイズを決定する手法で、サイズが大きいほど出力が増えるという技術"
       },
       {
-        "text": "入力データの周囲に0を埋める操作のこととして位置づけられる手法・概念"
+        "text": "ストライドはフィルタの移動速度を示し、常に1である必要がある技術である"
       },
       {
-        "text": "フィルタのチャネル数を増やす操作のことという性質を持つ概念・アプローチ"
+        "text": "画像の色調を調整するための手法で、明るさを変えることにあたるという"
       }
     ],
     "correctIndex": 0,
@@ -485,7 +871,26 @@
       "ストライド",
       "畳み込み"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://zero2one.jp/ai-word/stride/?srsltid=AfmBOorjBDPGgcR8g9sEve7m9ZTsGhatqUaCVCT05M-aBqY8iizIRlxz",
+      "https://www.ibm.com/jp-ja/think/topics/convolutional-neural-networks",
+      "https://zero2one.jp/ai-word/stride/?srsltid=AfmBOoqwchX7FWJhdAhvLjF55-wkKeG3LBt4wsnft8_UTPgM0mOlxQm-",
+      "https://dx-consultant-fast-evolving.com/convolutional-neural-network/",
+      "https://ai-compass.weeybrid.co.jp/algorizm/understanding-strides-in-convolutional-operations/",
+      "https://zenn.dev/academix/books/0da15caa65b59f/viewer/15_cnn",
+      "https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html",
+      "https://saycon.co.jp/archives/neta/cnn%E3%81%A7%E3%83%91%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92%E4%BD%BF%E3%81%86%E7%90%86%E7%94%B1%E3%81%A8%E3%81%AF%EF%BC%9F%E3%80%8C%E9%9A%85%E3%81%A3%E3%81%93%E3%81%AE%E3%83%87%E3%83%BC",
+      "https://note.com/narumi_ai/n/n84e035f12283",
+      "https://tkengo.github.io/blog/2016/03/11/understanding-convolutional-neural-networks-for-nlp/",
+      "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-convolutional-neural-networks",
+      "https://app.statisticsschool.com/practice/g-certification/deep-learning/pages/dl-006.html",
+      "https://jp.linkedin.com/pulse/why-convolutional-neural-networks-simpler-2s7jc?tl=ja",
+      "https://data-analytics.fun/2021/11/23/understanding-convolution/",
+      "https://www.mql5.com/ja/articles/15259",
+      "https://qiita.com/kuroitu/items/fd6843a13843256a07bf",
+      "https://note.com/micz/n/n4a5d3ed8ce28"
+    ]
   },
   {
     "id": "ch5-017",
@@ -496,13 +901,13 @@
         "text": "入力データの周囲に値（0など）を埋めることで、畳み込み後の特徴マップサイズが縮小しすぎるのを"
       },
       {
-        "text": "フィルタのパラメータ数を増やして表現力を高めるためとして位置づけられる手法・概念"
+        "text": "画像の中心部の情報を強調するための手法であるとして位置づけられる技術"
       },
       {
-        "text": "バッチ内のデータを正規化するために基づく処理・理論の枠組み"
+        "text": "畳み込み演算の計算速度を向上させるために行う技術であるという学習アプローチ"
       },
       {
-        "text": "複数のフィルタを並列に適用するためであることを特徴とする定義・概念"
+        "text": "データの次元を削減するために用いる処理にあたるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -516,7 +921,27 @@
       "パディング",
       "畳み込み"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://ai-compass.weeybrid.co.jp/algorizm/the-role-of-padding-in-image-processing/",
+      "https://zero2one.jp/ai-word/padding/?srsltid=AfmBOorJu0wiqfqpOaCC5lNHqj4khekdp-9UlNtXlmkIvaVccMPLk6Of",
+      "https://zero2one.jp/ai-word/padding/?srsltid=AfmBOoqiocIp22m-71F-oN_kE9fiLHz5u-zP7DgAMKJb1HaQol8nITjZ",
+      "https://note.com/narumi_ai/n/n84e035f12283",
+      "https://zero2one.jp/ai-word/padding/?srsltid=AfmBOoqj4Ot7_6T9hd6Jdu80mAvGBZUTPuXWI4qCi1GTz8GuC9hGWnom",
+      "https://saycon.co.jp/archives/neta/cnn%E3%81%A7%E3%83%91%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%92%E4%BD%BF%E3%81%86%E7%90%86%E7%94%B1%E3%81%A8%E3%81%AF%EF%BC%9F%E3%80%8C%E9%9A%85%E3%81%A3%E3%81%93%E3%81%AE%E3%83%87%E3%83%BC",
+      "https://jp.linkedin.com/pulse/pooling-padding-cnn-vishwajit-sen?tl=ja",
+      "https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html",
+      "https://kentei.ai/blog/archives/2122",
+      "https://zenn.dev/bilzard/articles/padding-in-convolution-and-pixel-alignment",
+      "https://chefyushima.com/dl-cnn_convolution/3385/",
+      "https://tkengo.github.io/blog/2016/03/11/understanding-convolutional-neural-networks-for-nlp/",
+      "https://note.com/doindoindoin/n/ne278ed6e6589",
+      "https://zenn.dev/academix/books/0da15caa65b59f/viewer/15_cnn",
+      "https://dx-consultant-fast-evolving.com/convolutional-neural-network/",
+      "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-convolutional-neural-networks",
+      "https://qiita.com/DeepTama/items/379cac9a73c2aed7a082",
+      "https://zawapython.hatenablog.com/entry/2018/10/03/210211"
+    ]
   },
   {
     "id": "ch5-018",
@@ -527,13 +952,13 @@
         "text": "チャネル方向の次元削減（モデルの軽量化）や非線形変換を加えるために使用される"
       },
       {
-        "text": "空間方向（縦・横）の局所的な特徴を抽出するの概念"
+        "text": "画像のサイズを変更するために用いられる技術であるという技術"
       },
       {
-        "text": "プーリング層の代わりに空間サイズを縮小するの概念"
+        "text": "主に画像のエッジ検出に特化した手法にあたるという学習アプローチ"
       },
       {
-        "text": "バッチ内の正規化を行うに相当する概念であり、試験で頻出の定義"
+        "text": "データの正規化を行うための手法であるとされる・仕組み"
       }
     ],
     "correctIndex": 0,
@@ -547,7 +972,48 @@
       "1x1畳み込み",
       "モデル軽量化"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://baike.baidu.com/ja/item/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/1196541",
+      "https://jp.linkedin.com/pulse/understanding-1x1-convolutions-key-efficient-bottleneck-vikrant-deo-sxkkc?tl=ja",
+      "https://www.reddit.com/r/learnmachinelearning/comments/vovwz6/whats_the_purpose_of_a_1x1_convolutional_layer/?tl=ja",
+      "https://axa.biopapyrus.jp/deep-learning/cnn/1x1_convolution.html",
+      "https://zenn.dev/nao91/scraps/c6388b05d8d1f9",
+      "https://zenn.dev/tkdevelop/articles/a459a031a07b18",
+      "https://www.reddit.com/r/MachineLearning/comments/4xpjb6/how_do_fully_convolutional_networks_fare_against/?tl=ja",
+      "https://qiita.com/minh33/items/98d78a8a5b03280b100b",
+      "https://note.com/vast_cosmos500/n/na631c6f589f1",
+      "https://www.robotech-note.com/entry/2017/12/24/191936",
+      "https://jp.quora.com/1x1%E3%81%AE%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%81%AF%E4%BD%95%E3%81%AE%E6%84%8F%E5%91%B3%E3%81%8C%E3%81%82%E3%82%8B%E3%81%AE%E3%81%A7%E3%81%97%E3%82%87%E3%81%86%E3%81%8B",
+      "https://jp.quora.com/naze-fully-convolution-network-no-saigo-ni-ha-1-1-no-tatami-mi-komi-sou-wo-oku-no-desu-ka",
+      "https://www.reddit.com/r/MachineLearning/comments/icti3z/d_waveforms_vs_spectrograms_as_inputs_to_a/?tl=ja",
+      "https://qiita.com/c60evaporator/items/a606c4c3fde199689afc",
+      "https://aws.amazon.com/jp/compare/the-difference-between-deep-learning-and-neural-networks/",
+      "https://note.com/vast_cosmos500/n/n16c0dd0d7dec",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap6.html",
+      "https://kaiseki-kke.jp/blog/structural-health-monitoring-using-ai/",
+      "https://engineering.linecorp.com/ja/blog/natural-language-control-speakability/",
+      "https://note.com/micz/n/n4a5d3ed8ce28",
+      "https://shion.blog/the-9th-machine-learning-workshop_3/",
+      "https://www.paloaltonetworks.jp/cyberpedia/artificial-intelligence-ai",
+      "https://www.mugen-corp.jp/column/4140/",
+      "https://www.keio.ac.jp/files/9eed2b3b4d717318c462380746abef78a584490f395dc9b31b8fcdd4ced78ab6",
+      "https://www.ibm.com/jp-ja/think/topics/image-recognition",
+      "https://kyokke.github.io/blog/2021-07-05-rabbit-phase4-DL3and4/",
+      "https://yuiga.dev/blog/posts/aic_%E8%B5%A4%E6%B1%A0%E6%83%85%E5%A0%B1%E9%87%8F%E5%9F%BA%E6%BA%96/",
+      "https://www.trifields.jp/journal-of-machine-learning-research-papers-v24-8852",
+      "https://tkengo.github.io/blog/2016/03/11/understanding-convolutional-neural-networks-for-nlp/",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://www.fortinet.com/jp/resources/cyberglossary/neural-network",
+      "https://note.com/vast_cosmos500/n/n9b7ec31c8130",
+      "https://michitomo2019.com/it-passport-explanation-of-syllabus6-2-new-terms/",
+      "https://blog.formzu.com/deeplearning",
+      "https://ai-market.jp/purpose/image-recognition-cnn/",
+      "https://www.imagazine.co.jp/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%80%8C%E5%9F%BA%E7%A4%8E%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%80%8D%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99/",
+      "https://qiita.com/kuroitu/items/fd6843a13843256a07bf",
+      "https://service.shiftinc.jp/column/12901/",
+      "https://kikai-learning.com/pytorch%E3%81%A7%E5%AD%A6%E3%81%B6%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%EF%BC%9A%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E7%94%BB%E5%83%8F%E5%88%86/"
+    ]
   },
   {
     "id": "ch5-019",
@@ -558,13 +1024,13 @@
         "text": "入力データにフィルタ（カーネル）を適用することで得られる、特定の特徴（エッジや模様など）"
       },
       {
-        "text": "各クラスの確率分布を示す出力ベクトルという特性を持つ技術的定義"
+        "text": "入力データを圧縮するための手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "ネットワークの重みパラメータを地図形式で可視化したものとして定義される"
+        "text": "画像の全体的な色合いを調整する技術であるに応用される技術的な仕組み"
       },
       {
-        "text": "学習データとテストデータの分布の違いを示す図に相当する概念であり、試験で頻出の定義"
+        "text": "データの次元を削減するための方法にあたるを実現するアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -578,7 +1044,27 @@
       "特徴マップ",
       "畳み込み"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E7%89%B9%E5%BE%B4%E3%83%9E%E3%83%83%E3%83%97.html",
+      "https://jp.linkedin.com/pulse/object-detection-models-explained-r-cnn-yolo-ssd-amit-kharche-gedof?tl=ja",
+      "https://www.ibm.com/jp-ja/think/topics/convolutional-neural-networks",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/cnn/",
+      "https://www.jstage.jst.go.jp/article/shasetaikai/2020.8/0/2020.8_197/_pdf",
+      "https://www.ultralytics.com/ja/glossary/feature-maps",
+      "https://ibisml.org/ibis2017/technical2/",
+      "https://qiita.com/zazen_inu/items/487d01ea2d48e3c8c1c3",
+      "https://www.meta-intelligence.tech/ja/insight-cnn",
+      "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-convolutional-neural-networks",
+      "https://www.veriserve.co.jp/helloqualityworld/media/20251212001/",
+      "https://www.reddit.com/r/MachineLearning/comments/pbfvrg/d_regression_with_a_simple_cnn_is_it_possible/?tl=ja",
+      "https://zero2one.jp/learningblog/cnn-for-beginners/?srsltid=AfmBOopyoLpIhppx1avbj9x1o_UXCAhVKumwAaOTlj5MJtDYtZyimGKa",
+      "https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html",
+      "https://saycon.co.jp/whatwedo-2/ai/g/deep-learning-for-general/deep-learning-for-general4",
+      "https://www.hitachi-solutions-create.co.jp/column/technology/cnn.html",
+      "https://miyamotok0105.hatenablog.com/entry/2017/03/17/000000",
+      "https://fs-micro.com/post/postedinmonth/time/1709218800/pnc/c.html"
+    ]
   },
   {
     "id": "ch5-020",
@@ -589,13 +1075,13 @@
         "text": "順方向と逆方向の両方向からシーケンスを処理し、両方向の文脈情報を統合することで、各位置の表現を豊かにするRNN"
       },
       {
-        "text": "2つの異なるRNNを並列に動かして出力を平均するモデルに基づく処理・理論の枠組み"
+        "text": "単方向RNNは過去の情報のみを使い、未来の情報は考慮しない手法であるという技術"
       },
       {
-        "text": "エンコーダとデコーダの両方にRNNを使うモデルという特性を持つ技術的定義"
+        "text": "双方向RNNは主に画像処理に用いられる技術で、時系列データには不向きである。"
       },
       {
-        "text": "過去と未来の両方の入力を同時にバッチ処理するRNNに基づく処理・理論の枠組み"
+        "text": "双方向RNNはデータを一方向に処理し、過去の情報だけを基に出力を生成するという"
       }
     ],
     "correctIndex": 0,
@@ -609,7 +1095,29 @@
       "双方向RNN",
       "BiRNN"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E5%8F%8C%E6%96%B9%E5%90%91RNN.html",
+      "https://jp.linkedin.com/pulse/recurrent-neural-network-bidirectional-rnn-deep-networks-salunke-9f66f?tl=ja",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/bidirectional-rnn/",
+      "https://tt-tsukumochi.com/archives/8916",
+      "https://appswingby.com/%E5%8F%8C%E6%96%B9%E5%90%91rnn-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://omomuki-tech.com/archives/6157",
+      "https://naoki85.github.io/ecertificate/rnn/2023/07/28/rnn.html",
+      "https://zero2one.jp/learningblog/bidirectional-rnn/?srsltid=AfmBOormH-km0z_qWnJclWCrH1c9xDQDex-hWWHpLsTOw9PS2Fre4tLY",
+      "https://ai-compass.weeybrid.co.jp/algorizm/understanding-time-series-data-with-bidirectional-rnns/",
+      "https://zero2one.jp/learningblog/bidirectional-rnn/?srsltid=AfmBOooL_5Kzhf8Ls0UgaJqoIJXzQOLKCWfIYnEwE9m3vsBCKcFZA3Hy",
+      "https://note.com/vast_cosmos500/n/n0392fc734e94",
+      "https://appswingby.com/bidirectional-rnn-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://zero2one.jp/ai-word/bidirectional-rnn/?srsltid=AfmBOooacehYEuerNEU-IcCd2FmFUaVaR90ZnqYVU9Ndg9gE1jjc-EwH",
+      "https://deepsquare.jp/2023/01/bidirectional-rnn/",
+      "https://zero2one.jp/learningblog/bidirectional-rnn/?srsltid=AfmBOopEKfwqjNaZ-P1EIDX7QsedBXF4sFGNk79175WltE_ERJOPjs4y",
+      "https://zero2one.jp/ai-word/bidirectional-rnn/?srsltid=AfmBOoow_ZHbUXBLYaLR5rhpxgi9RAPY2O2idk3tRc4oJovLMeSCRYeZ",
+      "https://aismiley.co.jp/ai_news/rnn/",
+      "https://zero2one.jp/ai-word/bidirectional-rnn/?srsltid=AfmBOopK1mDItkyPR009WaFGB4jdfHKZg3e_YSZLfrlYnlTb-Uc5l5HV",
+      "https://quizlet.com/jp/475116795/6-deep-learning%E3%81%AE%E7%A0%94%E7%A9%B6%E5%88%86%E9%87%8E%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86%E6%99%82%E7%B3%BB%E5%88%97%E8%A7%A3%E6%9E%90-flash-cards/",
+      "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC%EF%BD%9E%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A8%93%EF%BD%9E/"
+    ]
   },
   {
     "id": "ch5-021",
@@ -620,13 +1128,13 @@
         "text": "RNNのような再帰構造を使わずAttentionのみで構成され、並列計算が可能で長距離依存関係を効率よく学習できる"
       },
       {
-        "text": "再帰的な処理構造（RNN）により時系列データを逐次処理するとして定義される"
+        "text": "RNNのように逐次的に情報を処理し、長期的な記憶を持つ技術であるという技術的な手法"
       },
       {
-        "text": "畳み込み演算だけで構成され画像処理に重点化しているであることを特徴とする定義・概念"
+        "text": "Attention機構を用いるが、主に画像処理に特化した手法にあたるという学習アプローチ"
       },
       {
-        "text": "エンコーダとデコーダを持たない単純なフィードフォワード構造として定義される"
+        "text": "自然言語処理において、主に教師あり学習を用いる手法であるを実現するアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -640,7 +1148,39 @@
       "Transformer",
       "Attention"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60,f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60,f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/hirokatsu267/n/ndf5b2d4d4e83",
+      "https://vinsmoke-three.com/LLM/00_illustrated_transformer/",
+      "https://www.persol-group.co.jp/service/business/article/21293/",
+      "https://www.sbbit.jp/article/cont1/130017",
+      "https://nlpillustration.tech/?p=2171",
+      "https://cookie-box.hatenablog.com/entry/2024/07/18/235843",
+      "https://www.xlsoft.com/jp/blog/blog/2024/10/02/grammarly-20-post-79517/",
+      "https://aws.amazon.com/jp/what-is/transformers-in-artificial-intelligence/",
+      "https://www.alphaxiv.org/ja/overview/2502.19669v1",
+      "https://zenn.dev/zenkigen_tech/articles/2023-01-shimizu",
+      "https://yuiga.dev/blog/ja/posts/graphormer_do_transformers_really_perform_bad_for_graph_representation/",
+      "https://note.com/hima2b4/n/na357c5e34d7d",
+      "https://jp.linkedin.com/pulse/ai-spiral-why-chatbots-get-stuck-how-architecture-fallahian-phd-ywx7e?tl=ja",
+      "https://www.ibm.com/jp-ja/think/topics/transformer-model",
+      "https://datamix.co.jp/media/datascience/what-is-transformer/",
+      "https://qiita.com/omiita/items/07e69aef6c156d23c538",
+      "https://takayama-rado.com/articles/slr_tutorial_simple_transformer.html",
+      "https://www.reddit.com/r/MachineLearning/comments/r76igz/discussion_rant_most_of_us_just_pretend_to/?tl=ja",
+      "https://blog.statsbeginner.net/entry/2023/02/23/174435",
+      "https://jp.linkedin.com/pulse/infamous-attention-mechanism-transformer-architecture-arion-das-whzvc?tl=ja",
+      "https://thinkit.co.jp/article/22231",
+      "https://www.thoughtspot.com/jp/blog/what-is-transformer-architecture-chatgpt",
+      "https://zenn.dev/skypenguins/articles/a7b4cfee63b67c",
+      "https://www.reddit.com/r/MachineLearning/comments/18qh1hp/discussion_in_this_age_of_llms_what_are_the/?tl=ja",
+      "https://note.com/kyutaro15/n/nd24fe79a6680",
+      "https://x.com/omnisight/status/1870834822618513584",
+      "https://qiita.com/ApfelSchorle/items/deab73bd8e1afe160997",
+      "https://www.reddit.com/r/singularity/comments/1doi0i8/meet_sohu_an_asic_for_transformers_that_can/?tl=ja",
+      "https://zilliz.com/jp/learn/Sentence-Transformers-for-Long-Form-Text",
+      "https://pro.arcgis.com/ja/pro-app/3.5/tool-reference/geoai/how-text-transformation-works.htm"
+    ]
   },
   {
     "id": "ch5-022",
@@ -651,13 +1191,13 @@
         "text": "Attentionを複数のヘッドで並列に計算し、それぞれ異なる側面の関係性（位置的・意味的など）を捉えて結合する手法"
       },
       {
-        "text": "複数のデータバッチに対して同時にAttentionを計算する手法として定義される"
+        "text": "マルチヘッドアテンションは、単一のヘッドで注意を集中させる手法であるという仕組み"
       },
       {
-        "text": "多層のAttention層を積み重ねたネットワーク構造に関する概念であり、G検定の重要用語のひとつ"
+        "text": "マルチヘッドアテンションは、データの前処理を行うための技術にあたるという学習アプローチ"
       },
       {
-        "text": "複数の異なる損失関数を組み合わせてAttentionを最適化する手法の概念"
+        "text": "マルチヘッドアテンションは、画像処理に特化したアルゴリズムであるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -672,7 +1212,37 @@
       "Transformer",
       "Attention"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-4/",
+      "https://e-words.jp/w/%E3%83%9E%E3%83%AB%E3%83%81%E3%83%98%E3%83%83%E3%83%89%E3%82%A2%E3%83%86%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%B3.html",
+      "https://medium.com/@naqvishahwar120/ai-problem-with-self-attention-multi-head-attention-52bc4751bf6f",
+      "https://developers.agirobots.com/jp/multi-head-attention/",
+      "https://blog.statsbeginner.net/entry/2023/02/23/174435",
+      "https://qiita.com/yustudio_jp/items/470449553f32e0722a4b",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/03557/00005/",
+      "https://saycon.co.jp/archives/neta/ai%E3%83%96%E3%83%BC%E3%83%A0%E3%81%AE%E4%B8%BB%E5%BD%B9%EF%BC%81transformer%E3%81%AE%E6%A0%B8%E3%81%A8%E3%81%AA%E3%82%8Bmulti-head-attention%E3%82%92%E5%BE%B9%E5%BA%95%E8%A7%A3%E8%AA%AC",
+      "https://qiita.com/jon09/items/8c61d2076c2f99d6297a",
+      "https://gri.jp/media/entry/37646",
+      "https://community.deeplearning.ai/t/w4-a1-is-there-a-typo-in-multi-head-attention-slides/135478",
+      "https://www.digitalocean.com/community/tutorials/multi-head-attention-simple-explained",
+      "https://www.reddit.com/r/MachineLearning/comments/r76igz/discussion_rant_most_of_us_just_pretend_to/?tl=ja",
+      "https://note.com/kikaben/n/na82f7f64fdb6",
+      "https://www.alphaxiv.org/ja/overview/2502.19669v1",
+      "https://qiita.com/mk-mokumoku/items/0f5449315ff06b953900",
+      "https://blog.fltech.dev/entry/2026/03/25/hallucination-mitigation-ja",
+      "https://d2l.ai/chapter_attention-mechanisms-and-transformers/multihead-attention.html",
+      "https://www.nomuyu.com/multi-head-attention/",
+      "https://zenn.dev/nekoallergy/books/llm-transformer-mechanism/viewer/sec7",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1aoz7hj/research_is_there_a_misunderstanding_in_the/",
+      "https://discuss.pytorch.org/t/multi-head-attention-gives-wrong-attention-weights-when-model-is-set-to-eval/159364",
+      "https://stats.stackexchange.com/questions/373850/what-stops-the-network-from-learning-the-same-weights-in-multi-head-attention-me",
+      "https://towardsdatascience.com/transformers-explained-visually-part-3-multi-head-attention-deep-dive-1c1ff1024853/",
+      "https://theaisummer.com/self-attention/",
+      "https://note.com/izai/n/n6aaeab734ae3",
+      "https://zenn.dev/yuto_mo/articles/cf83d90e8dd9d4",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1drqkjh/about_concatenation_in_multi_head_attention/?tl=ja"
+    ]
   },
   {
     "id": "ch5-023",
@@ -683,13 +1253,13 @@
         "text": "VAEは潜在変数を確率分布（平均と分散）でモデル化し、サンプリングによって新しいデータを生成できる深層生成モデル"
       },
       {
-        "text": "VAEはデコーダを持たず、エンコーダだけで特徴を抽出するとして定義される"
+        "text": "オートエンコーダはデータを圧縮し、復元する手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "VAEはRNN構造を組み込んだシーケンス処理に重点化したオートエンコーダ"
+        "text": "VAEは潜在変数を固定ベクトルで表現し、生成能力がない技術であるという学習アプローチ"
       },
       {
-        "text": "VAEは教師あり学習でラベルを用いて潜在空間を学習するとして知られる代表的な手法"
+        "text": "変分オートエンコーダは画像処理に特化した手法にあたるとして用いられる技術的手法"
       }
     ],
     "correctIndex": 0,
@@ -704,7 +1274,32 @@
       "オートエンコーダ",
       "生成モデル"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://cysec148.hatenablog.com/entry/2025/04/07/154906",
+      "https://zenn.dev/yamada_quantum/articles/73309f85e1b914",
+      "https://zero2one.jp/ai-word/variational-autoencoder/?srsltid=AfmBOopyLgNIb-mbRcaVYGiXWR4Joh5ufhkqrtc2ncibGw-LYbEzTRs1",
+      "https://zero2one.jp/ai-word/variational-autoencoder/?srsltid=AfmBOoq79g-cjQI4Lf-zJftQ-ZRbUQhF999vT7Eq5Dl-Fq53ZbgPV4Da",
+      "https://www.reddit.com/r/StableDiffusion/comments/10mtuz6/articles_that_explain_what_autoencoders_and/?tl=ja",
+      "https://statisticsschool.com/%E3%80%90%E6%B7%B1%E5%B1%A4%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB%E3%80%91vae%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF%E3%82%92%E3%82%8F%E3%81%8B%E3%82%8A%E3%82%84%E3%81%99%E3%81%8F%E8%A7%A3/",
+      "https://note.com/hiroe28/n/n276c940e2942",
+      "https://g-gen.co.jp/useful/General-tech/explain-vae-ai/",
+      "https://note.com/kikaben/n/n7a1bb21fb761",
+      "https://www.ibm.com/jp-ja/think/topics/variational-autoencoder",
+      "https://geminiandi.hatenablog.com/entry/2025/06/25/191429",
+      "https://qiita.com/PingpongChopper/items/d7db77516c52b9bb15c6",
+      "https://jp.linkedin.com/pulse/generative-ai-series-4-introduction-autoencoders-vijay-zz5gc?tl=ja",
+      "https://academ-aid.com/ml/vae",
+      "https://qiita.com/kenchin110100/items/7ceb5b8e8b21c551d69a",
+      "https://medium.com/@jwbtmf/comparison-of-autoencoders-vs-variational-autoencoders-7993442bb377",
+      "https://qiita.com/NaoyukiSakai/items/05ed49332db4bbf777bf",
+      "https://towardsdatascience.com/difference-between-autoencoder-ae-and-variational-autoencoder-vae-ed7be1c038f2/",
+      "https://www.ibm.com/think/topics/variational-autoencoder",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1aiohuu/autoencoder_or_variational_auto_encoder/",
+      "https://stats.stackexchange.com/questions/324340/when-should-i-use-a-variational-autoencoder-as-opposed-to-an-autoencoder",
+      "https://www.facebook.com/groups/DeepLearnng/posts/4447256252174665/",
+      "https://www.scaleway.com/en/blog/vae-getting-more-out-of-your-autoencoder/"
+    ]
   },
   {
     "id": "ch5-024",
@@ -712,16 +1307,16 @@
     "question": "GAN（敵対的生成ネットワーク）の基本的な仕組みとして正しいものはどれか。",
     "choices": [
       {
-        "text": "大量のラベル付きデータを使ってクラス分類器を学習するモデルという考え方に基づく手法"
+        "text": "データを単に分類するだけのモデルであり、生成は行わない手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "2つの異なるデータドメインを変換し合うオートエンコーダの発展形に関する概念であり、G検定の重要用語のひとつ"
+        "text": "特定の条件に基づいてデータを生成する技術であり、無条件の生成は行わないという学習アプローチ"
       },
       {
         "text": "本物らしいデータを生成するGeneratorと、本物か偽物かを識別するDiscriminatorを競わせることで高品質なデータを生"
       },
       {
-        "text": "強化学習のエージェントと環境が対立するゲーム理論的フレームワークに基づく学習・推論の仕組み"
+        "text": "異常検知を目的とした手法であり、生成データの品質向上には寄与しないとして用いられる技術的手法"
       }
     ],
     "correctIndex": 2,
@@ -736,7 +1331,35 @@
       "Generator",
       "Discriminator"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://syp.vn/jp/article/what-is-gan-adversarial-generative-network",
+      "https://www.ibm.com/jp-ja/think/topics/generative-adversarial-networks",
+      "https://corp.rakuten.co.jp/event/rakutentech/ai/gan.html",
+      "https://blog.qualiteg.com/gan_and_diffusion_models/",
+      "https://eaglys.co.jp/resource/columns/gan",
+      "https://jp.mathworks.com/discovery/generative-adversarial-networks.html",
+      "https://aws.amazon.com/jp/what-is/gan/",
+      "https://dhbr.diamond.jp/articles/-/12166",
+      "https://www.ibm.com/jp-ja/think/insights/synthetic-data-generation",
+      "https://www.cybertech.co.jp/ito/article/column/c20200318.php",
+      "https://corpy.co.jp/jp/news/iRAPD_v2",
+      "https://service.shiftinc.jp/column/13877/",
+      "https://fastlabel.ai/blog/datacentric-ai",
+      "https://note.com/clever_canna2386/n/n4ad9f87dfb71",
+      "https://note.com/wajimayuki/n/n3ac3371b7993",
+      "https://www.ntt.com/bizon/d/00710.html",
+      "https://note.com/inagaki2521/n/n87c77a974046",
+      "https://www.skillupai.com/blog/tech/mldl-tips-1/",
+      "https://boomi.com/ja/blog/9-ways-to-ensure-data-quality/",
+      "https://ledge.ai/articles/gan",
+      "https://qiita.com/triwave33/items/1890ccc71fab6cbca87e",
+      "https://saycon.co.jp/archives/neta/%E3%80%90numpy%E5%BF%9C%E7%94%A8%E3%80%91%E4%B9%B1%E6%95%B0%E3%82%92%E6%93%8D%E3%82%8B%EF%BC%81choice%E3%81%A8shuffle%E3%82%92%E4%BD%BF%E3%81%84%E3%81%93%E3%81%AA%E3%81%97%E3%81%A6%E8%84%B1%E3%83%BB-2",
+      "https://exawizards.com/column/article/ai/machine-leaning-data-set/",
+      "https://tatsy.github.io/programming-for-beginners/python/stabilize-gan-training/",
+      "https://appen.co.jp/blogs/what-is-data-collection",
+      "https://nulmil.net/generative-adversarial-networkgan/"
+    ]
   },
   {
     "id": "ch5-025",
@@ -744,16 +1367,16 @@
     "question": "GANにおけるGeneratorの役割として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力データが本物のデータセットから来たものかどうかを判定するとして定義される"
+        "text": "Discriminatorは生成したデータを評価し、正しいか判断する役割を持つ技術である"
       },
       {
-        "text": "入力データを低次元の潜在表現に圧縮するであることを特徴とする定義・概念"
+        "text": "Generatorは本物のデータを分析し、特徴を抽出する手法にあたることが求められる"
       },
       {
         "text": "乱数（ノイズ）から本物らしいデータ（画像・音声など）を生成し、Discriminatorを騙すことを目指す"
       },
       {
-        "text": "損失関数を計算してネットワーク全体の重みを更新するという特性を持つ技術的定義"
+        "text": "Generatorはデータを分類し、特定のカテゴリに分けるための手法であるとされる"
       }
     ],
     "correctIndex": 2,
@@ -767,7 +1390,33 @@
       "Generator",
       "生成モデル"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://syp.vn/jp/article/what-is-gan-adversarial-generative-network",
+      "https://note.com/inagaki2521/n/n87c77a974046",
+      "https://www.skillupai.com/blog/tech/mldl-tips-1/",
+      "https://note.com/vast_cosmos500/n/n37d6c17388ca",
+      "https://eaglys.co.jp/resource/columns/gan",
+      "https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md",
+      "https://tatsy.github.io/programming-for-beginners/python/gan/",
+      "https://www.beerfroth.com/marketing-blog/generative-adversarial-networks/",
+      "https://ip-study.net/ai-technology-qa/",
+      "https://qiita.com/okateru/items/3eacbf858081fa3cf77e",
+      "https://corp.rakuten.co.jp/event/rakutentech/ai/gan.html",
+      "https://actionbridge.io/ja/llmtutorial/p/llm-rag-chapter2-2-retriever-generator-model",
+      "https://ai-scholar.tech/articles/gan/pretrainedgan",
+      "https://www.ultralytics.com/ja/glossary/generative-adversarial-network-gan",
+      "https://www.imagazine.co.jp/gan%EF%BC%9A%E6%95%B5%E5%AF%BE%E7%9A%84%E7%94%9F%E6%88%90%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B%E3%80%80%EF%BD%9E%E3%80%8C%E6%95%99%E5%B8%AB/",
+      "https://www.reddit.com/r/explainlikeimfive/comments/cf76av/eli5how_do_generators_in_gan_work/?tl=ja",
+      "https://umarketing.co.jp/ai-glossary/generator/",
+      "https://zenn.dev/hachimada/articles/python_understanding_generator",
+      "https://note.com/zum_ism/n/n55f4f18fecb4",
+      "https://visipri.com/event-dictionary/243-generator.php?srsltid=AfmBOoq7z-TFRslWL88Ym-ZzkryyUU3-v8334-U50h_FXXXmLV2CycnA",
+      "https://www.wantedly.com/companies/company_9114569/post_articles/397429",
+      "https://omomuki-tech.com/archives/6309",
+      "https://tentan.jp/word/generator",
+      "https://surume.org/2022/08/7139.html"
+    ]
   },
   {
     "id": "ch5-026",
@@ -775,16 +1424,16 @@
     "question": "レイヤー正規化（Layer Normalization）とバッチ正規化（Batch Normalization）の違いとして正しいものはどれか。",
     "choices": [
       {
-        "text": "レイヤー正規化はバッチ全体の統計量で正規化するが、バッチ正規化は各サンプル単独で正規化する"
+        "text": "バッチ正規化は各サンプルの特徴量を正規化し、全体の平均と分散を用いる手法であるという仕組み"
       },
       {
-        "text": "レイヤー正規化は学習データだけに適用され、推論時には使用しないという性質を持つ概念・アプローチ"
+        "text": "レイヤー正規化はバッチサイズに依存し、特にCNNでの使用が一般的であるとされるという学習アプローチ"
       },
       {
         "text": "レイヤー正規化は各サンプル内のすべての特徴量を正規化するため、バッチサイズに依存せず、RNNやTransformerで広く使われる"
       },
       {
-        "text": "レイヤー正規化は重みパラメータを持たず、バッチ正規化はスケールとシフトのパラメータを持つ"
+        "text": "バッチ正規化は時系列データに特化した手法で、RNNにおいてのみ利用される技術である・仕組み"
       }
     ],
     "correctIndex": 2,
@@ -798,7 +1447,36 @@
       "バッチ正規化",
       "Transformer"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/inagaki2521/n/n434a0b14ebf3",
+      "https://pydocument.hatenablog.com/entry/2024/01/27/154219",
+      "https://www.reddit.com/r/computervision/comments/ypshs9/what_is_layer_normalization_whats_it_trying_to/?tl=ja",
+      "https://qiita.com/hgoj/items/9f3e953e9b65a4f213b1",
+      "https://jp.linkedin.com/pulse/week-3-layer-normalization-vs-batch-transformers-kausik-kumar-j8yic?tl=ja",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/03557/00002/",
+      "https://note.com/kikaben/n/nda0d7a609f88",
+      "https://saycon.co.jp/archives/neta/%E3%80%8Ctransformer%E5%85%A8%E7%9B%9B%E3%81%AE%E4%BB%8A%E3%80%81rnn%E3%82%92%E5%AD%A6%E3%81%B6%E6%84%8F%E5%91%B3%E3%81%AF%E3%81%82%E3%82%8B%E3%81%AE%E3%81%8B%EF%BC%9F%E3%80%8D",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://zilliz.com/jp/learn/layer-vs-batch-normalization-unlocking-efficiency-in-neural-networks",
+      "https://note.com/taichi_endoh/n/n1aa92fab842a",
+      "https://data-analytics.fun/2020/07/16/understanding-layer-normalization/",
+      "https://cysec148.hatenablog.com/entry/2025/04/01/154135",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://qiita.com/Life-tech/items/f7f34fdf5b1a863b2c62",
+      "https://daily-life-ai.com/246/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/AInsights/items/d9fa8616ace9c1de50f4",
+      "https://www.hpe.com/jp/ja/what-is/transformer-model.html",
+      "https://zenn.dev/student_blog/articles/682e0488629814",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://codefinity.com/ja/courses/v2/66eb894f-3da6-4b07-9ac5-df148a771a3c/d6111c3d-935e-4470-9f1a-910e95406745/566608c6-9f18-4c38-8f9a-9c185873de28",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://www.xlsoft.com/jp/blog/blog/2024/10/02/grammarly-20-post-79517/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/"
+    ]
   },
   {
     "id": "ch5-027",
@@ -806,16 +1484,16 @@
     "question": "重み減衰（Weight Decay）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習を進めるにつれて学習率を段階的に小さくする手法として定義される"
+        "text": "重み減衰は、モデルの複雑さを増す手法であるとして位置づけられる技術"
       },
       {
-        "text": "ランダムにニューロンを無効化して特定ニューロンへの過依存を防ぐ手法"
+        "text": "重み減衰は、データの前処理に関する技術であるとして機能する技術的なシステム"
       },
       {
         "text": "損失関数にL2正則化項を加えることで、重みの絶対値が大きくなりすぎるのを抑制し、過学習を防ぐ手法"
       },
       {
-        "text": "学習データを水増しして汎化性能を向上させる手法として定義される"
+        "text": "重み減衰は、L1正則化を用いた特徴選択手法であるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -829,7 +1507,32 @@
       "L2正則化",
       "過学習対策"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/kikaben/n/nea93224b3b39",
+      "https://qiita.com/ebiten-machinelearning/items/6433ab026854a8f43d69",
+      "https://note.com/kikaben/n/n0aee56e9824f",
+      "https://umarketing.co.jp/ai-glossary/l2-regularization/",
+      "https://i-noma.com/post-316/",
+      "https://zenn.dev/zawawahoge/scraps/cd2042db14a904",
+      "https://e-words.jp/w/L2%E6%AD%A3%E5%89%87%E5%8C%96.html",
+      "https://qiita.com/amateur2020/items/1a63ef38691dfffc87c2",
+      "https://omomuki-tech.com/archives/6217",
+      "https://ai-compass.weeybrid.co.jp/learning/preventing-overfitting-with-l2-regularization-2/",
+      "https://ai-kenkyujo.com/artificial-intelligence/algorithm/kagakushu/",
+      "https://www.ios-net.co.jp/blog/20250827-5656/",
+      "https://zenn.dev/takasaki/articles/ae05efaa7d6915",
+      "https://omomuki-tech.com/archives/6219",
+      "https://www.reddit.com/r/deeplearning/comments/id5o4m/help_understanding_weight_decay/?tl=ja",
+      "https://developers.google.com/machine-learning/crash-course/overfitting/regularization?hl=ja",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap3.html",
+      "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
+      "https://kentei.ai/blog/archives/1659",
+      "https://www.flowhunt.io/ja/%E7%94%A8%E8%AA%9E%E9%9B%86/dropout/",
+      "https://akihikowatanabe.github.io/paper_notes/articles/Supervised-FineTuning-(SFT).html",
+      "https://www.trifields.jp/journal-of-machine-learning-research-papers-v19-8688",
+      "https://patents.google.com/patent/JP4644403B2/en"
+    ]
   },
   {
     "id": "ch5-028",
@@ -837,16 +1540,16 @@
     "question": "早期打ち切り（Early Stopping）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習データの損失が収束したら学習を停止する手法として定義される"
+        "text": "モデルの学習を早期に終了する手法であるとして位置づけられる技術"
       },
       {
-        "text": "指定したエポック数に達したら自動的に学習を終了する手法の概念"
+        "text": "訓練データの精度を向上させる技術であるとして機能する技術的なシステム"
       },
       {
         "text": "検証データの損失（またはエラー率）が改善しなくなった時点で学習を停止し、過学習を防ぐ手法"
       },
       {
-        "text": "勾配爆発が検出されたら即座に学習を中断する手法として定義される"
+        "text": "データの前処理を行うための手法にあたるを実現するアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -861,7 +1564,37 @@
       "Early Stopping",
       "過学習対策"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://renue.co.jp/posts/overfitting-boushi-toha",
+      "https://fullfront.co.jp/blog/generative-ai/machine-learning/overfitting-detection-prevention-machine-learning/",
+      "https://book.st-hakky.com/en/purpose/image-classification-overfitting-prevention",
+      "https://note.com/shimmyo_lab/n/n6b98916cc47d",
+      "https://www.ultralytics.com/ja/glossary/overfitting",
+      "https://note.com/vast_cosmos500/n/n736f710272c6",
+      "https://www.kaggle.com/general/420900",
+      "https://zenn.dev/aws_cloudmemo/articles/4f762c2d5da4cb",
+      "https://milvus.io/ai-quick-reference/what-is-early-stopping",
+      "https://taylorandfrancis.com/knowledge/Engineering_and_technology/Artificial_intelligence/Early_stopping/",
+      "https://www.machinelearningmastery.com/early-stopping-to-avoid-overtraining-neural-network-models/",
+      "https://www.giskard.ai/glossary/early-stopping",
+      "https://jp.mathworks.com/help/deeplearning/ref/trainingoptions.html",
+      "https://webbigdata.jp/post-9449/",
+      "https://en.wikipedia.org/wiki/Early_stopping",
+      "https://ai-scholar.tech/time-series/wavebound",
+      "https://note.com/kiyo_ai_note/n/nac73b50f3b78",
+      "https://qiita.com/juri_engineer/items/a42f28e57a1d6809e43e",
+      "https://qiita.com/har1101/items/9cc5ae096a2d4c7fc63d",
+      "https://dx-consultant-fast-evolving.com/dropout_and_early_stopping/",
+      "https://stats.stackexchange.com/questions/631491/neural-network-training-early-stopping-vs-reducing-the-number-of-neurons-layer",
+      "https://medium.com/data-science/the-million-dollar-question-when-to-stop-training-deep-learning-models-fa9b488ac04d",
+      "https://www.sciencedirect.com/science/article/pii/S0893608022004920",
+      "https://www.reddit.com/r/MachineLearning/comments/9omr67/discussion_early_stopping_why_not_always/",
+      "https://www.reddit.com/r/learnmachinelearning/comments/151l6sg/ways_to_improve_neural_networks/?tl=ja",
+      "https://www.trifields.jp/journal-of-machine-learning-research-papers-v24-8852",
+      "https://cvim.ipsj.or.jp/index.php?id=tutorial",
+      "https://akihikowatanabe.github.io/paper_notes/articles/Selected-Papers-Blogs.html"
+    ]
   },
   {
     "id": "ch5-029",
@@ -869,16 +1602,16 @@
     "question": "DenseNet（Dense Convolutional Network）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "各層の出力を1つ前の層のみと接続する標準的なCNN構造として機械学習分野で広く認識されている"
+        "text": "各層が前の層の出力を受け取るが、接続は緩やかである手法であるとして位置づけられる技術"
       },
       {
-        "text": "全結合層だけで構成された画像認識モデルという性質を持つ概念・アプローチ"
+        "text": "DenseNetは、各層が前の層の出力を受け取るが、特徴の再利用は行わない技術である。"
       },
       {
         "text": "各層がその前の全ての層の出力を受け取る密な結合（Dense接続）により、特徴の再利用とパラメータ効率を高めたCN"
       },
       {
-        "text": "Attentionを組み込んだCNNとTransformerのハイブリッドモデル"
+        "text": "各層が独立して学習を行うため、パラメータ効率が低下する手法にあたるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -893,7 +1626,39 @@
       "Dense接続",
       "CNN"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://tt-tsukumochi.com/archives/9542",
+      "https://e-words.jp/w/DenseNet.html",
+      "https://omomuki-tech.com/archives/6242",
+      "https://note.com/tatsuyamatsuda/n/na2b0ba20da51",
+      "https://zero2one.jp/ai-word/densenet/?srsltid=AfmBOoo1x6Uab0Y0cxkTXmUXegX5IZ3Bitfia970aiZgvNhXWzb-ZpIq",
+      "https://dotnetdevelopmentinfrastructure.osscons.jp/index.php?%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%EF%BC%88CNN%EF%BC%89",
+      "https://artnasekai.com/computer-vision/cv-step6/",
+      "https://zenn.dev/tasse/articles/7413600fb1796d",
+      "https://deepsquare.jp/2020/04/resnet-densenet/",
+      "https://ai-research-site.jp/Articles/09_DenseNet/",
+      "https://medium.com/lsc-psd/densenet%E3%81%AE%E8%AB%96%E6%96%87%E3%82%92%E8%AA%AD%E3%82%80-%E5%88%9D%E5%BF%83%E8%80%85-23f4920f5628",
+      "https://www.yomiuri.co.jp/kyoiku/kyoiku/news/20240306-OYT1T50080/",
+      "https://qiita.com/koshian2/items/01bd9f08444799625607",
+      "https://dx-consultant-fast-evolving.com/densenet/",
+      "https://www.simulationroom999.com/blog/gkentei-problemset-ultimate-kanpe-process/",
+      "https://kyokke.github.io/blog/2021-07-05-rabbit-phase4-DL3and4/",
+      "https://qiita.com/koshian2/items/9877ed4fb3716eac0c37",
+      "https://ai-scholar.tech/%E8%A1%A8%E7%8F%BE%E5%AD%A6%E7%BF%92/OFENet",
+      "https://www.reddit.com/r/MachineLearning/comments/elhnvq/d_ai_scandal_sota_classifier_with_92_imagenet/?tl=ja",
+      "http://archive.createwith.ai/dataset/20190729/1478",
+      "https://e-shikaku-doujou.com/densenet/",
+      "https://www.reddit.com/r/computervision/comments/10j40l5/one_image_class_classificationobject_detection/?tl=ja",
+      "https://zenn.dev/welcomecat/articles/61caee0b825b38",
+      "https://saycon.co.jp/archives/neta/cnn%E3%81%AE%E9%80%B2%E5%8C%96%E3%81%AE%E6%AD%B4%E5%8F%B2%EF%BC%9Aalexnet%E3%81%8B%E3%82%89efficientnet%E3%81%BE%E3%81%A7%E3%82%92%E4%B8%80%E6%B0%97%E3%81%AB%E8%A7%A3%E8%AA%AC%EF%BC%81",
+      "https://zhuanlan.zhihu.com/p/43057737",
+      "https://www.silicloud.com/ja/blog/densenet%E3%81%A8resnet%E3%81%AE%E9%81%95%E3%81%84%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B%EF%BC%9F/",
+      "https://note.com/vast_cosmos500/n/n736f710272c6",
+      "https://ai-scholar.tech/articles/gnn/GNN_review",
+      "https://dl.biopapyrus.jp/cls/ex-moth_classification.html",
+      "https://www.simulationroom999.com/blog/gkentei-difficulty-perception-info-overload-rote-goal-misrecognition-official-calibration/"
+    ]
   },
   {
     "id": "ch5-030",
@@ -901,16 +1666,16 @@
     "question": "知識蒸留（Knowledge Distillation）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "大規模データを小さなデータセットに圧縮して学習を効率化する手法という枠組みで理解される処理機構"
+        "text": "大規模データを少数のデータセットへ圧縮することで学習計算量を効率的に削減する前処理技法"
       },
       {
-        "text": "転移学習の一種で、学習済みモデルの重みをそのまま転用する手法に関する概念であり、G検定の重要用語のひとつ"
+        "text": "学習済みモデルの重みをそのまま新しいタスクへ転用して再学習を最小化する一般的な転移学習"
       },
       {
         "text": "大きな高精度モデル（教師モデル）の出力（ソフトラベル）を使って小さなモデル（生徒モデル）を学習させ、軽量化しながら性能を維持する手法"
       },
       {
-        "text": "複数のモデルの予測を平均してアンサンブル効果を得る手法であることを特徴とする定義・概念"
+        "text": "複数モデルの予測値を確率的に重み付け平均することで誤差を相互補完するアンサンブル学習の一形態"
       }
     ],
     "correctIndex": 2,
@@ -932,16 +1697,16 @@
     "question": "ファインチューニング（Fine-tuning）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "モデルのハイパーパラメータを細かく調整する手法の概念"
+        "text": "データを用いてモデルを評価する手法であるという技術的な手法"
       },
       {
-        "text": "モデルの推論速度を最適化するためにコードレベルで調整する手法"
+        "text": "新しいデータを使ってモデルを完全に再学習する技術である"
       },
       {
         "text": "転移学習において、学習済みモデルの重みを新しいタスクのデータで追加学習する手法"
       },
       {
-        "text": "学習データのラベルを精緻化してデータ品質を向上させる手法"
+        "text": "異なるモデルを組み合わせて精度を向上させる方法であるという"
       }
     ],
     "correctIndex": 2,
@@ -955,7 +1720,28 @@
       "ファインチューニング",
       "転移学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://www.fe-siken.com/kakomon/07_haru/a1.html",
+      "https://www.ntt-tx.co.jp/column/250916/",
+      "https://fastlabel.ai/blog/fine-tuning",
+      "https://aismiley.co.jp/ai_news/fine-tuning-rag-difference/",
+      "https://www.databricks.com/jp/blog/what-is-fine-tuning",
+      "https://www.arsaga.jp/blog/dxcolumn-what-is-fine-tuning/",
+      "https://media.emuniinc.jp/2025/03/22/ai-fine-tuning/",
+      "https://zero2one.jp/ai-word/fine-tuning/?srsltid=AfmBOoqLP81Nw5JUMGwlzk-5vmWjWXU-e30XTgrlRm1UrAfBLMrRMSlk",
+      "https://note.com/asafreelance/n/n4516a7ff5194",
+      "https://dalab.jp/archives/journal/llm-finetuning-part1/",
+      "https://www.skygroup.jp/media/article/4090/",
+      "https://fe-gokaku.com/fe-r7-a-q1/",
+      "https://qiita.com/ksonoda/items/b9fd3e709aeae79629ff",
+      "https://hub.gflops-ai.com/tuning/68/",
+      "https://fptsoftware.jp/resource-center/blog/column/2026-03-fine-tuning",
+      "https://biz.kddi.com/content/column/smartwork/what-is-fine-tuning/",
+      "https://www.ibm.com/jp-ja/think/topics/fine-tuning",
+      "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%B3%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0_(%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92)",
+      "https://www.sbbit.jp/article/cont1/133069"
+    ]
   },
   {
     "id": "ch5-032",
@@ -963,16 +1749,16 @@
     "question": "ドメイン適応（Domain Adaptation）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "新しい問題ドメインに合わせてモデルアーキテクチャを設計し直す手法として位置づけられる手法・概念"
+        "text": "ターゲットドメインの入力データ形式に合わせて前処理層のみを差し替える標準的な実装手順"
       },
       {
-        "text": "ドメイン知識（専門知識）をモデルに組み込むための設計手法に相当する概念であり、試験で頻出の定義"
+        "text": "問題領域ごとに新しいモデルアーキテクチャを最初から設計し直して固有の構造で学習させる開発方針"
       },
       {
         "text": "学習データ（ソースドメイン）とテストデータ（ターゲットドメイン）の分布の違いに対処し、ターゲットドメインでの性能を向上させる手法"
       },
       {
-        "text": "異なるドメインの複数データセットをマージして学習する手法として機械学習分野で広く認識されている"
+        "text": "異なる業界や分野の専門知識を手作業のルールベースでモデル内部に組み込んで判断精度を高める統合方式"
       }
     ],
     "correctIndex": 2,
@@ -993,16 +1779,16 @@
     "question": "GoogLeNet（Inception）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "スキップ結合（残差接続）によって150層以上の深いネットワークを実現したモデルとして定義される"
+        "text": "GoogLeNetは、全結合層を多く用いることで高精度を実現する手法であるという技術的な手法"
       },
       {
-        "text": "3×3フィルタだけを積み重ねたシンプルな構造が特徴のモデルに相当する概念であり、試験で頻出の定義"
+        "text": "GoogLeNetは、単一のフィルタサイズを用いて特徴を抽出するCNNであるという学習アプローチ"
       },
       {
         "text": "1×1・3×3・5×5畳み込みを並列に適用するInceptionモジュールを用い、計算コストを抑えつつ多スケールの特徴を捉えるCNNモ"
       },
       {
-        "text": "全結合層を廃止してグローバル平均プーリングだけを使うモデルとして知られる代表的な手法"
+        "text": "GoogLeNetは、自然言語処理に特化したモデルであることが特徴であるとして適用される技術"
       }
     ],
     "correctIndex": 2,
@@ -1016,7 +1802,29 @@
       "Inception",
       "CNN"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://otafuku-lab.co/aizine/googlenet-0127/",
+      "https://e-words.jp/w/GoogLeNet.html",
+      "https://jp.linkedin.com/pulse/impact-googlenet-advancing-image-recognition-deep-learning-shaik?tl=ja",
+      "https://xexeq.jp/blogs/media/it-glossary879",
+      "https://zenn.dev/welcomecat/articles/61caee0b825b38",
+      "https://note.com/marthay/n/n33c5bde7ddde",
+      "https://zero2one.jp/ai-word/googlenet/?srsltid=AfmBOorQfwgd2GEQCTyNUyWUxhk7AKYdvpwv_OwVm2Iq1Vc5yeJoTC4R",
+      "https://appswingby.com/inception%E3%83%A2%E3%82%B8%E3%83%A5%E3%83%BC%E3%83%AB-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://qiita.com/Life-tech/items/b0ed0030983c0bb42274",
+      "https://jp.mathworks.com/help/deeplearning/ref/googlenet.html",
+      "https://dx-consultant-fast-evolving.com/googlenet/",
+      "https://www.macnica.co.jp/business/semiconductor/articles/qualcomm/141224/",
+      "https://qiita.com/jun40vn/items/5ac97a6f1d8f82a49194",
+      "https://zero2one.jp/ai-word/inception-module/?srsltid=AfmBOoqr4G_Im0o81Ybn13krz8Gfh3teD6_sIy_8nrsI57ZwRpun763s",
+      "https://medium.com/@chawthirisan/understanding-inception-module-f90f40d12e77",
+      "https://gri.jp/media/entry/37657",
+      "https://saycon.co.jp/archives/neta/ai%E3%81%8C%E7%94%BB%E5%83%8F%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B%E9%AD%94%E6%B3%95%E3%81%AE%E7%AE%B1%EF%BC%9Fgooglenet%E3%81%AE%E7%94%BB%E6%9C%9F%E7%9A%84%E3%81%AA%E4%BB%95%E7%B5%84%E3%81%BF",
+      "https://qiita.com/Hayato-7812/items/035c7a6a08ddf74a71f9",
+      "https://qiita.com/wakayama_90b/items/6c884f29da9cf1f785ce",
+      "https://ai-compass.weeybrid.co.jp/algorizm/revolutionizing-image-recognition-googlenet/"
+    ]
   },
   {
     "id": "ch5-034",
@@ -1024,16 +1832,16 @@
     "question": "Seq2Seq（Sequence to Sequence）モデルの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力シーケンスを固定長ベクトルに変換するエンコーダだけで構成されるモデルの概念"
+        "text": "入力シーケンスをそのまま出力するモデルで、主に画像認識に用いられる技術であるという技術"
       },
       {
-        "text": "入力と同じ長さのシーケンスだけを出力できるモデルであることを特徴とする定義・概念"
+        "text": "エンコーダが出力シーケンスを生成するが、デコーダは必要ない手法にあたるという学習アプローチ"
       },
       {
         "text": "入力シーケンスをエンコーダで固定長ベクトルに変換し、デコーダで別のシーケンスを生成するモデルで、機械翻訳などに使われる"
       },
       {
-        "text": "注意機構だけで構成されRNNを使わない翻訳モデルとして位置づけられる手法・概念"
+        "text": "異なるデータ形式を同時に処理するための手法で、主に音声合成に利用されるという仕組み"
       }
     ],
     "correctIndex": 2,
@@ -1048,7 +1856,26 @@
       "RNN",
       "自然言語処理"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://qiita.com/mk-mokumoku/items/5d2efc0f3c3ac5040f77",
+      "https://zero2one.jp/ai-word/seq2seq/?srsltid=AfmBOoqW1mqfjJ4uX5kwab_t0sYeTrkXM4e7Ag_ZYnnugquxQ5WRXN0i",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/seq2seq/",
+      "https://www.ultralytics.com/ja/glossary/sequence-to-sequence-models",
+      "https://note.com/pocketstudio/n/n54e612605e25",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%80%91seq2seq%EF%BC%88%E3%82%B7%E3%83%BC%E3%82%B1%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%88%E3%82%A5%E3%83%BB%E3%82%B7%E3%83%BC%E3%82%B1%E3%83%B3",
+      "https://tips-memo.com/translation-jayalmmar-attention",
+      "https://chefyushima.com/ai_dl_seq2seq/3116/",
+      "https://dev.classmethod.jp/articles/road-to-llm-advent-calendar-2023-14/",
+      "https://qiita.com/ktdatascience/items/ac192f97866eeba6cffe",
+      "https://blog.octopt.com/sequence-to-sequence/",
+      "https://hammer-time.org/1408/",
+      "https://lib-arts.hatenablog.com/entry/paper20_Seq2Seq",
+      "https://qiita.com/iss-f/items/b02a618318c3b9b3656d",
+      "https://www.jstage.jst.go.jp/article/jnlp/28/4/28_995/_pdf",
+      "https://frqux.hatenablog.com/entry/2023/02/04/191015",
+      "https://stackoverflow.com/questions/50657546/fixing-error-output-from-seq2seq-model"
+    ]
   },
   {
     "id": "ch5-035",
@@ -1056,13 +1883,13 @@
     "question": "「重みの共有（Weight Sharing）」がCNNにもたらす主な利点として正しいものはどれか。",
     "choices": [
       {
-        "text": "異なる層のニューロンを共有することで、層の数を増やさずに表現力を高められる"
+        "text": "フィルタを個別に学習することで、各特徴を独立に捉える手法であるという技術"
       },
       {
-        "text": "バッチ内のすべてのサンプルが同じ重みを使って更新されるため学習が安定する"
+        "text": "重みを固定することで、全体の計算量を減少させる技術にあたるという学習アプローチ"
       },
       {
-        "text": "複数のモデルを並列に学習させてアンサンブル効果を得られるとして定義される"
+        "text": "異なる層で異なるフィルタを使用することで、特徴を多様に抽出する手法である。"
       },
       {
         "text": "同一のフィルタを画像全体に適用することで、パラメータ数を大幅に削減しながら位置不変な特徴検出を実現できる"
@@ -1079,7 +1906,32 @@
       "重みの共有",
       "パラメータ削減"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/bold_4255/n/na7268d341052",
+      "https://note.com/kens_reading1/n/n6c2b49bbd11e",
+      "https://qiita.com/pandausa/items/72e30c5a4ff1d51e5545",
+      "https://www.fsz.co.jp/?news=12148",
+      "https://aismiley.co.jp/ai_news/cnn/",
+      "https://qiita.com/DS27/items/ea719ba584be9966fd06",
+      "https://gri.jp/media/entry/37595",
+      "https://qiita.com/mrmrmr/items/e89fc811b293ad567f30",
+      "https://saycon.co.jp/whatwedo-2/ai/g/deep-learning-for-general/deep-learning-for-general5",
+      "https://qiita.com/Rumi_Yamaguchi/items/3ab713e57bec999e3971",
+      "https://zero2one.jp/ai-word/mobilenet/?srsltid=AfmBOorVMVsXTgck0hzVgeOt4Ijp_-nyDzmsW6V-Uk161JSpUkvDQPvS",
+      "https://dev.fullstack-cat.com/archives/731",
+      "https://sci-gen.hatenablog.com/entry/2025/08/09/120414",
+      "https://zenn.dev/bit_and_coffee/articles/gk-deep-learning-basics-roadmap",
+      "https://note.com/takonosuke/n/n793d0fa8e9fc",
+      "https://qiita.com/s5023111/items/2caf13471f10d17c3643",
+      "https://www.qoosky.dev/techs/3cc5763cd3/",
+      "https://xtrend.nikkei.com/atcl/seminar/19/00005/00007/",
+      "https://zenn.dev/himekoh/books/ffd022d13c1efb/viewer/8930f0",
+      "https://note.com/narumi_ai/n/nf91175befa3e",
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-2/",
+      "https://zero2one.jp/ai-word/fast-r-cnn/?srsltid=AfmBOopDdxxhiaSnVQWg-KrJWcznIyDwJvjoTlMJjU4hU20YWYUkdFIn",
+      "https://note.com/kochikichi/n/n4124ed1c162a"
+    ]
   },
   {
     "id": "ch5-036",
@@ -1087,13 +1939,13 @@
     "question": "TransformerにおけるEncoder-Decoder Attention（Source-Target Attention）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "エンコーダ内部でシーケンス自身の各位置間の関係を計算するAttention"
+        "text": "デコーダがエンコーダの出力を無視し、独自に生成する手法であるという技術"
       },
       {
-        "text": "モデルの出力を入力フィードバックするAttentionとして定義される"
+        "text": "エンコーダがデコーダの出力を参照し、出力シーケンスを生成する技術である。"
       },
       {
-        "text": "複数のAttentionヘッドを並列に計算して結合するAttention"
+        "text": "デコーダが入力シーケンスの全体を一度に処理する手法にあたるという仕組み"
       },
       {
         "text": "デコーダがエンコーダの出力を参照し、入力シーケンスのどの部分に注目すべきかを学習するAttention"
@@ -1111,7 +1963,33 @@
       "Encoder-Decoder Attention",
       "Attention"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://apxml.com/courses/introduction-to-transformer-models/chapter-3-transformer-encoder-decoder-architecture/encoder-decoder-attention",
+      "https://udemy.benesse.co.jp/data-science/ai/transformer-attention.html",
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-4/",
+      "https://atcold.github.io/NYU-DLSP20/ja/week12/12-3/",
+      "https://blog.statsbeginner.net/entry/2023/02/23/174435",
+      "https://learnius.com/llms/2+LLMs+and+Transformers/encoder-decoder+attention",
+      "https://deeplearning.hatenablog.com/entry/transformer",
+      "https://deepsquare.jp/2020/07/transformer/",
+      "https://qiita.com/shingo_morita/items/43000991d04413136d62",
+      "https://medium.com/@hassaanidrees7/encoder-vs-decoder-in-transformers-unpacking-the-differences-9e6ddb0ff3c5",
+      "https://shikaku-expert.com/g-test/quiz/attention/",
+      "https://note.com/kens_reading1/n/n677a9f2ad766",
+      "https://medium.com/data-science-community-srm/understanding-encoders-decoders-with-attention-based-mechanism-c1eb7164c581",
+      "https://zenn.dev/colorfulwave/articles/a04ee6ab86954e",
+      "https://zhuanlan.zhihu.com/p/1921990540699869821",
+      "https://blog.csdn.net/qq_42722197/article/details/133802118",
+      "https://ithelp.ithome.com.tw/m/articles/10382006",
+      "https://zhuanlan.zhihu.com/p/628516711",
+      "https://arxiv.org/html/2509.20942v1",
+      "https://zhuanlan.zhihu.com/p/628436809",
+      "https://www.threads.com/@mason_bad_newsletter/post/C_47nI7S_sp",
+      "https://www.reddit.com/r/LocalLLaMA/comments/1dnm1v1/have_any_of_you_tried_metas_multimodal_chameleon/?tl=zh-hant",
+      "https://haren.medium.com/paper-notes-attention-is-all-you-need-transformer-f33c828239b9",
+      "https://juejin.cn/post/7415807536404201509"
+    ]
   },
   {
     "id": "ch5-037",
@@ -1119,13 +1997,13 @@
     "question": "最大プーリング（Max Pooling）と平均プーリング（Average Pooling）の違いとして正しいものはどれか。",
     "choices": [
       {
-        "text": "最大プーリングは特徴マップのサイズを拡大し、平均プーリングは縮小するとして定義される"
+        "text": "最大プーリングは画像の全体を考慮し、全ての特徴を均等に扱う手法であるという技術的な手法"
       },
       {
-        "text": "最大プーリングは分類タスク主な用途ので、平均プーリングは回帰タスク主な用途のである"
+        "text": "平均プーリングは最大値を選ぶが、最大プーリングは全ての値を平均化する技術であるという学習アプローチ"
       },
       {
-        "text": "最大プーリングは学習パラメータを持つが、平均プーリングは持たないとして定義される"
+        "text": "最大プーリングは画像の色を強調し、平均プーリングは形状を重視する手法にあたるという仕組み"
       },
       {
         "text": "最大プーリングは対象領域の最大値を取り出し最も顕著な特徴を保持する一方、平均プーリングは平均値を使いより均一な特徴表現を得る"
@@ -1142,7 +2020,30 @@
       "Max Pooling",
       "CNN"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://ai-compass.weeybrid.co.jp/algorizm/pooling-downsampling-images/",
+      "https://appswingby.com/%E3%83%97%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%B1%A4-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://e-words.jp/w/%E3%83%97%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E5%B1%A4.html",
+      "https://www.tech-teacher.jp/blog/machinelearning-cnn/",
+      "https://www.realinite.co.jp/article/ai/article16/index.php?language=jp",
+      "https://service.ai-prompt.jp/article/ai365-077/",
+      "https://qiita.com/muro5866/items/4535cb25ecb7c1cc5882",
+      "https://jp.linkedin.com/pulse/pooling-padding-cnn-vishwajit-sen?tl=ja",
+      "https://qiita.com/UmiTak/items/038982941532004812a3",
+      "https://keno-edu-lasalle.hatenablog.com/entry/2017/11/06/130034",
+      "https://note.com/ohara_designer/n/n596b8fdfd591",
+      "https://appswingby.com/%E3%82%B0%E3%83%AD%E3%83%BC%E3%83%90%E3%83%AB%E3%82%A2%E3%83%99%E3%83%AC%E3%83%BC%E3%82%B8%E3%83%97%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it/",
+      "https://e-words.jp/w/%E6%9C%80%E5%A4%A7%E3%83%97%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0.html",
+      "https://hyper.ai/ja/wiki/2370",
+      "https://www.ibm.com/jp-ja/think/topics/convolutional-neural-networks",
+      "https://jp.linkedin.com/pulse/pooling-layers-convolutional-neural-networks-cnns-beginners-islam-i76ac?tl=ja",
+      "https://www.reddit.com/r/MachineLearning/comments/73k3j4/p_a_new_kind_of_pooling_layer_for_faster_and/?tl=ja",
+      "https://ai-compass.weeybrid.co.jp/algorizm/image-recognition-with-max-pooling/",
+      "https://tt-tsukumochi.com/archives/8899",
+      "https://www.reddit.com/r/MachineLearning/comments/zrj6bf/d_different_types_of_pooling_in_neural_nets/?tl=ja",
+      "https://buildersbox.corp-sansan.com/entry/2020/11/12/111000"
+    ]
   },
   {
     "id": "ch5-038",
@@ -1150,13 +2051,13 @@
     "question": "積層オートエンコーダ（Stacked Autoencoder）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "複数のオートエンコーダを並列に配置して出力を平均するモデルであることを特徴とする定義・概念"
+        "text": "単層オートエンコーダは、データを圧縮するための基本的な手法であるという技術的な手法"
       },
       {
-        "text": "複数のモダリティ（画像・テキストなど）を別々のオートエンコーダで処理するマルチモーダルモデル"
+        "text": "積層オートエンコーダは、全ての層を同時に学習させる手法にあたるという学習アプローチ"
       },
       {
-        "text": "エンコーダとデコーダをそれぞれ複数積み重ねたモデルという考え方に基づく手法"
+        "text": "オートエンコーダは、教師あり学習を用いて分類問題を解決する技術であるであるアルゴリズム"
       },
       {
         "text": "複数のオートエンコーダを層状に積み重ね、下位層の潜在表現を上位層の入力として、より抽象的な特徴を段階的に学習するモデル"
@@ -1173,7 +2074,24 @@
       "事前学習",
       "特徴学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E7%A9%8D%E5%B1%A4%E3%82%AA%E3%83%BC%E3%83%88%E3%82%A8%E3%83%B3%E3%82%B3%E3%83%BC%E3%83%80.html",
+      "https://tt-tsukumochi.com/archives/2626",
+      "https://saycon.co.jp/whatwedo-2/ai/g/deep-learning-for-general/deep-learning-for-general4",
+      "https://github.com/Yagami360/My_NoteBook/blob/master/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6/%E6%83%85%E5%A0%B1%E5%B7%A5%E5%AD%A6_%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92_%E7%94%9F%E6%88%90%E3%83%A2%E3%83%87%E3%83%AB.md",
+      "https://qiita.com/slowsingle/items/bb1671d4a6b19820db5c",
+      "https://staff.aist.go.jp/shinohara.takayuki/satai/slides.html",
+      "https://www.agaroot.jp/datascience/column/gtest-app/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.simulationroom999.com/blog/guga-generation-ai-passport-examination/",
+      "https://qiita.com/kengo-sk8/items/148cf7c9cab32466e4f5",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://note.com/vast_cosmos500/n/n736f710272c6",
+      "https://www.reddit.com/r/vibecoding/comments/1o9lcfh/do_you_need_to_understand_the_code_ai_writes/?tl=ja",
+      "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja"
+    ]
   },
   {
     "id": "ch5-039",
@@ -1181,13 +2099,13 @@
     "question": "RNNにおける「勾配消失問題」の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習率が大きすぎることで勾配が不安定になる問題に関連する技術・理論の説明"
+        "text": "RNNは短期記憶に特化したモデルであり、長期依存性を持たないため、学習が進まない問題がある。"
       },
       {
-        "text": "パラメータ数が多すぎることで勾配の計算が困難になる問題として定義される"
+        "text": "勾配消失問題は、主に画像処理において発生し、フィルタの重みが適切に更新されない現象を指す。"
       },
       {
-        "text": "バッチサイズが小さいとき勾配推定が不安定になる問題として定義される"
+        "text": "勾配消失問題は、データの前処理が不十分な場合に発生し、モデルの精度が低下することを意味する。"
       },
       {
         "text": "時系列が長くなるにつれて誤差逆伝播時に勾配が指数的に小さくなり、遠い過去の情報を学習できなくなる問題"
@@ -1205,7 +2123,31 @@
       "RNN",
       "LSTM"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://ai-kenkyujo.com/term/gradient-loss-problem/",
+      "https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C",
+      "https://saycon.co.jp/archives/neta/%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E3%82%8F%E3%81%8B%E3%82%8B%EF%BC%81rnn%E3%81%8C%E5%AD%A6%E7%BF%92%E3%82%92%E8%AB%A6%E3%82%81%E3%81%A6%E3%81%97%E3%81%BE%E3%81%86%E5%8B%BE%E9%85%8D%E6%B6%88",
+      "https://campus.datacamp.com/ja/courses/recurrent-neural-networks-rnn-for-language-modeling-with-keras/rnn-architecture?ex=1",
+      "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-recurrent-neural-networks",
+      "https://zenn.dev/student_blog/articles/3296c3d71f90fa",
+      "https://www.netattest.com/vanishing-gradient-problem-2024_mkt_tst",
+      "https://note.com/aisupport/n/n5cd0f20d3116",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/vanishing-exploding-gradient/",
+      "https://qiita.com/Suchmos7/items/1b2d76028ae34dfad975",
+      "https://www.reddit.com/r/MachineLearning/comments/432yv7/how_do_lstms_solve_the_vanishing_gradient_problem/?tl=zh-hant",
+      "https://www.reddit.com/r/MachineLearning/comments/498zoa/opposite_of_gradient_clipping_for_dealing_with/?tl=ja",
+      "https://www.bilibili.com/video/BV1kt421t7EF/",
+      "https://service.ai-prompt.jp/article/ai365-067/",
+      "https://www.cnblogs.com/zf-blog/p/12793019.html",
+      "https://cloud.tencent.com/developer/article/1790467",
+      "https://www.anarchive-beta.com/entry/2021/01/07/180000",
+      "https://aisinkakura-datascientist.hatenablog.com/entry/2024/12/11/124613",
+      "https://zhuanlan.zhihu.com/p/652083435",
+      "https://apxml.com/zh/courses/deep-learning-fundamentals-keras/chapter-5-recurrent-neural-networks-rnns/vanishing-gradient-problem",
+      "https://imgtec.eetrend.com/blog/2019/100044671.html",
+      "https://medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9F%A5%E8%AD%98%E6%AD%B7%E7%A8%8B/rnn-%E9%81%9E%E8%BF%B4%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF-%E5%85%A8%E9%9D%A2%E8%AA%8D%E8%AD%98-27e4dd150bdd"
+    ]
   },
   {
     "id": "ch5-040",
@@ -1213,13 +2155,13 @@
     "question": "転移学習において「特徴抽出（Feature Extraction）」として使う場合の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習済みモデルのすべての層の重みを新しいデータで更新するとして定義される"
+        "text": "特徴抽出は全層を再学習する手法であるという技術的な手法"
       },
       {
-        "text": "学習済みモデルの畳み込み層などの中間層は固定（凍結）し、出力層（分類層）"
+        "text": "特徴抽出はデータ量が必要な技術であるという学習アプローチ"
       },
       {
-        "text": "学習済みモデルの重みを使って新しいデータの特徴量を抽出し、その特徴量を別の機械学習"
+        "text": "特徴抽出は自然言語処理に特化した手法であるという仕組み"
       },
       {
         "text": "2と3の両方が正しいという枠組みで理解される処理機構"
@@ -1236,7 +2178,31 @@
       "転移学習",
       "特徴抽出"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/re_birth_ai/n/nce78dab0b82d",
+      "https://renue.co.jp/posts/tenni-gakushu-toha",
+      "https://service.shiftinc.jp/column/14907/",
+      "https://syp.vn/jp/article/what-is-transfer-learning",
+      "https://wrlab.t-kougei.ac.jp/2025/11/%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E2%91%A4%E8%BB%A2%E7%A7%BB%E5%AD%A6%E7%BF%92/",
+      "https://a-x.inc/blog/llm-transfer-learning/",
+      "https://qiita.com/hokutoh/items/93f8f89d41792a7b6981",
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-9/",
+      "https://www.ibm.com/jp-ja/think/topics/transfer-learning",
+      "https://www.tensorflow.org/guide/keras/transfer_learning?hl=ja",
+      "https://cyber-intelligence.co.jp/blog/post-26485/",
+      "https://qiita.com/ANNEX_IBS/items/55c7a8984fe88a756965",
+      "https://saycon.co.jp/archives/neta/%E3%80%8C%E8%BB%A2%E7%A7%BB%E5%AD%A6%E7%BF%92%EF%BC%88transfer-learning%EF%BC%89%E3%80%8D%E3%80%8C%E3%83%95%E3%82%A1%E3%82%A4%E3%83%B3%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%EF%BC%88fin",
+      "https://note.com/witty_agapan9302/n/n304cfde711e8",
+      "https://xtech.nikkei.com/atcl/nxt/mag/rob/18/012600001/00142/?P=2",
+      "https://www.kkaneko.jp/ai/imclassify/feature.html",
+      "https://staff.aist.go.jp/shinohara.takayuki/satai/metasurvey_seminar.html",
+      "https://qiita.com/Ito_110/items/09d17275561d562f0a1b",
+      "https://www.reddit.com/r/MachineLearning/comments/paimjm/r_does_anyone_have_experience_working_with/?tl=ja",
+      "https://elix-tech.github.io/ja/2016/06/22/transfer-learning-ja.html",
+      "https://patents.google.com/patent/JP2022512044A/ja",
+      "https://docs.datarobot.com/ja/docs/reference/glossary/index.html"
+    ]
   },
   {
     "id": "ch5-041",
@@ -1244,13 +2210,13 @@
     "question": "Transformerのポジショナルエンコーディング（Positional Encoding）の目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "各トークンの重要度を位置に基づいてスコアリングするためとして機械学習分野で広く認識されている"
+        "text": "トークンの意味を強化するための手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "入力シーケンスをバッチ方向で正規化するために基づく学習・推論の仕組み"
+        "text": "文脈を無視して単語を処理するために必要な技術に応用される技術的な仕組み"
       },
       {
-        "text": "GPU上での並列計算を効率化するためにデータを位置インデックスで整理するための概念"
+        "text": "自然言語処理における文法解析を行う手法にあたるを実現するアルゴリズム"
       },
       {
         "text": "Self-Attentionが順序情報を持たないため、各トークンの位置情報（系列内の順番）"
@@ -1267,7 +2233,33 @@
       "Transformer",
       "ポジショナルエンコーディング"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://kobesoft.co.jp/mikata/words/ai-ml/positional-encoding/",
+      "https://qiita.com/Qnoir/items/a3c94dd144b3fd79f5bb",
+      "https://ai-reboot.io/glossary/positional-encoding",
+      "https://qiita.com/masaki_kitayama/items/01a214c07b2efa8aed1b",
+      "https://note.com/kens_reading1/n/n2c4efb6e28d8",
+      "https://shion.blog/the-10th-machine-learning-workshop_2/",
+      "https://www.cio.com/article/4112841/%E4%BD%8D%E7%BD%AE%E6%83%85%E5%A0%B1%E3%81%AE%E5%85%A5%E3%82%8C%E6%96%B9%E3%81%A7%E6%80%A7%E8%83%BD%E3%81%8C%E5%A4%89%E3%82%8F%E3%82%8B%EF%BC%9Atransformer%E3%81%8C%E3%80%8C%E9%A0%86%E5%BA%8F%E3%80%8D.html",
+      "https://chefyushima.com/ai-dl_positional-encoding/3198/",
+      "https://www.ibm.com/jp-ja/think/topics/positional-encoding",
+      "https://codefinity.com/ja/courses/v2/66eb894f-3da6-4b07-9ac5-df148a771a3c/d6111c3d-935e-4470-9f1a-910e95406745/17349586-aa5a-42e0-88de-b47b23d8b1f1",
+      "https://note.com/vast_cosmos500/n/n7980aab572c4",
+      "https://www.m1ke.org/p/transformer%E3%81%AEpositional-encoding%E3%81%AE%E8%A7%A3%E9%87%88/",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1ew4f77/transformers_and_positional_encoding/?tl=ja",
+      "https://automation.jp/research-report/2025-10-18-2025-10-18-stanford-cme295-lecture-2-transformer-evolution-and-bert-from-positional-embeddings-to-knowledge-distillation",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.meta-intelligence.tech/ja/insight-transformer",
+      "https://www.agaroot.jp/datascience/column/gtest-app/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://zenn.dev/hitama/articles/fcbe6662c63a76",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.simulationroom999.com/blog/guga-generation-ai-passport-examination/",
+      "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja",
+      "https://www.nomuyu.com/multi-head-attention/",
+      "https://zenn.dev/harunasu/articles/36290cd613b48f"
+    ]
   },
   {
     "id": "ch5-042",
@@ -1275,13 +2267,13 @@
     "question": "モデルの「プルーニング（Pruning/剪定）」の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習済みモデルの知識を小さなモデルに蒸留する手法の概念"
+        "text": "モデルの重みを量子化して、計算を高速化する手法である。"
       },
       {
-        "text": "不要なデータ拡張処理を除去して学習を効率化する手法"
+        "text": "重要な重みを強化するために、全体のパラメータを増やす技術である。"
       },
       {
-        "text": "モデルのパラメータを低精度（8ビットなど）に変換してメモリを削減する手法"
+        "text": "データを圧縮して、ストレージの使用量を減少させる手法にあたる。"
       },
       {
         "text": "学習済みモデルの重要度が低い重みやニューロンを削除して、モデルを軽量化する手法"
@@ -1298,7 +2290,28 @@
       "モデル軽量化",
       "Pruning"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://zenn.dev/rmuraix/articles/8ef7d3abad4b9e",
+      "https://qiita.com/ItachInotanukI/items/7aa3eab73f2d7f878103",
+      "https://x-tech.pasona.co.jp/media/detail.html?p=11179",
+      "https://www.cresco.co.jp/blog/entry/18793.html",
+      "https://akihikowatanabe.github.io/paper_notes/articles/One-Line-Notes.html",
+      "https://www.osaka-gu.ac.jp/php/nakagawa/TRIZ/jforum/2004Forum/TranslationExpB040621.html",
+      "https://qiita.com/Nurkic/items/a382fc84a34fd0ae9400",
+      "https://www.codemajin.net/llm-research-2024-summary/",
+      "https://www.reddit.com/r/LocalLLaMA/comments/1lvjwoh/correct_a_dangerous_racial_bias_in_an_llm_through/?tl=ja",
+      "https://www.alphaxiv.org/ja/overview/2509.13990v1",
+      "https://www.agaroot.jp/datascience/column/gtest-app/",
+      "https://dprofessions.co.jp/top-k/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.simulationroom999.com/blog/guga-generation-ai-passport-examination/",
+      "https://www.reddit.com/r/tech_x/comments/1q2yzim/mit_proved_you_can_delete_90_of_a_neural_network/?tl=ja",
+      "https://note.com/vast_cosmos500/n/n736f710272c6",
+      "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ]
   },
   {
     "id": "ch5-043",
@@ -1306,13 +2319,13 @@
     "question": "CNNにおける「受容野（Receptive Field）」の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "CNNが正確に分類できる入力画像のサイズの上限の概念"
+        "text": "特定のニューロンが全体を把握する範囲として位置づけられる技術"
       },
       {
-        "text": "畳み込みフィルタが学習できるパターンの種類数として定義される"
+        "text": "入力画像の全てのピクセルを含む領域として機能する技術的なシステム"
       },
       {
-        "text": "プーリング層で縮小される特徴マップの倍率として定義される"
+        "text": "画像処理におけるフィルタのサイズにあたるであるアルゴリズム"
       },
       {
         "text": "ネットワークの特定のニューロン（またはユニット）が影響を受ける元の入力画像上の領域"
@@ -1329,7 +2342,25 @@
       "受容野",
       "Receptive Field"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://www.jonki.net/entry/2021/03/21/102427",
+      "https://www.ultralytics.com/ja/glossary/receptive-field",
+      "https://www.meta-intelligence.tech/ja/insight-cnn",
+      "https://jinbeizame.hateblo.jp/entry/kelpnet_cnn",
+      "https://aismiley.co.jp/ai_news/cnn/",
+      "https://www.imagazine.co.jp/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E3%80%8C%E5%9F%BA%E7%A4%8E%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%80%8D%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99/",
+      "https://zero2one.jp/learningblog/cnn-for-beginners/?srsltid=AfmBOoqeTPpKhObsBP07Z9aZpJfP3Ldf775JPt2-TcZ7qctGEk_jw23-",
+      "https://www.reddit.com/r/deeplearning/comments/1d6itap/understanding_the_receptive_field_in_cnns/?tl=ja",
+      "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-convolutional-neural-networks",
+      "https://www.cis.twcu.ac.jp/~asakawa/2019komazawa/lect04/",
+      "https://www.marubun.co.jp/technicalsquare/58240/",
+      "https://www.real-cnt.net/post/%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E5%85%A5%E9%96%80-%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF-cnn-%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%90%86%E8%A7%A3",
+      "https://qiita.com/lucasta1/items/ebd0f9b1fa37db5af780",
+      "https://www.ibm.com/jp-ja/think/topics/convolutional-neural-networks",
+      "https://note.com/inagaki2521/n/nf81e95f987fa",
+      "https://udemy.benesse.co.jp/data-science/ai/convolution-neural-network.html"
+    ]
   },
   {
     "id": "ch5-044",
@@ -1337,13 +2368,13 @@
     "question": "正規化層（Normalization Layer）がディープラーニングの学習に与える主な効果として正しいものはどれか。",
     "choices": [
       {
-        "text": "ランダムに一部のニューロンを無効化して過学習を防ぐの概念"
+        "text": "データの正規化により過学習を促進する手法であるという技術的な手法"
       },
       {
-        "text": "学習率を自動で調整して局所最適解への収束を防ぐとして定義される"
+        "text": "各層の出力を一様にすることで精度を向上させる技術であるである"
       },
       {
-        "text": "損失関数に正則化項を加えて重みの絶対値を小さく保つの概念"
+        "text": "異常値を排除するための前処理にあたる手法であるであるアルゴリズム"
       },
       {
         "text": "各層の入力の分布を安定化することで、内部共変量シフトを抑制し学習を安定化・高速化させる"
@@ -1360,7 +2391,29 @@
       "バッチ正規化",
       "学習安定化"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://zenn.dev/student_blog/articles/682e0488629814",
+      "https://note.com/narumi_ai/n/nf630090514b4",
+      "https://saycon.co.jp/archives/neta/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AEnormalization%EF%BC%88%E6%AD%A3%E8%A6%8F%E5%8C%96%EF%BC%89%E5%85%A5%E9%96%80%EF%BC%81ai%E3%81%AE%E5%AD%A6%E7%BF%92%E3%82%92%E3%82%B9",
+      "https://xtech.nikkei.com/atcl/nxt/mag/rob/18/00007/00027/",
+      "https://e-words.jp/w/%E6%AD%A3%E8%A6%8F%E5%8C%96%E5%B1%A4.html",
+      "https://www.reddit.com/r/MachineLearning/comments/1o7pgbl/d_what_is_internal_covariate_shift/?tl=ja",
+      "https://lib-arts.hatenablog.com/entry/paper17_Batch-Norm",
+      "https://qiita.com/cfiken/items/b477c7878828ebdb0387",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/layer-normalization/",
+      "https://daily-life-ai.com/246/",
+      "https://zenn.dev/yuto_mo/articles/1f6478e0d7ae1d",
+      "https://note.com/kikaben/n/nf0dc9446dce3",
+      "https://syp.vn/jp/article/what-is-batch-normalization-in-deep-learning",
+      "https://jp.linkedin.com/pulse/batch-normalization-deep-learning-what-does-do-difference-po52c?tl=ja",
+      "https://cocalc.com/github/labmlai/annotated_deep_learning_paper_implementations/blob/master/docs/ja/normalization/batch_norm/index.html",
+      "https://www.ultralytics.com/ja/glossary/normalization",
+      "https://note.com/ohara_designer/n/n74d12c814c10",
+      "https://jinbeizame.hateblo.jp/entry/understanding_batchnorm",
+      "https://qiita.com/yShig/items/dbeb98598abcc98e1a57",
+      "https://aiacademy.jp/media/?p=1147"
+    ]
   },
   {
     "id": "ch5-045",
@@ -1368,13 +2421,13 @@
     "question": "CNNにおいて、入力画像のサイズがW×W、フィルタのサイズがF×F、パディングP、ストライドSのとき、出力特徴マップのサイズの計算式として正しいものはどれか。",
     "choices": [
       {
-        "text": "(W - F) / S + 1"
+        "text": "出力サイズは(W-F)/Sという技術"
       },
       {
-        "text": "(W × F) / (S + P)"
+        "text": "特徴マップはF×Fで決まるである"
       },
       {
-        "text": "(W - F + P) / S"
+        "text": "CNNの層数は常に一定であるという"
       },
       {
         "text": "(W + 2P - F) / S + 1"
@@ -1392,6 +2445,16 @@
       "ストライド",
       "パディング"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://www.cis.twcu.ac.jp/~asakawa/2019komazawa/lect04/",
+      "https://blog.ashija.net/2025/01/02/post-6228/",
+      "https://note.com/keiba_taro320/n/n0f95c0c62ca2",
+      "https://qiita.com/knight0503/items/486b22d125841ac6307a",
+      "https://zenn.dev/cartellya/articles/cartellya_20250712234202_e-memo-00033",
+      "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-convolutional-neural-networks",
+      "https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html",
+      "https://zero2one.jp/learningblog/cnn-for-beginners/?srsltid=AfmBOooO1CdEVcn5csxlwhTs_mzz7U-0Uh1qP3ShQlxYpQ5RA68E7OmV"
+    ]
   }
 ]

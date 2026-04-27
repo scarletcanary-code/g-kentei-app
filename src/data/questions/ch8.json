@@ -5,16 +5,16 @@
     "question": "著作権法第30条の4（情報解析規定）について正しいものはどれか。",
     "choices": [
       {
-        "text": "著作物をAI学習に利用する際は、常に著作権者の許諾と対価の支払いが必要という性質を持つ概念・アプローチ"
+        "text": "著作権法第30条の4は、著作物の商業利用を禁止する規定であるとして機能する技術的なシステム"
       },
       {
         "text": "思想や感情を享受することを目的としない「情報解析」のためであれば、営利・非営利を問わず著作権者の許諾なく著作物をAI学習に利用でき"
       },
       {
-        "text": "AIが生成した著作物は自動的に著作権法で保護されるとして機械学習分野で広く認識されている"
+        "text": "情報解析規定は、著作権者の許諾が必要な場合にのみ適用されるものであるに応用される技術的な仕組み"
       },
       {
-        "text": "海外の著作物は同規定の対象外のため、別途許諾が必要という性質を持つ概念・アプローチ"
+        "text": "著作権法第30条の4は、AIによるデータ収集を全て許可する法律であるを実現するアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -26,7 +26,35 @@
       "30条の4",
       "情報解析"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://jp.tdsynnex.com/blog/ai/generated-ai-copyright-risks/",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E6%96%B0%E4%BA%BA%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E5%BF%85%E8%A6%8B%E3%80%91%E7%9F%A5%E3%82%89%E3%81%AA%E3%81%84%E3%81%A8%E5%8D%B1%E9%99%BA%EF%BC%81%E7%94%9F%E6%88%90ai%E3%81%A8",
+      "https://geiren.org/news/2024/program05.html",
+      "https://www.businesslawyers.jp/articles/420",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/02591/092500002/",
+      "https://www.itmedia.co.jp/aiplus/articles/2602/02/news084.html",
+      "https://news.yahoo.co.jp/articles/fc145e96b640d82b927e93f672f7d9ef13db651d",
+      "https://note.com/gentle_aster702/n/n9088425cb3f7",
+      "https://storialaw.jp/blog/12052",
+      "https://houmu-pro.com/property/297/",
+      "https://www.ipsj.or.jp/dp/contents/publication/61/DP61-S04.html",
+      "https://www.itscom.co.jp/forbiz/column/vpn/17022/",
+      "https://levtech.jp/media/article/column/detail_643/",
+      "https://www.n-daiichi-law.gr.jp/contents/information/11988",
+      "https://www.yuasa-hara.co.jp/lawinfo/5047/",
+      "https://web-analytics.eitapapa-fire.com/wrong-pattern/",
+      "https://www.yrl.com/column/ai-hallucination.html",
+      "https://www.itscom.co.jp/forbiz/column/office-environment/16880/",
+      "https://www.beerfroth.com/marketing-blog/hallucination/",
+      "https://freestep-walker.com/blog/cat2/post_9.html",
+      "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/217083.htm",
+      "https://www.aeyescan.jp/blog/hallucination/",
+      "https://business.nikkei.com/atcl/gen/19/00461/120500532/",
+      "https://www.reddit.com/r/ChatGPTPro/comments/1krck3o/chatgpt_is_making_so_many_mistakes_its_defeating/?tl=ja",
+      "https://www.yomiuri.co.jp/economy/20260423-GYT1T00011/",
+      "https://topics.smt.docomo.ne.jp/article/yomiuri/business/20260423-567-GYT1T00011"
+    ]
   },
   {
     "id": "ch8-002",
@@ -34,16 +62,16 @@
     "question": "仮名加工情報と匿名加工情報の違いとして正しいものはどれか。",
     "choices": [
       {
-        "text": "仮名加工情報は第三者提供が可能で、匿名加工情報は社内利用のみ"
+        "text": "仮名加工情報は個人情報を完全に削除し、匿名加工情報は特定の個人を識別できる技術である。"
       },
       {
         "text": "仮名加工情報は社内分析などに限定して利用され第三者提供は原則不可、匿名加工情報は第三者提供が可能"
       },
       {
-        "text": "どちらも第三者提供が可能で利用方法に違いはないとして定義される"
+        "text": "匿名加工情報は社内利用に限らず、仮名加工情報は第三者提供が禁止されている手法である。"
       },
       {
-        "text": "仮名加工情報は企業のみ作成でき、匿名加工情報は個人でも作成できる"
+        "text": "仮名加工情報は個人情報を復元可能な形で保持し、匿名加工情報は全くの無関係なデータである。"
       }
     ],
     "correctIndex": 1,
@@ -55,7 +83,24 @@
       "仮名加工",
       "匿名加工"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://keiyaku-watch.jp/media/hourei/kameikakojoho/",
+      "https://www.ppc.go.jp/all_faq_index/faq1-q14-1",
+      "https://privtech.co.jp/blog/law/comparison-anonymization-pseudonymisation.html",
+      "https://atomitech.jp/vendortrustlink/vendorblog/pseudonymized-information/",
+      "https://biz.moneyforward.com/contract/basic/20995/",
+      "https://www.tis.jp/special/healthcare_data/blog_ph_011/",
+      "https://www.tanii-law.jp/column/511750b9-2ecf-4ed4-b8ee-146e029af79f",
+      "https://www.komon-lawyer.jp/qa/kameikakou/",
+      "https://fishpass.jp/tokumeikakou/",
+      "https://legalhack.media/corporation-law/585/",
+      "https://medical.kameda.com/rehabilitation/pseudonymisation/index.html",
+      "https://www.acompany.tech/privacytechlab/comparison-anonymization-pseudonymisation/",
+      "https://blog.jpac-privacy.jp/anonymisationandpseudonymisation/",
+      "https://note.com/nssol_note/n/n91e9c4d38229",
+      "https://x.com/HiromitsuTakagi/status/2041712125618614524"
+    ]
   },
   {
     "id": "ch8-003",
@@ -63,16 +108,16 @@
     "question": "EU AI法（AI Act）のリスクベースアプローチの内容として正しいものはどれか。",
     "choices": [
       {
-        "text": "ほぼすべてののAIシステムに同一の規制を一律に適用するアプローチに基づく学習・推論の仕組み"
+        "text": "AIのリスクレベルを「高リスク」「中リスク」「低リスク」の3段階に分け、義務を設定するという技術"
       },
       {
         "text": "AIのリスクレベルを「許容できないリスク」「高リスク」「限定的リスク」「最小限のリスク」の4段階に分類し、リスクに応じた義務を課す"
       },
       {
-        "text": "AIの開発コストに応じて規制の厳しさを変えるアプローチに相当する概念であり、試験で頻出の定義"
+        "text": "AIのリスクを「許容できないリスク」「高リスク」の2段階に分類し、特定の義務を課すものである"
       },
       {
-        "text": "企業の規模に応じてAI規制の適用を決めるアプローチという枠組みで理解される処理機構"
+        "text": "AIのリスクを「許容できないリスク」「高リスク」「限定的リスク」「最小限のリスク」に分ける手法"
       }
     ],
     "correctIndex": 1,
@@ -85,7 +130,37 @@
       "EU AI法",
       "リスクベース"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://www.newton-consulting.co.jp/itilnavi/guideline/eu_ai_act.html",
+      "https://start-link.jp/hubspot-ai/ai/ai-governance/eu-ai-act-japan-impact",
+      "https://miraikidslab.org/AI-Master/part2/8-4.html",
+      "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r06/html/nd142210.html",
+      "https://kpmg.com/jp/ja/services/advisory/risk-consulting/global-privacy-compliance/eu-ai-act.html",
+      "https://www.oki.com/jp/showroom/virtual/column/c-56.html",
+      "https://www.businesslawyers.jp/practices/1479",
+      "https://www.pwc.com/jp/ja/knowledge/column/awareness-cyber-security/generative-ai-regulation10.html",
+      "https://www.wiz.io/ja-jp/academy/ai-security/eu-artificial-intelligence-act",
+      "https://big-data.com.tw/blog/20250610-no-more-fear-of-ai-getting-it-wrong",
+      "https://note.com/plusadd/n/n09546c41ad09",
+      "https://tw.stock.yahoo.com/news/%E6%B3%95%E5%BE%8Bai%E6%87%89%E7%94%A8%E9%A0%BB%E5%87%BA%E5%8C%85-%E5%85%A8%E7%90%83%E5%BE%8B%E5%B8%AB%E9%80%BE%E5%8D%83%E4%BB%B6%E9%8C%AF%E8%AA%A4%E8%B3%87%E8%A8%8A%E9%81%AD%E6%87%B2-155953012.html",
+      "https://www.threads.com/@allenscwu/post/DJi1I57TtFP/%E9%9A%A8%E4%BE%BF%E6%8B%BF%E5%80%8B%E5%B7%B2%E7%9F%A5%E4%BA%8B%E5%AF%A6%E5%8E%BB%E5%95%8F-ai-%E5%B0%B1%E7%9F%A5%E9%81%93%E9%8C%AF%E8%AA%A4%E7%8E%87%E6%9C%89%E5%A4%9A%E9%AB%98%E9%80%99%E7%A8%AE%E4%BA%8B%E6%83%85%E9%82%84%E4%BE%86%E5%90%B5%E6%9E%9C%E7%84%B6%E4%B8%8D%E8%83%BD%E8%B7%9F%E4%BD%A0%E6%AF%94%E6%99%BA%E5%95%86",
+      "https://apps.apple.com/us/app/6741074123?see-all=customers-also-bought-apps&platform=watch",
+      "https://www.businessweekly.com.tw/international/blog/3011766",
+      "https://www.hk01.com/%E6%95%B8%E7%A2%BC%E7%94%9F%E6%B4%BB/60223844/ai%E5%9B%9E%E8%A6%86%E7%AB%9F%E6%9C%8960-%E4%BB%A5%E4%B8%8A%E6%98%AF%E9%8C%AF%E8%AA%A4-%E5%A4%96%E5%AA%92%E5%AF%A6%E6%B8%AC8%E6%AC%BE%E6%90%9C%E5%B0%8B%E5%B7%A5%E5%85%B7-%E6%9C%80%E5%B8%B8%E7%8A%AF%E9%80%99%E4%B8%89%E5%A4%A7%E9%8C%AF",
+      "https://play.google.com/store/apps/details?id=com.takeapps88.kyoto_ai_quiz&hl=ja",
+      "https://kn.itmedia.co.jp/kn/articles/2510/22/news016.html",
+      "https://www.cw.com.tw/article/5136361",
+      "https://www.cloudsign.jp/media/chatgpt-test/",
+      "https://www.reddit.com/r/ChatGPTPromptGenius/comments/1mvvc60/figured_out_how_to_make_ai_make_an_actual/?tl=ja",
+      "https://www.facebook.com/groups/2152027081656284/posts/2782087955316857/",
+      "https://www.infoq.cn/article/ykqw0xv5m52ic5fh3wus",
+      "https://zhuanlan.zhihu.com/p/621986033",
+      "https://qiita.com/kyuko/items/4c2a3d56802ace275664",
+      "https://qiita.com/abcdefg123/items/271992285228a175b236",
+      "https://fuxin24.net/input_output/129489/",
+      "https://www.legalontech.com/jp/media/japanese-legal-dataset"
+    ]
   },
   {
     "id": "ch8-004",
@@ -93,16 +168,16 @@
     "question": "広島AIプロセスの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "広島市が独自に策定したAI倫理条例であることを特徴とする定義・概念"
+        "text": "2022年のG20サミットで発表された、AIの倫理基準を策定するための枠組みである。"
       },
       {
         "text": "2023年のG7広島サミットで発足した、生成AIに関する国際的な指針・ガードレールを構築するための国際的"
       },
       {
-        "text": "日本の経済産業省が単独で策定したAIビジネスガイドラインとして定義される"
+        "text": "2023年に日本国内で導入された、AI技術の教育プログラムを推進するための施策である。"
       },
       {
-        "text": "アジア太平洋地域のAI研究機関が設立した研究コンソーシアムとして定義される"
+        "text": "2024年の国連会議で提案された、AIの利用に関する国際的な規制を強化するための方針である。"
       }
     ],
     "correctIndex": 1,
@@ -117,7 +192,17 @@
       "G7",
       "国際規制"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ]
   },
   {
     "id": "ch8-005",
@@ -125,16 +210,16 @@
     "question": "XAI（説明可能なAI）が特に重要視される場面として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "ゲームAIが囲碁・チェスを人間に勝る場面として定義される技術的概念・考え方"
+        "text": "自動運転車の安全性を確保する技術として機能する技術的なシステム"
       },
       {
         "text": "医療診断・融資審査・採用選考など、AIの判断が人の生命・権利・機会に影響する高リスク領"
       },
       {
-        "text": "スマートスピーカーの音楽再生推薦機能として定義される技術的概念・考え方"
+        "text": "データ分析に基づくマーケティング手法であるという学習アプローチ"
       },
       {
-        "text": "画像圧縮アルゴリズムの最適化という特性を持つ技術的定義"
+        "text": "AIによる画像認識の精度向上に関する技術として適用される技術"
       }
     ],
     "correctIndex": 1,
@@ -147,7 +232,31 @@
       "XAI",
       "高リスク領域"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://www.abeam.com/kr/ja/expertise/sl383/",
+      "https://www.businesslawyers.jp/practices/1479",
+      "https://www.mext.go.jp/unesco/009/1411026_00004.htm",
+      "https://www.jinken-net.com/close-up/20250106_4828.html",
+      "https://note.com/kitorhythm/n/na483a72bef9f",
+      "https://www.intellilink.co.jp/column/security/2025/031800.aspx",
+      "https://blogs.itmedia.co.jp/itsolutionjuku/2025/04/xai.html",
+      "https://kpmg.com/jp/ja/insights/2026/03/sustainable-value-ai-humanrights.html",
+      "https://jp.linkedin.com/pulse/important-concepts-xai-proventechnologies-36olf?tl=ja",
+      "https://www.reddit.com/r/datascience/comments/1ne37bs/looking_for_recent_research_on_explainable_ai_xai/?tl=ja",
+      "https://neural-opt.com/ai-causes-rights-violation/",
+      "https://www.jstage.jst.go.jp/article/jsim/42/3/42_75/_pdf/-char/ja",
+      "https://fullfront.co.jp/blog/generative-ai/llm/grok3-usage-complete-guide/",
+      "https://www.skillupai.com/blog/course/xai-review/",
+      "https://visionary-jp.com/blog/system-development-ai",
+      "https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-and-human-rights-risks.html",
+      "https://note.com/gorigori21/n/n324a6585b15e",
+      "https://herzleben.co.jp/aidify_039-2/",
+      "https://qiita.com/panamixkeda/items/f2185e145b78a28805ee",
+      "https://nttdocomo-developers.jp/entry/202212201200",
+      "https://miz.soln.info/2025/%E4%BC%81%E6%A5%AD%E3%81%AEai%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E5%AF%BE%E7%AD%96-%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89%EF%BC%9A%E3%83%AA%E3%82%B9%E3%82%AF%E5%88%86/",
+      "https://x.com/enspire_co_jp/status/1960403533729259877"
+    ]
   },
   {
     "id": "ch8-006",
@@ -158,13 +267,13 @@
         "text": "ディープラーニングを用いて本物と見分けがつきにくい偽の画像・音声・動画を生成する技術"
       },
       {
-        "text": "深層学習モデルの内部パラメータを解析する技術として定義される"
+        "text": "ディープラーニングを用いてデータを解析する手法であるという技術"
       },
       {
-        "text": "AIシステムへの不正アクセスを行う攻撃手法として定義される"
+        "text": "AIを活用してリアルな画像を生成する技術にあたるという学習アプローチ"
       },
       {
-        "text": "SNSに蔓延する虚偽情報の検出システムという枠組みで理解される処理機構"
+        "text": "映像や音声を加工するための編集技術であるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -177,7 +286,36 @@
       "ディープフェイク",
       "AI倫理"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://ai-market.jp/case_study/deepfake-business/",
+      "https://biz.kddi.com/content/glossary/d/deepfake/",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12317386552",
+      "https://service.shiftinc.jp/column/9636/",
+      "https://flets-w.com/chienetta/technology/nrt_ser-cat36_what-is-deepfake.html",
+      "https://quizlet.com/jp/1093720244/%E7%94%9F%E6%88%90ai%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88_%E9%81%8E%E5%8E%BB%E5%95%8F%E9%81%93%E5%A0%B4-flash-cards/",
+      "https://www.persol-group.co.jp/service/business/article/21213/",
+      "https://group.gmo/security/security-all/information-security/blog/deepfake/",
+      "https://www.itpassportsiken.com/kakomon/07_haru/q10.html",
+      "https://nuco.co.jp/blog/article/4Iw_DN8O",
+      "https://www.nablas.com/service/keigan-ai/technology",
+      "https://note.com/vast_cosmos500/n/ned0f713acab3",
+      "https://www.beme-online.com/MAYMlmQ7/I1g5v3TA",
+      "https://www.nii.ac.jp/today/105/5.html",
+      "https://www.mcafee.com/blogs/ja-jp/tips-tricks/ai-in-the-hands-of-cybercriminals-how-to-spot-fake-art-and-deepfakes/",
+      "https://www.appier.com/ja-jp/blog/perception-as-reality-inside-the-world-of-deepfake-and-what-it-means-to-brands",
+      "https://www.paloaltoinsight.com/2022/08/29/deepfake/",
+      "https://www.ap-siken.com/kakomon/06_aki/q39.html",
+      "https://neural-opt.com/deepfake-cases/",
+      "https://www.soumu.go.jp/johotsusintokei/whitepaper/ja/r06/html/nd141210.html",
+      "https://www.dir.co.jp/world/entry/deepfake",
+      "https://www.sentinelone.com/ja/cybersecurity-101/cybersecurity/deepfakes/",
+      "https://aismiley.co.jp/ai_news/deepfake/",
+      "https://michitomo2019.com/it-passport-r07-qs-10/",
+      "https://www.technologyreview.jp/s/214823/the-owner-of-wechat-thinks-deepfakes-could-actually-be-good/",
+      "https://qiita.com/jiny2001/items/1a33c0c43230b6468571",
+      "https://mynavi-agent.jp/dainishinsotsu/canvas/2022/06/post-738.html"
+    ]
   },
   {
     "id": "ch8-007",
@@ -185,16 +323,16 @@
     "question": "著作権法第30条の4の「享受目的の禁止」について正しいものはどれか。",
     "choices": [
       {
-        "text": "学術研究目的であれば享受を伴う利用も許容されるに関連する技術・理論の説明"
+        "text": "著作権法第30条の4は、著作物の利用を全て禁止するものであるという技術的な手法"
       },
       {
         "text": "情報解析に付随して著作物の表現そのものを鑑賞・享受することを目的とする場合は、同条の適用が認められない場合がある"
       },
       {
-        "text": "享受目的があっても商業利用でなければ許容されるという手法・アプローチを指す"
+        "text": "著作権法第30条の4は、著作物の利用を無条件で許可するものであるという学習アプローチ"
       },
       {
-        "text": "AI学習用途であれば享受目的の有無に関わらず全て許容されるとして定義される"
+        "text": "著作権法第30条の4は、著作物の利用に関する特例を設けている法律である・仕組み"
       }
     ],
     "correctIndex": 1,
@@ -206,7 +344,26 @@
       "享受目的",
       "AI学習"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://gijyutushi.kakomonn.com/questions/80718",
+      "https://patent-revenue.iprich.jp/%E4%B8%80%E8%88%AC%E5%90%91%E3%81%91/4293/#:~:text=%E8%91%97%E4%BD%9C%E6%A8%A9%E6%B3%95%E7%AC%AC30%E6%9D%A1%E3%81%AE4%E3%81%AF%E3%80%81%E3%80%8C%E8%91%97%E4%BD%9C,%E3%81%AB%E5%91%B3%E3%82%8F%E3%81%86%E3%80%8C%E4%BA%AB%E5%8F%97%E3%80%8D%E3%81%AB%E3%81%82%E3%81%9F%E3%82%8A%E3%81%BE%E3%81%99%E3%80%82",
+      "https://note.com/siouni/n/n56f3bd1263d6",
+      "https://note.com/domonjo01/n/nbffdf3680880",
+      "https://note.com/chosakuken/n/n33e83ffcc04e",
+      "https://wing-sky-nine.com/column1/",
+      "https://www.reddit.com/r/nintendo/comments/1o6twjk/japan_is_pressuring_openai_sora_2_to_stop/?tl=ja",
+      "https://www.cric.or.jp/qa/hajime/hajime7.html",
+      "https://fujii-yuji.net/2023/12/21/035529",
+      "https://ja.wikibooks.org/wiki/%E8%91%97%E4%BD%9C%E6%A8%A9%E6%B3%95%E7%AC%AC30%E6%9D%A1%E3%81%AE4",
+      "https://aamt.info/act/journal/30th_anniversary/mt_information",
+      "https://chosakukenhou.jp/moral-rights-integrity-right-guide/",
+      "https://www.n-daiichi-law.gr.jp/contents/information/11988",
+      "https://storialaw.jp/blog/12050",
+      "https://www.yuasa-hara.co.jp/lawinfo/5047/",
+      "https://www.ipsj.or.jp/dp/contents/publication/61/DP61-S04.html",
+      "https://qiita.com/Robot-Inventor/items/b01786235978a0bc38d9"
+    ]
   },
   {
     "id": "ch8-008",
@@ -214,16 +371,16 @@
     "question": "EU AI法（AI Act）において「許容できないリスク」として禁止されるAIの用途として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "医療画像診断支援AIシステムとして機械学習分野で広く認識されている"
+        "text": "生体データを用いた個人の健康管理AI技術という仕組み"
       },
       {
         "text": "生体情報を用いた公共空間でのリアルタイム監視AIや社会的スコアリングシステム"
       },
       {
-        "text": "銀行の融資審査AIシステムに基づく学習・推論の仕組み"
+        "text": "特定の個人を対象とした教育支援AIシステムという学習アプローチ"
       },
       {
-        "text": "自動車の自動運転システムに関する概念であり、G検定の重要用語のひとつ"
+        "text": "公共の場での犯罪予測を行うAI手法であるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -236,7 +393,34 @@
       "EU AI法",
       "禁止AI用途"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://help.openai.com/zh-hant-hk/articles/10658393-%E9%81%B5%E5%AE%88%E6%AD%90%E7%9B%9F%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%B3%95%E7%A6%81%E6%AD%A2%E5%81%9A%E6%B3%95%E8%A6%8F%E5%AE%9A",
+      "https://www.pwc.com/jp/ja/knowledge/column/awareness-cyber-security/generative-ai-regulation10.html#:~:text=1%EF%BC%89%E3%80%8C%E8%A8%B1%E5%AE%B9%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84%E3%83%AA%E3%82%B9%E3%82%AF%E3%80%8D,%E3%81%8C%E6%8C%99%E3%81%92%E3%82%89%E3%82%8C%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82",
+      "https://www.mri.co.jp/knowledge/mreview/2023102.html",
+      "https://www.secrss.com/articles/75273",
+      "https://www.businesslawyers.jp/articles/1431",
+      "https://toyokeizai.net/articles/-/771013",
+      "https://www.biotechlaw.org.tw/activity/posts/115",
+      "https://www.tuvsud.com/ja-jp/themes/artificial-intelligence/eu-ai-act",
+      "https://shen.ai/ja/glossary/ai-health-monitoring",
+      "https://stli.iii.org.tw/article-detail.aspx?tp=1&d=9322&no=64",
+      "https://note.com/startup_now0708/n/nf2a4fffd2a99",
+      "https://aiview.life/product/",
+      "https://www.flowhunt.io/zh/%E5%8D%9A%E5%AE%A2/what-practices-are-prohibited-by-the-eu-ai-act/",
+      "https://www.e-xtreme.co.jp/topics/51250/",
+      "https://monoist.itmedia.co.jp/mn/articles/2305/11/news080.html",
+      "https://www.jonesday.com/zh-hant/insights/2025/08/eu-ai-act-european-commission-publishes-generalpurpose-ai-code-of-practice",
+      "https://artificialintelligenceact.eu/ja/assessment/eu-ai-act-compliance-checker/",
+      "https://laboro.ai/activity/column/laboro/health-care-medical/",
+      "https://www.actuia.com/cn/news/ai-actai/",
+      "https://www.newton-consulting.co.jp/itilnavi/guideline/eu_ai_act.html",
+      "https://www.fortunebusinessinsights.com/jp/%E9%81%A0%E9%9A%94%E6%82%A3%E8%80%85%E7%9B%A3%E8%A6%96%E5%B8%82%E5%A0%B4%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD-ai-109321",
+      "https://cclp.sjtu.edu.cn/Show.aspx?info_lb=672&info_id=5806&flag=648",
+      "https://medical.jiji.com/column4/147",
+      "https://zhuanlan.zhihu.com/p/1892976153578407339",
+      "https://vantiq.com/ja/blog/%E6%82%A3%E8%80%85%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AE%E6%9C%AA%E6%9D%A5%EF%BC%9A%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0%E3%81%A8%E7%94%9F%E6%88%90ai/"
+    ]
   },
   {
     "id": "ch8-009",
@@ -244,16 +428,16 @@
     "question": "AIの公平性（Fairness）に関する課題として正しいものはどれか。",
     "choices": [
       {
-        "text": "AIが全てのデータを公平にランダムサンプリングして学習すれば偏りは生じないの概念"
+        "text": "AIの公平性は、データの透明性を確保することが重要であるとされる技術であるという仕組み"
       },
       {
         "text": "学習データに含まれる社会的偏見や不均衡（特定の性別・人種の過少代表など）がモデルに引き継がれ、差別的な判断を行う可能性がある"
       },
       {
-        "text": "公平性の問題はモデルのパラメータを増やすことで自動的に解決されるとして定義される"
+        "text": "AIの公平性は、特定のデータセットを使用することで常に達成されるものであるという学習アプローチ"
       },
       {
-        "text": "公平性は主観的な概念であるため客観的な評価基準は存在しないに基づく学習・推論の仕組み"
+        "text": "AIの公平性は、倫理的な判断を行うための基準にあたるものであるとして用いられる技術的手法"
       }
     ],
     "correctIndex": 1,
@@ -267,7 +451,30 @@
       "AIバイアス",
       "差別"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/vast_cosmos500/n/nd0afcd965e23",
+      "https://ai-mi.co.jp/804/",
+      "https://jp.linkedin.com/pulse/why-fairness-ai-more-complex-than-youve-heard-dena-neek-l3zhc?tl=ja",
+      "https://ip-study.net/ai-guidelines-principles-qa/",
+      "https://qiita.com/Ito_110/items/09d17275561d562f0a1b",
+      "https://blog.fltech.dev/entry/2024/01/22/ai-ethics-for-fairness",
+      "https://nuco.co.jp/blog/article/pyMPC-iM",
+      "https://www.findability.ai/ja/articles/ai-ethics-bias-and-fairness-navigating-the-complex-challenges-of-responsible-ai",
+      "https://www.dlri.co.jp/report/ld/236962.html",
+      "https://techblog.insightedge.jp/entry/ai_fairness",
+      "https://www.qbook.jp/column/2116.html",
+      "https://www.blueprism.com/japan/resources/blog/bias-fairness-ai/",
+      "https://ainow.ai/2020/02/17/183256/",
+      "https://www.infra-manual.com/ai-fairness-transparency-accountability/",
+      "https://n-v-l.co/blog/ai-ethics-case-studies",
+      "https://www.ibm.com/jp-ja/think/topics/shedding-light-on-ai-bias-with-real-world-examples",
+      "https://developers.google.com/machine-learning/crash-course/fairness/quiz?hl=ja",
+      "https://neural-opt.com/ai-ethical-problems-cases/",
+      "https://spikestudio.jp/blog/generative-ai-risk-cases",
+      "https://automation.jp/research-report/2024-11-09-ai-trust-and-fairness-challenges-towards-responsible-innovation-in-digital-society",
+      "https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-and-human-rights-risks.html"
+    ]
   },
   {
     "id": "ch8-010",
@@ -278,13 +485,13 @@
         "text": "人間には気づきにくい微小な変化を画像などに加えることで、AIを意図した誤った予測をさせるように設計された入力データ"
       },
       {
-        "text": "AIシステムへの不正アクセスを行うハッキング手法という性質を持つ概念・アプローチ"
+        "text": "AIシステムの性能を向上させるために、データを増やす手法であるという技術的な手法"
       },
       {
-        "text": "AIの学習データを不正に取得するサイバー攻撃に相当する概念であり、試験で頻出の定義"
+        "text": "敵対的サンプルは、AIの学習を妨げるためのデータの一種であるという学習アプローチ"
       },
       {
-        "text": "AIが生成したフェイクニュースやデマ情報という枠組みで理解される処理機構"
+        "text": "AIが誤った判断をする原因は、データの偏りに起因するものであるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -295,7 +502,38 @@
       "敵対的サンプル",
       "AIセキュリティ"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://hacarus.github.io/interpretable-ml-book-ja/adversarial.html",
+      "https://aisecurity-portal.org/articles/adversarial-training-general/",
+      "https://akichan-f.medium.com/%E6%95%B5%E5%AF%BE%E7%9A%84%E3%82%B5%E3%83%B3%E3%83%97%E3%83%AB%E3%81%A7%E7%B2%BE%E5%BA%A6%E3%82%92%E4%B8%8A%E3%81%92%E3%82%8B-adversarial-examples-improve-image-recognition%E3%81%AE%E7%B4%B9%E4%BB%8B-a3a15194b1e0",
+      "https://www.mbsd.jp/research/20210910/autonomous-car-4/",
+      "https://www.softbank.jp/biz/blog/cloud-technology/articles/202412/adversarial-examples/",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2012/17/news052.html",
+      "https://www.nri-secure.co.jp/blog/hostile-sample",
+      "https://club.informatix.co.jp/?p=994",
+      "https://jpsec.ai/adversarial-attacks-and-defense-on-texts-a-survey02/",
+      "https://www.ipsj.or.jp/dp/contents/publication/61/DP61-S02.html",
+      "https://qiita.com/m__k/items/a34ed060a64ab30c7d04",
+      "https://weknowledge.jp/column/work/post_34772",
+      "https://renue.co.jp/posts/ai-security-risk",
+      "https://promo.digital.ricoh.com/ai/column/detail032/",
+      "https://www.ibm.com/jp-ja/think/topics/ai-security",
+      "https://www.nri-secure.co.jp/blog/generative-ai-risks",
+      "https://www.persol-group.co.jp/service/business/article/20163/",
+      "https://forbesjapan.com/articles/detail/96451",
+      "https://simplique.jp/prevent-ai-hallucination-content-writing/",
+      "https://officebot.jp/columns/technology/hallucination-strategy/",
+      "https://www.yrl.com/column/ai-hallucination.html",
+      "https://www.sentinelone.com/ja/cybersecurity-101/data-and-ai/ai-security-risks/",
+      "https://www.nttdata.com/jp/ja/trends/data-insight/2025/0115/",
+      "https://www.proactivedefense.jp/blog/blog-consulting/post-7880",
+      "https://www.aeyescan.jp/blog/hallucination/",
+      "https://nexusai.jp/ai-hallucination/",
+      "https://liskul.com/hallucination-167348",
+      "https://note.com/hima2b4/n/nfbfa3cda49e1",
+      "https://www.seraku.co.jp/pr-site/newtonx/column/21.html"
+    ]
   },
   {
     "id": "ch8-011",
@@ -306,13 +544,13 @@
         "text": "検索エンジンなどの情報提供サービスにおいて、必要な限度で著作物を軽微に利用することを認める規定"
       },
       {
-        "text": "AI学習目的であれば著作物を無制限に利用できる規定として定義される"
+        "text": "著作権法第47条の5は、著作物の無制限な利用を認める規定である。"
       },
       {
-        "text": "著作物の複製を全くの禁止する規定という枠組みで理解される処理機構"
+        "text": "著作権法第47条の5は、著作物の利用を特定の条件下で禁止するものである。"
       },
       {
-        "text": "商業目的の著作物利用に対し補償金を支払う制度という手法・アプローチを指す"
+        "text": "著作権法第47条の5は、著作物の商業利用を制限するための法律である。"
       }
     ],
     "correctIndex": 0,
@@ -324,7 +562,26 @@
       "47条の5",
       "軽微利用"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://clairlaw.jp/qa/patent/copyright/post-108.html",
+      "https://storialaw.jp/blog/5442",
+      "https://www.businesslawyers.jp/articles/1315",
+      "https://innoventier.com/archives/2018/06/6295",
+      "https://www.star-law.jp/news/475.html",
+      "https://bakuyasu.techsuite.co.jp/32356/",
+      "https://lawzilla.jp/law/345AC0000000048?n=ln47_5.1.2&mode=only",
+      "https://www.cric.or.jp/qa/hajime/hajime7.html",
+      "https://jpaa-patent.info/patent/viewPdf/4276",
+      "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/hoseido/r05_04/",
+      "https://www.ys-law.jp/IT/column/column-10986/",
+      "https://laws.e-gov.go.jp/law/345AC0000000048",
+      "https://www.bunka.go.jp/seisaku/bunkashingikai/chosakuken/hoseido/r05_05/",
+      "https://www.itmedia.co.jp/aiplus/articles/2602/02/news084.html",
+      "https://storialaw.jp/blog/9748",
+      "https://topics.smt.docomo.ne.jp/article/yomiuri/business/20260423-567-GYT1T00011",
+      "https://www.yomiuri.co.jp/economy/20260423-GYT1T00011/"
+    ]
   },
   {
     "id": "ch8-012",
@@ -335,13 +592,13 @@
         "text": "人種、信条、病歴、犯罪歴など、不当な差別や偏見を生じさせる可能性があるため取得に原"
       },
       {
-        "text": "氏名と住所の組み合わせとして位置づけられる手法・概念"
+        "text": "個人情報保護法における一般情報は、特に注意を要しない情報である。"
       },
       {
-        "text": "匿名化処理が施された統計データに相当する概念であり、試験で頻出の定義"
+        "text": "要配慮個人情報は、本人の同意があれば自由に取得できる情報である。"
       },
       {
-        "text": "企業が公表しているプレスリリースの情報として知られる代表的な手法"
+        "text": "個人情報保護法における機密情報は、企業の内部資料に該当するものである。"
       }
     ],
     "correctIndex": 0,
@@ -352,7 +609,27 @@
       "個人情報保護法",
       "要配慮個人情報"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.ap-siken.com/kakomon/31_haru/q78.html",
+      "https://www.itpassportsiken.com/kakomon/04_haru/q27.html",
+      "https://keiyaku-watch.jp/media/hourei/youhairyokojinjyoho/",
+      "https://wa3.i-3-i.info/examination_ip2022h271.html",
+      "https://www.businesslawyers.jp/practices/271",
+      "https://college.coeteco.jp/itpassport/kakomon/list/%E8%A6%81%E9%85%8D%E6%85%AE%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1",
+      "https://qiita.com/lymansouka2017/items/42ea9e6b71e970efd0f4",
+      "https://www.ppc.go.jp/personalinfo/faq/APPI_QA/",
+      "https://ipass.shikaku-king.jp/past-tests/4/questions/326/",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://kentei-lab.com/answer/hogoshi/215",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ]
   },
   {
     "id": "ch8-013",
@@ -363,13 +640,13 @@
         "text": "一定の条件下で本人が自分の個人データの削除をデータ管理者に請求できる権利"
       },
       {
-        "text": "企業が保有するデータを一定期間後に自動的に削除する義務"
+        "text": "個人データの収集を禁止する権利であるという技術的な手法"
       },
       {
-        "text": "インターネット上の誹謗中傷を検索エンジンが自動的に削除する機能"
+        "text": "データ管理者が自由にデータを利用する権利という学習アプローチ"
       },
       {
-        "text": "本人が死亡した場合にデータが自動的に削除される仕組み"
+        "text": "個人が自分のデータを他者に譲渡する権利であるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -381,7 +658,26 @@
       "忘れられる権利",
       "消去権"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.exabeam.com/ja/explainers/gdpr-compliance/what-is-gdpr-article-17-right-to-erasure-and-4-ways-to-achieve-compliance/",
+      "https://yamamuralaw.com/blog/1843/",
+      "https://www.cloudflare.com/ja-jp/learning/privacy/right-to-be-forgotten/",
+      "https://note.com/domonjo01/n/n19134a29ffbd",
+      "https://www.nri.com/jp/media/column/kiuchi/20190118.html",
+      "https://www.sp-network.co.jp/column-report/column/security-topics/candr15035.html",
+      "https://fujii-yuji.net/2018/05/starting-gdpr-today.html",
+      "https://jibun-no.work/2022/03/872/",
+      "https://gigazine.net/news/20221209-google-delete-search-result-inaccurate-eu/",
+      "https://www.nikkei.com/article/DGKKZO62054390U2A620C2EA5000/",
+      "https://data-viz-lab.com/gdpr",
+      "https://didit.me/ja/blog/gdprs-right-to-be-forgotten-didit-integrated-data-erasure/",
+      "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/a217242.htm",
+      "https://upfsecurity.co.jp/pmark/10917/",
+      "https://www.averydennison.com/en/home/GDPR_docs/gdpr-faq_jpn.html",
+      "https://secureprivacy.ai/blog/how-to-respond-to-gdpr-right-to-erasure-request",
+      "https://www.reddit.com/r/germany/comments/1n5pmsu/article_17_of_gdpr_the_right_to_be_forgotten/?tl=ja"
+    ]
   },
   {
     "id": "ch8-014",
@@ -392,13 +688,13 @@
         "text": "本人が自分の個人データを構造化・機械可読可能な形式で受け取り、他のサービス事業者へ移転させる権利"
       },
       {
-        "text": "企業が利用者のデータを自由に第三者へ販売できる権利として定義される"
+        "text": "ユーザーが自分のデータを無制限に利用できる権利であるという技術的な手法"
       },
       {
-        "text": "政府機関が企業のデータを強制的に取得できる権利として定義される"
+        "text": "個人データを他者に無条件で開示する権利にあたるという学習アプローチ"
       },
       {
-        "text": "企業が収集したデータを国外に持ち出せる権利という特性を持つ技術的定義"
+        "text": "データを一元管理するためのシステムを構築する手法であるという仕組み"
       }
     ],
     "correctIndex": 0,
@@ -409,7 +705,21 @@
       "GDPR",
       "データポータビリティ"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.solix.com/ja/kb/right-to-data-portability/",
+      "https://upfsecurity.co.jp/pmark/10945/",
+      "https://fujii-yuji.net/2018/05/starting-gdpr-today.html",
+      "https://aws.amazon.com/jp/what-is/data-porting/",
+      "https://jibun-no.work/2022/03/916/",
+      "https://digitalforensic.jp/2018/11/26/column541/",
+      "https://www.corporate-legal.jp/matomes/4422",
+      "https://www.reddit.com/r/ClaudeAI/comments/1nhzkvf/psa_for_users_in_eu_take_advantage_of_gdprs_data/?tl=ja",
+      "https://www.businesslawyers.jp/articles/299",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/00001/00524/",
+      "https://lazarusalliance.com/ja/gdpr-requirements-for-data-disclosure-and-rights-of-access/",
+      "https://www.acompany.tech/privacytechlab/data-portability-rights-privacy-protect-people"
+    ]
   },
   {
     "id": "ch8-015",
@@ -420,13 +730,13 @@
         "text": "システムの企画・設計段階から、あらかじめプライバシー保護の仕組みをシステムに組み込む考え方"
       },
       {
-        "text": "プライバシー保護機能をシステム完成後に追加するアプローチの概念"
+        "text": "システムの運用段階でプライバシーを強化する手法であるという技術"
       },
       {
-        "text": "個人データを全くの収集しないことを原則とするポリシーの概念"
+        "text": "ユーザーの同意を得た後にプライバシー対策を行う方法であるである"
       },
       {
-        "text": "プライバシー保護をセキュリティ部門のみの責任とするアプローチ"
+        "text": "データの収集後にプライバシーを保護する技術にあたるという仕組み"
       }
     ],
     "correctIndex": 0,
@@ -437,7 +747,29 @@
       "プライバシーバイデザイン",
       "個人情報保護"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://privtech.co.jp/blog/data/privacy-by-design.html",
+      "https://www.ey.com/ja_jp/technical/library/info-sensor/2017/info-sensor-2017-11-05",
+      "https://kobesoft.co.jp/mikata/words/security/privacy-by-design/",
+      "https://e-words.jp/w/%E3%83%97%E3%83%A9%E3%82%A4%E3%83%90%E3%82%B7%E3%83%BC%E3%83%90%E3%82%A4%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3.html",
+      "https://renue.co.jp/posts/privacy-by-design-gdpr-personal-data-protection-guide",
+      "https://mediaid.co.jp/glossary/privacybydesign/",
+      "https://www.mitsuiwa.co.jp/journal/column/privacy-by-design/index.html",
+      "https://www.scsk.jp/sp/itpnavi/glossary/ha_line/ha_line_hu/pbd.html",
+      "https://www.acompany.tech/privacytechlab/privacy-by-design-data-utilization/",
+      "https://note.com/dempaq/n/n1acbc6f6ac76",
+      "https://zenn.dev/tasse/articles/13f5378a4c59b5",
+      "https://tex2e.github.io/blog/security/cissp-notes",
+      "https://ximix.niandc.co.jp/column/privacy-by-design-basic",
+      "https://www.newton-consulting.co.jp/itilnavi/glossary/privacy_by_design.html",
+      "https://jp.linkedin.com/pulse/privacy-design-implementation-reality-myth-chintan-parekh?tl=ja",
+      "https://www.solix.com/ja/blog/data-privacy-by-design-what-is-it/",
+      "https://internet.watch.impress.co.jp/docs/column/security/1544799.html",
+      "https://note.com/vast_cosmos500/n/ncd8c33fca570",
+      "https://www.ipsj.or.jp/dp/contents/publication/61/TR0601-06.html",
+      "https://www.nri-secure.co.jp/blog/security-by-design-requirements-of-the-fsa-guidelines"
+    ]
   },
   {
     "id": "ch8-016",
@@ -448,13 +780,13 @@
         "text": "人間中心の価値観、透明性、堅牢性・安全性、説明責任などを柱とする信頼できるAIのための国際原則"
       },
       {
-        "text": "AIの開発を先進国だけに限定し、途上国への技術移転を禁止すること"
+        "text": "AI技術の進化を促進するための国際的な枠組みであるという技術的な手法"
       },
       {
-        "text": "AIの特許権を国際的に統一し、開発競争を排除することとして定義される"
+        "text": "データの収集と分析を重視したAIの運用基準であるという学習アプローチ"
       },
       {
-        "text": "AI開発に関する全ての決定を国連が一元管理することとして定義される"
+        "text": "人間の感情を理解するためのAIの倫理基準にあたるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -466,7 +798,32 @@
       "国際規制",
       "AI倫理"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.jil.go.jp/foreign/jihou/2023/06/oecd_01.html",
+      "https://ledge.ai/articles/oecd-ai-principle",
+      "https://aisecurity.co.jp/article/3014",
+      "https://www.soumu.go.jp/menu_seisaku/ictseisaku/oecd_ai/index.html",
+      "https://www.oecd.org/en/topics/ai-principles.html",
+      "https://vocus.cc/article/68b211fffd897800011dab05",
+      "https://www.mofa.go.jp/mofaj/ecm/st/pagew_000001_01551.html",
+      "https://oecd.ai/en/ai-principles",
+      "https://www.sanin-chuo.co.jp/articles/-/569986",
+      "https://note.com/kawaiiwin/n/na0d149e33468",
+      "https://www.oecd.emb-japan.go.jp/itpr_ja/00_000475.html",
+      "https://www.alt-movements.org/no_more_capitalism/hankanshi-info/knowledge-base/oecd42%E3%82%AB%E5%9B%BD%E3%81%8Coecd%E3%81%AE%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E6%96%B0%E5%8E%9F%E5%89%87%E3%82%92%E6%8E%A1%E6%8A%9E/",
+      "https://www.sankei.com/article/20240504-OLZPVNBM6BMU7J4MNIZUAXJ3O4/photo/GVXURX76VNO63HFYVQPZSIBVII/",
+      "https://www.yomiuri.co.jp/economy/20231104-OYT1T50235/",
+      "https://liuwei.blog/2025/12/07/%E8%B5%84%E6%96%99%EF%BC%9A%E7%BB%8F%E6%B5%8E%E5%90%88%E4%BD%9C%E4%B8%8E%E5%8F%91%E5%B1%95%E7%BB%84%E7%BB%87%EF%BC%88oecd%EF%BC%89%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E5%8E%9F%E5%88%99%EF%BC%9A/",
+      "https://legal.ipec.or.jp/oecd-ai-2/",
+      "https://www.oecd.org/en/publications/oecd-framework-for-the-classification-of-ai-systems_cb6d9eca-en.html",
+      "https://outlook.stpi.niar.org.tw/index/tdop/4b1141008683960b0186ed0a6e993443",
+      "https://www.trade.gov.tw/Pages/Detail.aspx?nodeID=45&pid=767043",
+      "https://docs.feishu.cn/v/wiki/JH7wwxGMfiAdv3kpglocKdRKnbg/am",
+      "https://www.oecd.org/en/publications/scoping-the-oecd-ai-principles_d62f618a-en.html",
+      "https://www.chuo-u.ac.jp/uploads/2025/04/research_introduction_elsi_elsi_university_summit_02.pdf?1743638400091",
+      "https://www.deloitte.com/jp/ja/services/consulting/perspectives/ai-governance-hiroshima-ai-process.html"
+    ]
   },
   {
     "id": "ch8-017",
@@ -474,16 +831,16 @@
     "question": "XAI（説明可能なAI）の手法であるGrad-CAMの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "テキストデータの各単語がモデルの予測にどれだけ貢献したかを数値で示す手法"
+        "text": "画像の特徴を抽出する手法であり、分類精度を向上させる技術である"
       },
       {
-        "text": "モデルの全パラメータの重要度をランキング形式で表示する手法"
+        "text": "AIが生成した画像を評価するための手法で、視覚的なフィードバックを提供する"
       },
       {
         "text": "画像認識モデルが判断の際に「画像のどの部分に注目したか」をヒートマップで可視化する手法"
       },
       {
-        "text": "異なるモデル間の予測差異を比較して説明する手法として定義される"
+        "text": "データの前処理を行うための手法で、モデルのトレーニングを効率化する技術である"
       }
     ],
     "correctIndex": 2,
@@ -497,7 +854,36 @@
       "Grad-CAM",
       "説明可能AI"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.ibm.com/cn-zh/think/topics/explainable-ai",
+      "https://www.skillupai.com/blog/tech/about-xai/",
+      "https://aiacademy.jp/media/?p=2614#:~:text=CAM%E3%81%A8%E3%81%AF-,Grad%2DCAM%EF%BC%88Graddient%2Dweighted%20Class%20Activation%20Mapping%EF%BC%89%E3%81%A8,%E7%94%A8%E3%81%84%E3%82%8B%E3%81%93%E3%81%A8%E3%81%8C%E5%87%BA%E6%9D%A5%E3%81%BE%E3%81%99%E3%80%82",
+      "https://www.ultralytics.com/zh/glossary/explainable-ai-xai",
+      "https://saycon.co.jp/archives/neta/xai%E3%81%AE%E5%85%B7%E4%BD%93%E7%9A%84%E3%81%AA%E6%89%8B%E6%B3%95%E3%81%A7%E3%81%82%E3%82%8B%E3%80%8Cgrad-cam%E3%80%8D%E3%81%A8%E3%80%8Cintegrated-gradients%E3%80%8D",
+      "https://zero2one.jp/learningblog/what-is-grad-cam/?srsltid=AfmBOooelL8XG5iQ72xaGmQQXv4mmXoPU9qLagmUBdF-zl-xjDKmqimK",
+      "https://medium.com/@shiuanshr/%E5%AD%B8%E7%BF%92%E7%AD%86%E8%A8%98-xai%E5%8F%AF%E8%A7%A3%E9%87%8B%E4%BA%BA%E5%B7%A5%E6%99%BA%E6%85%A7-18dd141e6a5b",
+      "https://note.com/narumi_ai/n/nd2855fdc4b98",
+      "https://zenn.dev/iq108uni/articles/7269a1b72f42be",
+      "https://www.cio.com.tw/89767/",
+      "https://qiita.com/sasshi_i/items/40716d6367b54230e46f",
+      "https://saycon.co.jp/archives/neta/%E3%82%BF%E3%83%BC%E3%82%B2%E3%83%83%E3%83%88%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%A8%E3%81%AF%EF%BC%9F%E6%96%B0%E4%BA%BA%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E5%90%91-2",
+      "https://www.meta-intelligence.tech/insight-explainable-ai",
+      "https://jp.linkedin.com/pulse/what-explainable-ai-xai-why-matters-enterprise-n-ix-8i8cf?tl=ja",
+      "https://e-words.jp/w/Grad-CAM.html",
+      "https://www.netadmin.com.tw/netadmin/zh-tw/event/75D483CDFFEC4820AB74E91368D69DFD",
+      "https://speakerdeck.com/smorce/shap-lime-pdp-grad-cam",
+      "https://dajiro.com/entry/2020/06/26/234720",
+      "https://www.reddit.com/r/recruitinghell/comments/1gm2u9n/xai_ai_tutor_anyone_can_do_this/?tl=zh-hant",
+      "https://www.mamezou.com/techinfo/ai_machinelearning_rpa/ai_tech_team/12",
+      "https://xai-tutorials.readthedocs.io/en/latest/_model_specific_xai/Grad-CAM.html",
+      "https://www.facebook.com/CIOmagazine/posts/%E5%82%B3%E7%B5%B1-ai-%E6%93%8B%E4%B8%8D%E4%BD%8F%E8%A9%90%E9%A8%99%E5%8F%AF%E8%A7%A3%E9%87%8B%E6%80%A7-aixai%E4%BE%86%E6%95%91%E6%8F%B4-%EF%B8%8F%E5%8F%AF%E8%A7%A3%E9%87%8B%E6%80%A7-ai-%E4%B8%8D%E5%8F%AA%E6%98%AF%E6%8F%90%E5%8D%87%E6%A8%A1%E5%9E%8B%E6%B1%BA%E7%AD%96%E7%9A%84%E4%BF%A1%E4%BB%BB%E5%BA%A6%E6%9B%B4%E6%98%AF%E6%88%90%E7%82%BA%E6%B1%BA%E7%AD%96%E8%80%85%E5%8D%B3%E6%99%82%E5%8F%8D%E6%87%89%E7%9A%84%E5%9F%BA%E7%A4%8E%E9%A6%AC%E4%B8%8A%E6%8E%8C%E6%8F%A1%E7%95%B6%E5%89%8D%E8%A9%90%E6%AC%BA%E5%8B%95%E6%85%8B%E4%BC%81%E6%A5%AD%E6%9C%AA%E4%BE%86%E8%B3%87%E5%AE%89%E9%98%B2%E7%A6%A6%E6%87%89/1343947944403391/",
+      "https://tech-blog.abeja.asia/entry/cam-202203",
+      "https://gen-ai-media.guga.or.jp/glossary/grad-cam/",
+      "https://www.meta-intelligence.tech/ja/insight-explainable-ai",
+      "https://wasurenamemo.blogspot.com/2025/06/grad-cam.html",
+      "https://zenn.dev/pluck/articles/d29dafe92cdfc1"
+    ]
   },
   {
     "id": "ch8-018",
@@ -505,16 +891,16 @@
     "question": "不正競争防止法における「限定提供データ」の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "国家機密に指定された安全保障上のデータであることを特徴とする定義・概念"
+        "text": "特定の者に無制限に提供されるデータで、として機能する技術的なシステム"
       },
       {
-        "text": "特許権で保護されたAIアルゴリズムのデータセットという特性を持つ技術的定義"
+        "text": "一般的なデータベースに保存される情報で、に応用される技術的な仕組み"
       },
       {
         "text": "IDやパスワードなどにより管理され、特定の者に対して提供されるビッグデータ等のデータで、"
       },
       {
-        "text": "個人情報保護法で規制される要配慮個人情報に関連する技術・理論の説明"
+        "text": "企業の内部資料としてのみ利用される情報で、として用いられる技術的手法"
       }
     ],
     "correctIndex": 2,
@@ -525,7 +911,24 @@
       "不正競争防止法",
       "限定提供データ"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://innoventier.com/archives/2023/08/15397",
+      "https://keiyaku-watch.jp/media/kisochishiki/genteiteikyou-data/",
+      "https://www.meti.go.jp/policy/economy/chizai/chiteki/data.html",
+      "https://www.aplawjapan.com/services/unfair-competition-and-protection-of-business",
+      "https://hk-plazalaw.com/column/2020030901",
+      "https://www.businesslawyers.jp/articles/583",
+      "https://wa3.i-3-i.info/word111370.html",
+      "https://portal.shojihomu.jp/archives/64441",
+      "https://www.g-houmu.jp/oyakudachi/20240321-7/",
+      "https://www.saitama-bengoshi.com/oyakudachi/20250120-5/",
+      "https://www.komon-lawyer.jp/qa/auction/",
+      "https://www.it-houmu.com/archives/1911",
+      "https://note.com/chic_deer1160/n/n5e8aca316404",
+      "https://ueno.law/topics/fusei-kyousou-boushi-hou-eigyou-himitsu/",
+      "https://security-portal.cyber.go.jp/guidance/law-handbook/v2-11.html"
+    ]
   },
   {
     "id": "ch8-019",
@@ -533,16 +936,16 @@
     "question": "AIの学習データバイアスの一つである「選択バイアス」の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "AIが自分に都合の良い情報だけを優先的に学習する現象"
+        "text": "データの収集方法が不適切で生じる偏りという技術的な手法"
       },
       {
-        "text": "モデルが訓練データに過度に適合して汎化性能が低下する現象"
+        "text": "特定の属性に基づくサンプリングの偏りであるという学習アプローチ"
       },
       {
         "text": "学習に使用するデータが、対象となる母集団を適切に代表していないために生じる偏り"
       },
       {
-        "text": "人間のアノテーターが意図的にラベルを偏らせる不正行為"
+        "text": "データの処理過程で発生する誤ったラベルであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -556,7 +959,30 @@
       "選択バイアス",
       "公平性"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://a-x.inc/blog/llm-bias/",
+      "https://www.infra-manual.com/ai-azureai900-practicequestions1/",
+      "https://corp.automagica.ai/topics/post-126",
+      "https://ip-study.net/ai-considerations-qa/",
+      "https://developers.google.com/machine-learning/glossary/responsible-ai?hl=ja",
+      "https://www.ultralytics.com/ja/blog/understanding-ai-bias-and-dataset-bias-in-vision-ai-systems",
+      "https://note.com/lionbridge/n/n117331f3e7a8",
+      "https://promptpark.jp/column/ai-social-bias/",
+      "https://www.reddit.com/r/datascience/comments/lw1imu/in_machine_learning_why_do_we_use_the_terms_bias/?tl=ja",
+      "https://bryza.co.jp/column/6959.html",
+      "https://www.ibm.com/jp-ja/think/topics/shedding-light-on-ai-bias-with-real-world-examples",
+      "https://www.datarobot.com/jp/ethics/bias-and-fairness/",
+      "https://exploratory.io/note/kanaugust/AI-Ovn6qsG5wr/note_content/note.html",
+      "https://michitomo2019.com/it-passport-syllabus6-2-learning-points/",
+      "https://www.sap.com/japan/resources/what-is-ai-bias",
+      "https://www.itpassportsiken.com/kakomon/07_haru/q8.html",
+      "https://note.com/vast_cosmos500/n/n43fe916f7b63",
+      "https://jp.linkedin.com/pulse/what-most-people-get-wrong-ai-bias-donna-scarola-?tl=ja",
+      "https://quizlet.com/jp/815928856/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9-flash-cards/",
+      "https://www.databricks.com/jp/blog/what-is-automation-bias",
+      "https://dhbr.diamond.jp/articles/-/13461"
+    ]
   },
   {
     "id": "ch8-020",
@@ -564,16 +990,16 @@
     "question": "現行の特許法におけるAI発明の扱いとして正しいものはどれか。",
     "choices": [
       {
-        "text": "AIが自律的に発明した場合、AIを発明者として特許を取得できる"
+        "text": "AIが発明者として認められる場合がある技術であるという技術的な手法"
       },
       {
-        "text": "AIを使って生み出した発明は特許の対象外に基づく学習・推論の仕組み"
+        "text": "特許法ではAIの発明を認めるが、条件が厳しい手法であるという学習アプローチ"
       },
       {
         "text": "現行法では発明者は自然人（人間）に限定されており、AIそのものを発明者として認めることはできない"
       },
       {
-        "text": "AIによる発明は自動的にパブリックドメインとなるとして定義される"
+        "text": "AIによる発明は特許の対象外であるが、著作権が適用されるという仕組み"
       }
     ],
     "correctIndex": 2,
@@ -584,7 +1010,31 @@
       "特許法",
       "AI発明"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://note.com/narumi_ai/n/nb71bc86fc1bc",
+      "https://www.skillupai.com/blog/certification/about-general/",
+      "https://ainow.ai/2022/02/22/262956/",
+      "https://yusuketakami.com/?p=2157",
+      "https://kn.itmedia.co.jp/kn/articles/2512/24/news059.html",
+      "https://note.com/kochikichi/n/n0e75e2e05478",
+      "https://chefyushima.com/ai_laws/2136/",
+      "https://biz.loyalty.co.jp/column/117/",
+      "https://daily-life-ai.com/3092/",
+      "https://zero2one.jp/ai-word/patent-act/?srsltid=AfmBOoogCS8jBr9L6V-MCkYF3JUVL9ji1ZTGI7RSH3GHlXszqUDtaxmN",
+      "https://www.ondatechno.com/jp/topics/news/ip_topics/p4698/",
+      "https://zero2one.jp/ai-word/patent-act/?srsltid=AfmBOorAzPGJyrwG5tenk8TTXxsr5jxd5hIHxvqRl3qrh9tDL_51SwFs",
+      "https://zero2one.jp/ai-word/inventor/?srsltid=AfmBOoquJbEvpM0pdFV2KWz4W9GAvKnigrGqoEfS2aVjQfQJtCQ9unbp",
+      "https://zero2one.jp/ai-word/patent-act/?srsltid=AfmBOoogZyco8IjYtUUi4JNUU31PfvYY4sNzohVFPvt3Xi67exwdpGcy",
+      "https://note.com/lovely_laelia397/n/nf41de578638f",
+      "https://qiita.com/Keiji_otsubo/items/a6c74227100393ffc9c9",
+      "https://www.uit-patent.or.jp/g%E6%A4%9C%E5%AE%9A/g%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%E6%A4%9C%E5%AE%9A%EF%BC%89-%E3%82%AD%E3%83%BC%E3%83%AF%E3%83%BC%E3%83%89%EF%BC%88%E3%81%82%EF%BD%9E%E3%82%8F/",
+      "https://gri.jp/media/entry/2213",
+      "https://ja.wikipedia.org/wiki/%E9%87%91%E5%85%89%E5%AE%A3%E6%98%8E",
+      "https://www.d-m-a.jp/CurriculumEx/course259",
+      "https://www.simulationroom999.com/blog/g-test-measures-against-legal-issues/",
+      "https://www.kikagaku.co.jp/business/training/blog/g-certificate"
+    ]
   },
   {
     "id": "ch8-021",
@@ -592,16 +1042,16 @@
     "question": "XAI手法のLIME（Local Interpretable Model-agnostic Explanations）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "モデルの全データに対する大域的な重要度を算出する手法に関連する技術・理論の説明"
+        "text": "LIMEは、AIモデルの全体を説明するために用いる手法であり、全体的な理解を促進する技術である。"
       },
       {
-        "text": "画像のヒートマップ可視化に重点化したXAI手法に基づく学習・推論の仕組み"
+        "text": "LIMEは、特定のデータセット全体に対して適用される手法で、全ての予測を一括で説明することを目的とする。"
       },
       {
         "text": "個々の予測事例の近傍で解釈可能な単純なモデル（線形回帰など）を局所的に当てはめて、その予測の根拠を説明する手法"
       },
       {
-        "text": "モデルのアーキテクチャを単純化して解釈性を高める学習手法として定義される"
+        "text": "LIMEは、データの前処理を行うための手法であり、機械学習モデルの性能を向上させるために使用される。"
       }
     ],
     "correctIndex": 2,
@@ -615,7 +1065,47 @@
       "LIME",
       "説明可能AI"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://elcamy.com/blog/LIME",
+      "https://aiacademy.jp/media/?p=2618",
+      "https://e-words.jp/w/LIME.html",
+      "https://www.salesanalytics.co.jp/datascience/datascience274/",
+      "https://aisecurity-portal.org/articles/xai/",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/explainable-ai/",
+      "https://jp.linkedin.com/pulse/understanding-lime-local-interpretable-model-agnostic-explanations-k8aoc?tl=ja",
+      "https://www.redhat.com/ja/topics/ai/what-explainable-ai",
+      "https://qiita.com/sasshi_i/items/a1cb8339e668f5fd4e19",
+      "https://zero2one.jp/learningblog/explaining-xai/?srsltid=AfmBOopTGyyeSvnsDIpKT9YlkumjKwdOOIJJz5phTTx2dmy3JcCMQLdR",
+      "https://zero2one.jp/learningblog/explaining-xai/?srsltid=AfmBOoqqSWnvQ3_c-RsH2FegJOCl4PbyS5FfkYHYNSZjjeSxW4GgKTPr",
+      "https://github.com/mathworks/Example-of-how-LIME-works",
+      "https://andy6804tw.github.io/crazyai-xai/12.LIME%E7%90%86%E8%AB%96:%E5%A6%82%E4%BD%95%E7%94%A8%E5%B1%80%E9%83%A8%E7%B7%9A%E6%80%A7%E8%BF%91%E4%BC%BC%E8%A7%A3%E9%87%8B%E9%BB%91%E7%AE%B1%E6%A8%A1%E5%9E%8B/",
+      "https://ai-compass.weeybrid.co.jp/algorizm/lime-enhancing-interpretability-of-ai/",
+      "https://ithelp.ithome.com.tw/articles/10327698",
+      "https://zenn.dev/yakimt/articles/open-ml-blackbox-with-shap-lime",
+      "https://aiterms.tw/terms/local-interpretable-model-agnostic-explanations",
+      "https://medium.com/sherry-ai/xai-%E9%80%8F%E9%81%8E-lime-%E8%A7%A3%E9%87%8B%E8%A4%87%E9%9B%9C%E9%9B%A3%E6%87%82%E7%9A%84%E6%A8%A1%E5%9E%8B-23898753bea5",
+      "https://apxml.com/zh/courses/model-interpretability-explainability/chapter-2-lime-local-interpretability/lime-mechanism",
+      "https://campus.datacamp.com/ja/courses/explainable-ai-in-python/local-explainability?ex=4",
+      "https://zhuanlan.zhihu.com/p/357295271",
+      "https://blog.csdn.net/weixin_48878618/article/details/132122493",
+      "https://taweihuang.hpd.io/2018/02/27/introtolime/",
+      "https://www.hanspub.org/journal/paperinformation?paperid=41346",
+      "https://zhuanlan.zhihu.com/p/618664788",
+      "https://www.ibm.com/jp-ja/think/topics/explainable-ai",
+      "https://www.nri-secure.co.jp/blog/explainable-ai",
+      "https://www.slideshare.net/slideshow/xai-ai-lime-local-interpretable-modelagnostic-explanations/249976495",
+      "https://blog.trendmicro.com.tw/?p=91581",
+      "https://www.klcg.gov.tw/tw/financial/2060-106394.html",
+      "https://www.storm.mg/lifestyle/5278718",
+      "https://www.mygopen.com/2025/03/tvbs-survey.html",
+      "https://www.feds.com.tw/-/53/FashionFocus/Detail/913",
+      "https://www.fetnet.net/content/cbu/tw/lifecircle/tech/2024/07/linescam.html",
+      "https://www.ettoday.net/news/20241007/2830639.htm",
+      "https://help.li.me/hc/zh-cn",
+      "https://www.consumers.org.tw/product-detail-2727644.html",
+      "https://www.li.me/zh-hk-us/user-agreement"
+    ]
   },
   {
     "id": "ch8-022",
@@ -623,16 +1113,16 @@
     "question": "XAI手法のSHAP（SHapley Additive exPlanations）の理論的背景として正しいものはどれか。",
     "choices": [
       {
-        "text": "ニューラルネットワークの勾配情報を利用して重要度を算出するの概念"
+        "text": "機械学習のモデル評価手法であり、予測精度を向上させるための技術である。"
       },
       {
-        "text": "ランダムフォレストの特徴量重要度を拡張した手法として定義される"
+        "text": "データの前処理に特化した手法であり、特徴量の選択を行うための方法である。"
       },
       {
         "text": "ゲーム理論のシャープレイ値に基づき、各特徴量が予測に対して公平にどれだけ貢献したかを算出する手法"
       },
       {
-        "text": "人間の評価者によるスコアリングに基づいて説明を生成する手法の概念"
+        "text": "自然言語処理における文脈理解を深めるための手法であり、意味解析に用いられる。"
       }
     ],
     "correctIndex": 2,
@@ -646,7 +1136,46 @@
       "SHAP",
       "説明可能AI"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://renue.co.jp/posts/xai-to-wa",
+      "https://aiacademy.jp/media/?p=2611",
+      "https://qiita.com/kernelian/items/004f88110ecbf8a5c5bd",
+      "https://cloud.tencent.com/developer/article/2560569",
+      "http://www.bilibili.com/read/cv39776258/",
+      "https://ungifted.tech/blog/xai-shap/",
+      "https://www.51cto.com/aigc/5957.html",
+      "https://www.skillupai.com/blog/tech/about-xai/",
+      "https://dropout009.hatenablog.com/entry/2019/11/20/091450",
+      "https://www.simulationroom999.com/blog/g-test-ultimate-cheat-paper-11-interpretability-xai/",
+      "https://note.com/hetiyaborake/n/n4ee7b7033140",
+      "https://zhuanlan.zhihu.com/p/1926315437081228126",
+      "https://zhuanlan.zhihu.com/p/1975149972296049565",
+      "https://apxml.com/zh/courses/model-interpretability-explainability/chapter-3-shap-additive-explanations/shap-properties",
+      "https://zenn.dev/ottantachinque/articles/2021-11-14_shap",
+      "https://blog.csdn.net/s4t5u6v7/article/details/155440380",
+      "https://zhuanlan.zhihu.com/p/654299080",
+      "https://medium.com/ai-academy-taiwan/%E5%8F%AF%E8%A7%A3%E9%87%8B-ai-xai-%E7%B3%BB%E5%88%97-shap-2c600b4bdc9e",
+      "https://showmeai.tech/article-detail/337",
+      "https://blog.csdn.net/sinat_26917383/article/details/115400327",
+      "https://andy6804tw.github.io/crazyai-xai/14.SHAP%E7%90%86%E8%AB%96:%E8%A7%A3%E6%9E%90SHAP%E8%A7%A3%E9%87%8B%E6%96%B9%E6%B3%95%E7%9A%84%E6%A0%B8%E5%BF%83/",
+      "https://ithelp.ithome.com.tw/articles/10330115",
+      "https://zhuanlan.zhihu.com/p/720004401",
+      "https://hackmd.io/@explainableai/H1TdF2di8",
+      "https://www.cnblogs.com/ljbguanli/p/18968348",
+      "https://zero2one.jp/learningblog/explaining-xai/?srsltid=AfmBOoqADPnI8rtrCloxHQXfENJyuOEBaTgCfRWKRO38EdAL29EAjVG7",
+      "https://hivan.me/%E4%BB%8E%20Shapley%20%E5%88%B0%20SHAP%20%E2%80%94%20%E6%95%B0%E5%AD%A6%E7%90%86%E8%A7%A3/",
+      "https://www.reddit.com/r/datascience/comments/w5d3zg/what_on_earth_are_shap_values_and_what/?tl=zh-hant",
+      "https://developer.nvidia.cn/blog/explain-your-machine-learning-model-predictions-with-gpu-accelerated-shap/",
+      "https://zhuanlan.zhihu.com/p/106320452",
+      "https://medium.com/@jimmywu0621/%E5%8F%AF%E8%A7%A3%E9%87%8B%EF%BD%81%EF%BD%89-%E4%BB%80%E9%BA%BC%E6%98%AFshap-5ec3953e3c5b",
+      "https://blog.csdn.net/weixin_29188997/article/details/158816901",
+      "https://cloud.tencent.com/developer/article/2560431",
+      "https://pansci.asia/archives/124079",
+      "https://cloud.tencent.com/developer/article/2560584",
+      "https://zhuanlan.zhihu.com/p/186204351",
+      "https://www.toolify.ai/tw/ai-news-tw/%E8%A7%A3%E9%87%8B-ai-%E6%8A%80%E8%A1%93%E5%A4%A7%E8%A7%A3%E6%9E%90-4-shap-2668891"
+    ]
   },
   {
     "id": "ch8-023",
@@ -654,16 +1183,16 @@
     "question": "EU AI法（AI Act）の「高リスク」カテゴリに該当するAIシステムとして正しいものはどれか。",
     "choices": [
       {
-        "text": "音楽ストリーミングサービスの楽曲推薦システム"
+        "text": "教育機関向けのオンライン学習支援システムという技術"
       },
       {
-        "text": "公共空間でのリアルタイム生体認証による大量監視システム"
+        "text": "個人の趣味に特化したAIによる画像生成技術である"
       },
       {
         "text": "採用選考、医療診断支援、重要インフラの管理などに使用されるAIシステム"
       },
       {
-        "text": "スパムメール検知フィルターとして知られる代表的な手法"
+        "text": "自動運転車の安全性を評価するためのAI手法という"
       }
     ],
     "correctIndex": 2,
@@ -676,7 +1205,36 @@
       "EU AI法",
       "高リスクAI"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.tmi.gr.jp/eyes/blog/2024/15787.html",
+      "https://www.businesslawyers.jp/practices/1479",
+      "https://www.yomiuri.co.jp/local/kansai/news/20260423-GYO1T00181/",
+      "https://marugotoinc.jp/blog/aisaiyo/",
+      "https://www.enz.ai/jp/blog/eu-ai-act-risk-classification-guide",
+      "https://qiita.com/Dataiku/items/1a6e2fcb2d6b43ce50a8",
+      "https://www.hrpro.co.jp/series_detail.php?t_no=4460",
+      "https://biz.moneyforward.com/payroll/basic/86552/",
+      "https://eumag.jp/article/qa1224b/",
+      "https://it-trend.jp/employment-screening/article/use_of_ai",
+      "https://artificialintelligenceact.eu/ja/assessment/eu-ai-act-compliance-checker/",
+      "https://www.rikelab.jp/post/11515.html",
+      "https://www.wiz.io/ja-jp/academy/ai-security/eu-artificial-intelligence-act",
+      "https://www.newton-consulting.co.jp/itilnavi/guideline/eu_ai_act.html",
+      "https://boxil.jp/mag/a8949/",
+      "https://www.pwc.com/jp/ja/knowledge/column/awareness-cyber-security/generative-ai-regulation10.html",
+      "https://www.aidma-hd.jp/ai/recruitment-ai/",
+      "https://nocoderi.co.jp/2025/04/03/%E3%80%902025%E5%B9%B4%E7%89%88%E3%80%91ai%E3%81%AB%E3%82%88%E3%82%8B%E5%8C%BB%E7%99%82%E8%A8%BA%E6%96%AD%E3%81%AE%E4%BF%A1%E9%A0%BC%E6%80%A7%E3%81%AF%E6%9C%AC%E7%89%A9%E3%81%8B%EF%BC%9F%E6%9C%80/",
+      "https://jetb.co.jp/ai-recruitment",
+      "https://www.shl.co.jp/column/perspective/250718-eu-hiring-ai-rules/",
+      "https://www.medius.co.jp/asourcenavi/stateoftheart4/",
+      "https://www.aist.go.jp/aist_j/magazine/20220525.html",
+      "https://www.aspicjapan.org/asu/article/45724",
+      "https://slopebase.pandora-climber.jp/article/category_ai/ai_medicalcare.html",
+      "https://www.hosp.keio.ac.jp/about/feature/aihospital/",
+      "https://www.ultralytics.com/ja/blog/vision-ai-tools-for-healthcare-diagnostics",
+      "https://www.ai-ms.com/"
+    ]
   },
   {
     "id": "ch8-024",
@@ -684,13 +1242,13 @@
     "question": "AIのアカウンタビリティ（説明責任）に関する説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "AIシステムの技術的仕様書を公開することだけを指すという考え方に基づく手法"
+        "text": "AIの判断は完全に自動化されており、開発者は結果に責任を持たない体制であるという技術"
       },
       {
-        "text": "AI開発コストの内訳を投資家に開示する財務的義務という性質を持つ概念・アプローチ"
+        "text": "AIの出力は常に正確であるため、説明責任は必要ないとされる考え方であるという学習アプローチ"
       },
       {
-        "text": "AIが自律的に自分の行動を説明する能力として定義される技術的概念・考え方"
+        "text": "AIのアカウンタビリティは、データの収集方法にのみ関連する手法にあたる・仕組み"
       },
       {
         "text": "AIの出力結果や意思決定プロセスについて、開発者・運用者が利害関係者や社会に対して説明し、結果に対して責任を負う体"
@@ -707,7 +1265,35 @@
       "AI倫理",
       "FAccT"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://jp.linkedin.com/pulse/ai-accountability-from-principles-responsible-nana-b-amonoo-neizer-gfaoe?tl=ja",
+      "https://qiita.com/majority1917/items/a6c00ac311010d8bfc53",
+      "https://note.com/effectuation/n/n75c5f6e83cb2",
+      "https://developers.google.com/machine-learning/guides/intro-responsible-ai/accountability?hl=ja",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/00138/122500210/",
+      "https://jp.linkedin.com/pulse/human-loop-why-ai-decisions-demand-accountability-stephen-kelly-t02jc?tl=ja",
+      "https://umarketing.co.jp/ai-glossary/ai-accountability/",
+      "https://ai-compass.weeybrid.co.jp/using/ai-and-fairness-accountability-transparency/",
+      "https://www.databricks.com/jp/blog/what-is-ai-governance",
+      "https://atmarkit.itmedia.co.jp/ait/articles/1912/05/news020.html",
+      "https://www.reddit.com/r/Ethics/comments/1f24pdv/the_role_of_explainable_ai_in_enhancing_trust_and/?tl=ja",
+      "https://www.salesforce.com/jp/blog/ai-accountability/",
+      "https://www.ibm.com/jp-ja/think/topics/explainable-ai",
+      "https://www.acquia.com/jp/blog/responsible-ai-principles",
+      "https://start-link.jp/hubspot-ai/ai/ai-governance/responsible-ai-enterprise-guide",
+      "https://learn.microsoft.com/ja-jp/azure/machine-learning/concept-responsible-ai?view=azureml-api-2",
+      "https://forbesjapan.com/articles/detail/91873",
+      "https://dataplatform.cloud.ibm.com/docs/content/wsj/ai-risk-atlas/accountability.html?context=wx&locale=ja",
+      "https://x.com/t_wada/status/2047446387936387411",
+      "https://ximix.niandc.co.jp/column/what-is-responsible-ai",
+      "https://www.pwc.com/jp/ja/knowledge/column/dataanalytics/explainable-ai1.html",
+      "https://www.ibm.com/jp-ja/think/topics/responsible-ai",
+      "https://www.medallia.com/ja/blog/what-is-responsible-ai/",
+      "https://www.blueprism.com/japan/resources/blog/responsible-ai/",
+      "https://www.nri-secure.co.jp/blog/explainable-ai",
+      "https://forbesjapan.com/articles/detail/96451"
+    ]
   },
   {
     "id": "ch8-025",
@@ -715,13 +1301,13 @@
     "question": "不正競争防止法における「営業秘密」として法的保護を受けるための要件として正しいものはどれか。",
     "choices": [
       {
-        "text": "特許庁に登録されていることとして機械学習分野で広く認識されている"
+        "text": "営業秘密は、企業の全ての情報が対象であるため、特に制限はないという技術"
       },
       {
-        "text": "企業の取締役会で機密情報として承認されていることという性質を持つ概念・アプローチ"
+        "text": "営業秘密は、一般に知られている情報であっても、特定の条件を満たせば保護される。"
       },
       {
-        "text": "著作権で保護されたソースコードであることとして知られる代表的な手法"
+        "text": "営業秘密は、企業の財務情報や顧客情報に限られるものであるであるアルゴリズム"
       },
       {
         "text": "秘密として管理されていること（秘密管理性）、事業活動に有用であること（有用性）、公然と知られていないこ"
@@ -735,7 +1321,27 @@
       "不正競争防止法",
       "営業秘密"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://xn--alg-li9dki71toh.com/roumu/unfair-competition-prevention-law/trade-secret/",
+      "https://ueno.law/topics/fusei-kyousou-boushi-hou-eigyou-himitsu/",
+      "https://www.ishioroshi.com/biz/kaisetu/fukyouhou/index/fuseikyousou_4-9gou/",
+      "https://kigyobengo.com/media/useful/1461.html",
+      "https://www.kigyou-houmu.com/secret-2/",
+      "https://www.meti.go.jp/policy/economy/chizai/chiteki/trade-secret.html",
+      "https://laws.e-gov.go.jp/law/405AC0000000047",
+      "https://www.sendalaw.com/eigyou/%E5%96%B6%E6%A5%AD%E3%81%AE%E7%A7%98%E5%AF%86%E3%81%AE3%E3%81%A4%E3%81%AE%E8%A6%81%E4%BB%B6/",
+      "https://www.ip-bengoshi.com/archives/4922",
+      "https://www.mamoru-kun.com/tips/cm-unfair-competition-confidential/",
+      "https://www.komon-lawyer.jp/qa/eigyouhimitsu/",
+      "https://wakamoto-lp.com/business/souten/fuseiriyou",
+      "https://www.komon-lawyer.jp/qa/auction/",
+      "https://komon.jmatsuda-law.com/legal-note/2017_2_2",
+      "https://www.city-yuwa.com/precedent/16655/",
+      "https://izawa-law.com/company/trade_secret",
+      "https://keiyaku-watch.jp/media/hourei/huseikyousouboushi-eigyou/",
+      "https://ipob.co.jp/posts/post22.html"
+    ]
   },
   {
     "id": "ch8-026",
@@ -743,13 +1349,13 @@
     "question": "合成メディア（Synthetic Media）における電子透かし（ウォーターマーク）技術の目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "AI生成コンテンツの品質を向上させることとして定義される"
+        "text": "データの暗号化を行う技術であるとして機能する技術的なシステム"
       },
       {
-        "text": "AIモデルの学習データを暗号化して保護することの概念"
+        "text": "著作権情報を明示する手法にあたるに応用される技術的な仕組み"
       },
       {
-        "text": "著作権侵害のあったコンテンツを自動的に削除すること"
+        "text": "コンテンツの圧縮を目的とする技術として用いられる技術的手法"
       },
       {
         "text": "AI生成であることをコンテンツに埋め込み、出所や真正性を検証できるようにすること"
@@ -766,7 +1372,29 @@
       "合成メディア",
       "ディープフェイク"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.hitachi-sis.co.jp/service/security/digital_c/column/column01.html",
+      "https://www.itpassportsiken.com/kakomon/22_haru/q74.html",
+      "https://ja.wikipedia.org/wiki/%E9%9B%BB%E5%AD%90%E9%80%8F%E3%81%8B%E3%81%97",
+      "https://spap.jst.go.jp/oceania/news/260102/topic_no_01.html",
+      "https://www.jetro.go.jp/biznews/2024/05/25653a2358a11d13.html",
+      "https://www.mie-nu.com/purpose/",
+      "https://www.mie-nu.com/whats/ai_digital_watermark.html",
+      "https://renue.co.jp/posts/deepfake-detection-synthetic-media-identity-verification-enterprise-guide",
+      "https://note.com/eigodeyogaku/n/n8381ba2047ac",
+      "https://patents.google.com/patent/JP2020519210A/en",
+      "https://hyoka.ofc.kyushu-u.ac.jp/html/100021347_en.html",
+      "https://business.ntt-west.co.jp/glossary/words-00261.html",
+      "https://note.com/sonycorporation/n/n705d62782f15",
+      "https://www.iwsec.org/scis/2023/SCIS_2023_program.html",
+      "https://www.digicert.com/jp/blog/how-c2pa-and-digicert-strengthen-digital-content-integrity",
+      "http://www-ui.is.s.u-tokyo.ac.jp/~takeo/diary/diary.html",
+      "https://note.erhoeht-x.jp/n/n3f933499371d",
+      "https://www.techthanks.co.jp/what-is-c2pa/",
+      "https://ictr.co.jp/report/%E3%80%90%E6%A5%AD%E7%95%8C%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9%E3%80%91%E3%83%89%E3%82%B3%E3%83%A2%E3%82%893%E7%A4%BE%E3%80%81c2pa%E3%81%A7%E5%81%BD%E6%83%85%E5%A0%B1%E3%82%9285%E8%B6%85.html/",
+      "https://nttdocomo-developers.jp/entry/20231224_2"
+    ]
   },
   {
     "id": "ch8-027",
@@ -774,13 +1402,13 @@
     "question": "GDPRにおけるAIプロファイリングに関する権利として正しいものはどれか。",
     "choices": [
       {
-        "text": "企業はプロファイリングによって取得した情報を広告目的に自由に利用できる"
+        "text": "AIプロファイリングによるデータ収集を拒否する権利があることという技術的な手法"
       },
       {
-        "text": "プロファイリングによって作成されたデータは本人に帰属するため自由に削除できる"
+        "text": "自動処理による意思決定の透明性を求める権利が存在するとして機能する技術的なシステム"
       },
       {
-        "text": "AIがプロファイリングに使用したデータを全て公開する義務として定義される"
+        "text": "個人情報の利用に関する同意を撤回する権利が認められるとして用いられる技術的手法"
       },
       {
         "text": "本人の法的効果や重大な影響を及ぼす決定が自動処理（AIプロファイリング）のみによってなされることを拒否する権利"
@@ -795,7 +1423,28 @@
       "プロファイリング",
       "自動処理"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://topcourt-law.com/ai-iot/ai-profiling",
+      "https://www.kbd-personalinfo.com/entry/2018/01/12/140115",
+      "https://www.solix.com/ja/kb/right-not-to-be-profiled/",
+      "https://www.jinken-net.com/close-up/20250106_4828.html",
+      "https://sbiferi.co.jp/report/20251125_3.html",
+      "https://liskul.com/privacy-ai-advertising-171835",
+      "https://boochi-engineer.net/archives/2555",
+      "https://gdpr-info.eu/art-22-gdpr/",
+      "https://innoventier.com/archives/2018/08/6753",
+      "https://www.commissie-meijers.nl/comment/risk-profiling-in-the-eu-fundamental-rights-and-the-misalignment-of-the-gdpr-and-the-ai-act/",
+      "https://usercentrics.com/knowledge-hub/gdpr-ai/",
+      "https://spaceshipearth.jp/data-privacy/",
+      "https://www.hitachiconsulting.co.jp/column/ai_privacy/index.html",
+      "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/rights-related-to-automated-decision-making-including-profiling/",
+      "https://eumag.jp/article/qa1224b/",
+      "https://www.sciencedirect.com/science/article/pii/S0267364923000584",
+      "https://innoventier.com/archives/2018/08/6751",
+      "https://www.reddit.com/r/MistralAI/comments/1qxcns3/psa_gdpr_compliance_concerns/?tl=ja",
+      "https://www.pwc.com/jp/ja/knowledge/column/awareness-cyber-security/generative-ai-regulation07.html"
+    ]
   },
   {
     "id": "ch8-028",
@@ -803,13 +1452,13 @@
     "question": "AIバイアスの一つ「確証バイアス（Confirmation Bias）」がAI開発に与える影響として正しいものはどれか。",
     "choices": [
       {
-        "text": "AIモデルが数値計算を誤る原因となるアルゴリズムの欠陥として定義される"
+        "text": "開発者がデータの多様性を無視し、偏った結果を生むことに繋がる技術である"
       },
       {
-        "text": "モデルの予測精度が特定のハードウェアに依存する問題として定義される"
+        "text": "AIが自動的にデータを選別し、正しい情報のみを学習する手法にあたるである"
       },
       {
-        "text": "訓練データが小さいために生じる過学習に関する概念であり、G検定の重要用語のひとつ"
+        "text": "ユーザーの意見を反映し、AIが常に正確な判断を下すことに寄与する技術である"
       },
       {
         "text": "開発者が既存の仮説や期待に合うデータ・結果を優先的に採用し、反証となる情報を無視することで生じる偏り"
@@ -825,7 +1474,34 @@
       "AIバイアス",
       "確証バイアス"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://corp.omake.co.jp/ai-%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9%E5%AE%8C%E5%85%A8%E8%A7%A3%E8%AA%AC%EF%BC%81%E5%8E%9F%E5%9B%A0%E3%83%BB%E7%A8%AE%E9%A1%9E%E3%83%BB%E5%AF%BE%E7%AD%96%E3%81%A8%E9%81%A9%E5%88%87%E3%81%AAai/",
+      "https://www.ibm.com/jp-ja/think/topics/ai-bias",
+      "https://www.chapman.edu/ai/bias-in-ai.aspx",
+      "https://promptpark.jp/column/have-ai-pointout-bias/",
+      "https://www.blueprism.com/japan/resources/blog/bias-fairness-ai/",
+      "https://trailhead.salesforce.com/ja/content/learn/modules/responsible-creation-of-artificial-intelligence/recognize-bias-in-ai",
+      "https://research.smeai.org/human-ai-bias-interaction-mechanisms/",
+      "https://note.com/setagayataro/n/n242e37b07d25",
+      "https://www.icr.co.jp/newsletter/wtr434-20250529-mizuno.html",
+      "https://dhbr.diamond.jp/articles/-/13461",
+      "https://ai-tips-blog.com/posts/ai-lies-come-in-three-flavors-why-confirmation-bias-is-more",
+      "https://www.sap.com/japan/resources/what-is-ai-bias",
+      "https://www.datarobot.com/jp/ethics/bias-and-fairness/",
+      "https://hbr.org/2026/01/when-ai-amplifies-the-biases-of-its-users",
+      "https://www.kaonavi.jp/dictionary/kakusyo_bias/",
+      "https://cte.ku.edu/addressing-bias-ai",
+      "https://toyokeizai.net/articles/-/924255?display=b",
+      "https://mediate.com/ai-and-confirmation-bias/",
+      "https://jp.linkedin.com/pulse/breaking-free-from-confirmation-bias-ai-call-better-approach-engels--ggmgf?tl=ja",
+      "https://zenn.dev/aoki_monpro/articles/55647a4800a7f1",
+      "https://www.sciencedirect.com/science/article/pii/S2949882124000264",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12412720/",
+      "https://www.linkedin.com/posts/jayvanbavel_will-ai-become-a-confirmation-bias-machine-activity-7439742257253076992-rvQw",
+      "https://www.psychologytoday.com/us/blog/a-hovercraft-full-of-eels/202305/confirmation-bias-in-the-era-of-large-ai",
+      "https://atos.net/en/blog/is-chatgpt-your-biggest-fan-avoiding-confirmation-bias-biased-ai"
+    ]
   },
   {
     "id": "ch8-029",
@@ -833,13 +1509,13 @@
     "question": "著作権法第30条の4における「権利者の利益を不当に害する場合」の例として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "非営利の研究機関が論文解析のためにジャーナルをスクレイピングする行為として定義される"
+        "text": "特定の著作物を無断で複製し、AI学習に利用する行為は著作権侵害にあたるとして位置づけられる技術"
       },
       {
-        "text": "複数言語の翻訳データを用いて機械翻訳モデルを学習させる行為として位置づけられる手法・概念"
+        "text": "著作権者の許可を得ずに、一般的なデータを収集してAIを訓練する行為が問題視されるという学習アプローチ"
       },
       {
-        "text": "インターネット上の公開画像を収集してキャプション生成モデルを学習させる行為として定義される"
+        "text": "AIが生成したコンテンツを商用利用する際、著作権者の利益を考慮しない行為が該当する・仕組み"
       },
       {
         "text": "特定の著作家の作風・文体を模倣するAIサービスを構築するために、その著作家の作品のみを集中的に学習させ、著作家の市場を代替する行為"
@@ -854,7 +1530,33 @@
       "30条の4",
       "権利者利益"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://www.yuasa-hara.co.jp/lawinfo/5047/",
+      "https://houmu-pro.com/property/297/",
+      "https://www.businesslawyers.jp/articles/1315",
+      "https://www.itmedia.co.jp/aiplus/articles/2602/02/news084.html",
+      "https://businessandlaw.jp/articles/a20250826-1/",
+      "https://storialaw.jp/blog/9748",
+      "https://www.n-daiichi-law.gr.jp/contents/information/11988",
+      "https://www.itscom.co.jp/forbiz/column/vpn/17022/",
+      "https://www.nttdata-strategy.com/knowledge/reports/2023/230427_01/",
+      "https://www.nikkei.com/article/DGXZQOUA26BA20W3A021C2000000/",
+      "https://www.ys-law.jp/IT/column/column-10996/",
+      "https://www.asahi.com/articles/ASSDL25JKSDLUTIL00SM.html",
+      "https://www.ys-law.jp/IT/column/column-10986/",
+      "https://shop-knowledge.fln.mypl.net/archives/343.html",
+      "https://saycon.co.jp/archives/neta/%E3%80%8C%E8%91%97%E4%BD%9C%E6%A8%A9%E6%B3%95%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E3%82%88%E3%81%8F%E3%81%82%E3%82%8B%E8%AA%A4%E8%A7%A3%E3%80%8D%E3%82%92%E6%96%B0%E4%BA%BA%E3%82%A8%E3%83%B3%E3%82%B8",
+      "https://www.chowagiken.co.jp/future-studio/generativeai_legalrisks/",
+      "https://www.kitahama.or.jp/topics/ai-00004/",
+      "https://www.seraku.co.jp/pr-site/newtonx/column/103.html",
+      "https://www.businesslawyers.jp/articles/1436",
+      "https://www.cric.or.jp/qa/hajime/hajime7.html",
+      "https://facta.co.jp/article/201208001.html",
+      "https://note.com/fancy_iguana5274/n/n662b69ae05ab",
+      "https://www.reddit.com/r/germany/comments/1ima356/how_strict_is_the_law_against_piracy/?tl=ja",
+      "https://www.shinzansha.co.jp/book/b10132186.html?srsltid=AfmBOoqAnNb2Z89Pa6aPPAYC5iSPTr9ZDfQV94zLqluitE909MjmK9QD"
+    ]
   },
   {
     "id": "ch8-030",
@@ -862,13 +1564,13 @@
     "question": "AI公平性（Fairness）の評価指標のうち「人口統計学的均等性（Demographic Parity）」の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "ほぼすべてのの個人が同一の予測結果を受けることに関する概念であり、G検定の重要用語のひとつ"
+        "text": "異なる属性を持つグループ間で、全体の合格率が同じになることを指す手法であるという技術"
       },
       {
-        "text": "学習データのサンプル数が全グループで均等であることという考え方に基づく手法"
+        "text": "特定の属性に基づいて、全体の評価スコアが均等になることを示す指標であるという学習アプローチ"
       },
       {
-        "text": "モデルの予測精度が全グループで100%になることに関する概念であり、G検定の重要用語のひとつ"
+        "text": "異なる文化的背景を持つ集団間で、教育の機会が平等であることを示すものであるという"
       },
       {
         "text": "保護属性（性別・人種など）が異なるグループ間で、ポジティブな予測結果（採用・融資承認など）の割合が等しくなること"
@@ -886,6 +1588,31 @@
       "FAccT",
       "評価指標"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://umarketing.co.jp/ai-glossary/ai-fairness/",
+      "https://umarketing.co.jp/ai-glossary/fairness/",
+      "https://developers.google.com/machine-learning/glossary/responsible-ai?hl=ja",
+      "https://bryza.co.jp/column/6959.html",
+      "https://blog.fltech.dev/entry/2024/01/22/ai-ethics-for-fairness",
+      "https://zero2one.jp/ai-word/fairness/?srsltid=AfmBOorKX1jo64FLbcMe9cESBZd1QtZ5EKEkyKwIurFWFP7X7nwA9T3G",
+      "https://note.com/masatokawakami/n/n7089fd01ff46",
+      "https://www.datarobot.com/jp/ethics/bias-and-fairness/",
+      "https://note.com/narumi_ai/n/n4f86b9bd9193",
+      "https://www.questionpro.com/blog/ja/%E4%BA%BA%E5%8F%A3%E7%B5%B1%E8%A8%88%E5%AD%A6%E7%9A%84%E5%88%86%E6%9E%90%EF%BC%9A%E5%AE%9A%E7%BE%A9%E3%80%81%E9%87%8D%E8%A6%81%E6%80%A7%E3%80%81%E6%96%B9%E6%B3%95/",
+      "https://smartnews-smri.com/research/research-2625/",
+      "https://presencis.com/ja/regulations/ai-verify/article-fairness",
+      "https://qiita.com/nfuru08/items/cbc443a61d9875920246",
+      "https://www.technologyreview.jp/s/357515/these-two-new-ai-benchmarks-could-help-make-models-less-biased/",
+      "https://note.com/sae_mamcareer/n/n9cf26ae82391",
+      "https://www.ultralytics.com/ja/glossary/fairness-in-ai",
+      "https://www.kgri.keio.ac.jp/research-synergies/talk-9.html",
+      "https://www.zetta.co.jp/bigdata/o_04.shtml",
+      "https://www.nikkei.com/article/DGKKZO89805220T00C25A7EP0000/",
+      "https://ja.wikipedia.org/wiki/%E3%82%A8%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A8%E3%83%AB%E3%83%BB%E3%83%88%E3%83%83%E3%83%89",
+      "https://www.jstage.jst.go.jp/article/jps/59/0/59_2301006/_pdf/-char/ja",
+      "https://minato.sip21c.org/demography/index.html",
+      "https://data.wingarc.com/male-female-ratio-27547"
+    ]
   }
 ]

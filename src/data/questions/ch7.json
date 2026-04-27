@@ -5,16 +5,16 @@
     "question": "AIプロジェクトにおけるPoC（Proof of Concept：概念実証）の主な目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "本番環境での大規模運用を開始するフェーズに基づく学習・推論の仕組み"
+        "text": "新しい技術を導入するための基準を設けることが目的であるという仕組み"
       },
       {
         "text": "本格的な開発の前に収集したデータで期待する精度が出るか・ビジネス上の価値があるかをプロトタイプで"
       },
       {
-        "text": "モデルの最終チューニングを行うフェーズに関する概念であり、G検定の重要用語のひとつ"
+        "text": "プロトタイプを通じて、全体のシステム設計を決定することにあるである"
       },
       {
-        "text": "AIシステムを廃止・更新するフェーズという考え方に基づく手法"
+        "text": "AIの性能を向上させるためのデータ分析を行う手法であるであるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -27,7 +27,26 @@
       "PoC",
       "AIプロジェクト"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.netbot.jp/ai-poc/",
+      "https://www.pasona.co.jp/clients/service/xtech/column/column155/",
+      "https://eques.co.jp/column/poc-ai/",
+      "https://shiftasia.com/ja/column/poc%E3%81%A8%E3%81%AF/",
+      "https://visionary-jp.co.jp/ai-development-poc/",
+      "https://renue.co.jp/posts/poc-proof-of-concept",
+      "https://www.aidma-hd.jp/ai/poc-toha/",
+      "https://note.com/gyoza_tencho/n/n7958743662e0",
+      "https://www.serverworks.co.jp/blog/ai/what_is_poc_for_implementing_generative_ai.html",
+      "https://wakka-inc.com/blog/29268/",
+      "https://aismiley.co.jp/ai_news/what-is-poc-verification/",
+      "https://www.optim.co.jp/media/cat-trend/ai_250509-01",
+      "https://luvina.jp/what-is-ai-poc/",
+      "https://ai-market.jp/howto/ai_poc/",
+      "https://www.nri.com/jp/knowledge/glossary/poc.html",
+      "https://worldhacks.co.jp/blog/5f4dtw_-w/",
+      "https://www.jsfit.co.jp/bpo/blog/202510-01/"
+    ]
   },
   {
     "id": "ch7-002",
@@ -35,16 +54,16 @@
     "question": "MLOps（Machine Learning Operations）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "機械学習の数学的な最適化手法の総称に基づく学習・推論の仕組み"
+        "text": "機械学習モデルの設計と評価を行う手法であるとして位置づけられる技術"
       },
       {
         "text": "機械学習モデルの開発（Dev）と運用（Ops）を連携させ、継続的な学習・テスト・デプロイを自動化"
       },
       {
-        "text": "オープンソースの機械学習ライブラリの開発コミュニティに相当する概念であり、試験で頻出の定義"
+        "text": "データの収集と分析を行うためのフレームワークであるという学習アプローチ"
       },
       {
-        "text": "MLシステムの可観測性ツールの一つという特性を持つ技術的定義"
+        "text": "AIシステムの運用を効率化するための管理手法であるであるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -57,7 +76,27 @@
       "MLOps",
       "AI運用"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://primenumber.com/blog/mlops/",
+      "https://www.databricks.com/jp/blog/what-is-mlops",
+      "https://note.com/akalink/n/nb66b91a46261",
+      "https://aws.amazon.com/jp/what-is/mlops/",
+      "https://www.itinfra-solution.com/post/mlops-intro-guide",
+      "https://aka-link.net/mlops-aimachine-learning/",
+      "https://www.servicenow.com/jp/platform/what-is-mlops.html",
+      "https://zenn.dev/udai_sharelearn/articles/mlops-zoomcamp-week1",
+      "https://www.alteryx.com/ja/glossary/mlops",
+      "https://ops-today.com/topics-8121/",
+      "https://newrelic.com/jp/blog/ai/what-is-mlops",
+      "https://aka-link.net/implementation-mlops/",
+      "https://www.databricks.com/jp/blog/mlops-frameworks-complete-guide-tools-and-platforms-production-ml",
+      "https://aismiley.co.jp/ai_news/what-is-mlops/",
+      "https://learn.microsoft.com/ja-jp/azure/aks/concepts-machine-learning-ops",
+      "https://www.e-xtreme.co.jp/topics/48898/",
+      "https://wandb.ai/site/ja/articles/what-is-mlops/",
+      "https://www.brainpad.co.jp/doors/contents/01_current_status_and_future_of_mlops/"
+    ]
   },
   {
     "id": "ch7-003",
@@ -65,16 +104,16 @@
     "question": "データリーケージ（Data Leakage）が検証データに混入した場合の影響として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習に時間がかかるようになるとして定義される"
+        "text": "検証データの精度が高くなることがあるという技術"
       },
       {
         "text": "検証時には精度が良かったが、実際に導入すると精度が悪くなる"
       },
       {
-        "text": "過学習が起きにくくなるという特性を持つ技術的定義"
+        "text": "データリーケージは過学習にあたるという学習アプローチ"
       },
       {
-        "text": "モデルが複雑になりすぎて解釈できなくなる"
+        "text": "モデルの性能が常に安定することを示すという"
       }
     ],
     "correctIndex": 1,
@@ -87,7 +126,26 @@
       "データリーケージ",
       "モデル評価"
     ],
-    "source_ref": "d05cf4cd-fc06-461a-bdf1-dcf054956340"
+    "source_ref": "d05cf4cd-fc06-461a-bdf1-dcf054956340",
+    "source_ref_supplements": [
+      "https://zero2one.jp/ai-word/data-leakage/?srsltid=AfmBOorjm-D9F7X0nxrYhTSI7HLdL1Vegs3H-fy_sZ_CocK1iF4TPHA7",
+      "https://ai-compass.weeybrid.co.jp/learning/data-leakage-a-pitfall-in-machine-learning-2/",
+      "https://qiita.com/leafeon00000/items/5745f0a4678469cd8dca",
+      "https://qiita.com/umatan/items/8f4c7a869634b04e305a",
+      "https://www.sailpoint.com/ja/identity-library/data-leakage",
+      "https://note.com/narumi_ai/n/n0e5c1f2cb2a2",
+      "https://jp.linkedin.com/pulse/data-leakage-machine-learning-how-prevent-karen-wong-jk4yc?tl=ja",
+      "https://note.com/kenichiro/n/n2ff08344160a",
+      "https://www.ibm.com/jp-ja/think/topics/data-leakage-machine-learning",
+      "https://blog.since2020.jp/ai/machine-learning-data-leakage/",
+      "https://www.salesanalytics.co.jp/column/no00392/",
+      "https://fptsoftware.jp/resource-center/blog/technology/2025-04-blog-genai",
+      "https://www.zscaler.com/jp/blogs/product-insights/how-to-prevent-generative-ai-data-leakage",
+      "https://zenn.dev/kikegamisprix/scraps/bf64419d15dad3",
+      "https://monoist.itmedia.co.jp/mn/articles/1907/16/news009.html",
+      "https://www.wiz.io/ja-jp/academy/data-security/data-leakage",
+      "https://tech-blog.abeja.asia/entry/advent-2023-day15"
+    ]
   },
   {
     "id": "ch7-004",
@@ -95,16 +153,16 @@
     "question": "モデルドリフトの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習中にモデルのパラメータが意図せず変化してしまう問題として定義される"
+        "text": "モデルドリフトは、AIの学習データを一度だけ更新する手法であるという技術"
       },
       {
         "text": "時間の経過や社会・環境の変化により入力データの分布が変わり、本番運用中のAIモデルの精度が徐々に低"
       },
       {
-        "text": "モデルが訓練データに過剰適合した状態に基づく学習・推論の仕組み"
+        "text": "モデルドリフトは、特定のデータセットに対する過剰適合を指すものである。"
       },
       {
-        "text": "量子化によってモデルの精度が失われる現象として位置づけられる手法・概念"
+        "text": "モデルドリフトは、ユーザーの行動変化を分析する手法にあたるという仕組み"
       }
     ],
     "correctIndex": 1,
@@ -117,7 +175,34 @@
       "モデルドリフト",
       "MLOps"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://jp.linkedin.com/pulse/when-ai-doesnt-stand-still-understanding-managing-model-marchese-i4g2c?tl=ja",
+      "https://ai-compass.weeybrid.co.jp/using/model-drift-understanding-prediction-accuracy-degradation/",
+      "https://waylandz.com/quant-book-ja/Model-Drift-and-Retraining/",
+      "https://jp.linkedin.com/pulse/ai-model-drift-how-keep-systems-accurate-effective-real-world-kamqe?tl=ja",
+      "https://www.ibm.com/jp-ja/think/topics/model-drift",
+      "https://www.flowhunt.io/ja/%E7%94%A8%E8%AA%9E%E9%9B%86/model-drift/",
+      "https://corpy.co.jp/jp/news/YAFbiv5T",
+      "https://docs.oracle.com/cd/E56931_01/trans/G22516-14/how-is-model-drift-handled.html",
+      "https://note.com/vast_cosmos500/n/n2a007e757ba3",
+      "https://creative-drive.jp/glossary/ai-model-drift-detection",
+      "https://tech.datafluct.com/entry/20220323/1648028520",
+      "https://www.datarobot.com/jp/blog/ai-model-risk-management-enabled-by-datarobot-ai-cloud-platform-part-2/",
+      "https://ai-compass.weeybrid.co.jp/using/predictive-drift-maintaining-accuracy/",
+      "https://qiita.com/Ito_110/items/09d17275561d562f0a1b",
+      "https://www.matome-sheet.com/%E3%80%90%E9%81%8E%E5%8E%BB%E5%95%8F%E8%A7%A3%E8%AA%AC%EF%BC%88%E7%B5%8C%E5%96%B6%E6%83%85%E5%A0%B1%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%EF%BC%89%E3%80%91r6-%E7%AC%AC24%E5%95%8F/",
+      "https://note.com/en2enzo/n/n60ad0e7858b7",
+      "https://www.furikatu.com/2025/05/model-drift-detection.html",
+      "https://quizlet.com/jp/933715675/ai-900%E3%82%88%E3%81%8F%E9%96%93%E9%81%95%E3%81%A3%E3%81%9F%E8%B3%AA%E5%95%8F-flash-cards/",
+      "https://iret.media/142033",
+      "https://www.infra-manual.com/ai-azureai900-practicequestions2/",
+      "https://www.reddit.com/r/ArtificialSentience/comments/1liceux/have_you_felt_it_too_when_your_ai_starts_to_drift/?tl=ja",
+      "https://www.dataiku.com/ja/%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E8%A9%B3%E7%B4%B0/%E8%AA%AC%E6%98%8E%E5%8F%AF%E8%83%BD%E3%81%AAai/",
+      "https://ai-compass.weeybrid.co.jp/using/model-drift-preventing-ai-model-degradation/",
+      "http://bayesmax.sblo.jp/article/188243971.html",
+      "https://ainow.ai/2019/11/18/180603/"
+    ]
   },
   {
     "id": "ch7-005",
@@ -125,16 +210,16 @@
     "question": "AIモデルのヘルスモニタリングを行う主な目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "AIシステムの電力消費量を最小化するためという考え方に基づく手法"
+        "text": "AIモデルのトレーニングを行う目的は、データの質を向上させることである。"
       },
       {
         "text": "稼働中のAIモデルの精度・入力データの分布変化・異常を継続的に監視し、モデルドリフトを早期に検知・対処"
       },
       {
-        "text": "学習に使用するGPUの温度監視のためであることを特徴とする定義・概念"
+        "text": "AIモデルのパフォーマンスを向上させるため、定期的に再学習を行う手法である。"
       },
       {
-        "text": "AIシステムのセキュリティ脆弱性をスキャンするためという枠組みで理解される処理機構"
+        "text": "AIモデルの運用において、ユーザーのフィードバックを収集することが重要である。"
       }
     ],
     "correctIndex": 1,
@@ -149,7 +234,44 @@
       "ヘルスモニタリング",
       "モデル監視"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://www.kikagaku.co.jp/business/training/blog/sp1cqamol5",
+      "https://promo.digital.ricoh.com/ai-for-work/column/detail009/",
+      "https://okojo.ai/blog/ai-use-cases-anomaly-detection-guide/",
+      "https://www.softbank.jp/corp/technology/research/topics/187/",
+      "https://www.oracle.com/jp/artificial-intelligence/anomaly-detection/",
+      "https://www.uis-inf.co.jp/products/dins/column/column_detection.html",
+      "https://aismiley.co.jp/ai_news/what-is-error-detection-that-detects-errors-in-unstructured-data-such-as-documents-and-website-logs/",
+      "https://techsword.co.jp/column/improve-ai-accuracy",
+      "https://it-innovation.co.jp/2025/03/25-164929/",
+      "https://qiita.com/toucan/items/c3343de3cfa236df3bda",
+      "https://jpn.nec.com/solution/dotdata/tips/failure-prediction/index.html",
+      "https://shen.ai/ja/blog/how-smartphones-revolutionize-preventive-healthcare",
+      "https://note.com/vast_cosmos500/n/na631c6f589f1",
+      "https://www.webjapan.co.jp/blog/ai-camera/anomaly-detection/",
+      "https://usknet.com/dxgo/contents/dx-trend/ai-improve-business-efficiency/",
+      "https://www.tomomi-research.com/archives/2964",
+      "https://www.intra-mart.jp/im-press/useful/generation-ai-efficiency",
+      "https://www.nttdata-kansai.co.jp/media/038/",
+      "https://www.ibm.com/jp-ja/think/topics/ai-in-operations-management",
+      "https://www.cumulocity.com/ja/use-cases/ai-ml-operationalization/",
+      "https://www.pagerduty.co.jp/blog/democratize-automation-ai-generated-runbooks/",
+      "https://www.pci-sri.co.jp/study-2",
+      "https://jp.linkedin.com/pulse/optimizing-your-operating-model-ai-driven-efficiency-jose-luis-zthff?tl=ja",
+      "https://cbt-s.com/helpnavi-column/hn0112/",
+      "https://qiita.com/AyameO/items/36776da82b6cc13001bb",
+      "https://www.fgl-ts.co.jp/blog/josys133",
+      "https://www.reddit.com/r/healthcareIT/comments/1oqvlmk/how_do_hospitals_integrate_ai_usage_in_their/?tl=ja",
+      "https://eques.co.jp/column/ai-healthcare/",
+      "https://www.dataiku.com/ja/%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E8%A9%B3%E7%B4%B0/%E8%AA%AC%E6%98%8E%E5%8F%AF%E8%83%BD%E3%81%AAai/",
+      "https://fastlabel.ai/blog/object-detection",
+      "https://star.global/jp/posts/global-ai-regulation/",
+      "https://www.arsaga.jp/blog/dxcolumn-improve-accurancy-of-machine-learning/",
+      "https://biz.nuro.jp/column/aws-mama-084/",
+      "https://ai-stay.tokyo/archives/4749",
+      "https://www.ai-development-tools.com/image-analysis-ai/image-ai-model-accuracy-tips.html"
+    ]
   },
   {
     "id": "ch7-006",
@@ -157,16 +279,16 @@
     "question": "AI事業者ガイドラインについて正しいものはどれか。",
     "choices": [
       {
-        "text": "EU AI法（AI Act）の日本語翻訳版に基づく学習・推論の仕組み"
+        "text": "AI事業者ガイドラインは、AIの倫理的利用を促進するための法律である。"
       },
       {
         "text": "日本のAI開発ガイドライン・AI利用ガイドラインなどを統合した、AI事業者（開発者・提供者・利用者）"
       },
       {
-        "text": "ChatGPTなどの生成AIの使用方法マニュアルに基づく処理・理論の枠組み"
+        "text": "AI事業者ガイドラインは、AI開発者のみを対象とした規制であるという学習アプローチ"
       },
       {
-        "text": "JDLA（日本ディープラーニング協会）のみが策定した企業内AI倫理規定の概念"
+        "text": "AI事業者ガイドラインは、データ分析手法に関する指針を示すものである。"
       }
     ],
     "correctIndex": 1,
@@ -180,7 +302,31 @@
       "AI事業者ガイドライン",
       "AIガバナンス"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://www.deloitte.com/jp/ja/services/audit-assurance/blogs/ai-governance-07.html",
+      "https://biz.hrbase.jp/how-to/ai-guidelines/",
+      "https://zenn.dev/syoshida07/articles/8a428180adb5c3",
+      "https://biz.hipro-job.jp/column/corporation/ai_guidelines_for_business/",
+      "https://www.meti.go.jp/press/2024/04/20240419004/20240419004.html",
+      "https://qiita.com/akiraokusawa/items/6194fa1ae0a947693b45",
+      "https://www.digital.go.jp/news/3579c42d-b11c-4756-b66e-3d3e35175623",
+      "https://www.ey.com/ja_jp/insights/technology-risk/ai-service-provider-guidelines-explaination-part4-session-5",
+      "https://www.jdla.org/document/",
+      "https://www.pwc.com/jp/ja/knowledge/column/ai-governance/ai-guideline.html",
+      "https://note.com/vast_cosmos500/n/ne981909671c1",
+      "https://kentei-lab.com/answer/aipas/334",
+      "https://www.digitalservice.metro.tokyo.lg.jp/business/ai/ai-guideline",
+      "https://www8.cao.go.jp/cstp/ai/ai_guideline/ai_guideline.html",
+      "https://business.ntt-east.co.jp/content/cloudsolution/column-651.html",
+      "https://start-link.jp/hubspot-ai/ai/ai-governance/ai-usage-guideline-creation",
+      "https://www.mext.go.jp/a_menu/other/mext_02412.html",
+      "https://www.miracleave.co.jp/ai-guideline",
+      "https://www.dir.co.jp/report/research/law-research/law-others/20240510_024389.html",
+      "https://www.ey.com/ja_jp/insights/technology-risk/ai-service-provider-guidelines-explaination-part1-introduction-edition",
+      "https://www.ctc-g.co.jp/keys/blog/detail/ai-business-guidelines-key-points",
+      "https://qiita.com/safsa/items/18397ee7e66b192795f6"
+    ]
   },
   {
     "id": "ch7-007",
@@ -188,16 +334,16 @@
     "question": "AIプロジェクトにおいて、機械学習のバイアス問題への対処として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "バイアスはAIの学習過程では発生しないため、特別な対処は不要の概念"
+        "text": "機械学習のモデルを単純化し、データの量を減らすことが重要であるという技術"
       },
       {
         "text": "学習データの偏り（特定属性の過少代表など）を認識し、多様なデータを収集・評価し公平性を継続的に検証する"
       },
       {
-        "text": "バイアス問題はモデルのパラメータ数を増やすことで解決できるの概念"
+        "text": "データの収集は一度行えば十分で、再評価は不要であると考えられるという学習アプローチ"
       },
       {
-        "text": "バイアス問題は倫理委員会が後処理で解決するものであり、開発チームの課題ではない"
+        "text": "AIのバイアスを解消するためには、ユーザーの意見を無視することが必要である。"
       }
     ],
     "correctIndex": 1,
@@ -211,7 +357,27 @@
       "公平性",
       "AIプロジェクト"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://note.com/lionbridge/n/n117331f3e7a8",
+      "https://www.ibm.com/jp-ja/think/topics/shedding-light-on-ai-bias-with-real-world-examples",
+      "https://exploratory.io/note/kanaugust/AI-Ovn6qsG5wr/note_content/note.html",
+      "https://corp.omake.co.jp/ai-%E3%83%90%E3%82%A4%E3%82%A2%E3%82%B9%E5%AE%8C%E5%85%A8%E8%A7%A3%E8%AA%AC%EF%BC%81%E5%8E%9F%E5%9B%A0%E3%83%BB%E7%A8%AE%E9%A1%9E%E3%83%BB%E5%AF%BE%E7%AD%96%E3%81%A8%E9%81%A9%E5%88%87%E3%81%AAai/",
+      "https://appen.co.jp/blogs/data-bias/",
+      "https://techgym.jp/column/ai-bias/",
+      "https://www.ibm.com/jp-ja/think/topics/ai-bias",
+      "https://corp.automagica.ai/topics/post-126",
+      "https://www.transperfect.com/ja/blog/ainohaiasuwozuixiaoxiannisuru3tsunofangfa",
+      "https://www.sap.com/japan/resources/what-is-ai-bias",
+      "https://neural-opt.com/ai-bias-cases/",
+      "https://jp.linkedin.com/pulse/aware-ai-has-many-solutions-prone-biases-how-counter-ivo-ten-voorde-pgcbe?tl=ja",
+      "https://www.blueprism.com/japan/resources/blog/bias-fairness-ai/",
+      "https://www.solix.com/ja/blog/the-missing-piece-in-ai-governance-fighting-bias-in-bias-out/",
+      "https://www.sitecore.com/ja-jp/resources/insights/artificial-intelligence/how-can-ai-bias-be-mitigated",
+      "https://bryza.co.jp/column/6959.html",
+      "https://qiita.com/bezilla/items/2744e61d49a5c7099948",
+      "https://www.ultralytics.com/ja/blog/understanding-ai-bias-and-dataset-bias-in-vision-ai-systems"
+    ]
   },
   {
     "id": "ch7-008",
@@ -219,16 +385,16 @@
     "question": "AIプロジェクトの開発フェーズ（PoC→開発→運用）で、「運用」フェーズにおける特有の課題として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "ビジネス要件の明確化が最大の課題に関連する技術・理論の説明"
+        "text": "モデルの初期設定を見直す必要があるため、運用時における調整が求められる"
       },
       {
-        "text": "モデルの初期学習に使うデータの収集・クレンジングが課題の概念"
+        "text": "データの収集と前処理が不十分であるため、運用フェーズでの精度向上が難しい"
       },
       {
         "text": "時間経過に伴うデータ分布の変化（モデルドリフト）への継続的な対処と、システムの監視・再学習が"
       },
       {
-        "text": "ハードウェア（GPU・サーバー）の選定が最大の課題として定義される"
+        "text": "システムの導入後に発生するユーザーからのフィードバックを無視することが多い"
       }
     ],
     "correctIndex": 2,
@@ -243,7 +409,33 @@
       "運用",
       "モデルドリフト"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://toppa-jp.com/column-glossary/ai-development-process/",
+      "https://sakumaga.sakura.ad.jp/entry/ai-development/",
+      "https://www.tryeting.jp/column/6278/",
+      "https://dx-ai-trainingnavi.com/ai_kaihatsu_process/",
+      "https://www.brainpad.co.jp/doors/contents/about_ai_lecture8/",
+      "https://cloudpack.jp/column/devops/generative-ai-development-guide.html",
+      "https://jp.linkedin.com/pulse/ai-business-enablement-projects-key-phases-roles-shaila-pervin-phd-2ttjc?tl=ja",
+      "https://nexus-nt.co.jp/column/p1510/",
+      "https://ledge.ai/articles/ai-development-project",
+      "https://techsword.co.jp/column/deeplearning-operation-challenges",
+      "https://kaizentech.co.jp/column/1359/",
+      "https://nocoderi.co.jp/2025/04/05/%E3%80%90%E5%AE%8C%E5%85%A8%E6%94%BB%E7%95%A5%E3%80%91%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%E9%96%8B%E7%99%BA-%E9%81%8B%E7%94%A8%E3%83%95%E3%82%A7%E3%83%BC%E3%82%BA%E3%81%A7%E5%93%81/",
+      "https://note.com/sky8565/n/n9124bd21acce",
+      "https://avilen.co.jp/ai-knowledge-article/ai-project-process/",
+      "https://itpfdoc.hitachi.co.jp/manuals/3021/30213a0730/IMDS0010.HTM",
+      "https://www.y2s.net/service/cloudforefront/column/detail/202307014_8.html",
+      "https://solution.rounda.co.jp/post/9I7hXzma",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/00148/052200061/?P=2",
+      "https://www.ilect.net/post/note-mlops-2025",
+      "https://note.com/manabu_ikarashi/n/n853107e72b3c",
+      "https://dxnavi.com/system-introduction-flow/",
+      "https://www.ctc-g.co.jp/keys/blog/detail/2005-ctct-system-operation",
+      "https://www.totec-sangyo.jp/article/use/productioncontrolsystem_operational_phase_point",
+      "https://service.msols.com/blog/hint041"
+    ]
   },
   {
     "id": "ch7-009",
@@ -251,16 +443,16 @@
     "question": "AIプロジェクトにおける「目的の明確化」が重要な理由として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "AIを使わなくても解決できる課題を選定するためという特性を持つ技術的定義"
+        "text": "AIプロジェクトの成功には、チームメンバーのスキル向上が不可欠であるため、教育が重要である。"
       },
       {
         "text": "何をもって成功とするかの評価基準（KPI）を事前に定め、適切なモデル選定・データ収集・開発投資判断"
       },
       {
-        "text": "規制当局への申請書類を準備するために関する概念であり、G検定の重要用語のひとつ"
+        "text": "プロジェクトの進行には、最新の技術を導入することが最も重要であり、目的は二の次である。"
       },
       {
-        "text": "開発チームの人数を決定するためという性質を持つ概念・アプローチ"
+        "text": "AIの導入においては、コスト削減が最優先されるため、予算の確保が重要視されるべきである。"
       }
     ],
     "correctIndex": 1,
@@ -271,7 +463,22 @@
       "AIプロジェクト",
       "目的設定"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.i3design.jp/in-pocket/truth-of-ai-project/",
+      "https://rabiloo.co.jp/blog/ai-development-approach",
+      "https://note.com/kento_iida/n/n5b7424fa9454",
+      "https://www.fortinet.com/jp/resources/cyberglossary/ai-adoption",
+      "https://jp.linkedin.com/pulse/mastering-art-defining-clear-objectives-ai-projects-blueprint-cp-5rcbf?tl=ja",
+      "https://blog.ripla.co.jp/2025/05/26/ai%E9%96%8B%E7%99%BA%E3%81%AE%E7%9B%AE%E7%9A%84%E3%81%A8%E7%A8%AE%E9%A1%9E%EF%BC%9A%E6%88%90%E5%8A%9F%E3%81%AE%E9%8D%B5%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/",
+      "https://xtech.nikkei.com/atcl/nxt/column/18/03149/082700007/",
+      "https://www.brainpad.co.jp/doors/contents/about_ai_lecture8/",
+      "https://umarketing.co.jp/ai-glossary/ai-and-cause/",
+      "https://jp.linkedin.com/pulse/human-edge-ai-why-strategy-more-critical-than-ever-brunella-mori-6opre?tl=ja",
+      "https://biz.kddi.com/content/column/smartwork/what-is-ai-proscons/",
+      "https://japan.zdnet.com/article/35237443/",
+      "https://www.skillupai.com/blog/for-business/dx/"
+    ]
   },
   {
     "id": "ch7-010",
@@ -282,13 +489,13 @@
         "text": "コードの変更を自動テストし、新モデルを検証した後に本番環境へ自動デプロイするパイプラインを構築することで、"
       },
       {
-        "text": "モデルの学習データを継続的に削除する仕組みという特性を持つ技術的定義"
+        "text": "コードの変更を手動で確認し、モデルを評価した後にデプロイする手法であるという技術"
       },
       {
-        "text": "ユーザーのフィードバックだけを使ってモデルを継続学習する仕組みに相当する概念であり、試験で頻出の定義"
+        "text": "新しいモデルを手動でテストし、結果を確認した後に本番環境へ移行する技術である。"
       },
       {
-        "text": "複数のモデルを同時デプロイしてA/Bテストを行う仕組みだけを指すであることを特徴とする定義・概念"
+        "text": "データの変更を自動で検知し、モデルの再学習を行うプロセスにあたるという仕組み"
       }
     ],
     "correctIndex": 0,
@@ -302,7 +509,34 @@
       "CI/CD",
       "パイプライン"
     ],
-    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152"
+    "source_ref": "8a1f7483-8869-4721-a3cd-6e2c73ec3152",
+    "source_ref_supplements": [
+      "https://book.st-hakky.com/purpose/mlops-level2-implementation",
+      "https://qiita.com/555hamano/items/9ce365998031ff6ae5dc",
+      "https://ktksq.hatenablog.com/entry/mlops-cicd-ctcm",
+      "https://renue.co.jp/posts/mlops-toha-guide",
+      "https://www.databricks.com/jp/blog/what-is-mlops",
+      "https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ja",
+      "https://www.arsaga.jp/blog/dxcolumn-ci-continuous-integration-guide/",
+      "https://payproglobal.com/ja/%E5%9B%9E%E7%AD%94/%E7%B6%99%E7%B6%9A%E7%9A%84%E3%82%A4%E3%83%B3%E3%83%86%E3%82%B0%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E7%B6%99%E7%B6%9A%E7%9A%84%E3%83%87%E3%83%AA%E3%83%90%E3%83%AA%E3%83%BC%E3%81%A8%E3%81%AF/",
+      "https://about.gitlab.com/ja-jp/topics/ci-cd/benefits-continuous-integration/",
+      "https://docs.databricks.com/aws/ja/machine-learning/mlops/ci-cd-for-ml",
+      "https://docs.aws.amazon.com/ja_jp/whitepapers/latest/practicing-continuous-integration-continuous-delivery/what-is-continuous-integration-and-continuous-deliverydeployment.html",
+      "https://www.atlassian.com/ja/continuous-delivery/continuous-integration",
+      "https://introl.com/ja/blog/mlops-infrastructure-cicd-pipelines-model-training-deployment",
+      "https://qiita.com/shinkai_/items/13e76a5641d9ec9a41d2",
+      "https://www.skygroup.jp/media/article/2745/",
+      "https://www.databricks.com/jp/blog/2020/11/19/mlflow-model-registry-on-databricks-simplifies-mlops-with-ci-cd-features.html",
+      "https://renue.co.jp/posts/mlops-machine-learning-operations",
+      "https://learn.microsoft.com/ja-jp/azure/databricks/machine-learning/mlops/ci-cd-for-ml",
+      "https://aws.amazon.com/jp/blogs/news/brainpad-ml-cicd-pipeline/",
+      "https://www.mabl.com/ja/blog/what-is-cicd",
+      "https://jp.linkedin.com/pulse/from-basic-deployment-advanced-mlops-my-journey-cicd-ayapilla-cibre?tl=ja",
+      "https://www.progress.com/jp/blogs/podcast-continuous-integration-and-deployment",
+      "https://www.skillupai.com/blog/tech/about-mlops/",
+      "https://blog.ibextech.jp/posts/2025/mlops/",
+      "https://www.reddit.com/r/mlops/comments/1auli2z/a_beginners_guide_to_cicd_for_machine_learning/?tl=ja"
+    ]
   },
   {
     "id": "ch7-011",
@@ -313,13 +547,13 @@
         "text": "データマイニング・AIプロジェクトの標準的なプロセスモデルで、ビジネスの理解・データの"
       },
       {
-        "text": "ディープラーニング主な用途のの学習アルゴリズムの名称という手法・アプローチを指す"
+        "text": "データ分析の手法で、主に統計解析を用いる技術であるという技術"
       },
       {
-        "text": "クラウドサービス上でAIを構築するためのフレームワークに基づく処理・理論の枠組み"
+        "text": "データマイニングの一部で、機械学習のアルゴリズムを活用する手法である。"
       },
       {
-        "text": "AI倫理審査のための国際規格として知られる代表的な手法"
+        "text": "ビジネス戦略の策定において、SWOT分析を用いる手法にあたる。"
       }
     ],
     "correctIndex": 0,
@@ -333,7 +567,37 @@
       "AIプロジェクト",
       "開発プロセス"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://www.sap.com/japan/resources/what-is-data-mining",
+      "https://project.nikkeibp.co.jp/pc/atcl/19/06/21/00003/081600474/",
+      "https://data-viz-lab.com/data-mining",
+      "https://medium.com/marketingdatascience/kdd-semma-crisp-dm%E4%B9%8B%E6%AF%94%E8%BC%83-3d9166bceaf4",
+      "https://wired.jp/2019/04/09/exaggerated-promise-of-data-mining/",
+      "https://www.salesforce.com/jp/blog/jp-data-mining/",
+      "https://www.aeyescan.jp/blog/hallucination/",
+      "https://www.jstage.jst.go.jp/article/pacjpa/89/0/89_1138/_pdf/-char/ja",
+      "https://www.threads.com/@ai_and_agile/post/DXUlXlin78q/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%80%99%E9%BA%BC%E8%AA%AA%E5%91%A2%E5%9B%A0%E7%82%BA%E6%95%8F%E6%8D%B7%E7%9A%84%E7%B2%BE%E7%A5%9E%E6%98%AF%E9%80%8F%E6%98%8E%E6%AA%A2%E8%A6%96%E5%92%8C%E8%AA%BF%E9%81%A9%E8%80%8C-scrum-%E6%9B%B4%E6%98%AF%E5%B0%87%E9%80%99%E4%BA%9B%E5%AF%A6%E7%8F%BE%E7%9A%84%E6%A1%86%E6%9E%B6%E6%8A%8A%E5%8E%9F%E6%9C%AC%E4%B8%8D%E5%8F%AF%E6%8E%A7%E7%9A%84%E7%94%A2%E5%87%BA%E9%80%8F%E9%81%8E-sprint-%E9%80%99%E5%80%8B-timebox-%E9%A2%A8%E9%9A%AA%E6%8E%A7%E5%88%B6%E7%9A%84%E6%99%82%E9%96%93%E7%9B%92-%E5%B0%87",
+      "https://juejin.cn/post/7033669016057184264",
+      "https://note.com/hima2b4/n/nfbfa3cda49e1",
+      "https://blog.51cto.com/u_15060458/2673333",
+      "https://www.reddit.com/r/datascience/comments/wkl026/crispdm_does_anyone_use_it/?tl=zh-hant",
+      "https://it-trend.jp/data_mining/article/explain",
+      "https://zhuanlan.zhihu.com/p/32014381",
+      "https://blog.csdn.net/weixin_43899514/article/details/119026243",
+      "https://www.msiism.jp/article/genai-and-textmining.html",
+      "https://www.yrl.com/column/ai-hallucination.html",
+      "https://www.technologyreview.jp/s/2800/data-mining-reveals-the-crucial-factors-that-determine-when-people-make-blunders/",
+      "https://www.ibm.com/docs/ja/SSEPGG_11.1.0/com.ibm.im.model.doc/c_cost_matrix.html",
+      "https://cloud.baidu.com/article/3716717",
+      "https://www.reddit.com/r/datascience/comments/zj1i5g/in_which_data_science_jobscareers_is_the/?tl=zh-hant",
+      "https://www.hitachi-solutions-create.co.jp/column/technology/hallucination.html",
+      "https://www.sbbit.jp/article/fj/125749",
+      "https://jp.linkedin.com/pulse/6-biggest-mistakes-tank-ai-projects-annie-cushing-dsmfe?tl=ja",
+      "https://biz.kddi.com/content/column/smb/avoiding-hallucinations/",
+      "https://wired.jp/article/chatbot-llm-self-awareness/",
+      "https://news.yahoo.co.jp/expert/articles/e53f68bdeb69b755638d3e9b1981a4d78f98b0e2"
+    ]
   },
   {
     "id": "ch7-012",
@@ -344,13 +608,13 @@
         "text": "学習済みモデルのバージョン・メタデータ・系統を一元管理するMLOpsの仕組み"
       },
       {
-        "text": "AIモデルを社外に販売するためのマーケットプレイス"
+        "text": "モデルのトレーニングデータを管理する手法であるという技術"
       },
       {
-        "text": "AIモデルのライセンスを登録する政府機関のデータベース"
+        "text": "モデルのパフォーマンスを評価するための指標であるである"
       },
       {
-        "text": "モデルのハイパーパラメータを自動探索するツールの概念"
+        "text": "データの前処理を自動化するための技術にあたる・仕組み"
       }
     ],
     "correctIndex": 0,
@@ -364,7 +628,39 @@
       "モデルレジストリ",
       "MLOps"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://chalk.ai/blog/7-common-mlops-challenges",
+      "https://www.hopsworks.ai/post/the-10-fallacies-of-mlops",
+      "https://zhuanlan.zhihu.com/p/1961474317041767731",
+      "https://zhuanlan.zhihu.com/p/1953864893582251500",
+      "https://www.fiddler.ai/blog/steer-clear-of-these-7-mlops-myths-to-avoid-making-an-ml-oops",
+      "https://www.threads.com/@danieltsai04/post/DIttiSuy__f/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%B3%BB%E7%B5%B1-%E5%82%B3%E7%B5%B1%E8%BB%9F%E9%AB%94%E7%B3%BB%E7%B5%B1-%E4%B8%8D%E8%83%BD%E7%B0%A1%E5%96%AE%E5%9C%B0%E5%B0%87devops%E6%96%B9%E6%B3%95%E7%85%A7%E6%90%AC%E9%81%8E%E4%BE%86ml%E7%B3%BB%E7%B5%B1%E9%AB%98%E5%BA%A6%E4%BE%9D%E8%B3%B4%E6%95%B8%E6%93%9A%E5%93%81%E8%B3%AA%E5%92%8C%E7%89%B9%E5%BE%B5%E5%B7%A5%E7%A8%8B%E5%8D%B3%E4%BD%BF%E6%98%AF%E5%B0%8F%E6%94%B9%E5%8B%95%E5%A6%82python%E7%89%88%E6%9C%AC%E5%8D%87%E7%B4%9A%E6%88%96%E6%95%B8%E6%93%9A%E6%A0%BC%E5%BC%8F%E8%AE%8A%E6%9B%B4%E4%B9%9F%E5%8F%AF%E8%83%BD%E5%B0%8E%E8%87%B4%E6%A8%A1%E5%9E%8B",
+      "https://ithelp.ithome.com.tw/articles/10333928",
+      "https://zenn.dev/churadata/articles/f10d44ec474ac6",
+      "https://wandb.ai/site/ja/articles/what-is-an-ml-model-registry-ja/",
+      "https://note.com/aws_shikaku/n/n14a355fe96aa",
+      "https://qiita.com/taka_yayoi/items/2bf6e6a073456dce4fa1",
+      "https://ai-reboot.io/glossary/model-registry",
+      "https://plus-web3.com/media/latestnews_1000_5203/",
+      "https://www.reddit.com/r/dataengineering/comments/1fpsio5/is_mlops_is_the_right_next_step_for_a_de/?tl=zh-hant",
+      "https://blog.csdn.net/qq_51524329/article/details/141530280",
+      "https://www.reddit.com/r/mlops/comments/v30xw5/the_mlops_chasm_the_definition_of_end_to_end/?tl=zh-hant",
+      "https://jp.linkedin.com/pulse/understanding-addressing-inaccurate-misleading-outputs-death-zyure?tl=ja",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10296466120",
+      "https://qiita.com/tomotomo_1D/items/752ecace6b6fb42f5daa",
+      "https://www.rubrik.com/ja/insights/ai-hallucination",
+      "https://www.yrl.com/column/ai-hallucination.html",
+      "https://business.nikkei.com/atcl/gen/19/00461/120500532/",
+      "https://docs.databricks.com/gcp/ja/mlflow/",
+      "https://repost.aws/ja/knowledge-center/sagemaker-model-registry-issues",
+      "https://qiita.com/taka_yayoi/items/6068b9bb4eb05ab5ddbd",
+      "https://www.aeyescan.jp/blog/hallucination/",
+      "https://cysec148.hatenablog.com/entry/2025/03/20/171724",
+      "https://nexusai.jp/ai-hallucination/",
+      "https://www.eesel.ai/ja/blog/can-ai-make-mistakes",
+      "https://blog.g-gen.co.jp/entry/clearing-up-misconceptions-about-generative-ai"
+    ]
   },
   {
     "id": "ch7-013",
@@ -375,13 +671,13 @@
         "text": "データドリフトは入力データの統計的分布の変化、コンセプトドリフトは入力データと予測対象（正解）の関係性そのものの変化を指す"
       },
       {
-        "text": "データドリフトとコンセプトドリフトは同じ現象を指す別名であるという特性を持つ技術的定義"
+        "text": "データドリフトはモデルの性能低下を指し、コンセプトドリフトはデータの質を示すものである。"
       },
       {
-        "text": "データドリフトはモデルの過学習、コンセプトドリフトはモデルの未学習を指すの概念"
+        "text": "データドリフトはデータの変化を示し、コンセプトドリフトはモデルの再学習を必要とするものである。"
       },
       {
-        "text": "データドリフトはハードウェアの劣化、コンセプトドリフトはソフトウェアのバグを指す"
+        "text": "データドリフトは異常検知手法の一つであり、コンセプトドリフトはデータ分析の基礎技術である。"
       }
     ],
     "correctIndex": 0,
@@ -397,7 +693,22 @@
       "コンセプトドリフト",
       "モデルドリフト"
     ],
-    "source_ref": "d05a5803-3c45-4c70-8e00-d4f77b0e8496"
+    "source_ref": "d05a5803-3c45-4c70-8e00-d4f77b0e8496",
+    "source_ref_supplements": [
+      "https://tech.datafluct.com/entry/20220323/1648028520",
+      "https://qiita93.rssing.com/chan-76928633/article2197.html",
+      "https://qiita.com/Seine_A_Shintani/items/e0113b2495be827efdd3",
+      "https://corpy.co.jp/jp/news/YAFbiv5T",
+      "https://io.traffine.com/ja/articles/data-drift-and-concept-drift",
+      "https://ai-compass.weeybrid.co.jp/using/concept-drift-understanding-prediction-degradation/",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2202/21/news033.html",
+      "https://jp.linkedin.com/pulse/whats-drifting-your-process-data-concept-parthprasoon-sinha?tl=ja",
+      "https://www.reddit.com/r/MLQuestions/comments/1ergdkw/data_drift_and_concept_drift/?tl=ja",
+      "https://qiita.com/obx_y_ueno/items/c1d974919d3774765c43",
+      "https://www.ibm.com/jp-ja/think/topics/model-drift",
+      "https://www.omron.com/jp/ja/technology/omrontechnics/2024/20240827-kawanoue.html",
+      "https://yukinoi.hatenablog.com/entry/concept_drift"
+    ]
   },
   {
     "id": "ch7-014",
@@ -408,13 +719,13 @@
         "text": "実ユーザーの一部に新旧モデルを振り分けて比較し、新モデルが旧モデルより優れた業務成果を出すか統計的に検証するため"
       },
       {
-        "text": "AとBという2社のAIベンダーの契約条件を比較するために基づく処理・理論の枠組み"
+        "text": "新旧モデルの比較を通じて、ユーザーの好みを調査し、製品のデザインを改善する手法である。"
       },
       {
-        "text": "AIモデルのソースコードに含まれるバグを検出するために関連する技術・理論の説明"
+        "text": "AIシステムの運用において、全ユーザーに新モデルを適用し、効果を測定する手法にあたる。"
       },
       {
-        "text": "データセンターのAサーバーとBサーバーの負荷を均等化するためとして定義される"
+        "text": "異なるアルゴリズムを用いて、データの処理速度を向上させるための手法であるという"
       }
     ],
     "correctIndex": 0,
@@ -428,7 +739,36 @@
       "モデル評価",
       "AI運用"
     ],
-    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608"
+    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608",
+    "source_ref_supplements": [
+      "https://umarketing.co.jp/ai-glossary/ab/",
+      "https://wacul-ai.com/blog/site-improvement/method/ab-test/",
+      "https://kaizenplatform.com/contents/ab-test",
+      "https://media-radar.jp/contents/meditsubu/abtest/",
+      "https://kyozon.net/list/ab-test/",
+      "https://blog.nijibox.jp/article/abtest/",
+      "https://dlpo.jp/ab-test/ab-test6.php",
+      "https://data.wingarc.com/ab-test-17593",
+      "https://mazrica.com/product/senseslab/marketing/about-ab-test",
+      "https://sienca.jp/blog/cro/abtest-tools/",
+      "https://www.infra-manual.com/ai-azureai900-practicequestions2/",
+      "https://developers.cyberagent.co.jp/blog/archives/62375/",
+      "https://qiita.com/yshimizu/items/6ad2bdd8eaabfcf40eb9",
+      "https://be-marke.jp/articles/knowhow-abtest",
+      "https://nulmil.net/whats-ab-test/",
+      "https://seojapan.com/column/10-statistics-traps-in-a-b-testing-the-ultimate-guide-for-optimizers/",
+      "https://cogmo.iact.co.jp/blog/not-stick-to-accuracy",
+      "https://contentsquare.com/ja-ja/guides/ab-testing/mistakes/",
+      "https://note.com/hima2b4/n/nfbfa3cda49e1",
+      "https://note.com/maseco2017/n/n2f41f0887d19",
+      "https://umarketing.co.jp/ai-glossary/a-b-test/",
+      "https://gigazine.net/news/20240813-ab-testing-mistakes/",
+      "https://jp.linkedin.com/pulse/when-ai-fails-nobody-knows-until-its-too-late-testfortqa-7yn2c?tl=ja",
+      "https://syu-m-5151.hatenablog.com/entry/2025/12/16/102227",
+      "https://speakerdeck.com/recruitengineers/abtest-2023",
+      "https://www.yrl.com/column/ai-hallucination.html",
+      "https://finance.biggo.jp/news/202510150118_Why_AI_Bugs_Are_Different"
+    ]
   },
   {
     "id": "ch7-015",
@@ -439,13 +779,13 @@
         "text": "AIなどのデジタル技術を活用してビジネスモデルや組織文化そのものを変革し、競争優位性を確立すること"
       },
       {
-        "text": "既存業務をそのままコンピュータで置き換えること（デジタル化）の概念"
+        "text": "デジタル技術を用いて業務の効率化を図る手法であるとして位置づけられる技術"
       },
       {
-        "text": "企業のデータをすべてクラウドに移行することに関連する技術・理論の説明"
+        "text": "AIを活用して顧客データを分析することにあたるとして機能する技術的なシステム"
       },
       {
-        "text": "DX認定制度に申請して政府から認証を取得することとして定義される"
+        "text": "新しい製品を開発するためのマーケティング手法であるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -458,7 +798,35 @@
       "DX",
       "デジタルトランスフォーメーション"
     ],
-    "source_ref": "3b31102f-5c51-46d7-9275-428f2e0e1b65"
+    "source_ref": "3b31102f-5c51-46d7-9275-428f2e0e1b65",
+    "source_ref_supplements": [
+      "https://ip-study.net/it-utilization-trends-qa/",
+      "https://solution.lmi.ne.jp/column/c412",
+      "https://www.it-seibishi.or.jp/3208/",
+      "https://shikumika.com/column/dx-point/",
+      "http://www.sitc.ac/yogo/itpass_016.html",
+      "https://culture-goods.com/blogs/corpculture/dx-corporate-culture",
+      "https://www.smartmat.io/column/business_efficiency/8033",
+      "https://www.itpassportsiken.com/kakomon/06_haru/q29.html",
+      "https://foraz.jp/learn/itpassport-strategy-r5-q11/",
+      "https://standard-dx.com/post_blog/dx_soshikihenkaku",
+      "https://slack.com/intl/ja-jp/blog/collaboration/four-tips-build-digital-first-culture",
+      "https://jp.linkedin.com/pulse/implementing-ai-its-technology-business-steve-carey-ma-cg-cminstd--yen1c?tl=ja",
+      "https://jp.linkedin.com/pulse/how-digital-transformation-affects-organizational-culture-a0fvf?tl=ja",
+      "https://www.microsoft.com/ja-jp/area/biz/smb/column-what-is-dx",
+      "https://www.nri.com/jp/service/solution/g_scm_s_column_200704.html",
+      "https://wa3.i-3-i.info/examination_ip2024h291.html",
+      "https://www.nomura-system.co.jp/contents/dx-sosiki-henkaku/",
+      "https://exawizards.com/column/article/dx/successful-for-dx/",
+      "https://business.nikkei.com/atcl/gen/19/00081/022600924/",
+      "https://www.garage.co.jp/portal/43537/",
+      "https://a-x.inc/blog/ai-business/",
+      "https://infolounge.smbcc-businessclub.jp/articles/1680",
+      "https://usknet.com/dxgo/contents/dx-trend/how-to-utilize-ai-in-business/",
+      "https://solution.toppan.co.jp/bx/contents/ai_contents02.html",
+      "https://www.nice.com/ja/glossary/what-is-ai-for-business",
+      "https://www.walkme.com/blog/jp/12-ai-business-ideas/"
+    ]
   },
   {
     "id": "ch7-016",
@@ -469,13 +837,13 @@
         "text": "学習データに対して人手で正解ラベル（カテゴリ・座標・テキストなど）を付与する作業"
       },
       {
-        "text": "AIが自動的に行う特徴量の選択処理に基づく処理・理論の枠組み"
+        "text": "教師なし学習ではデータを分類する手法であるという技術的な手法"
       },
       {
-        "text": "モデルのハイパーパラメータを調整する作業として定義される"
+        "text": "アノテーションはデータの収集を指す作業にあたるという学習アプローチ"
       },
       {
-        "text": "モデルの推論結果を本番環境に適用する作業として定義される"
+        "text": "教師データはAIの評価を行うための基準であるという仕組み"
       }
     ],
     "correctIndex": 0,
@@ -489,7 +857,33 @@
       "教師あり学習",
       "データ品質"
     ],
-    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69"
+    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69",
+    "source_ref_supplements": [
+      "https://fastlabel.ai/blog/ai-training",
+      "https://fastlabel.ai/blog/machine-learning-annotation",
+      "https://www.science.co.jp/annotation_blog/30335/",
+      "https://gri.jp/media/entry/7245",
+      "https://www.dir.co.jp/world/entry/solution/annotation",
+      "https://www.solution.bell24.co.jp/ja/useful/column/00163_service/",
+      "https://qiita.com/karaage0703/items/07157a0406c757ef30b8",
+      "https://systemk.ai/blog/ai-knowledge/what-annotation.php",
+      "https://data-viz-lab.com/annotation",
+      "https://service.shiftinc.jp/column/14635/",
+      "https://industlink.jp/news/ai05/",
+      "https://www.and-fun.com/4/",
+      "https://annotation.brycen.co.jp/column/detail17",
+      "https://www.ultralytics.com/ja/blog/exploring-supervised-vs-unsupervised-learning-in-computer-vision",
+      "https://www.science.co.jp/annotation_blog/30313/",
+      "https://monitor.adish.co.jp/blog/ai-annotation-process",
+      "https://itpass.kakomonn.com/questions/77194",
+      "https://prebell.so-net.ne.jp/tips/pre_24011601.html",
+      "https://aismiley.co.jp/ai_news/what-is-annotation-that-is-often-heard-in-ai/",
+      "https://www.aspicjapan.org/asu/article/16061",
+      "https://www.cybertech.co.jp/ito/article/column/c20210719.php",
+      "https://appen.co.jp/blogs/data-annotation-tool",
+      "https://staff.persol-xtech.co.jp/hatalabo/it_engineer/690.html",
+      "https://zenn.dev/turing_motors/articles/4247435fcc8ace"
+    ]
   },
   {
     "id": "ch7-017",
@@ -500,13 +894,13 @@
         "text": "収集したデータから誤記・重複・欠損値・外れ値などの不整合を取り除き、分析・学習に適した状態に整える作業"
       },
       {
-        "text": "個人情報を含むデータを法律に従って削除する作業という手法・アプローチを指す"
+        "text": "データ分析の結果を視覚化する手法であり、データの可視化を行う技術である。"
       },
       {
-        "text": "モデルの学習後に余分なパラメータを削除するプルーニング処理の概念"
+        "text": "データの収集から分析までのプロセス全体を指し、特にデータの保存方法に焦点を当てる。"
       },
       {
-        "text": "データベースのキャッシュをクリアする運用作業として機械学習分野で広く認識されている"
+        "text": "データの整合性を保つための手法であり、主にデータの暗号化やセキュリティ対策にあたる。"
       }
     ],
     "correctIndex": 0,
@@ -519,7 +913,34 @@
       "データクレンジング",
       "データ品質"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://www.ines-solutions.com/industry/data-cleansing",
+      "https://business.ntt-east.co.jp/content/cloudsolution/column-357.html",
+      "https://cysec148.hatenablog.com/entry/2025/03/20/171928",
+      "https://www.ever-rise.co.jp/dx-blog/data-cleansing-name-identification/",
+      "https://www.salesforce.com/jp/blog/jp-what-is-data-cleaning/",
+      "https://www.tableau.com/ja-jp/learn/articles/data-cleansing",
+      "https://www.nipponsoft.co.jp/blog/database/cleansing-meaning/",
+      "https://www.shanon.co.jp/blog/entry/ma_data_cleansing/",
+      "https://www.domo.com/jp/glossary/what-is-data-cleaning",
+      "https://usonar.co.jp/blog/5927.html",
+      "https://www.fmdb.co.jp/column/1665/",
+      "https://jp.dotdata.com/blog/data-cleansing-ai-automation/",
+      "https://www.zenrin-datacom.net/solution/blog/datacleansing-commentary",
+      "https://data-viz-lab.com/dataclensing",
+      "https://usonar.co.jp/blog/5917.html",
+      "https://www.talend.com/jp/resources/what-is-data-cleansing/",
+      "https://aws.amazon.com/jp/what-is/data-cleansing/",
+      "https://jp.sansan.com/media/data-cleansing/",
+      "https://otafuku-lab.co/aizine/data-crensing0908/",
+      "https://www.zoho.com/jp/analytics/glossary/data-cleaning.html",
+      "https://www.atena.co.jp/column/24",
+      "https://note.com/atstream/n/na4971a88118f",
+      "https://jp.linkedin.com/pulse/clean-data-clear-results-avoiding-common-cleaning-mistakes-wagh?tl=ja",
+      "https://jp.sansan.com/media/data-cleaning/",
+      "https://www.ntttp-db.com/service/datacleansing-2.html"
+    ]
   },
   {
     "id": "ch7-018",
@@ -527,16 +948,16 @@
     "question": "エッジAI（Edge AI）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "クラウドの中央サーバーでのみ推論処理を行うAIシステム"
+        "text": "クラウド上でデータを処理するAI技術であるという技術"
       },
       {
-        "text": "AIモデルの学習をエッジサーバーだけで完結させる手法"
+        "text": "エッジデバイスでの学習を行うAI手法にあたるという学習アプローチ"
       },
       {
         "text": "スマートフォン・IoT機器などの端末（エッジ）側で推論処理を行うAI技術"
       },
       {
-        "text": "グラフのエッジ（辺）情報を使って学習するグラフニューラルネットワーク"
+        "text": "データを収集するためのセンサー技術であるという仕組み"
       }
     ],
     "correctIndex": 2,
@@ -550,7 +971,30 @@
       "組み込みAI",
       "モデル軽量化"
     ],
-    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69"
+    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69",
+    "source_ref_supplements": [
+      "https://www.hitachi-solutions-create.co.jp/column/technology/edge-ai.html",
+      "https://www.silex.jp/technology/edge-ai",
+      "https://www.softbank.jp/business/content/blog/202603/what-is-edge-ai",
+      "https://www.fsi-embedded.jp/solutions/ai_dev/what-is-edgeAI/",
+      "https://www.ibm.com/jp-ja/think/topics/edge-ai",
+      "https://www.redhat.com/ja/topics/edge-computing/what-is-edge-ai",
+      "https://www.aist.go.jp/aist_j/magazine/20250122.html",
+      "https://www.scorer.jp/blog/edge-ai-and-cloud-ai",
+      "https://promo.digital.ricoh.com/ai/column/detail031/",
+      "https://jp.micron.com/about/blog/applications/ai/5-things-you-need-to-know-about-ai-at-the-edge",
+      "https://www.nec-solutioninnovators.co.jp/sl/emb/column/06/index.html",
+      "https://biz.moneyforward.com/ai/basic/649/",
+      "https://www.skillupai.com/blog/ai-knowledge/ai-exercise-example/",
+      "https://a-x.inc/blog/ai-types/",
+      "https://laboro.ai/activity/column/laboro/aitechnology",
+      "https://www.talend.com/jp/resources/what-is-artificial-intelligence/",
+      "https://www.hus.ac.jp/hokukadai-jiten/detail/b43442b8f68a655570645d80b9e4dccfafaa8990-17165/",
+      "https://www.sas.com/ja_jp/insights/articles/analytics/five-ai-technologies.html",
+      "https://biz.kddi.com/content/column/smartwork/what-is-ai/",
+      "https://promo.digital.ricoh.com/chatbot/column/detail103/",
+      "https://ja.wix.com/blog/2024/02/types-of-ai/"
+    ]
   },
   {
     "id": "ch7-019",
@@ -558,16 +1002,16 @@
     "question": "フェデレーテッドラーニング（連合学習）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "複数の組織が生データを一箇所に集めて共同で学習する手法に関する概念であり、G検定の重要用語のひとつ"
+        "text": "全てのデータを中央サーバーに集めて学習する手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "連邦政府が管理するAI学習用の公開データセットを利用する手法として定義される"
+        "text": "各端末で学習したモデルを直接共有し、データを移動させる技術であるという学習アプローチ"
       },
       {
         "text": "各端末で個別に学習したモデルの更新値（勾配）のみをサーバーに送り、生データを集めることなくモデルを統合・改善する手法"
       },
       {
-        "text": "複数の機械学習モデルを多数決で組み合わせるアンサンブル手法に基づく学習・推論の仕組み"
+        "text": "データを暗号化して共有することでプライバシーを守る手法にあたるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -581,7 +1025,31 @@
       "連合学習",
       "プライバシー保護"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://www.murc.jp/library/terms/ra/federated-learning/",
+      "https://nuco.co.jp/blog/article/_ImvdsWf",
+      "https://magazine.techcareer.jp/freelance/24719/",
+      "https://truestar-cg.co.jp/blog/what_is_federated-learning_feature/",
+      "https://www.scaleoutsystems.com/what-is-federated-learning",
+      "https://www.nri.com/jp/knowledge/glossary/federated_learning.html",
+      "https://en.wikipedia.org/wiki/Federated_learning",
+      "https://www.ibm.com/think/topics/federated-learning",
+      "https://www.researchgate.net/figure/Characteristics-of-federated-learning_tbl2_343150330",
+      "https://cloud.google.com/discover/what-is-federated-learning?hl=ja",
+      "https://eaglys.co.jp/resource/columns/secure-computing/encryptfederatedlearning",
+      "https://arxiv.org/html/2502.05273v1",
+      "https://medium.com/@bibhushansaakha/federated-learning-a-new-way-of-machine-learning-cb18d5f635c9",
+      "https://www.msiism.jp/article/federated-learning.html",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/federated-learning/",
+      "https://www.ibm.com/jp-ja/think/topics/federated-learning",
+      "https://note.com/nft_tanio/n/n1d4168c0994e",
+      "https://www.splunk.com/en_us/blog/learn/federated-ai.html",
+      "https://openmined.org/blog/federated-learning-types/",
+      "https://jpn.nec.com/techrep/journal/g23/n02/230215.html",
+      "https://qiita.com/m0r1take/items/5aeceae2e840bd99d68b",
+      "https://note.com/rosso_blog/n/n131bfc5229f4"
+    ]
   },
   {
     "id": "ch7-020",
@@ -620,16 +1088,16 @@
     "question": "AI人材育成・リスキリングの文脈でG検定が位置づけられる役割として正しいものはどれか。",
     "choices": [
       {
-        "text": "AIエンジニアがE資格取得の前に受ける実装技術試験という考え方に基づく手法"
+        "text": "組織のAI導入を進めるために、技術者の育成を重視する指標であるという技術的な手法"
       },
       {
-        "text": "政府が義務付けるAI安全管理者の資格試験であることを特徴とする定義・概念"
+        "text": "全社員がAIの基礎知識を持つことを示すための評価基準に過ぎないという学習アプローチ"
       },
       {
         "text": "組織全体のDX推進に向けて、非技術系を含む全社員がAIの共通言語を習得したことを証明するデジタルリテラシー標準指標"
       },
       {
-        "text": "G検定はリスキリングとは無関係で、純粋な技術資格であるとして知られる代表的な手法"
+        "text": "AI技術の導入を促進するために、特定の職種に限定した教育プログラムであるという"
       }
     ],
     "correctIndex": 2,
@@ -644,7 +1112,19 @@
       "リスキリング",
       "DX"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://note.com/vast_cosmos500/n/n46800613a1b4",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://nfox.biz/calendar/?category=001010&IsClear=1",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://note.com/vast_cosmos500/n/n5367745fb613"
+    ]
   },
   {
     "id": "ch7-022",
@@ -652,16 +1132,16 @@
     "question": "AIプロジェクトにおける「データ品質」の重要性を表す格言として知られる「Garbage In, Garbage Out（GIGO）」が意味することとして正しいものはどれか。",
     "choices": [
       {
-        "text": "AIシステムの消費電力（Garbage Energy）を削減する必要がある"
+        "text": "データの量が多いほど、AIの性能が向上することを示すものであるという技術"
       },
       {
-        "text": "AIが生成した不要なデータ（ゴミ）を定期的に削除することが重要"
+        "text": "データの正確性が高い場合、AIは必ず成功するという意味であるという学習アプローチ"
       },
       {
         "text": "学習データの品質が低い（ゴミ）と、どれほど高精度なモデルを使っても出力（予測結果）の品質も低くなる"
       },
       {
-        "text": "ゴミ分別AIの社会実装に向けた取り組みの重要性に基づく処理・理論の枠組み"
+        "text": "データ分析において、視覚化が重要であることを示すものであるという仕組み"
       }
     ],
     "correctIndex": 2,
@@ -675,7 +1155,38 @@
       "GIGO",
       "AIプロジェクト"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://note.com/hon_no_mushi5141/n/n4d236d9c5c30",
+      "https://ximix.niandc.co.jp/column/what-is-garbage-in-garbage-out",
+      "https://ejje.weblio.jp/content/garbage+in%2C+garbage+out.",
+      "https://ejje.weblio.jp/content/garbage+in%2Cgarbage+out",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://ja.wikipedia.org/wiki/Garbage_in,_garbage_out",
+      "https://www.ibm.com/jp-ja/think/topics/ai-data-quality",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://toukeigaku-jouhou.info/2018/04/13/garbage-in-garbage-out/",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2010/21/news027.html",
+      "https://ameblo.jp/yukikoyuasa/entry-11266103125.html",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://renue.co.jp/posts/data-quality-management-cleansing-governance-ai-enterprise-guide",
+      "https://1-byte.com/blog/ai/ai-data-quality-management",
+      "https://jp.linkedin.com/pulse/data-quality-ai-why-clean-drives-accurate-results-rejoicehubllp-rsvrc?tl=ja",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://www.nri-secure.co.jp/blog/ai-quality",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://fastlabel.ai/blog/datacentric-ai",
+      "https://www.nttdata.com/jp/ja/trends/data-insight/2025/1016/",
+      "https://www.tmj.jp/column/column_30013/",
+      "https://www.ntt.com/bizon/d/00710.html",
+      "https://www.lion-ai.co.jp/articles/ai-quality-control",
+      "https://agenda-note.com/brands/detail/id=3076",
+      "https://www.pieronline.jp/content/article/0386-3603/50100/1907",
+      "https://note.com/smallsurestep/n/n33b4b4a3a8e5"
+    ]
   },
   {
     "id": "ch7-023",
@@ -683,16 +1194,16 @@
     "question": "ノーコードAI（No-Code AI）ツールの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "AIのソースコードを公開しないクローズドソースのAIシステム"
+        "text": "プログラミング言語を学ぶためのツールであるとして位置づけられる技術"
       },
       {
-        "text": "コーディング試験（コーディングテスト）を使わないAI採用システム"
+        "text": "AIモデルの構築に特化したプログラミング手法であるという学習アプローチ"
       },
       {
         "text": "プログラミングコードを書かずにGUI操作だけでAIモデルの構築・学習・デプロイができるツール"
       },
       {
-        "text": "AIが自動的にコードを生成するコード補完ツールとして定義される"
+        "text": "データ分析を行うための統計解析手法にあたるを実現するアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -707,7 +1218,26 @@
       "AI民主化",
       "DX"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://zenn.dev/rakushaking/articles/bf54b07247c6ee",
+      "https://pepacomi.com/efficiency/no-code-ai/",
+      "https://www.agens.cloud/post/ai-agent-no-code",
+      "https://www.reddit.com/r/Entrepreneur/comments/1mr8if4/my_experience_with_nocode_ai_tools_building_a/?tl=ja",
+      "https://news.yahoo.co.jp/articles/f269575713c97e7ef87d1b951ffbaeb02bc8b480",
+      "https://nocoderi.co.jp/2025/04/03/ai%E3%82%A8%E3%83%BC%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%81%AE%E8%AA%A4%E4%BD%9C%E5%8B%95%E3%83%AA%E3%82%B9%E3%82%AF%E3%81%A8%E3%81%AF%EF%BC%9F%E5%8E%9F%E5%9B%A0%E3%83%BB%E5%AF%BE%E7%AD%96%E3%83%BB/",
+      "https://jp.linkedin.com/pulse/80-illusion-how-ai-hallucinations-demolished-my-no-code-butt-jeatf?tl=ja",
+      "https://note.com/emilyaiarts/n/neabadf76c3c6",
+      "https://qiita.com/shimada_slj/items/e84e88004b4fd7bc511c",
+      "https://note.com/minna_no_ai/n/n78059cfb2eba",
+      "https://www.hitachi-solutions-create.co.jp/column/technology/hallucination.html",
+      "https://zenn.dev/miyan/articles/ai-driven-dev-failure-patterns-catalog",
+      "https://www.sbbit.jp/article/cont1/181165",
+      "https://ai-keiei.shift-ai.co.jp/nocode-tool-demerits/",
+      "https://note.com/aoto0328/n/n9f5086f01501",
+      "https://www.reddit.com/r/nocode/comments/1rk7s1n/the_dirty_secret_about_ai_built_apps_is_they_all/?tl=ja",
+      "https://www.nikkei.com/article/DGXZQOGN0201I0S6A400C2000000/"
+    ]
   },
   {
     "id": "ch7-024",
@@ -715,13 +1245,13 @@
     "question": "AIガバナンスの説明として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "AIモデルのハイパーパラメータを管理するMLOpsの技術的仕組みという枠組みで理解される処理機構"
+        "text": "AIガバナンスは、AIの開発におけるコスト削減を目的とした手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "政府がAI開発者に課す技術的な安全基準の規格名に関する概念であり、G検定の重要用語のひとつ"
+        "text": "AIガバナンスは、AIの利用における倫理的な側面を無視した運用方法を示すものであるという学習アプローチ"
       },
       {
-        "text": "AI関連企業の株主が経営者を監視する仕組み（コーポレートガバナンス）として定義される技術的概念・考え方"
+        "text": "AIガバナンスは、情報セキュリティの強化を目的とした技術的な対策にあたるを実現するアルゴリズム"
       },
       {
         "text": "組織がAIのリスクを適切に管理し、透明性・公平性・説明責任を確保しながらAIを責任ある形で開発・運用するための方針・体制・プロセスの総体"
@@ -737,7 +1267,38 @@
       "AIガバナンス",
       "AI倫理"
     ],
-    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608"
+    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608",
+    "source_ref_supplements": [
+      "https://www.databricks.com/blog/ai-governance-best-practices-how-build-responsible-and-effective-ai-programs",
+      "https://www.diligent.com/resources/blog/ai-governance",
+      "https://www.rubrik.com/insights/ai-governance",
+      "https://www.databricks.com/blog/what-is-ai-governance",
+      "https://www.informatica.com/resources/articles/ai-governance-explained.html",
+      "https://shikaku-expert.com/g-test/quiz/ai-governance/",
+      "https://ipass.shikaku-king.jp/past-tests/6/questions/482/",
+      "https://passdojo.jp/ipa/prodigi/management/mock/questions/28/",
+      "https://onlinedegrees.sandiego.edu/ai-governance/",
+      "https://www.itpassportsiken.com/kakomon/28_aki/q51.html",
+      "https://bigid.com/blog/what-is-ai-governance/",
+      "https://www.ibm.com/think/topics/ai-governance",
+      "https://michitomo2019.com/it-passport-r07-qs-28/",
+      "https://ip-study.net/ai-guidelines-principles-qa/",
+      "https://www.knostic.ai/blog/ai-governance-best-practices",
+      "https://infosci.arizona.edu/news/best-practices-for-ai-governance-plan",
+      "https://carnegiecouncil.org/explore-engage/key-terms/ai-governance",
+      "https://www.mirantis.com/blog/ai-governance-best-practices-and-guide/",
+      "https://www.paloaltonetworks.com/cyberpedia/ai-governance",
+      "https://college.coeteco.jp/itpassport/kakomon/list/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD",
+      "https://cycode.com/blog/what-is-ai-governance/",
+      "https://www.amu.apus.edu/area-of-study/information-technology/resources/what-is-ai-governance/",
+      "https://www.alation.com/blog/ai-governance-best-practices-framework-data-leaders/",
+      "https://note.com/vast_cosmos500/n/ne981909671c1",
+      "https://quizlet.com/jp/1071118328/ai%E5%80%AB%E7%90%86ai%E3%82%AC%E3%83%90%E3%83%8A%E3%83%B3%E3%82%B9-flash-cards/",
+      "https://www.obsidiansecurity.com/blog/what-is-ai-governance",
+      "https://www.contentful.com/blog/ai-governance/",
+      "https://www.glean.com/perspectives/ai-governance-best-practices",
+      "https://professional.dce.harvard.edu/blog/building-a-responsible-ai-framework-5-key-principles-for-organizations/"
+    ]
   },
   {
     "id": "ch7-025",
@@ -745,13 +1306,13 @@
     "question": "アノテーション作業をクラウドソーシングで実施する際の主な課題として正しいものはどれか。",
     "choices": [
       {
-        "text": "クラウドソーシングを使うとアノテーションに費用が全くのかからないため、予算管理が不要になる"
+        "text": "クラウドソーシングでのデータ収集は、作業者のスキルに依存しないため効率的である。"
       },
       {
-        "text": "インターネット接続が必要なため、オフライン環境でのアノテーションができない点"
+        "text": "アノテーション作業は、全てのデータを一元管理することで品質が向上する手法である。"
       },
       {
-        "text": "クラウドソーシングの利用規約上、AIの学習データへの利用が禁じられている"
+        "text": "クラウドソーシングを利用することで、コスト削減が可能になるが、納期が延びることが多い。"
       },
       {
         "text": "作業者ごとのラベル付け品質のばらつきや、秘密情報・個人情報を含むデータの外部委託に伴う情報漏洩リスクの管理"
@@ -769,7 +1330,17 @@
       "クラウドソーシング",
       "データ品質"
     ],
-    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69"
+    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69",
+    "source_ref_supplements": [
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ]
   },
   {
     "id": "ch7-026",
@@ -777,13 +1348,13 @@
     "question": "AIプロジェクトにおけるKPI（重要業績指標）設計で注意すべき点として正しいものはどれか。",
     "choices": [
       {
-        "text": "KPIはモデルの精度指標（Accuracy・F1スコアなど）だけを設定すればよく、ビジネス指標は不要"
+        "text": "KPI設計では、ビジネス指標のみを重視し、技術指標は無視することが重要であるという技術"
       },
       {
-        "text": "KPIは変更するとプロジェクトが失敗するため、一度設定したら絶対に変更してはいけない"
+        "text": "AIプロジェクトのKPIは、単に売上を追求するだけで十分であり、他の指標は不要である。"
       },
       {
-        "text": "KPIは開発完了後に実績をもとに事後的に決定するものという手法・アプローチを指す"
+        "text": "KPI設計においては、顧客のフィードバックを重視し、数値的な指標は二の次である。"
       },
       {
         "text": "技術指標（モデル精度）とビジネス指標（売上・顧客満足度など）の両方を設定し、両者の関係を事前に整合させる必要がある"
@@ -800,7 +1371,42 @@
       "AIプロジェクト",
       "ビジネス評価"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://note.com/keisuke_shibata/n/n3996ab043797",
+      "https://www.sysystem.co.jp/blog/nakahira_vol17",
+      "https://axis.migalo.co.jp/column/k052",
+      "https://review.tanabeconsulting.co.jp/consultingmethod/20260117132340/",
+      "https://icon-office.com/archives/1820",
+      "https://instituteprojectmanagement.com/blog/kpi-dashboard-template/",
+      "https://note.com/sfs_sk/n/n7017419ee63c",
+      "https://tech.acesinc.co.jp/entry/2025/07/08/080000",
+      "https://aka-link.net/ai-kpi-improvement/",
+      "https://vottia.jp/ai-agent-roi-measurement-guide/",
+      "https://note.com/tender_lion437/n/n542d9cde7202",
+      "https://connectedbase-blog.jp/?p=308",
+      "https://www.linkedin.com/top-content/project-management/developing-kpis-for-projects/project-specific-kpi-development/",
+      "https://gruff.co.jp/blog/generative-ai-business-use-cases",
+      "https://sophiate.co.jp/%E7%94%9F%E6%88%90ai%E3%81%AE%E8%B2%BB%E7%94%A8%E5%AF%BE%E5%8A%B9%E6%9E%9C%E3%82%92%E6%B8%AC%E3%82%8Bkpi%E8%A8%AD%E8%A8%88%EF%BC%9A%E5%B0%8E%E5%85%A53%E3%81%8B%E6%9C%88%E3%81%A7%E6%88%90%E6%9E%9C/",
+      "https://sparkco.ai/blog/designing-ai-startup-metrics-dashboards-for-enterprises",
+      "https://uravation.com/media/gartner-ai-io-stall-operations-guide/",
+      "https://quants.co.jp/articles/460/",
+      "https://renue.co.jp/posts/ai-implementation-effectiveness-measurement-kpi-roi-visualization-guide-2026",
+      "https://medium.com/@tothietshs/the-un-common-logic-framework-for-kpi-design-5043c035a272",
+      "https://mljar.com/ai-prompts/data-analyst/visualization/prompt-executive-kpi-dashboard/",
+      "https://ainow.ai/2026/04/06/277881/",
+      "https://sophiate.co.jp/ai%E5%B0%8E%E5%85%A5%E3%81%AE%E9%81%8B%E7%94%A8%E8%A8%AD%E8%A8%88%E3%81%AE%E3%82%84%E3%82%8A%E6%96%B9%EF%BC%9A%E4%BF%9D%E5%AE%88%E3%83%BB%E6%94%B9%E5%96%84%E3%83%BB%E5%86%8D%E5%AD%A6%E7%BF%92%E3%81%A7/",
+      "https://clickup.com/p/ai-prompts/establishing-key-performance-indicators-kpis",
+      "https://www.reddit.com/r/LLMDevs/comments/1nu7fx0/it_feels_like_most_ai_projects_at_work_are/?tl=ja",
+      "https://www.crien.jp/blog/posts/ai-kpi-setting-guide",
+      "https://www.trxl.co/212/",
+      "https://www.graphapp.ai/blog/top-features-of-an-effective-engineering-kpi-dashboard",
+      "https://www.servicenow.com/docs/r/now-intelligence/process-mining/project-agentic-ai.html",
+      "https://www.pyramidanalytics.com/blog/an-end-to-kpi-misdirection-aligning-data-to-strategy/",
+      "https://gruff.co.jp/blog/ai-dounyuu-shippai-jirei-learnings",
+      "https://renue.co.jp/posts/ai-investment-roi-measurement-kpi-framework-2026",
+      "https://channel.io/ja/blog/articles/aicallcenter--1920b5a4"
+    ]
   },
   {
     "id": "ch7-027",
@@ -808,13 +1414,13 @@
     "question": "フェデレーテッドラーニング（連合学習）の応用例として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "複数のGPUサーバーを並列化して1つの大規模モデルを高速学習する分散学習"
+        "text": "複数の病院が患者データを集約し、AIモデルを構築して診断精度を向上させる手法である。"
       },
       {
-        "text": "アンサンブル学習で複数モデルの予測を多数決で統合する手法として定義される技術的概念・考え方"
+        "text": "各病院が独自に患者データを分析し、結果を共有することで診断精度を向上させる技術である。"
       },
       {
-        "text": "連邦政府が主導してAI研究機関のデータを統合管理するシステムとして定義される"
+        "text": "異なる病院が患者データを用いて、AIによる新薬の開発を行うプロジェクトにあたる。"
       },
       {
         "text": "複数病院が患者データを互いに共有せずに各病院のローカルデータで学習し、モデルの更新値を統合して診断精度を向上させる"
@@ -831,7 +1437,33 @@
       "連合学習",
       "プライバシー保護"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://eaglys.co.jp/resource/columns/federatedlearning-usecase",
+      "https://nuco.co.jp/blog/article/_ImvdsWf",
+      "https://www.winserver.ne.jp/column/about_federatedlearning/",
+      "https://www.pippit.ai/ja-jp/resource/federated-learning",
+      "https://note.com/nft_tanio/n/n1d4168c0994e",
+      "https://pig-data.jp/blog_news/blog/scraping-crawling/federaled/",
+      "https://dualitytech.com/blog/federated-learning-applications/",
+      "https://lifebit.ai/blog/federated-learning-applications/",
+      "https://eaglys.co.jp/resource/columns/secure-computing/encryptfederatedlearning",
+      "https://biz.moneyforward.com/ai/basic/3209/",
+      "https://www.eletimes.ai/top-10-federated-learning-applications-and-use-cases",
+      "https://note.com/rosso_blog/n/n131bfc5229f4",
+      "https://aimultiple.com/federated-learning",
+      "https://jpn.nec.com/techrep/journal/g23/n02/230215.html",
+      "https://cloud.google.com/discover/what-is-federated-learning?hl=ja",
+      "https://tracebloc.io/blog/federated-learning-applications",
+      "https://www.acompany.tech/privacytechlab/federated-learning-finance-healthcare",
+      "https://qiita.com/yoshida_slj/items/8dd6d6c8a6edeb6a4cdc",
+      "https://cloud.google.com/discover/what-is-federated-learning",
+      "https://milvus.io/ai-quick-reference/what-are-realworld-examples-of-federated-learning-in-action",
+      "https://note.erhoeht-x.jp/n/n40a05aa4c9c9",
+      "https://www.nttdata-strategy.com/knowledge/reports/2025/251021/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC10186185/",
+      "https://machinelearning.apple.com/research/learning-real-world-application"
+    ]
   },
   {
     "id": "ch7-028",
@@ -839,13 +1471,13 @@
     "question": "エッジAIでモデル軽量化が求められる理由として正しいものはどれか。",
     "choices": [
       {
-        "text": "エッジデバイスはクラウドより多くの計算資源を持つため、より複雑なモデルが必要なため"
+        "text": "エッジAIはクラウド処理を必要とするため、軽量化が求められる技術である。"
       },
       {
-        "text": "著作権法の規定によりクラウドでしか使えない重いモデルをエッジで使うには軽量化が義務付けられて"
+        "text": "エッジデバイスは高性能なGPUを搭載しているため、軽量化は不要である。"
       },
       {
-        "text": "軽量なモデルの方が精度が高いために関連する技術・理論の説明の概念"
+        "text": "エッジAIはデータの暗号化を目的とする手法であり、軽量化は関係ない。"
       },
       {
         "text": "スマートフォン・IoT機器などのエッジデバイスはメモリ・演算能力・バッテリーの制約があるため、"
@@ -863,7 +1495,35 @@
       "モデル軽量化",
       "量子化"
     ],
-    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69"
+    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69",
+    "source_ref_supplements": [
+      "https://www.stylez.co.jp/edge_columns/edge_ai_is_the_key_to_the_future_of_dx/why_is_edge_ai_so_difficult/",
+      "https://note.com/narumi_ai/n/n846b5122d3fc",
+      "https://xtech.nikkei.com/atcl/nxt/mag/nc/18/051600292/090500005/",
+      "https://note.com/ohara_designer/n/n8879aa95f925",
+      "https://laboro.ai/activity/column/engineer/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%92%E8%BB%BD%E9%87%8F%E5%8C%96%E3%81%99%E3%82%8B%E3%83%A2%E3%83%87%E3%83%AB%E5%9C%A7%E7%B8%AE",
+      "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-12-model-lightweight/",
+      "https://www.solution.bell24.co.jp/ja/useful/column/00156_issue/",
+      "https://www.seco.com/jp/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9/%E8%A9%B3%E7%B4%B0/%E6%96%B0%E3%81%97%E3%81%84ai%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%81%E3%83%A3%E3%82%A8%E3%83%83%E3%82%B8%E3%83%95%E3%82%A9%E3%82%B0%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%81%AE%E7%B5%B1%E5%90%88",
+      "https://service.shiftinc.jp/column/14150/",
+      "https://www.araya.org/projects/edge-ai-points/",
+      "https://a-x.inc/blog/llm-light/",
+      "https://blog.ailia.ai/report/edgetech_2025_02/",
+      "https://aisecurity.co.jp/article/2903",
+      "https://www.iamjava.com/article0186/",
+      "https://www.youngju.dev/blog/culture/2026-04-13-edge-ai-on-device-inference-optimization-guide-2025.ja",
+      "https://www.reddit.com/r/embedded/comments/1o2s5d3/edge_devices_are_still_too_expensive_for_ai/?tl=ja",
+      "https://blog.equinix.com/blog/2025/07/07/beyond-clouds-why-your-ai-strategy-needs-an-edge-perspective/?lang=ja",
+      "https://www.seishin-syoji.co.jp/column/column-edge-ai/",
+      "https://www.meta-intelligence.tech/ja/insight-integrated-optimization",
+      "https://note.com/erdfy/n/n0e0d09abe6fd",
+      "https://www.ctc-g.co.jp/keys/blog/detail/edge-ai-future",
+      "https://lilys.ai/ja/notes/ai-semiconductor-20251027/ai-introduction-edge-ai-explained",
+      "https://jp.linkedin.com/pulse/ai-inferencing-edge-how-hybrid-rack-immersion-cooling-mohan-potheri-jgc5c?tl=ja",
+      "https://www.silex.jp/library/form/wp_ai-model-optimization",
+      "https://recruit.group.gmo/engineer/jisedai/blog/rasp_yolo/",
+      "https://www.genetec.co.jp/tech-blog/0012-fpga/"
+    ]
   },
   {
     "id": "ch7-029",
@@ -871,13 +1531,13 @@
     "question": "MLOpsのモデルレジストリを活用する主なメリットとして正しいものはどれか。",
     "choices": [
       {
-        "text": "モデルの学習コストをゼロにできるに関連する技術・理論の説明"
+        "text": "モデルのトレーニングデータを管理する手法であるという技術的な手法"
       },
       {
-        "text": "外部のAIベンダーのモデルを無料でダウンロードできるとして定義される技術的概念・考え方"
+        "text": "モデルのパフォーマンスを評価するための指標であるという学習アプローチ"
       },
       {
-        "text": "モデルレジストリを使うとモデルが自動的に再学習されるであることを特徴とする定義・概念"
+        "text": "データの前処理を自動化する技術にあたるとして用いられる技術的手法"
       },
       {
         "text": "モデルのバージョン管理・系統追跡（どのデータで何時学習したか）・本番デプロイ状態の把握が可能"
@@ -895,7 +1555,36 @@
       "MLOps",
       "バージョン管理"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://docs.datarobot.com/ja/docs/mlops/deployment/mlops-agent/monitoring-agent/index.html",
+      "https://jp.linkedin.com/pulse/mastering-model-management-power-registries-machine-hosseinian-qwevf?tl=ja",
+      "https://www.databricks.com/jp/blog/what-is-mlops",
+      "https://wandb.ai/site/ja/articles/what-is-an-ml-model-registry-ja/",
+      "https://note.com/kyoto_gonchan/n/n399a92ac0337",
+      "https://www.purestorage.com/jp/knowledge/mlops-tools.html",
+      "https://www.databricks.com/jp/blog/2020/04/15/databricks-extends-mlflow-model-registry-with-enterprise-features.html",
+      "https://qiita.com/taka_yayoi/items/3038da9cc8d57922982d",
+      "https://renue.co.jp/posts/mlops-machine-learning-operations-model-deployment-monitoring-guide",
+      "https://jp.linkedin.com/pulse/streamlining-machine-learning-operations-guide-mlops-lalit-moharana?tl=ja",
+      "https://zenn.dev/takikomi/articles/d611aa2f0ff0bc",
+      "https://tech.leverages.jp/entry/2022/12/08/180043",
+      "https://www.reddit.com/r/devops/comments/1qz7e1r/every_team_wants_mlops_until_they_face_the_brutal/?tl=ja",
+      "https://docs.aws.amazon.com/ja_jp/sagemaker/latest/dg/canvas-mlops.html",
+      "https://zenn.dev/ksk_17090k1/articles/9e5f9ad0706415",
+      "https://newrelic.com/jp/blog/ai/what-is-mlops",
+      "https://nsakki55.hatenablog.com/entry/2024/04/25/204901",
+      "https://www.reddit.com/r/mlops/comments/1mxtdgu/where_does_mlops_really_lean_infradevops_side_or/?tl=ja",
+      "https://campus.datacamp.com/ja/courses/fully-automated-mlops/fully-automated-mlops-architecture?ex=1",
+      "https://aws.amazon.com/jp/what-is/mlops/",
+      "https://jfrog.com/ja/jfrog-ml/mlops/",
+      "https://www.snowflake.com/ja/fundamentals/mlops/",
+      "https://aws.amazon.com/jp/blogs/news/fmops-llmops-operationalize-generative-ai-and-differences-with-mlops/",
+      "https://www.oreilly.com/library/view/mlopsshi-zhuang-gaido-ben-fan-yun-yong-wojian-ju-etakai-fa-zhan-lue/9784814401208/06_ch05.xhtml",
+      "https://jfrog.com/ja/ml-model-management/",
+      "https://www.snowflake.com/ja/blog/ml-enhances-mlops-streaming-feature-model-management/",
+      "https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ja"
+    ]
   },
   {
     "id": "ch7-030",
@@ -903,13 +1592,13 @@
     "question": "データリーケージを防ぐための適切な対処として正しいものはどれか。",
     "choices": [
       {
-        "text": "テストデータを使ってモデルを複数回チューニングし、最も良い結果を本番性能として報告するに関する概念であり、G検定の重要用語のひとつ"
+        "text": "データリーケージを防ぐためには、モデル学習後に全データを使用して評価を行うことが重要であるとして位置づけられる技術"
       },
       {
-        "text": "検証データの精度が高いほどデータリーケージが疑われるため、意図的に精度を下げるべきとして知られる代表的な手法"
+        "text": "データ分割は行わず、全てのデータを一度に使用してモデルを訓練することが最も効果的であるとして機能する技術的なシステム"
       },
       {
-        "text": "データリーケージはデータ量を増やすことで自然に解消されるに関する概念であり、G検定の重要用語のひとつ"
+        "text": "データリーケージを防ぐためには、データの収集時に全ての情報を暗号化することが必要であるとして用いられる技術的手法"
       },
       {
         "text": "データ分割（訓練・検証・テスト）をモデル学習開始前に行い、テストデータは最終評価時のみ一度だけ使用し、前処理の統計量（平均・標準偏差）は訓練データのみから算出す"
@@ -926,6 +1615,22 @@
       "モデル評価",
       "データ分割"
     ],
-    "source_ref": "d05cf4cd-fc06-461a-bdf1-dcf054956340"
+    "source_ref": "d05cf4cd-fc06-461a-bdf1-dcf054956340",
+    "source_ref_supplements": [
+      "https://note.com/hotate_nt/n/na227d7f00f10",
+      "https://qiita.com/toamoku-20220418/items/072c177737c74cb39473",
+      "https://note.com/pal_wallflower/n/n3d1db100a64b",
+      "https://www.nri.com/jp/knowledge/glossary/overfitting.html",
+      "https://zenn.dev/logeeeeee/articles/78d1a686f4397d",
+      "https://plaxidityx.com/ja/blog/blog-ja/software-mitigations-for-side-channel-analysis-attacks-in-the-automotive-domain/",
+      "https://jp.mathworks.com/campaigns/offers/next/all-about-model-validation.html",
+      "https://www.salesanalytics.co.jp/column/no00366/",
+      "https://infinicore.jp/technote/ransomware-fundamentals",
+      "https://www.reddit.com/r/datascience/comments/7xqszr/should_final_model_be_retrained_on_full_dataset/?tl=ja",
+      "https://best-biostatistics.com/correlation_regression/crossvalidation.html",
+      "https://data-viz-lab.com/overfitting",
+      "https://www.qt.io/ja-jp/software-insights/code-coverage-vs.-test-coverage-vs.-test-effectiveness-what-do-you-measure",
+      "https://www.reddit.com/r/CPAP/comments/1jbvi8i/understanding_my_data/?tl=ja"
+    ]
   }
 ]

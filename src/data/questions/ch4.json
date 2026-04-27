@@ -8,13 +8,13 @@
         "text": "複数の入力値を受け取り、重み付き和を計算後、活性化関数を通して出力を生成するユニット"
       },
       {
-        "text": "データを保存するためのメモリユニットとして知られる代表的な手法"
+        "text": "入力値を一つ受け取り、出力を直接生成するユニットであるという技術"
       },
       {
-        "text": "画像のピクセルを格納するための単位として定義される技術的概念・考え方"
+        "text": "複数の出力を持ち、重みを調整することで学習を行う手法である。"
       },
       {
-        "text": "機械学習モデルのハイパーパラメータを調整する機能の概念"
+        "text": "生物の神経伝達物質を模倣した情報処理の技術にあたる・仕組み"
       }
     ],
     "correctIndex": 0,
@@ -28,7 +28,29 @@
       "ニューロン",
       "ニューラルネットワーク"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/firm_bonobo7417/n/n40581863cd84",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-03/",
+      "https://realconnect.co.jp/post-5552/",
+      "https://www.sohobb.jp/event/jdla-general-test21-40/",
+      "https://apps.apple.com/ph/app/g%E6%A4%9C%E5%AE%9A-%E5%95%8F%E9%A1%8C%E9%9B%86%E3%82%A2%E3%83%97%E3%83%AA/id6478066297",
+      "https://qiita.com/fatman3110/items/471d2aea337ccc402ffb",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://note.com/domonjo01/n/n75333f8852be",
+      "https://hackmd.io/@iwasekojiseika/ryVbgwjS8",
+      "https://kakuyomu.jp/works/1177354054880480528/episodes/16818622176265531950",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://tt-tsukumochi.com/archives/11240",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://avilen.co.jp/personal/test/g-certificate/",
+      "https://www.jdla.org/g-qa/"
+    ]
   },
   {
     "id": "ch4-002",
@@ -36,16 +58,16 @@
     "question": "パーセプトロンの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "複数の隠れ層を持つ多層ニューラルネットワークの概念"
+        "text": "多層パーセプトロンは複数の層を持つ技術であるという技術"
       },
       {
         "text": "1つのニューロン（線形結合＋ステップ関数）による単純な2クラス分類モデル"
       },
       {
-        "text": "畳み込み演算を行うニューラルネットワーク層の概念"
+        "text": "パーセプトロンは非線形問題を解決する手法であるである"
       },
       {
-        "text": "時系列データを処理するリカレントニューラルネットワーク"
+        "text": "サポートベクターマシンはデータを分類する技術である"
       }
     ],
     "correctIndex": 1,
@@ -58,7 +80,33 @@
       "パーセプトロン",
       "線形分離"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11299189406",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://qiita.com/sakigakeman/items/625a9a4bee40ee0c13ef",
+      "https://avilen.co.jp/personal/knowledge-article/perceptron/",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://otafuku-lab.co/aizine/perceptron-0428/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://farml1.com/neuralnetwork/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://www.itpassportsiken.com/kakomon/05_haru/q74.html",
+      "https://www.ap-siken.com/kakomon/03_aki/q3.html",
+      "https://www.reddit.com/r/explainlikeimfive/comments/50ex36/eli5_what_is_multilayer_perceptron_and_its/?tl=ja",
+      "https://qiita.com/pandausa/items/2fe7ad0f7b393a536afa",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://ai-compass.weeybrid.co.jp/algorizm/perceptron-the-foundation-of-ai/",
+      "https://note.com/hiroe28/n/nf14fd026e7e2",
+      "https://design.kyusan-u.ac.jp/OpenSquareJP/?NeuralNetwork",
+      "https://www.jstage.jst.go.jp/article/jsms/73/8/73_682/_pdf/-char/ja",
+      "https://xtrend.nikkei.com/atcl/seminar/19/00005/050900004/",
+      "https://chokkan.github.io/mlnote/classification/03nn.html",
+      "https://note.com/omakazu/n/n1a661f86e971"
+    ]
   },
   {
     "id": "ch4-003",
@@ -66,16 +114,16 @@
     "question": "ReLU関数（ランプ関数）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力に関わらず出力が0〜1の範囲に収まるという手法・アプローチを指す"
+        "text": "シグモイド関数は出力が常に1未満で、勾配消失を引き起こす技術である。"
       },
       {
         "text": "入力が0以下なら0、0より大きければ入力値をそのまま出力する。計算が単純で勾配消失を防ぎやすい"
       },
       {
-        "text": "出力が-1〜1の範囲に収まり、ゼロ中心化された出力を持つの概念"
+        "text": "ReLU関数は負の値をそのまま出力し、計算が複雑である手法にあたる。"
       },
       {
-        "text": "入力の二乗を出力する二次関数型の活性化関数という枠組みで理解される処理機構"
+        "text": "活性化関数は全ての入力に対して出力が1になる特性を持つものである。"
       }
     ],
     "correctIndex": 1,
@@ -90,7 +138,33 @@
       "ReLU",
       "活性化関数"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://zenn.dev/tasse/articles/ccaa22404c858c",
+      "https://ai-compass.weeybrid.co.jp/algorizm/relu-activation-function-mechanism-and-advantages/",
+      "https://dx-consultant-fast-evolving.com/vanishing-gradient-problem-and-activation-function/",
+      "https://mqlinvestmentlab.com/aboutdeadreluproblem/",
+      "https://qiita.com/GeneLab_999/items/a1d01509ab2af443c1da",
+      "https://app.statisticsschool.com/practice/g-certification/deep-learning/pages/dl-001.html",
+      "https://toukei-lab.com/relu",
+      "https://sakusaku3939.com/blog/activation-function",
+      "https://free.kikagaku.ai/tutorial/basic_of_deep_learning/learn/neural_network_basic_backward",
+      "https://boochi-engineer.net/archives/4104",
+      "https://qiita.com/Negimaru1/items/07d92923598b29d8b7bf",
+      "https://hackmd.io/@iwasekojiseika/ryVbgwjS8",
+      "https://nlpillustration.tech/?p=733",
+      "https://rikei-logistics.com/explosion",
+      "https://www.ultralytics.com/ja/glossary/relu-rectified-linear-unit",
+      "https://note.com/suzukusa/n/n51991f63802c",
+      "https://e-words.jp/w/ReLU%E9%96%A2%E6%95%B0.html",
+      "https://www.reddit.com/r/MachineLearning/comments/hd6tu1/d_paper_explained_siren_implicit_neural/?tl=ja",
+      "https://yuiga.dev/blog/ja/posts/relu%E3%81%AF%E5%A6%82%E4%BD%95%E3%81%AB%E9%96%A2%E6%95%B0%E3%82%92%E8%BF%91%E4%BC%BC%E3%81%99%E3%82%8B%E3%81%8B/",
+      "https://zenn.dev/youk/articles/youk557_python_relu_function",
+      "https://ja.wikipedia.org/wiki/%E6%AD%A3%E8%A6%8F%E5%8C%96%E7%B7%9A%E5%BD%A2%E9%96%A2%E6%95%B0",
+      "https://qiita.com/segavvy/items/8707e4e65aa7fa357d8a",
+      "https://note.com/clever_canna2386/n/n159ed993aa47",
+      "https://heart-mugi.hatenablog.com/entry/2021/02/09/072503"
+    ]
   },
   {
     "id": "ch4-004",
@@ -101,13 +175,13 @@
         "text": "出力が0〜1の範囲に収まり、確率を表現できるが、層が深くなると勾配消失問題を引き起こしやすい"
       },
       {
-        "text": "入力が0以下なら0、0より大きければ入力値をそのまま出力する"
+        "text": "出力が-1から1の範囲に収まり、確率を表現する技術であるという技術"
       },
       {
-        "text": "出力が-1〜1の範囲で、シグモイド関数よりも勾配消失が起きにくい"
+        "text": "入力値が大きくなると出力が0に近づく手法にあたるという学習アプローチ"
       },
       {
-        "text": "入力に関わらず一定値を出力する定数関数という考え方に基づく手法"
+        "text": "出力が0から1の範囲に収まり、分類問題に使われる手法であるという"
       }
     ],
     "correctIndex": 0,
@@ -122,7 +196,33 @@
       "シグモイド関数",
       "活性化関数"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://note.com/firm_bonobo7417/n/n8ccff8ffdd1e",
+      "https://e-words.jp/w/%E3%82%B7%E3%82%B0%E3%83%A2%E3%82%A4%E3%83%89%E9%96%A2%E6%95%B0.html",
+      "https://qiita.com/mk-mokumoku/items/34955161e4c0acceadf0",
+      "https://note.com/pn3/n/nf943d3ca663d",
+      "https://ai-compass.weeybrid.co.jp/algorizm/sigmoid-function-the-unsung-hero-of-machine-learning/",
+      "https://ikikati.com/what-is-the-sigmoid-function-that-supports-ais-decision-making-ability-for-g-test-measures-thorough-explanation-from-basics-to-marginal-alternatives/",
+      "https://rightcode.co.jp/blogs/3680",
+      "https://x-tech.pasona.co.jp/media/detail.html?p=8288",
+      "https://qiita.com/hiro88hyo/items/f5ea62a7e065bef83b6a",
+      "https://www.ultralytics.com/ja/glossary/sigmoid",
+      "https://zenn.dev/tasse/articles/7497c130a73a1e",
+      "https://zero2one.jp/learningblog/deep-learning-activation-function/?srsltid=AfmBOoowKxVuGJL2bGsTW88Vguw_6ybeRnxH8Q70GRVdOIrayv0vCISe",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14203982679",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://saycon.co.jp/archives/neta/ai%E3%81%AF%E3%81%A9%E3%81%86%E3%82%84%E3%81%A3%E3%81%A6%E5%8F%8D%E7%9C%81%E3%81%99%E3%82%8B%EF%BC%9F%E3%80%8C%E6%90%8D%E5%A4%B1%E9%96%A2%E6%95%B0%E3%80%8D%E3%81%A7%E8%AA%A4%E5%B7%AE%E3%82%92%E6%95%B0",
+      "https://manabitimes.jp/math/790",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E8%84%B1%E3%83%BB%E6%95%B0%E5%AD%A6%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC%E3%80%91ai%E3%81%AE%E5%9F%BA%E7%A4%8E%E3%80%8C%E3%82%B7%E3%82%B0%E3%83%A2%E3%82%A4%E3%83%89%E9%96%A2%E6%95%B0",
+      "https://www.reddit.com/r/learnmachinelearning/comments/8jicsc/eli5_how_do_we_get_from_the_odds_ratio_to_the/?tl=ja",
+      "https://x.com/DrTomabechi/status/1658720155789332480",
+      "https://mathlandscape.com/sigmoid/",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2003/04/news021.html",
+      "https://ankimaker.com/workbooks/29918eed-3cf0-4a7f-9f85-9f263977e1b2",
+      "https://ip-study.net/ai-technology-qa/",
+      "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC%EF%BD%9E%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A8%93%EF%BD%9E/"
+    ]
   },
   {
     "id": "ch4-005",
@@ -130,16 +230,16 @@
     "question": "誤差逆伝播法（バックプロパゲーション）の仕組みの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力層から出力層に向かって信号を順番に伝播させる処理という考え方に基づく手法"
+        "text": "出力層の誤差をそのまま保持し、重みを調整する手法であるとして位置づけられる技術"
       },
       {
         "text": "出力層で計算された誤差を出力側から入力側へ逆向きに伝播させ、各層の重みの更新量を偏微分で計算するアルゴリズム"
       },
       {
-        "text": "ランダムにネットワークの重みを初期化し直す手法として機械学習分野で広く認識されている"
+        "text": "誤差を各層で独立に計算し、全体の重みを一度に更新する技術であるという学習アプローチ"
       },
       {
-        "text": "テストデータの誤差を学習データにフィードバックする手法として定義される"
+        "text": "入力データを用いて出力を生成し、誤差を無視する方法にあたるであるアルゴリズム"
       }
     ],
     "correctIndex": 1,
@@ -152,7 +252,26 @@
       "誤差逆伝播法",
       "バックプロパゲーション"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595,6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.netattest.com/backpropagation-2024_mkt_tst",
+      "https://postd.cc/2015-08-backprop/",
+      "https://aismiley.co.jp/ai_news/backpropagation/",
+      "https://zenn.dev/minoda_kohei/articles/7f1b5ec1f2ea6a",
+      "https://dev.classmethod.jp/articles/ml-back-propagation/",
+      "https://note.com/lifeisbeautiful/n/nc173267f4819",
+      "https://www.ibm.com/jp-ja/think/topics/backpropagation",
+      "https://note.com/gyoza_tencho/n/n8e686aa39ec5",
+      "https://e-words.jp/w/%E8%AA%A4%E5%B7%AE%E9%80%86%E4%BC%9D%E6%92%AD%E6%B3%95.html",
+      "https://qiita.com/43x2/items/50b55623c890564f1893",
+      "https://zero2one.jp/learningblog/back-propagation-calculation-process/?srsltid=AfmBOoqX3JmG9AOy1Eq2lcG4icPd1nZdVgL5021CmX58g5grre9WRFpC",
+      "https://free.kikagaku.ai/tutorial/basic_of_deep_learning/learn/neural_network_basic_backward",
+      "https://www.nttcom.co.jp/evangelist/column/kawamae_13/",
+      "https://developers.google.com/machine-learning/crash-course/neural-networks/backpropagation?hl=ja",
+      "https://note.com/kikaben/n/n800614561ae1",
+      "https://zenn.dev/yuto_mo/articles/4607b7feb8ce8b",
+      "https://www.chickensblog.com/backpropagation-why/"
+    ]
   },
   {
     "id": "ch4-006",
@@ -160,16 +279,16 @@
     "question": "確率的勾配降下法（SGD）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "全訓練データの勾配を計算してから一度に重みを更新する手法の概念"
+        "text": "全データを用いて一度に勾配を計算し、重みを更新する手法であるという技術"
       },
       {
         "text": "訓練データからランダムに1サンプル（またはミニバッチ）を選んで勾配を計算し、重みを更新する手法"
       },
       {
-        "text": "勾配の大きさに関わらず一定の学習率で重みを更新する手法の概念"
+        "text": "訓練データを全て使用して、誤差を最小化するための手法にあたるである"
       },
       {
-        "text": "モーメンタムと適応的学習率を組み合わせた最適化手法として定義される"
+        "text": "データを無視して、過去の結果から学習する手法であるとされるという"
       }
     ],
     "correctIndex": 1,
@@ -182,7 +301,30 @@
       "SGD",
       "最適化手法"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://www.ibm.com/jp-ja/think/topics/stochastic-gradient-descent",
+      "https://ja.wikipedia.org/wiki/%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95",
+      "https://note.com/narumi_ai/n/na9e54f0b5252",
+      "https://lets-programing.com/sgd%EF%BC%88%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%EF%BC%89%E3%81%A8%E3%81%AF/",
+      "https://note.com/vast_cosmos500/n/n43fe916f7b63",
+      "https://ai-compass.weeybrid.co.jp/algorizm/stochastic-gradient-descent-efficient-machine-learning/",
+      "https://tech.preferred.jp/ja/blog/averaged-sgd/",
+      "https://daily-life-ai.com/2347/",
+      "https://saycon.co.jp/archives/neta/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%80%8C%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%80%8D%E3%82%92%E7%9B%B4%E6%84%9F%E3%81%A7%E7%90%86%E8%A7%A3%EF%BC%81",
+      "https://terakoya.sejuku.net/question/detail/42220",
+      "https://www.ultralytics.com/ja/glossary/stochastic-gradient-descent-sgd",
+      "https://www.reddit.com/r/3Blue1Brown/comments/qdjf69/the_unreasonable_effectiveness_of_stochastic/?tl=ja",
+      "https://www.reddit.com/r/statistics/comments/qdlzit/d_the_unreasonable_effectiveness_of_stochastic/?tl=ja",
+      "https://qiita.com/umatan/items/08fc03de234405ce1911",
+      "https://atcold.github.io/NYU-DLSP20/ja/week05/05-1/",
+      "https://www.reddit.com/r/AusVisa/comments/1mp87a4/got_90_in_pte_without_templates_heres_how_i_did_it/?tl=ja",
+      "https://qiita.com/lucasta1/items/bc2f2f85ada1fc8b7400",
+      "https://note.com/vast_cosmos500/n/ncd8c33fca570",
+      "https://zenn.dev/tasse/articles/ccaa22404c858c",
+      "https://qiita.com/teppei_nakano/items/860ae0cc3a548f4955c3",
+      "https://omomuki-tech.com/archives/6202"
+    ]
   },
   {
     "id": "ch4-007",
@@ -190,16 +332,16 @@
     "question": "Adam最適化アルゴリズムの特徴として最も適切なものはどれか。",
     "choices": [
       {
-        "text": "全データを使って勾配を計算する最も基本的な最適化手法として知られる代表的な手法"
+        "text": "SGDは全データを用いて学習率を固定する手法であるとして機能する技術的なシステム"
       },
       {
         "text": "モーメンタムと適応的学習率（RMSProp）の両方のメリットを組み合わせた最適化手法で、学習率を自動調整する"
       },
       {
-        "text": "学習率を手動で段階的に下げる手法に関する概念であり、G検定の重要用語のひとつ"
+        "text": "Adamは過去の勾配を無視して一律の学習率で更新する手法であるという学習アプローチ"
       },
       {
-        "text": "ネットワークの重みをランダムに初期化する手法に相当する概念であり、試験で頻出の定義"
+        "text": "勾配降下法は最適化において常に収束が遅い技術にあたるとして用いられる技術的手法"
       }
     ],
     "correctIndex": 1,
@@ -212,7 +354,28 @@
       "Adam",
       "最適化手法"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://note.com/doindoindoin/n/n4c89c8eceb3d",
+      "https://qiita.com/omiita/items/1735c1d048fe5f611f80",
+      "https://zero2one.jp/learningblog/machine-learning-optimization-methods/?srsltid=AfmBOoqiKZrhc2RAPtI0yjK-YVQ9b-oRb23-CrURXBScPJq2nyLaOvly",
+      "https://www.mql5.com/ja/articles/14435",
+      "https://ai-compass.weeybrid.co.jp/learning/rmsprop-a-novel-optimization-algorithm/",
+      "https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2L5OS19a04/_pdf/-char/ja",
+      "https://ai-compass.weeybrid.co.jp/algorizm/adam-an-optimization-algorithm-explained-2/",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://appswingby.com/%E9%81%A9%E5%BF%9C%E5%9E%8B%E5%AD%A6%E7%BF%92%E7%8E%87%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it/",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/adagrad-rmsprop/",
+      "https://omomuki-tech.com/archives/1792",
+      "https://lets-programing.com/%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%82%92%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AB%E3%81%97%E3%81%9F%E9%AB%98%E5%BA%A6%E3%81%AA%E6%9C%80%E9%81%A9%E5%8C%96%E6%89%8B%E6%B3%95/",
+      "https://postd.cc/optimizing-gradient-descent/",
+      "https://saycon.co.jp/archives/neta/ai%E3%81%8C%E5%AD%A6%E7%BF%92%E3%81%99%E3%82%8B%E7%A7%98%E8%A8%A3%EF%BC%81%E6%9C%80%E9%81%A9%E5%8C%96%E3%82%A2%E3%83%AB%E3%82%B4%E3%83%AA%E3%82%BA%E3%83%A0adam%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF",
+      "https://jp.linkedin.com/pulse/understanding-optimization-techniques-machine-davy-mbuto-nkurunziza-irhvf?tl=ja",
+      "https://qiita.com/amateur2020/items/23704993fb191db0020c",
+      "https://zero2one.jp/learningblog/machine-learning-optimization-methods/?srsltid=AfmBOoreB8_T4XfujYufrK9DQiPrnPp3ir-S7rSzVi9G7aq3AQmajp7w",
+      "https://note.com/ohara_designer/n/n87389c29f83d",
+      "https://daily-life-ai.com/2356/"
+    ]
   },
   {
     "id": "ch4-008",
@@ -220,16 +383,16 @@
     "question": "勾配消失問題の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習が進むにつれて損失関数の値が増加し続ける現象に相当する概念であり、試験で頻出の定義"
+        "text": "勾配爆発問題は、逆伝播時に勾配が大きくなり、学習が不安定になる現象であるという技術"
       },
       {
         "text": "ネットワークが深くなるにつれて誤差逆伝播時の勾配が入力層に近い層で非常に小さくなり、重みがほとんど更新されなくなる問題"
       },
       {
-        "text": "学習中に勾配が急激に大きくなり数値が不安定になる問題に関する概念であり、G検定の重要用語のひとつ"
+        "text": "勾配消失問題は、主に浅いネットワークで発生し、学習が進むことが難しい問題であるである"
       },
       {
-        "text": "モデルが訓練データに過剰適合する問題として機械学習分野で広く認識されている"
+        "text": "勾配消失問題は、データの前処理が不十分な場合に発生するエラーの一種であるという仕組み"
       }
     ],
     "correctIndex": 1,
@@ -244,7 +407,33 @@
       "勾配消失",
       "ディープラーニング"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://zero2one.jp/ai-word/vanishing-gradient-problem/?srsltid=AfmBOooR6XLbsdv_bp1-dxQj2Il8Bok0tm5v3ZIR7KkHXn6giX8LRQi8",
+      "https://ai-kenkyujo.com/term/gradient-loss-problem/",
+      "https://zero2one.jp/ai-word/vanishing-gradient-problem/?srsltid=AfmBOopDhfcAlAyOamBl26IPDu3AYMJ5X90iD9enCa_S9MJAj6ULReLc",
+      "https://note.com/wakoudoujin/n/n87abee01d1c5",
+      "https://note.com/suzukusa/n/n51991f63802c",
+      "https://e-words.jp/w/%E5%8B%BE%E9%85%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C.html",
+      "https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C",
+      "https://qiita.com/mk-mokumoku/items/797f97cb337dc270626d",
+      "https://terakoya.sejuku.net/question/detail/42289",
+      "https://buildersbox.corp-sansan.com/entry/2020/01/09/110000",
+      "https://dx-consultant-fast-evolving.com/vanishing-gradient-problem-and-activation-function/",
+      "https://shikaku-expert.com/g-test/quiz/skip-connection/",
+      "https://ai-compass.weeybrid.co.jp/learning/vanishing-gradients-a-challenge-in-deep-learning/",
+      "https://e-shikaku-doujou.com/resnet/",
+      "https://www.reddit.com/r/explainlikeimfive/comments/kxsz1i/eli5_what_is_the_vanishing_gradient_problem_in/?tl=ja",
+      "https://rikei-logistics.com/explosion",
+      "https://qiita.com/ysuehiro88/items/2c355906fbe0e14985b8",
+      "https://zenn.dev/student_blog/articles/3296c3d71f90fa",
+      "https://tt-tsukumochi.com/archives/10367",
+      "https://python-ai-learn.com/2021/02/22/g-exam4/",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://www.reddit.com/r/learnmachinelearning/comments/emy28c/the_precise_explanation_of_vanishing_gradient/?tl=ja",
+      "https://euske.github.io/introdl/lec8/index.html",
+      "https://qiita.com/goroshigeno/items/bf7cb5602fb29ff055de"
+    ]
   },
   {
     "id": "ch4-009",
@@ -252,16 +441,16 @@
     "question": "ディープニューラルネットワーク（DNN）の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力層と出力層のみからなる2層構造のネットワーク"
+        "text": "入力層・隠れ層・出力層からなる単層のネットワークである"
       },
       {
         "text": "入力層・複数の隠れ層・出力層からなる多層のニューラルネットワーク"
       },
       {
-        "text": "畳み込み層だけで構成される画像認識重点化型ネットワーク"
+        "text": "複数の隠れ層を持たないシンプルなモデルにあたるである"
       },
       {
-        "text": "時系列データ処理のために再帰的な接続を持つネットワーク"
+        "text": "データを直接処理するための線形回帰手法であるという"
       }
     ],
     "correctIndex": 1,
@@ -274,7 +463,35 @@
       "DNN",
       "ディープラーニング"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://www.hitachi-solutions-create.co.jp/column/technology/dnn.html",
+      "https://staff.persol-xtech.co.jp/hatalabo/it_engineer/708.html",
+      "https://biz.kddi.com/content/column/smartwork/what-is-dnn/",
+      "https://fullvalue.co.jp/media/ai-13/",
+      "https://ai-kenkyujo.com/artificial-intelligence/algorithm/dnn/",
+      "https://ipass.shikaku-king.jp/past-tests/4/questions/368/",
+      "https://exawizards.com/column/article/ai/deep-learning/",
+      "https://aismiley.co.jp/ai_news/dnn-net-work-cnn/",
+      "https://www.vieureka.com/blog/blog-1483/",
+      "https://e-words.jp/w/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF.html",
+      "https://botpress.com/ja/blog/deep-neural-network",
+      "https://ip-study.net/ai-technology-qa/",
+      "https://www.fe-siken.com/kakomon/30_haru/q3.html",
+      "https://www.ap-siken.com/kakomon/03_aki/q3.html",
+      "https://www.itpassportsiken.com/kakomon/05_haru/q74.html",
+      "https://jp.mathworks.com/discovery/deep-learning.html",
+      "https://www.ibm.com/jp-ja/think/topics/neural-networks",
+      "https://www.sbbit.jp/article/cont1/33345",
+      "https://www.itpassportsiken.com/kakomon/06_haru/q95.html",
+      "https://quizlet.com/jp/933715675/ai-900%E3%82%88%E3%81%8F%E9%96%93%E9%81%95%E3%81%A3%E3%81%9F%E8%B3%AA%E5%95%8F-flash-cards/",
+      "https://www.reddit.com/r/AskEngineers/comments/nqtikq/whats_the_difference_between_deep_learning_and/?tl=ja",
+      "https://ja.wikipedia.org/wiki/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0",
+      "https://aws.amazon.com/jp/compare/the-difference-between-deep-learning-and-neural-networks/",
+      "https://ainow.ai/2022/04/17/264675/",
+      "https://ai-kenkyujo.com/artificial-intelligence/algorithm/neuralnetworkdeeplearning/",
+      "https://qiita.com/ryou83480820/items/967a94b970e5fa6ce98d"
+    ]
   },
   {
     "id": "ch4-010",
@@ -282,16 +499,16 @@
     "question": "tanh関数（双曲線正接関数）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "出力が0〜1の範囲に収まり、確率的な解釈が可能に相当する概念であり、試験で頻出の定義"
+        "text": "出力が0から1の範囲に収まり、学習が遅くなることが多い技術であるという技術"
       },
       {
         "text": "出力が-1〜1の範囲に収まりゼロ中心化されているため、シグモイド関数より学習効率が改善される場合がある"
       },
       {
-        "text": "入力が正のとき線形的な出力を持ち、勾配消失を防ぐとして位置づけられる手法・概念"
+        "text": "tanh関数は常に正の値を出力し、シグモイド関数よりも劣る手法にあたる"
       },
       {
-        "text": "入力の絶対値をそのまま出力する単純な関数として知られる代表的な手法"
+        "text": "tanh関数は画像処理に特化した技術であり、データの圧縮に利用されるという"
       }
     ],
     "correctIndex": 1,
@@ -304,7 +521,27 @@
       "tanh",
       "活性化関数"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://umarketing.co.jp/ai-glossary/tanh/",
+      "https://saycon.co.jp/archives/neta/%E9%80%86%E4%B8%89%E8%A7%92%E5%BD%A2%E3%81%AE%E9%AD%94%E6%B3%95%EF%BC%9F%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%A7%E7%B5%B6%E5%AF%BE%E3%81%A4%E3%81%BE%E3%81%9A%E3%81%8F%E3%83%8A%E3%83%96%E3%83%A9-2",
+      "https://e-words.jp/w/tanh%E9%96%A2%E6%95%B0.html",
+      "https://ai-compass.weeybrid.co.jp/algorizm/the-tanh-function-a-keystone-in-machine-learning/",
+      "https://zenn.dev/tasada038/articles/e4f298c2c8cd54",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2003/19/news015.html",
+      "https://appswingby.com/tanh%E9%96%A2%E6%95%B0%E5%8F%8C%E6%9B%B2%E7%B7%9A%E6%AD%A3%E6%8E%A5%E9%96%A2%E6%95%B0-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://www.ultralytics.com/ja/glossary/tanh-hyperbolic-tangent",
+      "https://saycon.co.jp/archives/neta/ai%E3%82%92%E5%91%B3%E6%96%B9%E3%81%AB%E3%81%A4%E3%81%91%E3%82%8B%EF%BC%81%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%A7%E5%BD%B9%E7%AB%8B%E3%81%A4%E6%B4%BB%E6%80%A7%E5%8C%96%E9%96%A2%E6%95%B0tanh",
+      "https://rinyan-7.com/spreadsheet-function/tanh/",
+      "https://omomuki-tech.com/archives/6230",
+      "https://nisshingeppo.com/ai/tanh-function/",
+      "https://terakoya.sejuku.net/question/detail/42201",
+      "https://lets-programing.com/%E6%B4%BB%E6%80%A7%E5%8C%96%E9%96%A2%E6%95%B0%EF%BC%88sigmoid-tanh-relu-softmax%EF%BC%89/",
+      "https://reference.wolfram.com/language/ref/Tanh.html.ja?source=footer",
+      "https://tetoblog.org/2021/06/act-function-tanh/",
+      "https://mathlandscape.com/sinh/",
+      "https://biz.moneyforward.com/work-efficiency/basic/17679/"
+    ]
   },
   {
     "id": "ch4-011",
@@ -312,16 +549,16 @@
     "question": "ミニバッチ学習の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "全訓練データを一度に使って勾配を計算し重みを更新するバッチ学習"
+        "text": "全てのデータを一度に用いて重みを更新する手法であるという技術"
       },
       {
-        "text": "1データずつ勾配を計算して逐次的に重みを更新するオンライン学習"
+        "text": "データを一つずつ用いてモデルを訓練する方法にあたるである"
       },
       {
         "text": "訓練データを小さなバッチ（数十〜数百件）に分けて勾配を計算・更新を繰り返す学習方法"
       },
       {
-        "text": "データを全て使わず無作為に1件だけ選んで学習する手法"
+        "text": "訓練データを無作為に選び続ける学習技術であるという仕組み"
       }
     ],
     "correctIndex": 2,
@@ -332,7 +569,32 @@
       "ミニバッチ",
       "学習手法"
     ],
-    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60"
+    "source_ref": "6a05d5ec-fce7-4f73-84a9-6100b0374a60",
+    "source_ref_supplements": [
+      "https://e-shikaku-doujou.com/minibatch/",
+      "https://appswingby.com/%E3%83%9F%E3%83%8B%E3%83%90%E3%83%83%E3%83%81%E5%AD%A6%E7%BF%92-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://e-words.jp/w/%E3%83%9F%E3%83%8B%E3%83%90%E3%83%83%E3%83%81%E5%AD%A6%E7%BF%92.html",
+      "https://ai-compass.weeybrid.co.jp/learning/mini-batch-learning-efficient-machine-learning-2/",
+      "https://di-acc2.com/analytics/ai/6320/",
+      "https://datastudydock.com/mini-batch/",
+      "https://www.mathworks.com/matlabcentral/answers/333915-",
+      "https://avilen.co.jp/personal/knowledge-article/batch-learning/",
+      "https://news.mynavi.jp/techplus/article/cv_future-45/",
+      "https://gen-ai-media.guga.or.jp/glossary/batch-learning/",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14319269979",
+      "https://saycon.co.jp/archives/neta/%E7%94%BB%E5%83%8F%E8%AA%8D%E8%AD%98%E3%81%AE%E5%B8%B8%E8%AD%98%EF%BC%81%E3%81%AA%E3%81%9Ccnn%E3%81%A7%E3%81%AF%E3%83%89%E3%83%AD%E3%83%83%E3%83%97%E3%82%A2%E3%82%A6%E3%83%88%E3%82%88%E3%82%8A",
+      "https://www.reddit.com/r/MLQuestions/comments/lg5er9/confusion_about_the_computational_benifits_of/?tl=ja",
+      "https://note.com/hotate_nt/n/n0d5d0f4b0148",
+      "https://otafuku-lab.co/aizine/glossary-mini-batch/",
+      "https://note.com/kohtas_genai/n/n245ca0cd0df7",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "http://tech-nichijo.com/%E3%80%90%E3%82%BC%E3%83%AD%E3%81%A4%E3%81%8F%E5%AD%A6%E7%BF%92%E8%A8%98%E9%8C%B2%E3%80%91%E3%80%8E%E6%90%8D%E5%A4%B1%E9%96%A2%E6%95%B0%E3%80%8F%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B/",
+      "https://qiita.com/eemmoo/items/9902b08738c5aed8b614",
+      "https://free.kikagaku.ai/tutorial/basic_of_deep_learning/learn/neural_network_basic_backward",
+      "https://qiita.com/pocokhc/items/f4387c099a28a69df918",
+      "https://geminiandi.hatenablog.com/entry/2025/06/21/165506",
+      "https://www.globalwalkers.co.jp/blog/2022/01/17/n0004/"
+    ]
   },
   {
     "id": "ch4-012",
@@ -340,16 +602,16 @@
     "question": "多層パーセプトロン（MLP）が単純パーセプトロンと比較して優れている点として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習データが少なくても高精度な予測ができるとして定義される"
+        "text": "単純パーセプトロンは多層化されず、常に単一の出力を持つ技術である"
       },
       {
         "text": "隠れ層を持つことにより、線形分離不可能な問題（XOR問題など）も解くことができる"
       },
       {
-        "text": "モデルの解釈が容易で、予測理由を明確に説明できるの概念"
+        "text": "MLPは線形分離可能な問題しか解決できない手法にあたるである"
       },
       {
-        "text": "重みパラメータが少なく計算コストが低いとして定義される"
+        "text": "多層パーセプトロンは自然言語処理に特化した技術であるという"
       }
     ],
     "correctIndex": 1,
@@ -361,7 +623,52 @@
       "MLP",
       "非線形"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11222243041",
+      "https://ainow.ai/2022/09/13/267819/",
+      "https://qiita.com/pandausa/items/2fe7ad0f7b393a536afa",
+      "https://otafuku-lab.co/aizine/mlp-0407/",
+      "https://cysec148.hatenablog.com/entry/2025/07/06/175836",
+      "https://ai-compass.weeybrid.co.jp/algorizm/multilayer-perceptron-unlocking-complex-problem-solving/",
+      "https://daily-life-ai.com/2051/",
+      "https://jp.linkedin.com/pulse/multi-layer-perceptron-learning-dilli-hang-rai-tp3ef?tl=ja",
+      "https://zenn.dev/kaba777/articles/8cffb7ef28b9c0",
+      "https://techgym.jp/column/mlp/",
+      "https://ai-kenkyujo.com/artificial-intelligence/mlp-kikai-gakushu/",
+      "https://tmytokai.github.io/open-ed/activity/dlearning/text02/page02.html",
+      "https://blog.csdn.net/vv45678/article/details/155216684",
+      "https://qiita.com/ruka38/items/2f2f958c1d45728ea577",
+      "https://jp.quora.com/Multi-Layer-Perceptron-MLP-%E3%81%A8%E5%85%A8%E7%B5%90%E5%90%88%E5%B1%A4%E3%81%AE%E9%81%95%E3%81%84%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B-%E3%83%8D%E3%83%83%E3%83%88%E3%81%A7%E8%AA%BF%E3%81%B9%E3%82%8B",
+      "https://www.cnblogs.com/guxuanqing/p/19220634",
+      "https://ithelp.ithome.com.tw/articles/10301417",
+      "https://www.reddit.com/r/learnmachinelearning/comments/6rd5yb/whats_the_difference_between_deep_neural_network/?tl=ja",
+      "https://service.shiftinc.jp/column/14478/",
+      "https://www.zhihu.com/question/587638546",
+      "https://python.hisakatano.com/?page=column&no=72",
+      "https://medium.com/%E6%89%8B%E5%AF%AB%E7%AD%86%E8%A8%98/learn-multilayer-perceptron-with-tensorflow-e73062ff0844",
+      "https://letranger.github.io/AI/20221023103538-%E6%84%9F%E7%9F%A5%E5%99%A8.html",
+      "https://fuxi.163.com/database/1018",
+      "https://zhuanlan.zhihu.com/p/1709893761",
+      "https://juejin.cn/post/6971017144712724510",
+      "https://zh-tw.eitca.org/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/eitc-ai-tfqml%E5%BC%B5%E9%87%8F%E6%B5%81%E9%87%8F%E5%AD%90%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92/%E5%AF%A6%E9%9A%9B%E7%9A%84%E5%BC%B5%E9%87%8F%E6%B5%81%E9%87%8F%E5%AD%90%E7%95%B0%E6%88%96%E5%95%8F%E9%A1%8C/%E7%94%A8tfq%E8%A7%A3%E6%B1%BA%E9%87%8F%E5%AD%90%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9A%84xor%E5%95%8F%E9%A1%8C/%E8%80%83%E8%A9%A6%E8%A4%87%E7%BF%92%E7%94%A8-tfq-%E8%A7%A3%E6%B1%BA%E9%87%8F%E5%AD%90%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9A%84%E7%95%B0%E6%88%96%E5%95%8F%E9%A1%8C/%E7%95%B0%E6%88%96%E5%95%8F%E9%A1%8C%E7%9A%84%E9%9D%9E%E7%B7%9A%E6%80%A7%E5%8F%AF%E5%88%86%E6%80%A7%E8%B3%AA%E5%A6%82%E4%BD%95%E8%AA%AA%E6%98%8E%E7%B6%93%E5%85%B8%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E4%B8%AD%E5%96%AE%E5%B1%A4%E6%84%9F%E7%9F%A5%E5%99%A8%E6%A8%A1%E5%9E%8B%E7%9A%84%E5%B1%80%E9%99%90%E6%80%A7/",
+      "https://algorithm.joho.info/machine-learning/neural-network/",
+      "https://jp.linkedin.com/pulse/%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84ai%E7%94%A8%E8%AA%9E%E9%9B%86-ai-glossary-vector-holdings-no29mlp%E5%A4%9A%E5%B1%A4%E3%83%91%E3%83%BC%E3%82%BB%E3%83%97%E3%83%88%E3%83%AD%E3%83%B3-9bzic",
+      "https://tt-tsukumochi.com/archives/7194",
+      "https://geminiandi.hatenablog.com/entry/2025/06/21/165506",
+      "https://hackernoon.com/lang/ja/comparing-kolmogorov-arnold-network-kan-and-multi-layer-perceptrons-mlps",
+      "https://appswingby.com/xor%E5%95%8F%E9%A1%8C-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://qiita.com/Seine_A_Shintani/items/bd29fd15f903632aa03a",
+      "https://saycon.co.jp/whatwedo-2/ai/g/deep-learning-for-general/deep-learning-for-general4",
+      "https://zenn.dev/shintarot/articles/92a2c5c21b858d",
+      "https://tukumolog.com/nn-fc-layer-03-xor-problem/",
+      "https://note.com/vast_cosmos500/n/n43fe916f7b63",
+      "https://cloud-ace.jp/column/detail289/",
+      "https://qiita.com/kengo-sk8/items/148cf7c9cab32466e4f5",
+      "https://note.com/anon_aiai/n/ncd2bf5a48964",
+      "https://www.reddit.com/r/reinforcementlearning/comments/oewhai/is_there_a_way_to_train_a_neural_net_for_xor/?tl=ja",
+      "https://medium.com/@pknotfound/solving-the-xor-problem-using-mlp-83e35a22c96f"
+    ]
   },
   {
     "id": "ch4-013",
@@ -369,16 +676,16 @@
     "question": "Leaky ReLU関数がReLU関数を改良した点として正しいものはどれか。",
     "choices": [
       {
-        "text": "出力が0〜1の範囲に収まるように正規化したとして機械学習分野で広く認識されている"
+        "text": "Leaky ReLU関数は、出力が常にゼロであるため、学習が進まない問題を解決する手法である。"
       },
       {
         "text": "入力が0以下の領域でも0ではなく小さな傾き（例: 0.01）を持たせ、ニューロンが完全に不活性化する現象（Dying ReLU）"
       },
       {
-        "text": "全入力に対して線形変換だけを行い計算を単純化したとして定義される技術的概念・考え方"
+        "text": "Leaky ReLU関数は、入力が正の時のみ出力を持ち、負の時は常にゼロを返す技術である。"
       },
       {
-        "text": "出力を-1〜1の範囲に収めてゼロ中心化したに相当する概念であり、試験で頻出の定義"
+        "text": "Leaky ReLU関数は、データの正規化を行うために設計された手法にあたるという仕組み"
       }
     ],
     "correctIndex": 1,
@@ -393,7 +700,29 @@
       "活性化関数",
       "Dying ReLU"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://note.com/narumi_ai/n/ncb77a188722d",
+      "https://tetoblog.org/2021/06/act-function-leakyrelu/",
+      "https://nisshingeppo.com/ai/leaky-relu-function/",
+      "https://ai-compass.weeybrid.co.jp/algorizm/leaky-relu-an-enhanced-activation-function/",
+      "https://www.ultralytics.com/ja/glossary/leaky-relu",
+      "https://qiita.com/engr_murao/items/b7d033ded3a548525e0f",
+      "https://tt-tsukumochi.com/archives/10758",
+      "https://www.reddit.com/r/MachineLearning/comments/4znzvo/what_are_the_advantages_of_relu_over_the/?tl=ja",
+      "https://gkentei.techblog.jp/archives/25287527.html",
+      "https://jp.linkedin.com/pulse/understanding-relu-leakyrelu-prelu-comprehensive-olamendy-turruellas-3lewf?tl=ja",
+      "https://medium.com/mlearning-ai/activation-functions-relu-vs-leaky-relu-b8272dc0b1be",
+      "https://zero2one.jp/ai-word/leaky-relu-function/?srsltid=AfmBOorXjw8csoTMHhsCajoDj-LhgbLdMMx7AsBeZ5tkHt-3ZuVW4CGH",
+      "https://zero2one.jp/ai-word/leaky-relu-function/?srsltid=AfmBOorOfoTJ5J1ZZ1IBDhvaqHfkv28_FICS-7UFa2Hf2h0-yoRxU67V",
+      "https://ai-compass.weeybrid.co.jp/algorizm/activation-function-advantages-of-leaky-relu/",
+      "https://qiita.com/yuandesu/items/24da1162d591d943fcfb",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2005/13/news009.html",
+      "https://qiita.com/miyamotok0105/items/3435930cc04650bce54d",
+      "https://zenn.dev/walhalla7/scraps/2cdf5c82908eeb",
+      "https://www.itpassportsiken.com/kakomon/05_haru/q91.html",
+      "https://daily-life-ai.com/2126/"
+    ]
   },
   {
     "id": "ch4-014",
@@ -404,13 +733,13 @@
         "text": "多クラス分類問題の出力層で使用し、各クラスの出力の総和が1になるよう変換して確率として解釈できるようにする"
       },
       {
-        "text": "回帰問題の出力層で数値を予測するために使用するという性質を持つ概念・アプローチ"
+        "text": "回帰問題の出力層で使われ、数値をそのまま出力する技術であるという技術的な手法"
       },
       {
-        "text": "隠れ層の活性化関数として最も広く使われるという性質を持つ概念・アプローチ"
+        "text": "二値分類問題に特化した手法で、出力の合計が常に2になる特性を持つという学習アプローチ"
       },
       {
-        "text": "入力値をそのまま出力する恒等関数として使用するという手法・アプローチを指す"
+        "text": "自然言語処理において、文の生成に用いられる技術にあたるとして適用される技術"
       }
     ],
     "correctIndex": 0,
@@ -425,7 +754,32 @@
       "活性化関数",
       "多クラス分類"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://daily-life-ai.com/187/",
+      "https://omomuki-tech.com/archives/6226",
+      "https://www.dogrow.net/nnet/blog60-%E5%A4%9A%E3%82%AF%E3%83%A9%E3%82%B9%E5%88%86%E9%A1%9E%E3%81%A7%E4%BD%BF%E3%81%86softmax/",
+      "https://atmarkit.itmedia.co.jp/ait/articles/2004/08/news016.html",
+      "https://note.com/0xoddb1te/n/n3a47c46b7b70",
+      "https://jp.linkedin.com/pulse/role-softmax-function-large-language-models-llms-neha-srivastava-hl72c?tl=ja",
+      "https://www.ultralytics.com/ja/glossary/softmax",
+      "https://zilliz.com/jp/learn/decoding-softmax-understanding-functions-and-impact-in-ai",
+      "https://redfenrir.sakura.ne.jp/wiki/index.php/%E3%82%BD%E3%83%95%E3%83%88%E3%83%9E%E3%83%83%E3%82%AF%E3%82%B9%E5%88%86%E9%A1%9E",
+      "https://www.cybernet.co.jp/ncs/column_glossary/glossary/softmax_function/",
+      "https://toukei-lab.com/softmax",
+      "https://nlpillustration.tech/?p=622",
+      "http://deepokayama.kenkyuukai.jp/FilePreview_Subject.asp?id=6414&sid=2063&cid=352&ref=%2Fsubject%2Fsubject%5Flist%2Easp",
+      "https://chokkan.github.io/mlnote/classification/02multi.html",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1j3v6g6/why_use_softmax_layer_in_multiclass_classification/?tl=ja",
+      "https://qiita.com/rtok/items/b1affc619d826eea61fd",
+      "https://qiita.com/Hatomugi/items/158b8656da5cc4cce0fe",
+      "https://qiita.com/pocokhc/items/c936a326e1d4821a0c23",
+      "https://manabitimes.jp/math/1371",
+      "https://gensasaki.hatenablog.com/entry/2018/08/30/042807",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/softmax/",
+      "https://www.reddit.com/r/deeplearning/comments/iy4yw3/why_is_softmax_function_the_go_to_for/?tl=ja",
+      "https://note.com/kikaben/n/nddb38c635df5"
+    ]
   },
   {
     "id": "ch4-015",
@@ -436,13 +790,13 @@
         "text": "連鎖律は合成関数の微分を各関数の微分の積として求める法則であり、誤差逆伝播法はこれを利用して各層の重みへの損失の勾"
       },
       {
-        "text": "連鎖律は順伝播の計算を効率化するためだけに使われるであることを特徴とする定義・概念"
+        "text": "連鎖律は確率分布の変化を扱う手法であり、誤差逆伝播法はこれを用いてデータの分散を求める技術である。"
       },
       {
-        "text": "連鎖律はデータを前処理する際の正規化手法であるに関連する技術・理論の説明"
+        "text": "連鎖律は単一の関数の微分を求める法則であり、誤差逆伝播法はこれを使って出力層の誤差を計算する手法である。"
       },
       {
-        "text": "連鎖律は重みを初期化する際に使用される統計的手法であるという枠組みで理解される処理機構"
+        "text": "連鎖律は物理学における運動の法則を示すものであり、誤差逆伝播法はこれを応用した機械学習の手法にあたる。"
       }
     ],
     "correctIndex": 0,
@@ -457,7 +811,21 @@
       "誤差逆伝播法",
       "微分"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://free.kikagaku.ai/tutorial/basic_of_deep_learning/learn/neural_network_basic_backward",
+      "https://dev.classmethod.jp/articles/ml-back-propagation/",
+      "https://mathfi-lab.com/chain_rule_backpropagation1/",
+      "https://qiita.com/43x2/items/50b55623c890564f1893",
+      "https://note.com/dngri/n/n96479f9baea2",
+      "https://saycon.co.jp/archives/neta/ai%E5%AD%A6%E7%BF%92%E3%81%AE%E5%BF%83%E8%87%93%E9%83%A8%EF%BC%81%E3%80%8C%E9%80%A3%E9%8E%96%E5%BE%8B%EF%BC%88chain-rule%EF%BC%89%E3%80%8D%E3%81%8C%E3%82%8F%E3%81%8B%E3%82%8B%E3%81%A8%E3%81%AA",
+      "https://thinkit.co.jp/article/15787",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap2.html",
+      "https://zenn.dev/yuto_mo/articles/4607b7feb8ce8b",
+      "https://qiita.com/warper/items/423c353187e324fdf2e6",
+      "http://deepokayama.kenkyuukai.jp/FilePreview_Subject.asp?id=6416&sid=2063&cid=352&ref=%2Fsubject%2Fsubject%5Flist%2Easp",
+      "https://note.com/kikaben/n/n800614561ae1"
+    ]
   },
   {
     "id": "ch4-016",
@@ -468,13 +836,13 @@
         "text": "計算の過程をノードとエッジで表現したグラフ構造で、順伝播と逆伝播（連鎖律の適用）を視覚的・プログラム的に整理できる"
       },
       {
-        "text": "ニューラルネットワークのアーキテクチャを決定するためのグラフ探索アルゴリズム"
+        "text": "計算グラフはデータの流れを示すだけで、誤差逆伝播法には関与しない技術であるという技術"
       },
       {
-        "text": "CPUとGPUの計算負荷を可視化するパフォーマンス測定ツールとして定義される"
+        "text": "計算グラフは単純な数値計算を行うための手法で、複雑なアルゴリズムには不向きである。"
       },
       {
-        "text": "訓練データとテストデータの分割比率を表すグラフに関連する技術・理論の説明"
+        "text": "計算グラフは物理学の運動方程式を表現するための手法で、機械学習には適用できない。"
       }
     ],
     "correctIndex": 0,
@@ -489,7 +857,27 @@
       "誤差逆伝播法",
       "自動微分"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://qiita.com/edo_m18/items/7c95593ed5844b5a0c3b",
+      "https://tt-tsukumochi.com/archives/7634",
+      "https://saycon.co.jp/archives/neta/%E5%88%9D%E5%BF%83%E8%80%85%E3%81%A7%E3%82%82%E3%82%8F%E3%81%8B%E3%82%8B%EF%BC%81%E8%A8%88%E7%AE%97%E3%82%B0%E3%83%A9%E3%83%95%E3%81%A7%E7%B4%90%E8%A7%A3%E3%81%8F%E9%80%86%E4%BC%9D%E6%92%AD%E3%81%AE",
+      "https://qiita.com/spoiled_genmai/items/dd171eb3a35527ca697b",
+      "https://deepage.net/deep_learning/2017/04/02/backpropagation.html",
+      "https://zenn.dev/shintarot/articles/5361c69bc49e2a",
+      "https://zenn.dev/pe/books/3bee96e7c89ece/viewer/cd4412",
+      "https://www.docswell.com/s/kokuren333/Z82WG2-2024-11-28-202431",
+      "https://masamunetogetoge.com/diagram",
+      "https://tech.preferred.jp/ja/blog/improve_recomputation_algorithm_by_graph_contraction_preprocessing/",
+      "https://postd.cc/2015-08-backprop/",
+      "https://yusuke-ujitoko.hatenablog.com/entry/2016/12/31/230118",
+      "https://ip-study.net/graph-theory-qa/",
+      "https://www.wingarc.com/product/motionboard/blog/graph_type.html",
+      "https://www.researchgate.net/publication/276341627_Graph_Partitioning_and_Eigenvalue_Problems",
+      "https://quizlet.com/jp/815928856/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9-flash-cards/",
+      "https://gorgonia.org/ja/about/computation-graph/",
+      "https://jp.linkedin.com/pulse/understanding-mathematics-artificial-neural-networks-anns-atlury-dp2tc?tl=ja"
+    ]
   },
   {
     "id": "ch4-017",
@@ -500,13 +888,13 @@
         "text": "MSEは主に回帰問題（数値予測）に使い、交差エントロピーは主に分類問題（カテゴリ予測）に使う"
       },
       {
-        "text": "MSEは分類問題に使い、交差エントロピーは回帰問題に使うの概念"
+        "text": "MSEは主に画像処理に使われ、交差エントロピーは回帰問題に用いる技術である。"
       },
       {
-        "text": "どちらも同一の問題に使用でき、選択は任意であるとして定義される"
+        "text": "MSEは分類問題に使われ、交差エントロピーは数値予測に適した手法である。"
       },
       {
-        "text": "MSEは多クラス分類主な用途ので、交差エントロピーは2クラス分類主な用途のである"
+        "text": "MSEは自然言語処理において重要で、交差エントロピーは画像認識にあたる。"
       }
     ],
     "correctIndex": 0,
@@ -522,7 +910,24 @@
       "MSE",
       "交差エントロピー"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://omomuki-tech.com/archives/1791",
+      "https://note.com/firm_bonobo7417/n/n63f9544f1254?sub_rt=share_pb",
+      "https://note.com/magic_whale1395/n/nb6741694130b",
+      "https://jp.linkedin.com/pulse/why-mse-loss-suitable-classification-tasks-prasanna-biswas-1iuxc?tl=ja",
+      "https://qiita.com/etoolsLab369/items/bdc971b1f5d869ffdc61",
+      "https://toukei-lab.com/loss-function",
+      "https://www.reddit.com/r/MLQuestions/comments/15flmve/training_loss_starting_incredibly_large/?tl=ja",
+      "https://note.com/dngri/n/ne82974df5322",
+      "https://ai-scholar.tech/deep-learning/closs-square",
+      "https://kentei.ai/blog/archives/1714",
+      "https://www.reddit.com/r/MachineLearning/comments/3ne2p7/crossentropy_vs_mean_square_error/?tl=ja",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E5%88%9D%E5%BF%83%E8%80%85%E5%90%91%E3%81%91%E3%80%91ai%E3%81%AE%E3%80%8C%E6%88%90%E7%B8%BE%E8%A1%A8%E3%80%8D%E3%82%92%E7%90%86%E8%A7%A3%E3%81%97%E3%82%88%E3%81%86%EF%BC%81%E4%BB%A3%E8%A1%A8",
+      "https://www.ibm.com/jp-ja/think/topics/loss-function",
+      "https://michihito-ando.github.io/econome_ml_with_R/10_OLS_logistic.html",
+      "https://www.alphaxiv.org/ja/overview/2511.10200v2"
+    ]
   },
   {
     "id": "ch4-018",
@@ -533,13 +938,13 @@
         "text": "XOR問題のデータは1本の直線では正例と負例を分けられない（線形分離不可能）ため、線形分類器である単純パーセプトロンでは"
       },
       {
-        "text": "XOR問題はデータ量が少なすぎるため学習できないという手法・アプローチを指す"
+        "text": "XOR問題は単純パーセプトロンの出力が常に0になるため解けない技術であるという仕組み"
       },
       {
-        "text": "XOR問題は整数しか扱えないため浮動小数点演算のパーセプトロンと相性が悪いの概念"
+        "text": "XOR問題は単純パーセプトロンが多層構造を持たないため解決できない手法にあたるである"
       },
       {
-        "text": "XOR問題は3クラス以上の分類問題であるためパーセプトロンの2クラス分類に合わない"
+        "text": "XOR問題はデータが線形分離可能でないため、単純パーセプトロンでは解けない技術という"
       }
     ],
     "correctIndex": 0,
@@ -554,7 +959,32 @@
       "パーセプトロン",
       "線形分離"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://tukumolog.com/nn-fc-layer-03-xor-problem/",
+      "https://tt-tsukumochi.com/archives/7194",
+      "https://tukumolog.com/nn-fc-layer-05-activation-intro/",
+      "https://www.infiniteloop.co.jp/tech-blog/2017/12/learning-keras-03/",
+      "https://note.com/inamasam/n/ne1fa30e1cf55",
+      "https://www.reddit.com/r/neuralnetworks/comments/18v926p/why_is_everybody_saying_singlelayer_perceptron/?tl=ja",
+      "https://sinlab.future-tech-association.org/blogs/mutuki_neural_network_3/",
+      "https://qiita.com/fan2tamo/items/dfe09498cbd6a89f6ef7",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1435467874",
+      "https://appswingby.com/xor%E5%95%8F%E9%A1%8C-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://www.cis.twcu.ac.jp/~asakawa/chiba/handout2/node8.html",
+      "https://dx-consultant-fast-evolving.com/limitation-of-simple-perceptron/",
+      "https://note.com/misaki_ai_work/n/n28c46611deef",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1o3t5dm/isnt_xor_solvable_by_a_single_layer_nn/?tl=ja",
+      "https://qiita.com/Seine_A_Shintani/items/bd29fd15f903632aa03a",
+      "https://techno-road.com/blog/?content=7",
+      "https://zero2one.jp/learningblog/pytorch-tutorial-part1/?srsltid=AfmBOooWXov5jHP5DwqzfdNedU_rslHAYjuwTNSSK9ZZgJGz0L88rsf2",
+      "https://rightcode.co.jp/blogs/14017",
+      "https://saycon.co.jp/archives/neta/%E7%AC%AC4%E7%AB%A0%E3%80%80%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%AE%E5%9F%BA%E7%A4%8E",
+      "https://qiita.com/forusufia/items/53de18be0e07b258fc76",
+      "https://tech.aru-zakki.com/neural-network-xor-training/",
+      "https://techplay.jp/video/157",
+      "https://watlab-blog.com/2019/12/12/mlp-xor/"
+    ]
   },
   {
     "id": "ch4-019",
@@ -565,13 +995,13 @@
         "text": "勾配降下法に「慣性」の概念を取り入れ、過去の更新方向を考慮することで振動を抑えつつ収束を速める手法"
       },
       {
-        "text": "パラメータごとに学習率を個別に調整する適応的学習率手法として定義される"
+        "text": "勾配降下法において、学習率を固定し続ける手法であるという技術的な手法"
       },
       {
-        "text": "学習率を段階的に手動で下げるスケジューリング手法として定義される"
+        "text": "過去の勾配を無視し、現在の勾配のみを用いる手法であるという学習アプローチ"
       },
       {
-        "text": "勾配の符号だけを使って一定幅で更新する手法に関する概念であり、G検定の重要用語のひとつ"
+        "text": "物理学の運動法則を基にした、エネルギー保存の手法であるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -586,7 +1016,32 @@
       "最適化手法",
       "SGD"
     ],
-    "source_ref": "bfdca76c-29de-49a6-84d5-10bac93cb0f6"
+    "source_ref": "bfdca76c-29de-49a6-84d5-10bac93cb0f6",
+    "source_ref_supplements": [
+      "https://ai-compass.weeybrid.co.jp/learning/rmsprop-a-novel-optimization-algorithm/",
+      "https://aiwannabe.com/gradient-descent-explained/",
+      "https://d2l.ai/chapter_optimization/momentum.html",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "http://distill.pub/2017/momentum",
+      "https://optimization.cbe.cornell.edu/index.php?title=Momentum",
+      "https://note.com/osamu_n_zen_knz/n/n73c96683ed60",
+      "https://www.geeksforgeeks.org/machine-learning/ml-momentum-based-gradient-optimizer-introduction/",
+      "https://qiita.com/t_Signull/items/f776aecb4909b7c5c116",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://towardsdatascience.com/understanding-deep-learning-optimizers-momentum-adagrad-rmsprop-adam-e311e377e9c2/",
+      "https://ai.meta.com/blog/a-deeper-understanding-of-the-role-of-momentum-in-non-convex-optimization/",
+      "https://ml4a.github.io/ml4a/jp/how_neural_networks_are_trained/",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap3.html",
+      "https://workbravely.com/blog/inside-bravely/the-momentum-method-an-overview/",
+      "https://www.albert.io/blog/equation-for-momentum/",
+      "https://en.wikipedia.org/wiki/Momentum",
+      "https://authors.library.caltech.edu/records/7askx-9w059/latest",
+      "https://zenn.dev/tasada038/articles/e4f298c2c8cd54",
+      "https://quant.stackexchange.com/questions/12950/the-definitions-of-momentum",
+      "https://medium.com/@vinodhb95/momentum-optimizer-6023aa445e18",
+      "https://www.quora.com/What-is-the-logic-and-intuition-behind-the-momentum-optimization-algorithm-and-why-is-it-considered-better-than-gradient-descent",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC11511872/"
+    ]
   },
   {
     "id": "ch4-020",
@@ -597,13 +1052,13 @@
         "text": "過去の勾配の二乗和を蓄積し、パラメータごとに学習率を自動で減衰させる。頻出パラメータの学習率が小さくなる"
       },
       {
-        "text": "全パラメータに同じ学習率を使用し、更新を均一に行うに基づく学習・推論の仕組み"
+        "text": "過去の勾配の平均を用いて学習率を調整する手法であるとして位置づけられる技術"
       },
       {
-        "text": "勾配の一次モーメントと二次モーメントを組み合わせた手法として定義される"
+        "text": "全てのパラメータに同じ学習率を適用する手法にあたるとして機能する技術的なシステム"
       },
       {
-        "text": "直近の勾配だけを参照し、過去の勾配情報を指数的に忘却するとして定義される"
+        "text": "データの分布に基づいて学習率を手動で設定する技術であるであるアルゴリズム"
       }
     ],
     "correctIndex": 0,
@@ -617,7 +1072,26 @@
       "最適化手法",
       "適応学習率"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://omomuki-tech.com/archives/6195",
+      "https://www.databricks.com/jp/blog/what-is-adagrad",
+      "https://qiita.com/ak11/items/7f63a1198c345a138150",
+      "https://daily-life-ai.com/2356/",
+      "https://e-words.jp/w/AdaGrad.html",
+      "https://dx-consultant-fast-evolving.com/gradient-descent/",
+      "https://appswingby.com/adagrad-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/adagrad-rmsprop/",
+      "https://trends.codecamp.jp/blogs/media/terminology828",
+      "https://tt-tsukumochi.com/archives/7883",
+      "https://note.com/ohara_designer/n/n87389c29f83d",
+      "https://qiita.com/kayokamoto/items/e9b97e91c5e9a2ced61d",
+      "https://zero2one.jp/ai-word/adagrad/?srsltid=AfmBOoonAb8QJH9vBeZSsjK2n0SF91m8TVDaCCJ0ik3nPmKyS6Er213G",
+      "https://lets-programing.com/%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%82%92%E3%83%99%E3%83%BC%E3%82%B9%E3%81%AB%E3%81%97%E3%81%9F%E9%AB%98%E5%BA%A6%E3%81%AA%E6%9C%80%E9%81%A9%E5%8C%96%E6%89%8B%E6%B3%95/",
+      "https://postd.cc/optimizing-gradient-descent/",
+      "https://ai-compass.weeybrid.co.jp/learning/optimizing-learning-an-introduction-to-adagrad/",
+      "https://saycon.co.jp/archives/neta/%E3%80%90%E8%AC%9B%E5%B8%AB%E5%90%91%E3%81%91%E3%80%91%E6%95%B0%E5%BC%8F%E3%81%A7%E6%8C%AB%E6%8A%98%E3%81%95%E3%81%9B%E3%81%AA%E3%81%84%EF%BC%81%E3%80%8Cadagrad%E3%80%8D%E3%82%92%E7%9B%B4%E6%84%9F"
+    ]
   },
   {
     "id": "ch4-021",
@@ -628,13 +1102,13 @@
         "text": "過去の勾配を指数移動平均で管理することで、学習率が0に向かって単調減少するAdaGradの問題を改善し、直近の勾配を重視した適応的学習率"
       },
       {
-        "text": "Momentumを加えてモーメンタムと適応学習率を組み合わせたに基づく学習・推論の仕組み"
+        "text": "RMSPropはAdaGradと同様に、学習率を固定している手法であるとして位置づけられる技術"
       },
       {
-        "text": "全パラメータに一定の学習率を使用することで計算コストを削減したに関連する技術・理論の説明"
+        "text": "RMSPropは過去の勾配を全て考慮し、学習率を一定に保つ手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "勾配の符号のみ使用するため、勾配の大きさによる影響を排除したに基づく学習・推論の仕組み"
+        "text": "RMSPropはデータのスパース性を考慮し、特定のデータにのみ適用される技術であるという仕組み"
       }
     ],
     "correctIndex": 0,
@@ -649,7 +1123,36 @@
       "最適化手法",
       "適応学習率"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://zero2one.jp/learningblog/machine-learning-optimization-methods/?srsltid=AfmBOormzKcw9_LP0Nb6GDEL5eCF1-BmGVuAKksNyE3_aymKT_JQadlU",
+      "https://saycon.co.jp/whatwedo-2/ai/g/deep-learning-for-general/deep-learning-for-general4",
+      "https://jp.linkedin.com/pulse/adam-adagrad-rmsprop-delta-bar-delta-which-learning-divesh-kubal-pfllf?tl=ja",
+      "https://terakoya.sejuku.net/question/detail/42222",
+      "https://qiita.com/T-STAR/items/b72524ce8ccba9f202f4",
+      "https://chefyushima.com/ai-ml_optimizer/2799/",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/adagrad-rmsprop/",
+      "https://pystyle.info/pytorch-adagrad-rmsprop-adadelta/",
+      "https://bamba-news.com/posts/page100/",
+      "https://tech-lab.sios.jp/archives/21823",
+      "https://dx-consultant-fast-evolving.com/gradient-descent/",
+      "https://medium.com/chung-yi/ml%E5%85%A5%E9%96%80-%E5%8D%81%E4%BA%8C-sgd-adagrad-momentum-rmsprop-adam-optimizer-e331ef3cf5cf",
+      "https://freshrimpsushi.github.io/jp/posts/3529/",
+      "https://xexeq.jp/blogs/media/it-glossary1991",
+      "https://www.nttpc.co.jp/gpu/article/benchmark07.html",
+      "https://kunassy.com/oprimizer/",
+      "https://ai-compass.weeybrid.co.jp/learning/rmsprop-a-novel-optimization-algorithm/",
+      "https://rikei-logistics.com/adagrad",
+      "https://zero2one.jp/learningblog/machine-learning-optimization-methods/?srsltid=AfmBOopgihHCsMRMGhgZfIMKr_-UEMmXnDO9qEdtGTol2tupbdwu4dhr",
+      "https://wasurenamemo.blogspot.com/2025/06/optimizer.html",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://qiita.com/kengo-sk8/items/148cf7c9cab32466e4f5",
+      "https://note.com/vast_cosmos500/n/na631c6f589f1",
+      "https://ml4a.github.io/ml4a/jp/how_neural_networks_are_trained/",
+      "https://www.reddit.com/r/MachineLearning/comments/4bys6n/lbfgs_and_neural_nets/?tl=ja",
+      "https://zenn.dev/dena/articles/6f04641801b387",
+      "https://accum33.com/%E3%80%90e%E8%B3%87%E6%A0%BC%E4%B8%8D%E5%90%88%E6%A0%BC%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B6%E3%80%91%E6%80%A7%E8%83%BD%E5%90%91%E4%B8%8A%E3%81%AE%E6%96%B9%E6%B3%95%E3%82%92%E3%83%9D%E3%82%A4%E3%83%B3/"
+    ]
   },
   {
     "id": "ch4-022",
@@ -657,16 +1160,16 @@
     "question": "勾配爆発問題の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習が進むにつれて損失関数の値が0に収束し学習が停止する問題として定義される"
+        "text": "誤差逆伝播の過程で勾配が小さくなり、学習が進まなくなる問題であるという仕組み"
       },
       {
-        "text": "モデルの重みがゼロに収束して出力が得られなくなる問題という特性を持つ技術的定義"
+        "text": "勾配爆発は、重みの初期化が不適切な場合に発生する現象にあたるという学習アプローチ"
       },
       {
         "text": "誤差逆伝播の過程で勾配が指数関数的に大きくなり、重みの更新量が極端に大きくなって学習が発散・不安定になる問題"
       },
       {
-        "text": "学習データが多すぎてメモリが不足する問題として機械学習分野で広く認識されている"
+        "text": "勾配爆発は、過学習を防ぐために意図的に勾配を小さくする手法であるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -681,7 +1184,28 @@
       "ディープラーニング",
       "最適化"
     ],
-    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69"
+    "source_ref": "c7fa86e1-190a-46bd-acc2-f7c31a3c8d69",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E5%8B%BE%E9%85%8D%E7%88%86%E7%99%BA%E5%95%8F%E9%A1%8C.html",
+      "https://note.com/ohara_designer/n/n1a9f8fed9299",
+      "https://zero2one.jp/ai-word/exploding-gradient/?srsltid=AfmBOoriaNYbdBXHoEOgHgGPlG8G7P1uyS2pVh_QJQYW0PEZgpIgcfIH",
+      "https://note.com/nice_sable4056/n/n682623feca78",
+      "https://masamunetogetoge.com/gradient-vanish",
+      "https://ma7viva.com/kentei/general/4-5/",
+      "https://zero2one.jp/ai-word/exploding-gradient/?srsltid=AfmBOorYqzcefNJUdGoTlR1Ooe0U8bAJqM0trJLRhZlNonnylJPQDTKL",
+      "https://service.ai-prompt.jp/article/ai365-067/",
+      "https://www.ultralytics.com/ja/glossary/exploding-gradient",
+      "https://hyper.ai/ja/wiki/4821",
+      "https://minnade-ai-learn.com/qsm_quiz/%E7%94%9F%E6%88%90ai%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88-ai%E3%81%AE%E5%AD%A6%E7%BF%92%E9%81%8E%E7%A8%8B%E3%81%A8%E5%95%8F%E9%A1%8Cai%E3%81%AE%E5%AD%A6%E7%BF%92%E3%81%AB%E3%81%8A%E3%81%91/",
+      "https://ja.wikipedia.org/wiki/%E5%8B%BE%E9%85%8D%E6%B6%88%E5%A4%B1%E5%95%8F%E9%A1%8C",
+      "https://zenn.dev/student_blog/articles/3296c3d71f90fa",
+      "https://www.reddit.com/r/MachineLearning/comments/4h2lie/solving_the_vanishing_gradient_and_exploding/?tl=ja",
+      "https://appswingby.com/%E5%8B%BE%E9%85%8D%E7%88%86%E7%99%BA%E5%95%8F%E9%A1%8C-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://rikei-logistics.com/explosion",
+      "https://qiita.com/harachan/items/c3fa7aea0a6a968f1374",
+      "https://terakoya.sejuku.net/question/detail/42289",
+      "https://jp.linkedin.com/pulse/gradients-loss-functions-neural-networks-colin-kyle-ahijc?tl=ja"
+    ]
   },
   {
     "id": "ch4-023",
@@ -689,16 +1213,16 @@
     "question": "Xavier初期化（Glorot初期化）が適している活性化関数として正しいものはどれか。",
     "choices": [
       {
-        "text": "ReLU関数として定義される"
+        "text": "ReLU活性化関数に適用"
       },
       {
-        "text": "Leaky ReLU関数"
+        "text": "線形回帰モデルに使うである"
       },
       {
         "text": "シグモイド関数またはtanh関数"
       },
       {
-        "text": "Softmax関数の概念"
+        "text": "活性化関数の一種であるという"
       }
     ],
     "correctIndex": 2,
@@ -713,7 +1237,30 @@
       "重みの初期化",
       "活性化関数"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://ai-reboot.io/glossary/weight-initialization",
+      "https://zero2one.jp/learningblog/strategy-for-deep-learning-weight-initialization/?srsltid=AfmBOoqGEB9Eh3-0o5TLJxSFqcWtzInUUsX2_7g-ev3jfBvd6ArAI-H1",
+      "https://fuxin24.net/scoreup/100382/",
+      "https://blogs.novita.ai/ja/pytorch-weight-initialization-demystified/",
+      "https://docs.oracle.com/cd/F85609_01/23/mlsql/neurons-and-activation-functions.html",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1435lly/glorot_initialization_the_tricks_that_led_to_the/?tl=ja",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/xavier-he-initialization/",
+      "https://ja.wikipedia.org/wiki/%E3%82%B7%E3%82%B0%E3%83%A2%E3%82%A4%E3%83%89%E9%96%A2%E6%95%B0",
+      "https://sawano-study.hatenablog.com/entry/2024/12/27/080000",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10327162500",
+      "https://shirogb250.com/2024/11/22/kenshuu-shitsumon/",
+      "https://koko206.hatenablog.com/entry/2021/07/14/220114",
+      "https://jp.linkedin.com/pulse/unlocking-neural-network-potential-glorot-initialization-yeshwanth-n-u7jic?tl=ja",
+      "https://qiita.com/ke-suke-Soft/items/d2204c62dab5ec1eca87",
+      "https://zero2one.jp/learningblog/deep-learning-activation-function/?srsltid=AfmBOorjpj9QmeU1ANutODU2YrOa4jzDcvlt4mbGbsBjQFm954NvVbV1",
+      "https://lets-programing.com/%E6%B4%BB%E6%80%A7%E5%8C%96%E9%96%A2%E6%95%B0%EF%BC%88sigmoid-tanh-relu-softmax%EF%BC%89/",
+      "https://wasurenamemo.blogspot.com/2025/11/dense-initialization-xavier-he.html",
+      "https://qiita.com/Negimaru1/items/07d92923598b29d8b7bf",
+      "https://jp.linkedin.com/pulse/activation-functions-101-sigmoid-tanh-relu-softmax-ben-hammouda?tl=ja",
+      "https://note.com/honda_aoi/n/ne612f31be84a",
+      "https://www.reddit.com/r/learnmachinelearning/comments/uwa462/neural_networks_activation_function_for_output/?tl=ja"
+    ]
   },
   {
     "id": "ch4-024",
@@ -721,16 +1268,16 @@
     "question": "He初期化が適している理由として正しいものはどれか。",
     "choices": [
       {
-        "text": "シグモイド関数の飽和領域を避けるために出力を1以下に抑えるからという性質を持つ概念・アプローチ"
+        "text": "Sigmoid関数は出力が常に1未満であるため、勾配消失が起こりやすい技術であるという技術"
       },
       {
-        "text": "tanh関数のゼロ中心の性質に合わせて初期値をゼロにするからに基づく処理・理論の枠組み"
+        "text": "Tanh関数は出力が-1から1の範囲に収束するため、学習が遅くなる手法にあたるという学習アプローチ"
       },
       {
         "text": "ReLU関数は入力が0以下のとき出力が0になるため実質的に半分のニューロンしか活性化されず、それを考慮して分散を2倍にしているか"
       },
       {
-        "text": "全パラメータを同一の値で初期化することで対称性を壊すからという考え方に基づく手法"
+        "text": "Softmax関数は多クラス分類において確率を出力するため、回帰問題に適用される・仕組み"
       }
     ],
     "correctIndex": 2,
@@ -746,7 +1293,17 @@
       "重みの初期化",
       "ReLU"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ]
   },
   {
     "id": "ch4-025",
@@ -754,16 +1311,16 @@
     "question": "エポック（epoch）の定義として正しいものはどれか。",
     "choices": [
       {
-        "text": "1回の重み更新に使用するサンプル数の概念"
+        "text": "モデルの重みを調整する回数であるという技術"
       },
       {
-        "text": "モデルの各層に含まれるニューロンの数の概念"
+        "text": "データを分割して処理する単位にあたるである"
       },
       {
         "text": "訓練データセット全体を一通り学習に使用した単位（1周分の学習）"
       },
       {
-        "text": "学習率を更新する頻度を表す周期として定義される"
+        "text": "特定の時代を示す用語であるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -778,7 +1335,35 @@
       "学習手法",
       "ハイパーパラメータ"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF.html",
+      "https://note.com/ai_consult_mt/n/n142a41acb808",
+      "https://forum.menou.co.jp/t/topic/253",
+      "https://webbigdata.jp/post-9697/",
+      "https://note.com/vast_cosmos500/n/n46800613a1b4",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10295677740",
+      "https://note.com/vast_cosmos500/n/n16c0dd0d7dec",
+      "https://daily-life-ai.com/340/",
+      "https://pbg2024.com/2024/12/23/%E3%82%A8%E3%83%9D%E3%83%83%E3%82%AF%E3%81%A8%E3%83%8B%E3%83%BC%E3%83%88%E3%81%A8%E3%81%AF%EF%BC%9F%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98/",
+      "https://note.com/kikaben/n/nf049090dd5f7",
+      "https://tech.aru-zakki.com/deeplearning-epoch-step-batchsize/",
+      "https://github.com/kohya-ss/sd-scripts/blob/main/docs/train_README-ja.md",
+      "https://www.ultralytics.com/ja/glossary/epoch",
+      "https://note.com/vast_cosmos500/n/n046d2953d0de",
+      "https://zenn.dev/dalab/articles/5cd1688a52108e",
+      "https://www.reddit.com/r/AskHistorians/comments/tgxo1q/whats_the_difference_between_epoch_era_period_age/?tl=ja",
+      "https://www.reddit.com/r/Showerthoughts/comments/1poe6cx/digital_archaeologists_in_a_distant_future_are/?tl=ja",
+      "https://japan-medical-ai.github.io/medical-ai-course-materials/notebooks/04_Introduction_to_Chainer.html",
+      "https://www.ei-navi.jp/dictionary/content/epoch/",
+      "https://qiita.com/jovyan/items/c727392d6d6030433f84",
+      "https://www.ogis-ri.co.jp/otc/hiroba/technical/similar-document-search/part7.html",
+      "https://www.trifields.jp/uci-machine-learning-repository-datasets-956",
+      "https://www.reddit.com/r/worldbuilding/comments/1nbxx2e/terms_of_time_age_vs_era_vs_epoch_vs/?tl=ja",
+      "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap3.html",
+      "https://docs.ultralytics.com/ja/modes/train/"
+    ]
   },
   {
     "id": "ch4-026",
@@ -786,16 +1371,16 @@
     "question": "バッチサイズの説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "訓練データを学習する総回数として定義される"
+        "text": "モデルの学習率を示す指標であるという技術"
       },
       {
-        "text": "ニューラルネットワークの隠れ層の数"
+        "text": "データ全体を一度に処理する手法である"
       },
       {
         "text": "1回の重み更新（パラメータ更新）に使用するサンプルの数"
       },
       {
-        "text": "モデルの出力クラス数として定義される"
+        "text": "サンプルの前処理に関する手法であるという"
       }
     ],
     "correctIndex": 2,
@@ -810,7 +1395,42 @@
       "ハイパーパラメータ",
       "学習手法"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://tutorials.chainer.org/ja/13_Basics_of_Neural_Networks.html",
+      "https://daily-life-ai.com/337/",
+      "https://www.ultralytics.com/ja/glossary/batch-size",
+      "https://service.shiftinc.jp/ai-terminology/batch-size/",
+      "https://www.reddit.com/r/StableDiffusion/comments/138elnz/is_this_how_batch_size_repeats_epochs_works_for/?tl=ja",
+      "https://www.cio.com/article/4112847/llm%E3%81%AF%E3%81%A9%E3%81%86%E3%82%84%E3%81%A3%E3%81%A6%E5%AD%A6%E7%BF%92%E3%81%95%E3%82%8C%E3%82%8B%E3%81%8B%EF%BC%9A%E5%AD%A6%E7%BF%92%E7%8E%87%E3%80%81%E6%9C%80%E9%81%A9%E5%8C%96%E3%80%81.html",
+      "https://www.reddit.com/r/LocalLLaMA/comments/17sbwo5/what_does_batch_size_mean_in_inference/?tl=ja",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14319269979",
+      "https://www.ibm.com/docs/ja/watsonx/saas?topic=models-tuning-experiment-parameters",
+      "https://qiita.com/koki1026/items/672a1708627393ecc314",
+      "https://note.com/vast_cosmos500/n/ncd8c33fca570",
+      "https://note.com/ai_consult_mt/n/n56b6c18f07f5",
+      "https://ankimaker.com/workbooks/0a523e9b-df85-4836-afa9-3da07fca4428",
+      "https://teratail.com/questions/258385",
+      "https://quizlet.com/jp/1052324356/%E7%AC%AC5%E5%9B%9E-flash-cards/",
+      "https://www.reddit.com/r/MachineLearning/comments/18fs4ik/d_what_is_the_effect_of_batch_size_on_training/?tl=ja",
+      "https://www.reddit.com/r/pytorch/comments/qefee1/receiving_strange_results_for_different_batch/?tl=ja",
+      "https://note.com/hotate_nt/n/n0d5d0f4b0148",
+      "https://tumada.medium.com/%E3%83%90%E3%83%83%E3%83%81%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%AF%E5%B0%8F%E3%81%95%E3%82%81%E3%81%AB-%E3%83%A0%E3%83%80%E3%81%AE%E5%B0%91%E3%81%AA%E3%81%84%E4%BD%9C%E6%A5%AD%E3%81%AE%E9%80%B2%E3%82%81%E6%96%B9-57f142173f8f",
+      "https://wandb.ai/wandb_fc/japanese/reports/---Vmlldzo1NTkzOTg",
+      "https://webbigdata.jp/post-9697/",
+      "https://developers.google.com/machine-learning/crash-course/linear-regression/hyperparameters?hl=ja",
+      "https://yuiga.dev/blog/posts/dont_decay_the_learning_rate_increase_the_batch_size/",
+      "https://zenn.dev/seeda_yuto/articles/llm-sycophancy-experiment",
+      "https://yuiga.dev/blog/posts/%E3%83%90%E3%83%83%E3%83%81%E3%82%B5%E3%82%A4%E3%82%BA/",
+      "https://tkng.org/b/2024/12/16/critical-batch-size/",
+      "https://bilzard.hatenablog.com/entry/2023/08/16/131449",
+      "https://qiita.com/kenta1984/items/bad75a37d552510e4682",
+      "https://joisino.hatenablog.com/entry/constant",
+      "https://free.kikagaku.ai/tutorial/basic_of_deep_learning/learn/neural_network_basic_backward",
+      "https://docs.ultralytics.com/ja/guides/model-training-tips/",
+      "https://zero2one.jp/ai-word/epoch/?srsltid=AfmBOoopUCU3G6fnWR2PEPC_OOjjmCdKb70jbfKh0r1re-zEOJaf9mON",
+      "https://sgsystemsglobal.com/ja/%E7%94%A8%E8%AA%9E%E9%9B%86/%E3%83%90%E3%83%83%E3%83%81%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%AD%E3%82%B8%E3%83%83%E3%82%AF/"
+    ]
   },
   {
     "id": "ch4-027",
@@ -818,16 +1438,16 @@
     "question": "学習率スケジューリングの目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習中にバッチサイズを徐々に増加させて計算効率を高めること"
+        "text": "学習率を固定し、全てのエポックで同じ値を使う手法であるという技術"
       },
       {
-        "text": "エポックごとに訓練データをシャッフルして過学習を防ぐことの概念"
+        "text": "学習の初期段階で学習率を下げ、終盤で上げることを目的とするである"
       },
       {
         "text": "学習の進行に応じて学習率を動的に変化させることで、初期は大きく探索し終盤は細かく収束させる"
       },
       {
-        "text": "複数のモデルを同時に学習して最良のものを選ぶアンサンブル学習手法"
+        "text": "データの前処理を行うための手法にあたる技術であるであるアルゴリズム"
       }
     ],
     "correctIndex": 2,
@@ -842,7 +1462,27 @@
       "ハイパーパラメータ",
       "最適化"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://omomuki-tech.com/archives/6186",
+      "https://syp.vn/jp/article/learning-rate-optimization-strategies",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/learning-rate-scheduling/",
+      "https://service.ai-prompt.jp/article/ai365-171/",
+      "https://wasurenamemo.blogspot.com/2025/07/learning-rate-scheduler.html",
+      "https://suzmemo.com/lr-scheduler/",
+      "https://zenn.dev/yuto_mo/articles/6e2803495029d4",
+      "https://zero2one.jp/learningblog/ml-learning-rate/?srsltid=AfmBOoqz0CK4AjvIh5qsGBIitTecr-1kjfy36ULxErC5JnRh18Uq1zUk",
+      "https://qiita.com/kma-jp/items/81db6d5c549e50707e30",
+      "https://www.cio.com/article/4112847/llm%E3%81%AF%E3%81%A9%E3%81%86%E3%82%84%E3%81%A3%E3%81%A6%E5%AD%A6%E7%BF%92%E3%81%95%E3%82%8C%E3%82%8B%E3%81%8B%EF%BC%9A%E5%AD%A6%E7%BF%92%E7%8E%87%E3%80%81%E6%9C%80%E9%81%A9%E5%8C%96%E3%80%81.html",
+      "https://quizlet.com/jp/921391135/g%E6%A4%9C%E5%AE%9Astudy-ai%E6%A8%A1%E6%93%AC%E5%95%8F%E9%A1%8C-flash-cards/",
+      "https://www.reddit.com/r/MachineLearning/comments/7x99jf/r_automatic_learning_rate_scheduling_that_really/?tl=ja",
+      "https://qiita.com/nigo1973/items/1f4ca7352d04bb0e7f13",
+      "https://note.com/vast_cosmos500/n/na631c6f589f1",
+      "https://www.reddit.com/r/MachineLearning/comments/oy3co1/d_how_to_pick_a_learning_rate_scheduler/?tl=ja",
+      "https://zenn.dev/dena/articles/6f04641801b387",
+      "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
+      "https://www.shinhidaka-hokkaido.jp/gikai/kaigiroku/R05/R0509T_02.html"
+    ]
   },
   {
     "id": "ch4-028",
@@ -850,16 +1490,16 @@
     "question": "万能近似定理（普遍性定理）の内容として正しいものはどれか。",
     "choices": [
       {
-        "text": "十分なデータがあればどんなモデルも100%の精度を達成できるという定理"
+        "text": "隠れ層が2層以上必要で、特定の条件下でのみ近似可能である技術という技術"
       },
       {
-        "text": "ニューラルネットワークは必ず大域最適解に収束するという定理の概念"
+        "text": "任意の関数を近似するためには、隠れ層の数を無限に増やす必要がある手法である"
       },
       {
         "text": "隠れ層が1層であっても、ニューロン数を十分大きくすれば任意の連続関数を任意の精度で近似できるという定理"
       },
       {
-        "text": "層を深くするほど表現力が指数的に増加するという定理として定義される"
+        "text": "ニューラルネットワークは、全てのデータを一度に処理する必要がある技術という"
       }
     ],
     "correctIndex": 2,
@@ -873,7 +1513,28 @@
       "ニューラルネットワーク",
       "理論"
     ],
-    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608"
+    "source_ref": "3239ebc4-ec1d-4386-8cdb-b7bb52d82608",
+    "source_ref_supplements": [
+      "https://www.cybernet.co.jp/ncs/column_glossary/glossary/neural_network/",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap4.html",
+      "https://www.reddit.com/r/learnmachinelearning/comments/15w3k0e/what_purpose_do_extra_layers_serve_in_a_neural/?tl=ja",
+      "https://zenn.dev/green_tea/articles/2875587a23442a",
+      "https://qiita.com/softbase/items/337ee390cb95b8d95ccc",
+      "https://qiita.com/cfiken/items/e2047d9b27e6ef2a132b",
+      "https://arxiv.org/pdf/2102.10993",
+      "https://github-nakasho.github.io/ml/universal_approximation",
+      "https://kurporateadvisory.jp/articles/tech/PINN.html",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://note.com/vast_cosmos500/n/n046d2953d0de",
+      "https://www.scribd.com/document/808516514/Thaolejp-N1-Tai-Lieu-Doc-Hieu-N1",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/"
+    ]
   },
   {
     "id": "ch4-029",
@@ -881,16 +1542,16 @@
     "question": "ニューラルネットワークの重みをすべてゼロで初期化した場合に発生する問題として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習率が自動的に0になり学習が開始されないとして定義される技術的概念・考え方"
+        "text": "全ての重みをランダムに初期化すると、学習が不安定になる問題が生じるという技術"
       },
       {
-        "text": "出力が1に固定されるためソフトマックスの計算が不能になるという手法・アプローチを指す"
+        "text": "重みをゼロにすると、学習が早く進むため、全体の精度が向上することがあるである"
       },
       {
         "text": "全ニューロンが同じ出力を出し、誤差逆伝播でも同じ勾配が計算されるため、対称性が破れず層内の全ニューロンが同一"
       },
       {
-        "text": "学習は正常に進むが収束速度が極端に遅くなるに関連する技術・理論の説明"
+        "text": "全ニューロンが異なる出力を生成し、逆伝播での勾配が大きくなる現象が起こる。"
       }
     ],
     "correctIndex": 2,
@@ -905,7 +1566,28 @@
       "対称性問題",
       "ニューラルネットワーク"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://kobesoft.co.jp/mikata/words/ai-ml/weight-initialization/",
+      "https://zenn.dev/m10k1/articles/8070b0f2f4e73c",
+      "https://jp.linkedin.com/pulse/how-much-do-you-know-weight-initialization-neural-networks-sen?tl=ja",
+      "https://zero2one.jp/learningblog/strategy-for-deep-learning-weight-initialization/?srsltid=AfmBOor9ikILQuQQQiS5UNwnRwlnNZPa_LLGYwcbs0gWA-bY-P4miqwC",
+      "https://www.reddit.com/r/MLQuestions/comments/1ky5b8w/zero_initialization_in_neural_networks_why_and/?tl=ja",
+      "https://www.reddit.com/r/deeplearning/comments/1evwa3d/why_do_we_initialize_the_neural_networks_randomly/?tl=ja",
+      "https://zero2one.jp/learningblog/strategy-for-deep-learning-weight-initialization/?srsltid=AfmBOor7ypljNYybiDhW5pkKb7Y_iObmp7oPT_7oFPqMlbULVoNh4E8R",
+      "https://ai-reboot.io/glossary/weight-initialization",
+      "https://qiita.com/Fumio-eisan/items/d697fbd96347ef7e49d5",
+      "https://avilen.co.jp/personal/knowledge-article/initial-value/",
+      "https://note.com/3day_programmer/n/n899bc4ccb17a",
+      "https://www.reddit.com/r/learnmachinelearning/comments/18kmz5p/initialize_with_only_positive_or_negative_weights/?tl=ja",
+      "https://ip-study.net/ai-technology-qa/",
+      "https://www.takapy.work/entry/2018/06/14/221633",
+      "https://note.com/vast_cosmos500/n/n641ebdc1253a",
+      "https://ja.stackoverflow.com/questions/77501/%E3%81%AA%E3%81%9C%E9%87%8D%E3%81%BF%E3%81%AE%E5%88%9D%E6%9C%9F%E5%80%A4%E3%81%ABnp-random-randn%E3%82%92%E7%94%A8%E3%81%84%E3%82%8B%E3%81%AE%E3%81%8B",
+      "https://jp.mathworks.com/help/deeplearning/ref/network.init.html",
+      "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC%EF%BD%9E%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A8%93%EF%BD%9E/",
+      "https://www.anarchive-beta.com/entry/2020/08/15/180000"
+    ]
   },
   {
     "id": "ch4-030",
@@ -913,16 +1595,16 @@
     "question": "全バッチ学習（バッチ勾配降下法）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "データを1件ずつ使って毎回重みを更新するため更新頻度が高いとして機械学習分野で広く認識されている"
+        "text": "全データを使わずにランダムに選び、重みを更新する手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "小さなミニバッチで勾配を計算するため計算効率と安定性のバランスが良いとして定義される"
+        "text": "全訓練データの一部を使って、重みを頻繁に更新する手法であるに応用される技術的な仕組み"
       },
       {
         "text": "全訓練データの勾配を計算してから1回重みを更新する。勾配の推定が安定しているが大規模データでは計算コストが高く実用上困難"
       },
       {
-        "text": "過学習を防ぐために一部のデータだけをランダムに使う手法という性質を持つ概念・アプローチ"
+        "text": "全てのデータを一度に処理せず、逐次的に学習を行う技術にあたるとして用いられる技術的手法"
       }
     ],
     "correctIndex": 2,
@@ -937,7 +1619,34 @@
       "勾配降下法",
       "最適化手法"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://megdai.jp/markebatake/businessword/3302/",
+      "https://qiita.com/pandausa/items/dc359f902bee8482c58c",
+      "https://note.com/koshi_ai/n/n343cd1f9d647",
+      "https://lets-programing.com/%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95/",
+      "https://www.ios-net.co.jp/blog/20250917-5760/",
+      "https://chefyushima.com/ai-ml_batch-online/2781/",
+      "https://www.ibm.com/jp-ja/think/topics/gradient-descent",
+      "https://gihyo.jp/dev/serial/01/machine-learning/0016",
+      "https://saycon.co.jp/archives/neta/%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E5%BF%83%E8%87%93%E9%83%A8%EF%BC%81%E3%83%90%E3%83%83%E3%83%81%E6%9C%80%E6%80%A5%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%A8%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE",
+      "https://otafuku-lab.co/aizine/glossary-batch-learning-0911/",
+      "https://avilen.co.jp/personal/knowledge-article/optimizer/",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14319269979",
+      "https://ml4a.github.io/ml4a/jp/how_neural_networks_are_trained/",
+      "https://www.reddit.com/r/MLQuestions/comments/1fu57rp/general_method_for_computing_gradients/?tl=ja",
+      "https://ai-compass.weeybrid.co.jp/learning/batch-learning-a-foundation-of-machine-learning/",
+      "https://zero2one.jp/ai-word/batch-learning/?srsltid=AfmBOopkgk12W85Qhprey0BzkOtqJjdIZU8YOFXNB1Sye4lR-ejmAtmM",
+      "https://www.globalwalkers.co.jp/blog/2022/02/01/n0006/",
+      "https://qiita.com/Nezura/items/8635d6764e166aa9f87d",
+      "https://avilen.co.jp/personal/knowledge-article/batch-learning/",
+      "https://ja.stackoverflow.com/questions/48021/%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E5%AD%A6%E7%BF%92-%E3%83%90%E3%83%83%E3%83%81%E5%AD%A6%E7%BF%92-%E3%83%9F%E3%83%8B%E3%83%90%E3%83%83%E3%83%81%E5%AD%A6%E7%BF%92%E3%81%AE%E9%81%95%E3%81%84",
+      "https://zero2one.jp/learningblog/gradient-of-cost-function-neural-networks/?srsltid=AfmBOormnvxA3EBO-sn3anOsxGjcLt2eRySZw1-8JA96nlkpwvID3xbl",
+      "https://e-words.jp/w/%E3%83%90%E3%83%83%E3%83%81%E5%AD%A6%E7%BF%92.html",
+      "https://note.com/marupeke296/n/n4f0d2340a373",
+      "https://jp.linkedin.com/pulse/what-difference-between-batch-online-machine-learning-hafsa-raza-v6vyf?tl=ja",
+      "https://qiita.com/koki1026/items/672a1708627393ecc314"
+    ]
   },
   {
     "id": "ch4-031",
@@ -945,13 +1654,13 @@
     "question": "ニューラルネットワークにおける「隠れ層（中間層）」の役割として正しいものはどれか。",
     "choices": [
       {
-        "text": "入力データを外部へ出力するための最終層として定義される"
+        "text": "出力層と直接接続し、データを単純に転送する層であるという技術"
       },
       {
-        "text": "モデルの評価指標を計算するための損失計算層として定義される"
+        "text": "入力層からの情報をそのまま出力する役割を持つ層であるである"
       },
       {
-        "text": "学習データの前処理（正規化）だけを行う層として定義される"
+        "text": "データを圧縮し、情報を保存するための層にあたるという仕組み"
       },
       {
         "text": "入力層と出力層の間に位置し、非線形変換を通じて入力の特徴を段階的に抽出・変換する層"
@@ -969,7 +1678,28 @@
       "ニューラルネットワーク",
       "中間層"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://e-words.jp/w/%E9%9A%A0%E3%82%8C%E5%B1%A4.html",
+      "https://qiita.com/riku1220/items/fcf7699625f5d0ad09bf",
+      "https://www.tomorrow-net.co.jp/topic/topics-blog-20240820/",
+      "https://free.kikagaku.ai/tutorial/basic_of_deep_learning/learn/neural_network_basic_forward",
+      "https://vnext.co.jp/v-blog/what-is-neural-network.html",
+      "https://note.com/arkaive/n/n3602f2cfd98e",
+      "https://www.gifu-nct.ac.jp/elec/deguchi/sotsuron/nishioka/node6.html",
+      "https://tutorials.chainer.org/ja/13_Basics_of_Neural_Networks.html",
+      "https://ai-physics-lab.com/ja/neural-network-input-hidden-output/",
+      "https://japan-medical-ai.github.io/medical-ai-course-materials/notebooks/03_Introduction_to_Neural_Network.html",
+      "https://www.codexa.net/what-is-deep-learning/",
+      "https://www.skygroup.jp/media/article/3471/",
+      "https://itjisho.com/%E9%9A%A0%E3%82%8C%E5%B1%A4%EF%BC%88hidden-layer%EF%BC%89%E3%81%A8%E3%81%AF%EF%BC%9F%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE/",
+      "https://note.com/gyoza_tencho/n/n7fde6dc23477",
+      "https://webbigdata.jp/post-1491/",
+      "https://qiita.com/toyohisa/items/aabc9fdb6a515bb4a35f",
+      "https://robo.japanstep.jp/learn/2025/05/1003/",
+      "https://www.reddit.com/r/MachineLearning/comments/1h1x2a/what_are_hidden_layers_for/?tl=ja",
+      "https://techsword.co.jp/column/introduce-deep-learning"
+    ]
   },
   {
     "id": "ch4-032",
@@ -977,13 +1707,13 @@
     "question": "勾配消失問題に対するReLU関数の効果の説明として正しいものはどれか。",
     "choices": [
       {
-        "text": "ReLUは出力を0〜1に制限するためシグモイドよりも勾配が小さくなるとして機械学習分野で広く認識されている"
+        "text": "シグモイド関数は入力が大きくなると勾配が0に近づくため、深層学習には不向きであるという技術的な手法"
       },
       {
-        "text": "ReLUは自動的に学習率を調整するため勾配消失を根本的に解決するという考え方に基づく手法"
+        "text": "ReLU関数は負の値を持つ入力に対しても勾配が存在するため、学習が進みやすい手法であるという学習アプローチ"
       },
       {
-        "text": "ReLUは全入力に対して非ゼロの出力を保証するため勾配が消えないに基づく学習・推論の仕組み"
+        "text": "勾配消失問題は主にデータの前処理に起因するため、モデルのアーキテクチャには関係しないであるアルゴリズム"
       },
       {
         "text": "ReLUは入力が正の領域では勾配が常に1であるため、シグモイド関数のような飽和（勾配が0に近づく現象）が起きず、深い層まで勾配が伝わりやすい"
@@ -1002,7 +1732,17 @@
       "勾配消失",
       "活性化関数"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ]
   },
   {
     "id": "ch4-033",
@@ -1010,13 +1750,13 @@
     "question": "交差エントロピー誤差の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "予測値と正解値の差の二乗を平均した誤差関数に関連する技術・理論の説明"
+        "text": "平均二乗誤差は、予測値の差を二乗して平均する手法であるとして位置づけられる技術"
       },
       {
-        "text": "2クラス分類主な用途ので、多クラスには使用できない誤差関数という性質を持つ概念・アプローチ"
+        "text": "交差エントロピーは、回帰問題に特化した誤差関数であるとされるという学習アプローチ"
       },
       {
-        "text": "予測値が正解に近いほど大きな値を返す報酬関数という性質を持つ概念・アプローチ"
+        "text": "情報理論におけるエントロピーは、データの不確実性を測る指標であるという仕組み"
       },
       {
         "text": "予測した確率分布と正解の分布のずれを対数を用いて定量化した誤差関数で、正解クラスの予測確率が低いほど大きな誤"
@@ -1034,7 +1774,27 @@
       "損失関数",
       "分類"
     ],
-    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c"
+    "source_ref": "54c8e69c-a0b6-4243-a5e5-53324956223c",
+    "source_ref_supplements": [
+      "https://otafuku-lab.co/aizine/cross-entropy1022/",
+      "https://ai-compass.weeybrid.co.jp/algorizm/cross-entropy-a-fundamental-concept-in-machine-learning/",
+      "https://zenn.dev/yuto_mo/articles/56c3df58739d3d",
+      "https://manareki.com/crossentropy_lossfunction",
+      "https://zero2one.jp/ai-word/cross-entropy/?srsltid=AfmBOoqCepQymHurxLwXShT_p6K-UnHWNduzNwJQ0NXmxyt6O8gPafXR",
+      "https://qiita.com/kenta1984/items/59a9ef1788e6934fd962",
+      "https://www.seis.nagoya-u.ac.jp/~maeda/ymaeda_opentools_doc/include/machine_learning/formula/2_cross_entropy_error.html",
+      "https://zero2one.jp/ai-word/cross-entropy/?srsltid=AfmBOooNoqz2tABWnMQ_UCY6grGyVERvLmdSNXbnfcuJGsuhJyLqBIBa",
+      "https://shoblog.iiyan.net/cross-entropy/",
+      "https://www.anarchive-beta.com/entry/2020/06/17/180000",
+      "https://ja.wikipedia.org/wiki/%E4%BA%A4%E5%B7%AE%E3%82%A8%E3%83%B3%E3%83%88%E3%83%AD%E3%83%94%E3%83%BC",
+      "https://note.com/kikaben/n/ne44638a5a3a6",
+      "https://blog.qualiteg.com/cross-entropy-01/",
+      "https://saycon.co.jp/archives/neta/%E3%81%AA%E3%81%9C%E4%BA%8C%E4%B9%97%EF%BC%9F%E3%81%AA%E3%81%9C2%E5%88%86%E3%81%AE%E4%B8%80%EF%BC%9F%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92%E3%81%AE%E3%80%8C%E6%90%8D%E5%A4%B1%E9%96%A2%E6%95%B0%E3%80%8D",
+      "https://artnasekai.com/deep-learning/dl-step5/",
+      "https://zilliz.com/jp/learn/Cross-Entropy-Loss-Unraveling-its-Role-in-Machine-Learning",
+      "https://ikuty.com/2019/10/13/deep_error/",
+      "https://www.codemajin.net/loss-functions-in-deep-learning/"
+    ]
   },
   {
     "id": "ch4-034",
@@ -1042,13 +1802,13 @@
     "question": "オンライン学習（確率的勾配降下法の1サンプル更新）の特徴として正しいものはどれか。",
     "choices": [
       {
-        "text": "訓練データ全体を使って1回だけ重みを更新するとして位置づけられる手法・概念"
+        "text": "全データを使用して一度に重みを更新する手法であるとして位置づけられる技術"
       },
       {
-        "text": "データを使わずモデルの構造だけで学習するという特性を持つ技術的定義"
+        "text": "更新頻度が低く、安定した収束を目指す手法にあたるとして機能する技術的なシステム"
       },
       {
-        "text": "複数のデータを束ねて処理し計算コストとノイズのバランスをとるとして定義される"
+        "text": "教師あり学習に特化したアルゴリズムであるとされるとして用いられる技術的手法"
       },
       {
         "text": "1データサンプルを処理するたびに重みを更新するため更新頻度が高く、ノイズが大きい代わりに局所最適解を脱出"
@@ -1066,7 +1826,35 @@
       "SGD",
       "学習手法"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://saycon.co.jp/archives/neta/%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%A8%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95%E3%81%AE%E6%AF%94%E8%BC%83",
+      "https://atcold.github.io/NYU-DLSP20/ja/week05/05-1/",
+      "https://www.889100.com/column/column080.html",
+      "https://www.itbee.co.jp/blog/blog016/",
+      "https://jichitai.works/articles/3060",
+      "https://zero2one.jp/ai-word/locally-optimal-solution/?srsltid=AfmBOorEZlLQwqNnU-kpd1tlfSjimnGUPxoEPzm8tsK2WIPItuGvkmto",
+      "https://note.com/gyoza_tencho/n/nfef7a9471a1a",
+      "https://ja.wikipedia.org/wiki/%E7%A2%BA%E7%8E%87%E7%9A%84%E5%8B%BE%E9%85%8D%E9%99%8D%E4%B8%8B%E6%B3%95",
+      "https://benesse.jp/programming/article7.html",
+      "https://www.irisohyama.co.jp/b2b/itrends/articles/5326/",
+      "https://omomuki-tech.com/archives/6187",
+      "https://www.ios-net.co.jp/blog/20250917-5760/",
+      "https://qiita.com/koshian2/items/028c457880c0ec576e27",
+      "https://www.ibm.com/jp-ja/think/topics/stochastic-gradient-descent",
+      "https://jp.remo.co/articles/what-is-online-class",
+      "https://www.edic.jp/column/article/58.html",
+      "https://www.umu.co/column/onlinegakushu_kouka/",
+      "https://t-keita.hatenadiary.jp/entry/2021/08/01/141234",
+      "https://e-words.jp/w/%E5%B1%80%E6%89%80%E6%9C%80%E9%81%A9%E8%A7%A3.html",
+      "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10317601745",
+      "https://qiita.com/9ryuuuuu/items/ab361d00af32f71c1f89",
+      "https://stern-bow.hatenablog.com/entry/2025/12/27/120000",
+      "https://www.msi.co.jp/nuopt/glossary/term_da265770bed70e5f0a764f3d20c0ce3d242e6467.html",
+      "https://qiita.com/kenmatsu4/items/d282054ddedbd68fecb0",
+      "https://ai-compass.weeybrid.co.jp/learning/local-optima-a-pitfall-in-machine-learning/",
+      "https://jp.mathworks.com/help/optim/ug/local-vs-global-optima.html"
+    ]
   },
   {
     "id": "ch4-035",
@@ -1074,13 +1862,13 @@
     "question": "ニューラルネットワークの学習率（learning rate）が大きすぎる場合の影響として正しいものはどれか。",
     "choices": [
       {
-        "text": "学習が非常に遅く、収束に膨大なエポック数が必要になるとして定義される"
+        "text": "学習率が低すぎると、モデルの収束が遅くなり、最適解に達しにくくなることがある。"
       },
       {
-        "text": "過学習が発生するため汎化性能が向上しないとして機械学習分野で広く認識されている"
+        "text": "学習率が適切でない場合、モデルの精度が向上しないことがあるが、安定性は保たれる。"
       },
       {
-        "text": "全パラメータがゼロに収束し学習が停止するとして機械学習分野で広く認識されている"
+        "text": "学習率の調整は、データの前処理において重要であり、正規化手法に影響を与える。"
       },
       {
         "text": "重みの更新量が大きすぎて損失関数の最小値を飛び越し、損失が振動したり発散して学習が不安定になる"
@@ -1098,7 +1886,34 @@
       "ハイパーパラメータ",
       "最適化"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://wasurenamemo.blogspot.com/2025/06/learning-rate.html",
+      "https://service.shiftinc.jp/ai-terminology/learning-rate/",
+      "https://www.smartweb.jp/ja/glossary/Learning-Rate/",
+      "https://syp.vn/jp/article/learning-rate-optimization-strategies",
+      "https://jp.linkedin.com/pulse/optimize-your-neural-networks-intro-cyclical-learning-poudel-dwzlf?tl=ja",
+      "https://boochi-engineer.net/archives/2562",
+      "https://jp.linkedin.com/pulse/how-learning-rate-affects-convergence-striking-right-balance-deb-nagvf?tl=ja",
+      "https://www.reddit.com/r/deeplearning/comments/16ivam2/how_does_learning_rate_impact_overfitting/?tl=ja",
+      "https://www.persol-group.co.jp/service/business/article/21296/",
+      "https://www.reddit.com/r/learnmachinelearning/comments/hsnly3/how_can_a_learning_rate_that_is_too_large_cause/?tl=ja",
+      "https://avilen.co.jp/personal/knowledge-article/optimizer/",
+      "https://www.reddit.com/r/MachineLearning/comments/722iko/r_cyclical_learning_rates_for_training_neural/?tl=ja",
+      "https://www.ibm.com/jp-ja/think/topics/learning-rate",
+      "https://qiita.com/t-tkd3a/items/fc0c9f7923847a44962c",
+      "https://dajiro.com/entry/2020/04/15/221414",
+      "https://qard.is.tohoku.ac.jp/T-Wave/2025/08/17/%E3%83%90%E3%83%83%E3%83%81%E3%82%B5%E3%82%A4%E3%82%BA%E3%81%8C%E5%A4%A7%E3%81%8D%E3%81%84%E3%81%A8%E3%81%AA%E3%81%9C%E6%B1%8E%E5%8C%96%E6%80%A7%E8%83%BD%E3%81%8C%E4%B8%8B%E3%81%8C%E3%82%8B%E3%81%AE/",
+      "https://shion.blog/the-9th-machine-learning-workshop_2/",
+      "https://www.tryeting.jp/column/6842/",
+      "https://www.reddit.com/r/learnmachinelearning/comments/14hntl6/what_learning_rate_value_is_considered_safe/?tl=ja",
+      "https://qiita.com/keng000/items/c50794fb7f029062bd0d",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap3.html",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1cq7749/is_picking_a_lower_learning_rate_always_better/?tl=ja",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1aeo0cl/problem_about_learning_rate_in_simple_neural/?tl=ja",
+      "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
+      "https://ja.stackoverflow.com/questions/51570/mnist%E3%81%AE%E5%88%86%E9%A1%9E%E5%95%8F%E9%A1%8C%E3%81%A7%E6%AD%A3%E7%AD%94%E7%8E%87%E3%81%8C%E4%BD%8E%E3%81%99%E3%81%8E%E3%82%8B"
+    ]
   },
   {
     "id": "ch4-036",
@@ -1106,13 +1921,13 @@
     "question": "損失関数（誤差関数）の目的として正しいものはどれか。",
     "choices": [
       {
-        "text": "ニューラルネットワークの層の数を決定することとして定義される"
+        "text": "モデルの性能を評価するための指標であり、精度を測る手法であるという技術"
       },
       {
-        "text": "データを正規化して学習を安定させることという枠組みで理解される処理機構"
+        "text": "データの分布を可視化し、特徴を抽出するための手法にあたるという学習アプローチ"
       },
       {
-        "text": "テストデータの精度を計算してモデルを評価することとして定義される"
+        "text": "予測結果を正解データに基づいて修正するための基準となる技術である。"
       },
       {
         "text": "モデルの予測と正解データのずれを定量化し、そのずれを最小化するように重みを学習するための指標"
@@ -1129,7 +1944,29 @@
       "誤差関数",
       "学習"
     ],
-    "source_ref": "3b31102f-5c51-46d7-9275-428f2e0e1b65"
+    "source_ref": "3b31102f-5c51-46d7-9275-428f2e0e1b65",
+    "source_ref_supplements": [
+      "https://note.com/firm_bonobo7417/n/n40581863cd84",
+      "https://realconnect.co.jp/post-5552/",
+      "https://apps.apple.com/ph/app/g%E6%A4%9C%E5%AE%9A-%E5%95%8F%E9%A1%8C%E9%9B%86%E3%82%A2%E3%83%97%E3%83%AA/id6478066297",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-03/",
+      "https://www.sohobb.jp/event/jdla-general-test21-40/",
+      "https://ai-kenkyujo.com/certification/g-kentei/gkentei-kanpe/",
+      "https://qiita.com/fatman3110/items/471d2aea337ccc402ffb",
+      "https://note.com/domonjo01/n/n75333f8852be",
+      "https://qiita.com/chanchaka24/items/1881e3b36d2ca3778ae9",
+      "https://kakuyomu.jp/works/1177354054880480528/episodes/16818622176265531950",
+      "https://craftai.jp/g-exam-chatgpt-usage-guide/",
+      "https://hackmd.io/@iwasekojiseika/ryVbgwjS8",
+      "https://avilen.co.jp/personal/test/g-certificate/",
+      "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
+      "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
+      "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
+      "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
+      "https://note.com/vast_cosmos500/n/n5367745fb613",
+      "https://tt-tsukumochi.com/archives/11240",
+      "https://www.jdla.org/g-qa/"
+    ]
   },
   {
     "id": "ch4-037",
@@ -1137,13 +1974,13 @@
     "question": "Adamのハイパーパラメータβ1とβ2の役割として正しいものはどれか。",
     "choices": [
       {
-        "text": "β1は学習率、β2はバッチサイズの減衰係数として機械学習分野で広く認識されている"
+        "text": "β1は学習率の調整に使われ、β2は過去の損失を考慮する係数であるとして位置づけられる技術"
       },
       {
-        "text": "β1とβ2は正則化の強度を制御するL1・L2正則化係数という特性を持つ技術的定義"
+        "text": "β1は勾配の二次モーメントを制御し、β2は学習の初期段階での安定性を保つという学習アプローチ"
       },
       {
-        "text": "β1とβ2はそれぞれ隠れ層と出力層のドロップアウト率に基づく処理・理論の枠組み"
+        "text": "β1はデータの前処理に関するパラメータで、β2はモデルの正則化に関連するであるアルゴリズム"
       },
       {
         "text": "β1は勾配の一次モーメント（Momentumに相当）の指数移動平均の係数、β2は勾配の二次モーメント（RMSPropに相当）"
@@ -1162,7 +1999,28 @@
       "最適化手法",
       "ハイパーパラメータ"
     ],
-    "source_ref": "bfdca76c-29de-49a6-84d5-10bac93cb0f6"
+    "source_ref": "bfdca76c-29de-49a6-84d5-10bac93cb0f6",
+    "source_ref_supplements": [
+      "https://appswingby.com/adam-%E4%BB%8A%E6%9B%B4%E8%81%9E%E3%81%91%E3%81%AA%E3%81%84it%E7%94%A8%E8%AA%9E%E9%9B%86/",
+      "https://qiita.com/yonaka15/items/30e84a002aa24d702cad",
+      "https://jp.linkedin.com/pulse/getting-know-adam-optimization-comprehensive-guide-kiran-kumar?tl=ja",
+      "https://blog.recruit.co.jp/data/articles/neurips_2022_2/",
+      "https://note.com/kikaben/n/n500ad321cf51",
+      "https://omomuki-tech.com/archives/1792",
+      "https://recruit.group.gmo/engineer/jisedai/blog/muon-optimizer/",
+      "https://qiita.com/exp/items/99145796a87cc6cd47e1",
+      "https://www.bigcompany.jp/useful/80378_compa_378/index.php",
+      "https://github.com/Valkyrja3607/tuning_playbook_ja",
+      "http://manual.midasuser.com/JP/iGen/835/Using_GENw/08_Design/01_General_Design_Parameter/Moment_Magnifier(B_B2).htm",
+      "https://ml4a.github.io/ml4a/jp/how_neural_networks_are_trained/",
+      "https://www.fukuicompu.co.jp/mnl/ZERO/Ver11/guide/manual/MKkeisansho.html?20250820",
+      "https://note.com/kikaben/n/n0aee56e9824f",
+      "https://support.midasuser.com/hc/ja/articles/17641590389017-%E9%9D%9E%E7%B7%9A%E5%BD%A2%E7%89%B9%E6%80%A7%E3%81%AE%E5%AE%9A%E7%BE%A9",
+      "https://qiita.com/kayokamoto/items/e9b97e91c5e9a2ced61d",
+      "https://zenn.dev/dena/articles/6f04641801b387",
+      "https://www.jstage.jst.go.jp/article/jinstmet1952/49/9/49_9_714/_pdf",
+      "https://qiita.com/omiita/items/1735c1d048fe5f611f80"
+    ]
   },
   {
     "id": "ch4-038",
@@ -1170,13 +2028,13 @@
     "question": "ニューラルネットワークの順伝播（フォワードパス）と逆伝播（バックワードパス）の違いとして正しいものはどれか。",
     "choices": [
       {
-        "text": "順伝播はデータを圧縮し、逆伝播はデータを復元する処理という枠組みで理解される処理機構"
+        "text": "逆伝播は出力から入力へデータを流し、予測を行う手法であるとして機能する技術的なシステム"
       },
       {
-        "text": "順伝播と逆伝播は同一の計算を2回繰り返して精度を高める手法に基づく学習・推論の仕組み"
+        "text": "順伝播はデータを入力から出力へ流すが、逆伝播は重みを固定するに応用される技術的な仕組み"
       },
       {
-        "text": "順伝播は訓練データ用、逆伝播はテストデータ用の処理に関連する技術・理論の説明"
+        "text": "順伝播はデータを圧縮し、逆伝播は情報を拡張する技術にあたるとして用いられる技術的手法"
       },
       {
         "text": "順伝播は入力から出力へデータを変換して予測値を計算し、逆伝播は損失から各重みへの勾配を出力側から入力側に向かって計算する"
@@ -1194,7 +2052,29 @@
       "逆伝播",
       "ニューラルネットワーク"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://docs.oracle.com/cd/F85609_01/23/mlsql/forward-backward-propagation.html",
+      "https://hatohato.jp/blog/core/single.php?id=376",
+      "https://jp.linkedin.com/pulse/understanding-neural-networks-forward-backward-aradhyamath-kbfzc?tl=ja",
+      "https://qiita.com/t-tkd3a/items/9bf50f2e10e6a15b6ed5",
+      "http://deepokayama.kenkyuukai.jp/FilePreview_Subject.asp?id=6416&sid=2063&cid=352&ref=%2Fsubject%2Fsubject%5Flist%2Easp",
+      "https://note.com/rodz/n/n4276abb4f78a",
+      "https://www.nomuyu.com/neural_network1/",
+      "https://izmyon.hatenablog.com/entry/2023/06/04/091342",
+      "https://ml4a.github.io/ml4a/jp/how_neural_networks_are_trained/",
+      "https://free.kikagaku.ai/tutorial/basic_of_deep_learning/learn/neural_network_basic_backward",
+      "https://note.com/yeahyeahoh/n/n98fdacb4828f",
+      "https://developers.google.com/machine-learning/glossary/fundamentals?hl=ja",
+      "https://automation.jp/research-report/2025-03-05-nlp-with-deep-learning-lecture-3-neural-networks-mathematical-foundations-gradient-descent-backpropagation",
+      "https://www.nttcom.co.jp/evangelist/column/kawamae_13/",
+      "https://zenn.dev/hirayuki/articles/bbc0eec8cd816c183408",
+      "https://jp.linkedin.com/pulse/demystifying-neural-networks-comprehensive-guide-ais-robert?tl=ja",
+      "https://kuraberuai.fioriera.co.jp/ai-glossary/backwardpass/",
+      "https://www.intellilink.co.jp/column/ai/2023/022800.aspx",
+      "https://www.ibm.com/jp-ja/think/topics/backpropagation",
+      "https://www.reddit.com/r/MachineLearning/comments/ctbxod/d_question_on_quaternionrecurrentneuralnetworks/?tl=ja"
+    ]
   },
   {
     "id": "ch4-039",
@@ -1202,13 +2082,13 @@
     "question": "ディープラーニングが「特徴量エンジニアリング不要」と言われる理由として正しいものはどれか。",
     "choices": [
       {
-        "text": "ディープラーニングはデータを全くの前処理せず生データをそのまま扱えるからの概念"
+        "text": "ディープラーニングは特徴量を手動で設計する必要がある技術であるとして位置づけられる技術"
       },
       {
-        "text": "ディープラーニングは全ての特徴量を無視して結果だけを記憶するからとして定義される"
+        "text": "特徴量エンジニアリングはデータの前処理を行う手法にあたるとして機能する技術的なシステム"
       },
       {
-        "text": "ディープラーニングはデータ量が少なくても動作するため特徴選択が自明だからの概念"
+        "text": "ディープラーニングは教師あり学習の一種であるため、特徴量が必要であるであるアルゴリズム"
       },
       {
         "text": "多層の非線形変換を積み重ねることで、生データから有用な特徴表現を自動的に学習できるため、人手による特徴量設計が不要になるから"
@@ -1226,7 +2106,28 @@
       "特徴量学習",
       "表現学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "source_ref_supplements": [
+      "https://www.dsk-cloud.com/blog/gc/fthree-differences-between-machine-learning-and-deep-learning",
+      "https://qiita.com/tamura__246/items/59b2475972a60ba1d65b",
+      "https://contest.japias.jp/tqj28/280142X/html-pagas/ai-mechanism/ai-mechanism-2.html",
+      "https://saycon.co.jp/archives/neta/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%AE%E3%80%8C%E5%B8%B8%E8%AD%98%E3%80%8D%E3%82%92%E7%96%91%E3%81%88%EF%BC%81%E7%9B%B8%E9%96%A2%E5%88%86%E6%9E%90",
+      "https://www.databricks.com/jp/blog/machine-learning-vs-deep-learning",
+      "https://www.agaroot.jp/datascience/column/deep-learning/",
+      "https://note.com/ohara_designer/n/n98c80af9b150",
+      "https://www.braze.com/ja/resources/articles/deep-learning",
+      "https://www.dataiku.com/ja/%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AA%E3%83%BC/%E8%A9%B3%E7%B4%B0/%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0/",
+      "https://www.reddit.com/r/MachineLearning/comments/bfe7dt/r_do_we_still_need_models_or_just_more_data_and/?tl=ja",
+      "https://www.alteryx.com/ja/glossary/feature-engineering",
+      "https://sakumaga.sakura.ad.jp/entry/deep-learning/",
+      "https://aws.amazon.com/jp/compare/the-difference-between-machine-learning-and-deep-learning/",
+      "https://www.reddit.com/r/MachineLearning/comments/wcm3gn/d_why_dont_you_use_automated_feature_engineering/?tl=ja",
+      "https://www.reddit.com/r/learnmachinelearning/comments/1mft8ts/beginner_in_predictive_maintenance_should_i_start/?tl=ja",
+      "https://note.com/hayato_kumemura/n/n0290ff297085",
+      "https://www.tryeting.jp/column/1000/",
+      "https://jp.dotdata.com/blog/machine-learning-feature-engineering/",
+      "https://www.datarobot.com/jp/blog/is-deep-learning-almighty/"
+    ]
   },
   {
     "id": "ch4-040",
@@ -1234,13 +2135,13 @@
     "question": "ニューラルネットワークの重みをすべて同一の定数（ゼロ以外）で初期化した場合の問題として正しいものはどれか。",
     "choices": [
       {
-        "text": "特定のニューロンだけ学習が速すぎて勾配爆発が起きるに相当する概念であり、試験で頻出の定義"
+        "text": "全ての重みを同じ値で初期化すると、学習が進むため問題は生じないという技術的な手法"
       },
       {
-        "text": "出力層のみ対称性が破れるため一部は正常に学習できるとして知られる代表的な手法"
+        "text": "重みを同一の定数で初期化すると、学習速度が向上することがあるという学習アプローチ"
       },
       {
-        "text": "損失関数の値が0になり学習が正常に開始されるとして位置づけられる手法・概念"
+        "text": "同じ値で初期化した場合、出力層の活性化関数が影響を与えることがあるという仕組み"
       },
       {
         "text": "ゼロ初期化と同様に対称性が破れないため、同一層の全ニューロンが全く同じ値を学習し続け多様な特徴表現が得られない"
@@ -1258,6 +2159,32 @@
       "対称性問題",
       "ディープラーニング"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "source_ref_supplements": [
+      "https://dotnetdevelopmentinfrastructure.osscons.jp/index.php?%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%AE%E3%83%86%E3%82%AF%E3%83%8B%E3%83%83%E3%82%AF",
+      "https://shion.blog/the-9th-machine-learning-workshop_1/",
+      "https://kobesoft.co.jp/mikata/words/ai-ml/weight-initialization/",
+      "https://jp.linkedin.com/pulse/how-much-do-you-know-weight-initialization-neural-networks-sen?tl=ja",
+      "https://nnadl-ja.github.io/nnadl_site_ja/chap3.html",
+      "https://qiita.com/siruku6/items/5435f4e52c9cfa6cdda4",
+      "https://www.reddit.com/r/deeplearning/comments/1evwa3d/why_do_we_initialize_the_neural_networks_randomly/?tl=ja",
+      "https://ai-reboot.io/glossary/weight-initialization",
+      "https://avilen.co.jp/personal/knowledge-article/initial-value/",
+      "https://tutorials.chainer.org/ja/13_Basics_of_Neural_Networks.html",
+      "https://www.reddit.com/r/learnmachinelearning/comments/18kmz5p/initialize_with_only_positive_or_negative_weights/?tl=ja",
+      "https://business.nikkei.com/atcl/seminar/19/00030/102100594/",
+      "https://wired.jp/article/sz-membership/2019/11/15/ai-pioneer-neural-networks/",
+      "https://www.jstage.jst.go.jp/article/jjsai/28/5/28_785/_pdf",
+      "https://www.tanaakk.com/2025/04/09/parity-symmetry/",
+      "https://www.reddit.com/r/ParticlePhysics/comments/1al7dqv/question_about_spontaneous_symmetry_breaking_and/?tl=ja",
+      "https://baike.baidu.com/ja/item/%E3%83%91%E3%83%AA%E3%83%86%E3%82%A3%E9%9D%9E%E4%BF%9D%E5%AD%98%E3%81%AE%E6%B3%95%E5%89%87/1152908",
+      "https://event.phys.s.u-tokyo.ac.jp/physlab2022/posts/21/",
+      "https://www.tel.co.jp/museum/magazine/015/report02_03/",
+      "https://note.com/puremoru/n/na5c2bbbdf46b",
+      "https://www.kmi.nagoya-u.ac.jp/Projects/SCGT/overview.php",
+      "https://note.com/shi3zblog/n/n1576e38cbd78",
+      "https://ml4a.github.io/ml4a/jp/convnets/",
+      "https://qiita.com/t_Signull/items/f776aecb4909b7c5c116"
+    ]
   }
 ]

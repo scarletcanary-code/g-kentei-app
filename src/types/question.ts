@@ -15,4 +15,5 @@ export interface Question {
   difficulty: Difficulty;
   tags: string[];
   source_ref?: string;
+  source_ref_supplements?: string[];
 }
