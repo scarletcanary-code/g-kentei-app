@@ -8,10 +8,12 @@ import {
 import { Badge } from '../ui/badge';
 import type { GlossaryTerm, Importance } from '../../types/glossary';
 
+type Tier = 'beginner' | 'intermediate' | 'advanced';
+
 interface GlossaryCardProps {
   term: GlossaryTerm;
   highlightTermId?: string;
-  isEasy?: boolean;
+  tier?: Tier;
 }
 
 function importanceBadge(importance: Importance) {
@@ -24,7 +26,7 @@ function importanceBadge(importance: Importance) {
   return <Badge variant="outline">発展</Badge>;
 }
 
-export default function GlossaryCard({ term, highlightTermId, isEasy = false }: GlossaryCardProps) {
+export default function GlossaryCard({ term, highlightTermId, tier = 'advanced' }: GlossaryCardProps) {
   const isHighlighted = highlightTermId === term.id;
   const ref = useRef<HTMLDivElement>(null);
   const [openValue, setOpenValue] = useState<string | undefined>(
@@ -69,11 +71,19 @@ export default function GlossaryCard({ term, highlightTermId, isEasy = false }: 
             <p className="text-sm text-foreground leading-relaxed mb-2">
               {term.definition}
             </p>
-            {(isEasy && term.beginnerDetail ? term.beginnerDetail : term.detail) && (
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {isEasy && term.beginnerDetail ? term.beginnerDetail : term.detail}
-              </p>
-            )}
+            {(() => {
+              const displayDetail =
+                tier === 'beginner'
+                  ? (term.beginnerDetail ?? term.intermediateDetail ?? term.detail)
+                  : tier === 'intermediate'
+                  ? (term.intermediateDetail ?? term.detail)
+                  : term.detail;
+              return displayDetail ? (
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {displayDetail}
+                </p>
+              ) : null;
+            })()}
           </AccordionContent>
         </AccordionItem>
       </Accordion>

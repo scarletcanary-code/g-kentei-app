@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Tabs, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { Button } from '../components/ui/button';
@@ -10,6 +10,7 @@ import { usePersistedState } from '../hooks/usePersistedState';
 import type { CategoryId } from '../types/category';
 
 type CategoryFilter = CategoryId | 'all';
+type Tier = 'beginner' | 'intermediate' | 'advanced';
 
 export default function GlossaryPage() {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -17,7 +18,17 @@ export default function GlossaryPage() {
 
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>('all');
-  const [isEasy, setIsEasy] = usePersistedState<boolean>('g-kentei-learn-easy-mode', false);
+  const [tier, setTier] = usePersistedState<Tier>('glossary-tier-v1', 'advanced');
+
+  // localStorage マイグレーション: 旧キー 'g-kentei-learn-easy-mode' → 新キー 'glossary-tier-v1'
+  useEffect(() => {
+    if (localStorage.getItem('glossary-tier-v1') === null) {
+      const oldValue = localStorage.getItem('g-kentei-learn-easy-mode');
+      const migratedTier: Tier = oldValue === 'true' ? 'beginner' : 'advanced';
+      localStorage.setItem('glossary-tier-v1', migratedTier);
+      localStorage.removeItem('g-kentei-learn-easy-mode');
+    }
+  }, []);
 
   const highlightTermId = termParam || undefined;
 
@@ -54,19 +65,27 @@ export default function GlossaryPage() {
         <div className="flex items-center gap-1 shrink-0">
           <Button
             size="sm"
-            variant={!isEasy ? 'default' : 'outline'}
-            onClick={() => setIsEasy(false)}
-            aria-label="詳しく"
+            variant={tier === 'beginner' ? 'default' : 'outline'}
+            onClick={() => setTier('beginner')}
+            aria-label="初級"
           >
-            詳しく
+            初級
           </Button>
           <Button
             size="sm"
-            variant={isEasy ? 'default' : 'outline'}
-            onClick={() => setIsEasy(true)}
-            aria-label="やさしく"
+            variant={tier === 'intermediate' ? 'default' : 'outline'}
+            onClick={() => setTier('intermediate')}
+            aria-label="中級"
           >
-            やさしく
+            中級
+          </Button>
+          <Button
+            size="sm"
+            variant={tier === 'advanced' ? 'default' : 'outline'}
+            onClick={() => setTier('advanced')}
+            aria-label="上級"
+          >
+            上級
           </Button>
         </div>
       </div>
@@ -90,7 +109,7 @@ export default function GlossaryPage() {
 
       <p className="text-sm text-muted-foreground">{totalCount}件</p>
 
-      <GlossaryList terms={displayTerms} highlightTermId={highlightTermId} isEasy={isEasy} />
+      <GlossaryList terms={displayTerms} highlightTermId={highlightTermId} tier={tier} />
     </div>
   );
 }

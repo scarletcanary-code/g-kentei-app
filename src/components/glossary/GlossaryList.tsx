@@ -1,13 +1,15 @@
 import type { GlossaryTerm } from '../../types/glossary';
 import GlossaryCard from './GlossaryCard';
 
+type Tier = 'beginner' | 'intermediate' | 'advanced';
+
 interface GlossaryListProps {
   terms: GlossaryTerm[];
   highlightTermId?: string;
-  isEasy?: boolean;
+  tier?: Tier;
 }
 
-export default function GlossaryList({ terms, highlightTermId, isEasy = false }: GlossaryListProps) {
+export default function GlossaryList({ terms, highlightTermId, tier = 'advanced' }: GlossaryListProps) {
   if (terms.length === 0) {
     return (
       <p className="text-sm text-muted-foreground py-8 text-center">
@@ -19,7 +21,7 @@ export default function GlossaryList({ terms, highlightTermId, isEasy = false }:
   return (
     <div>
       {terms.map((term) => (
-        <GlossaryCard key={term.id} term={term} highlightTermId={highlightTermId} isEasy={isEasy} />
+        <GlossaryCard key={term.id} term={term} highlightTermId={highlightTermId} tier={tier} />
       ))}
     </div>
   );
