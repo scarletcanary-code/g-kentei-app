@@ -1,10 +1,11 @@
 import type { CategoryId } from './category';
 
 export interface LearnSection {
-  heading: string;       // セクション見出し（10〜60 文字）
-  body: string;          // 初学者向け噛み砕き本文（200〜500 文字）
-  beginnerBody?: string; // やさしくモード用の初学者向け解説（150〜250 文字）
-  termIds?: string[];    // このセクションに関連する用語 ID（terms.json と整合）
+  heading: string;              // セクション見出し（10〜60 文字）
+  body: string;                 // 上級本文（200〜500 文字）
+  beginnerBody?: string;        // 初級本文（150〜250 文字）
+  intermediateBody?: string;    // 中級本文（300〜450 文字）
+  termIds?: string[];           // このセクションに関連する用語 ID（terms.json と整合）
 }
 
 export interface LearnChapter {

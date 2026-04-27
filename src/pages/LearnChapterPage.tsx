@@ -16,7 +16,17 @@ const difficultyLabel: Record<string, string> = {
 
 export default function LearnChapterPage() {
   const { categoryId } = useParams<{ categoryId: string }>();
-  const [isEasy, setIsEasy] = usePersistedState<boolean>('learn-easy-mode', false);
+
+  // localStorage マイグレーション: learn-easy-mode → learn-tier-v1
+  // 新キーが未設定の場合のみ1回実行
+  if (typeof window !== 'undefined' && localStorage.getItem('learn-tier-v1') === null) {
+    const oldVal = localStorage.getItem('learn-easy-mode');
+    const migrated = oldVal === 'true' ? 'beginner' : 'advanced';
+    localStorage.setItem('learn-tier-v1', migrated);
+    localStorage.removeItem('learn-easy-mode');
+  }
+
+  const [tier, setTier] = usePersistedState<'beginner' | 'intermediate' | 'advanced'>('learn-tier-v1', 'advanced');
 
   const chapter = ALL_LEARN_CHAPTERS.find((c) => c.categoryId === categoryId);
 
@@ -89,19 +99,27 @@ export default function LearnChapterPage() {
         <span className="text-sm text-muted-foreground">解説モード：</span>
         <Button
           size="sm"
-          variant={!isEasy ? 'default' : 'outline'}
-          onClick={() => setIsEasy(false)}
-          aria-label="詳しく"
+          variant={tier === 'beginner' ? 'default' : 'outline'}
+          onClick={() => setTier('beginner')}
+          aria-label="初級"
         >
-          詳しく
+          初級
         </Button>
         <Button
           size="sm"
-          variant={isEasy ? 'default' : 'outline'}
-          onClick={() => setIsEasy(true)}
-          aria-label="やさしく"
+          variant={tier === 'intermediate' ? 'default' : 'outline'}
+          onClick={() => setTier('intermediate')}
+          aria-label="中級"
         >
-          やさしく
+          中級
+        </Button>
+        <Button
+          size="sm"
+          variant={tier === 'advanced' ? 'default' : 'outline'}
+          onClick={() => setTier('advanced')}
+          aria-label="上級"
+        >
+          上級
         </Button>
       </div>
 
@@ -129,7 +147,11 @@ export default function LearnChapterPage() {
                 {section.heading}
               </h3>
               <p className="text-sm text-foreground leading-relaxed mb-3">
-                {isEasy && section.beginnerBody ? section.beginnerBody : section.body}
+                {tier === 'beginner'
+                  ? (section.beginnerBody ?? section.intermediateBody ?? section.body)
+                  : tier === 'intermediate'
+                  ? (section.intermediateBody ?? section.body)
+                  : section.body}
               </p>
               {section.termIds && section.termIds.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-2">

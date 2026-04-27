@@ -131,6 +131,18 @@ function parseSection(objStr) {
   const bodyMatch = objStr.match(/body:\s*['"`]([\s\S]*?)['"`],/);
   if (bodyMatch) body = bodyMatch[1];
 
+  // intermediateBody を抽出
+  let intermediateBody = null;
+  // バックティック形式
+  const ibBtMatch = objStr.match(/intermediateBody:\s*`([\s\S]*?)`/);
+  if (ibBtMatch) {
+    intermediateBody = ibBtMatch[1];
+  } else {
+    // シングルクォート形式
+    const ibSqMatch = objStr.match(/intermediateBody:\s*'([\s\S]*?)'/);
+    if (ibSqMatch) intermediateBody = ibSqMatch[1];
+  }
+
   // termIds を抽出
   const termIdsMatch = objStr.match(/termIds:\s*\[([^\]]*)\]/);
   let termIds = [];
@@ -142,7 +154,7 @@ function parseSection(objStr) {
     }
   }
 
-  return { heading, body, termIds };
+  return { heading, body, intermediateBody, termIds };
 }
 
 let failures = 0;
@@ -387,6 +399,19 @@ for (const ch of chapters) {
         fail(`${label}: sections[${si}].termId "${tid}" NOT found in terms.json`);
       }
     }
+
+    // 16. intermediateBody 存在確認
+    if (section.intermediateBody === null || section.intermediateBody === undefined) {
+      fail(`${label}: sections[${si}].intermediateBody is not set (heading="${section.heading}")`);
+    } else {
+      const ibLen = section.intermediateBody.length;
+      // 17. intermediateBody 文字数レンジ確認（300〜450字）
+      if (ibLen >= 300 && ibLen <= 450) {
+        pass(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (300〜450)`);
+      } else {
+        fail(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (expected 300〜450) heading="${section.heading}"`);
+      }
+    }
   }
 
   // 13. prerequisites の全 ID が ch1〜ch8 に実在し、自章 ID を含まない
@@ -418,6 +443,13 @@ for (const ch of chapters) {
     } else {
       fail(`${label}: source_ref_supplement "${sup}" length = ${sup.length} < 5`);
     }
+  }
+
+  // 18. source_ref_supplements に 1 件以上の Felo 由来 URL が存在する（intermediateBody 追加後の必須要件）
+  if (ch.sourceRefSupplements.length >= 1) {
+    pass(`${label}: source_ref_supplements.length = ${ch.sourceRefSupplements.length} >= 1`);
+  } else {
+    fail(`${label}: source_ref_supplements.length = 0 (expected >= 1 after intermediateBody addition)`);
   }
 }
 
