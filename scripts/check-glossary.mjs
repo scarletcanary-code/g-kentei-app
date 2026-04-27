@@ -71,15 +71,15 @@ if (sameAsDefinition.length === 0) {
   );
 }
 
-// チェック4: サニティチェック（緩い境界 30〜600 字）— 警告のみ、exit 1 にしない
+// チェック4: サニティチェック（緩い境界 30〜800 字）— 警告のみ、exit 1 にしない
 const sanityOutOfRange = terms.filter(
-  (t) => t.intermediateDetail && (t.intermediateDetail.length < 30 || t.intermediateDetail.length > 600)
+  (t) => t.intermediateDetail && (t.intermediateDetail.length < 30 || t.intermediateDetail.length > 800)
 );
 if (sanityOutOfRange.length === 0) {
-  pass(`intermediateDetail 字数境界逸脱（30〜600字）: 0 件`);
+  pass(`intermediateDetail 字数境界逸脱（30〜800字）: 0 件`);
 } else {
   warn(
-    `intermediateDetail 字数境界逸脱（30〜600字）: ${sanityOutOfRange.length} 件 — ${sanityOutOfRange
+    `intermediateDetail 字数境界逸脱（30〜800字）: ${sanityOutOfRange.length} 件 — ${sanityOutOfRange
       .map((t) => `${t.id}(${t.intermediateDetail.length}字)`)
       .join(', ')}`
   );
@@ -135,6 +135,20 @@ if (orphanRefs.length === 0) {
   for (const msg of orphanRefs) {
     fail(msg);
   }
+}
+
+// チェック6: detail 字数サニティチェック（80〜800 字）— 警告のみ
+const detailOutOfRange = terms.filter(
+  (t) => t.detail && (t.detail.length < 80 || t.detail.length > 800)
+);
+if (detailOutOfRange.length === 0) {
+  pass(`detail 字数境界逸脱（80〜800字）: 0 件`);
+} else {
+  warn(
+    `detail 字数境界逸脱（80〜800字）: ${detailOutOfRange.length} 件 — ${detailOutOfRange
+      .map((t) => `${t.id}(${t.detail.length}字)`)
+      .join(', ')}`
+  );
 }
 
 // 集計

@@ -4,22 +4,16 @@
  * Felo API を使って用語集の「中級解説」（intermediateDetail）を生成するスクリプト
  *
  * 使用方法:
- *   node --env-file=.env scripts/felo-generate-intermediate-detail.mjs --all
- *   node --env-file=.env scripts/felo-generate-intermediate-detail.mjs --id <termId>
- *   node --env-file=.env scripts/felo-generate-intermediate-detail.mjs --all --dry-run
- *   node --env-file=.env scripts/felo-generate-intermediate-detail.mjs --id <termId> --dry-run
+ *   node --env-file=.env scripts/felo-generate-intermediate-detail.mjs --all [--write] [--dry-run]
+ *   node --env-file=.env scripts/felo-generate-intermediate-detail.mjs --id <termId> [--write] [--dry-run]
  *
  * 環境変数:
  *   FELO_API_KEY: Felo API キー（.env ファイルに設定）--dry-run 時は不要
  *
- * 出力:
- *   stdout: JSON 形式 { results: [{ id, term, intermediateDetail, charCount, citations }] }
- *   stderr: 進捗ログ [N/129] term=<term>
- *
- * --write オプション追加時は terms.json を直接上書きする
+ * --write オプション追加時は terms.json を直接上書きする（バックアップも自動作成）
  */
 
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, mkdirSync, copyFileSync, existsSync } from 'fs';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 
@@ -70,26 +64,17 @@ if (allFlag) {
   targetTerms = [found];
 }
 
-const totalTerms = targetTerms.length;
-const totalAll = terms.length;
+const FELO_API_URL = 'https://openapi.felo.ai/v2/chat';
+const BATCH_SIZE = 5;
 
-function buildPrompt(term) {
-  let prompt = `以下は G検定の用語「${term.term}（${term.termEn}）」の解説情報です。\n\n`;
-  prompt += `【定義（1〜2文の簡潔な説明）】\n${term.definition}\n\n`;
-  prompt += `【上級解説（専門的・試験本番レベル）】\n${term.detail}\n`;
-  if (term.beginnerDetail) {
-    prompt += `\n【初級解説（やさしい言葉、比喩を用いた説明）】\n${term.beginnerDetail}\n`;
-  }
-  prompt += `\n上記を参考に、G検定合格に必要な専門用語を使いながらも初学者にも理解しやすい「中級解説」を日本語で作成してください。\n`;
-  prompt += `Felo の自然な出力量で構いません。`;
-  return prompt;
-}
+// バッチ総数（--all 時）
+const totalBatches = Math.ceil(targetTerms.length / BATCH_SIZE);
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// citations 抽出ロジック（felo-generate-intermediate-body.mjs から流用）
+// citations 抽出ロジック
 function extractCitations(data) {
   if (data && data.data && data.data.resources && Array.isArray(data.data.resources)) {
     return data.data.resources
@@ -120,100 +105,330 @@ function extractAnswer(data) {
   return JSON.stringify(data);
 }
 
-const FELO_API_URL = 'https://openapi.felo.ai/v2/chat';
+// バッチプロンプト構築
+function buildBatchPrompt(batch) {
+  const itemsJson = JSON.stringify(
+    batch.map((t) => ({
+      id: t.id,
+      term: t.term,
+      termEn: t.termEn,
+      advanced: t.detail,
+      beginner: t.beginnerDetail || '',
+    })),
+    null,
+    2
+  );
+
+  return `あなたは G検定対策コンテンツの編集者です。
+
+【対象読者】「中級」レベル
+- 機械学習や AI に多少触れたことがある社会人・学生
+- 専門用語は前提知識として使ってよい（厳密な定義の繰り返しは不要）
+- 初級（AIリテラシーがない人）と上級（G検定合格レベルの試験対策）の中間
+- フィラー文（「重要なスキルとなるでしょう」「ますます重要になっています」「ビジネスや日常生活で活用」「必要なスキル」等の中身のない総括）禁止
+- 各項目で異なる表現・構成にする（テンプレ化を避ける）
+
+以下の ${batch.length} 件について、それぞれの「中級解説」を JSON 配列で出力してください。
+
+${itemsJson}
+
+出力フォーマット（このフォーマット以外で出力しないこと）:
+\`\`\`json
+[
+  {"id": "...", "intermediate": "<中級解説本文>"},
+  ...
+]
+\`\`\``;
+}
+
+// 単問プロンプト構築（フォールバック用）
+function buildSinglePrompt(term) {
+  let prompt = `あなたは G検定対策コンテンツの編集者です。
+
+【対象読者】「中級」レベル
+- 機械学習や AI に多少触れたことがある社会人・学生
+- 専門用語は前提知識として使ってよい（厳密な定義の繰り返しは不要）
+- 初級（AIリテラシーがない人）と上級（G検定合格レベルの試験対策）の中間
+- フィラー文（「重要なスキルとなるでしょう」「ますます重要になっています」「ビジネスや日常生活で活用」「必要なスキル」等の中身のない総括）禁止
+
+以下の用語「${term.term}（${term.termEn}）」の「中級解説」を書いてください。
+
+【上級解説】\n${term.detail}\n`;
+  if (term.beginnerDetail) {
+    prompt += `\n【初級解説】\n${term.beginnerDetail}\n`;
+  }
+  prompt += `\n出力フォーマット（このフォーマット以外で出力しないこと）:
+\`\`\`json
+[
+  {"id": "${term.id}", "intermediate": "<中級解説本文>"}
+]
+\`\`\``;
+  return prompt;
+}
+
+// Felo API 呼び出し
+async function feloChat(prompt) {
+  const response = await fetch(FELO_API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${apiKey}`,
+    },
+    body: JSON.stringify({ query: prompt }),
+  });
+
+  if (!response.ok) {
+    const errorText = await response.text().catch(() => '(レスポンスボディ取得失敗)');
+    throw new Error(`Felo API HTTP ${response.status}: ${errorText}`);
+  }
+
+  const data = await response.json();
+  return data;
+}
+
+// JSON ブロック抽出 + パース
+function parseJsonBlock(text) {
+  const match = text.match(/```json\s*([\s\S]*?)```/);
+  if (!match) return null;
+  try {
+    return JSON.parse(match[1].trim());
+  } catch (_) {
+    return null;
+  }
+}
+
+// バッチ処理（リトライ付き）
+// 返却: Map<id, { intermediate: string, citations: string[] }>
+async function processBatch(batch, batchIndex, totalBatches) {
+  const batchTermNames = batch.map((t) => t.term).join(', ');
+  process.stderr.write(`[batch ${batchIndex}/${totalBatches}] terms=${batchTermNames}\n`);
+
+  const expectedIds = new Set(batch.map((t) => t.id));
+
+  for (let attempt = 1; attempt <= 2; attempt++) {
+    let data;
+    try {
+      data = await feloChat(buildBatchPrompt(batch));
+    } catch (e) {
+      process.stderr.write(`[batch ${batchIndex}/${totalBatches}] attempt ${attempt} API error: ${e.message}\n`);
+      if (attempt < 2) {
+        await sleep(1000);
+        continue;
+      }
+      return null; // バッチ失敗 → フォールバックへ
+    }
+
+    const answerText = extractAnswer(data).trim();
+    const parsed = parseJsonBlock(answerText);
+    if (!parsed || !Array.isArray(parsed)) {
+      process.stderr.write(`[batch ${batchIndex}/${totalBatches}] attempt ${attempt} JSON parse failed\n`);
+      if (attempt < 2) {
+        await sleep(1000);
+        continue;
+      }
+      return null;
+    }
+
+    // id 欠落チェック
+    const returnedIds = new Set(parsed.map((x) => x && x.id).filter(Boolean));
+    const missing = [...expectedIds].filter((id) => !returnedIds.has(id));
+    if (missing.length > 0) {
+      process.stderr.write(`[batch ${batchIndex}/${totalBatches}] attempt ${attempt} missing ids: ${missing.join(', ')}\n`);
+      if (attempt < 2) {
+        await sleep(1000);
+        continue;
+      }
+      return null;
+    }
+
+    // 成功
+    const citations = extractCitations(data);
+    const resultMap = new Map();
+    for (const item of parsed) {
+      if (item && item.id && item.intermediate) {
+        resultMap.set(item.id, {
+          intermediate: item.intermediate,
+          citations,
+        });
+      }
+    }
+    return resultMap;
+  }
+
+  return null;
+}
+
+// 単問フォールバック処理
+// 返却: { intermediate: string, citations: string[] } | null
+async function processSingleFallback(term, fallbackIndex, fallbackTotal) {
+  process.stderr.write(`[fallback ${fallbackIndex}/${fallbackTotal}] term=${term.term}\n`);
+
+  let data;
+  try {
+    data = await feloChat(buildSinglePrompt(term));
+  } catch (e) {
+    process.stderr.write(`[fallback ${fallbackIndex}/${fallbackTotal}] API error: ${e.message}\n`);
+    return null;
+  }
+
+  const answerText = extractAnswer(data).trim();
+  const parsed = parseJsonBlock(answerText);
+  if (!parsed || !Array.isArray(parsed) || parsed.length === 0) {
+    process.stderr.write(`[fallback ${fallbackIndex}/${fallbackTotal}] JSON parse failed\n`);
+    return null;
+  }
+
+  const item = parsed.find((x) => x && x.id === term.id);
+  if (!item || !item.intermediate) {
+    // 最初の要素の intermediate を使う
+    const first = parsed[0];
+    if (first && first.intermediate) {
+      return {
+        intermediate: first.intermediate,
+        citations: extractCitations(data),
+      };
+    }
+    process.stderr.write(`[fallback ${fallbackIndex}/${fallbackTotal}] no intermediate field\n`);
+    return null;
+  }
+
+  return {
+    intermediate: item.intermediate,
+    citations: extractCitations(data),
+  };
+}
+
+// rejected ダンプ
+const rejectedPath = join(projectRoot, '../.harness/runs/0029-rejected.json');
+function appendRejected(entry) {
+  let existing = [];
+  if (existsSync(rejectedPath)) {
+    try {
+      existing = JSON.parse(readFileSync(rejectedPath, 'utf-8'));
+    } catch (_) {}
+  }
+  existing.push(entry);
+  writeFileSync(rejectedPath, JSON.stringify(existing, null, 2), 'utf-8');
+}
 
 // dry-run: プロンプトを stdout に出力して終了
 if (dryRun) {
-  for (let i = 0; i < totalTerms; i++) {
-    const term = targetTerms[i];
-    const prompt = buildPrompt(term);
-    process.stdout.write(`=== [${i + 1}/${totalAll}] term=${term.term} ===\n`);
-    process.stdout.write(prompt);
+  if (allFlag) {
+    // バッチモードのプロンプト出力
+    for (let i = 0; i < targetTerms.length; i += BATCH_SIZE) {
+      const batch = targetTerms.slice(i, i + BATCH_SIZE);
+      const batchIndex = Math.floor(i / BATCH_SIZE) + 1;
+      process.stdout.write(`=== [batch ${batchIndex}/${totalBatches}] terms=${batch.map((t) => t.term).join(', ')} ===\n`);
+      process.stdout.write(buildBatchPrompt(batch));
+      process.stdout.write('\n\n');
+    }
+  } else {
+    // 単問プロンプト出力
+    const term = targetTerms[0];
+    process.stdout.write(`=== term=${term.term} ===\n`);
+    process.stdout.write(buildSinglePrompt(term));
     process.stdout.write('\n\n');
   }
   process.exit(0);
 }
 
-// 全用語を順次処理
-const results = [];
+// バックアップ作成（--write 時のみ）
+if (writeFlag) {
+  const backupDir = join(projectRoot, '../.harness/runs/0029-backup');
+  mkdirSync(backupDir, { recursive: true });
+  const backupPath = join(backupDir, 'terms.json.bak');
+  copyFileSync(termsPath, backupPath);
+  process.stderr.write(`バックアップを作成しました: .harness/runs/0029-backup/terms.json.bak\n`);
+}
 
-for (let i = 0; i < totalTerms; i++) {
-  const term = targetTerms[i];
+// 全用語を処理
+const resultMap = new Map(); // id -> { intermediate, citations }
+const failedTerms = []; // フォールバックでも失敗した語
 
-  // 進捗ログ（stderr）
-  process.stderr.write(`[${i + 1}/${totalAll}] term=${term.term}\n`);
+if (allFlag) {
+  // バッチ処理
+  for (let i = 0; i < targetTerms.length; i += BATCH_SIZE) {
+    const batch = targetTerms.slice(i, i + BATCH_SIZE);
+    const batchIndex = Math.floor(i / BATCH_SIZE) + 1;
 
-  const prompt = buildPrompt(term);
-
-  // 1秒ペーシング（最初の用語以外）
-  if (i > 0) {
-    await sleep(1000);
-  }
-
-  try {
-    const response = await fetch(FELO_API_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({ query: prompt }),
-    });
-
-    if (!response.ok) {
-      const errorText = await response.text().catch(() => '(レスポンスボディ取得失敗)');
-      process.stderr.write(`エラー: Felo API がエラーレスポンスを返しました。ステータス: ${response.status}\n`);
-      process.stderr.write(`レスポンス: ${errorText}\n`);
-      process.exit(1);
+    if (i > 0) {
+      await sleep(1000);
     }
 
-    const data = await response.json();
-    const intermediateDetail = extractAnswer(data).trim();
-    const citations = extractCitations(data);
+    const batchResult = await processBatch(batch, batchIndex, totalBatches);
 
-    results.push({
-      id: term.id,
-      term: term.term,
-      intermediateDetail,
-      charCount: intermediateDetail.length,
-      citations,
-    });
-
-  } catch (error) {
-    process.stderr.write(`エラー: Felo API の呼び出しに失敗しました。\n`);
-    process.stderr.write(`詳細: ${error.message}\n`);
-    process.exit(1);
+    if (batchResult !== null) {
+      // バッチ成功
+      for (const [id, value] of batchResult) {
+        resultMap.set(id, value);
+      }
+    } else {
+      // フォールバック: バッチ内の各語を単問処理
+      process.stderr.write(`[batch ${batchIndex}/${totalBatches}] falling back to single mode\n`);
+      const fallbackTotal = batch.length;
+      for (let j = 0; j < batch.length; j++) {
+        const term = batch[j];
+        if (j > 0) {
+          await sleep(1000);
+        }
+        const singleResult = await processSingleFallback(term, j + 1, fallbackTotal);
+        if (singleResult !== null) {
+          resultMap.set(term.id, singleResult);
+        } else {
+          process.stderr.write(`[fallback] rejected: ${term.id}\n`);
+          failedTerms.push(term.id);
+          appendRejected({ id: term.id, term: term.term, reason: 'single fallback failed' });
+        }
+      }
+    }
+  }
+} else {
+  // 単語モード: --id の場合は単問として処理
+  const term = targetTerms[0];
+  const singleResult = await processSingleFallback(term, 1, 1);
+  if (singleResult !== null) {
+    resultMap.set(term.id, singleResult);
+  } else {
+    process.stderr.write(`[error] ${term.id} の処理に失敗しました。\n`);
+    failedTerms.push(term.id);
+    appendRejected({ id: term.id, term: term.term, reason: 'single mode failed' });
   }
 }
 
-// --write オプション: terms.json を直接更新
+// --write オプション: terms.json を更新
 if (writeFlag) {
-  const termMap = {};
-  for (const r of results) {
-    termMap[r.id] = r;
-  }
   const updatedTerms = terms.map((t) => {
-    if (termMap[t.id]) {
-      const r = termMap[t.id];
-      const updated = { ...t, intermediateDetail: r.intermediateDetail };
+    const r = resultMap.get(t.id);
+    if (r) {
+      const updated = { ...t, intermediateDetail: r.intermediate };
+      // source_ref_supplements: 1件目の URL のみ格納（上書き）
       if (r.citations && r.citations.length > 0) {
-        const existingSupplements = Array.isArray(t.source_ref_supplements) ? t.source_ref_supplements : [];
-        const newSupplements = [...new Set([...existingSupplements, ...r.citations])];
-        updated.source_ref_supplements = newSupplements;
+        updated.source_ref_supplements = [r.citations[0]];
+      } else {
+        updated.source_ref_supplements = [];
       }
       return updated;
     }
     return t;
   });
   writeFileSync(termsPath, JSON.stringify(updatedTerms, null, 2), 'utf-8');
-  process.stderr.write(`terms.json を更新しました（${results.length} 件）\n`);
+  process.stderr.write(`terms.json を更新しました（${resultMap.size} 件、失敗: ${failedTerms.length} 件）\n`);
 }
 
 // JSON 出力
-const output = {
-  results,
-};
+const results = [];
+for (const [id, r] of resultMap) {
+  const term = terms.find((t) => t.id === id);
+  results.push({
+    id,
+    term: term ? term.term : id,
+    intermediateDetail: r.intermediate,
+    charCount: r.intermediate.length,
+    citations: r.citations,
+  });
+}
 
+const output = { results, failed: failedTerms };
 process.stdout.write(JSON.stringify(output, null, 2));
 process.stdout.write('\n');
 process.exit(0);
