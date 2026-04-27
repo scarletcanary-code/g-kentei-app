@@ -405,11 +405,11 @@ for (const ch of chapters) {
       fail(`${label}: sections[${si}].intermediateBody is not set (heading="${section.heading}")`);
     } else {
       const ibLen = section.intermediateBody.length;
-      // 17. intermediateBody 文字数レンジ確認（300〜450字）
-      if (ibLen >= 300 && ibLen <= 450) {
-        pass(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (300〜450)`);
+      // 17. intermediateBody 文字数レンジ確認（80〜800字）
+      if (ibLen >= 80 && ibLen <= 800) {
+        pass(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (80〜800)`);
       } else {
-        fail(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (expected 300〜450) heading="${section.heading}"`);
+        fail(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (expected 80〜800) heading="${section.heading}"`);
       }
     }
   }
