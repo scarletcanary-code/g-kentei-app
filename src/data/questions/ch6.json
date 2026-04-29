@@ -47,6 +47,15 @@
       "https://staff.aist.go.jp/shinohara.takayuki/satai/slides.html",
       "https://dprofessions.co.jp/ai/",
       "https://koara.lib.keio.ac.jp/xoonips/modules/xoonips/download.php/KO40002002-20215628-0003.pdf?file_id=161008"
+    ],
+    "learningObjective": "TransformerアーキテクチャのAttention機構におけるQ、K、Vの役割を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "Q、K、Vの役割を誤解していることが多い。",
+    "optionRationales": [
+      "誤り。Q・K・Vの役割についての説明が誤っている。",
+      "正解。Qは問い合わせ、Kは照合対象、Vは集約情報であるから。",
+      "誤り。Q・K・Vの役割を混同しており正しい定義ではない。",
+      "誤り。Q・K・Vの定義が不正確で正しい説明ではない。"
     ]
   },
   {
@@ -96,6 +105,15 @@
       "https://gist.github.com/nknytk/94445b30118beeb661732dfc68e4a7d5",
       "https://qiita.com/wwacky/items/0101b2797c89626d65b2",
       "https://www.ai-shift.co.jp/techblog/550"
+    ],
+    "learningObjective": "BERTの特徴を理解し、双方向の文脈理解の重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "RNNとTransformerの違いを混同している",
+    "optionRationales": [
+      "誤り。RNNは使用しておらず、BERTはTransformerを基にしている。",
+      "正解。BERTは双方向の文脈を考慮するモデルである。",
+      "誤り。BERTは双方向であり、一方向のみではない。",
+      "誤り。文脈を無視するのではなく、文脈を重視している。"
     ]
   },
   {
@@ -158,6 +176,15 @@
       "https://openai.com/ja-JP/index/gpt-4/",
       "https://scrapbox.io/razokulover-tech-memo/Encoder-Decoder%E3%82%84%E3%82%89Transformer%E3%82%84%E3%82%89GPT%E3%81%AE%E5%86%85%E9%83%A8%E3%81%8C%E3%81%A9%E3%81%86%E3%81%AA%E3%81%A3%E3%81%A6%E3%82%8B%E3%81%AE%E3%81%8B%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B",
       "https://qiita.com/ksonoda/items/b767cbd283e379303178"
+    ],
+    "learningObjective": "GPTシリーズの基本的な特徴を理解し、ChatGPTの基盤となる技術を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "BERTとGPTの機能を混同すること",
+    "optionRationales": [
+      "誤り。BERTは双方向の文脈を考慮するが、GPTは自己回帰的に生成する。",
+      "正解。GPTはTransformerのデコーダ部分を使用し、次のトークンを予測する。",
+      "誤り。GPTはデコーダのみを使用し、エンコーダは含まれない。",
+      "誤り。ChatGPTはテキスト生成に特化しており、画像生成ではない。"
     ]
   },
   {
@@ -218,6 +245,15 @@
       "https://ledge.ai/articles/openai_explains_hallucination_causes",
       "https://zenn.dev/zenkigen_tech/articles/dcc796df67c2e8",
       "https://tdailab.com/blog/1702741360379x942107411069009900"
+    ],
+    "learningObjective": "スケーリング則の定義とその適用範囲を理解し、AI性能向上の要因を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "スケーリング則の誤解として、データ量だけで性能が向上するという誤解",
+    "optionRationales": [
+      "誤り。スケーリング則はモデルのサイズを大きくすることで性能が向上する法則である。",
+      "正解。モデルのパラメータ数・学習データ量・計算資源を増やすほど性能が向上する法則。",
+      "誤り。スケーリング則はデータ量だけでなく、モデルサイズや計算資源も関与する。",
+      "誤り。スケーリング則はデータの前処理手法ではなく、性能向上の法則である。"
     ]
   },
   {
@@ -268,6 +304,15 @@
       "https://www.ntt.com/bizon/glossary/e-r/rag.html",
       "https://www.msiism.jp/article/rag.html",
       "https://note.com/vast_cosmos500/n/n43fe916f7b63"
+    ],
+    "learningObjective": "RAGの仕組みを理解し、外部知識を活用した回答生成の重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "RAGの機能と自動翻訳の混同",
+    "optionRationales": [
+      "誤り。LLMの情報保存に関する技術ではない。",
+      "誤り。情報整理の手法ではなく、検索と生成を組み合わせた技術である。",
+      "正解。外部知識を検索し、回答精度を高める手法だから。",
+      "誤り。自動翻訳に特化した技術ではなく、知識検索が主な機能である。"
     ]
   },
   {
@@ -319,6 +364,15 @@
       "https://zenn.dev/r_kaga/scraps/6b64c5d8c8f85b",
       "https://www.intellilink.co.jp/column/ai/2023/120600.aspx",
       "https://pages.layerx.co.jp/21acdd370bae802cbb23c0a95f6552c0"
+    ],
+    "learningObjective": "LoRAの効率的なファインチューニング手法を理解し、特徴を説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "LoRAの全パラメータ更新と混同する",
+    "optionRationales": [
+      "誤り。LoRAは全てのパラメータを更新しないため、計算資源を節約できる。",
+      "正解。LoRAは低ランク行列を追加して少ない計算資源でファインチューニングを行う。",
+      "誤り。LoRAは全体のモデルを調整するのではなく、特定の部分を学習する手法である。",
+      "誤り。LoRAは画像処理専用ではなく、主にLLMのファインチューニングに用いられる。"
     ]
   },
   {
@@ -377,6 +431,15 @@
       "https://zenn.dev/mitsukisakamoto/articles/0c97e7f723cbb7",
       "https://dalab.jp/archives/journal/llm-finetuning-part1/",
       "https://developer.nvidia.com/ja-jp/blog/selecting-large-language-model-customization-techniques/"
+    ],
+    "learningObjective": "RLHFの概念とその仕組みを理解し、具体的な特徴を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "RLHFを単なる修正手法と誤解すること",
+    "optionRationales": [
+      "誤り。単純な修正手法ではなく、強化学習を用いる。",
+      "正解。人間のフィードバックを報酬信号として利用する手法だから。",
+      "誤り。自動生成データの評価ではなく、人間のフィードバックを重視する。",
+      "誤り。AIが独自に学習するのではなく、人間の意図に合わせる手法である。"
     ]
   },
   {
@@ -434,6 +497,15 @@
       "https://corpy.co.jp/jp/news/iRAPD_v2",
       "https://boomi.com/ja/blog/9-ways-to-ensure-data-quality/",
       "https://www.nttdata.com/jp/ja/trends/data-insight/2025/1016/"
+    ],
+    "learningObjective": "拡散モデルの動作原理を理解し、ノイズの加減と逆拡散過程の重要性を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "拡散モデルはノイズを加えずにデータを生成するという誤解がある。",
+    "optionRationales": [
+      "誤り。データを直接生成するための生成器を用いるのではなく、ノイズを加える過程が重要である。",
+      "正解。拡散モデルはデータに段階的にノイズを加え、その逆過程を学習して高品質なデータを生成する。",
+      "誤り。ノイズを加えたデータをそのまま利用するのではなく、逆拡散過程を通じて元のデータを復元する。",
+      "誤り。データの特徴を抽出するのではなく、ノイズを加えたデータから元のデータを復元することが目的である。"
     ]
   },
   {
@@ -493,6 +565,15 @@
       "https://www.winserver.ne.jp/column/about_multimodal-ai/",
       "https://qiita.com/Dataiku/items/3e86c8012b2a7a7a3cf0",
       "https://promo.digital.ricoh.com/ai-for-work/column/detail025/"
+    ],
+    "learningObjective": "マルチモーダルAIの特性を理解し、異なるデータ形式の統合処理を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "マルチモーダルAIと単一データ形式AIの混同",
+    "optionRationales": [
+      "誤り。テキストのみを扱うAI技術ではない。",
+      "正解。異なる種類のデータを統合して処理するAIだから。",
+      "誤り。音声データのみを扱う技術ではない。",
+      "誤り。異なるデータを同時に生成する技術ではない。"
     ]
   },
   {
@@ -555,6 +636,15 @@
       "https://www.kochi-tech.ac.jp/power/research/ai.html",
       "https://news.yahoo.co.jp/expert/articles/ec02f715a4dde3bf38c45325d5829c0d1aa90a1a",
       "https://dx-consultant.co.jp/explainable_ai_case/"
+    ],
+    "learningObjective": "XAIの目的とその重要性を理解し、透明性の確保について説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "XAIの目的とAIの効率化を混同する",
+    "optionRationales": [
+      "誤り。AIの効率を向上させることは目的ではない。",
+      "正解。AIの判断を説明し透明性を確保することが目的だから。",
+      "誤り。評価基準を設けることはXAIの目的ではない。",
+      "誤り。学習データを増やすことは精度向上に関する技術である。"
     ]
   },
   {
@@ -609,6 +699,15 @@
       "https://www.aist.go.jp/aist_j/magazine/20221130.html",
       "https://e-shikaku-doujou.com/googlenet/",
       "https://www.jstage.jst.go.jp/article/jjsai/31/2/31_169/_pdf"
+    ],
+    "learningObjective": "ILSVRCの目的と重要性を理解し、画像認識技術の進化における役割を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ILSVRCは自然言語処理や研究フォーラムではなく、画像認識に特化したコンペティションである。",
+    "optionRationales": [
+      "正解。ILSVRCはImageNetを使った画像認識の国際コンペティションで、2012年にAlexNetが圧倒的な精度で優勝した。",
+      "誤り。ILSVRCは画像認識の大会であり、自然言語処理とは関係がない。",
+      "誤り。ILSVRCはコンペティションであり、単なる研究ではない。",
+      "誤り。ILSVRCはフォーラムではなく、画像認識精度を競う大会である。"
     ]
   },
   {
@@ -672,6 +771,15 @@
       "https://ipml-aid.com/Discourses/discourse5.html",
       "https://note.com/ugo21/n/nd01332a63170",
       "https://otafuku-lab.co/aizine/glossary-resnet/"
+    ],
+    "learningObjective": "ResNetの特徴を理解し、スキップ結合の役割を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ResNetは全ての層で同じ重みを使用するわけではなく、特に画像の解像度向上に特化したモデルではない。",
+    "optionRationales": [
+      "誤り。ResNetは全ての層で同じ重みを使用するわけではなく、異なる重みを持つ。",
+      "誤り。ResNetは画像の解像度を向上させるためのモデルではなく、主に深層学習の効率を高めるために設計されている。",
+      "正解。ResNetは層を飛び越えて信号を伝えるスキップ結合を導入し、勾配消失問題を解決して150層超の深いネットワークを可能にした。",
+      "誤り。ResNetは自然言語処理に特化したモデルではなく、主に画像認識に用いられる。"
     ]
   },
   {
@@ -739,6 +847,15 @@
       "https://xexeq.jp/blogs/media/it-glossary879",
       "https://jp.mathworks.com/help/deeplearning/ref/googlenet.html",
       "https://saycon.co.jp/archives/neta/ai%E3%81%8C%E7%94%BB%E5%83%8F%E3%82%92%E7%90%86%E8%A7%A3%E3%81%99%E3%82%8B%E9%AD%94%E6%B3%95%E3%81%AE%E7%AE%B1%EF%BC%9Fgooglenet%E3%81%AE%E7%94%BB%E6%9C%9F%E7%9A%84%E3%81%AA%E4%BB%95%E7%B5%84%E3%81%BF"
+    ],
+    "learningObjective": "VGGとGoogLeNetの特徴を理解し、正しく比較できる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "VGGは単純な構造であるため、計算コストが高く、GoogLeNetは複雑な構造であるため、計算コストが低いと誤解されがちである。",
+    "optionRationales": [
+      "正解。VGGは3×3の小さなフィルタを重ねたシンプルな深いネットワークで、GoogLeNetはインセプションモジュールを用いて計算コストを抑えながら多層化しているから。",
+      "誤り。VGGはシンプルな構造であり、全結合層は少ないため複雑ではない。GoogLeNetはフィルタを複数使用する。",
+      "誤り。VGGは小さなフィルタを使用した深いネットワークであり、GoogLeNetは全結合層を多く持たない。",
+      "誤り。VGGは画像処理に特化した手法であり、GoogLeNetは自然言語処理には使われない。"
     ]
   },
   {
@@ -794,6 +911,15 @@
       "https://docs.ultralytics.com/ja/usage/cfg/",
       "https://www.araya.org/projects/gazo-ninnshiki-yolo/",
       "https://www.ultralytics.com/ja/blog/exploring-small-object-detection-with-ultralytics-yolo11"
+    ],
+    "learningObjective": "YOLOの物体検出手法の特徴を理解し、他の手法との違いを説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "YOLOは複数回の処理を行う手法ではない。YOLOは一度の処理で物体を検出するため、誤解を避ける必要がある。",
+    "optionRationales": [
+      "正解。YOLOは画像全体を一度見るだけで、候補領域の特定と物体のクラス分類を同時に行う1段階処理で高速な物体検出を実現する。",
+      "誤り。YOLOは一度の処理で物体を特定するため、複数回に分けて処理する手法ではない。",
+      "誤り。YOLOは物体の位置を特定するために画像を細分化するが、これは一度の処理で行われる。",
+      "誤り。YOLOは物体の動きを追跡する手法ではなく、物体検出に特化した技術である。"
     ]
   },
   {
@@ -844,6 +970,15 @@
       "https://qiita.com/skillup_ai/items/04e4f752a38eda5292fc",
       "https://www.skillupai.com/blog/tech/segmentation1/",
       "https://www.nextremer.com/data-annotation/blog/instance-segmentation"
+    ],
+    "learningObjective": "セマンティックセグメンテーションとインスタンスセグメンテーションの違いを理解できる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "セマンティックセグメンテーションとインスタンスセグメンテーションの機能の混同",
+    "optionRationales": [
+      "正解。セマンティックセグメンテーションは全画素にクラスラベルを付けるが、同クラスの個体を区別しないから。",
+      "誤り。インスタンスセグメンテーションは全画素にラベルを付け、同クラスの個体を区別する技術であるが、説明が不十分。",
+      "誤り。セマンティックセグメンテーションは画像全体を一つのクラスに分類するのではなく、各画素にラベルを付ける。",
+      "誤り。インスタンスセグメンテーションは物体を色分けするのではなく、個々の物体を識別する技術である。"
     ]
   },
   {
@@ -904,6 +1039,15 @@
       "https://saycon.co.jp/archives/neta/%E3%80%90%E8%AC%9B%E5%B8%AB%E5%90%91%E3%81%91%E3%80%91ssd%E3%83%BByolo%E3%83%BBfaster-r-cnn%E3%81%AF%E3%81%A9%E3%81%86%E9%81%95%E3%81%86%EF%BC%9F%E7%89%A9%E4%BD%93%E6%A4%9C%E5%87%BA%E3%81%AE%E3%80%8C",
       "https://qiita.com/yamo1116/items/d83c7682dce08126258f",
       "https://tech-blog.abeja.asia/entry/object-detection-summary"
+    ],
+    "learningObjective": "R-CNNとYOLO・SSDの物体検出手法の違いを理解する。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "R-CNNとYOLO・SSDの処理の違いを混同すること。",
+    "optionRationales": [
+      "正解。R-CNNは2段階処理で遅いが、YOLOとSSDは1段階で処理するから。",
+      "誤り。R-CNNは複数回処理せず、2段階で行うため、YOLOとSSDとは異なる。",
+      "誤り。YOLOとSSDは1段階処理であり、R-CNNより精度が高いとは限らない。",
+      "誤り。YOLOは深層学習を用いるが、物体検出の手法としての説明が不十分。"
     ]
   },
   {
@@ -967,6 +1111,15 @@
       "https://bigquant.com/wiki/doc/pID3Dfr6he",
       "https://blog.csdn.net/anthea_luo/article/details/98240507",
       "https://cloud.tencent.com/developer/article/1692431"
+    ],
+    "learningObjective": "Word2Vecの分散表現手法の特徴を理解し、適用範囲を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "単語のカウント手法と混同している",
+    "optionRationales": [
+      "正解。Word2Vecは単語をベクトルで表現し、意味の近い単語が近くなるように学習するから。",
+      "誤り。単語の出現頻度を基にした手法で、意味を考慮しない技術ではない。",
+      "誤り。文脈に応じて変化するベクトルで表現する手法は別の技術である。",
+      "誤り。文法構造を重視する手法ではなく、意味の近さを重視する手法である。"
     ]
   },
   {
@@ -1025,6 +1178,15 @@
       "https://avilen.co.jp/personal/test/g-certificate/",
       "https://bizroad-svc.com/blog/gkentei-kakomon/",
       "https://www.jdla.org/certificate/generativeai/issues/"
+    ],
+    "learningObjective": "T5の特徴を理解し、自然言語処理におけるその役割を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "T5が画像処理に特化したモデルであるという誤解を解消する。",
+    "optionRationales": [
+      "誤り。BERTは文脈を考慮した単語の埋め込みを行う手法であるが、T5とは異なる。",
+      "誤り。T5は主に自然言語処理に特化したモデルであり、画像処理には関連しない。",
+      "正解。T5は翻訳・要約・分類などのNLPタスクをテキストを入力してテキストを出力する形式で解くモデルである。",
+      "誤り。RNNは時系列データを扱う手法であり、T5とは異なるアプローチである。"
     ]
   },
   {
@@ -1065,6 +1227,15 @@
       "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
       "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja"
+    ],
+    "learningObjective": "In-Context Learningの特徴とその仕組みを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "モデルの再学習と混同している",
+    "optionRationales": [
+      "正解。モデルのパラメータを更新せずにプロンプト内の例から学習する手法だから。",
+      "誤り。これはファインチューニングを伴う手法の説明であり、In-Context Learningとは異なる。",
+      "誤り。自己学習は異なる概念であり、In-Context Learningはプロンプトに依存する。",
+      "誤り。異なるデータセットを用いる手法はファインチューニングに関連し、In-Context Learningではない。"
     ]
   },
   {
@@ -1122,6 +1293,15 @@
       "https://qiita.com/sho1884/items/a7c1aee2899c369ef6d6",
       "https://aismiley.co.jp/ai_news/what-is-prompt-engineering/",
       "https://rakutesu.com/test-list/it/764/"
+    ],
+    "learningObjective": "プロンプトエンジニアリングの技術的要素とその目的を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "プロンプトエンジニアリングの目的と手法の混同",
+    "optionRationales": [
+      "誤り。プロンプトを無視する手法ではない。",
+      "誤り。単純化するだけではなく、最適化が重要。",
+      "正解。入力プロンプトの工夫が目的だから。",
+      "誤り。統計手法ではなく、AIとのインタラクション技術。"
     ]
   },
   {
@@ -1187,6 +1367,15 @@
       "https://qiita.com/miyakz/items/8016f8b6916dca6224d6",
       "https://zenn.dev/churadata/articles/d133291a60d525",
       "https://www.nikkei.com/prime/tech-foresight/article/DGXZQOUC221C70S5A520C2000000"
+    ],
+    "learningObjective": "QLoRAの特徴と仕組みを理解し、正しい説明を選べるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "QLoRAは画像処理に特化した技術ではない。",
+    "optionRationales": [
+      "誤り。LoRAは全ての重みを調整するのではなく、特定のパラメータのみを調整する手法である。",
+      "誤り。QLoRAは量子化を用いており、LoRAの基本的な手法をそのまま適用するものではない。",
+      "正解。LoRAに量子化技術を組み合わせることで、メモリ消費を削減し、安価なGPUでのファインチューニングを可能にする。",
+      "誤り。QLoRAは画像処理に特化した技術ではなく、主に言語モデルのファインチューニングに用いられる。"
     ]
   },
   {
@@ -1241,6 +1430,15 @@
       "https://www.ibm.com/jp-ja/think/topics/parameter-efficient-fine-tuning",
       "https://www.reddit.com/r/LocalLLaMA/comments/1kt50am/parameterefficient_finetuning_peft_explained/?tl=ja",
       "https://www.ntt-tx.co.jp/column/250916/"
+    ],
+    "learningObjective": "PEFTの基本概念を理解し、他のファインチューニング手法との違いを説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "PEFTは全てのパラメータを更新する手法ではなく、一部のパラメータのみを調整する手法である。",
+    "optionRationales": [
+      "誤り。PEFTは全てのパラメータを同時に更新する手法ではなく、一部のパラメータのみを調整することで計算資源を節約する技術である。",
+      "誤り。PEFTは全パラメータを凍結する手法ではなく、一部のパラメータを効率的に学習させる手法である。",
+      "正解。PEFTはモデルの全パラメータを更新するのではなく、一部の少数パラメータのみを効率的に学習させるファインチューニング手法の総称であり、LoRAやQLoRAがその代表例である。",
+      "誤り。PEFTは画像処理におけるデータ拡張技術ではなく、主に大規模言語モデルにおけるファインチューニング手法である。"
     ]
   },
   {
@@ -1302,6 +1500,15 @@
       "https://fish.audio/ja/blog/text-to-speech-api-developer-guide/",
       "https://noiz.ai/use-cases/ja/voice-simulation",
       "http://musyoku.github.io/2016/09/18/wavenet-a-generative-model-for-raw-audio/"
+    ],
+    "learningObjective": "WaveNetがGoogleの音声波形を直接生成する深層生成モデルで自然な音声合成を実現した技術であることを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "音声認識と音声合成の混同",
+    "optionRationales": [
+      "誤り。音声認識ではなく音声合成に特化した技術である。",
+      "誤り。WaveNetはボコーダ技術ではなく、深層生成モデルである。",
+      "正解。WaveNetはGoogleが開発した音声波形を直接生成するモデルである。",
+      "誤り。WaveNetは音声生成に特化したモデルであり、画像生成ではない。"
     ]
   },
   {
@@ -1351,6 +1558,15 @@
       "https://www.simulationroom999.com/blog/guga-generation-ai-passport-examination/",
       "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja",
       "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/"
+    ],
+    "learningObjective": "YOLOの物体検出モデルが自動運転において重要な理由を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "YOLOのような物体検出モデルは、リアルタイム処理が不要であっても自動運転に役立つと誤解されることがある。",
+    "optionRationales": [
+      "誤り。R-CNNは高精度だが処理速度が遅く、自動運転には不向きである。",
+      "誤り。YOLOは動的環境にも対応可能で、静止画像だけに特化していない。",
+      "誤り。センサーフュージョンは重要だが、YOLOの高速検出能力が特に自動運転に必要である。",
+      "正解。YOLOはリアルタイムで周囲の物体を高速に検出できるため、自動運転に不可欠である。"
     ]
   },
   {
@@ -1410,6 +1626,15 @@
       "https://note.com/aicu/n/n505b0dfb1a75",
       "https://tech-blog.abeja.asia/entry/advent-2022-day19",
       "https://romptn.com/article/11036"
+    ],
+    "learningObjective": "Stable Diffusionの動作原理とその特徴を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "生成モデルの種類やノイズ処理の誤解",
+    "optionRationales": [
+      "誤り。Stable DiffusionはGANではなく拡散モデルを使用している。",
+      "誤り。ノイズを加える過程が重要な要素である。",
+      "正解。Stable Diffusionは拡散モデルを基盤にしているから。",
+      "誤り。フィルタリング技術はStable Diffusionの基本的な動作ではない。"
     ]
   },
   {
@@ -1473,6 +1698,15 @@
       "https://arxiv.org/abs/2003.08237",
       "https://www.linkresearcher.com/theses/cd90ecda-f756-40fc-919c-e77685bee803",
       "https://stackoverflow.com/questions/62714886/why-efficientnet-same-model-return-different-predictions"
+    ],
+    "learningObjective": "EfficientNetの複合スケーリング手法の特徴を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "深さや幅の増加のみで精度向上を図る誤解",
+    "optionRationales": [
+      "誤り。EfficientNetは深さだけでなく幅や解像度も考慮する。",
+      "誤り。解像度の向上だけではなく、他の要素もバランスよく調整する。",
+      "正解。深さ・幅・解像度を複合的にスケーリングすることで高精度を実現。",
+      "誤り。EfficientNetは画像認識に特化したモデルであり、自然言語処理には不向き。"
     ]
   },
   {
@@ -1532,6 +1766,15 @@
       "https://qiita.com/machinelearning2/items/1471648e3ad7fe299619",
       "https://cloud.google.com/discover/what-are-ai-hallucinations?hl=ja",
       "https://biz.kddi.com/content/column/smb/avoiding-hallucinations/"
+    ],
+    "learningObjective": "ハルシネーションがLLMの誤情報生成現象であり、RAGが外部知識ベースを活用して対処する仕組みを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ハルシネーションの誤解やRAGの役割の混同",
+    "optionRationales": [
+      "誤り。ハルシネーションは誤った情報生成を指し、RAGはその精度向上手法ではない。",
+      "誤り。ハルシネーションは誤りを指し、RAGは情報整理技術ではない。",
+      "誤り。ハルシネーションは誤りを指し、RAGはデータ分析手法ではない。",
+      "正解。ハルシネーションは事実と異なる情報生成を指し、RAGは外部知識を活用する。"
     ]
   },
   {
@@ -1576,6 +1819,15 @@
       "https://www.reddit.com/r/ArtificialSentience/comments/1pa1bqg/if_you_turn_down_an_ais_ability_to_lie_it_starts/?tl=ja",
       "https://zenn.dev/ryofrontenginer/articles/102ae44170f0b1",
       "https://data-analytics.fun/2025/05/11/understanding-openai-gpt-4_5/"
+    ],
+    "learningObjective": "ChatGPTの開発におけるRLHFプロセスを理解し、正確に説明できるようになること。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": "RLHFのプロセスを誤解し、報酬モデルの重要性を軽視すること。",
+    "optionRationales": [
+      "正解。大量テキストで事前学習を行い、人間の評価者が生成文を採点して報酬モデルを作成し、その後報酬モデルを使った強化学習でLLMを調整するプロセスを正確に表している。",
+      "誤り。AIが自動的に評価する手法はRLHFの本質ではなく、人間のフィードバックが重要である。",
+      "誤り。報酬モデルを使用しない方法はRLHFのプロセスに含まれないため、正確ではない。",
+      "誤り。AIの自己評価はRLHFのプロセスには含まれず、人間の意図に沿うためには報酬モデルが必要である。"
     ]
   },
   {
@@ -1635,6 +1887,15 @@
       "https://1-byte.com/blog/ai/ai-voice-generation-practice-guide",
       "https://aws.amazon.com/jp/what-is/text-to-voice-generator/",
       "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10288454685"
+    ],
+    "learningObjective": "音声認識（Speech-to-Text）と音声合成（Text-to-Speech）の変換方向の違いを理解できる",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "音声認識と音声合成の役割を混同すること。",
+    "optionRationales": [
+      "誤り。音声認識は音声をテキストに変換する技術であり、逆の説明になっている。",
+      "誤り。音声認識は音声をテキストに変換し、音声合成は音声を生成する技術である。",
+      "誤り。音声認識は圧縮ではなく、音声をテキストに変換する技術である。",
+      "正解。音声認識は音声データをテキストに変換し、音声合成はテキストから音声を生成する技術である。"
     ]
   },
   {
@@ -1693,6 +1954,15 @@
       "https://www.reddit.com/r/MachineLearning/comments/18qh1hp/discussion_in_this_age_of_llms_what_are_the/?tl=ja",
       "https://qiita.com/dl_from_scratch/items/0d18559f11a50f2a6dc6",
       "https://note.com/kyutaro15/n/nd24fe79a6680"
+    ],
+    "learningObjective": "GPT、BERT、T5のアーキテクチャの違いを理解し、正しい組み合わせを選べるようになる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "GPTはエンコーダのみではなく、デコーダも持つため、誤解が生じやすい。",
+    "optionRationales": [
+      "誤り。GPTはデコーダのみの自己回帰型生成モデルであり、BERTはエンコーダのみの双方向理解モデル、T5はエンコーダ+デコーダのテキスト-to-テキストモデルです。",
+      "誤り。GPTはエンコーダ+デコーダではなく、BERTはテキスト分類に特化したエンコーダのみです。",
+      "誤り。GPTは生成モデルであり、BERTは理解モデル、T5はエンコーダ+デコーダの情報変換モデルです。",
+      "正解。GPTはデコーダのみ（自己回帰型生成）で、BERTはエンコーダのみ（双方向理解）、T5はエンコーダ+デコーダ（テキスト-to-テキスト）です。"
     ]
   },
   {
@@ -1749,6 +2019,15 @@
       "https://www.ultralytics.com/ja/glossary/chain-of-thought-prompting",
       "https://atmarkit.itmedia.co.jp/ait/articles/2308/24/news041.html",
       "https://zero2one.jp/ai-word/chain-of-thought/?srsltid=AfmBOopQNWxbHnrbeGdTWOhfDuE0zVZhjGQDkSiwayLweRv0K7Q4MA8p"
+    ],
+    "learningObjective": "Chain-of-Thoughtプロンプティングの基本概念とその効果を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "プロンプトに具体的な例を示すことと混同している",
+    "optionRationales": [
+      "誤り。具体的な例を示すことはプロンプトエンジニアリングの一部だが、CoTは中間推論を促す手法である。",
+      "誤り。Chain-of-Thoughtは即答を求める技術ではなく、推論過程を示すことが重要である。",
+      "誤り。文法的な正確さを向上させることが目的ではなく、推論能力を引き出す手法である。",
+      "正解。中間推論過程を促すことで、LLMの複雑な推論能力を引き出す手法である。"
     ]
   },
   {
@@ -1808,6 +2087,15 @@
       "https://www.ultralytics.com/ja/glossary/token-merging-tome",
       "https://zero2one.jp/learningblog/vision-transformer-vit-basics/?srsltid=AfmBOooQ-wF5wWPz60VJOi2HH7dlKcEv0uuad7zjzu4l0gBodvTvdPkF",
       "https://note.com/yusakudata/n/n660835f04a87"
+    ],
+    "learningObjective": "Vision Transformer（ViT）の特徴とその処理方法を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "CNNとViTの処理方法の違いを混同することがある。",
+    "optionRationales": [
+      "誤り。ViTはCNNを使用せず、画像をパッチに分割して処理する手法である。",
+      "誤り。ViTは畳み込み層を使用せず、画像をパッチに分割して処理する。",
+      "誤り。ViTは画像をトークン化して処理するため、全ての情報を一つのベクトルにまとめることはない。",
+      "正解。ViTは画像をパッチに分割し、トークン化してTransformerで処理する。"
     ]
   },
   {
@@ -1863,6 +2151,15 @@
       "https://www.reddit.com/r/StableDiffusion/comments/1qixi2l/i_successfully_replaced_clip_with_an_llm_for_sdxl/?tl=ja",
       "https://yuiga.dev/blog/posts/clip/",
       "https://techblog.exawizards.com/entry/2023/05/10/055218"
+    ],
+    "learningObjective": "CLIPが画像エンコーダとテキストエンコーダをコントラスト学習で同時学習するマルチモーダルモデルであることを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "コントラスト学習と従来の手法の混同",
+    "optionRationales": [
+      "誤り。画像とテキストを分離して学習するのではなく、同時に学習する。",
+      "誤り。CLIPはテキストから画像を生成するのではなく、画像とテキストの関連性を学習する。",
+      "誤り。音声データは使用せず、画像とテキストの関係を理解する技術ではない。",
+      "正解。画像エンコーダとテキストエンコーダを同時に学習し、類似度を学習する。"
     ]
   },
   {
@@ -1913,6 +2210,15 @@
       "https://www.tensorflow.org/guide/keras/transfer_learning?hl=ja",
       "https://www.tensorflow.org/tutorials/images/transfer_learning?hl=ja",
       "https://qiita.com/hirotask/items/f103f612ccbc48e0b960"
+    ],
+    "learningObjective": "転移学習とファインチューニングの関係を理解し、正しい選択肢を選べるようになる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "転移学習とファインチューニングは異なる手法であると誤解されがちだが、実際にはファインチューニングは転移学習の一部である。",
+    "optionRationales": [
+      "正解。転移学習は別タスクで学習済みのモデルの知識を新タスクに活用する概念の総称であり、ファインチューニングはその手法の一つである。",
+      "誤り。ファインチューニングは新しいモデルを一から訓練する手法ではなく、既存のモデルを調整するものである。",
+      "誤り。転移学習は特定のタスクに特化したモデルを作成する手法ではなく、ファインチューニングが必要である。",
+      "誤り。ファインチューニングはデータの前処理ではなく、モデルのパラメータを調整する手法である。"
     ]
   },
   {
@@ -1983,6 +2289,15 @@
       "https://qiita.com/taka_yayoi/items/7f50d3ebbe4bebd6877c",
       "https://hoshikat.hatenablog.com/entry/2023/05/26/223229",
       "https://note.com/konapieces/n/n20d052a8e558"
+    ],
+    "learningObjective": "LoRAの特徴と利点を理解し、全パラメータのファインチューニングとの違いを説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "LoRAは全パラメータを更新する必要がないため、GPUメモリの削減効果が薄いという誤解。",
+    "optionRationales": [
+      "誤り。LoRAは全パラメータを更新する必要がなく、学習時間を短縮するが、GPUメモリの削減効果は大きい。",
+      "正解。LoRAはモデルの全パラメータを固定し、特定のタスクに対してのみ微調整を行うことで、性能向上が期待できる。",
+      "誤り。LoRAはデータの前処理を効率化する手法ではなく、モデルのファインチューニングに特化した技術である。",
+      "誤り。LoRAは事前学習済みモデルの重み行列の変化分を低ランク行列の積で近似することで、更新するパラメータ数を削減し、GPUメモリと学習時間を大幅に削減できる。"
     ]
   }
 ]

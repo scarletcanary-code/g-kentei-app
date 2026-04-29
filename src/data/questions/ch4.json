@@ -50,6 +50,15 @@
       "https://note.com/vast_cosmos500/n/n5367745fb613",
       "https://avilen.co.jp/personal/test/g-certificate/",
       "https://www.jdla.org/g-qa/"
+    ],
+    "learningObjective": "人工ニューラルネットワークの基本単位であるニューロンの機能を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "人工ニューラルネットワークは単純な入力と出力の関係だけで構成され、重みや活性化関数の重要性を理解していない。",
+    "optionRationales": [
+      "正解。複数の入力値を受け取り、重み付き和を計算後、活性化関数を通して出力を生成する。",
+      "誤り。入力値を一つだけ受け取るユニットではない。",
+      "誤り。出力を持つが、重みを調整することで学習を行うのは正しいが、基本単位の説明として不十分。",
+      "誤り。生物の神経伝達物質を模倣する技術ではなく、情報処理の基本単位の説明が必要。"
     ]
   },
   {
@@ -106,6 +115,15 @@
       "https://xtrend.nikkei.com/atcl/seminar/19/00005/050900004/",
       "https://chokkan.github.io/mlnote/classification/03nn.html",
       "https://note.com/omakazu/n/n1a661f86e971"
+    ],
+    "learningObjective": "パーセプトロンの基本的な構造と機能を理解し、単純な分類モデルとしての役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "パーセプトロンと多層パーセプトロンの違いを混同する",
+    "optionRationales": [
+      "誤り。多層パーセプトロンは複数の層を持つが、単純なモデルではない。",
+      "正解。パーセプトロンは単一ニューロンによる2クラス分類モデルである。",
+      "誤り。パーセプトロンは線形問題を解決する手法であり、非線形問題には対応できない。",
+      "誤り。サポートベクターマシンは別の分類技術であり、パーセプトロンとは異なる。"
     ]
   },
   {
@@ -164,6 +182,15 @@
       "https://qiita.com/segavvy/items/8707e4e65aa7fa357d8a",
       "https://note.com/clever_canna2386/n/n159ed993aa47",
       "https://heart-mugi.hatenablog.com/entry/2021/02/09/072503"
+    ],
+    "learningObjective": "ReLU関数の特徴を理解し、他の活性化関数との違いを説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "シグモイド関数とReLU関数の特性の混同",
+    "optionRationales": [
+      "誤り。シグモイド関数は出力が0から1の範囲で、勾配消失を引き起こすことがある。",
+      "正解。ReLU関数は入力が0以下なら0、0より大きければそのまま出力し、計算が単純で勾配消失を防ぎやすいから。",
+      "誤り。ReLU関数は負の値を0にし、計算は単純であるため、複雑ではない。",
+      "誤り。活性化関数は出力が1になるものではなく、様々な出力を持つ。"
     ]
   },
   {
@@ -222,6 +249,15 @@
       "https://ankimaker.com/workbooks/29918eed-3cf0-4a7f-9f85-9f263977e1b2",
       "https://ip-study.net/ai-technology-qa/",
       "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC%EF%BD%9E%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A8%93%EF%BD%9E/"
+    ],
+    "learningObjective": "シグモイド関数の特性を理解し、勾配消失問題との関連を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "シグモイド関数の出力範囲と勾配消失の関係を誤解している",
+    "optionRationales": [
+      "正解。出力が0〜1の範囲に収まり、確率を表現できるが、層が深くなると勾配消失問題を引き起こしやすいから。",
+      "誤り。出力が-1から1の範囲に収まるのはtanh関数であり、シグモイド関数ではない。",
+      "誤り。シグモイド関数は入力値が大きくなると出力が1に近づくため、0に近づくわけではない。",
+      "誤り。出力が0から1の範囲に収まるが、確率を表現するだけでなく、勾配消失問題も考慮する必要がある。"
     ]
   },
   {
@@ -271,6 +307,15 @@
       "https://note.com/kikaben/n/n800614561ae1",
       "https://zenn.dev/yuto_mo/articles/4607b7feb8ce8b",
       "https://www.chickensblog.com/backpropagation-why/"
+    ],
+    "learningObjective": "誤差逆伝播法の仕組みを理解し、各層の重み更新の計算方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "誤差逆伝播法の基本的な仕組みの誤解",
+    "optionRationales": [
+      "誤り。出力層の誤差を保持するだけではない。",
+      "正解。出力層の誤差を逆向きに伝播させて重みを更新する。",
+      "誤り。各層で独立に計算するわけではない。",
+      "誤り。誤差を無視する方法では学習できない。"
     ]
   },
   {
@@ -324,6 +369,15 @@
       "https://zenn.dev/tasse/articles/ccaa22404c858c",
       "https://qiita.com/teppei_nakano/items/860ae0cc3a548f4955c3",
       "https://omomuki-tech.com/archives/6202"
+    ],
+    "learningObjective": "確率的勾配降下法の特徴と利点を理解し、適用場面を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "全データを用いた手法との混同",
+    "optionRationales": [
+      "誤り。全データを用いるのはバッチ勾配降下法である。",
+      "正解。SGDはランダムに選んだサンプルで勾配を計算する手法だから。",
+      "誤り。全データを使用するのはバッチ勾配降下法である。",
+      "誤り。過去の結果から学習する手法ではない。"
     ]
   },
   {
@@ -375,6 +429,15 @@
       "https://zero2one.jp/learningblog/machine-learning-optimization-methods/?srsltid=AfmBOoreB8_T4XfujYufrK9DQiPrnPp3ir-S7rSzVi9G7aq3AQmajp7w",
       "https://note.com/ohara_designer/n/n87389c29f83d",
       "https://daily-life-ai.com/2356/"
+    ],
+    "learningObjective": "Adam最適化アルゴリズムの特徴を理解し、正しい選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "SGDとAdamの違いを混同する",
+    "optionRationales": [
+      "誤り。SGDは全データを用いて学習率を固定する手法ではない。",
+      "正解。AdamはモーメンタムとRMSPropのメリットを組み合わせ、学習率を自動調整する。",
+      "誤り。Adamは過去の勾配を考慮し、適応的に学習率を調整する手法である。",
+      "誤り。勾配降下法は収束が遅いとは限らず、手法による。"
     ]
   },
   {
@@ -433,6 +496,15 @@
       "https://www.reddit.com/r/learnmachinelearning/comments/emy28c/the_precise_explanation_of_vanishing_gradient/?tl=ja",
       "https://euske.github.io/introdl/lec8/index.html",
       "https://qiita.com/goroshigeno/items/bf7cb5602fb29ff055de"
+    ],
+    "learningObjective": "勾配消失問題のメカニズムと影響を理解し、深層学習における重要性を説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "勾配消失問題と勾配爆発問題の混同",
+    "optionRationales": [
+      "誤り。勾配爆発問題は逆伝播時に勾配が大きくなる現象であり、勾配消失問題とは異なる。",
+      "正解。ネットワークが深くなると勾配が小さくなり、重みが更新されにくくなる問題を示している。",
+      "誤り。勾配消失問題は主に深いネットワークで発生し、浅いネットワークではあまり問題にならない。",
+      "誤り。勾配消失問題はデータの前処理とは関係がなく、主にネットワークの深さと活性化関数に起因する。"
     ]
   },
   {
@@ -491,6 +563,15 @@
       "https://ainow.ai/2022/04/17/264675/",
       "https://ai-kenkyujo.com/artificial-intelligence/algorithm/neuralnetworkdeeplearning/",
       "https://qiita.com/ryou83480820/items/967a94b970e5fa6ce98d"
+    ],
+    "learningObjective": "ディープニューラルネットワークの構造と特徴を理解し、正しい定義を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "DNNと単層ネットワークの混同",
+    "optionRationales": [
+      "誤り。単層ネットワークは隠れ層を持たないため、DNNとは異なる。",
+      "正解。DNNは入力層・複数の隠れ層・出力層からなる多層ネットワークである。",
+      "誤り。DNNは複数の隠れ層を持つため、シンプルなモデルではない。",
+      "誤り。DNNは線形回帰手法ではなく、非線形な特徴抽出を行う。"
     ]
   },
   {
@@ -541,6 +622,15 @@
       "https://tetoblog.org/2021/06/act-function-tanh/",
       "https://mathlandscape.com/sinh/",
       "https://biz.moneyforward.com/work-efficiency/basic/17679/"
+    ],
+    "learningObjective": "tanh関数の特性を理解し、シグモイド関数との違いを説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "tanh関数とシグモイド関数の出力範囲の混同",
+    "optionRationales": [
+      "誤り。出力は0から1ではなく-1から1である。",
+      "正解。tanh関数は-1〜1の範囲でゼロ中心化され、学習効率が改善されることがある。",
+      "誤り。tanh関数は負の値も出力し、シグモイド関数より優れている場合が多い。",
+      "誤り。tanh関数は画像処理に特化したものではなく、一般的な活性化関数である。"
     ]
   },
   {
@@ -594,6 +684,15 @@
       "https://qiita.com/pocokhc/items/f4387c099a28a69df918",
       "https://geminiandi.hatenablog.com/entry/2025/06/21/165506",
       "https://www.globalwalkers.co.jp/blog/2022/01/17/n0004/"
+    ],
+    "learningObjective": "ミニバッチ学習の特徴と利点を理解し、他の学習手法と比較できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "全データを一度に使用する手法との混同",
+    "optionRationales": [
+      "誤り。全てのデータを一度に用いる手法はバッチ学習である。",
+      "誤り。データを一つずつ用いる方法はオンライン学習である。",
+      "正解。ミニバッチ学習は小さなバッチに分けて勾配を計算する手法だから。",
+      "誤り。無作為に選び続けるのはサンプリング手法である。"
     ]
   },
   {
@@ -668,6 +767,15 @@
       "https://note.com/anon_aiai/n/ncd2bf5a48964",
       "https://www.reddit.com/r/reinforcementlearning/comments/oewhai/is_there_a_way_to_train_a_neural_net_for_xor/?tl=ja",
       "https://medium.com/@pknotfound/solving-the-xor-problem-using-mlp-83e35a22c96f"
+    ],
+    "learningObjective": "多層パーセプトロン（MLP）が単純パーセプトロンと比較して優れている点を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "単純パーセプトロンの機能と限界の誤解",
+    "optionRationales": [
+      "誤り。単純パーセプトロンは単一の出力を持つが、MLPは隠れ層を持つ。",
+      "正解。隠れ層を持つことで、MLPはXOR問題などの線形分離不可能な問題を解決できる。",
+      "誤り。MLPは線形分離不可能な問題も解決できるため、この選択肢は誤り。",
+      "誤り。MLPは自然言語処理に特化しているわけではなく、汎用的なモデルである。"
     ]
   },
   {
@@ -722,6 +830,15 @@
       "https://zenn.dev/walhalla7/scraps/2cdf5c82908eeb",
       "https://www.itpassportsiken.com/kakomon/05_haru/q91.html",
       "https://daily-life-ai.com/2126/"
+    ],
+    "learningObjective": "Leaky ReLU関数の特徴とDying ReLU問題の解決方法を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "Leaky ReLUが常に出力をゼロにするという誤解",
+    "optionRationales": [
+      "誤り。Leaky ReLUは出力が常にゼロではなく、負の入力に対して小さな傾きを持つ。",
+      "正解。Leaky ReLUは負の領域でも小さな傾きを持たせ、Dying ReLU問題を解決する。",
+      "誤り。Leaky ReLUは負の時にゼロを返さず、傾きを持つため誤解。",
+      "誤り。Leaky ReLUは正規化ではなく、勾配の流れを維持するために設計されている。"
     ]
   },
   {
@@ -779,6 +896,15 @@
       "https://kobesoft.co.jp/mikata/words/ai-ml/softmax/",
       "https://www.reddit.com/r/deeplearning/comments/iy4yw3/why_is_softmax_function_the_go_to_for/?tl=ja",
       "https://note.com/kikaben/n/nddb38c635df5"
+    ],
+    "learningObjective": "Softmax関数の役割と多クラス分類における利用方法を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "Softmax関数と回帰問題の混同",
+    "optionRationales": [
+      "正解。Softmax関数は多クラス分類の出力層で使用され、確率として解釈される。",
+      "誤り。回帰問題では数値をそのまま出力する手法が用いられるため、Softmaxは不適切。",
+      "誤り。Softmax関数は多クラス分類に特化しており、出力の合計は1になるが、2にはならない。",
+      "誤り。Softmaxは文生成に直接用いられるわけではなく、分類タスクに使用される。"
     ]
   },
   {
@@ -825,6 +951,15 @@
       "https://qiita.com/warper/items/423c353187e324fdf2e6",
       "http://deepokayama.kenkyuukai.jp/FilePreview_Subject.asp?id=6416&sid=2063&cid=352&ref=%2Fsubject%2Fsubject%5Flist%2Easp",
       "https://note.com/kikaben/n/n800614561ae1"
+    ],
+    "learningObjective": "連鎖律と誤差逆伝播法の関係を理解し、正しい選択肢を選べるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "連鎖律と誤差逆伝播法の関係を誤解しやすい。特に、連鎖律が確率分布や物理法則に関連すると考えることがある。",
+    "optionRationales": [
+      "正解。連鎖律は合成関数の微分を各関数の微分の積として求める法則であり、誤差逆伝播法はこれを利用して各層の重みへの損失の勾配を計算する。",
+      "誤り。連鎖律は合成関数の微分に関する法則であり、確率分布の変化を扱うものではない。",
+      "誤り。連鎖律は合成関数の微分を求める法則であり、誤差逆伝播法は多層ネットワークにおける勾配計算に用いられる。",
+      "誤り。連鎖律は物理学の法則ではなく、微積分の法則であり、誤差逆伝播法は機械学習に特化した手法である。"
     ]
   },
   {
@@ -877,6 +1012,15 @@
       "https://quizlet.com/jp/815928856/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9-flash-cards/",
       "https://gorgonia.org/ja/about/computation-graph/",
       "https://jp.linkedin.com/pulse/understanding-mathematics-artificial-neural-networks-anns-atlury-dp2tc?tl=ja"
+    ],
+    "learningObjective": "計算グラフの構造と機能を理解し、順伝播と逆伝播の役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "計算グラフは単なる数式の視覚化に過ぎず、順伝播と逆伝播の重要性や連鎖律の適用を理解していない。",
+    "optionRationales": [
+      "正解。計算の過程をノードとエッジで表現し、順伝播と逆伝播を整理できるから。",
+      "誤り。計算グラフは誤差逆伝播法に関与し、重要な役割を果たす技術である。",
+      "誤り。計算グラフは複雑なアルゴリズムにも適用可能で、単純な数値計算だけではない。",
+      "誤り。計算グラフは機械学習において重要であり、物理学の運動方程式には関係ない。"
     ]
   },
   {
@@ -927,6 +1071,15 @@
       "https://www.ibm.com/jp-ja/think/topics/loss-function",
       "https://michihito-ando.github.io/econome_ml_with_R/10_OLS_logistic.html",
       "https://www.alphaxiv.org/ja/overview/2511.10200v2"
+    ],
+    "learningObjective": "MSEと交差エントロピーの適用範囲を理解し、使い分けができる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "MSEが分類問題にも適用できると誤解し、交差エントロピーの必要性を理解していない。",
+    "optionRationales": [
+      "正解。MSEは回帰問題に、交差エントロピーは分類問題に使われるから。",
+      "誤り。MSEは回帰問題に使い、交差エントロピーは分類問題に用いる。",
+      "誤り。MSEは回帰問題に、交差エントロピーは分類問題に使うべきである。",
+      "誤り。MSEは回帰問題に、交差エントロピーは分類問題に使われる。"
     ]
   },
   {
@@ -984,6 +1137,15 @@
       "https://tech.aru-zakki.com/neural-network-xor-training/",
       "https://techplay.jp/video/157",
       "https://watlab-blog.com/2019/12/12/mlp-xor/"
+    ],
+    "learningObjective": "XOR問題が単純パーセプトロンで解けない理由を理解し説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "線形分離可能性と非線形性の混同",
+    "optionRationales": [
+      "正解。XOR問題は線形分離不可能だから。",
+      "誤り。単純パーセプトロンは出力が常に0ではない。",
+      "誤り。多層構造がないことが直接の理由ではない。",
+      "誤り。XOR問題は線形分離不可能であるが、単純パーセプトロンの限界を示す理由ではない。"
     ]
   },
   {
@@ -1041,6 +1203,15 @@
       "https://medium.com/@vinodhb95/momentum-optimizer-6023aa445e18",
       "https://www.quora.com/What-is-the-logic-and-intuition-behind-the-momentum-optimization-algorithm-and-why-is-it-considered-better-than-gradient-descent",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC11511872/"
+    ],
+    "learningObjective": "Momentum最適化手法の特徴を理解し、他の手法との違いを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "勾配降下法の学習率固定と混同している",
+    "optionRationales": [
+      "正解。過去の更新方向を考慮することで振動を抑えつつ収束を速めるから。",
+      "誤り。学習率を固定する手法ではなく、過去の勾配を考慮する手法である。",
+      "誤り。現在の勾配のみを用いる手法ではなく、過去の勾配も考慮する。",
+      "誤り。エネルギー保存の手法ではなく、過去の勾配を利用する最適化手法である。"
     ]
   },
   {
@@ -1091,6 +1262,15 @@
       "https://postd.cc/optimizing-gradient-descent/",
       "https://ai-compass.weeybrid.co.jp/learning/optimizing-learning-an-introduction-to-adagrad/",
       "https://saycon.co.jp/archives/neta/%E3%80%90%E8%AC%9B%E5%B8%AB%E5%90%91%E3%81%91%E3%80%91%E6%95%B0%E5%BC%8F%E3%81%A7%E6%8C%AB%E6%8A%98%E3%81%95%E3%81%9B%E3%81%AA%E3%81%84%EF%BC%81%E3%80%8Cadagrad%E3%80%8D%E3%82%92%E7%9B%B4%E6%84%9F"
+    ],
+    "learningObjective": "AdaGrad最適化手法の特徴を理解し、正しい選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AdaGradの学習率調整の仕組みの誤解",
+    "optionRationales": [
+      "正解。過去の勾配の二乗和を蓄積し、頻出パラメータの学習率を小さくするから。",
+      "誤り。平均を用いるのは他の手法であり、AdaGradは二乗和を使用する。",
+      "誤り。全てのパラメータに同じ学習率を適用するのはSGDの特徴である。",
+      "誤り。手動で設定するのはAdaGradの特徴ではなく、他の手法に関連する。"
     ]
   },
   {
@@ -1152,6 +1332,15 @@
       "https://www.reddit.com/r/MachineLearning/comments/4bys6n/lbfgs_and_neural_nets/?tl=ja",
       "https://zenn.dev/dena/articles/6f04641801b387",
       "https://accum33.com/%E3%80%90e%E8%B3%87%E6%A0%BC%E4%B8%8D%E5%90%88%E6%A0%BC%E3%81%8B%E3%82%89%E5%AD%A6%E3%81%B6%E3%80%91%E6%80%A7%E8%83%BD%E5%90%91%E4%B8%8A%E3%81%AE%E6%96%B9%E6%B3%95%E3%82%92%E3%83%9D%E3%82%A4%E3%83%B3/"
+    ],
+    "learningObjective": "RMSPropがAdaGradの学習率減衰問題をどのように改善したかを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "RMSPropとAdaGradの学習率の違いを混同する",
+    "optionRationales": [
+      "正解。過去の勾配を指数移動平均で管理することで、学習率が0に向かって単調減少するAdaGradの問題を改善し、直近の勾配を重視した適応的学習率。",
+      "誤り。RMSPropは学習率を固定するのではなく、適応的に調整する手法である。",
+      "誤り。RMSPropは過去の勾配を全て考慮せず、最近の勾配に基づいて学習率を調整する。",
+      "誤り。RMSPropは特定のデータにのみ適用されるのではなく、一般的な最適化手法である。"
     ]
   },
   {
@@ -1205,6 +1394,15 @@
       "https://qiita.com/harachan/items/c3fa7aea0a6a968f1374",
       "https://terakoya.sejuku.net/question/detail/42289",
       "https://jp.linkedin.com/pulse/gradients-loss-functions-neural-networks-colin-kyle-ahijc?tl=ja"
+    ],
+    "learningObjective": "勾配爆発問題のメカニズムと影響を理解し、適切な対策を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "勾配消失と勾配爆発の混同",
+    "optionRationales": [
+      "誤り。勾配が小さくなるのは勾配消失問題である。",
+      "正解。重みの初期化が不適切な場合に勾配爆発が起こることがある。",
+      "正解。勾配が大きくなりすぎて学習が不安定になる現象を正しく説明している。",
+      "誤り。勾配爆発は勾配を小さくする手法ではなく、問題である。"
     ]
   },
   {
@@ -1260,6 +1458,15 @@
       "https://jp.linkedin.com/pulse/activation-functions-101-sigmoid-tanh-relu-softmax-ben-hammouda?tl=ja",
       "https://note.com/honda_aoi/n/ne612f31be84a",
       "https://www.reddit.com/r/learnmachinelearning/comments/uwa462/neural_networks_activation_function_for_output/?tl=ja"
+    ],
+    "learningObjective": "Xavier初期化が適した活性化関数の特性を理解し、選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "Xavier初期化とHe初期化の適用範囲の混同",
+    "optionRationales": [
+      "誤り。ReLU活性化関数にはHe初期化が適している。",
+      "誤り。線形回帰モデルは活性化関数を必要としない。",
+      "正解。シグモイド関数やtanh関数に適した初期化手法である。",
+      "誤り。活性化関数の定義ではなく、具体的な関数が必要。"
     ]
   },
   {
@@ -1303,6 +1510,15 @@
       "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
       "https://note.com/vast_cosmos500/n/n5367745fb613",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ],
+    "learningObjective": "He初期化がReLU関数に適している理由を理解し説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "He初期化は単に重みをランダムに設定するだけで、活性化関数の特性を考慮していないという誤解がある。",
+    "optionRationales": [
+      "誤り。Sigmoid関数は勾配消失を引き起こすが、He初期化とは関係ない。",
+      "誤り。Tanh関数は出力が-1から1に収束するが、He初期化の理由ではない。",
+      "正解。ReLU関数は負の入力で出力が0になり、活性化されるニューロンが半分になるため、分散を2倍にしている。",
+      "誤り。Softmax関数は多クラス分類に使われ、回帰問題には適用されない。"
     ]
   },
   {
@@ -1363,6 +1579,15 @@
       "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
       "https://nnadl-ja.github.io/nnadl_site_ja/chap3.html",
       "https://docs.ultralytics.com/ja/modes/train/"
+    ],
+    "learningObjective": "エポックの定義を理解し、訓練プロセスにおける役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エポックとバッチ処理の混同",
+    "optionRationales": [
+      "誤り。モデルの重み調整回数はエポックではなく、バッチ数に関連する。",
+      "誤り。データを分割して処理する単位はバッチであり、エポックとは異なる。",
+      "正解。エポックは訓練データセット全体を1回学習に使用した単位である。",
+      "誤り。特定の時代を示す用語ではなく、学習の単位を指す。"
     ]
   },
   {
@@ -1430,6 +1655,15 @@
       "https://docs.ultralytics.com/ja/guides/model-training-tips/",
       "https://zero2one.jp/ai-word/epoch/?srsltid=AfmBOoopUCU3G6fnWR2PEPC_OOjjmCdKb70jbfKh0r1re-zEOJaf9mON",
       "https://sgsystemsglobal.com/ja/%E7%94%A8%E8%AA%9E%E9%9B%86/%E3%83%90%E3%83%83%E3%83%81%E3%82%B9%E3%82%B1%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%AD%E3%82%B8%E3%83%83%E3%82%AF/"
+    ],
+    "learningObjective": "バッチサイズが1回のパラメータ更新に使用するサンプル数を意味し勾配計算に影響することを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "バッチサイズと学習率の混同",
+    "optionRationales": [
+      "誤り。学習率はモデルのパラメータ更新の幅を示すものであり、バッチサイズとは異なる。",
+      "誤り。データ全体を一度に処理するのはバッチ学習であり、バッチサイズはその一部を指す。",
+      "正解。バッチサイズは1回の重み更新に使用するサンプルの数を示す。",
+      "誤り。前処理はデータの準備に関する手法であり、バッチサイズとは無関係である。"
     ]
   },
   {
@@ -1482,6 +1716,15 @@
       "https://zenn.dev/dena/articles/6f04641801b387",
       "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
       "https://www.shinhidaka-hokkaido.jp/gikai/kaigiroku/R05/R0509T_02.html"
+    ],
+    "learningObjective": "学習率スケジューリングの目的と効果を理解し、適切な手法を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "学習率の固定と動的調整の混同",
+    "optionRationales": [
+      "誤り。学習率を固定する手法ではないため。",
+      "誤り。学習率を下げるのは終盤ではなく、初期に大きくすることが目的。",
+      "正解。学習率を動的に変化させることで、探索と収束を最適化するから。",
+      "誤り。データ前処理とは関係がない手法であるため。"
     ]
   },
   {
@@ -1534,6 +1777,15 @@
       "https://note.com/vast_cosmos500/n/n046d2953d0de",
       "https://www.scribd.com/document/808516514/Thaolejp-N1-Tai-Lieu-Doc-Hieu-N1",
       "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/"
+    ],
+    "learningObjective": "万能近似定理の内容を理解し、隠れ層の役割と必要条件を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "万能近似定理は隠れ層が1層で十分であることを示しているが、無限に層を増やす必要はない。",
+    "optionRationales": [
+      "誤り。隠れ層が2層以上必要というのは間違いで、1層でも近似可能。",
+      "誤り。隠れ層の数を無限に増やす必要はなく、1層で十分な場合がある。",
+      "正解。隠れ層が1層でも、ニューロン数を十分大きくすれば任意の連続関数を任意の精度で近似できる。",
+      "誤り。ニューラルネットワークは全てのデータを一度に処理する必要はなく、バッチ処理が可能。"
     ]
   },
   {
@@ -1587,6 +1839,15 @@
       "https://jp.mathworks.com/help/deeplearning/ref/network.init.html",
       "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC%EF%BD%9E%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A8%93%EF%BD%9E/",
       "https://www.anarchive-beta.com/entry/2020/08/15/180000"
+    ],
+    "learningObjective": "ニューラルネットワークの重み初期化が学習に与える影響を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "重みの初期化と学習の安定性の混同",
+    "optionRationales": [
+      "誤り。重みをランダムに初期化することは学習の安定性を向上させるため重要である。",
+      "誤り。重みをゼロにすると学習が進まないため、精度は向上しない。",
+      "正解。全てのニューロンが同じ出力を計算し、同一の重みに更新されるため、対称性問題が発生する。",
+      "誤り。全ニューロンが異なる出力を生成することはなく、逆伝播での勾配は同じになる。"
     ]
   },
   {
@@ -1646,6 +1907,15 @@
       "https://note.com/marupeke296/n/n4f0d2340a373",
       "https://jp.linkedin.com/pulse/what-difference-between-batch-online-machine-learning-hafsa-raza-v6vyf?tl=ja",
       "https://qiita.com/koki1026/items/672a1708627393ecc314"
+    ],
+    "learningObjective": "全バッチ学習の特徴を理解し、適用時の利点と欠点を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "バッチ勾配降下法は全データを使うため、常に計算が速いと誤解されがちであるが、実際には大規模データでは計算コストが高くなる。",
+    "optionRationales": [
+      "誤り。全データを使わずにランダムに選ぶのはミニバッチ学習の特徴。",
+      "誤り。部分データを使うのはミニバッチ学習であり、全バッチ学習ではない。",
+      "正解。全訓練データの勾配を計算し、1回の更新を行うため安定性がある。",
+      "誤り。逐次的に学習を行うのはオンライン学習の特徴である。"
     ]
   },
   {
@@ -1699,6 +1969,15 @@
       "https://robo.japanstep.jp/learn/2025/05/1003/",
       "https://www.reddit.com/r/MachineLearning/comments/1h1x2a/what_are_hidden_layers_for/?tl=ja",
       "https://techsword.co.jp/column/introduce-deep-learning"
+    ],
+    "learningObjective": "隠れ層の役割とその重要性を理解し、ニューラルネットワークの構造を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "隠れ層の機能を出力層と混同する",
+    "optionRationales": [
+      "誤り。出力層と直接接続する層という説明は正しくない。",
+      "誤り。入力層からの情報をそのまま出力する層ではない。",
+      "誤り。データを圧縮する役割ではなく、特徴を抽出する層である。",
+      "正解。入力層と出力層の間に位置し、非線形変換を通じて特徴を抽出する。"
     ]
   },
   {
@@ -1742,6 +2021,15 @@
       "https://note.com/vast_cosmos500/n/n5367745fb613",
       "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ],
+    "learningObjective": "ReLU関数が勾配消失問題に対してどのように効果的かを理解する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ReLU関数の特性とシグモイド関数の飽和特性の混同",
+    "optionRationales": [
+      "誤り。シグモイド関数は勾配が0に近づくため、深層学習には不向きであるが、これは技術的な手法ではない。",
+      "正解。ReLU関数は負の値を持つ入力に対しても勾配が存在し、学習が進みやすい。",
+      "誤り。勾配消失問題はモデルのアーキテクチャに関係しており、データの前処理だけではない。",
+      "正解。ReLUは正の領域で勾配が常に1であり、シグモイド関数の飽和が起きず、勾配が深い層まで伝わりやすい。"
     ]
   },
   {
@@ -1794,6 +2082,15 @@
       "https://zilliz.com/jp/learn/Cross-Entropy-Loss-Unraveling-its-Role-in-Machine-Learning",
       "https://ikuty.com/2019/10/13/deep_error/",
       "https://www.codemajin.net/loss-functions-in-deep-learning/"
+    ],
+    "learningObjective": "交差エントロピー誤差の特性を理解し、分類問題における役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "交差エントロピー誤差は単に予測と実際の値の差を測るだけでなく、確率分布の違いを対数で強調する特性を理解していない。",
+    "optionRationales": [
+      "誤り。平均二乗誤差は回帰問題に特化した手法である。",
+      "誤り。交差エントロピーは分類問題に特化した誤差関数である。",
+      "正解。情報理論におけるエントロピーはデータの不確実性を測る指標である。",
+      "正解。予測した確率分布と正解の分布のずれを対数で定量化する。"
     ]
   },
   {
@@ -1854,6 +2151,15 @@
       "https://qiita.com/kenmatsu4/items/d282054ddedbd68fecb0",
       "https://ai-compass.weeybrid.co.jp/learning/local-optima-a-pitfall-in-machine-learning/",
       "https://jp.mathworks.com/help/optim/ug/local-vs-global-optima.html"
+    ],
+    "learningObjective": "オンライン学習の特徴を理解し、確率的勾配降下法の利点を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "オンライン学習は全データを使用する手法ではない。",
+    "optionRationales": [
+      "誤り。全データを使用するのはバッチ学習であり、オンライン学習は1サンプルずつ更新する。",
+      "誤り。更新頻度が高く、安定した収束を目指すのはバッチ学習の特徴である。",
+      "誤り。教師あり学習に特化しているわけではなく、様々な学習に適用可能である。",
+      "正解。1データサンプルを処理するたびに重みを更新するため更新頻度が高く、ノイズが大きい代わりに局所最適解を脱出しやすい。"
     ]
   },
   {
@@ -1913,6 +2219,15 @@
       "https://www.reddit.com/r/learnmachinelearning/comments/1aeo0cl/problem_about_learning_rate_in_simple_neural/?tl=ja",
       "https://www.tensorflow.org/tutorials/keras/overfit_and_underfit?hl=ja",
       "https://ja.stackoverflow.com/questions/51570/mnist%E3%81%AE%E5%88%86%E9%A1%9E%E5%95%8F%E9%A1%8C%E3%81%A7%E6%AD%A3%E7%AD%94%E7%8E%87%E3%81%8C%E4%BD%8E%E3%81%99%E3%81%8E%E3%82%8B"
+    ],
+    "learningObjective": "学習率が大きすぎる場合の影響を理解し、適切な調整方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "学習率の調整がデータ前処理に影響するという誤解",
+    "optionRationales": [
+      "誤り。学習率が低すぎると収束が遅くなるが、これは別の問題である。",
+      "誤り。学習率が適切でない場合、精度が向上しないが安定性は保たれないことが多い。",
+      "誤り。学習率の調整は重要だが、前処理とは直接関係がない。",
+      "正解。学習率が大きすぎると損失が振動したり発散し、学習が不安定になる。"
     ]
   },
   {
@@ -1966,6 +2281,15 @@
       "https://note.com/vast_cosmos500/n/n5367745fb613",
       "https://tt-tsukumochi.com/archives/11240",
       "https://www.jdla.org/g-qa/"
+    ],
+    "learningObjective": "損失関数の役割とその最適化手法を理解し、モデル学習における重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "損失関数の目的と評価指標の混同",
+    "optionRationales": [
+      "誤り。モデルの性能評価は損失関数の一部だが、主目的ではない。",
+      "誤り。データの分布可視化は別の手法であり、損失関数の役割ではない。",
+      "誤り。予測結果の修正基準は損失関数の一部だが、主目的ではない。",
+      "正解。損失関数は予測と正解のずれを定量化し、最小化を目指す指標だから。"
     ]
   },
   {
@@ -2020,6 +2344,15 @@
       "https://zenn.dev/dena/articles/6f04641801b387",
       "https://www.jstage.jst.go.jp/article/jinstmet1952/49/9/49_9_714/_pdf",
       "https://qiita.com/omiita/items/1735c1d048fe5f611f80"
+    ],
+    "learningObjective": "Adamのハイパーパラメータβ1とβ2の役割を理解し、正しい選択肢を選べるようになる。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": "β1とβ2の役割を混同しやすい。特にMomentumとRMSPropの関係を理解することが重要。",
+    "optionRationales": [
+      "誤り。β1は学習率の調整には使われず、主に勾配の一次モーメントに関連する。",
+      "誤り。β1は一次モーメントを制御し、β2は二次モーメントを制御するため、学習の安定性を保つという説明は不正確。",
+      "誤り。β1はデータの前処理には関与せず、β2は正則化とは無関係である。",
+      "正解。β1は勾配の一次モーメントの係数で、β2は勾配の二次モーメントの係数である。"
     ]
   },
   {
@@ -2074,6 +2407,15 @@
       "https://www.intellilink.co.jp/column/ai/2023/022800.aspx",
       "https://www.ibm.com/jp-ja/think/topics/backpropagation",
       "https://www.reddit.com/r/MachineLearning/comments/ctbxod/d_question_on_quaternionrecurrentneuralnetworks/?tl=ja"
+    ],
+    "learningObjective": "ニューラルネットワークの順伝播と逆伝播の基本的な違いを理解する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "順伝播と逆伝播の役割を混同しないようにする。",
+    "optionRationales": [
+      "誤り。逆伝播は出力から入力へデータを流すのではなく、誤差を逆向きに伝播させる。",
+      "誤り。順伝播はデータを入力から出力へ流すが、逆伝播は重みを更新するために勾配を計算する。",
+      "誤り。順伝播はデータを変換する過程であり、逆伝播は勾配を計算する過程である。",
+      "正解。順伝播は入力から出力へデータを変換して予測値を計算し、逆伝播は損失から各重みへの勾配を出力側から入力側に向かって計算する。"
     ]
   },
   {
@@ -2127,6 +2469,15 @@
       "https://www.tryeting.jp/column/1000/",
       "https://jp.dotdata.com/blog/machine-learning-feature-engineering/",
       "https://www.datarobot.com/jp/blog/is-deep-learning-almighty/"
+    ],
+    "learningObjective": "ディープラーニングにおける特徴量エンジニアリングの必要性を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ディープラーニングと従来の機械学習の違いを混同する",
+    "optionRationales": [
+      "誤り。ディープラーニングは特徴量を自動で学習する技術である。",
+      "誤り。特徴量エンジニアリングは手動で行う必要があるが、ディープラーニングでは不要。",
+      "誤り。ディープラーニングは教師あり学習の一種だが、特徴量設計が不要である。",
+      "正解。多層の非線形変換を通じて特徴を自動的に学習できるため、手動設計が不要になる。"
     ]
   },
   {
@@ -2185,6 +2536,15 @@
       "https://note.com/shi3zblog/n/n1576e38cbd78",
       "https://ml4a.github.io/ml4a/jp/convnets/",
       "https://qiita.com/t_Signull/items/f776aecb4909b7c5c116"
+    ],
+    "learningObjective": "ニューラルネットワークの重みの初期化方法が学習に与える影響を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "重みの初期化が学習に与える影響を軽視する",
+    "optionRationales": [
+      "誤り。同じ値で初期化すると、全ニューロンが同じ出力を計算し、学習が進まない。",
+      "誤り。重みを同一の定数で初期化すると、学習速度は向上しない。",
+      "誤り。出力層の活性化関数は影響を与えるが、同一重みでは学習が進まない。",
+      "正解。全てのニューロンが同じ重みを持つため、対称性が破れず多様な特徴を学習できない。"
     ]
   }
 ]

@@ -54,6 +54,15 @@
       "https://www.reddit.com/r/ChatGPTPro/comments/1krck3o/chatgpt_is_making_so_many_mistakes_its_defeating/?tl=ja",
       "https://www.yomiuri.co.jp/economy/20260423-GYT1T00011/",
       "https://topics.smt.docomo.ne.jp/article/yomiuri/business/20260423-567-GYT1T00011"
+    ],
+    "learningObjective": "著作権法第30条の4の内容を理解し、情報解析の利用条件を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "著作権法の適用範囲の誤解",
+    "optionRationales": [
+      "誤り。著作権法第30条の4は商業利用を禁止するものではない。",
+      "正解。情報解析のための利用は許可されるため、営利・非営利を問わない。",
+      "誤り。情報解析規定は著作権者の許諾が不要な場合に適用される。",
+      "誤り。著作権法第30条の4は全てのデータ収集を許可するものではない。"
     ]
   },
   {
@@ -100,6 +109,15 @@
       "https://blog.jpac-privacy.jp/anonymisationandpseudonymisation/",
       "https://note.com/nssol_note/n/n91e9c4d38229",
       "https://x.com/HiromitsuTakagi/status/2041712125618614524"
+    ],
+    "learningObjective": "仮名加工情報と匿名加工情報の違いを理解し、適切に区別できるようになる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "仮名加工情報と匿名加工情報の機能の混同",
+    "optionRationales": [
+      "誤り。仮名加工情報は個人情報を削除せず、匿名加工情報は完全に識別不可能にする。",
+      "正解。仮名加工情報は社内利用に限られ、第三者提供は原則不可である。",
+      "誤り。匿名加工情報は社内利用に限らず、仮名加工情報は復元可能な形で保持される。",
+      "誤り。仮名加工情報は復元可能であり、匿名加工情報は全くの無関係なデータではない。"
     ]
   },
   {
@@ -160,6 +178,15 @@
       "https://qiita.com/abcdefg123/items/271992285228a175b236",
       "https://fuxin24.net/input_output/129489/",
       "https://www.legalontech.com/jp/media/japanese-legal-dataset"
+    ],
+    "learningObjective": "EU AI法のリスクベースアプローチを理解し、正しい分類を選択できるようになる。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": "リスク分類の段階を誤解しないようにする。",
+    "optionRationales": [
+      "誤り。AIのリスクレベルは3段階ではなく4段階に分けられる。",
+      "正解。AIのリスクレベルは4段階に分類され、それぞれに応じた義務が設定される。",
+      "誤り。リスク分類は2段階ではなく、4段階に分かれている。",
+      "誤り。リスクを分ける手法は正しいが、義務の設定が明確に記載されていない。"
     ]
   },
   {
@@ -202,6 +229,15 @@
       "https://note.com/vast_cosmos500/n/n5367745fb613",
       "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ],
+    "learningObjective": "広島AIプロセスの目的と背景を理解し、正しい説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "G7サミットとG20サミットの混同",
+    "optionRationales": [
+      "誤り。G20サミットではなくG7サミットで発表された。",
+      "正解。2023年のG7広島サミットで発足した枠組みである。",
+      "誤り。日本国内の教育プログラムではなく国際的な指針である。",
+      "誤り。2024年の国連会議ではなく、G7サミットで発足した。"
     ]
   },
   {
@@ -256,6 +292,15 @@
       "https://nttdocomo-developers.jp/entry/202212201200",
       "https://miz.soln.info/2025/%E4%BC%81%E6%A5%AD%E3%81%AEai%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E5%AF%BE%E7%AD%96-%E5%AE%8C%E5%85%A8%E3%82%AC%E3%82%A4%E3%83%89%EF%BC%9A%E3%83%AA%E3%82%B9%E3%82%AF%E5%88%86/",
       "https://x.com/enspire_co_jp/status/1960403533729259877"
+    ],
+    "learningObjective": "XAIが特に重要視される高リスク領域を理解し、具体例を挙げられる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "XAIの重要性を誤解し、全てのAIに必要だと考えること",
+    "optionRationales": [
+      "誤り。自動運転車は重要だが、XAIの特性を示していない。",
+      "正解。医療診断や融資審査は人の生命や権利に影響するため、XAIが重要。",
+      "誤り。マーケティング手法はXAIの重要性を示すものではない。",
+      "誤り。画像認識の精度向上は重要だが、XAIの核心ではない。"
     ]
   },
   {
@@ -315,6 +360,15 @@
       "https://www.technologyreview.jp/s/214823/the-owner-of-wechat-thinks-deepfakes-could-actually-be-good/",
       "https://qiita.com/jiny2001/items/1a33c0c43230b6468571",
       "https://mynavi-agent.jp/dainishinsotsu/canvas/2022/06/post-738.html"
+    ],
+    "learningObjective": "ディープフェイクの技術を理解し、その社会的影響を考察すること。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ディープフェイクは単なる画像編集技術ではなく、AIを用いた高度な生成技術である。",
+    "optionRationales": [
+      "正解。ディープフェイクは、ディープラーニングを用いて本物と見分けがつきにくい偽の画像・音声・動画を生成する技術です。",
+      "誤り。ディープラーニングを用いてデータを解析する手法は、ディープフェイクの定義には含まれません。",
+      "誤り。AIを活用してリアルな画像を生成する技術は広い意味での生成AIに該当しますが、ディープフェイク特有の技術ではありません。",
+      "誤り。映像や音声を加工するための編集技術は、ディープフェイクの一部ではありますが、生成技術の本質を捉えていません。"
     ]
   },
   {
@@ -363,6 +417,15 @@
       "https://www.yuasa-hara.co.jp/lawinfo/5047/",
       "https://www.ipsj.or.jp/dp/contents/publication/61/DP61-S04.html",
       "https://qiita.com/Robot-Inventor/items/b01786235978a0bc38d9"
+    ],
+    "learningObjective": "著作権法第30条の4の適用条件と制限を理解し、具体例を考察できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "著作権法の全ての利用を禁止する誤解",
+    "optionRationales": [
+      "誤り。著作権法第30条の4は利用を禁止するものではない。",
+      "正解。情報解析目的での利用は享受目的がない場合に適用されるから。",
+      "誤り。無条件で許可するわけではなく、条件があるため誤解を招く。",
+      "誤り。特例を設けているが、享受目的がある場合は適用されない。"
     ]
   },
   {
@@ -420,6 +483,15 @@
       "https://medical.jiji.com/column4/147",
       "https://zhuanlan.zhihu.com/p/1892976153578407339",
       "https://vantiq.com/ja/blog/%E6%82%A3%E8%80%85%E3%83%A2%E3%83%8B%E3%82%BF%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AE%E6%9C%AA%E6%9D%A5%EF%BC%9A%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%BF%E3%82%A4%E3%83%A0%E3%81%A8%E7%94%9F%E6%88%90ai/"
+    ],
+    "learningObjective": "EU AI法における「許容できないリスク」の具体例を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "公共の場での監視と健康管理AIの混同",
+    "optionRationales": [
+      "誤り。生体データを用いた健康管理は高リスクに分類され、禁止ではない。",
+      "正解。公共空間でのリアルタイム監視や社会的スコアリングは許容できないリスクに該当する。",
+      "誤り。教育支援AIは高リスクに分類され、禁止ではない。",
+      "誤り。犯罪予測AIは高リスクに該当し、厳格な義務が課されるが禁止ではない。"
     ]
   },
   {
@@ -474,6 +546,15 @@
       "https://spikestudio.jp/blog/generative-ai-risk-cases",
       "https://automation.jp/research-report/2024-11-09-ai-trust-and-fairness-challenges-towards-responsible-innovation-in-digital-society",
       "https://www.pwc.com/jp/ja/knowledge/thoughtleadership/ai-and-human-rights-risks.html"
+    ],
+    "learningObjective": "AIの公平性に関する課題を理解し、社会的偏見がモデルに与える影響を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIの公平性は特定のデータセットを使うことで常に達成されるという誤解",
+    "optionRationales": [
+      "誤り。データの透明性は重要だが、公平性の全てではない。",
+      "正解。学習データに含まれる社会的偏見がモデルに引き継がれる可能性があるから。",
+      "誤り。特定のデータセットだけでは公平性は保証されない。",
+      "誤り。倫理的判断の基準ではなく、実際のデータに基づく問題である。"
     ]
   },
   {
@@ -533,6 +614,15 @@
       "https://liskul.com/hallucination-167348",
       "https://note.com/hima2b4/n/nfbfa3cda49e1",
       "https://www.seraku.co.jp/pr-site/newtonx/column/21.html"
+    ],
+    "learningObjective": "敵対的サンプルの定義とその影響を理解し、AIシステムのリスクを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "敵対的サンプルはAIの誤認識を引き起こすためのデータであり、単なるノイズや無関係な情報を加えるだけで効果があると誤解されがちである。",
+    "optionRationales": [
+      "正解。微小な変化を加えることでAIを誤った予測をさせるため。",
+      "誤り。データを増やす手法ではなく、AIを攻撃する手法である。",
+      "誤り。敵対的サンプルは学習を妨げるのではなく、誤った予測を引き起こす。",
+      "誤り。データの偏りはAIの判断に影響を与えるが、敵対的サンプルとは異なる。"
     ]
   },
   {
@@ -581,6 +671,15 @@
       "https://storialaw.jp/blog/9748",
       "https://topics.smt.docomo.ne.jp/article/yomiuri/business/20260423-567-GYT1T00011",
       "https://www.yomiuri.co.jp/economy/20260423-GYT1T00011/"
+    ],
+    "learningObjective": "著作権法第47条の5の内容を理解し、軽微利用の範囲を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "著作権法の軽微利用と無制限利用の混同",
+    "optionRationales": [
+      "正解。著作権法第47条の5は、情報提供サービスにおける軽微利用を認めるから。",
+      "誤り。著作権法第47条の5は無制限な利用を認めていない。",
+      "誤り。著作権法第47条の5は利用を禁止するものではない。",
+      "誤り。著作権法第47条の5は商業利用を制限するものではない。"
     ]
   },
   {
@@ -629,6 +728,15 @@
       "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
       "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ],
+    "learningObjective": "要配慮個人情報の定義とその取得に関する法律的な要件を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "要配慮個人情報の取得に同意が不要と考える誤解",
+    "optionRationales": [
+      "正解。要配慮個人情報は差別を生じさせる可能性があるため、取得には原則として同意が必要だから。",
+      "誤り。一般情報も個人情報保護法の対象であり、注意が必要である。",
+      "誤り。要配慮個人情報は本人の同意が必要であり、自由に取得できない。",
+      "誤り。機密情報は企業の内部資料に関するもので、要配慮個人情報とは異なる。"
     ]
   },
   {
@@ -677,6 +785,15 @@
       "https://www.averydennison.com/en/home/GDPR_docs/gdpr-faq_jpn.html",
       "https://secureprivacy.ai/blog/how-to-respond-to-gdpr-right-to-erasure-request",
       "https://www.reddit.com/r/germany/comments/1n5pmsu/article_17_of_gdpr_the_right_to_be_forgotten/?tl=ja"
+    ],
+    "learningObjective": "GDPRにおける忘れられる権利の定義と適用条件を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "消去権とデータ収集の混同",
+    "optionRationales": [
+      "正解。本人が条件下でデータ削除を請求できる権利だから。",
+      "誤り。これはデータ収集を禁止する権利ではない。",
+      "誤り。データ管理者の権利ではなく、本人の権利に関するもの。",
+      "誤り。譲渡権ではなく、削除を求める権利である。"
     ]
   },
   {
@@ -719,6 +836,15 @@
       "https://xtech.nikkei.com/atcl/nxt/column/18/00001/00524/",
       "https://lazarusalliance.com/ja/gdpr-requirements-for-data-disclosure-and-rights-of-access/",
       "https://www.acompany.tech/privacytechlab/data-portability-rights-privacy-protect-people"
+    ],
+    "learningObjective": "GDPRにおけるデータポータビリティ権の内容と目的を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データポータビリティ権は、個人データの削除や利用停止の権利と混同されることが多い。",
+    "optionRationales": [
+      "正解。本人が自分の個人データを構造化・機械可読可能な形式で受け取り、他のサービス事業者へ移転させる権利だから。",
+      "誤り。ユーザーが自分のデータを無制限に利用できる権利ではなく、特定の条件下での権利である。",
+      "誤り。個人データを他者に無条件で開示する権利ではなく、本人の同意に基づく権利である。",
+      "誤り。データポータビリティ権は権利であり、システム構築の手法ではない。"
     ]
   },
   {
@@ -769,6 +895,15 @@
       "https://note.com/vast_cosmos500/n/ncd8c33fca570",
       "https://www.ipsj.or.jp/dp/contents/publication/61/TR0601-06.html",
       "https://www.nri-secure.co.jp/blog/security-by-design-requirements-of-the-fsa-guidelines"
+    ],
+    "learningObjective": "プライバシー・バイ・デザインの基本概念を理解し、正しい定義を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "プライバシー対策を後から行う方法と混同している",
+    "optionRationales": [
+      "正解。プライバシー・バイ・デザインは設計段階からの組み込みを重視する。",
+      "誤り。運用段階での強化は事後的なアプローチである。",
+      "誤り。ユーザーの同意後の対策は事後対応に該当する。",
+      "誤り。データ収集後の保護はプライバシー・バイ・デザインの考え方に反する。"
     ]
   },
   {
@@ -823,6 +958,15 @@
       "https://www.oecd.org/en/publications/scoping-the-oecd-ai-principles_d62f618a-en.html",
       "https://www.chuo-u.ac.jp/uploads/2025/04/research_introduction_elsi_elsi_university_summit_02.pdf?1743638400091",
       "https://www.deloitte.com/jp/ja/services/consulting/perspectives/ai-governance-hiroshima-ai-process.html"
+    ],
+    "learningObjective": "OECD AI原則の中心概念を理解し、信頼できるAIの基準を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "OECD AI原則の目的と内容の混同",
+    "optionRationales": [
+      "正解。人間中心の価値観などを柱とする国際原則だから。",
+      "誤り。技術的手法に焦点を当てているが、OECD AI原則は倫理的側面が重要。",
+      "誤り。データの収集と分析は重要だが、OECD AI原則の核心ではない。",
+      "誤り。人間の感情理解はAIの倫理基準の一部だが、OECD AI原則の主旨とは異なる。"
     ]
   },
   {
@@ -883,6 +1027,15 @@
       "https://www.meta-intelligence.tech/ja/insight-explainable-ai",
       "https://wasurenamemo.blogspot.com/2025/06/grad-cam.html",
       "https://zenn.dev/pluck/articles/d29dafe92cdfc1"
+    ],
+    "learningObjective": "Grad-CAMの機能とその画像認識における役割を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "Grad-CAMと画像生成手法の混同",
+    "optionRationales": [
+      "誤り。Grad-CAMは特徴抽出ではなく、判断根拠の可視化手法である。",
+      "誤り。Grad-CAMは生成した画像を評価する手法ではなく、判断根拠を示す。",
+      "正解。Grad-CAMは画像認識モデルが注目した部分をヒートマップで可視化する手法である。",
+      "誤り。Grad-CAMは前処理手法ではなく、判断根拠の可視化に特化している。"
     ]
   },
   {
@@ -928,6 +1081,15 @@
       "https://note.com/chic_deer1160/n/n5e8aca316404",
       "https://ueno.law/topics/fusei-kyousou-boushi-hou-eigyou-himitsu/",
       "https://security-portal.cyber.go.jp/guidance/law-handbook/v2-11.html"
+    ],
+    "learningObjective": "不正競争防止法における限定提供データの定義と特徴を理解する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "限定提供データと一般的なデータベースの混同",
+    "optionRationales": [
+      "誤り。無制限に提供されるデータではなく、特定の者に限られる。",
+      "誤り。一般的なデータベースではなく、特定の者に提供されるデータである。",
+      "正解。IDやパスワードで管理され、特定の者に提供されるビッグデータである。",
+      "誤り。企業の内部資料ではなく、特定の者に提供されるデータである。"
     ]
   },
   {
@@ -982,6 +1144,15 @@
       "https://quizlet.com/jp/815928856/%E3%83%87%E3%83%BC%E3%82%BF%E3%82%B5%E3%82%A4%E3%82%A8%E3%83%B3%E3%82%B9-flash-cards/",
       "https://www.databricks.com/jp/blog/what-is-automation-bias",
       "https://dhbr.diamond.jp/articles/-/13461"
+    ],
+    "learningObjective": "選択バイアスの概念を理解し、データ収集の重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データの収集方法と処理過程の混同",
+    "optionRationales": [
+      "誤り。技術的手法に関する説明であり、選択バイアスとは異なる。",
+      "誤り。サンプリングの偏りを示すが、選択バイアスの定義には不十分。",
+      "正解。選択バイアスは母集団を適切に代表していないことから生じる。",
+      "誤り。誤ったラベルはアルゴリズムの問題であり、選択バイアスとは無関係。"
     ]
   },
   {
@@ -1034,6 +1205,15 @@
       "https://www.d-m-a.jp/CurriculumEx/course259",
       "https://www.simulationroom999.com/blog/g-test-measures-against-legal-issues/",
       "https://www.kikagaku.co.jp/business/training/blog/g-certificate"
+    ],
+    "learningObjective": "現行の特許法におけるAI発明の扱いを理解し、発明者の定義を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIが発明者として認められるという誤解",
+    "optionRationales": [
+      "誤り。AIが発明者として認められることはないため、誤解を招く。",
+      "誤り。特許法ではAIの発明を認めていないため、条件が厳しいというのは誤り。",
+      "正解。現行法では発明者は自然人に限定され、AIは認められない。",
+      "誤り。AIによる発明は特許対象外だが、著作権は適用されない。"
     ]
   },
   {
@@ -1105,6 +1285,15 @@
       "https://help.li.me/hc/zh-cn",
       "https://www.consumers.org.tw/product-detail-2727644.html",
       "https://www.li.me/zh-hk-us/user-agreement"
+    ],
+    "learningObjective": "LIMEが個々の予測の近傍に単純なモデルを局所的に当てはめてAI予測根拠を説明するXAI手法であることを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "LIMEの適用範囲を誤解している",
+    "optionRationales": [
+      "誤り。LIMEは全体を説明する手法ではなく、局所的な解釈を提供する。",
+      "誤り。LIMEは特定のデータセット全体ではなく、個々の予測事例に焦点を当てる。",
+      "正解。LIMEは個々の予測事例の近傍で解釈可能なモデルを用いる手法だから。",
+      "誤り。LIMEはデータの前処理手法ではなく、予測の根拠を説明するための手法である。"
     ]
   },
   {
@@ -1175,6 +1364,15 @@
       "https://cloud.tencent.com/developer/article/2560584",
       "https://zhuanlan.zhihu.com/p/186204351",
       "https://www.toolify.ai/tw/ai-news-tw/%E8%A7%A3%E9%87%8B-ai-%E6%8A%80%E8%A1%93%E5%A4%A7%E8%A7%A3%E6%9E%90-4-shap-2668891"
+    ],
+    "learningObjective": "SHAPの理論的背景とその特徴量の貢献度算出方法を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "SHAPと他の手法の混同",
+    "optionRationales": [
+      "誤り。SHAPはモデルの評価手法ではなく、特徴量の貢献度を説明する技術である。",
+      "誤り。SHAPはデータの前処理手法ではなく、特徴量の貢献度を算出する手法である。",
+      "正解。SHAPはゲーム理論のシャープレイ値に基づき、特徴量の貢献度を公平に算出する。",
+      "誤り。SHAPは自然言語処理の手法ではなく、機械学習モデルの解釈に用いられる。"
     ]
   },
   {
@@ -1234,6 +1432,15 @@
       "https://www.hosp.keio.ac.jp/about/feature/aihospital/",
       "https://www.ultralytics.com/ja/blog/vision-ai-tools-for-healthcare-diagnostics",
       "https://www.ai-ms.com/"
+    ],
+    "learningObjective": "EU AI法における高リスクAIシステムの具体例を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "高リスクAIと低リスクAIの混同",
+    "optionRationales": [
+      "誤り。教育機関向けのオンライン学習支援システムは高リスクには該当しない。",
+      "誤り。個人の趣味に特化したAIによる画像生成技術は高リスクではない。",
+      "正解。採用選考、医療診断支援、重要インフラの管理は高リスクAIに該当する。",
+      "誤り。自動運転車の安全性評価は高リスクだが、具体的なシステムの例ではない。"
     ]
   },
   {
@@ -1293,6 +1500,15 @@
       "https://www.blueprism.com/japan/resources/blog/responsible-ai/",
       "https://www.nri-secure.co.jp/blog/explainable-ai",
       "https://forbesjapan.com/articles/detail/96451"
+    ],
+    "learningObjective": "AIのアカウンタビリティの重要性とその仕組みを理解し、説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIのアカウンタビリティは単に出力結果を説明することだけであり、責任を負う必要はないという誤解がある。",
+    "optionRationales": [
+      "誤り。AIの判断は自動化されているが、責任は開発者にある。",
+      "誤り。AIの出力が正確であっても説明責任は必要である。",
+      "誤り。アカウンタビリティはデータ収集だけでなく、全体に関わる。",
+      "正解。開発者が結果に責任を持ち、説明することが求められる。"
     ]
   },
   {
@@ -1341,6 +1557,15 @@
       "https://izawa-law.com/company/trade_secret",
       "https://keiyaku-watch.jp/media/hourei/huseikyousouboushi-eigyou/",
       "https://ipob.co.jp/posts/post22.html"
+    ],
+    "learningObjective": "不正競争防止法における営業秘密の要件を理解し、適切に識別できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "営業秘密の範囲を誤解している",
+    "optionRationales": [
+      "誤り。営業秘密は全ての情報ではなく、特定の要件を満たす必要がある。",
+      "誤り。一般に知られている情報は、特定の条件を満たさない限り保護されない。",
+      "誤り。営業秘密は財務情報や顧客情報に限らず、他の情報も含まれる。",
+      "正解。営業秘密は秘密管理性、有用性、非公知性の3要件を満たす必要がある。"
     ]
   },
   {
@@ -1394,6 +1619,15 @@
       "https://www.techthanks.co.jp/what-is-c2pa/",
       "https://ictr.co.jp/report/%E3%80%90%E6%A5%AD%E7%95%8C%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9%E3%80%91%E3%83%89%E3%82%B3%E3%83%A2%E3%82%893%E7%A4%BE%E3%80%81c2pa%E3%81%A7%E5%81%BD%E6%83%85%E5%A0%B1%E3%82%9285%E8%B6%85.html/",
       "https://nttdocomo-developers.jp/entry/20231224_2"
+    ],
+    "learningObjective": "電子透かし技術の目的とその重要性を理解し、AI生成コンテンツの真正性を確認できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "電子透かし技術は主に著作権保護や改ざん防止のためだけに使用され、出所や真正性の検証には関与しないという誤解がある。",
+    "optionRationales": [
+      "誤り。データの暗号化とは異なる技術である。",
+      "誤り。著作権情報の明示とは別の目的である。",
+      "誤り。コンテンツの圧縮は電子透かしの目的ではない。",
+      "正解。AI生成コンテンツの出所や真正性を検証するための技術である。"
     ]
   },
   {
@@ -1444,6 +1678,15 @@
       "https://innoventier.com/archives/2018/08/6751",
       "https://www.reddit.com/r/MistralAI/comments/1qxcns3/psa_gdpr_compliance_concerns/?tl=ja",
       "https://www.pwc.com/jp/ja/knowledge/column/awareness-cyber-security/generative-ai-regulation07.html"
+    ],
+    "learningObjective": "GDPRにおけるAIプロファイリングに関する権利を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "自動処理による意思決定の透明性と拒否権の混同",
+    "optionRationales": [
+      "誤り。AIプロファイリングによるデータ収集を拒否する権利は存在しない。",
+      "誤り。自動処理の透明性を求める権利はあるが、技術的なシステムではない。",
+      "誤り。個人情報の利用に関する同意を撤回する権利はあるが、AIプロファイリングに特化していない。",
+      "正解。GDPR第22条により、重大な影響を及ぼす決定が自動処理のみで行われることを拒否する権利がある。"
     ]
   },
   {
@@ -1501,6 +1744,15 @@
       "https://www.linkedin.com/posts/jayvanbavel_will-ai-become-a-confirmation-bias-machine-activity-7439742257253076992-rvQw",
       "https://www.psychologytoday.com/us/blog/a-hovercraft-full-of-eels/202305/confirmation-bias-in-the-era-of-large-ai",
       "https://atos.net/en/blog/is-chatgpt-your-biggest-fan-avoiding-confirmation-bias-biased-ai"
+    ],
+    "learningObjective": "AIバイアスの一種である確証バイアスの影響を理解し、AI開発における問題点を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "確証バイアスがAIの自動選別機能と混同されること",
+    "optionRationales": [
+      "正解。開発者が期待に合うデータを優先するため、偏った結果を生む。",
+      "誤り。AIは自動でデータを選別することはなく、偏りが生じる。",
+      "誤り。ユーザーの意見を反映することはなく、偏りを助長する可能性がある。",
+      "誤り。確証バイアスは反証情報を無視することから生じる偏りである。"
     ]
   },
   {
@@ -1556,6 +1808,15 @@
       "https://note.com/fancy_iguana5274/n/n662b69ae05ab",
       "https://www.reddit.com/r/germany/comments/1ima356/how_strict_is_the_law_against_piracy/?tl=ja",
       "https://www.shinzansha.co.jp/book/b10132186.html?srsltid=AfmBOoqAnNb2Z89Pa6aPPAYC5iSPTr9ZDfQV94zLqluitE909MjmK9QD"
+    ],
+    "learningObjective": "著作権法第30条の4における権利者の利益を不当に害する場合の理解を深める。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "著作権侵害の範囲を誤解することが多い。",
+    "optionRationales": [
+      "誤り。特定の著作物を無断で複製する行為は著作権侵害だが、一般的なデータ収集は許可される場合がある。",
+      "誤り。一般的なデータ収集は許可されるが、特定の著作物を無断で使用することは問題。",
+      "誤り。AIが生成したコンテンツの商用利用は権利者の利益を考慮する必要があるが、具体的な市場代替には該当しない。",
+      "正解。特定の著作家の作品を集中的に学習させる行為は、その著作家の市場を代替するため不当に害する可能性がある。"
     ]
   },
   {
@@ -1613,6 +1874,15 @@
       "https://www.jstage.jst.go.jp/article/jps/59/0/59_2301006/_pdf/-char/ja",
       "https://minato.sip21c.org/demography/index.html",
       "https://data.wingarc.com/male-female-ratio-27547"
+    ],
+    "learningObjective": "AI公平性における人口統計学的均等性の定義とその重要性を理解する。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": "人口統計学的均等性は単に合格率の均等を意味するのではなく、ポジティブな予測結果の割合が等しいことを指す。",
+    "optionRationales": [
+      "正解。保護属性が異なるグループ間で、ポジティブな予測結果の割合が等しくなることを示す。",
+      "誤り。全体の評価スコアが均等になることは人口統計学的均等性の定義ではない。",
+      "誤り。教育の機会が平等であることは人口統計学的均等性の説明ではない。",
+      "誤り。異なる属性を持つグループ間で合格率が同じになることは人口統計学的均等性の一部ではあるが、正確な定義ではない。"
     ]
   }
 ]

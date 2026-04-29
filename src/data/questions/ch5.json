@@ -47,6 +47,15 @@
       "https://zero2one.jp/learningblog/object-detection-r-cnn/?srsltid=AfmBOooxD5nW-EFtEEgJK25ZCugKFP03G5NV4PwHPgAR4Rttp8STE-X_",
       "https://skylogiq.co.jp/index.php/2024/02/05/hello-world/",
       "https://qiita.com/DeepTama/items/379cac9a73c2aed7a082"
+    ],
+    "learningObjective": "CNNが画像認識に適している理由を理解し、特徴抽出の仕組みを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "CNNの機能と用途の誤解",
+    "optionRationales": [
+      "誤り。CNNは音声認識に特化していない。",
+      "正解。畳み込み演算により位置に依存しない特徴を検出できるから。",
+      "誤り。畳み込み層は色調整ではなく特徴抽出を行う。",
+      "誤り。CNNは画像認識に用いられる技術であり、テキスト解析には不向き。"
     ]
   },
   {
@@ -100,6 +109,15 @@
       "https://note.com/inagaki2521/n/nf81e95f987fa",
       "http://asuishin.com/%E7%95%B3%E3%81%BF%E8%BE%BC%E3%81%BF%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AFcnn%E3%81%AB%E3%81%8A%E3%81%91%E3%82%8B%E3%83%97%E3%83%BC/",
       "https://shion.blog/the-9th-machine-learning-workshop_3/"
+    ],
+    "learningObjective": "CNNにおけるプーリング層の役割を理解し、特徴マップの処理方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "プーリング層の役割を単なる圧縮と誤解すること",
+    "optionRationales": [
+      "正解。プーリング層は特徴マップの情報を圧縮し、計算量を減少させるから。",
+      "誤り。位置ずれへの頑健性を高めることが主な役割である。",
+      "誤り。色彩調整は画像処理の別の技術であり、プーリング層の役割ではない。",
+      "誤り。プーリング層は次元を減少させ、詳細を強調するのではなく、重要な特徴を保持する。"
     ]
   },
   {
@@ -160,6 +178,15 @@
       "https://note.com/brisk_rabbit6105/n/n5c62495f25df",
       "https://zero2one.jp/learningblog/origin-of-neural-networks/?srsltid=AfmBOorpGVyD-xBl7fEjgo5dEHXpzSg9OSUjlnQYA3LU8erytaDDh1mB",
       "https://sakai-hiroshi.com/ai-rnn-explained/"
+    ],
+    "learningObjective": "RNNの特性や構造を理解し、時系列データ処理における適用性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "フィードフォワード型とRNNの違いの混同",
+    "optionRationales": [
+      "誤り。フィードフォワード型は過去の情報を保持しない構造である。",
+      "正解。RNNは過去の状態を保持し、時系列データに適しているから。",
+      "誤り。RNNは過去の情報を保持するため、単純な線形回帰ではない。",
+      "誤り。画像認識はCNNが主に用いられ、RNNは時系列データに特化している。"
     ]
   },
   {
@@ -213,6 +240,15 @@
       "https://qiita.com/yuji-arakawa/items/14a26f038740e7b89f3c",
       "https://speaknotes.io/ja/blog/how-ai-transcription-works",
       "https://www.ibm.com/jp-ja/think/topics/large-language-models"
+    ],
+    "learningObjective": "LSTMがRNNの長期記憶の問題を解決するメカニズムを理解する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "LSTMのゲート機構が単に情報を保持するだけでなく、長期記憶を管理する役割を果たすことを理解していない。",
+    "optionRationales": [
+      "誤り。リカレントネットワークは短期記憶を強化するが、長期記憶の管理には関与しない。",
+      "正解。入力ゲート・忘却ゲート・出力ゲートを用いて長距離依存関係の学習を可能にしたから。",
+      "誤り。LSTMは画像認識に特化しておらず、主に時系列データに利用される。",
+      "誤り。長期記憶を持つニューラルネットワークは音声認識にも使われるが、特化した手法ではない。"
     ]
   },
   {
@@ -272,6 +308,15 @@
       "https://www.weblio.jp/content/%E3%83%AD%E3%82%B7%E3%82%A2%E9%80%A3%E9%82%A6%E8%BB%8D%E5%8F%82%E8%AC%80%E6%9C%AC%E9%83%A8%E6%83%85%E5%A0%B1%E7%B7%8F%E5%B1%80",
       "https://innovatopia.jp/cyber-security/cyber-security-news/28329/",
       "https://jglobal.jst.go.jp/detail?JGLOBAL_ID=202002281626390364"
+    ],
+    "learningObjective": "GRUがLSTMのゲート構造を簡略化しリセットゲートと更新ゲートの2つで構成されることを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "GRUはLSTMと同じ構造を持ち、ゲートの数が多いと誤解されることがある。",
+    "optionRationales": [
+      "誤り。GRUは2つのゲートを持つシンプルなモデルである。",
+      "正解。GRUはLSTMのゲート構造を簡略化したモデルで、リセットゲートと更新ゲートの2つのゲートで構成される。",
+      "誤り。GRUは主に時系列データに使用されるモデルであり、画像処理には特化していない。",
+      "誤り。GRUは過去の情報を完全に忘却するのではなく、必要に応じて情報を保持する。"
     ]
   },
   {
@@ -323,6 +368,15 @@
       "https://data-analytics.fun/2020/03/29/understanding-attention/",
       "https://qiita.com/ps010/items/0bb2931b666fa602d0fc",
       "https://developers.agirobots.com/jp/attention-mechanism-transformer/"
+    ],
+    "learningObjective": "Attention機構の基本的な仕組みとその重要性を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "入力データを一律に処理する手法と誤解されやすい",
+    "optionRationales": [
+      "誤り。入力データを一律に処理する手法ではなく、重要な部分に注目する。",
+      "正解。重要な部分に動的に重みを付けて処理する仕組みだから。",
+      "誤り。重要な情報を無視することはなく、むしろ強調する技術である。",
+      "誤り。全てのデータを同じ重みで扱うのではなく、重要度に応じて異なる重みを付ける。"
     ]
   },
   {
@@ -381,6 +435,15 @@
       "https://www.tryeting.jp/column/627/",
       "https://nulmil.net/auto-encoder/",
       "https://rightcode.co.jp/blogs/14404"
+    ],
+    "learningObjective": "オートエンコーダの構造と機能を理解し、正しい説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "教師あり学習と教師なし学習の混同",
+    "optionRationales": [
+      "誤り。オートエンコーダは教師なし学習の手法であり、ラベル付きデータは不要である。",
+      "正解。オートエンコーダはエンコーダとデコーダから構成され、データを圧縮し再構成する。",
+      "誤り。オートエンコーダはデータを圧縮し、復元する能力を持つ手法である。",
+      "誤り。オートエンコーダは画像処理だけでなく、音声データにも適用可能である。"
     ]
   },
   {
@@ -437,6 +500,15 @@
       "https://www.ultralytics.com/ja/glossary/dropout-layer",
       "https://note.com/vast_cosmos500/n/ned0f713acab3",
       "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC-%E6%B7%B1%E5%B1%A4%E5%AD%A6%E7%BF%92%E3%81%AE%E5%9F%BA%E7%A4%8E%E6%B1%8E%E5%8C%96%E6%80%A7%E8%83%BD%E5%90%91%E4%B8%8A%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%86%E3%82%AF/"
+    ],
+    "learningObjective": "ドロップアウトが学習時にランダムにニューロンを無効化して過学習を抑制する正則化手法であることを理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ドロップアウトの適用時期と目的の混同",
+    "optionRationales": [
+      "正解。学習時にニューロンを無効化することで過学習を抑制する手法だから。",
+      "誤り。全てのニューロンを活性化する手法ではなく、無効化することがポイントである。",
+      "誤り。推論時にニューロンを無効化することはなく、学習時のみの手法である。",
+      "誤り。データの前処理としてのノイズ除去ではなく、過学習防止の手法である。"
     ]
   },
   {
@@ -502,6 +574,15 @@
       "https://www.reddit.com/r/MachineLearning/comments/ql5hdb/d_why_do_we_apply_batch_normalization_between/",
       "http://d2l.ai/chapter_convolutional-modern/batch-norm.html",
       "https://www.coursera.org/articles/what-is-batch-normalization"
+    ],
+    "learningObjective": "バッチ正規化の仕組みとその効果を理解し、適用方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "バッチ正規化と他の正規化手法の混同",
+    "optionRationales": [
+      "誤り。各層の出力ではなく、入力を正規化する手法である。",
+      "正解。ミニバッチ単位で平均0・分散1に正規化する手法だから。",
+      "誤り。ミニバッチの平均を計算するが、全体を一度に正規化しない。",
+      "誤り。前処理としてのスケーリングではなく、学習中の正規化手法である。"
     ]
   },
   {
@@ -554,6 +635,15 @@
       "https://ai-compass.weeybrid.co.jp/algorizm/skip-connections-advancing-deep-learning/",
       "https://qiita.com/DS27/items/ea719ba584be9966fd06",
       "https://www.reddit.com/r/MachineLearning/comments/mbhewa/d_advanced_takeaways_from_fastai_book/?tl=ja"
+    ],
+    "learningObjective": "スキップ結合の機能とその効果を理解し、深層学習における役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "スキップ結合は、隠れ層の結合を無効にすることで汎化性能を上げる手法であるという誤解がある。",
+    "optionRationales": [
+      "誤り。スキップ結合は全結合層だけでなく、他の層にも適用可能である。",
+      "正解。層を飛び越えて前の層の出力を後の層に加算し、勾配消失を防ぐ。",
+      "誤り。スキップ結合は双方向に情報を伝える技術である。",
+      "誤り。スキップ結合は音声認識だけでなく、画像認識などにも用いられる。"
     ]
   },
   {
@@ -615,6 +705,15 @@
       "https://www.hitachi-solutions-create.co.jp/column/technology/transfer-learning.html",
       "https://qiita.com/ANNEX_IBS/items/55c7a8984fe88a756965",
       "https://www.jstage.jst.go.jp/article/jjsai/25/4/25_572/_pdf"
+    ],
+    "learningObjective": "転移学習の概念を理解し、関連タスクへの応用方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "転移学習と異なるタスクでの学習の混同",
+    "optionRationales": [
+      "誤り。異なるタスクでの学習は転移学習ではない。",
+      "正解。転移学習は学習済みモデルの重みを再利用する手法だから。",
+      "誤り。転移学習は特定のデータセットに限定されない。",
+      "誤り。転移学習は強化学習とは異なる手法である。"
     ]
   },
   {
@@ -674,6 +773,15 @@
       "https://nn.labml.ai/ja/resnet/index.html",
       "https://www.ultralytics.com/ja/glossary/residual-networks-resnet",
       "https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1F5GS1002/_pdf"
+    ],
+    "learningObjective": "ResNetの特徴とその重要性を理解し、画像認識における役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "スキップ接続の役割と効果の誤解",
+    "optionRationales": [
+      "誤り。畳み込み層を重ねるだけでは精度が向上しない。",
+      "正解。スキップ結合により深いネットワークの学習が可能になった。",
+      "誤り。スキップ接続を用いない浅いネットワークではない。",
+      "誤り。ResNetは画像認識に特化したモデルである。"
     ]
   },
   {
@@ -729,6 +837,15 @@
       "https://zero2one.jp/ai-word/data-augmentation/?srsltid=AfmBOoqR0373wC92XHRnp3kBX9m2mFQTDT9ObeivBXK1i5yjX-NrkcC9",
       "https://encord.com/blog/data-augmentation-guide/",
       "https://ja.wikipedia.org/wiki/%E3%83%87%E3%83%BC%E3%82%BF%E6%8B%A1%E5%BC%B5"
+    ],
+    "learningObjective": "データ拡張の目的とその効果を理解し、過学習防止の重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データ拡張の目的を誤解し、収集や暗号化と混同すること",
+    "optionRationales": [
+      "正解。データ拡張は学習データの多様性を増し、過学習を防ぐために重要である。",
+      "誤り。データ拡張は新しいデータを生成するが、主な目的は過学習防止である。",
+      "誤り。データ拡張はデータ収集の効率化ではなく、既存データの変換を指す。",
+      "誤り。データ拡張は暗号化ではなく、データの多様性を増やす手法である。"
     ]
   },
   {
@@ -787,6 +904,15 @@
       "https://zenn.dev/kitacom_blog/articles/observe_self_attention_p1",
       "https://developer.aliyun.com/article/1116816",
       "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10286144365"
+    ],
+    "learningObjective": "Self-Attentionの基本的な仕組みとその機能を理解する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "Self-Attentionが単語を順番に処理する手法であるという誤解",
+    "optionRationales": [
+      "正解。同じシーケンス内の各位置が他の全位置との関連性を計算し、文脈を考慮した表現を生成する機構だから。",
+      "誤り。Self-Attentionは全ての位置を同時に処理するため、順番に処理する手法ではない。",
+      "誤り。Self-Attentionは各単語が他の単語に注目する技術であり、自分自身にのみ注目するわけではない。",
+      "誤り。Self-Attentionは同一シーケンス内の関連性を計算するものであり、異なるシーケンス間の関連性を扱うものではない。"
     ]
   },
   {
@@ -840,6 +966,15 @@
       "https://saycon.co.jp/archives/neta/vgg%E3%81%8C%E5%88%87%E3%82%8A%E9%96%8B%E3%81%84%E3%81%9F%E6%B7%B1%E3%81%84%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AE%E4%B8%96%E7%95%8C%EF%BC%81%E5%B1%A4%E3%82%92%E9%87%8D",
       "https://qiita.com/tarura/items/b318b30249e1d2596009",
       "https://www.robots.ox.ac.uk/~vgg/practicals/cnn/"
+    ],
+    "learningObjective": "VGGモデルの特徴を理解し、CNNの構造とその利点を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "VGGモデルのフィルタサイズとその効果の誤解",
+    "optionRationales": [
+      "正解。VGGは3×3の小さなフィルタを重ねて高精度を実現しているから。",
+      "誤り。VGGは小さなフィルタを使用し、複数の層で特徴を抽出する手法である。",
+      "誤り。VGGは画像認識に特化しており、セグメンテーションに特化しているわけではない。",
+      "誤り。VGGは画像認識に用いられるモデルであり、音声認識には特化していない。"
     ]
   },
   {
@@ -890,6 +1025,15 @@
       "https://www.mql5.com/ja/articles/15259",
       "https://qiita.com/kuroitu/items/fd6843a13843256a07bf",
       "https://note.com/micz/n/n4a5d3ed8ce28"
+    ],
+    "learningObjective": "CNNにおけるストライドの役割と影響を理解し、出力サイズとの関係を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ストライドの定義とその影響を混同する",
+    "optionRationales": [
+      "正解。ストライドはフィルタを動かす間隔で、ストライドを大きくすると出力サイズが小さくなるから。",
+      "誤り。フィルタのサイズはストライドとは異なり、出力サイズに直接影響しない。",
+      "誤り。ストライドは常に1である必要はなく、状況に応じて変更可能である。",
+      "誤り。ストライドは画像の色調調整とは無関係で、畳み込み処理に関する概念である。"
     ]
   },
   {
@@ -941,6 +1085,15 @@
       "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-convolutional-neural-networks",
       "https://qiita.com/DeepTama/items/379cac9a73c2aed7a082",
       "https://zawapython.hatenablog.com/entry/2018/10/03/210211"
+    ],
+    "learningObjective": "CNNにおけるパディングの目的を理解し、特徴マップのサイズ維持の重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "パディングの目的を単にサイズ縮小と誤解する",
+    "optionRationales": [
+      "正解。パディングは特徴マップのサイズ縮小を防ぐために必要だから。",
+      "誤り。中心部の情報強調は目的ではなく、全体の情報保持が重要。",
+      "誤り。計算速度向上は目的ではなく、サイズ維持が主な理由。",
+      "誤り。次元削減はプーリングの役割であり、パディングの目的ではない。"
     ]
   },
   {
@@ -1013,6 +1166,15 @@
       "https://qiita.com/kuroitu/items/fd6843a13843256a07bf",
       "https://service.shiftinc.jp/column/12901/",
       "https://kikai-learning.com/pytorch%E3%81%A7%E5%AD%A6%E3%81%B6%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%EF%BC%9A%E3%81%AF%E3%81%98%E3%82%81%E3%81%A6%E3%81%AE%E7%94%BB%E5%83%8F%E5%88%86/"
+    ],
+    "learningObjective": "1×1畳み込みの役割とその効果を理解し、適用場面を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "1×1畳み込みが画像サイズを変更するという誤解",
+    "optionRationales": [
+      "正解。チャネル方向の次元削減や非線形変換を加えるために使用されるから。",
+      "誤り。1×1畳み込みは画像のサイズを変更せず、チャネル数を調整する技術である。",
+      "誤り。1×1畳み込みはエッジ検出に特化した手法ではなく、次元削減に使われる。",
+      "誤り。データの正規化を行う手法ではなく、主にチャネル数の調整に用いられる。"
     ]
   },
   {
@@ -1064,6 +1226,15 @@
       "https://www.hitachi-solutions-create.co.jp/column/technology/cnn.html",
       "https://miyamotok0105.hatenablog.com/entry/2017/03/17/000000",
       "https://fs-micro.com/post/postedinmonth/time/1709218800/pnc/c.html"
+    ],
+    "learningObjective": "CNNの畳み込み層で生成される特徴マップの役割と特性を理解する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "特徴マップは単に入力データの全体を表すものであり、特定の特徴を抽出するものではないと誤解されることがある。",
+    "optionRationales": [
+      "正解。特徴マップはフィルタを適用して得られる特定の特徴を示すから。",
+      "誤り。これは特徴マップの機能ではなく、圧縮手法に関する説明である。",
+      "誤り。特徴マップは色合い調整とは無関係で、特徴抽出に特化している。",
+      "誤り。特徴マップは次元削減の手法ではなく、特徴を抽出するための出力である。"
     ]
   },
   {
@@ -1117,6 +1288,15 @@
       "https://zero2one.jp/ai-word/bidirectional-rnn/?srsltid=AfmBOopK1mDItkyPR009WaFGB4jdfHKZg3e_YSZLfrlYnlTb-Uc5l5HV",
       "https://quizlet.com/jp/475116795/6-deep-learning%E3%81%AE%E7%A0%94%E7%A9%B6%E5%88%86%E9%87%8E%E8%87%AA%E7%84%B6%E8%A8%80%E8%AA%9E%E5%87%A6%E7%90%86%E6%99%82%E7%B3%BB%E5%88%97%E8%A7%A3%E6%9E%90-flash-cards/",
       "https://minnade-ai-learn.com/qsm_quiz/e%E8%B3%87%E6%A0%BC%EF%BD%9E%E6%A8%A1%E6%93%AC%E8%A9%A6%E9%A8%93%EF%BD%9E/"
+    ],
+    "learningObjective": "双方向RNNの構造と機能を理解し、文脈情報の活用方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "双方向RNNと単方向RNNの機能の混同",
+    "optionRationales": [
+      "正解。双方向RNNは両方向から情報を処理し、文脈を豊かにする。",
+      "誤り。単方向RNNは過去の情報のみを使用し、未来の情報を考慮しない。",
+      "誤り。双方向RNNは主に自然言語処理に用い、画像処理には不向きである。",
+      "誤り。双方向RNNは両方向から情報を処理し、過去の情報だけを基にしない。"
     ]
   },
   {
@@ -1180,6 +1360,15 @@
       "https://www.reddit.com/r/singularity/comments/1doi0i8/meet_sohu_an_asic_for_transformers_that_can/?tl=ja",
       "https://zilliz.com/jp/learn/Sentence-Transformers-for-Long-Form-Text",
       "https://pro.arcgis.com/ja/pro-app/3.5/tool-reference/geoai/how-text-transformation-works.htm"
+    ],
+    "learningObjective": "Transformerアーキテクチャの特徴とその利点を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "RNNとTransformerの処理方法の混同",
+    "optionRationales": [
+      "正解。TransformerはAttentionのみで構成され、並列計算が可能で長距離依存関係を効率よく学習できるから。",
+      "誤り。RNNのように逐次的に情報を処理するのではなく、並列処理を行う。",
+      "誤り。Attention機構を用いるが、画像処理に特化したものではなく、主に自然言語処理に使用される。",
+      "誤り。自然言語処理において教師あり学習を用いることもあるが、Transformer自体はその手法に限定されない。"
     ]
   },
   {
@@ -1242,6 +1431,15 @@
       "https://note.com/izai/n/n6aaeab734ae3",
       "https://zenn.dev/yuto_mo/articles/cf83d90e8dd9d4",
       "https://www.reddit.com/r/learnmachinelearning/comments/1drqkjh/about_concatenation_in_multi_head_attention/?tl=ja"
+    ],
+    "learningObjective": "マルチヘッドアテンションの仕組みとその利点を理解し、正しい説明を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "単一のヘッドで注意を集中させる誤解",
+    "optionRationales": [
+      "正解。複数のヘッドで異なる側面を捉えるから。",
+      "誤り。単一のヘッドではなく、複数のヘッドを使用する。",
+      "誤り。前処理ではなく、注意機構の一種である。",
+      "誤り。画像処理に特化したものではなく、自然言語処理に使われる。"
     ]
   },
   {
@@ -1299,6 +1497,15 @@
       "https://stats.stackexchange.com/questions/324340/when-should-i-use-a-variational-autoencoder-as-opposed-to-an-autoencoder",
       "https://www.facebook.com/groups/DeepLearnng/posts/4447256252174665/",
       "https://www.scaleway.com/en/blog/vae-getting-more-out-of-your-autoencoder/"
+    ],
+    "learningObjective": "VAEとオートエンコーダの違いを理解し、生成モデルの特性を説明できる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "VAEの生成能力を誤解すること",
+    "optionRationales": [
+      "正解。VAEは潜在変数を確率分布でモデル化し、新しいデータを生成できる。",
+      "誤り。オートエンコーダはデータを圧縮し復元するが、生成能力はない。",
+      "誤り。VAEは確率分布を用いるため、生成能力がある。",
+      "誤り。VAEは画像処理に特化しているわけではなく、広範な応用がある。"
     ]
   },
   {
@@ -1359,6 +1566,15 @@
       "https://tatsy.github.io/programming-for-beginners/python/stabilize-gan-training/",
       "https://appen.co.jp/blogs/what-is-data-collection",
       "https://nulmil.net/generative-adversarial-networkgan/"
+    ],
+    "learningObjective": "GANの基本的な仕組みを理解し、GeneratorとDiscriminatorの役割を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "GANは単なる分類モデルではなく、データ生成を行うことを理解する必要がある。",
+    "optionRationales": [
+      "誤り。GANはデータを生成するモデルであり、分類のみを行うものではない。",
+      "誤り。無条件の生成も行うことができ、特定の条件に基づく生成も可能である。",
+      "正解。GeneratorとDiscriminatorが競い合うことで高品質なデータを生成する仕組みである。",
+      "誤り。GANは生成データの品質向上に寄与し、異常検知の手法ではない。"
     ]
   },
   {
@@ -1416,6 +1632,15 @@
       "https://omomuki-tech.com/archives/6309",
       "https://tentan.jp/word/generator",
       "https://surume.org/2022/08/7139.html"
+    ],
+    "learningObjective": "GANにおけるGeneratorの役割を理解し、正しい選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "GeneratorとDiscriminatorの役割の混同",
+    "optionRationales": [
+      "誤り。Discriminatorは生成したデータを評価する役割であり、Generatorの役割ではない。",
+      "誤り。Generatorは本物のデータを分析するのではなく、データを生成する役割を持つ。",
+      "正解。Generatorは乱数から本物らしいデータを生成し、Discriminatorを騙すことを目指す。",
+      "誤り。Generatorはデータを分類するのではなく、データを生成する役割を持つ。"
     ]
   },
   {
@@ -1476,6 +1701,15 @@
       "https://www.xlsoft.com/jp/blog/blog/2024/10/02/grammarly-20-post-79517/",
       "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
       "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/"
+    ],
+    "learningObjective": "レイヤー正規化とバッチ正規化の違いを理解し、適切な使用場面を説明できるようになる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "レイヤー正規化はバッチサイズに依存するという誤解を解消する。",
+    "optionRationales": [
+      "正解。バッチ正規化はミニバッチ全体の平均と分散を用いて正規化する手法である。",
+      "誤り。レイヤー正規化はバッチサイズに依存せず、CNNだけでなくRNNやTransformerでも使用される。",
+      "正解。レイヤー正規化は各サンプル内のすべての特徴量を正規化し、バッチサイズに依存せず、RNNやTransformerで広く使われる。",
+      "誤り。バッチ正規化は時系列データに特化した手法ではなく、CNNや他のモデルでも使用される。"
     ]
   },
   {
@@ -1532,6 +1766,15 @@
       "https://akihikowatanabe.github.io/paper_notes/articles/Supervised-FineTuning-(SFT).html",
       "https://www.trifields.jp/journal-of-machine-learning-research-papers-v19-8688",
       "https://patents.google.com/patent/JP4644403B2/en"
+    ],
+    "learningObjective": "重み減衰の定義とその効果を理解し、過学習防止の手法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "重み減衰とL1正則化の混同",
+    "optionRationales": [
+      "誤り。重み減衰はモデルの複雑さを減らす手法である。",
+      "誤り。重み減衰はモデルの前処理技術ではない。",
+      "正解。L2正則化を用いて重みの大きさを抑制し、過学習を防ぐ。",
+      "誤り。重み減衰はL2正則化であり、L1正則化とは異なる。"
     ]
   },
   {
@@ -1594,6 +1837,15 @@
       "https://www.trifields.jp/journal-of-machine-learning-research-papers-v24-8852",
       "https://cvim.ipsj.or.jp/index.php?id=tutorial",
       "https://akihikowatanabe.github.io/paper_notes/articles/Selected-Papers-Blogs.html"
+    ],
+    "learningObjective": "早期打ち切りの概念とその目的を理解し、過学習防止の手法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "早期打ち切りと単なる学習の早期終了の混同",
+    "optionRationales": [
+      "正解。検証データの損失が改善しない時点で学習を停止する手法だから。",
+      "誤り。訓練データの精度向上を目的とする技術ではない。",
+      "誤り。過学習を防ぐための手法であり、単なる学習の早期終了ではない。",
+      "誤り。データの前処理を行う手法ではなく、学習の進行管理に関する技術である。"
     ]
   },
   {
@@ -1658,6 +1910,15 @@
       "https://ai-scholar.tech/articles/gnn/GNN_review",
       "https://dl.biopapyrus.jp/cls/ex-moth_classification.html",
       "https://www.simulationroom999.com/blog/gkentei-difficulty-perception-info-overload-rote-goal-misrecognition-official-calibration/"
+    ],
+    "learningObjective": "DenseNetの特徴とその構造を理解し、正しい説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "DenseNetの接続方式を誤解している。",
+    "optionRationales": [
+      "誤り。DenseNetは密な接続を特徴としており、接続は緩やかではない。",
+      "誤り。DenseNetは特徴の再利用を行う技術である。",
+      "正解。DenseNetは全ての層が前の全ての層の出力を受け取り、特徴の再利用とパラメータ効率を高めている。",
+      "誤り。各層が独立して学習するのではなく、密に接続されている。"
     ]
   },
   {
@@ -1689,7 +1950,16 @@
       "モデル軽量化",
       "Knowledge Distillation"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "learningObjective": "知識蒸留の概念とその手法を理解し、教師モデルと生徒モデルの関係を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "知識蒸留は単なるデータ圧縮技術ではなく、モデルの知識を効率的に移転する手法である。",
+    "optionRationales": [
+      "誤り。知識蒸留はデータ圧縮ではなく、モデルの知識を移転する手法です。",
+      "誤り。知識蒸留は重みの転用ではなく、教師モデルの出力を利用して生徒モデルを学習させる技術です。",
+      "正解。知識蒸留は教師モデルの出力を用いて生徒モデルを訓練し、軽量化しつつ性能を維持します。",
+      "誤り。アンサンブル学習は複数モデルの予測を組み合わせる手法であり、知識蒸留とは異なります。"
+    ]
   },
   {
     "id": "ch5-031",
@@ -1741,6 +2011,15 @@
       "https://www.ibm.com/jp-ja/think/topics/fine-tuning",
       "https://ja.wikipedia.org/wiki/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%B3%E3%83%81%E3%83%A5%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0_(%E6%A9%9F%E6%A2%B0%E5%AD%A6%E7%BF%92)",
       "https://www.sbbit.jp/article/cont1/133069"
+    ],
+    "learningObjective": "ファインチューニングの概念を理解し、転移学習との関係を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ファインチューニングと完全再学習の混同",
+    "optionRationales": [
+      "誤り。モデル評価手法ではなく、学習手法である。",
+      "誤り。完全再学習ではなく、追加学習を行う手法である。",
+      "正解。転移学習において、既存モデルを新しいデータで学習する手法だから。",
+      "誤り。異なるモデルの組み合わせではなく、同じモデルの追加学習である。"
     ]
   },
   {
@@ -1771,7 +2050,16 @@
       "ドメイン適応",
       "転移学習"
     ],
-    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595"
+    "source_ref": "f82a549c-19b8-4815-b53a-047df3502595",
+    "learningObjective": "ドメイン適応の概念とその目的を理解し、適用方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ドメイン適応と転移学習の混同",
+    "optionRationales": [
+      "誤り。前処理層の差し替えだけでは不十分で、全体の適応が必要。",
+      "誤り。新しいモデルを設計するのはドメイン適応ではなく、別のアプローチ。",
+      "正解。ドメイン適応は分布の違いに対処し、性能を向上させる手法だから。",
+      "誤り。手作業のルールベースはドメイン適応の手法ではなく、異なるアプローチ。"
+    ]
   },
   {
     "id": "ch5-033",
@@ -1824,6 +2112,15 @@
       "https://qiita.com/Hayato-7812/items/035c7a6a08ddf74a71f9",
       "https://qiita.com/wakayama_90b/items/6c884f29da9cf1f785ce",
       "https://ai-compass.weeybrid.co.jp/algorizm/revolutionizing-image-recognition-googlenet/"
+    ],
+    "learningObjective": "GoogLeNetのInceptionモジュールの特徴とその計算効率について理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "GoogLeNetのInceptionモジュールは、単一の畳み込みフィルタを使用することで計算コストを削減するという誤解がある。",
+    "optionRationales": [
+      "誤り。全結合層を多く用いることはGoogLeNetの特徴ではない。",
+      "誤り。GoogLeNetは複数のフィルタサイズを用いるCNNである。",
+      "正解。Inceptionモジュールを用いて多スケールの特徴を捉えるため、計算コストを抑えられる。",
+      "誤り。GoogLeNetは画像認識に特化したモデルであり、自然言語処理には適用されない。"
     ]
   },
   {
@@ -1875,6 +2172,15 @@
       "https://www.jstage.jst.go.jp/article/jnlp/28/4/28_995/_pdf",
       "https://frqux.hatenablog.com/entry/2023/02/04/191015",
       "https://stackoverflow.com/questions/50657546/fixing-error-output-from-seq2seq-model"
+    ],
+    "learningObjective": "Seq2Seqモデルの構造と機能を理解し、機械翻訳などの応用を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エンコーダとデコーダの役割の混同",
+    "optionRationales": [
+      "誤り。入力シーケンスをそのまま出力するモデルではなく、変換を行う。",
+      "誤り。デコーダは必要不可欠であり、出力を生成する役割を持つ。",
+      "正解。エンコーダが固定長ベクトルに変換し、デコーダが別のシーケンスを生成する。",
+      "誤り。異なるデータ形式を同時に処理する手法ではなく、系列データの変換に特化している。"
     ]
   },
   {
@@ -1931,6 +2237,15 @@
       "https://www.simulationroom999.com/blog/g-test-preparation-make-the-ultimate-cheat-papers-2/",
       "https://zero2one.jp/ai-word/fast-r-cnn/?srsltid=AfmBOopDdxxhiaSnVQWg-KrJWcznIyDwJvjoTlMJjU4hU20YWYUkdFIn",
       "https://note.com/kochikichi/n/n4124ed1c162a"
+    ],
+    "learningObjective": "CNNにおける重みの共有の利点を理解し、特徴検出の効率性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "重みの共有とフィルタの独立性の混同",
+    "optionRationales": [
+      "誤り。フィルタを個別に学習することは重みの共有の概念とは異なる。",
+      "誤り。重みを固定することは計算量削減に寄与するが、重みの共有とは異なる。",
+      "誤り。異なる層で異なるフィルタを使用することは重みの共有の利点ではない。",
+      "正解。同一のフィルタを全体に適用することでパラメータ数を削減し、位置不変性を実現する。"
     ]
   },
   {
@@ -1989,6 +2304,15 @@
       "https://www.reddit.com/r/LocalLLaMA/comments/1dnm1v1/have_any_of_you_tried_metas_multimodal_chameleon/?tl=zh-hant",
       "https://haren.medium.com/paper-notes-attention-is-all-you-need-transformer-f33c828239b9",
       "https://juejin.cn/post/7415807536404201509"
+    ],
+    "learningObjective": "Encoder-Decoder Attentionの機能と役割を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "デコーダがエンコーダの出力を無視するという誤解",
+    "optionRationales": [
+      "誤り。デコーダはエンコーダの出力を無視せず、生成に利用する。",
+      "誤り。エンコーダがデコーダの出力を参照することはない。",
+      "誤り。デコーダは入力シーケンスを一度に処理するのではなく、逐次的に処理する。",
+      "正解。デコーダはエンコーダの出力を参照し、注目すべき部分を学習する。"
     ]
   },
   {
@@ -2043,6 +2367,15 @@
       "https://tt-tsukumochi.com/archives/8899",
       "https://www.reddit.com/r/MachineLearning/comments/zrj6bf/d_different_types_of_pooling_in_neural_nets/?tl=ja",
       "https://buildersbox.corp-sansan.com/entry/2020/11/12/111000"
+    ],
+    "learningObjective": "最大プーリングと平均プーリングの違いを理解し、適切な選択ができるようになる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "最大プーリングと平均プーリングは同じ手法だと思われがちだが、実際には異なる特徴を抽出する。",
+    "optionRationales": [
+      "誤り。最大プーリングは特定の最大値を選ぶ手法であり、全体を考慮するものではない。",
+      "誤り。平均プーリングは平均値を計算する手法であり、最大プーリングは最大値を選ぶ。",
+      "誤り。最大プーリングは色を強調するが、平均プーリングは形状を重視するわけではない。",
+      "正解。最大プーリングは最大値を取り出し顕著な特徴を保持し、平均プーリングは平均値を使い均一な特徴を得る。"
     ]
   },
   {
@@ -2091,6 +2424,15 @@
       "https://note.com/vast_cosmos500/n/n736f710272c6",
       "https://www.reddit.com/r/vibecoding/comments/1o9lcfh/do_you_need_to_understand_the_code_ai_writes/?tl=ja",
       "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja"
+    ],
+    "learningObjective": "積層オートエンコーダの構造と学習方法を理解し、特徴抽出のプロセスを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "オートエンコーダの基本的な機能と積層の違いの混同",
+    "optionRationales": [
+      "誤り。単層オートエンコーダは基本的な手法だが、積層オートエンコーダではない。",
+      "誤り。積層オートエンコーダは層を同時に学習しないため、この説明は不正確。",
+      "誤り。オートエンコーダは教師なし学習を用いるため、教師あり学習とは異なる。",
+      "正解。複数のオートエンコーダを積み重ね、抽象的な特徴を段階的に学習する。"
     ]
   },
   {
@@ -2147,6 +2489,15 @@
       "https://apxml.com/zh/courses/deep-learning-fundamentals-keras/chapter-5-recurrent-neural-networks-rnns/vanishing-gradient-problem",
       "https://imgtec.eetrend.com/blog/2019/100044671.html",
       "https://medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92%E7%9F%A5%E8%AD%98%E6%AD%B7%E7%A8%8B/rnn-%E9%81%9E%E8%BF%B4%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF-%E5%85%A8%E9%9D%A2%E8%AA%8D%E8%AD%98-27e4dd150bdd"
+    ],
+    "learningObjective": "RNNにおける勾配消失問題のメカニズムを理解し、影響を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "勾配消失問題と短期記憶の混同",
+    "optionRationales": [
+      "誤り。RNNは長期依存性を持たないわけではなく、勾配消失が問題となる。",
+      "誤り。勾配消失問題は画像処理ではなく、主にRNNで発生する。",
+      "誤り。勾配消失問題はデータの前処理ではなく、逆伝播時の勾配の減少に関係する。",
+      "正解。時系列が長くなると勾配が小さくなり、過去の情報が学習できなくなる。"
     ]
   },
   {
@@ -2202,6 +2553,15 @@
       "https://elix-tech.github.io/ja/2016/06/22/transfer-learning-ja.html",
       "https://patents.google.com/patent/JP2022512044A/ja",
       "https://docs.datarobot.com/ja/docs/reference/glossary/index.html"
+    ],
+    "learningObjective": "転移学習における特徴抽出の仕組みを理解し、正しい説明を選べるようになること。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "特徴抽出は全層を再学習する手法ではない。",
+    "optionRationales": [
+      "誤り。特徴抽出は全層を再学習せず、主に出力層のみを訓練する手法です。",
+      "誤り。特徴抽出は少量のデータでも利用可能で、必ずしも大量のデータを必要としません。",
+      "誤り。特徴抽出は自然言語処理に限らず、画像認識など他の分野でも広く使われます。",
+      "正解。特徴抽出は中間層を凍結し、出力層のみを訓練する方法と、出力を別モデルの入力特徴として使う方法の両方を含みます。"
     ]
   },
   {
@@ -2259,6 +2619,15 @@
       "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja",
       "https://www.nomuyu.com/multi-head-attention/",
       "https://zenn.dev/harunasu/articles/36290cd613b48f"
+    ],
+    "learningObjective": "Transformerのポジショナルエンコーディングの目的を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "Self-Attentionの特性に関する誤解",
+    "optionRationales": [
+      "誤り。トークンの意味を強化することが目的ではない。",
+      "誤り。文脈を無視するのではなく、位置情報を加えることが重要である。",
+      "誤り。文法解析を行う手法ではなく、位置情報を提供する技術である。",
+      "正解。Self-Attentionが順序情報を持たないため、位置情報が必要である。"
     ]
   },
   {
@@ -2311,6 +2680,15 @@
       "https://documentation.sas.com/api/docsets/vaobjvs/8.3/content/vaobjvs.pdf?locale=ja",
       "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ],
+    "learningObjective": "プルーニングの手法とその目的を理解し、モデル軽量化の重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "プルーニングと量子化の混同",
+    "optionRationales": [
+      "誤り。量子化は重みを圧縮する手法であり、プルーニングとは異なる。",
+      "誤り。重要な重みを強化するのではなく、不要な重みを削除する手法である。",
+      "誤り。データ圧縮ではなく、モデルの重みやニューロンを削除する手法である。",
+      "正解。プルーニングは重要度が低い重みやニューロンを削除して軽量化する。"
     ]
   },
   {
@@ -2360,6 +2738,15 @@
       "https://www.ibm.com/jp-ja/think/topics/convolutional-neural-networks",
       "https://note.com/inagaki2521/n/nf81e95f987fa",
       "https://udemy.benesse.co.jp/data-science/ai/convolution-neural-network.html"
+    ],
+    "learningObjective": "CNNにおける受容野の概念とその機能を理解し、正しい説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "受容野の定義を誤解し、全体を把握する範囲と考えること",
+    "optionRationales": [
+      "誤り。受容野は特定のニューロンが見る範囲であり、全体を把握するものではない。",
+      "誤り。受容野は特定の領域であり、全てのピクセルを含むわけではない。",
+      "誤り。受容野はフィルタのサイズではなく、特定のニューロンが影響を受ける領域を指す。",
+      "正解。受容野は特定のニューロンが影響を受ける元の入力画像上の領域である。"
     ]
   },
   {
@@ -2413,6 +2800,15 @@
       "https://jinbeizame.hateblo.jp/entry/understanding_batchnorm",
       "https://qiita.com/yShig/items/dbeb98598abcc98e1a57",
       "https://aiacademy.jp/media/?p=1147"
+    ],
+    "learningObjective": "正規化層が学習に与える影響を理解し、安定化の理由を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "正規化層の効果を過学習と混同する",
+    "optionRationales": [
+      "誤り。正規化は過学習を抑制する手法である。",
+      "誤り。出力を一様にすることは目的ではない。",
+      "誤り。異常値排除は前処理であり、正規化とは異なる。",
+      "正解。内部共変量シフトを抑制し、学習を安定化させる。"
     ]
   },
   {
@@ -2455,6 +2851,15 @@
       "https://stanford.edu/~shervine/l/ja/teaching/cs-230/cheatsheet-convolutional-neural-networks",
       "https://deepage.net/deep_learning/2016/11/07/convolutional_neural_network.html",
       "https://zero2one.jp/learningblog/cnn-for-beginners/?srsltid=AfmBOooO1CdEVcn5csxlwhTs_mzz7U-0Uh1qP3ShQlxYpQ5RA68E7OmV"
+    ],
+    "learningObjective": "CNNにおける出力特徴マップのサイズ計算を理解し、適用できる。",
+    "cognitiveLevel": "apply",
+    "misconceptionTarget": "出力サイズの計算式において、パディングやストライドの影響を無視し、単純にフィルタサイズを引くだけで出力サイズを求める誤解が多い。",
+    "optionRationales": [
+      "誤り。出力サイズはフィルタサイズを考慮する必要がある。",
+      "誤り。特徴マップのサイズはフィルタサイズだけでは決まらない。",
+      "誤り。CNNの層数は固定ではなく、設計によって異なる。",
+      "正解。(W + 2P - F) / S + 1が正しい計算式だから。"
     ]
   }
 ]

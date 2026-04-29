@@ -56,6 +56,15 @@
       "https://dprofessions.co.jp/ai/",
       "https://biz.kddi.com/content/column/smartwork/what-is-ai/",
       "https://www.jstage.jst.go.jp/article/jjdp/19/1/19_KJ00004920001/_pdf/-char/ja"
+    ],
+    "learningObjective": "人工知能の定義を複数の観点から理解し、広義と狭義の違いを説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIの定義を狭く捉え、技術的手法と混同する",
+    "optionRationales": [
+      "誤り。人間の感情を模倣することはAIの一部に過ぎない。",
+      "正解。人間の知的活動を再現する技術の総称である。",
+      "誤り。特定の計算処理の自動化はAIの一部だが、全体ではない。",
+      "誤り。人間の知能を完全に再現することは現時点では不可能である。"
     ]
   },
   {
@@ -109,6 +118,15 @@
       "https://school.data-learning.com/media/machine-learning-algorithms-complete-guide/",
       "https://www.itpassportsiken.com/kakomon/07_haru/q28.html",
       "https://wa3.i-3-i.info/examination_ip2025h281.html"
+    ],
+    "learningObjective": "AIの4つのレベル分類を理解し、機械学習の特徴を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "古典的AIと機械学習の違いを混同する",
+    "optionRationales": [
+      "誤り。古典的AIはルールベースであり、学習しない。",
+      "誤り。制御プログラムは単純なタスクを実行するだけで学習しない。",
+      "正解。機械学習はデータから自動的にルールを学習する。",
+      "誤り。深層学習は特徴量を自動で学習するが、レベル4に該当する。"
     ]
   },
   {
@@ -159,6 +177,15 @@
       "https://x.com/yosukeyanase/status/2027504198989058535",
       "https://www.reddit.com/r/AskForAnswers/comments/1qy5n1d/is_ai_is_going_to_take_over_most_human_jobs_being/?tl=ja",
       "https://help.webex.com/ja-jp/article/nwwg3w6/Leitfaden-zu-L%C3%B6sungsl%C3%B6sung-f%C3%BCr-den-Routen-zu-Markt"
+    ],
+    "learningObjective": "特化型AIと汎用型AIの違いを理解し、各々の特徴を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "特化型AIと汎用型AIの混同",
+    "optionRationales": [
+      "誤り。特化型AIは特定のタスクに限定されるため、正しくない。",
+      "正解。特化型AIは特定のタスクのみを遂行するAIである。",
+      "誤り。多様な業務を同時に処理するのは汎用型AIの特徴である。",
+      "誤り。人間の知能を模倣するのは汎用型AIの定義に近い。"
     ]
   },
   {
@@ -216,6 +243,15 @@
       "https://ashidahironao.sakura.ne.jp/blog/cat40/twitterx1.html",
       "https://daily-life-ai.com/1818/",
       "https://www.jstage.jst.go.jp/article/jsaialst/106/0/106_107/_pdf/-char/ja"
+    ],
+    "learningObjective": "フレーム問題の概念を理解し、AIの限界を説明できるようになること。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "フレーム問題はAIが全ての情報を無視できることを示すという誤解。",
+    "optionRationales": [
+      "正解。フレーム問題はAIが有限の処理能力しかないため、現実に起こりうる問題すべてに対処することができないという問題を指します。",
+      "誤り。AIは無限の情報を処理できるわけではなく、有限の処理能力があるため、問題解決は難しいです。",
+      "誤り。フレーム問題はAIが全ての情報を無視できることを示すのではなく、必要な情報を選び出すことが難しいことを示します。",
+      "誤り。AIは特定の状況において問題を解決できる能力を持つが、フレーム問題はその能力の限界を示しています。"
     ]
   },
   {
@@ -271,6 +307,15 @@
       "https://saycon.co.jp/archives/neta/%E3%80%8C%E3%82%AF%E3%82%AA%E3%83%AA%E3%82%A2%E3%81%A8%E3%82%B7%E3%83%B3%E3%83%9C%E3%83%AB%E3%82%B0%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0%E5%95%8F%E9%A1%8C%E3%80%8D%E3%82%92",
       "https://gmor-sys.com/2022/09/22/unsolved-problems-in-ai/",
       "https://www.sbbit.jp/article/cont1/39977"
+    ],
+    "learningObjective": "シンボルグラウンディング問題の本質を理解し、AIの限界を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIが記号を使うことと意味を理解することの混同",
+    "optionRationales": [
+      "正解。AIが扱う記号と実体が結びついていない問題を示しているから。",
+      "誤り。AIは記号を使うが、意味を理解しないことが問題の本質ではない。",
+      "誤り。人間は記号を使えるが、AIがそれをできないことが問題ではない。",
+      "誤り。AIが誤った判断をすることは問題の一部だが、根本的な説明ではない。"
     ]
   },
   {
@@ -319,6 +364,15 @@
       "https://ledge.ai/articles/turing-test",
       "https://boochi-engineer.net/archives/4004",
       "https://tt-tsukumochi.com/archives/11240"
+    ],
+    "learningObjective": "チューリングテストの目的と実施方法を理解し、正しい説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "チューリングテストの目的を誤解している",
+    "optionRationales": [
+      "誤り。人間と機械が同じ部屋で対話するわけではない。",
+      "正解。判定者が人間か機械かを判断するテストだから。",
+      "誤り。知能を直接測定するのではなく、振る舞いを評価する。",
+      "誤り。感情理解を試すテストではなく、知性を評価する。"
     ]
   },
   {
@@ -368,6 +422,15 @@
       "https://nazology.kusuguru.co.jp/archives/180947/3",
       "https://www.jstage.jst.go.jp/article/jjdp/19/1/19_KJ00004920001/_pdf/-char/ja",
       "https://www.reddit.com/r/ArtificialInteligence/comments/1qar7qk/hot_take_ai_wont_replace_many_thinking_jobs_at/?tl=ja"
+    ],
+    "learningObjective": "強いAIの定義を理解し、弱いAIとの違いを説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "強いAIと弱いAIの違いを混同することがある。",
+    "optionRationales": [
+      "誤り。特定のタスクをこなすAIは弱いAIに該当する。",
+      "正解。強いAIは人間に似た心や意識を持つとされる。",
+      "誤り。人間の知能を模倣するのは弱いAIの特徴である。",
+      "誤り。感情を持たないAIは弱いAIの一部であり、強いAIではない。"
     ]
   },
   {
@@ -416,6 +479,15 @@
       "https://www.luft.co.jp/media/technological-singularity/",
       "https://www.jstage.jst.go.jp/article/jjdp/19/1/19_KJ00004920001/_pdf/-char/ja",
       "https://ledge.ai/articles/2045-problem"
+    ],
+    "learningObjective": "シンギュラリティに関するレイ・カーツワイルの予測を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "シンギュラリティの到来時期や内容の誤解",
+    "optionRationales": [
+      "誤り。2040年ではなく2045年にAIが人間の知能を超えると予測している。",
+      "正解。2045年にAIが自分自身よりも賢いAIを作り出せると予測しているから。",
+      "誤り。2035年に全ての仕事を奪うとは述べていない。",
+      "誤り。2050年に共存する未来を描いたとは言っていない。"
     ]
   },
   {
@@ -475,6 +547,15 @@
       "https://qiita.com/TND_mi/items/1afbe44a1eb7d34b0174",
       "https://rimo.app/blogs/chatgpt-character-limit",
       "https://syu-m-5151.hatenablog.com/entry/2025/12/16/102227"
+    ],
+    "learningObjective": "AI効果の概念を理解し、技術の普及による知能の定義変化を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AI技術の進化と知能の定義の混同",
+    "optionRationales": [
+      "誤り。技術の進化が知能の定義を変えるわけではない。",
+      "正解。一度実現された技術が単なる自動化と見なされる現象。",
+      "誤り。知能の価値が低下するのではなく、認識が変わる。",
+      "誤り。知能の重要性が再評価されるのではなく、定義が変わる。"
     ]
   },
   {
@@ -529,6 +610,15 @@
       "https://schoo.jp/biz/column/886",
       "https://ip-study.net/ai-technology-qa/",
       "https://www.onecruise.co.jp/degiodegiko/generation-ai-classification/"
+    ],
+    "learningObjective": "AIのレベル分類における各レベルの特徴を理解し、正確に説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "レベル4（ディープラーニング）が特徴量を自律的に学習することを理解せず、従来の機械学習と混同する誤解が狙われる。",
+    "optionRationales": [
+      "誤り。レベル3は機械学習であり、ルールを学ぶのではなく、データから学習する。",
+      "誤り。レベル2はルールベースであり、決まったルールに従うが、学習は行わない。",
+      "正解。レベル4のディープラーニングは特徴量を自律的に学習する点が特徴である。",
+      "誤り。レベル1は単純な自動化を行うが、学習機能は持たない。"
     ]
   },
   {
@@ -578,6 +668,15 @@
       "https://note.com/it_navi/n/n567f25c89f7f",
       "https://www.nri.com/jp/knowledge/glossary/agi.html",
       "https://ja.wikipedia.org/wiki/%E6%B1%8E%E7%94%A8%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD"
+    ],
+    "learningObjective": "汎用型AI（AGI）の特徴と特化型AIとの違いを理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "特化型AIと汎用型AIの混同",
+    "optionRationales": [
+      "正解。汎用型AIは人間のように複数の領域を柔軟にこなせるから。",
+      "誤り。特化型AIは特定の分野に限定されるため、AGIとは異なる。",
+      "誤り。人間の知能を超えるAIは人工超知能（ASI）に関連する概念。",
+      "誤り。単一のタスクを高精度で実行するのは特化型AIの特徴である。"
     ]
   },
   {
@@ -629,6 +728,15 @@
       "https://www.techno-edge.net/article/2025/01/20/4022.html",
       "https://huggingface.co/datasets/elyza/ELYZA-tasks-100",
       "https://e-rec123.jp/e-REC/contents/104/196.html"
+    ],
+    "learningObjective": "ELIZAの歴史的背景とその機能を理解し、初期の自然言語処理プログラムの特徴を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ELIZAを音声対話システムと誤解すること",
+    "optionRationales": [
+      "誤り。1970年代ではなく1960年代に開発されたプログラムである。",
+      "正解。ELIZAは1960年代にMITで開発された初期の自然言語処理プログラムである。",
+      "誤り。ELIZAは音声対話システムではなく、テキストベースの対話システムである。",
+      "誤り。ELIZAは心理療法士の役割を模倣するが、アルゴリズム自体ではない。"
     ]
   },
   {
@@ -679,6 +787,15 @@
       "https://www.jstage.jst.go.jp/article/jjdp/19/1/19_KJ00004920001/_pdf/-char/ja",
       "https://www.reddit.com/r/enlightenment/comments/1lyvmln/people_around_the_world_are_telling_chatgpt_the/?tl=ja",
       "https://note.com/it_navi/n/n54dedd4e41c6"
+    ],
+    "learningObjective": "弱いAIの定義を理解し、特定の知的作業を模倣する役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "弱いAIと強いAIの違いを混同すること",
+    "optionRationales": [
+      "誤り。人間の感情を理解するAIは強いAIの特徴である。",
+      "正解。弱いAIは特定の知的作業を模倣する道具である。",
+      "誤り。自ら学習し判断するのは強いAIの特徴である。",
+      "誤り。特定のタスクに特化した知能は弱いAIの一部だが、定義ではない。"
     ]
   },
   {
@@ -727,6 +844,15 @@
       "https://note.com/lifeprompt/n/n02c40e908130",
       "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11327500116",
       "https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%81%AE%E9%83%A8%E5%B1%8B"
+    ],
+    "learningObjective": "中国語の部屋の思考実験を通じて、AIの意味理解の限界を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "コンピュータが言語を理解する能力を持つという誤解",
+    "optionRationales": [
+      "正解。コンピュータは記号操作をしているだけで、意味を理解していないから。",
+      "誤り。コンピュータは記号を操作するが、真の理解はないため能力はない。",
+      "誤り。中国語の部屋はAIの意識を示すものではなく、理解の限界を示す実験である。",
+      "誤り。記号操作だけではなく、意味を理解することが可能という主張は誤解である。"
     ]
   },
   {
@@ -787,6 +913,15 @@
       "https://note.com/mi_cda/n/n46c4e40a24fb",
       "https://www.nikkei.com/article/DGXZQOUB12D1X0S5A310C2000000/",
       "https://www.lap.c.u-tokyo.ac.jp/ja/theme_lectures/body_theory/101110/"
+    ],
+    "learningObjective": "身体性の概念を理解し、知能の発達における重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "身体性と環境との相互作用の重要性を誤解している",
+    "optionRationales": [
+      "正解。知能は身体を通じて環境と相互作用することで発達するから。",
+      "誤り。知能は環境との相互作用だけでなく、身体を通じて発達する。",
+      "誤り。身体を持たないAIは知能を持つことができないとされる。",
+      "誤り。知能は身体の存在に依存するという考え方が主流である。"
     ]
   },
   {
@@ -848,6 +983,15 @@
       "https://www.databricks.com/jp/blog/types-ai-agents-definitions-roles-and-examples",
       "https://www.gartner.co.jp/ja/articles/ai-agents",
       "https://www.ipa.go.jp/digital/kaihatsu/sds-column/ai-agent.html"
+    ],
+    "learningObjective": "AIにおけるエージェントの定義を理解し、自律的行動の特徴を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIエージェントは単なる指示待ちのプログラムであり、環境を認識せずに人間の指示に従うだけの存在であるという誤解。",
+    "optionRationales": [
+      "正解。環境を認識し自律的に行動するから。",
+      "誤り。人間の指示に従うだけではエージェントではない。",
+      "誤り。手動で実行するシステムはエージェントではない。",
+      "誤り。環境を無視するAIはエージェントの定義に反する。"
     ]
   },
   {
@@ -896,6 +1040,15 @@
       "https://philarchive.org/archive/STA-76v1",
       "https://www.reddit.com/r/learnmath/comments/1q4owq5/why_does_math_just_not_click_for_so_many_people/?tl=ja",
       "https://www.reddit.com/r/mathematics/comments/1q4jrph/geoffrey_hinton_says_mathematics_is_a_closed/?tl=ja"
+    ],
+    "learningObjective": "トイ・プロブレムの定義とその特徴を理解し、AIの限界を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "トイ・プロブレムと現実問題の混同",
+    "optionRationales": [
+      "正解。トイ・プロブレムは条件が限定された問題を指すから。",
+      "誤り。現実の問題解決手法ではなく、単純な問題を扱う。",
+      "誤り。トイ・プロブレムはシンプルな問題であり、複雑な状況には対応しない。",
+      "誤り。ルールが不明確な問題ではなく、条件が明確な問題を扱う。"
     ]
   },
   {
@@ -956,6 +1109,15 @@
       "https://karapaia.com/archives/597421.html",
       "https://forbesjapan.com/articles/detail/88307",
       "https://www.xlsoft.com/jp/blog/blog/2024/07/09/grammarly-14-post-71982/"
+    ],
+    "learningObjective": "AIの4レベル分類における古典的AIの特徴を理解し、他のレベルとの違いを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "古典的AIと機械学習の混同",
+    "optionRationales": [
+      "誤り。自己改善する機能はレベル3の機械学習に関連する。",
+      "誤り。単純な出力のみではなく、探索や推論も行う。",
+      "正解。ルールベースで動作し、探索・推論を行うが学習はしない。",
+      "誤り。感情理解や対話機能はレベル4のAIに関連する。"
     ]
   },
   {
@@ -1011,6 +1173,15 @@
       "https://akito-fujita.hatenablog.com/entry/2021/07/01/152304",
       "https://wired.jp/branded/special/2015/imitationgame/02/",
       "https://en.wikipedia.org/wiki/Alan_Turing"
+    ],
+    "learningObjective": "チューリングテストの提唱者であるアラン・チューリングの重要性を理解できる。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": null,
+    "optionRationales": [
+      "誤り。アラン・マシスンはチューリングテストの提唱者ではない。",
+      "誤り。ジョン・フォン・ノイマンはコンピュータ科学の先駆者だが、チューリングテストとは無関係。",
+      "正解。アラン・チューリングが1950年に提唱した。",
+      "誤り。アラン・チューリッヒは実在の人物ではなく、混同されている。"
     ]
   },
   {
@@ -1068,6 +1239,15 @@
       "https://www.hpe.com/psnow/doc/a50013354jpn",
       "https://www.systena-itlink.jp/blog/26",
       "https://pandora-climber.jp/article/category_ai/ai_prompt.html"
+    ],
+    "learningObjective": "フレーム問題の具体例を理解し、AIが直面する課題を認識する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "フレーム問題は単なる計算能力の問題ではなく、AIが考慮すべき情報の選別に関する問題である。",
+    "optionRationales": [
+      "正解。AIに「飲み物を買ってきて」と指示した場合、廊下の人を避ける方法やエレベーターの選択、財布の持参など、無限の考慮事項が存在する。",
+      "誤り。「家に帰る」という指示は障害物を考慮する必要があるが、フレーム問題の本質を示す具体例ではない。",
+      "誤り。「食事を作って」という指示は食材の選択肢が無限に存在するが、フレーム問題の具体例としては不適切である。",
+      "誤り。「掃除をして」という指示は家具の配置を考慮する必要があるが、フレーム問題の具体例としては不十分である。"
     ]
   },
   {
@@ -1112,6 +1292,15 @@
       "https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%81%AE%E9%83%A8%E5%B1%8B",
       "https://www.ai-gakkai.or.jp/whatsai/AItopics3.html",
       "https://www.esquire.com/jp/lifestyle/tech/a44731241/explanation-of-the-chinese-room-discussion/"
+    ],
+    "learningObjective": "強いAIに対する批判の代表例を理解し、思考実験の意義を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "「中国語の部屋」思考実験は、記号操作が理解を伴うと誤解され、AIが真の意味を理解していると考えられることがある。",
+    "optionRationales": [
+      "正解。記号操作だけでは真の意味理解がないことを示しているから。",
+      "誤り。AIが言語を理解する能力があるという意見は存在するが、これは批判の内容ではない。",
+      "誤り。感情を持つという学習アプローチは別の議論であり、強いAIの批判とは関係ない。",
+      "誤り。強いAIが人間のように思考することができるという主張は、批判の対象ではない。"
     ]
   },
   {
@@ -1156,6 +1345,15 @@
       "https://forbesjapan.com/articles/detail/93956",
       "https://www.kaonavi.jp/dictionary/singularity/",
       "https://www.reddit.com/r/singularity/comments/11laqso/im_a_bit_confused_about_the_singularity_please/?tl=ja"
+    ],
+    "learningObjective": "シンギュラリティの概念を理解し、AIの進化がもたらす影響を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "シンギュラリティの定義を誤解し、単なる技術革新と混同すること",
+    "optionRationales": [
+      "誤り。技術革新を示すだけではなく、AIの自己進化を含む。",
+      "誤り。社会への影響を示すが、シンギュラリティの核心ではない。",
+      "誤り。進化の速度を示すが、AIが自己生成する点が重要。",
+      "正解。AIが自らより賢いAIを作り出し、急速に進化することを示す。"
     ]
   },
   {
@@ -1217,6 +1415,15 @@
       "https://note.com/waterplanet/n/n496499ccfa41",
       "https://x.com/kenimamura1/status/1975538477329690777",
       "https://bookmeter.com/authors/110687"
+    ],
+    "learningObjective": "中国語の部屋思考実験を提唱したジョン・サールの名前を記憶する。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": null,
+    "optionRationales": [
+      "誤り。アラン・チューリングはチューリングテストを提唱した。",
+      "誤り。ダニエル・デネットは意識の哲学に関する研究で知られる。",
+      "正解。ジョン・サールが1980年に提唱した思考実験である。",
+      "誤り。ノーム・チョムスキーは言語学の分野で有名な人物である。"
     ]
   },
   {
@@ -1269,6 +1476,15 @@
       "http://sociology.cssn.cn/xscg/ztyj/shgz/201507/t20150701_2058880.shtml",
       "https://zh.wikipedia.org/zh-hans/%E4%BA%BA%E7%B1%BB%E6%80%A7%E8%A1%8C%E4%B8%BA",
       "https://www.researchgate.net/publication/345311597_pinggongzuodeshentixing"
+    ],
+    "learningObjective": "シンボルグラウンディング問題の解決策としての身体性の重要性を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "身体性と知識表現の混同",
+    "optionRationales": [
+      "誤り。言語処理は文脈理解に関する技術であり、直接的な解決策ではない。",
+      "誤り。記号論は記号の構造を探求するが、実体との結びつきには関与しない。",
+      "誤り。知識表現は情報整理の手法であり、身体性の概念とは異なる。",
+      "正解。身体性は環境との相互作用を通じて記号と実体を結びつけるため、解決策として重要である。"
     ]
   },
   {
@@ -1323,6 +1539,15 @@
       "https://wa3.i-3-i.info/examination_ip2025h281.html",
       "https://www.agaroot.jp/datascience/column/ai/",
       "https://sitest.jp/blog/?p=6059"
+    ],
+    "learningObjective": "AIの4レベル分類におけるレベル1の具体例を理解し、適切な選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "単純な制御プログラムと学習型AIの混同",
+    "optionRationales": [
+      "誤り。自動掃除ロボットはレベル2に該当する。",
+      "誤り。音声指示を受ける家電は学習機能があるためレベル2。",
+      "誤り。温度センサーは単独では制御プログラムではない。",
+      "正解。エアコンの温度調節器は単純な条件分岐で動作する。"
     ]
   },
   {
@@ -1371,6 +1596,15 @@
       "https://promo.digital.ricoh.com/chatbot/column/detail103/",
       "https://www.mext.go.jp/b_menu/shingi/chukyo/chukyo3/115/gijiroku/1381878_00003.htm",
       "https://www.jstage.jst.go.jp/article/jjdp/19/1/19_KJ00004920001/_pdf/-char/ja"
+    ],
+    "learningObjective": "強いAIと弱いAIの違いを理解し、分類基準を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "強いAIは感情を持つという誤解を解消する。",
+    "optionRationales": [
+      "誤り。知能の有無はAIの分類基準として正しくない。",
+      "誤り。特定のタスクに依存するのは弱いAIの特徴。",
+      "正解。意識・心・自律的思考能力を持つかどうかが基準。",
+      "誤り。感情理解はAIの分類基準ではない。"
     ]
   },
   {
@@ -1426,6 +1660,15 @@
       "https://a-x.inc/blog/ai-regulation/",
       "https://www.okinawatimes.co.jp/articles/-/1820847",
       "https://blogs.itmedia.co.jp/business20/2026/04/ai50.html"
+    ],
+    "learningObjective": "人工知能の定義が統一されない理由を理解し、AI効果の影響を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIは必ずしも人間の知能を模倣するものであると誤解され、単なる自動化技術とAIの違いが理解されていない。",
+    "optionRationales": [
+      "誤り。技術の進化は影響するが、専門家の意見の多様化が主な理由。",
+      "誤り。意見の多様化は事実だが、定義が一貫しないのはAI効果が大きい。",
+      "誤り。技術の進化は影響するが、定義の境界が変わるのはAI効果による。",
+      "正解。AI効果により、実現された技術が定義の境界を変化させるから。"
     ]
   },
   {
@@ -1490,6 +1733,15 @@
       "https://note.com/lonnie78932/n/n1133b8ab7c2f",
       "https://exawizards.com/column/article/ai-merit",
       "https://www.treasuredata.co.jp/blog/top-challenges-of-ai-deployment/"
+    ],
+    "learningObjective": "フレーム問題とシンボルグラウンディング問題の関連性を理解できる",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "AIの限界に関する問題を混同すること",
+    "optionRationales": [
+      "誤り。フレーム問題はAIの学習速度を向上させる手法ではない。",
+      "誤り。シンボルグラウンディング問題はデータ処理能力に関する問題ではあるが、学習アプローチではない。",
+      "正解。どちらもAIが現実世界を適切に処理できないという根本的な課題に関連している。",
+      "誤り。フレーム問題は倫理的判断に関する課題ではなく、技術的な問題である。"
     ]
   },
   {
@@ -1557,6 +1809,15 @@
       "https://www.maildealer.jp/column/ai/568-ai-casestudy.php",
       "https://www.nikkei.com/article/DGXMZO61253750X00C20A7TCR000/",
       "https://www.reddit.com/r/Boxing/comments/126iqi3/ai_punch_stats_gatti_vs_mayweather_jr_throwback/?tl=ja"
+    ],
+    "learningObjective": "AI効果の具体例を理解し、実際の事例を通じてその概念を確認できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AI技術の進化とその評価の変化を混同すること。",
+    "optionRationales": [
+      "正解。チェスプログラムが勝利した後、単なる探索プログラムと見なされたのはAI効果の典型例だから。",
+      "誤り。画像認識が単なるパターン認識とされることはあるが、AI効果の具体例としては不十分である。",
+      "誤り。囲碁での勝利もAI効果の一例だが、チェスプログラムの例がより明確である。",
+      "誤り。自然言語処理の評価が低くなることはあるが、AI効果の具体例としてはチェスプログラムの方が適切である。"
     ]
   },
   {
@@ -1611,6 +1872,15 @@
       "https://note.com/haruharuy/n/ne4fb14cce724",
       "https://www.jstage.jst.go.jp/article/jjdp/19/1/19_KJ00004920001/_pdf/-char/ja",
       "https://www.reddit.com/r/OpenAI/comments/1obh30l/in_1999_most_thought_ray_kurzweil_was_insane_for/?tl=ja"
+    ],
+    "learningObjective": "レイ・カーツワイルの著書「シンギュラリティは近い」を理解し、シンギュラリティの概念を把握する。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": null,
+    "optionRationales": [
+      "誤り。「未来予測の技術革新」はカーツワイルの著書ではない。",
+      "誤り。「人間の知能を超える」はカーツワイルの著書ではない。",
+      "誤り。「AIと人間の融合」はカーツワイルの著書ではない。",
+      "正解。「シンギュラリティは近い」はカーツワイルの著書で、シンギュラリティを予測している。"
     ]
   },
   {
@@ -1671,6 +1941,15 @@
       "https://rike-kotton.com/ai-intro-adult/learning/g%E6%A4%9C%E5%AE%9A%E3%81%AE%E5%8B%89%E5%BC%B7%EF%BD%9E%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%AE%E6%89%8B%E6%B3%95%E3%80%80%E9%9F%B3%E5%A3%B0%E5%87%A6/",
       "https://qiita.com/SHIRYU_0515/items/26b47fd18ae967c26366",
       "https://saycon.co.jp/archives/neta/g"
+    ],
+    "learningObjective": "現在実用化されているAIの分類を理解し、弱いAIの特徴を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "強いAIと弱いAIの違いを混同する",
+    "optionRationales": [
+      "誤り。強いAIは意識を持ち自律的に行動するが、現在は実現されていない。",
+      "誤り。汎用AIは多様なタスクをこなすが、現実には特定タスクに特化したAIが主流である。",
+      "正解。弱いAIは意識を持たず特定のタスクを模倣する道具であり、実用化されているAIはこれに該当する。",
+      "誤り。特化型AIは特定の問題に特化しているが、弱いAIの一部として分類される。"
     ]
   },
   {
@@ -1734,6 +2013,15 @@
       "https://hackmd.io/@iwasekojiseika/ryVbgwjS8",
       "https://www.sohobb.jp/event/jdla-deeplearning-for-general/",
       "https://laboratory.kiyono-co.jp/2561/ai/"
+    ],
+    "learningObjective": "エージェントが自律的に行動するために必要な基本的な能力を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エージェントの行動は単にプログラムされた指示に従うだけで、自律的な判断や環境の変化に応じた適応がないと誤解されることが多い。",
+    "optionRationales": [
+      "誤り。環境の変化を無視することは自律的行動には必要ない。",
+      "誤り。過去の経験を完全に忘れることは学習に逆効果である。",
+      "誤り。他者の行動を模倣することは一部のアルゴリズムに過ぎない。",
+      "正解。環境の知覚と行動選択が自律的行動の基本である。"
     ]
   },
   {
@@ -1784,6 +2072,15 @@
       "https://robomind.co.jp/frameproblem/",
       "https://www.reddit.com/r/ControlProblem/comments/1osqn3t/the_lawyer_problem_why_rulebased_ai_alignment/?tl=ja",
       "https://techsword.co.jp/column/rulebase-vs-ai-in-visual-inspection"
+    ],
+    "learningObjective": "知識・ルールベースのAIが現実の複雑な環境で機能しない理由を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "フレーム問題と情報過多の混同",
+    "optionRationales": [
+      "誤り。知識不足は一因だが、フレーム問題が根本的な理由。",
+      "誤り。情報過多は問題だが、フレーム問題がより核心的。",
+      "正解。フレーム問題は、AIが環境の複雑さに対処できない理由を説明する。",
+      "誤り。ルール不明は問題の一部だが、フレーム問題が本質的な障害。"
     ]
   },
   {
@@ -1847,6 +2144,15 @@
       "https://daily-life-ai.com/1272/",
       "https://python-ai-learn.com/2021/02/14/g-exam/",
       "https://qiita.com/hirokid/items/850dd5721db23a9a39a8"
+    ],
+    "learningObjective": "将来のAIの能力水準に関する概念を理解し、強いAIと汎用型AIの違いを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "誤答選択肢は、強いAIやシンギュラリティの概念を単なる特定タスクの能力向上と誤解し、AIの本質的な知能の進化を理解していない。",
+    "optionRationales": [
+      "誤り。特化型AIは現在の技術であり、将来の能力水準を示さない。",
+      "誤り。自己学習型AIは現在の技術であり、将来の能力水準を示さない。",
+      "誤り。人工知能や弱いAIは現在の技術であり、将来の能力水準を示さない。",
+      "正解。強いAIと汎用型AIは将来のAIの能力水準を示す概念である。"
     ]
   },
   {
@@ -1907,6 +2213,15 @@
       "https://www.reddit.com/r/philosophy/comments/zubf3w/chatgpt_is_conscious/?tl=ja",
       "https://www.reddit.com/r/consciousness/comments/1hnm2qi/the_quantum_chinese_room_unraveling_the_paradox/?tl=ja",
       "https://www.reddit.com/r/philosophy/comments/5bkhdp/the_chinese_room_experiment_the_hunt_for_ai_bbc/?tl=ja"
+    ],
+    "learningObjective": "チューリングテストと中国語の部屋の関係を理解し、意識の有無を考察できる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "チューリングテストと中国語の部屋の目的を混同すること",
+    "optionRationales": [
+      "正解。チューリングテストは機械の知能を測る手法であるから。",
+      "誤り。中国語の部屋は意識を証明するものではなく、知識の模倣に過ぎない。",
+      "誤り。チューリングテストは人間の思考を模倣する試験ではなく、知能の判定である。",
+      "誤り。正しい理解は、チューリングテストに合格しても真の理解を持たないことを示す。"
     ]
   },
   {
@@ -1939,7 +2254,16 @@
       "弱いAI",
       "分類基準"
     ],
-    "source_ref": "JDLA公式シラバス 第1章 §1.2 強いAIと弱いAI（ソースID: f82a549c-19b8-4815-b53a-047df3502595）"
+    "source_ref": "JDLA公式シラバス 第1章 §1.2 強いAIと弱いAI（ソースID: f82a549c-19b8-4815-b53a-047df3502595）",
+    "learningObjective": "強いAIと弱いAIの違いを理解し、実用化されているAIの位置付けを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIの能力と意識の混同",
+    "optionRationales": [
+      "正解。現在のAIは意識を持たず、特定の作業を模倣するだけだから。",
+      "誤り。パラメータ数や計算能力は分類基準ではない。",
+      "誤り。インターネット接続の有無はAIの分類には関係ない。",
+      "誤り。現在のAIは学習機能を持つが、意識がないため弱いAIに分類される。"
+    ]
   },
   {
     "id": "ch1-037",
@@ -1970,6 +2294,15 @@
       "イミテーションゲーム",
       "知能判定"
     ],
-    "source_ref": "Study-AI G検定テキスト 第1章 §チューリングテストの実施方法（ソースID: 6a05d5ec-fce7-4f73-84a9-6100b0374a60）"
+    "source_ref": "Study-AI G検定テキスト 第1章 §チューリングテストの実施方法（ソースID: 6a05d5ec-fce7-4f73-84a9-6100b0374a60）",
+    "learningObjective": "チューリングテストの実施方法を理解し、正しい選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIの能力を計算やゲームで評価することと混同している",
+    "optionRationales": [
+      "誤り。計算問題の速さはチューリングテストの目的ではない。",
+      "誤り。囲碁や将棋の勝敗は知性の評価方法ではない。",
+      "誤り。プログラムコードの品質評価はチューリングテストとは異なる。",
+      "正解。文字による対話で人間か機械かを判別するのがチューリングテストの本質だから。"
+    ]
   }
 ]

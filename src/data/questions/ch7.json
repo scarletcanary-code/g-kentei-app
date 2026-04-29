@@ -46,6 +46,15 @@
       "https://www.nri.com/jp/knowledge/glossary/poc.html",
       "https://worldhacks.co.jp/blog/5f4dtw_-w/",
       "https://www.jsfit.co.jp/bpo/blog/202510-01/"
+    ],
+    "learningObjective": "AIプロジェクトにおけるPoCの目的を理解し、ビジネス価値を評価できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "PoCの目的とプロトタイプの混同",
+    "optionRationales": [
+      "誤り。基準設定はPoCの目的として正しくない説明である。",
+      "正解。本格的な開発前に期待精度を検証するため。",
+      "誤り。全体設計決定はPoCの目的ではない。",
+      "誤り。データ分析手法ではなく、検証が目的である。"
     ]
   },
   {
@@ -96,6 +105,15 @@
       "https://www.e-xtreme.co.jp/topics/48898/",
       "https://wandb.ai/site/ja/articles/what-is-mlops/",
       "https://www.brainpad.co.jp/doors/contents/01_current_status_and_future_of_mlops/"
+    ],
+    "learningObjective": "MLOpsの概念とその重要性を理解し、AIシステムの運用における役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "MLOpsは単に機械学習モデルのデプロイや運用に関するツールや技術だけを指すと誤解されがちで、実際には開発と運用の連携や継続的な改善が重要である。",
+    "optionRationales": [
+      "誤り。設計と評価はMLOpsの一部ではあるが、主な目的ではない。",
+      "正解。MLOpsは開発と運用を連携させ、継続的な学習・テスト・デプロイを自動化する。",
+      "誤り。データの収集と分析はMLOpsの一部ではあるが、フレームワーク全体を指さない。",
+      "誤り。管理手法はMLOpsの一部だが、アルゴリズムとは異なる概念である。"
     ]
   },
   {
@@ -145,6 +163,15 @@
       "https://monoist.itmedia.co.jp/mn/articles/1907/16/news009.html",
       "https://www.wiz.io/ja-jp/academy/data-security/data-leakage",
       "https://tech-blog.abeja.asia/entry/advent-2023-day15"
+    ],
+    "learningObjective": "データリーケージの影響を理解し、実運用における精度の低下を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データリーケージの影響を過小評価する誤解",
+    "optionRationales": [
+      "誤り。検証データの精度が高くなることはあるが、実運用では精度が低下する。",
+      "正解。検証時には精度が良かったが、実際に導入すると精度が悪くなる。",
+      "誤り。データリーケージは過学習の一因だが、学習アプローチではない。",
+      "誤り。モデルの性能が常に安定することを示すわけではない。"
     ]
   },
   {
@@ -202,6 +229,15 @@
       "https://ai-compass.weeybrid.co.jp/using/model-drift-preventing-ai-model-degradation/",
       "http://bayesmax.sblo.jp/article/188243971.html",
       "https://ainow.ai/2019/11/18/180603/"
+    ],
+    "learningObjective": "モデルドリフトの概念とその影響を理解し、AIモデルの運用における重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "モデルドリフトと過剰適合の混同",
+    "optionRationales": [
+      "誤り。モデルドリフトは一度だけの更新ではなく、継続的なデータの変化を指す。",
+      "正解。時間や環境の変化によりデータ分布が変わり、モデル精度が低下する。",
+      "誤り。過剰適合は特定データへの適合を指し、モデルドリフトとは異なる。",
+      "誤り。モデルドリフトは行動分析ではなく、データ分布の変化に関する概念。"
     ]
   },
   {
@@ -271,6 +307,15 @@
       "https://biz.nuro.jp/column/aws-mama-084/",
       "https://ai-stay.tokyo/archives/4749",
       "https://www.ai-development-tools.com/image-analysis-ai/image-ai-model-accuracy-tips.html"
+    ],
+    "learningObjective": "AIモデルのヘルスモニタリングの目的を理解し、モデルドリフトの早期検知の重要性を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIモデルの運用は一度設定すれば終わりではないという誤解を解消する。",
+    "optionRationales": [
+      "誤り。AIモデルのトレーニングはデータの質向上が目的ではなく、予測精度向上が主な目的である。",
+      "正解。AIモデルのヘルスモニタリングは、稼働中のモデルの精度やデータ分布を監視し、モデルドリフトを早期に検知・対処することが目的である。",
+      "誤り。再学習はパフォーマンス向上の手法の一つだが、ヘルスモニタリングの主な目的ではない。",
+      "誤り。ユーザーのフィードバック収集は重要だが、ヘルスモニタリングの主な目的はモデルの監視である。"
     ]
   },
   {
@@ -326,6 +371,15 @@
       "https://www.ey.com/ja_jp/insights/technology-risk/ai-service-provider-guidelines-explaination-part1-introduction-edition",
       "https://www.ctc-g.co.jp/keys/blog/detail/ai-business-guidelines-key-points",
       "https://qiita.com/safsa/items/18397ee7e66b192795f6"
+    ],
+    "learningObjective": "AI事業者ガイドラインの目的と対象を理解し、正しい選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIガイドラインの対象を狭く捉える誤解",
+    "optionRationales": [
+      "誤り。AI事業者ガイドラインは法律ではなく、指針である。",
+      "正解。日本の既存ガイドラインを統合したもので、開発者・提供者・利用者が対象。",
+      "誤り。AI事業者ガイドラインは開発者だけでなく、提供者や利用者も対象である。",
+      "誤り。データ分析手法に関する指針ではなく、AIの倫理的利用を促進する指針である。"
     ]
   },
   {
@@ -377,6 +431,15 @@
       "https://bryza.co.jp/column/6959.html",
       "https://qiita.com/bezilla/items/2744e61d49a5c7099948",
       "https://www.ultralytics.com/ja/blog/understanding-ai-bias-and-dataset-bias-in-vision-ai-systems"
+    ],
+    "learningObjective": "AIプロジェクトにおけるバイアス問題の対処法を理解し、適切な対策を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "学習データの収集は一度で十分と考える誤解",
+    "optionRationales": [
+      "誤り。モデルを単純化することはバイアス対策にはならない。",
+      "正解。多様なデータ収集と評価が重要だから。",
+      "誤り。データの再評価は常に必要であり一度で不要にはならない。",
+      "誤り。ユーザーの意見を無視することは不公平を助長する。"
     ]
   },
   {
@@ -435,6 +498,15 @@
       "https://www.ctc-g.co.jp/keys/blog/detail/2005-ctct-system-operation",
       "https://www.totec-sangyo.jp/article/use/productioncontrolsystem_operational_phase_point",
       "https://service.msols.com/blog/hint041"
+    ],
+    "learningObjective": "AIプロジェクトの運用フェーズにおける特有の課題を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "運用フェーズではシステムの稼働が安定すれば問題ないと考え、データの変化やモデルの精度維持を軽視する誤解がある。",
+    "optionRationales": [
+      "誤り。モデルの初期設定の見直しは運用時の調整に関する一般的な課題である。",
+      "誤り。データの収集と前処理は重要だが、運用フェーズ特有の課題ではない。",
+      "正解。時間経過によるデータ分布の変化（モデルドリフト）への対処が運用フェーズの特有の課題である。",
+      "誤り。ユーザーからのフィードバックを無視することは一般的な問題だが、運用フェーズ特有ではない。"
     ]
   },
   {
@@ -478,6 +550,15 @@
       "https://biz.kddi.com/content/column/smartwork/what-is-ai-proscons/",
       "https://japan.zdnet.com/article/35237443/",
       "https://www.skillupai.com/blog/for-business/dx/"
+    ],
+    "learningObjective": "AIプロジェクトにおける目的の明確化が成功に与える影響を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "目的設定と技術導入の優先順位を混同している",
+    "optionRationales": [
+      "誤り。教育は重要だが、目的の明確化が優先されるべきである。",
+      "正解。目的の明確化はKPI設定に直結し、成功の評価基準を確立するから。",
+      "誤り。目的はプロジェクトの根幹であり、技術導入が最優先ではない。",
+      "誤り。コスト削減は重要だが、目的の明確化がなければ効果的な導入は難しい。"
     ]
   },
   {
@@ -536,6 +617,15 @@
       "https://www.skillupai.com/blog/tech/about-mlops/",
       "https://blog.ibextech.jp/posts/2025/mlops/",
       "https://www.reddit.com/r/mlops/comments/1auli2z/a_beginners_guide_to_cicd_for_machine_learning/?tl=ja"
+    ],
+    "learningObjective": "CI/CDのMLOpsへの適用を理解し、自動化の重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "CI/CDは単にコードの変更を管理するだけで、モデルの性能や精度の監視や再学習のプロセスを含まないと誤解されがちである。",
+    "optionRationales": [
+      "正解。コードの変更を自動テストし、新モデルを検証した後に本番環境へ自動デプロイするパイプラインを構築することがCI/CDの本質である。",
+      "誤り。手動で確認する手法はCI/CDの自動化の利点を活かしていない。",
+      "誤り。手動でテストすることはCI/CDの自動化の目的に反する。",
+      "誤り。データの変更を自動で検知するプロセスはMLOpsの一部だが、CI/CDの定義には含まれない。"
     ]
   },
   {
@@ -597,6 +687,15 @@
       "https://biz.kddi.com/content/column/smb/avoiding-hallucinations/",
       "https://wired.jp/article/chatbot-llm-self-awareness/",
       "https://news.yahoo.co.jp/expert/articles/e53f68bdeb69b755638d3e9b1981a4d78f98b0e2"
+    ],
+    "learningObjective": "CRISP-DMの6フェーズの理解とそのプロセスモデルの特徴を把握する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データ分析手法とデータマイニングの違いの混同",
+    "optionRationales": [
+      "正解。CRISP-DMはデータマイニングの標準プロセスモデルで、ビジネス理解から展開までの流れを示す。",
+      "誤り。これは統計解析に特化した手法の説明であり、CRISP-DMの定義とは異なる。",
+      "誤り。機械学習のアルゴリズムを活用する手法ではなく、データマイニングの全体的なプロセスを示す。",
+      "誤り。SWOT分析はビジネス戦略の手法であり、CRISP-DMとは関連がない。"
     ]
   },
   {
@@ -660,6 +759,15 @@
       "https://nexusai.jp/ai-hallucination/",
       "https://www.eesel.ai/ja/blog/can-ai-make-mistakes",
       "https://blog.g-gen.co.jp/entry/clearing-up-misconceptions-about-generative-ai"
+    ],
+    "learningObjective": "モデルレジストリの役割とMLOpsにおける重要性を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "モデルのトレーニングデータ管理と混同する",
+    "optionRationales": [
+      "正解。学習済みモデルの管理を行うための仕組みだから",
+      "誤り。トレーニングデータの管理ではなく、モデルの管理である",
+      "誤り。モデルのパフォーマンス評価とは異なる概念である",
+      "誤り。データ前処理の自動化とは関係がない"
     ]
   },
   {
@@ -708,6 +816,15 @@
       "https://www.ibm.com/jp-ja/think/topics/model-drift",
       "https://www.omron.com/jp/ja/technology/omrontechnics/2024/20240827-kawanoue.html",
       "https://yukinoi.hatenablog.com/entry/concept_drift"
+    ],
+    "learningObjective": "データドリフトとコンセプトドリフトの違いを理解し、適切に説明できる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "データドリフトとコンセプトドリフトの混同",
+    "optionRationales": [
+      "正解。データドリフトは入力データの分布変化、コンセプトドリフトは関係性の変化を指すから。",
+      "誤り。データドリフトは分布の変化を指し、性能低下を直接示すものではない。",
+      "誤り。データドリフトはデータの変化を示すが、コンセプトドリフトは必ずしも再学習を必要としない。",
+      "誤り。データドリフトは異常検知手法ではなく、コンセプトドリフトはデータ分析の技術ではない。"
     ]
   },
   {
@@ -768,6 +885,15 @@
       "https://speakerdeck.com/recruitengineers/abtest-2023",
       "https://www.yrl.com/column/ai-hallucination.html",
       "https://finance.biggo.jp/news/202510150118_Why_AI_Bugs_Are_Different"
+    ],
+    "learningObjective": "A/Bテストの目的とその実施方法を理解し、業務成果の検証ができる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "A/Bテストの目的を誤解し、全ユーザーに新モデルを適用する手法と混同している。",
+    "optionRationales": [
+      "正解。実ユーザーを比較することで新モデルの効果を検証するから。",
+      "誤り。ユーザーの好みを調査する手法ではなく、業務成果を検証する手法である。",
+      "誤り。全ユーザーに新モデルを適用するのはA/Bテストの目的ではない。",
+      "誤り。データ処理速度向上の手法ではなく、モデルの比較検証が目的である。"
     ]
   },
   {
@@ -826,6 +952,15 @@
       "https://solution.toppan.co.jp/bx/contents/ai_contents02.html",
       "https://www.nice.com/ja/glossary/what-is-ai-for-business",
       "https://www.walkme.com/blog/jp/12-ai-business-ideas/"
+    ],
+    "learningObjective": "DX（デジタルトランスフォーメーション）の本質とその目的を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "DXを単なる業務効率化と混同する",
+    "optionRationales": [
+      "正解。AIなどのデジタル技術を活用してビジネスモデルや組織文化を変革するから。",
+      "誤り。業務効率化は一部の要素であり、DXはそれ以上の変革を含む。",
+      "誤り。顧客データ分析はDXの一部だが、全体の定義には含まれない。",
+      "誤り。新製品開発はマーケティング手法の一部であり、DXの定義とは異なる。"
     ]
   },
   {
@@ -883,6 +1018,15 @@
       "https://appen.co.jp/blogs/data-annotation-tool",
       "https://staff.persol-xtech.co.jp/hatalabo/it_engineer/690.html",
       "https://zenn.dev/turing_motors/articles/4247435fcc8ace"
+    ],
+    "learningObjective": "教師あり学習におけるアノテーションの重要性とその具体的な作業内容を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "アノテーションとデータ収集の混同",
+    "optionRationales": [
+      "正解。アノテーションは学習データに正解ラベルを付与する作業だから。",
+      "誤り。教師なし学習はラベルなしデータを扱う手法であり、アノテーションとは異なる。",
+      "誤り。アノテーションはデータの収集ではなく、既存データにラベルを付ける作業である。",
+      "誤り。教師データは評価基準ではなく、学習に使用されるラベル付きデータを指す。"
     ]
   },
   {
@@ -940,6 +1084,15 @@
       "https://jp.linkedin.com/pulse/clean-data-clear-results-avoiding-common-cleaning-mistakes-wagh?tl=ja",
       "https://jp.sansan.com/media/data-cleaning/",
       "https://www.ntttp-db.com/service/datacleansing-2.html"
+    ],
+    "learningObjective": "データクレンジングの重要性とその具体的なプロセスを理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データクレンジングは単にデータを削除する作業であり、データの整合性や品質向上の重要性を理解していない。",
+    "optionRationales": [
+      "正解。収集したデータの不整合を取り除く作業だから。",
+      "誤り。データの可視化は別のプロセスであり、クレンジングではない。",
+      "誤り。データの収集から分析までの全体を指すわけではない。",
+      "誤り。データの整合性を保つ手法ではあるが、暗号化とは異なる。"
     ]
   },
   {
@@ -994,6 +1147,15 @@
       "https://biz.kddi.com/content/column/smartwork/what-is-ai/",
       "https://promo.digital.ricoh.com/chatbot/column/detail103/",
       "https://ja.wix.com/blog/2024/02/types-of-ai/"
+    ],
+    "learningObjective": "エッジAIの基本的な理解を深め、特徴や利点を説明できるようになること。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エッジAIはクラウドAIと同じであるという誤解を解消する。",
+    "optionRationales": [
+      "誤り。クラウド上でデータを処理するのはクラウドAIの特徴であり、エッジAIとは異なる。",
+      "誤り。エッジAIはエッジデバイスでの推論を行う技術であり、学習を行う手法ではない。",
+      "正解。エッジAIはスマートフォンやIoT機器などの端末で直接推論処理を行う技術で、低遅延やプライバシー保護の利点がある。",
+      "誤り。エッジAIはデータを収集するためのセンサー技術ではなく、収集したデータを処理する技術である。"
     ]
   },
   {
@@ -1049,6 +1211,15 @@
       "https://jpn.nec.com/techrep/journal/g23/n02/230215.html",
       "https://qiita.com/m0r1take/items/5aeceae2e840bd99d68b",
       "https://note.com/rosso_blog/n/n131bfc5229f4"
+    ],
+    "learningObjective": "フェデレーテッドラーニングの特徴を理解し、正しい選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データを中央サーバーに集める手法との混同",
+    "optionRationales": [
+      "誤り。全てのデータを中央サーバーに集める手法ではない。",
+      "誤り。モデルを直接共有する手法ではなく、データを移動させない。",
+      "正解。各端末で学習したモデルの更新値を送る手法だから。",
+      "誤り。データを暗号化して共有する手法ではない。"
     ]
   },
   {
@@ -1080,7 +1251,16 @@
       "ノーコードAI",
       "AI民主化"
     ],
-    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776"
+    "source_ref": "b67b8fca-9db7-4d95-ac8d-811e10801776",
+    "learningObjective": "AutoMLの機械学習プロセスの自動化に関する理解を確認する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "自動運転技術と混同している",
+    "optionRationales": [
+      "誤り。自動車の運転支援に関する技術ではない。",
+      "誤り。デプロイの自動化ではなく、モデル構築の自動化に関する技術である。",
+      "正解。データ前処理や特徴量エンジニアリングなどを自動化する技術だから。",
+      "誤り。強化学習とは異なる機械学習の自動化技術である。"
+    ]
   },
   {
     "id": "ch7-021",
@@ -1124,6 +1304,15 @@
       "https://www.amazon.co.jp/%E6%9C%80%E7%9F%AD%E7%AA%81%E7%A0%B4-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0G%E6%A4%9C%E5%AE%9A%EF%BC%88%E3%82%B8%E3%82%A7%E3%83%8D%E3%83%A9%E3%83%AA%E3%82%B9%E3%83%88%EF%BC%89-%E5%95%8F%E9%A1%8C%E9%9B%86-%E7%AC%AC2%E7%89%88-%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BEAVILEN%E9%AB%98%E6%A9%8B-%E5%85%89%E5%A4%AA%E9%83%8E-ebook/dp/B0BBLH7QJH",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095",
       "https://note.com/vast_cosmos500/n/n5367745fb613"
+    ],
+    "learningObjective": "G検定がAI人材育成における役割を理解し、デジタルリテラシーの重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "G検定の目的を技術者育成と誤解する",
+    "optionRationales": [
+      "誤り。技術者育成に特化した指標ではない。",
+      "誤り。評価基準としての役割だけではない。",
+      "正解。全社員がAIの共通言語を習得する指標である。",
+      "誤り。特定職種に限定した教育プログラムではない。"
     ]
   },
   {
@@ -1186,6 +1375,15 @@
       "https://agenda-note.com/brands/detail/id=3076",
       "https://www.pieronline.jp/content/article/0386-3603/50100/1907",
       "https://note.com/smallsurestep/n/n33b4b4a3a8e5"
+    ],
+    "learningObjective": "GIGOの概念を理解し、データ品質がAIの出力に与える影響を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "GIGOの意味を誤解し、データ量や視覚化の重要性と混同することがある。",
+    "optionRationales": [
+      "誤り。データの量が多いことは必ずしもAIの性能向上を意味しない。",
+      "誤り。データの正確性が高いことは成功の要因の一つだが、必ず成功するとは限らない。",
+      "正解。学習データの品質が低いと、どれほど高精度なモデルを使っても出力の品質も低くなる。",
+      "誤り。視覚化は重要だが、GIGOの概念とは直接関係がない。"
     ]
   },
   {
@@ -1237,6 +1435,15 @@
       "https://note.com/aoto0328/n/n9f5086f01501",
       "https://www.reddit.com/r/nocode/comments/1rk7s1n/the_dirty_secret_about_ai_built_apps_is_they_all/?tl=ja",
       "https://www.nikkei.com/article/DGXZQOGN0201I0S6A400C2000000/"
+    ],
+    "learningObjective": "ノーコードAIツールの特徴と利点を理解し、ビジネスでの活用方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ノーコードAIとプログラミング手法の混同",
+    "optionRationales": [
+      "誤り。プログラミング言語を学ぶためのツールではない。",
+      "誤り。AIモデルの構築に特化したプログラミング手法ではない。",
+      "正解。GUI操作だけでAIモデルの構築・学習・デプロイができるから。",
+      "誤り。データ分析手法ではなく、AIモデル構築のツールである。"
     ]
   },
   {
@@ -1298,6 +1505,15 @@
       "https://www.contentful.com/blog/ai-governance/",
       "https://www.glean.com/perspectives/ai-governance-best-practices",
       "https://professional.dce.harvard.edu/blog/building-a-responsible-ai-framework-5-key-principles-for-organizations/"
+    ],
+    "learningObjective": "AIガバナンスの定義とその重要性を理解し、適切な説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIガバナンスの目的をコスト削減と誤解すること",
+    "optionRationales": [
+      "誤り。AIガバナンスはコスト削減ではなく、リスク管理が目的である。",
+      "誤り。倫理的側面を無視することはAIガバナンスの本質ではない。",
+      "誤り。情報セキュリティ強化は一部だが、全体の目的ではない。",
+      "正解。AIガバナンスはリスク管理と透明性を確保するための体制である。"
     ]
   },
   {
@@ -1340,6 +1556,15 @@
       "https://note.com/vast_cosmos500/n/n5367745fb613",
       "https://www.simulationroom999.com/blog/g-test-solve-example-questions-01/",
       "https://note.com/vast_cosmos500/n/nfc3ee4cea095"
+    ],
+    "learningObjective": "クラウドソーシングによるアノテーション作業の課題を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "クラウドソーシングを利用すれば、アノテーション作業は自動的に高品質になると誤解することが多い。",
+    "optionRationales": [
+      "誤り。クラウドソーシングは作業者のスキルに依存するため、効率的とは限らない。",
+      "誤り。全てのデータを一元管理することは品質向上の手法ではない。",
+      "誤り。コスト削減は可能だが、納期が延びることが多いとは限らない。",
+      "正解。作業者ごとのラベル付け品質のばらつきや情報漏洩リスクが主な課題である。"
     ]
   },
   {
@@ -1406,6 +1631,15 @@
       "https://gruff.co.jp/blog/ai-dounyuu-shippai-jirei-learnings",
       "https://renue.co.jp/posts/ai-investment-roi-measurement-kpi-framework-2026",
       "https://channel.io/ja/blog/articles/aicallcenter--1920b5a4"
+    ],
+    "learningObjective": "AIプロジェクトにおけるKPI設計の重要性とその要素を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "技術指標とビジネス指標の重要性を混同している",
+    "optionRationales": [
+      "誤り。KPI設計では技術指標も重要であり、無視することはできない。",
+      "誤り。売上だけでは不十分で、他の指標も考慮する必要がある。",
+      "誤り。顧客のフィードバックも重要だが、数値的な指標が基本である。",
+      "正解。技術指標とビジネス指標の両方を設定し、整合させることが重要だから。"
     ]
   },
   {
@@ -1463,6 +1697,15 @@
       "https://www.nttdata-strategy.com/knowledge/reports/2025/251021/",
       "https://pmc.ncbi.nlm.nih.gov/articles/PMC10186185/",
       "https://machinelearning.apple.com/research/learning-real-world-application"
+    ],
+    "learningObjective": "フェデレーテッドラーニングの応用例を理解し、適切な事例を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "フェデレーテッドラーニングとデータ共有の混同",
+    "optionRationales": [
+      "誤り。複数の病院がデータを集約するのはフェデレーテッドラーニングではなく、データ共有の手法である。",
+      "誤り。各病院が独自に分析するのはフェデレーテッドラーニングの特徴ではなく、個別分析に過ぎない。",
+      "誤り。新薬開発はフェデレーテッドラーニングの目的ではなく、データ共有の一形態である。",
+      "正解。各病院がローカルデータで学習し、モデルの更新値を統合するのがフェデレーテッドラーニングの特徴である。"
     ]
   },
   {
@@ -1523,6 +1766,15 @@
       "https://www.silex.jp/library/form/wp_ai-model-optimization",
       "https://recruit.group.gmo/engineer/jisedai/blog/rasp_yolo/",
       "https://www.genetec.co.jp/tech-blog/0012-fpga/"
+    ],
+    "learningObjective": "エッジAIにおけるモデル軽量化の必要性を理解し、理由を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エッジAIはクラウドAIと同じ性能を持つため、軽量化は不要であるという誤解がある。",
+    "optionRationales": [
+      "誤り。エッジAIはクラウド処理を必要とせず、軽量化が求められる。",
+      "誤り。エッジデバイスは性能が限られており、軽量化が必要である。",
+      "誤り。エッジAIはデータ処理の手法であり、軽量化が重要である。",
+      "正解。エッジデバイスはメモリやバッテリーに制約があるため軽量化が必要。"
     ]
   },
   {
@@ -1584,6 +1836,15 @@
       "https://jfrog.com/ja/ml-model-management/",
       "https://www.snowflake.com/ja/blog/ml-enhances-mlops-streaming-feature-model-management/",
       "https://docs.cloud.google.com/architecture/mlops-continuous-delivery-and-automation-pipelines-in-machine-learning?hl=ja"
+    ],
+    "learningObjective": "MLOpsにおけるモデルレジストリの利点を理解し、適切に説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "モデルレジストリの機能と目的の混同",
+    "optionRationales": [
+      "誤り。モデルのトレーニングデータ管理に関する説明ではない。",
+      "誤り。モデルのパフォーマンス評価指標ではなく、管理手法に関する説明。",
+      "誤り。データ前処理の自動化技術ではなく、モデル管理に関する説明。",
+      "正解。モデルのバージョン管理や系統追跡が可能だから。"
     ]
   },
   {
@@ -1631,6 +1892,15 @@
       "https://data-viz-lab.com/overfitting",
       "https://www.qt.io/ja-jp/software-insights/code-coverage-vs.-test-coverage-vs.-test-effectiveness-what-do-you-measure",
       "https://www.reddit.com/r/CPAP/comments/1jbvi8i/understanding_my_data/?tl=ja"
+    ],
+    "learningObjective": "データリーケージを防ぐための適切な対処法を理解し、実践できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "データリーケージを防ぐためには、全データを使用することが最も効果的だと誤解されがちである。",
+    "optionRationales": [
+      "誤り。モデル学習後に全データを使用して評価を行うことは、リーケージを引き起こす可能性がある。",
+      "誤り。全てのデータを一度に使用してモデルを訓練することは、リーケージのリスクを高める。",
+      "誤り。データの収集時に全ての情報を暗号化することは、リーケージ防止の直接的な手法ではない。",
+      "正解。データ分割を行い、テストデータは最終評価時のみ使用することで、リーケージを防ぐことができる。"
     ]
   }
 ]

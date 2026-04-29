@@ -55,6 +55,15 @@
       "https://www.abitus.co.jp/column_voice/mba/column_voiceM034.html",
       "https://envader.plus/article/430",
       "https://e-words.jp/w/%E7%AC%AC%E4%B8%80%E6%AC%A1AI%E3%83%96%E3%83%BC%E3%83%A0.html"
+    ],
+    "learningObjective": "第1次AIブームにおける中心的な技術である探索・推論の特徴を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "機械学習と探索・推論の混同",
+    "optionRationales": [
+      "誤り。機械学習は第3次AIブーム以降の技術である。",
+      "正解。第1次AIブームでは探索・推論が中心技術であったから。",
+      "誤り。データベースの最適化はAIの中心技術ではない。",
+      "誤り。自然言語処理は後のブームで進化した技術である。"
     ]
   },
   {
@@ -107,6 +116,15 @@
       "https://ainow.ai/2020/09/08/227844/",
       "https://www.sbbit.jp/article/cont1/42716",
       "https://note.com/vast_cosmos500/n/n7c378ce3bf70"
+    ],
+    "learningObjective": "第1次AIブームの終焉理由を理解し、関連する概念を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "トイ・プロブレムは現実の問題を解決するための有効な手段であると誤解されがちで、実際には単純化された問題にしか適用できない。",
+    "optionRationales": [
+      "誤り。AI技術の進展はあったが、期待に応えられなかったため。",
+      "正解。探索・推論はトイ・プロブレムには有効だが、現実の問題には対応できなかったから。",
+      "誤り。資金不足は影響したが、主な理由ではない。",
+      "誤り。AIの実用化が進まなかったが、複雑な問題への対応が主な原因である。"
     ]
   },
   {
@@ -163,6 +181,15 @@
       "https://japan.zdnet.com/article/35203452/",
       "https://forbesjapan.com/articles/detail/86263",
       "https://www.mlit.go.jp/hakusyo/mlit/h30/hakusho/r01/html/n1122c01.html"
+    ],
+    "learningObjective": "第2次AIブームにおける中心技術としてのエキスパートシステムと知識表現の役割を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エキスパートシステムと機械学習の混同",
+    "optionRationales": [
+      "誤り。機械学習は第三次AIブームの中心技術である。",
+      "正解。エキスパートシステムは知識表現を用いて専門家の知識を模倣する。",
+      "誤り。自然言語処理は別の技術であり、第二次AIブームの中心ではない。",
+      "誤り。ディープラーニングは第三次AIブームに関連する技術である。"
     ]
   },
   {
@@ -211,6 +238,15 @@
       "https://itpassport.gihyo.jp/archives/3184",
       "https://tech.layerx.co.jp/entry/2025/10/23/222742",
       "https://wa3.i-3-i.info/examination_ip2025h281.html"
+    ],
+    "learningObjective": "エキスパートシステムの基本的な仕組みと機能を理解し、正しい説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エキスパートシステムと機械学習の違いを混同している",
+    "optionRationales": [
+      "誤り。人間の判断を模倣するだけではなく、ルールに基づく推論を行う。",
+      "正解。専門家のIF-THENルールを組み込み、専門家のように振る舞うシステムだから。",
+      "誤り。機械学習はデータから学習するが、エキスパートシステムはルールベースである。",
+      "誤り。特定の知識を持つAIシステムだが、アルゴリズムだけでは説明が不十分である。"
     ]
   },
   {
@@ -271,6 +307,15 @@
       "https://www.tech-teacher.jp/blog/g-certificate-cheat-sheet/",
       "https://qiita.com/pandausa/items/e4ea1d9c1cb42f75c55b",
       "https://www.jdla.org/g-qa/"
+    ],
+    "learningObjective": "意味ネットワークの構造と知識表現の手法を理解し、正しい説明を選択できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ノードとリンクの役割を混同すること",
+    "optionRationales": [
+      "誤り。概念をノード、属性を矢印で結ぶ説明は不正確である。",
+      "正解。概念をノード、関係性を矢印で結ぶ正しい説明である。",
+      "誤り。知識をノード、情報をリンクで表現する説明は不正確である。",
+      "誤り。情報をノード、関係性を線で示す説明は不正確である。"
     ]
   },
   {
@@ -334,6 +379,15 @@
       "https://aws.amazon.com/jp/compare/the-difference-between-machine-learning-and-deep-learning/",
       "https://schoo.jp/biz/column/886",
       "https://www.incubit.co.jp/blog/6462"
+    ],
+    "learningObjective": "第3次AIブームの背景にある要因を理解し、ビッグデータとGPUの役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIの進化は主にアルゴリズムの改善だけによるもので、データや計算能力の向上は重要ではないと考える誤解。",
+    "optionRationales": [
+      "誤り。ロボット工学はAIの一部であるが、主な背景ではない。",
+      "誤り。量子コンピュータはAIの進展に寄与していない。",
+      "正解。ビッグデータとGPUの進化が機械学習を実用化したから。",
+      "誤り。クラウドサービスは重要だが、主な要因ではない。"
     ]
   },
   {
@@ -396,6 +450,15 @@
       "https://dxpo.jp/college/back/ai-adoption-challenges.html",
       "https://hrnote.jp/contents/soshiki-ai-growth-240910/",
       "https://gaaaon.jp/blog/ai-adoption-pr-industry-survey-challenges"
+    ],
+    "learningObjective": "第2次AIブームの終焉理由を理解し、知識獲得のボトルネックを説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エキスパートシステムの限界と常識の教え方の混同",
+    "optionRationales": [
+      "誤り。AIの進化が期待外れであったが、資金減少は主な理由ではない。",
+      "誤り。エキスパートシステムの導入は進んだが、限界が露呈した。",
+      "正解。常識を教える難しさと知識管理の限界が露呈したから。",
+      "誤り。新技術の登場は影響したが、主な理由ではない。"
     ]
   },
   {
@@ -455,6 +518,15 @@
       "https://apps.apple.com/vn/app/g%E6%A4%9C%E5%AE%9A%E5%AE%8C%E5%85%A8%E5%95%8F%E9%A1%8C%E9%9B%86/id6761644222",
       "https://bizroad-svc.com/blog/gkentei-kakomon/",
       "https://coeteco.jp/articles/13146"
+    ],
+    "learningObjective": "AIの歴史における3つのブームとそれぞれの主要アプローチを理解できる",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "AIブームの技術的アプローチの混同",
+    "optionRationales": [
+      "誤り。第1次は探索・推論が主流であり、機械学習は後のブームである。",
+      "誤り。第1次は知識表現ではなく探索・推論が中心である。",
+      "正解。第1次は探索・推論、第2次は知識表現、第3次は機械学習・ディープラーニングである。",
+      "誤り。第3次はエキスパートシステムではなく機械学習が中心である。"
     ]
   },
   {
@@ -524,6 +596,15 @@
       "https://dc-okinawa.com/ailands/dartmouth-conference/",
       "https://scrapbox.io/hitorigakusai/%E3%83%80%E3%83%BC%E3%83%88%E3%83%9E%E3%82%B9%E4%BC%9A%E8%AD%B0",
       "https://choko-yoku.com/1517/"
+    ],
+    "learningObjective": "ダートマス会議が1956年に開催されAIという用語が初めて使われた歴史的経緯を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ダートマス会議が機械学習の技術発表会と誤解されること",
+    "optionRationales": [
+      "誤り。ダートマス会議は国際会議ではなく、AIの誕生を議論した会議である。",
+      "正解。1956年に開催され、「人工知能（Artificial Intelligence）」という言葉が初めて使われた歴史的な会議。",
+      "誤り。会議では人工知能の基礎理論が議論されたが、自然言語処理に特化してはいない。",
+      "誤り。ダートマス会議はAIの倫理的問題を扱うための会議ではなく、AIの基礎を築くためのものである。"
     ]
   },
   {
@@ -585,6 +666,15 @@
       "https://stem.bhcj.co.jp/column/ai%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD_%E9%81%8E%E5%8E%BB%E7%8F%BE%E5%9C%A8%E6%9C%AA%E6%9D%A5/",
       "https://business.nikkei.com/atcl/NBD/19/00150/033100079/",
       "https://aismiley.co.jp/ai_news/detailed-explanation-of-the-history-of-ai-and-artificial-intelligence/"
+    ],
+    "learningObjective": "人工知能の歴史における重要人物を理解し、彼らの貢献を説明できる。",
+    "cognitiveLevel": "recall",
+    "misconceptionTarget": null,
+    "optionRationales": [
+      "正解。ジョン・マッカーシーが提唱したから。",
+      "誤り。マービン・ミンスキーはAIの先駆者だが、言葉を提唱していない。",
+      "誤り。アラン・チューリングはチューリングテストを提案した人物。",
+      "誤り。ハーバート・サイモンはAIの研究に貢献したが、言葉を提唱していない。"
     ]
   },
   {
@@ -636,6 +726,15 @@
       "https://www.dlmc.jp/news/2016/0330_2.html",
       "https://www.taiho.co.jp/medical/product/qa/detail/index.html?_questionAnswerId=3435",
       "https://www.fsc.go.jp/fsciis/attachedFile/download?retrievalId=kai20050602sfc&fileId=106"
+    ],
+    "learningObjective": "MYCINの開発時期とその機能を理解し、エキスパートシステムの役割を説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "MYCINは単なるデータベースであり、医師の判断を完全に代替するシステムであるという誤解。",
+    "optionRationales": [
+      "誤り。1980年代ではなく1970年代に開発された。",
+      "正解。1970年代に開発されたエキスパートシステムである。",
+      "誤り。診断支援ツールではあるが、学習アプローチではない。",
+      "誤り。1980年代ではなく1970年代に開発された技術である。"
     ]
   },
   {
@@ -694,6 +793,15 @@
       "https://www.reddit.com/r/learnpython/comments/ezf478/binary_search_trees_nodes/?tl=ja",
       "https://e-words.jp/w/%E4%BA%8C%E5%88%86%E6%8E%A2%E7%B4%A2%E6%9C%A8.html",
       "https://zenn.dev/brainyblog/articles/data-structures-intro-binary-trees"
+    ],
+    "learningObjective": "探索木の定義とその構造を理解し、状態変化の表現方法を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "探索木は単にデータを格納するための構造であり、問題解決の過程を示すものではないと誤解されがちである。",
+    "optionRationales": [
+      "正解。問題の解に至るまでの状態の変化を木構造で表現したものだから。",
+      "誤り。データを整理する構造は別の技術であり、探索木の定義ではない。",
+      "誤り。特定の条件でデータを分類するのは別の学習アプローチである。",
+      "誤り。探索アルゴリズムの一部を示す木ではなく、状態変化を表現するもの。"
     ]
   },
   {
@@ -749,6 +857,15 @@
       "https://www.reddit.com/r/learnmachinelearning/comments/o18qfc/can_someone_please_explain_to_me_what_heuristic/?tl=ja",
       "https://event.shoeisha.jp/devboost/20211211/session/3549",
       "https://note.com/suga_yan/n/n4b96693adefb"
+    ],
+    "learningObjective": "ヒューリスティック探索の特徴と効率的な手法を理解し、正しい選択肢を選べる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ヒューリスティック探索の手法を全ての選択肢を均等に評価する方法と混同する",
+    "optionRationales": [
+      "正解。ヒューリスティック探索は経験則を用いて効率的に探索する手法だから。",
+      "誤り。ヒューリスティック探索は全ての選択肢を均等に評価しないため、誤解している。",
+      "誤り。無作為に選択肢を選ぶ方法ではなく、経験則に基づいて選ぶため誤解している。",
+      "誤り。ヒューリスティック探索は全ての選択肢を網羅するわけではないため、誤解している。"
     ]
   },
   {
@@ -802,6 +919,15 @@
       "https://qiita.com/persimmon-persimmon/items/48bf1b021c349d338f0f",
       "https://www.reddit.com/r/compsci/comments/1ba6elh/theres_no_way_astar_is_better_than_greedy_bfs_i/?tl=ja",
       "http://marupeke296.com/ALG_No6_ASter.html"
+    ],
+    "learningObjective": "A*アルゴリズムの基本的な仕組みを理解し、最短経路探索の方法を説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "スタート地点からの距離のみを考慮する誤解",
+    "optionRationales": [
+      "正解。スタート地点からの移動コストとゴールまでの推定コストを組み合わせているから。",
+      "誤り。スタート地点からの距離だけではなく、ゴールまでの推定コストも考慮する。",
+      "誤り。ゴール地点までの移動コストだけではなく、スタートからのコストも重要である。",
+      "誤り。経路を無視することはなく、スタートからゴールまでの経路を考慮している。"
     ]
   },
   {
@@ -857,6 +983,15 @@
       "https://qiita.com/kengo-sk8/items/148cf7c9cab32466e4f5",
       "https://a-x.inc/blog/ai-deep-learning/",
       "https://www.palantir.com/docs/jp/foundry/ontology/ontology-augmented-generation"
+    ],
+    "learningObjective": "オントロジーの定義とその重要性を理解し、知識表現の役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "オントロジーと単なるデータ整理の混同",
+    "optionRationales": [
+      "正解。オントロジーは知識を扱うための概念と関係性を定義するものだから。",
+      "誤り。情報整理の手法ではなく、知識の体系的定義が重要である。",
+      "誤り。データベース設計図とは異なり、知識の共有を目的とする。",
+      "誤り。視覚的表現ではなく、知識の体系的な定義がオントロジーの本質である。"
     ]
   },
   {
@@ -936,6 +1071,15 @@
       "https://note.com/baas_koshiki/n/n9f282bad288d",
       "https://www.technologyreview.jp/s/297440/the-economy-is-down-but-ai-is-hot-where-do-we-go-from-here/",
       "https://gigxit.co.jp/blog/blog-19883/"
+    ],
+    "learningObjective": "AI冬の時代の定義とその背景を理解し、歴史的な文脈を説明できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIの進展と停滞の混同",
+    "optionRationales": [
+      "正解。AI冬の時代は期待が過剰に高まり、資金が減少した時期だから。",
+      "誤り。研究が進展し続けた時期ではなく、停滞した時期である。",
+      "誤り。急速に発展した時代ではなく、むしろ停滞を示す。",
+      "誤り。関心が高まった時期ではなく、逆に低下した時期を指す。"
     ]
   },
   {
@@ -997,6 +1141,15 @@
       "https://ai999.careers/navi/2982/",
       "https://business.nikkei.com/atcl/gen/19/00461/102300259/",
       "https://www.letr.ai/ja/blog/story-20211001-1"
+    ],
+    "learningObjective": "2012年のILSVRCにおけるAlexNetの優勝がディープラーニングの影響を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AlexNetの優勝が注目されなかったという誤解",
+    "optionRationales": [
+      "正解。AlexNetが圧倒的な精度で優勝し、ディープラーニングの優位性を示したから。",
+      "誤り。他の手法が優位だったという事実はなく、AlexNetが圧勝した。",
+      "誤り。ILSVRCでの精度は従来手法を大幅に上回っていた。",
+      "誤り。AlexNetは優勝し、広く注目された出来事であった。"
     ]
   },
   {
@@ -1057,6 +1210,15 @@
       "https://special.nikkeibp.co.jp/atclh/ONB/25/google1121/",
       "https://www.reddit.com/r/MachineLearning/comments/42ymo8/the_computer_that_mastered_go_nature_video_on/?tl=ja",
       "https://www.brainpad.co.jp/doors/contents/01_tech_2018-04-05-163000/"
+    ],
+    "learningObjective": "AlphaGoの開発背景や技術的手法を理解し、囲碁におけるAIの影響を把握する。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIが囲碁以外のゲームにも対応しているという誤解を解消する。",
+    "optionRationales": [
+      "正解。AlphaGoはGoogleのDeepMindが開発した囲碁AIで、深層強化学習を用いて2016年に囲碁の世界チャンピオン（李世乭）を4勝1敗で破った。",
+      "誤り。AlphaGoはIBMが開発したAIではなく、囲碁に特化した技術を持つ。",
+      "誤り。DeepMindが開発したAlphaGoは囲碁に特化しており、チェスの名人には勝利していない。",
+      "誤り。AlphaGoは囲碁に特化したAIであり、他のゲームには対応していない。"
     ]
   },
   {
@@ -1109,6 +1271,15 @@
       "https://orgchemical.seesaa.net/article/167756519.html",
       "https://www.sbbit.jp/article/cont1/41484",
       "https://www.jstage.jst.go.jp/article/essfr/16/4/16_247/_pdf"
+    ],
+    "learningObjective": "探索における組み合わせ爆発の概念を理解し、その影響を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "状態空間の増加と計算の容易さの混同",
+    "optionRationales": [
+      "誤り。状態空間が小さくなると計算が容易になるが、組み合わせ爆発とは逆の現象。",
+      "誤り。状態数が一定に保たれる状況は組み合わせ爆発とは関係がない。",
+      "正解。状態空間が大きくなると考慮すべき状態数が指数関数的に増大するため、計算が困難になる。",
+      "誤り。状態数が線形に増加することは組み合わせ爆発の定義に反する。"
     ]
   },
   {
@@ -1157,6 +1328,15 @@
       "https://gkentei.techblog.jp/archives/24472821.html",
       "https://jp.linkedin.com/pulse/architecting-gen-ai-knowledge-acquisition-bottleneck-jack-brzezinski-yarkc?tl=ja",
       "https://qiita.com/kengo-sk8/items/148cf7c9cab32466e4f5"
+    ],
+    "learningObjective": "エキスパートシステムにおける知識獲得のボトルネックの理解を深める。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "専門家の知識が常に明示化されているという誤解",
+    "optionRationales": [
+      "誤り。専門家の知識はしばしば暗黙的で、明示化が難しい。",
+      "誤り。エキスパートシステムは常に正確ではなく、限界がある。",
+      "誤り。知識獲得には専門家の協力が不可欠で、自動化は難しい。",
+      "正解。専門家からの知識のヒアリングや管理が困難であるため。"
     ]
   },
   {
@@ -1220,6 +1400,15 @@
       "https://codezine.jp/article/detail/12070",
       "https://xtech.nikkei.com/it/atcl/column/17/011600006/011600001/",
       "https://ex-ture.com/blog/2026/02/17/what-is-deep-learning/"
+    ],
+    "learningObjective": "第3次AIブームにおけるディープラーニングの重要な出来事を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ディープラーニングの進化は単なる技術的な改善に過ぎず、特定のアルゴリズムや手法の優劣だけが重要であると誤解されがちである。",
+    "optionRationales": [
+      "誤り。SVMは重要な技術だが、ディープラーニングの注目には直接関係しない。",
+      "誤り。AlphaGoの成功は重要だが、ディープラーニングの注目を集めたのはILSVRCでの成功である。",
+      "誤り。GoogLeNetの優勝は影響があるが、ディープラーニングの注目を集めたのはAlexNetの成功である。",
+      "正解。2012年のILSVRCでのAlexNetの優勝がディープラーニングの注目を集めた決定的な出来事である。"
     ]
   },
   {
@@ -1263,6 +1452,15 @@
       "https://ja.wikipedia.org/wiki/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%AE%E6%AD%B4%E5%8F%B2",
       "https://www.tryeting.jp/column/1279/",
       "https://speakerdeck.com/2hz9qeedd/sirizuairu-men-5-di-1ci-aibumu-tan-suo"
+    ],
+    "learningObjective": "組み合わせ爆発の概念を理解し、AIの探索・推論における影響を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "組み合わせ爆発の原因を単純な計算能力の不足と誤解すること。",
+    "optionRationales": [
+      "誤り。無関係な情報の増加は組み合わせ爆発の原因ではない。",
+      "誤り。問題の複雑さは影響するが、組み合わせ爆発の本質ではない。",
+      "誤り。選択肢の多さは影響するが、根本的な理由ではない。",
+      "正解。手を進めるごとに状態数が指数関数的に増加するため。"
     ]
   },
   {
@@ -1315,6 +1513,15 @@
       "https://wired.jp/2012/10/03/deep-blue-computer-bug/",
       "https://www.reddit.com/r/movies/comments/19dwm7x/i_recently_finished_reading_the_screenplay_to/?tl=ja",
       "https://www.reddit.com/r/ARK/comments/1qdllwb/size_comparison_between_ark_megalodon_165_meters/?tl=ja"
+    ],
+    "learningObjective": "Deep Blueの役割と歴史的意義を理解し、AIの進化を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIとロボットの混同や、教育用ソフトとの誤解",
+    "optionRationales": [
+      "誤り。Deep Blueは音声AIではなく、チェス専用のAIである。",
+      "誤り。Deep Blueは1995年に初対局したが、1997年にGarry Kasparovを破った。",
+      "誤り。Deep BlueはAIであり、教育用ソフトではない。",
+      "正解。Deep Blueは1997年にGarry Kasparovを破ったIBMのチェスAIである。"
     ]
   },
   {
@@ -1366,6 +1573,15 @@
       "https://www.recruit-ms.co.jp/issue/feature/0000000624/",
       "https://mba.globis.ac.jp/careernote/1006.html",
       "https://quizlet.com/jp/789547805/%E6%84%8F%E6%80%9D%E6%B1%BA%E5%AE%9A%E8%AB%96b-2023-flash-cards/"
+    ],
+    "learningObjective": "IF-THENルールの知識表現方法を理解し、エキスパートシステムでの役割を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "IF-THENルールと条件付き行動の混同",
+    "optionRationales": [
+      "正解。「もし〜であれば〜する」という形式で知識を表現する方法だから。",
+      "誤り。条件が成立した場合の行動を示すが、形式を説明していない。",
+      "誤り。数式での表現ではなく、条件と行動の形式である。",
+      "誤り。特定の状況の選択肢を示すが、アルゴリズムではない。"
     ]
   },
   {
@@ -1420,6 +1636,15 @@
       "https://ncdc.co.jp/columns/9833/",
       "https://www.incubit.co.jp/blog/6462",
       "https://www.reddit.com/r/MachineLearning/comments/2lmo0l/ama_geoffrey_hinton/?tl=ja"
+    ],
+    "learningObjective": "ディープラーニング以前の機械学習の課題を理解し、特徴量エンジニアリングの重要性を説明できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "ディープラーニングの自動特徴抽出機能を過信し、従来の機械学習における手動特徴量設計の重要性を軽視する誤解がある。",
+    "optionRationales": [
+      "誤り。データの前処理は重要だが、特徴量エンジニアリングがより大きな課題。",
+      "誤り。計算リソースの不足は問題だが、特徴量設計が最も重要な課題。",
+      "正解。特徴量エンジニアリングは人間の知識が必要で、非常に困難な作業だった。",
+      "誤り。モデルの解釈性は重要だが、特徴量エンジニアリングが主な課題である。"
     ]
   },
   {
@@ -1483,6 +1708,15 @@
       "https://qiita.com/pandausa/items/e4ea1d9c1cb42f75c55b",
       "https://www.jdla.org/g-qa/",
       "https://coeteco.jp/articles/13146"
+    ],
+    "learningObjective": "AIブームの終焉理由を理解し、各ブームの特徴を比較できるようになる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "AIブームの終焉理由を誤解し、単一の要因に帰結させることがある。",
+    "optionRationales": [
+      "誤り。第1次AIブームはトイ・プロブレムの限界が主な理由であり、データ不足は第2次AIブームの問題ではない。",
+      "誤り。第1次AIブームは技術革新の停滞ではなく、実用化の難しさが影響した。資金不足は第2次AIブームの要因ではあるが、主な理由ではない。",
+      "誤り。第1次AIブームは期待値の過大評価が影響したが、専門家の意見の不一致は主な要因ではない。",
+      "正解。第1次AIブームはトイ・プロブレムの限界があり、現実の問題に対処できなかった。第2次AIブームは知識獲得のボトルネックが影響した。"
     ]
   },
   {
@@ -1546,6 +1780,15 @@
       "https://note.com/vast_cosmos500/n/nd2f39b11df6d",
       "https://note.com/it_kingkong/n/n424d7a7abbcb",
       "https://www.jdla.org/certificate/general/"
+    ],
+    "learningObjective": "第3次AIブームの特徴として、データから自動学習する能力を理解できる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIは専門家の知識を必要としないため、全ての問題に対して自動的に解決策を見出すことができるという誤解。",
+    "optionRationales": [
+      "誤り。ルールベースの推論は過去の技術であり、現在の特徴ではない。",
+      "誤り。データを用いた学習は重要だが、自動学習の特徴ではない。",
+      "誤り。人間の感情理解はAIの進展の一部だが、主な特徴ではない。",
+      "正解。データから自動学習することで、専門家の知識なしに問題解決が可能になった。"
     ]
   },
   {
@@ -1604,6 +1847,15 @@
       "https://ja.wikipedia.org/wiki/%E5%A4%A7%E8%A6%8F%E6%A8%A1%E8%A8%80%E8%AA%9E%E3%83%A2%E3%83%87%E3%83%AB",
       "https://ainow.ai/2017/12/28/130518/",
       "https://japan.cnet.com/article/35093996/"
+    ],
+    "learningObjective": "生成AIの歴史的背景を理解し、重要な出来事を特定できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "生成AIの発展には多くの要因があるが、特にTransformerアーキテクチャの重要性を理解していない場合がある。",
+    "optionRationales": [
+      "正解。2017年に発表されたTransformerアーキテクチャは、生成AIの発展において基盤となる技術です。",
+      "誤り。2000年代初頭のAIブームは生成AIの発展に寄与したが、直接的な技術的進展ではない。",
+      "誤り。2019年のGPT-2のリリースは重要だが、生成AIの基盤は2017年のTransformerにあります。",
+      "誤り。深層学習の進化は影響を与えたが、生成AIの登場にはTransformerが決定的です。"
     ]
   },
   {
@@ -1679,6 +1931,15 @@
       "https://cn.teldevice.co.jp/column/38266/",
       "https://sojo.yamanashi.ac.jp/bul/final07/takagi/index.html",
       "http://www.is.utsunomiya-u.ac.jp/pearlab/ja/18/gpu/"
+    ],
+    "learningObjective": "第2次AIブームから第3次AIブームへの移行に寄与した技術を理解できる",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "エキスパートシステムと機械学習の違いを混同している",
+    "optionRationales": [
+      "誤り。エキスパートシステムは第2次AIブームの中心であり、移行には直接関与しない。",
+      "誤り。新たな研究資金の流入は重要だが、技術的進展が主な要因である。",
+      "正解。機械学習とニューラルネットワークの復活、ビッグデータ、GPUの向上が影響したから。",
+      "誤り。自然言語処理技術の発展は重要だが、移行の主因ではない。"
     ]
   },
   {
@@ -1740,6 +2001,15 @@
       "https://kimini.online/blog/archives/80663",
       "https://note.com/takumi_gpt/n/n19d3236e4a5f",
       "https://aipicks.net/ai/boom-1980-1987"
+    ],
+    "learningObjective": "AIの3つのブームを時系列で理解し、主要な技術を説明できるようになる。",
+    "cognitiveLevel": "understand",
+    "misconceptionTarget": "AIブームの時系列を混同しやすい。特に第1次と第2次の技術の違いを理解することが重要。",
+    "optionRationales": [
+      "誤り。第1次AIブームは1950-60年代の探索・推論であり、2010年代は第3次に該当する。",
+      "誤り。第2次AIブームは1980年代のエキスパートシステムであり、1950-60年代は第1次に該当する。",
+      "正解。第1次（1950-60年代：探索・推論）→ 第2次（1980年代：知識表現・エキスパートシステム）→ 第3次（2010年代〜：機械学習・ディープラーニング）という正しい時系列。",
+      "誤り。第1次は1950-60年代であり、2010年代は第3次に該当する。"
     ]
   }
 ]
