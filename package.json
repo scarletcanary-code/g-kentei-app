@@ -9,6 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "validate:questions": "node scripts/validate-questions.mjs",
+    "validate:questions:strict": "node scripts/validate-questions.mjs --strict",
+    "audit:questions": "node scripts/audit-questions.mjs",
     "quiz:template": "node scripts/generate-question-template.mjs"
   },
   "dependencies": {

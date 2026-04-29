@@ -16,4 +16,11 @@ export interface Question {
   tags: string[];
   source_ref?: string;
   source_ref_supplements?: string[];
+  syllabusArea?: string;
+  syllabusTopic?: string;
+  learningObjective?: string;
+  cognitiveLevel?: 'recall' | 'understand' | 'apply' | 'compare';
+  misconceptionTarget?: string;
+  optionRationales?: string[];
+  qualityFlags?: string[];
 }

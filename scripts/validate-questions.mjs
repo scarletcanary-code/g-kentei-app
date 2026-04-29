@@ -243,10 +243,181 @@ for (const q of allQuestions) {
   }
 }
 
+const isStrict = process.argv.includes('--strict');
+let warnCount = 0;
+
+// V13: source_ref 必須（undefined または空文字の場合のみ発火。1〜4 文字は V5 のみ）
+for (const q of allQuestions) {
+  const ref = q.source_ref;
+  if (ref === undefined || ref === '') {
+    if (isStrict) {
+      process.stderr.write(`[FAIL V13] ${q.id}: source_ref が未設定\n`);
+      failCount++;
+    } else {
+      process.stdout.write(`[WARN V13] ${q.id}: source_ref が未設定\n`);
+      warnCount++;
+    }
+  }
+}
+
+// V14: learningObjective 必須
+for (const q of allQuestions) {
+  if (!q.learningObjective) {
+    if (isStrict) {
+      process.stderr.write(`[FAIL V14] ${q.id}: learningObjective が未設定\n`);
+      failCount++;
+    } else {
+      process.stdout.write(`[WARN V14] ${q.id}: learningObjective が未設定\n`);
+      warnCount++;
+    }
+  }
+}
+
+// V15: optionRationales が choices と同じ長さ
+for (const q of allQuestions) {
+  if (q.optionRationales !== undefined) {
+    if (q.optionRationales.length !== q.choices.length) {
+      const n = q.optionRationales.length;
+      const m = q.choices.length;
+      process.stderr.write(`[FAIL V15] ${q.id}: optionRationales の長さ (${n}) が choices (${m}) と不一致\n`);
+      failCount++;
+    }
+  } else {
+    if (isStrict) {
+      process.stderr.write(`[FAIL V15] ${q.id}: optionRationales が未設定\n`);
+      failCount++;
+    } else {
+      process.stdout.write(`[WARN V15] ${q.id}: optionRationales が未設定\n`);
+      warnCount++;
+    }
+  }
+}
+
+// V16: misconceptionTarget 必須（recall 以外）
+for (const q of allQuestions) {
+  if (q.cognitiveLevel && q.cognitiveLevel !== 'recall') {
+    if (!q.misconceptionTarget) {
+      if (isStrict) {
+        process.stderr.write(`[FAIL V16] ${q.id}: misconceptionTarget が未設定 (cognitiveLevel=${q.cognitiveLevel})\n`);
+        failCount++;
+      } else {
+        process.stdout.write(`[WARN V16] ${q.id}: misconceptionTarget が未設定 (cognitiveLevel=${q.cognitiveLevel})\n`);
+        warnCount++;
+      }
+    }
+  }
+}
+
+// V17: cognitiveLevel 分布
+{
+  const clCounts = { recall: 0, understand: 0, apply: 0, compare: 0 };
+  const clTotal = allQuestions.filter(q => q.cognitiveLevel).length;
+  for (const q of allQuestions) {
+    if (q.cognitiveLevel && clCounts[q.cognitiveLevel] !== undefined) {
+      clCounts[q.cognitiveLevel]++;
+    }
+  }
+  if (clTotal >= 10) {
+    if (clCounts.recall / clTotal > 0.30) {
+      const pct = (clCounts.recall / clTotal * 100).toFixed(1);
+      process.stdout.write(`[WARN V17] cognitiveLevel分布: recall=${pct}% (目標: ≤30%)\n`);
+      warnCount++;
+    }
+    if (clCounts.understand / clTotal < 0.40) {
+      const pct = (clCounts.understand / clTotal * 100).toFixed(1);
+      process.stdout.write(`[WARN V17] cognitiveLevel分布: understand=${pct}% (目標: ≥40%)\n`);
+      warnCount++;
+    }
+    if (clCounts.compare / clTotal < 0.20) {
+      const pct = (clCounts.compare / clTotal * 100).toFixed(1);
+      process.stdout.write(`[WARN V17] cognitiveLevel分布: compare=${pct}% (目標: ≥20%)\n`);
+      warnCount++;
+    }
+    if (clCounts.apply / clTotal < 0.10) {
+      const pct = (clCounts.apply / clTotal * 100).toFixed(1);
+      process.stdout.write(`[WARN V17] cognitiveLevel分布: apply=${pct}% (目標: ≥10%)\n`);
+      warnCount++;
+    }
+  }
+}
+
+// V18: 同一 learningObjective の重複過多
+{
+  const loMap = {};
+  for (const q of allQuestions) {
+    if (q.learningObjective) {
+      loMap[q.learningObjective] = (loMap[q.learningObjective] || 0) + 1;
+    }
+  }
+  for (const [lo, count] of Object.entries(loMap)) {
+    if (count > 5) {
+      process.stdout.write(`[WARN V18] learningObjective "${lo}" が ${count} 問に重複\n`);
+      warnCount++;
+    }
+  }
+}
+
+// V19: 正答選択肢の専門語密度スキュー
+function calcSpecialityDensity(text) {
+  const katakana = (text.match(/[ァ-ヶー]{3,}/g) || []).join('').length;
+  const ascii = (text.match(/[A-Za-z]{2,}/g) || []).join('').length;
+  const numeric = (text.match(/[0-9]+/g) || []).join('').length;
+  const brackets = (text.match(/（[^）]*）/g) || []).join('').length;
+  const total = text.length;
+  if (total === 0) return 0;
+  return (katakana + ascii + numeric + brackets) / total;
+}
+for (const q of allQuestions) {
+  if (!Array.isArray(q.choices) || q.correctIndex === undefined) continue;
+  const correctText = (q.choices[q.correctIndex] || {}).text || '';
+  const wrongTexts = q.choices
+    .filter((_, i) => i !== q.correctIndex)
+    .map(c => c.text || '');
+  if (wrongTexts.length === 0) continue;
+  const correctDensity = calcSpecialityDensity(correctText);
+  const avgWrongDensity = wrongTexts.reduce((s, t) => s + calcSpecialityDensity(t), 0) / wrongTexts.length;
+  if (correctDensity > avgWrongDensity * 1.5 && correctDensity > 0.15) {
+    process.stdout.write(`[WARN V19] ${q.id}: 正答の専門語密度 ${correctDensity.toFixed(2)} が誤答平均 ${avgWrongDensity.toFixed(2)} の 1.5 倍超\n`);
+    warnCount++;
+  }
+}
+
+// V20: 用語定義型問題の比率
+{
+  const defPattern = /[^\s]{1,20}(とは|とはなにか|とは何か|の説明として正しい|の定義として正しい|について正しく説明している)/;
+  const defCount = allQuestions.filter(q => defPattern.test(q.question)).length;
+  const total = allQuestions.length;
+  const ratio = defCount / total;
+  if (ratio > 0.30) {
+    const pct = (ratio * 100).toFixed(1);
+    process.stdout.write(`[WARN V20] 用語定義型問題が ${pct}% (${defCount}/${total}問) → 目標: ≤30%\n`);
+    warnCount++;
+  }
+}
+
+// V21: 絶対表現を含む選択肢の存在
+const absPattern = /すべて|必ず|完全に|のみ[^を]|一切(?!の)/;
+for (const q of allQuestions) {
+  if (!Array.isArray(q.choices)) continue;
+  for (const c of q.choices) {
+    const text = c.text || '';
+    if (absPattern.test(text)) {
+      const preview = text.slice(0, 30);
+      process.stdout.write(`[WARN V21] ${q.id}: 絶対表現を含む選択肢 "${preview}"\n`);
+      warnCount++;
+      break;
+    }
+  }
+}
+
 if (failCount > 0) {
   process.exit(1);
 } else {
   const totalQ = allQuestions.length;
-  process.stdout.write(`All checks passed. (${totalQ} questions validated)\n`);
+  if (warnCount > 0) {
+    process.stdout.write(`All checks passed with ${warnCount} warnings. (${totalQ} questions validated)\n`);
+  } else {
+    process.stdout.write(`All checks passed. (${totalQ} questions validated)\n`);
+  }
   process.exit(0);
 }
