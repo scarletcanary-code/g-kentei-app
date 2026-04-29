@@ -1376,23 +1376,23 @@
   {
     "id": "ch3-023",
     "categoryId": "ch3",
-    "question": "混同行列（Confusion Matrix）において、偽陽性（FP：False Positive）とは何か。",
+    "question": "偽陽性（FP）と偽陰性（FN）それぞれの影響が特に問題となるユースケースの組み合わせとして正しいものはどれか。",
     "choices": [
       {
-        "text": "実際にNegativeであるのに、モデルがPositiveと予測した件数"
+        "text": "FPが問題: 詐欺検出（正常取引を誤ってブロック）、FNが問題: スパムフィルタ（スパムを見逃す）"
       },
       {
-        "text": "実際にPositiveであるのに、モデルがNegativeと予測した件数"
+        "text": "FPが問題: スパムフィルタ（正常メールをスパム誤判定）、FNが問題: がん診断（患者を陰性誤判定）"
       },
       {
-        "text": "モデルがPositiveと予測した件数のうち、実際にPositiveであった件数"
+        "text": "FPが問題: がん診断（患者を陽性誤判定）、FNが問題: 詐欺検出（不正取引を見逃す）"
       },
       {
-        "text": "実際にNegativeであるのに、モデルがPositiveと判断した割合"
+        "text": "FPとFNはどちらも等価なコストを持つため、ユースケースによる優先度の差はない"
       }
     ],
-    "correctIndex": 0,
-    "explanation": "偽陽性（FP）は「実際はNegativeなのにPositiveと誤検出した件数」を指す。スパムフィルタの例では、正常メールをスパムと誤判定するケース。適合率（Precision）はFPを減らすことを意識した指標で、Precision = TP / (TP + FP)。",
+    "correctIndex": 1,
+    "explanation": "スパムフィルタではFP（正常メールをスパムと誤判定）が問題で適合率（Precision）が重要。がん診断ではFN（患者を陰性と誤判定）が問題で再現率（Recall）が重要。FPとFNのどちらを最小化すべきかはユースケースのコスト構造による。",
     "relatedTermIds": [
       "confusion_matrix",
       "false_positive"
@@ -1426,14 +1426,17 @@
       "https://mathlandscape.com/confusion-matrix/",
       "https://qiita.com/wagasa2/items/0603b70a155c742c7849"
     ],
-    "learningObjective": "混同行列における偽陽性の定義を理解し、実際の例を説明できる。",
-    "cognitiveLevel": "recall",
-    "misconceptionTarget": null,
+    "learningObjective": "FP（偽陽性）とFN（偽陰性）がそれぞれどのユースケースで重大なコストをもたらすかを比較し、適合率と再現率のトレードオフを説明できる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "FPとFNを混同すること、および適合率（Precision）と再現率（Recall）のどちらがFP/FNの削減に対応するかの混同。",
     "optionRationales": [
-      "正解。実際にNegativeであるのに、モデルがPositiveと予測した件数だから。",
-      "誤り。実際にPositiveであるのに、モデルがNegativeと予測した件数が正しい。",
-      "誤り。モデルがPositiveと予測した件数のうち、実際にPositiveであった件数が正しい。",
-      "誤り。実際にNegativeであるのに、モデルがPositiveと判断した割合が正しい。"
+      "誤り。詐欺検出でFPが問題は合っているが、スパムフィルタのFNを問題視する記述がユースケースと逆になっている。",
+      "正解。スパムフィルタはFP（正常メール誤判定）が問題で適合率重視、がん診断はFN（患者の見落とし）が問題で再現率重視だから。",
+      "誤り。がん診断ではFN（患者を見落とす）が問題であり、FP（過剰検出）より深刻なのが一般的な評価と逆になっている。",
+      "誤り。FPとFNのコストはユースケースによって大きく異なり、等価という前提は誤りである。"
+    ],
+    "qualityFlags": [
+      "rewritten_in_0032b_pilot"
     ]
   },
   {

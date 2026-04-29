@@ -1822,23 +1822,23 @@
   {
     "id": "ch8-030",
     "categoryId": "ch8",
-    "question": "AI公平性（Fairness）の評価指標のうち「人口統計学的均等性（Demographic Parity）」の説明として正しいものはどれか。",
+    "question": "人口統計学的均等性（Demographic Parity）と均等オッズ（Equalized Odds）の違いとして正しいものはどれか。",
     "choices": [
       {
-        "text": "異なる属性を持つグループ間で、全体の合格率が同じになることを指す手法であるという技術"
+        "text": "Demographic Parityはグループ間のポジティブ予測率を均等にし、Equalized Oddsは真陽性率と偽陽性率の両方をグループ間で均等にする"
       },
       {
-        "text": "特定の属性に基づいて、全体の評価スコアが均等になることを示す指標であるという学習アプローチ"
+        "text": "Equalized Oddsはグループ間のポジティブ予測率を均等にし、Demographic Parityは真陽性率と偽陽性率の両方をグループ間で均等にする"
       },
       {
-        "text": "異なる文化的背景を持つ集団間で、教育の機会が平等であることを示すものであるという"
+        "text": "Demographic ParityとEqualized Oddsは同一の基準で、測定対象が異なるだけで実質的に同等の制約を課す"
       },
       {
-        "text": "保護属性（性別・人種など）が異なるグループ間で、ポジティブな予測結果（採用・融資承認など）の割合が等しくなること"
+        "text": "Equalized Oddsは個人レベルの公平性を保証し、Demographic Parityはグループ間の統計的格差を解消する基準である"
       }
     ],
-    "correctIndex": 3,
-    "explanation": "人口統計学的均等性（Demographic Parity）は、AI公平性の評価指標の一つ。性別・人種などの保護属性が異なるグループ間でポジティブな予測割合（採用率・融資承認率など）を等しくすることを求める基準。ただし公平性の定義は複数（均等オッズ、個人公平性など）あり、相互に矛盾する場合があることも知られており（公平性の不可能定理）、実務での適用には文脈依存の判断が必要。",
+    "correctIndex": 0,
+    "explanation": "Demographic Parityはグループ（性別・人種等）間のポジティブな予測結果（採用・融資承認等）の割合を均等にする基準。Equalized Oddsはグループ間で真陽性率（TPR）と偽陽性率（FPR）の両方を均等にするより厳しい基準。両指標は同時に満たせない場合があり（公平性の不可能定理）、実務では文脈に応じて選択する。",
     "relatedTermIds": [
       "fairness"
     ],
@@ -1875,14 +1875,17 @@
       "https://minato.sip21c.org/demography/index.html",
       "https://data.wingarc.com/male-female-ratio-27547"
     ],
-    "learningObjective": "AI公平性における人口統計学的均等性の定義とその重要性を理解する。",
-    "cognitiveLevel": "recall",
-    "misconceptionTarget": "人口統計学的均等性は単に合格率の均等を意味するのではなく、ポジティブな予測結果の割合が等しいことを指す。",
+    "learningObjective": "AI公平性の評価指標であるDemographic ParityとEqualized Oddsの定義上の違いを比較し、それぞれが要求する条件の違いを説明できる。",
+    "cognitiveLevel": "compare",
+    "misconceptionTarget": "Demographic ParityとEqualized Oddsの定義を逆に覚えること、個人公平性とグループ公平性の混同。",
     "optionRationales": [
-      "正解。保護属性が異なるグループ間で、ポジティブな予測結果の割合が等しくなることを示す。",
-      "誤り。全体の評価スコアが均等になることは人口統計学的均等性の定義ではない。",
-      "誤り。教育の機会が平等であることは人口統計学的均等性の説明ではない。",
-      "誤り。異なる属性を持つグループ間で合格率が同じになることは人口統計学的均等性の一部ではあるが、正確な定義ではない。"
+      "正解。Demographic Parityはポジティブ予測率の均等化、Equalized OddsはTPRとFPRの両方の均等化を要求する正確な違いだから。",
+      "誤り。DemographicParityとEqualized Oddsの定義が逆になっており、各指標が要求する条件を混同している。",
+      "誤り。両指標は異なる条件を課す別の基準であり、同時に満たせない場合もあるため同一ではない。",
+      "誤り。Equalized Oddsは個人レベルではなくグループレベルの公平性指標であり、Individual Fairnessと混同している。"
+    ],
+    "qualityFlags": [
+      "rewritten_in_0032b_pilot"
     ]
   }
 ]

@@ -378,23 +378,23 @@
   {
     "id": "ch1-007",
     "categoryId": "ch1",
-    "question": "「強いAI」の定義として正しいものはどれか。",
+    "question": "現在のChatGPT等の生成AIが「弱いAI」と分類される理由として正しいものはどれか。",
     "choices": [
       {
-        "text": "特定のタスクをこなすAIとして位置づけられる技術"
+        "text": "特定のタスクに特化した能力しか持たず、汎用的な自律思考・意識を持たないから"
       },
       {
-        "text": "人間に似た「心」や「意識」を持ち、自律的に思考できるとされるAI"
+        "text": "学習データが少なすぎて、多様なタスクへの対応に必要な知識量が不足しているから"
       },
       {
-        "text": "人間の知能を模倣するAIという学習アプローチ"
+        "text": "計算能力が不足しているため、人間の脳に相当する処理速度を実現できないから"
       },
       {
-        "text": "感情を持たないAIシステムであるアルゴリズム"
+        "text": "強化学習を使っておらず、自律的に新しいタスクを設定して学習する機構がないから"
       }
     ],
-    "correctIndex": 1,
-    "explanation": "強いAI（Strong AI）とは、人間に似た「心」や「意識」を持ち、自律的に思考するAIのことを指す。一方、弱いAI（Weak AI）は特定の知的作業を「模倣」するだけの道具としてのAIであり、現在実用化されているAIの大半は弱いAIに該当する。",
+    "correctIndex": 0,
+    "explanation": "弱いAIとは特定の知的作業を「模倣」するだけの道具的AIであり、自律的な思考・意識・汎用性を持たない。ChatGPT等は高度な言語処理ができる一方、汎用的な自律思考は持たず弱いAIに分類される。強いAIは人間に似た意識・自律的思考を持つ仮説上のAIであり、現在実現されていない。",
     "relatedTermIds": [
       "strong_ai",
       "weak_ai"
@@ -423,14 +423,17 @@
       "https://www.jstage.jst.go.jp/article/jjdp/19/1/19_KJ00004920001/_pdf/-char/ja",
       "https://www.reddit.com/r/ArtificialInteligence/comments/1qar7qk/hot_take_ai_wont_replace_many_thinking_jobs_at/?tl=ja"
     ],
-    "learningObjective": "強いAIの定義を理解し、弱いAIとの違いを説明できるようになる。",
+    "learningObjective": "強いAIと弱いAIの区別を理解し、現在の生成AI技術が弱いAIに分類される根拠を説明できる。",
     "cognitiveLevel": "understand",
-    "misconceptionTarget": "強いAIと弱いAIの違いを混同することがある。",
+    "misconceptionTarget": "高性能・多機能であれば強いAIだという混同、および学習データ量や計算能力の問題と弱いAIの概念的定義の混同。",
     "optionRationales": [
-      "誤り。特定のタスクをこなすAIは弱いAIに該当する。",
-      "正解。強いAIは人間に似た心や意識を持つとされる。",
-      "誤り。人間の知能を模倣するのは弱いAIの特徴である。",
-      "誤り。感情を持たないAIは弱いAIの一部であり、強いAIではない。"
+      "正解。弱いAIの本質は特定タスク特化・汎用自律思考なしであり、生成AIはこの特徴を持つから。",
+      "誤り。学習データ量は技術的な制約の話であり、弱いAIの概念的定義とは別の問題を混同している。",
+      "誤り。計算能力の不足は弱いAIの概念的定義とは無関係で、ハードウェア制約と混同している。",
+      "誤り。強化学習の有無は弱いAIの本質的定義ではなく、学習手法と弱いAIの区別を混同している。"
+    ],
+    "qualityFlags": [
+      "rewritten_in_0032b_pilot"
     ]
   },
   {
