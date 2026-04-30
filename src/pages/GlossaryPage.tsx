@@ -15,6 +15,7 @@ type Tier = 'beginner' | 'intermediate' | 'advanced';
 export default function GlossaryPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const termParam = searchParams.get('term') ?? '';
+  const tierParam = searchParams.get('tier');
 
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>('all');
@@ -29,6 +30,18 @@ export default function GlossaryPage() {
       localStorage.removeItem('g-kentei-learn-easy-mode');
     }
   }, []);
+
+  // URL クエリ ?tier= から永続化 tier を上書き
+  useEffect(() => {
+    if (
+      tierParam === 'beginner' ||
+      tierParam === 'intermediate' ||
+      tierParam === 'advanced'
+    ) {
+      setTier(tierParam);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tierParam]);
 
   const highlightTermId = termParam || undefined;
 
