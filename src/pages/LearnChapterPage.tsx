@@ -1,4 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { ALL_LEARN_CHAPTERS } from '../data/learn';
 import { ALL_QUESTIONS } from '../data/questions';
 import termsData from '../data/glossary/terms.json';
@@ -14,6 +15,8 @@ const difficultyLabel: Record<string, string> = {
   advanced: '応用',
 };
 
+type Tier = 'beginner' | 'intermediate' | 'advanced';
+
 export default function LearnChapterPage() {
   const { categoryId } = useParams<{ categoryId: string }>();
 
@@ -26,7 +29,72 @@ export default function LearnChapterPage() {
     localStorage.removeItem('learn-easy-mode');
   }
 
-  const [tier, setTier] = usePersistedState<'beginner' | 'intermediate' | 'advanced'>('learn-tier-v1', 'advanced');
+  // usePersistedState は動的キー未対応のため参照維持のみ（マイグレーション基準として保持）
+  const [, ] = usePersistedState<Tier>('learn-tier-v1', 'advanced');
+
+  // セクション単位の tier 管理（章ごとに localStorage キーが異なるため useState + useEffect で実装）
+  const sectionTierStorageKey = `learn-section-tier-v1-${categoryId}`;
+
+  const [sectionTiers, setSectionTiers] = useState<Record<number, Tier>>(() => {
+    if (typeof window === 'undefined') return {};
+    const stored = localStorage.getItem(sectionTierStorageKey);
+    if (stored !== null) {
+      try {
+        return JSON.parse(stored) as Record<number, Tier>;
+      } catch {
+        return {};
+      }
+    }
+    // マイグレーション: learn-section-tier-v1-${categoryId} が未設定の場合、
+    // g-kentei-learn-tier-v1（usePersistedState が書き込むキー）か learn-tier-v1 を defaultTier として使用する
+    const legacyRaw =
+      localStorage.getItem('g-kentei-learn-tier-v1') ??
+      localStorage.getItem('learn-tier-v1');
+    const isValidTier = (v: string | null): v is Tier =>
+      v === 'beginner' || v === 'intermediate' || v === 'advanced';
+    const defaultTier: Tier = isValidTier(legacyRaw) ? legacyRaw : 'advanced';
+    // セクション数が不明なためデフォルト値の Record は空のまま返し、
+    // defaultTier を sectionTiers[idx] ?? defaultTier で参照する
+    return { _default: defaultTier } as unknown as Record<number, Tier>;
+  });
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    localStorage.setItem(sectionTierStorageKey, JSON.stringify(sectionTiers));
+  }, [sectionTierStorageKey, sectionTiers]);
+
+  // categoryId が変わったとき（章ナビゲーション）に新しい章の保存値を読み込む
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const stored = localStorage.getItem(sectionTierStorageKey);
+    if (stored !== null) {
+      try {
+        setSectionTiers(JSON.parse(stored) as Record<number, Tier>);
+        return;
+      } catch {
+        // fall through to migration
+      }
+    }
+    const legacyRaw =
+      localStorage.getItem('g-kentei-learn-tier-v1') ??
+      localStorage.getItem('learn-tier-v1');
+    const isValidTier = (v: string | null): v is Tier =>
+      v === 'beginner' || v === 'intermediate' || v === 'advanced';
+    const defaultTier: Tier = isValidTier(legacyRaw) ? legacyRaw : 'advanced';
+    setSectionTiers({ _default: defaultTier } as unknown as Record<number, Tier>);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoryId]);
+
+  // sectionTiers に数値キーが存在しない場合の fallback tier
+  const _defaultTierEntry = (sectionTiers as unknown as Record<string, Tier>)['_default'];
+  const defaultTier: Tier =
+    _defaultTierEntry === 'beginner' || _defaultTierEntry === 'intermediate' || _defaultTierEntry === 'advanced'
+      ? _defaultTierEntry
+      : 'advanced';
+
+  const setSectionTier = (idx: number, tier: Tier) => {
+    setSectionTiers((prev) => ({ ...prev, [idx]: tier }));
+  };
 
   const chapter = ALL_LEARN_CHAPTERS.find((c) => c.categoryId === categoryId);
 
@@ -94,35 +162,6 @@ export default function LearnChapterPage() {
         )}
       </div>
 
-      {/* 解説モードトグル */}
-      <div className="flex items-center gap-2 mb-6">
-        <span className="text-sm text-muted-foreground">解説モード：</span>
-        <Button
-          size="sm"
-          variant={tier === 'beginner' ? 'default' : 'outline'}
-          onClick={() => setTier('beginner')}
-          aria-label="初級"
-        >
-          初級
-        </Button>
-        <Button
-          size="sm"
-          variant={tier === 'intermediate' ? 'default' : 'outline'}
-          onClick={() => setTier('intermediate')}
-          aria-label="中級"
-        >
-          中級
-        </Button>
-        <Button
-          size="sm"
-          variant={tier === 'advanced' ? 'default' : 'outline'}
-          onClick={() => setTier('advanced')}
-          aria-label="上級"
-        >
-          上級
-        </Button>
-      </div>
-
       {/* 1. 概要 */}
       <section className="mb-8">
         <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
@@ -141,17 +180,47 @@ export default function LearnChapterPage() {
           詳細解説
         </h2>
         <div className="space-y-6">
-          {chapter.sections.map((section, idx) => (
+          {chapter.sections.map((section, idx) => {
+            const sectionTier: Tier = sectionTiers[idx] ?? defaultTier;
+            const bodyText =
+              sectionTier === 'beginner'
+                ? (section.beginnerBody ?? section.intermediateBody ?? section.body)
+                : sectionTier === 'intermediate'
+                ? (section.intermediateBody ?? section.body)
+                : section.body;
+            return (
             <div key={idx} className="rounded-lg border border-border bg-card p-4">
               <h3 className="text-base font-semibold text-card-foreground mb-2">
                 {section.heading}
               </h3>
+              <div className="flex items-center gap-1 mb-3">
+                <Button
+                  size="sm"
+                  variant={sectionTier === 'beginner' ? 'default' : 'outline'}
+                  onClick={() => setSectionTier(idx, 'beginner')}
+                  aria-label="初級"
+                >
+                  初級
+                </Button>
+                <Button
+                  size="sm"
+                  variant={sectionTier === 'intermediate' ? 'default' : 'outline'}
+                  onClick={() => setSectionTier(idx, 'intermediate')}
+                  aria-label="中級"
+                >
+                  中級
+                </Button>
+                <Button
+                  size="sm"
+                  variant={sectionTier === 'advanced' ? 'default' : 'outline'}
+                  onClick={() => setSectionTier(idx, 'advanced')}
+                  aria-label="上級"
+                >
+                  上級
+                </Button>
+              </div>
               <p className="text-sm text-foreground leading-relaxed mb-3">
-                {tier === 'beginner'
-                  ? (section.beginnerBody ?? section.intermediateBody ?? section.body)
-                  : tier === 'intermediate'
-                  ? (section.intermediateBody ?? section.body)
-                  : section.body}
+                {bodyText}
               </p>
               {section.termIds && section.termIds.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-2">
@@ -170,7 +239,8 @@ export default function LearnChapterPage() {
                 </div>
               )}
             </div>
-          ))}
+            );
+          })}
         </div>
       </section>
 
