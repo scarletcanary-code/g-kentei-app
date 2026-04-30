@@ -11,7 +11,9 @@ export interface LearnSection {
 export interface LearnChapter {
   categoryId: CategoryId;
   title: string;
-  overview: string;           // 章概要 200〜400 文字（半角/全角問わず文字数カウント）
+  overview: string;           // 章概要 200〜400 文字（半角/全角問わず文字数カウント）上級相当として維持
+  beginnerOverview?: string;  // 初級向け概要（目安 150〜250 字）
+  intermediateOverview?: string; // 中級向け概要（目安 300〜450 字）
   prerequisites?: CategoryId[];                           // 前提章 ID の配列
   sections: LearnSection[];                               // 必須。章あたり 3〜5 要素
   keyTermIds: string[];       // terms.json の id を参照（章あたり 5〜10 個）

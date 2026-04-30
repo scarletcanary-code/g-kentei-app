@@ -1,7 +1,6 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { ALL_LEARN_CHAPTERS } from '../data/learn';
-import { ALL_QUESTIONS } from '../data/questions';
 import termsData from '../data/glossary/terms.json';
 import type { GlossaryTerm } from '../types/glossary';
 import { usePersistedState } from '../hooks/usePersistedState';
@@ -31,6 +30,35 @@ export default function LearnChapterPage() {
 
   // usePersistedState は動的キー未対応のため参照維持のみ（マイグレーション基準として保持）
   const [, ] = usePersistedState<Tier>('learn-tier-v1', 'advanced');
+
+  // 概要セクションの tier 管理（章ごとに独立した localStorage キー）
+  const overviewTierStorageKey = `learn-overview-tier-v1-${categoryId}`;
+
+  const [overviewTier, setOverviewTier] = useState<Tier>(() => {
+    if (typeof window === 'undefined') return 'advanced';
+    const stored = localStorage.getItem(overviewTierStorageKey);
+    if (stored === 'beginner' || stored === 'intermediate' || stored === 'advanced') {
+      return stored;
+    }
+    return 'advanced';
+  });
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    localStorage.setItem(overviewTierStorageKey, overviewTier);
+  }, [overviewTierStorageKey, overviewTier]);
+
+  // categoryId が変わったとき（章ナビゲーション）に新しい章の保存値を読み込む
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const stored = localStorage.getItem(overviewTierStorageKey);
+    if (stored === 'beginner' || stored === 'intermediate' || stored === 'advanced') {
+      setOverviewTier(stored);
+    } else {
+      setOverviewTier('advanced');
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [categoryId]);
 
   // セクション単位の tier 管理（章ごとに localStorage キーが異なるため useState + useEffect で実装）
   const sectionTierStorageKey = `learn-section-tier-v1-${categoryId}`;
@@ -102,14 +130,6 @@ export default function LearnChapterPage() {
     return <Navigate to="/learn" replace />;
   }
 
-  const keyTerms = chapter.keyTermIds
-    .map((id) => terms.find((t) => t.id === id))
-    .filter((t): t is GlossaryTerm => t !== undefined);
-
-  const exampleQuestions = chapter.exampleQuestionIds
-    .map((id) => ALL_QUESTIONS.find((q) => q.id === id))
-    .filter((q) => q !== undefined);
-
   const chapterIndex = ALL_LEARN_CHAPTERS.findIndex((c) => c.categoryId === categoryId);
 
   return (
@@ -164,12 +184,44 @@ export default function LearnChapterPage() {
 
       {/* 1. 概要 */}
       <section className="mb-8">
-        <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-          <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">1</span>
-          概要
-        </h2>
+        <div className="flex items-center justify-between mb-3">
+          <h2 className="text-lg font-semibold flex items-center gap-2">
+            <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">1</span>
+            概要
+          </h2>
+          <div className="flex items-center gap-1">
+            <Button
+              size="sm"
+              variant={overviewTier === 'beginner' ? 'default' : 'outline'}
+              onClick={() => setOverviewTier('beginner')}
+              aria-label="初級"
+            >
+              初級
+            </Button>
+            <Button
+              size="sm"
+              variant={overviewTier === 'intermediate' ? 'default' : 'outline'}
+              onClick={() => setOverviewTier('intermediate')}
+              aria-label="中級"
+            >
+              中級
+            </Button>
+            <Button
+              size="sm"
+              variant={overviewTier === 'advanced' ? 'default' : 'outline'}
+              onClick={() => setOverviewTier('advanced')}
+              aria-label="上級"
+            >
+              上級
+            </Button>
+          </div>
+        </div>
         <p className="text-foreground leading-relaxed rounded-lg bg-muted/50 p-4 border border-border">
-          {chapter.overview}
+          {overviewTier === 'beginner'
+            ? (chapter.beginnerOverview ?? chapter.intermediateOverview ?? chapter.overview)
+            : overviewTier === 'intermediate'
+            ? (chapter.intermediateOverview ?? chapter.overview)
+            : chapter.overview}
         </p>
       </section>
 
@@ -223,16 +275,25 @@ export default function LearnChapterPage() {
                 {bodyText}
               </p>
               {section.termIds && section.termIds.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 mt-2">
+                <div className="flex flex-wrap gap-2 mt-3">
                   {section.termIds.map((termId) => {
                     const term = terms.find((t) => t.id === termId);
+                    const previewText = term?.definition ? term.definition.slice(0, 40) : '';
                     return (
                       <Link
                         key={termId}
-                        to={`/glossary?term=${termId}`}
-                        className="inline-flex items-center px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs hover:bg-primary/10 transition-colors"
+                        to={`/glossary?term=${termId}&tier=${sectionTier}`}
+                        className="group inline-flex flex-col items-start px-3 py-1.5 rounded-lg border border-primary/30 bg-primary/5 text-primary hover:bg-primary/10 transition-colors min-w-0 max-w-full"
                       >
-                        {term ? term.term : termId}
+                        <span className="text-sm font-medium inline-flex items-center gap-1">
+                          <span>📖</span>
+                          <span className="truncate">{term ? term.term : termId}</span>
+                        </span>
+                        {previewText && (
+                          <span className="text-xs text-muted-foreground line-clamp-1 max-w-[16rem]">
+                            {previewText}
+                          </span>
+                        )}
                       </Link>
                     );
                   })}
@@ -244,40 +305,10 @@ export default function LearnChapterPage() {
         </div>
       </section>
 
-      {/* 3. 重要用語 */}
+      {/* 3. 要点 */}
       <section className="mb-8">
         <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
           <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">3</span>
-          重要用語
-        </h2>
-        <div className="grid gap-3">
-          {keyTerms.map((term) => (
-            <Link
-              key={term.id}
-              to={`/glossary?term=${term.id}`}
-              className="block rounded-lg border border-border bg-card p-3 hover:bg-accent transition-colors"
-            >
-              <div className="flex items-start justify-between gap-2">
-                <div>
-                  <span className="font-medium text-card-foreground">{term.term}</span>
-                  {term.termEn && (
-                    <span className="text-xs text-muted-foreground ml-2">{term.termEn}</span>
-                  )}
-                  <p className="text-sm text-muted-foreground mt-1">{term.definition}</p>
-                </div>
-                <svg className="w-4 h-4 flex-shrink-0 text-muted-foreground mt-0.5" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-                </svg>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
-      {/* 4. 要点 */}
-      <section className="mb-8">
-        <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-          <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">4</span>
           要点
         </h2>
         <ul className="space-y-2">
@@ -290,46 +321,6 @@ export default function LearnChapterPage() {
             </li>
           ))}
         </ul>
-      </section>
-
-      {/* 5. 例題 */}
-      <section className="mb-8">
-        <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
-          <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">5</span>
-          例題
-        </h2>
-        <div className="space-y-6">
-          {exampleQuestions.map((q, qi) => (
-            <div key={q!.id} className="rounded-lg border border-border bg-card p-4">
-              <p className="font-medium text-sm mb-3">
-                <span className="text-muted-foreground mr-2">Q{qi + 1}.</span>
-                {q!.question}
-              </p>
-              <ol className="space-y-1 mb-3">
-                {q!.choices.map((choice, ci) => (
-                  <li
-                    key={ci}
-                    className={`text-sm px-3 py-1.5 rounded-md border ${
-                      ci === q!.correctIndex
-                        ? 'border-green-500 bg-green-50 dark:bg-green-950/30 text-green-800 dark:text-green-300'
-                        : 'border-border text-muted-foreground'
-                    }`}
-                  >
-                    <span className="mr-2">{['ア', 'イ', 'ウ', 'エ'][ci]}.</span>
-                    {choice.text}
-                    {ci === q!.correctIndex && (
-                      <span className="ml-2 text-xs font-medium">（正解）</span>
-                    )}
-                  </li>
-                ))}
-              </ol>
-              <div className="rounded-md bg-muted/50 border border-border p-3">
-                <p className="text-xs font-medium text-muted-foreground mb-1">解説</p>
-                <p className="text-sm text-foreground">{q!.explanation}</p>
-              </div>
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* 関連章ブロック */}
