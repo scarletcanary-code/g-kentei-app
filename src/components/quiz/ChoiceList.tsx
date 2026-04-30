@@ -41,15 +41,17 @@ export default function ChoiceList({
       {choices.map((choice, index) => (
         <button
           key={index}
-          className={getChoiceClassName(index)}
+          className={cn(getChoiceClassName(index), 'flex items-start gap-3')}
           onClick={() => !isAnswered && onSelect(index)}
           disabled={isAnswered}
           type="button"
         >
-          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-current/20 text-xs font-semibold mr-3 shrink-0">
+          <span className="inline-flex items-center justify-center w-6 h-6 rounded-full border border-current/20 text-xs font-semibold shrink-0 mt-0.5">
             {String.fromCharCode(65 + index)}
           </span>
-          {choice.text}
+          <span className="flex-1 min-w-0 break-words whitespace-normal leading-relaxed">
+            {choice.text}
+          </span>
         </button>
       ))}
     </div>

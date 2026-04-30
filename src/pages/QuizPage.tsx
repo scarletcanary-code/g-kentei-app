@@ -132,6 +132,7 @@ export default function QuizPage() {
         <ExplanationPanel
           explanation={currentQuestion.explanation}
           isCorrect={isCorrect}
+          relatedTermIds={isMockMode ? undefined : currentQuestion.relatedTermIds}
         />
       )}
 

@@ -31,7 +31,7 @@ export default function QuizCard({ question, questionNumber }: QuizCardProps) {
         </div>
       </CardHeader>
       <CardContent>
-        <p className="text-base font-medium leading-relaxed">{question.question}</p>
+        <p className="text-base font-medium leading-relaxed break-words">{question.question}</p>
       </CardContent>
     </Card>
   );
