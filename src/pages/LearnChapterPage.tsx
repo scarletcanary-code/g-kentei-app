@@ -4,7 +4,7 @@ import { ALL_LEARN_CHAPTERS } from '../data/learn';
 import termsData from '../data/glossary/terms.json';
 import type { GlossaryTerm } from '../types/glossary';
 import { usePersistedState } from '../hooks/usePersistedState';
-import { Button } from '../components/ui/button';
+import TierSegmented from '../components/shared/TierSegmented';
 
 const terms: GlossaryTerm[] = termsData as GlossaryTerm[];
 
@@ -189,32 +189,7 @@ export default function LearnChapterPage() {
             <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">1</span>
             概要
           </h2>
-          <div className="flex items-center gap-1">
-            <Button
-              size="sm"
-              variant={overviewTier === 'beginner' ? 'default' : 'outline'}
-              onClick={() => setOverviewTier('beginner')}
-              aria-label="初級"
-            >
-              初級
-            </Button>
-            <Button
-              size="sm"
-              variant={overviewTier === 'intermediate' ? 'default' : 'outline'}
-              onClick={() => setOverviewTier('intermediate')}
-              aria-label="中級"
-            >
-              中級
-            </Button>
-            <Button
-              size="sm"
-              variant={overviewTier === 'advanced' ? 'default' : 'outline'}
-              onClick={() => setOverviewTier('advanced')}
-              aria-label="上級"
-            >
-              上級
-            </Button>
-          </div>
+          <TierSegmented value={overviewTier} onChange={setOverviewTier} ariaLabel="概要の解説モード" />
         </div>
         <p className="text-foreground leading-relaxed rounded-lg bg-muted/50 p-4 border border-border">
           {overviewTier === 'beginner'
@@ -242,58 +217,24 @@ export default function LearnChapterPage() {
                 : section.body;
             return (
             <div key={idx} className="rounded-lg border border-border bg-card p-4">
-              <h3 className="text-base font-semibold text-card-foreground mb-2">
-                {section.heading}
-              </h3>
-              <div className="flex items-center gap-1 mb-3">
-                <Button
-                  size="sm"
-                  variant={sectionTier === 'beginner' ? 'default' : 'outline'}
-                  onClick={() => setSectionTier(idx, 'beginner')}
-                  aria-label="初級"
-                >
-                  初級
-                </Button>
-                <Button
-                  size="sm"
-                  variant={sectionTier === 'intermediate' ? 'default' : 'outline'}
-                  onClick={() => setSectionTier(idx, 'intermediate')}
-                  aria-label="中級"
-                >
-                  中級
-                </Button>
-                <Button
-                  size="sm"
-                  variant={sectionTier === 'advanced' ? 'default' : 'outline'}
-                  onClick={() => setSectionTier(idx, 'advanced')}
-                  aria-label="上級"
-                >
-                  上級
-                </Button>
+              <div className="flex items-center justify-between gap-2 mb-3">
+                <h3 className="text-base font-semibold text-card-foreground">{section.heading}</h3>
+                <TierSegmented value={sectionTiers[idx] ?? defaultTier} onChange={(t) => setSectionTier(idx, t)} ariaLabel="セクションの解説モード" />
               </div>
               <p className="text-sm text-foreground leading-relaxed mb-3">
                 {bodyText}
               </p>
               {section.termIds && section.termIds.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-3">
+                <div className="flex flex-wrap gap-1.5 mt-2">
                   {section.termIds.map((termId) => {
                     const term = terms.find((t) => t.id === termId);
-                    const previewText = term?.definition ? term.definition.slice(0, 40) : '';
                     return (
                       <Link
                         key={termId}
                         to={`/glossary?term=${termId}&tier=${sectionTier}`}
-                        className="group inline-flex flex-col items-start px-3 py-1.5 rounded-lg border border-primary/30 bg-primary/5 text-primary hover:bg-primary/10 transition-colors min-w-0 max-w-full"
+                        className="inline-flex items-center px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs hover:bg-primary/10 transition-colors"
                       >
-                        <span className="text-sm font-medium inline-flex items-center gap-1">
-                          <span>📖</span>
-                          <span className="truncate">{term ? term.term : termId}</span>
-                        </span>
-                        {previewText && (
-                          <span className="text-xs text-muted-foreground line-clamp-1 max-w-[16rem]">
-                            {previewText}
-                          </span>
-                        )}
+                        {term ? term.term : termId}
                       </Link>
                     );
                   })}
