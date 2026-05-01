@@ -1,7 +1,15 @@
-import { Link } from 'react-router-dom';
 import { Card, CardContent } from '../ui/card';
 import { cn } from '../../lib/utils';
 import { ALL_TERMS } from '../../data/glossary/index';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from '../ui/dialog';
+import TermDialogContent from '../glossary/TermDialogContent';
 
 interface ExplanationPanelProps {
   explanation: string;
@@ -38,13 +46,23 @@ export default function ExplanationPanel({
               const found = ALL_TERMS.find((t) => t.id === termId);
               if (!found) return null;
               return (
-                <Link
-                  key={termId}
-                  to={`/glossary?term=${termId}`}
-                  className="inline-block text-xs text-primary underline underline-offset-2 mr-2 hover:text-primary/80"
-                >
-                  {found.term}
-                </Link>
+                <Dialog key={termId}>
+                  <DialogTrigger asChild>
+                    <button
+                      type="button"
+                      className="inline-block text-xs text-primary underline underline-offset-2 mr-2 hover:text-primary/80"
+                    >
+                      {found.term}
+                    </button>
+                  </DialogTrigger>
+                  <DialogContent className="max-w-md sm:max-w-lg w-[95vw] max-h-[85vh] overflow-y-auto">
+                    <DialogHeader>
+                      <DialogTitle>{found.term}</DialogTitle>
+                      <DialogDescription>{found.termEn || ' '}</DialogDescription>
+                    </DialogHeader>
+                    <TermDialogContent term={found} />
+                  </DialogContent>
+                </Dialog>
               );
             })}
           </div>
