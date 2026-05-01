@@ -7,13 +7,16 @@ import {
 } from '../ui/accordion';
 import { Badge } from '../ui/badge';
 import type { GlossaryTerm, Importance } from '../../types/glossary';
+import TierSegmented from '../shared/TierSegmented';
 
 type Tier = 'beginner' | 'intermediate' | 'advanced';
 
 interface GlossaryCardProps {
   term: GlossaryTerm;
   highlightTermId?: string;
-  tier?: Tier;
+  initialTierFromQuery?: Tier;
+  isMemorized: boolean;
+  onToggleMemorized: () => void;
 }
 
 function importanceBadge(importance: Importance) {
@@ -26,13 +29,30 @@ function importanceBadge(importance: Importance) {
   return <Badge variant="outline">発展</Badge>;
 }
 
-export default function GlossaryCard({ term, highlightTermId, tier = 'advanced' }: GlossaryCardProps) {
+export default function GlossaryCard({ term, highlightTermId, initialTierFromQuery, isMemorized, onToggleMemorized }: GlossaryCardProps) {
   const isHighlighted = highlightTermId === term.id;
   const ref = useRef<HTMLDivElement>(null);
   const [openValue, setOpenValue] = useState<string | undefined>(
     isHighlighted ? term.id : undefined
   );
   const [showRing, setShowRing] = useState(isHighlighted);
+
+  const storageKey = `glossary-term-tier-v1-${term.id}`;
+  const [cardTier, setCardTier] = useState<Tier>(() => {
+    if (typeof window === 'undefined') return 'advanced';
+    if (highlightTermId === term.id && initialTierFromQuery) {
+      return initialTierFromQuery;
+    }
+    const stored = localStorage.getItem(storageKey);
+    if (stored === 'beginner' || stored === 'intermediate' || stored === 'advanced') {
+      return stored as Tier;
+    }
+    return 'advanced';
+  });
+
+  useEffect(() => {
+    localStorage.setItem(storageKey, cardTier);
+  }, [storageKey, cardTier]);
 
   useEffect(() => {
     if (highlightTermId === term.id) {
@@ -68,14 +88,28 @@ export default function GlossaryCard({ term, highlightTermId, tier = 'advanced' 
             </div>
           </AccordionTrigger>
           <AccordionContent>
+            <div className="flex justify-between items-center mb-2">
+              <label className="flex items-center gap-1.5 cursor-pointer select-none">
+                <input
+                  type="checkbox"
+                  id={`memorized-${term.id}`}
+                  checked={isMemorized}
+                  onChange={onToggleMemorized}
+                  aria-label={`${term.term}を記憶済としてマーク`}
+                  className="w-4 h-4 cursor-pointer accent-primary"
+                />
+                <span className="text-sm">記憶した</span>
+              </label>
+              <TierSegmented value={cardTier} onChange={setCardTier} ariaLabel="解説モード" />
+            </div>
             <p className="text-sm text-foreground leading-relaxed mb-2">
               {term.definition}
             </p>
             {(() => {
               const displayDetail =
-                tier === 'beginner'
+                cardTier === 'beginner'
                   ? (term.beginnerDetail ?? term.intermediateDetail ?? term.detail)
-                  : tier === 'intermediate'
+                  : cardTier === 'intermediate'
                   ? (term.intermediateDetail ?? term.detail)
                   : term.detail;
               return displayDetail ? (

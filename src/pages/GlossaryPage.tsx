@@ -1,12 +1,11 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Tabs, TabsList, TabsTrigger } from '../components/ui/tabs';
-import { Button } from '../components/ui/button';
 import GlossarySearch from '../components/glossary/GlossarySearch';
 import GlossaryList from '../components/glossary/GlossaryList';
 import { useGlossary } from '../hooks/useGlossary';
+import { useMemorizedTerms } from '../hooks/useMemorizedTerms';
 import { ALL_TERMS } from '../data/glossary/index';
-import { usePersistedState } from '../hooks/usePersistedState';
 import type { CategoryId } from '../types/category';
 
 type CategoryFilter = CategoryId | 'all';
@@ -15,33 +14,17 @@ type Tier = 'beginner' | 'intermediate' | 'advanced';
 export default function GlossaryPage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const termParam = searchParams.get('term') ?? '';
-  const tierParam = searchParams.get('tier');
+  const rawTierParam = searchParams.get('tier');
+  const tierParam: Tier | undefined =
+    rawTierParam === 'beginner' || rawTierParam === 'intermediate' || rawTierParam === 'advanced'
+      ? rawTierParam
+      : undefined;
 
   const [searchQuery, setSearchQuery] = useState('');
   const [categoryFilter, setCategoryFilter] = useState<CategoryFilter>('all');
-  const [tier, setTier] = usePersistedState<Tier>('glossary-tier-v1', 'advanced');
+  const [memorizedFilter, setMemorizedFilter] = useState<'all' | 'memorized' | 'unmemorized'>('all');
 
-  // localStorage マイグレーション: 旧キー 'g-kentei-learn-easy-mode' → 新キー 'glossary-tier-v1'
-  useEffect(() => {
-    if (localStorage.getItem('glossary-tier-v1') === null) {
-      const oldValue = localStorage.getItem('g-kentei-learn-easy-mode');
-      const migratedTier: Tier = oldValue === 'true' ? 'beginner' : 'advanced';
-      localStorage.setItem('glossary-tier-v1', migratedTier);
-      localStorage.removeItem('g-kentei-learn-easy-mode');
-    }
-  }, []);
-
-  // URL クエリ ?tier= から永続化 tier を上書き
-  useEffect(() => {
-    if (
-      tierParam === 'beginner' ||
-      tierParam === 'intermediate' ||
-      tierParam === 'advanced'
-    ) {
-      setTier(tierParam);
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tierParam]);
+  const { isMemorized, toggle: toggleMemorized } = useMemorizedTerms();
 
   const highlightTermId = termParam || undefined;
 
@@ -60,6 +43,12 @@ export default function GlossaryPage() {
     return [...filteredTerms, extraTerm];
   }, [filteredTerms, highlightTermId]);
 
+  const memorizedCountInDisplay = useMemo(
+    () => displayTerms.filter((t) => isMemorized(t.id)).length,
+    [displayTerms, isMemorized]
+  );
+  const unmemorizedCountInDisplay = displayTerms.length - memorizedCountInDisplay;
+
   function handleSearchChange(value: string) {
     setSearchQuery(value);
     if (value !== '') {
@@ -75,32 +64,6 @@ export default function GlossaryPage() {
 
       <div className="flex items-center gap-2">
         <GlossarySearch value={searchQuery} onChange={handleSearchChange} />
-        <div className="flex items-center gap-1 shrink-0">
-          <Button
-            size="sm"
-            variant={tier === 'beginner' ? 'default' : 'outline'}
-            onClick={() => setTier('beginner')}
-            aria-label="初級"
-          >
-            初級
-          </Button>
-          <Button
-            size="sm"
-            variant={tier === 'intermediate' ? 'default' : 'outline'}
-            onClick={() => setTier('intermediate')}
-            aria-label="中級"
-          >
-            中級
-          </Button>
-          <Button
-            size="sm"
-            variant={tier === 'advanced' ? 'default' : 'outline'}
-            onClick={() => setTier('advanced')}
-            aria-label="上級"
-          >
-            上級
-          </Button>
-        </div>
       </div>
 
       <Tabs
@@ -122,7 +85,36 @@ export default function GlossaryPage() {
 
       <p className="text-sm text-muted-foreground">{totalCount}件</p>
 
-      <GlossaryList terms={displayTerms} highlightTermId={highlightTermId} tier={tier} />
+      <div className="flex gap-2 items-center flex-wrap">
+        <span className="text-sm text-muted-foreground">記憶:</span>
+        <button
+          onClick={() => setMemorizedFilter('all')}
+          className={`text-sm px-3 py-1 rounded-full border transition-colors ${memorizedFilter === 'all' ? 'bg-primary text-primary-foreground border-primary' : 'border-input hover:bg-accent'}`}
+        >
+          すべて ({displayTerms.length})
+        </button>
+        <button
+          onClick={() => setMemorizedFilter('memorized')}
+          className={`text-sm px-3 py-1 rounded-full border transition-colors ${memorizedFilter === 'memorized' ? 'bg-primary text-primary-foreground border-primary' : 'border-input hover:bg-accent'}`}
+        >
+          記憶済 ({memorizedCountInDisplay})
+        </button>
+        <button
+          onClick={() => setMemorizedFilter('unmemorized')}
+          className={`text-sm px-3 py-1 rounded-full border transition-colors ${memorizedFilter === 'unmemorized' ? 'bg-primary text-primary-foreground border-primary' : 'border-input hover:bg-accent'}`}
+        >
+          未記憶 ({unmemorizedCountInDisplay})
+        </button>
+      </div>
+
+      <GlossaryList
+        terms={displayTerms}
+        highlightTermId={highlightTermId}
+        initialTierFromQuery={tierParam}
+        memorizedFilter={memorizedFilter}
+        isMemorized={isMemorized}
+        onToggleMemorized={toggleMemorized}
+      />
     </div>
   );
 }
