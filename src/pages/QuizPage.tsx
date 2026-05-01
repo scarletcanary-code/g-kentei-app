@@ -1,7 +1,7 @@
 import { useMemo, useRef, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { ALL_QUESTIONS } from '../data/questions/index';
-import { filterQuestions, shuffleQuestions, shuffleChoices, selectForMemoryReview } from '../lib/quiz-engine';
+import { shuffleQuestions, shuffleChoices, selectForMemoryReview, selectQuestionsBalanced } from '../lib/quiz-engine';
 import { useQuiz } from '../hooks/useQuiz';
 import { useProgress } from '../hooks/useProgress';
 import type { CategoryId } from '../types/category';
@@ -44,12 +44,8 @@ export default function QuizPage() {
       const weakQuestions = ALL_QUESTIONS.filter((q) => weakQuestionIds.includes(q.id));
       return shuffleQuestions(weakQuestions);
     }
-    const filtered = filterQuestions(ALL_QUESTIONS, {
-      categoryIds,
-    });
-    const shuffled = shuffleQuestions(filtered);
-    const sliced = limit === 0 ? shuffled : shuffled.slice(0, limit);
-    return sliced.map((q) => shuffleChoices(q));
+    const balanced = selectQuestionsBalanced(ALL_QUESTIONS, categoryIds ?? [], limit);
+    return balanced.map((q) => shuffleChoices(q));
   }, []);
 
   const startTimeRef = useRef<number>(Date.now());
