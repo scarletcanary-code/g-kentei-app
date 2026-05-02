@@ -6,7 +6,7 @@ export default function LearnIndexPage() {
     <div className="container py-6">
       <h1 className="text-2xl font-bold mb-2">学習モード</h1>
       <p className="text-muted-foreground mb-6">
-        各章の概要・重要用語・要点・例題を順番に確認して体系的に学習できます。
+        各章の概要・詳細解説・要点を順番に確認して体系的に学習できます。
       </p>
       <div className="grid gap-4 sm:grid-cols-2">
         {ALL_LEARN_CHAPTERS.map((chapter, index) => (
@@ -22,7 +22,7 @@ export default function LearnIndexPage() {
               <div>
                 <h2 className="font-semibold text-card-foreground">{chapter.title}</h2>
                 <p className="text-xs text-muted-foreground mt-1">
-                  用語 {chapter.keyTermIds.length}語 ／ 要点 {chapter.keyPoints.length}項目 ／ 例題 {chapter.exampleQuestionIds.length}問
+                  セクション {chapter.sections.length}節 ／ 要点 {chapter.keyPoints.length}項目
                 </p>
               </div>
             </div>
