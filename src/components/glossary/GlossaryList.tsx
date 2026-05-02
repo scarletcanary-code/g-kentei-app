@@ -6,13 +6,14 @@ type Tier = 'beginner' | 'intermediate' | 'advanced';
 interface GlossaryListProps {
   terms: GlossaryTerm[];
   highlightTermId?: string;
-  initialTierFromQuery?: Tier;
+  tierMap: Record<string, Tier>;
+  onCardTierChange: (termId: string, t: Tier) => void;
   memorizedFilter: 'all' | 'memorized' | 'unmemorized';
   isMemorized: (termId: string) => boolean;
   onToggleMemorized: (termId: string) => void;
 }
 
-export default function GlossaryList({ terms, highlightTermId, initialTierFromQuery, memorizedFilter, isMemorized, onToggleMemorized }: GlossaryListProps) {
+export default function GlossaryList({ terms, highlightTermId, tierMap, onCardTierChange, memorizedFilter, isMemorized, onToggleMemorized }: GlossaryListProps) {
   const displayTerms = terms.filter((term) => {
     if (memorizedFilter === 'memorized') return isMemorized(term.id);
     if (memorizedFilter === 'unmemorized') return !isMemorized(term.id);
@@ -34,7 +35,8 @@ export default function GlossaryList({ terms, highlightTermId, initialTierFromQu
           key={term.id}
           term={term}
           highlightTermId={highlightTermId}
-          initialTierFromQuery={initialTierFromQuery}
+          cardTier={tierMap[term.id] ?? 'advanced'}
+          onCardTierChange={(t) => onCardTierChange(term.id, t)}
           isMemorized={isMemorized(term.id)}
           onToggleMemorized={() => onToggleMemorized(term.id)}
         />

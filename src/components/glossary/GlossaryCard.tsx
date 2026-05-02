@@ -14,7 +14,8 @@ type Tier = 'beginner' | 'intermediate' | 'advanced';
 interface GlossaryCardProps {
   term: GlossaryTerm;
   highlightTermId?: string;
-  initialTierFromQuery?: Tier;
+  cardTier: Tier;
+  onCardTierChange: (t: Tier) => void;
   isMemorized: boolean;
   onToggleMemorized: () => void;
 }
@@ -29,30 +30,13 @@ function importanceBadge(importance: Importance) {
   return <Badge variant="outline">発展</Badge>;
 }
 
-export default function GlossaryCard({ term, highlightTermId, initialTierFromQuery, isMemorized, onToggleMemorized }: GlossaryCardProps) {
+export default function GlossaryCard({ term, highlightTermId, cardTier, onCardTierChange, isMemorized, onToggleMemorized }: GlossaryCardProps) {
   const isHighlighted = highlightTermId === term.id;
   const ref = useRef<HTMLDivElement>(null);
   const [openValue, setOpenValue] = useState<string | undefined>(
     isHighlighted ? term.id : undefined
   );
   const [showRing, setShowRing] = useState(isHighlighted);
-
-  const storageKey = `glossary-term-tier-v1-${term.id}`;
-  const [cardTier, setCardTier] = useState<Tier>(() => {
-    if (typeof window === 'undefined') return 'advanced';
-    if (highlightTermId === term.id && initialTierFromQuery) {
-      return initialTierFromQuery;
-    }
-    const stored = localStorage.getItem(storageKey);
-    if (stored === 'beginner' || stored === 'intermediate' || stored === 'advanced') {
-      return stored as Tier;
-    }
-    return 'advanced';
-  });
-
-  useEffect(() => {
-    localStorage.setItem(storageKey, cardTier);
-  }, [storageKey, cardTier]);
 
   useEffect(() => {
     if (highlightTermId === term.id) {
@@ -100,7 +84,7 @@ export default function GlossaryCard({ term, highlightTermId, initialTierFromQue
                 />
                 <span className="text-sm">記憶した</span>
               </label>
-              <TierSegmented value={cardTier} onChange={setCardTier} ariaLabel="解説モード" />
+              <TierSegmented value={cardTier} onChange={onCardTierChange} ariaLabel="解説モード" />
             </div>
             <p className="text-sm text-foreground leading-relaxed mb-2">
               {term.definition}

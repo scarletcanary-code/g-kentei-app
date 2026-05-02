@@ -124,6 +124,8 @@ export default function LearnChapterPage() {
     setSectionTiers((prev) => ({ ...prev, [idx]: tier }));
   };
 
+  const [pageTier, setPageTier] = useState<Tier>('advanced');
+
   const chapter = ALL_LEARN_CHAPTERS.find((c) => c.categoryId === categoryId);
 
   if (!chapter) {
@@ -131,6 +133,17 @@ export default function LearnChapterPage() {
   }
 
   const chapterIndex = ALL_LEARN_CHAPTERS.findIndex((c) => c.categoryId === categoryId);
+
+  const handleBulkTierChange = (t: Tier) => {
+    setPageTier(t);
+    setOverviewTier(t);
+    const next: Record<number, Tier> = {};
+    chapter.sections.forEach((_, idx) => {
+      next[idx] = t;
+    });
+    (next as unknown as Record<string, Tier>)._default = t;
+    setSectionTiers(next);
+  };
 
   return (
     <div className="container py-6 max-w-2xl">
@@ -180,6 +193,15 @@ export default function LearnChapterPage() {
             </div>
           </div>
         )}
+
+        <div className="mt-4 flex items-center justify-between gap-2 flex-wrap">
+          <span className="text-sm text-muted-foreground">ページ全体の解説モード</span>
+          <TierSegmented
+            value={pageTier}
+            onChange={handleBulkTierChange}
+            ariaLabel="ページ全体の解説モードを一括変更"
+          />
+        </div>
       </div>
 
       {/* 1. 概要 */}
