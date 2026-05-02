@@ -8,7 +8,9 @@ interface ExamTimerProps {
 export default function ExamTimer({ totalSeconds, onTimeUp }: ExamTimerProps) {
   const [remaining, setRemaining] = useState(totalSeconds);
   const onTimeUpRef = useRef(onTimeUp);
-  onTimeUpRef.current = onTimeUp;
+  useEffect(() => {
+    onTimeUpRef.current = onTimeUp;
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {

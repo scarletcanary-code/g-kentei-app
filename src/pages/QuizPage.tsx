@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { ALL_QUESTIONS } from '../data/questions/index';
 import { shuffleQuestions, shuffleChoices, selectForMemoryReview, selectQuestionsBalanced } from '../lib/quiz-engine';
@@ -31,6 +31,9 @@ export default function QuizPage() {
 
   const { recordAnswer, weakQuestionIds, progress } = useProgress();
 
+  const [startedAt] = useState(() => Date.now());
+  const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
+
   const questions = useMemo(() => {
     if (isMockMode) {
       const shuffled = shuffleQuestions(ALL_QUESTIONS);
@@ -46,10 +49,8 @@ export default function QuizPage() {
     }
     const balanced = selectQuestionsBalanced(ALL_QUESTIONS, categoryIds ?? [], limit);
     return balanced.map((q) => shuffleChoices(q));
-  }, []);
-
-  const startTimeRef = useRef<number>(Date.now());
-  const [elapsedSeconds, setElapsedSeconds] = useState<number>(0);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [startedAt]);
 
   const { currentIndex, currentQuestion, answers, isFinished, setIsFinished, answerQuestion, nextQuestion, result } =
     useQuiz(questions);
@@ -58,7 +59,7 @@ export default function QuizPage() {
   const [showExplanation, setShowExplanation] = useState(false);
 
   const handleTimeUp = () => {
-    const elapsed = Math.floor((Date.now() - startTimeRef.current) / 1000);
+    const elapsed = Math.floor((Date.now() - startedAt) / 1000);
     setElapsedSeconds(elapsed);
     setIsFinished(true);
   };
@@ -75,7 +76,7 @@ export default function QuizPage() {
   if (isFinished) {
     const elapsed = elapsedSeconds > 0
       ? elapsedSeconds
-      : Math.floor((Date.now() - startTimeRef.current) / 1000);
+      : Math.floor((Date.now() - startedAt) / 1000);
     return (
       <div className="max-w-xl mx-auto py-8 px-4">
         <QuizResult result={result} elapsedSeconds={isMockMode ? elapsed : undefined} />
@@ -102,7 +103,7 @@ export default function QuizPage() {
     setSelectedIndex(undefined);
     setShowExplanation(false);
     if (currentIndex + 1 >= questions.length) {
-      const elapsed = Math.floor((Date.now() - startTimeRef.current) / 1000);
+      const elapsed = Math.floor((Date.now() - startedAt) / 1000);
       setElapsedSeconds(elapsed);
     }
     nextQuestion();
