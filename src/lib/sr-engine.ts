@@ -65,8 +65,10 @@ function addDays(date: Date, days: number): string {
 }
 
 /**
- * today 以前の nextReviewDate を持つ問題を返す。
- * srState が未登録の問題も「初回未学習」として含める。
+ * 登録済み（一度でも解答済み）かつ today 以前の nextReviewDate を持つ問題を返す。
+ * 未学習問題（srState が無い）は対象外。記憶モードはあくまで復習用途のため、
+ * 通常モード/苦手モードで初学を済ませた問題のみを期限ベースで再出題する。
+ * QuizSetupPage の「今日の復習: N 問」(getReviewStats) と挙動を一致させる。
  */
 export function getDueQuestions(
   allQuestions: Question[],
@@ -76,7 +78,7 @@ export function getDueQuestions(
   const todayStr = today.toISOString().split('T')[0];
   return allQuestions.filter((q) => {
     const state = srStates[q.id];
-    if (!state) return true; // 未学習は常に due
+    if (!state) return false; // 未学習は除外（復習対象外）
     return state.nextReviewDate <= todayStr;
   });
 }
