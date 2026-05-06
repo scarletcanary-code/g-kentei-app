@@ -1086,7 +1086,7 @@
     "correctIndex": 0,
     "explanation": "データクレンジングは収集した生データの品質を高めるプロセス。誤記・表記ゆれの修正、重複レコードの削除、欠損値の補完または除去、外れ値の処理などを行い、AIモデルの学習精度を向上させる。「ゴミが入ればゴミが出る（Garbage In, Garbage Out）」という原則から、データ品質はモデル品質に直結する。",
     "relatedTermIds": [
-      "data_cleansing",
+      "data_augmentation_ops",
       "data_quality"
     ],
     "difficulty": 1,

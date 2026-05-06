@@ -1362,7 +1362,6 @@
     "correctIndex": 2,
     "explanation": "QLoRA（Quantized LoRA）はLoRAに量子化技術を組み合わせた手法。事前学習済みモデルを4ビット量子化することでメモリ消費を大幅に削減し、低ランク行列のみ学習するLoRAの仕組みと組み合わせることで、一般的なコンシューマGPU（例：24GB VRAM）でも数十億パラメータのLLMをファインチューニングできる。PEFTの代表的手法の一つ。",
     "relatedTermIds": [
-      "qlora",
       "lora",
       "peft"
     ],
@@ -2177,7 +2176,7 @@
     "correctIndex": 3,
     "explanation": "CLIP（Contrastive Language-Image Pre-Training）はOpenAIが開発したモデルで、大量の画像とテキストのペアを用いたコントラスト学習により、画像エンコーダとテキストエンコーダを同時に学習する。画像とテキストを同じ潜在空間に埋め込むことで「この画像に最も合うテキストはどれか」を計算できる。Stable Diffusionのテキスト理解部分にも応用されている。",
     "relatedTermIds": [
-      "clip",
+      "clip_model",
       "multimodal",
       "contrastive_learning",
       "generative_model"

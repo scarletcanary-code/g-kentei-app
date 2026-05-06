@@ -1762,7 +1762,7 @@
     "explanation": "現在の第3次AIブームが過去と異なる最大の特徴は、AIが「データから自動学習」できること。第1次ブームは人間がルールを与えて探索、第2次ブームは人間が知識を手動入力してルールを作成。第3次ブームでは大量データとGPUにより機械学習・ディープラーニングが実用化され、AIが自律的に特徴量やパターンを学習できるようになった。",
     "relatedTermIds": [
       "third_ai_boom",
-      "machine_learning",
+      "machine_learning_definition",
       "deep_learning",
       "rule_based_ai"
     ],
@@ -1837,7 +1837,7 @@
       "transformer",
       "gpt",
       "generative_ai",
-      "large_language_model",
+      "llm",
       "boosting"
     ],
     "difficulty": 2,
@@ -1905,7 +1905,7 @@
     "correctIndex": 2,
     "explanation": "第2次AIブームから第3次AIブームへの移行に貢献したのは、（1）機械学習・ニューラルネットワーク研究の復活（特に2006年ジェフリー・ヒントンによるディープラーニングの提唱）、（2）インターネット普及によるビッグデータの登場、（3）GPUによる並列計算能力の飛躍的向上、の3つが組み合わさったこと。",
     "relatedTermIds": [
-      "machine_learning",
+      "machine_learning_definition",
       "deep_learning",
       "big_data",
       "gpu"

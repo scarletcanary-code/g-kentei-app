@@ -2246,7 +2246,7 @@
     "explanation": "学習率が大きすぎると、各ステップで損失関数の最小値付近を大きく飛び越してしまい、損失が収束せずに振動または発散する。逆に学習率が小さすぎると収束が遅く局所最適解に止まりやすい。適切な学習率の選択と学習率スケジューリングが重要。",
     "relatedTermIds": [
       "learning_rate",
-      "optimization"
+      "optimization_algorithm"
     ],
     "difficulty": 1,
     "tags": [
