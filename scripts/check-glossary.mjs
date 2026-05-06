@@ -36,11 +36,11 @@ function pass(msg) {
   process.stdout.write(`PASS: ${msg}\n`);
 }
 
-// チェック1: エントリ数が 129 件
-if (terms.length === 129) {
-  pass(`エントリ数 = ${terms.length} (expected 129)`);
+// チェック1: エントリ数が 253 件 (Step8j-2c-6 / B6 完了時点)
+if (terms.length === 253) {
+  pass(`エントリ数 = ${terms.length} (expected 253)`);
 } else {
-  fail(`エントリ数 = ${terms.length} (expected 129)`);
+  fail(`エントリ数 = ${terms.length} (expected 253)`);
 }
 
 // チェック2: 全129語に intermediateDetail が存在し空文字列でないこと
