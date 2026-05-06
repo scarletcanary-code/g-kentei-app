@@ -86,6 +86,11 @@ export default function GlossaryCard({ term, highlightTermId, cardTier, onCardTi
               </label>
               <TierSegmented value={cardTier} onChange={onCardTierChange} ariaLabel="解説モード" />
             </div>
+            {term.aliases && term.aliases.length > 0 && (
+              <p className="text-xs text-muted-foreground">
+                別称: {term.aliases.join('、')}
+              </p>
+            )}
             <p className="text-sm text-foreground leading-relaxed mb-2">
               {term.definition}
             </p>

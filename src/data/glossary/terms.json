@@ -2009,7 +2009,9 @@
     "relatedTermIds": [
       "mlops",
       "health_monitoring",
-      "data_leakage"
+      "data_leakage",
+      "data_drift",
+      "concept_drift"
     ],
     "importance": 1,
     "beginnerDetail": "モデルドリフトとは、機械学習モデルが時間とともに正確に予測できなくなる現象です。例えば、昔の天気予報が今の気候に合わなくなるようなものです。モデルは新しいデータに適応する必要があり、定期的にチェックして更新することが大切です。これにより、常に正しい予測を維持できます。",
@@ -2085,7 +2087,8 @@
     "relatedTermIds": [
       "fairness",
       "ai_governance",
-      "xai"
+      "xai",
+      "ai_bias"
     ],
     "importance": 2,
     "beginnerDetail": "機械学習バイアスとは、AIが特定の人やグループを不公平に扱うことです。例えば、採用AIが男性ばかりのデータを使って学習すると、女性を低く評価することがあります。これは、データの集め方や過去の偏見が影響しているため、AIを使う際には常にその結果を見直すことが大切です。",
@@ -2357,7 +2360,8 @@
       "transparency",
       "accountability",
       "ml_bias",
-      "xai_ethics"
+      "xai_ethics",
+      "ai_bias"
     ],
     "importance": 1,
     "beginnerDetail": "公平性とは、みんなが同じルールで扱われることを意味します。例えば、学校の運動会で、全員が同じ距離を走るレースを想像してください。誰も特別扱いされず、みんなが平等にスタートラインに立つことで、公平な競争が生まれます。AIの世界でも、データに偏りがないように注意し、誰もが平等に扱われるようにすることが大切です。",
@@ -2391,7 +2395,7 @@
     "termEn": "Accountability",
     "categoryId": "ch8",
     "definition": "AIシステムの開発者・運営者が、AIの判断・影響・リスクについて説明し、問題が生じた際に責任を負う義務と体制。",
-    "detail": "説明責任（Accountability）は、AIシステムの開発者や運営者が、そのシステムの判断や影響、リスクに対して説明を行い、問題が生じた際には責任を負う義務と体制を指します。AIが自律的に判断を行う場合でも、最終的な責任は人間に帰属するため、設計者や運営者はその判断の根拠を明確にしなければなりません。これは、AIの透明性や公平性を確保するための重要な要素であり、AIガバナンスの中核原則の一つとされています。特に、EU AI法やAI事業者ガイドラインでは、組織としての説明責任体制の整備が求められています。具体的には、AIの判断基準やプロセスを文書化し、関係者に対して適切に情報を提供することが重要です。これにより、AIの判断がどのように行われたのかを説明できる体制を整え、問題が発生した際には迅速に対応できるようになります。さらに、説明責任を果たすことで、企業や組織は利用者や社会からの信頼を得ることができ、結果としてAIの導入が促進されることになります。",
+    "detail": "説明責任（Accountability）は、AIシステムの開発者や運営者が、そのシステムの判断や影響、リスクに対して説明を行い、問題が生じた際には責任を負う義務と体制を指します。AIが自律的に判断を行う場合でも、最終的な責任は人間に帰属するため、設計者や運営者はその判断の根拠を明確にしなければなりません。これは、AIの透明性や公平性を確保するための重要な要素であり、AIガバナンスの中核原則の一つとされています。特に、EU AI法やAI事業者ガイドラインでは、組織としての説明責任体制の整備が求められています。具体的には、AIの判断基準やプロセスを文書化し、関係者に対して適切に情報を提供することが重要です。これにより、AIの判断がどのように行われたのかを説明できる体制を整え、問題が発生した際には迅速に対応できるようになります。さらに、説明責任を果たすことで、企業や組織は利用者や社会からの信頼を得ることができ、結果としてAIの導入が促進されることになります。NIST AI RMF（2023年）やOECD AI Principles（2019年）においても、説明責任は透明性・公平性・リスク管理と密接に連携したAIガバナンスの中核原則として位置づけられています。",
     "relatedTermIds": [
       "transparency",
       "fairness",
@@ -2403,6 +2407,10 @@
     "intermediateDetail": "説明責任（Accountability）は、AIシステムが自律的に判断を行う際に、その結果に対して最終的な責任を持つのは人間であるという考え方を指します。これは、AIがどのように判断を下したか、そのプロセスや結果について説明できる義務を伴います。例えば、企業がAIを用いて顧客の信用評価を行う場合、もしその評価が誤っていたために顧客に損害を与えたとき、企業はその判断の根拠を説明し、責任を取る必要があります。\n\nこのように、説明責任はAIガバナンスの中核原則の一つであり、企業や組織はAIの運用において透明性を確保し、誰がどのようにAIを管理しているかを明確にすることが求められます。これにより、AIの判断が公平であることを保証し、利用者や社会からの信頼を得ることができます。さらに、説明責任を果たすためには、AIの判断基準やプロセスを文書化し、関係者に対して適切に情報を提供する体制を整えることが重要です。これにより、問題が発生した際に迅速に対応し、信頼を損なわないようにすることが可能になります。",
     "source_ref_supplements": [
       "https://www.seraku.co.jp/pr-site/newtonx/column/128.html"
+    ],
+    "aliases": [
+      "アカウンタビリティ",
+      "Accountability (AI)"
     ]
   },
   {
@@ -2463,5 +2471,504 @@
     "source_ref_supplements": [
       "https://www.rubrik.com/ja/insights/ai-governance"
     ]
+  },
+  {
+    "id": "batch_size",
+    "term": "バッチサイズ",
+    "termEn": "Batch Size",
+    "categoryId": "ch4",
+    "definition": "1回のパラメータ更新に使うサンプル数。学習の安定性・速度・汎化性能に影響するハイパーパラメータ。",
+    "detail": "バッチサイズ（Batch Size）は、確率的勾配降下法（SGD）やその変種でパラメータを1回更新するときに使うサンプル数を指す。バッチサイズ=1のとき完全オンライン学習、バッチサイズ=データ全体のときフルバッチ学習、その中間がミニバッチ学習である。大きいバッチサイズはGPU並列処理の効率が高いが、局所解に陥りやすく汎化性能が下がる場合がある。小さいバッチサイズは更新頻度が増え確率的ノイズが正則化として働くが、学習時間が長くなる。G検定では「バッチサイズを変えると学習の安定性・速度がどう変わるか」が問われる。",
+    "relatedTermIds": [
+      "sgd",
+      "gradient_descent",
+      "adam",
+      "overfitting"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "auc",
+    "term": "AUC",
+    "termEn": "AUC (Area Under the ROC Curve)",
+    "categoryId": "ch3",
+    "definition": "ROC曲線の下の面積。分類モデルの性能を閾値に依存しない形で評価する指標（0〜1、高いほど良い）。",
+    "detail": "AUC（Area Under the Curve）は、主にROC（Receiver Operating Characteristic）曲線の下の面積を指す二値分類モデルの評価指標。真陽性率と偽陽性率のトレードオフを表すROC曲線の面積として定義される。AUC=1.0は完全分類、AUC=0.5はランダム分類を意味する。不均衡データにおいても比較的信頼性が高い評価指標として使われる。",
+    "relatedTermIds": [
+      "precision",
+      "recall",
+      "f_score"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "clustering",
+    "term": "クラスタリング",
+    "termEn": "Clustering",
+    "categoryId": "ch3",
+    "definition": "ラベルなしデータをグループ（クラスタ）に分類する教師なし学習の代表的手法群。",
+    "detail": "クラスタリングは、教師なし学習においてデータを類似度に基づいて複数のグループ（クラスタ）に分類する手法の総称である。主なアルゴリズムにはk-means法（距離ベース）、階層的クラスタリング（デンドログラム）、DBSCAN（密度ベース）などがある。評価指標として、真のラベルがある場合はAdjusted Rand Index、ない場合はシルエット係数が用いられる。G検定ではk-means法の手順（重心初期化→割り当て→更新の繰り返し）と、クラスタ数kの決定方法（エルボー法）が頻出。",
+    "relatedTermIds": [
+      "unsupervised_learning",
+      "k_means"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "vgg",
+    "term": "VGG",
+    "termEn": "VGG (Visual Geometry Group Network)",
+    "categoryId": "ch5",
+    "definition": "3×3フィルタを積み重ねて深さを追求した深層CNN。ILSVRC 2014で好成績を収めた。",
+    "detail": "VGG（Visual Geometry Group Network）は2014年にSimonyan & Zissermanが発表したCNNアーキテクチャで、ILSVRC 2014で2位を獲得した。特徴は3×3という小さなフィルタを積み重ねることで表現力を高めつつ、パラメータ数の増加を抑えたこと。VGG16（16層）とVGG19（19層）が広く使われる。転移学習の特徴抽出器としても長く活用された。G検定ではAlexNet→VGG→GoogLeNet→ResNetという発展の流れと、各アーキテクチャの特徴が問われる。",
+    "relatedTermIds": [
+      "cnn",
+      "resnet",
+      "transfer_learning"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "mini_batch",
+    "term": "ミニバッチ",
+    "termEn": "Mini-batch",
+    "categoryId": "ch4",
+    "definition": "全データを小さなまとまり（バッチ）に分割して行う学習方式。現代の深層学習で最も一般的。",
+    "detail": "ミニバッチ学習（Mini-batch Gradient Descent）は、訓練データを固定サイズの小さなまとまり（ミニバッチ）に分割し、各ミニバッチごとにパラメータを更新する手法である。フルバッチ学習と確率的勾配降下法（オンライン学習）の中間的な性質を持ち、現代的な深層学習では最も一般的な学習方式。GPUによる並列計算の恩恵を受けやすく、適度なノイズによる正則化効果もある。",
+    "relatedTermIds": [
+      "sgd",
+      "adam",
+      "gradient_descent"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "rule_based_ai",
+    "term": "ルールベース",
+    "termEn": "Rule-based AI",
+    "categoryId": "ch2",
+    "definition": "人間が事前に記述したIF-THENルールに従って動作するAIシステム。第2次AIブームの中心的技術。",
+    "detail": "ルールベースAI（Rule-based AI）は、専門家が明示的に記述したIF-THENルールをもとに推論・判断を行うシステムである。エキスパートシステムが代表例で、医療診断（MYCIN）や化学分析に応用された。利点は動作の透明性と解釈可能性が高いこと。欠点はルール記述のコスト（知識獲得のボトルネック）と、ルール爆発（組み合わせ爆発）である。",
+    "relatedTermIds": [
+      "expert_system",
+      "knowledge_representation",
+      "second_ai_boom"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "agent",
+    "term": "エージェント",
+    "termEn": "Agent (AI)",
+    "categoryId": "ch1",
+    "definition": "環境を観測して行動を選択し、目標達成のために自律的に動作するAIシステムの構成単位。",
+    "detail": "AIにおけるエージェント（Agent）は、環境（Environment）を観測し、センサを通じて状態を取得し、アクチュエータを通じて行動を選択する自律的な実体である。強化学習では報酬を最大化するように行動方策を学習するエージェントが中心概念。マルチエージェントシステムでは複数のエージェントが相互作用する。生成AIの文脈では「AIエージェント」として、ツール使用・計画立案・自律実行を行うLLMベースのシステムを指す。",
+    "relatedTermIds": [
+      "reinforcement_learning",
+      "artificial_intelligence"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "optimization_algorithm",
+    "term": "最適化手法",
+    "termEn": "Optimization Algorithm",
+    "categoryId": "ch4",
+    "definition": "損失関数を最小化するためにモデルのパラメータを更新するアルゴリズムの総称。",
+    "detail": "最適化手法（Optimization Algorithm）は、深層学習においてモデルの損失関数を最小化するためにパラメータを更新するアルゴリズムの総称である。基本のSGD（確率的勾配降下法）から、Momentum（慣性付きSGD）、AdaGrad（パラメータ別適応学習率）、RMSProp、Adam（AdaGrad+Momentum）、AdamW（L2正則化付きAdam）など多様な変種がある。",
+    "relatedTermIds": [
+      "sgd",
+      "adam",
+      "gradient_descent",
+      "loss_function"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "hallucination",
+    "term": "ハルシネーション",
+    "termEn": "Hallucination (AI)",
+    "categoryId": "ch6",
+    "definition": "LLMが事実と異なる情報を自信を持って生成してしまう現象。幻覚とも呼ばれる。",
+    "detail": "ハルシネーション（Hallucination）は、大規模言語モデル（LLM）が実際には存在しない情報や事実と異なる内容を、もっともらしい文章で生成してしまう現象。例として、存在しない論文の引用・架空の人物情報・誤った数値の出力などがある。原因は学習データのパターンに基づく確率的生成という仕組みにあり、モデルは正確さより流暢さを最適化しているため。対策としてRAG（Retrieval-Augmented Generation）や自己検証、根拠ある応答の要求が有効。",
+    "relatedTermIds": [
+      "llm",
+      "rag",
+      "prompt_engineering"
+    ],
+    "importance": 1
+  },
+  {
+    "id": "generative_model",
+    "term": "生成モデル",
+    "termEn": "Generative Model",
+    "categoryId": "ch5",
+    "definition": "データの生成過程をモデル化し、新たなデータサンプルを生成できる機械学習モデルの総称。",
+    "detail": "生成モデル（Generative Model）は、訓練データの分布P(X)または同時分布P(X, Y)を学習し、新たなサンプルを生成できるモデルを指す。識別モデル（Discriminative Model）がP(Y|X)のみを学習するのとは対照的。代表的な生成モデルにはGAN（Generative Adversarial Network）、VAE（Variational Autoencoder）、拡散モデル（Diffusion Model）、自己回帰モデル（GPTなど）がある。",
+    "relatedTermIds": [
+      "gan",
+      "vae",
+      "diffusion_model",
+      "gpt",
+      "llm"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "boosting",
+    "term": "ブースティング",
+    "termEn": "Boosting",
+    "categoryId": "ch3",
+    "definition": "弱学習器を逐次的に学習させ、前のモデルの誤りを次のモデルが補正するアンサンブル学習手法。",
+    "detail": "ブースティング（Boosting）は、アンサンブル学習の一手法で、弱学習器（Weak Learner）を逐次的に学習させ、前のモデルが誤分類したサンプルに重点を置いて次のモデルを学習する。代表的な実装にはAdaBoost、Gradient Boosting、XGBoost、LightGBMがある。バギングはバリアンス削減に強く並列学習であるのに対し、ブースティングは統計的バイアス（bias-variance tradeoffにおけるbias）削減に強く逐次学習という対比がG検定頻出。ここでいう「バイアス削減」は社会的バイアスや公平性の文脈ではなく、モデルの予測と真値の系統的なずれを意味する統計的バイアスの削減を指す。",
+    "relatedTermIds": [
+      "ensemble_learning",
+      "random_forest",
+      "decision_tree"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "lime_xai",
+    "term": "LIME",
+    "termEn": "LIME (Local Interpretable Model-agnostic Explanations)",
+    "categoryId": "ch8",
+    "definition": "個々の予測結果について、その近傍で解釈可能な単純モデルを学習し、元のモデルの判断理由を局所的に近似して説明するXAI手法。",
+    "detail": "LIME（Local Interpretable Model-agnostic Explanations）は、任意の機械学習モデル（ブラックボックス）の個々の予測について、その周辺で線形モデル等の解釈可能なサロゲートモデルを局所的に学習し、どの特徴量が予測に貢献したかを可視化するXAI手法。モデル非依存であるため、任意のモデルに適用可能。LIMEは法律用語ではなくXAIの技術用語であり、ch8に配置する際は説明責任・透明性との関連（AIシステムの判断根拠を人間が理解するための手段）として記述する。SHAPとともに局所説明手法の代表として知られる。",
+    "relatedTermIds": [
+      "xai",
+      "xai_ethics",
+      "accountability"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "federated_learning",
+    "term": "フェデレーテッドラーニング",
+    "termEn": "Federated Learning",
+    "categoryId": "ch7",
+    "definition": "データを中央サーバに集約せず、各端末や組織で学習したモデル更新を集約して共有モデルを改善する分散学習の枠組み。",
+    "detail": "フェデレーテッドラーニング（Federated Learning、連合学習）は、生データをサーバに送ることなく、各クライアントが局所データでモデルを学習し、勾配またはモデル重みの差分のみをサーバに送信して集約（FedAvg）する分散機械学習の枠組み。生データを中央に集約しないという点でプライバシーへの配慮を持つ設計であるが、「プライバシー保護型」と断定しすぎないことに注意が必要で、完全なプライバシー保証には差分プライバシーやセキュアアグリゲーションなどの追加技術が必要である。通信コスト・データ不均一性（non-IIDデータ）・モデル汚染が課題として挙げられる。",
+    "relatedTermIds": [
+      "privacy",
+      "mlops"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "shap",
+    "term": "SHAP",
+    "termEn": "SHAP (SHapley Additive exPlanations)",
+    "categoryId": "ch8",
+    "definition": "ゲーム理論のShapley値を応用し、各特徴量が個々の予測にどの程度寄与したかを定量的に説明するXAI手法。",
+    "detail": "SHAP（SHapley Additive exPlanations）は、協力ゲーム理論のShapley値を機械学習モデルの予測説明に応用する手法。各特徴量の寄与度を、全特徴量の組み合わせにわたる限界寄与度の平均として定量化し、個々の予測（ローカル説明）およびモデル全体（グローバル説明）の両方を提供できる。G検定の文脈では、Shapley値の計算概念・各特徴量の寄与度・LIMEとの違いを中心に理解することが重要。LIMEが局所でサロゲートモデルを当てはめる近似手法であるのに対し、SHAPはShapley値という数学的基盤に立脚する点が異なる。",
+    "relatedTermIds": [
+      "xai",
+      "xai_ethics",
+      "accountability"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "unfair_competition_prevention_act",
+    "term": "不正競争防止法",
+    "termEn": "Unfair Competition Prevention Act (Japan)",
+    "categoryId": "ch8",
+    "definition": "営業秘密や限定提供データなど、企業のデータ・情報資産を不正な取得・使用・開示から保護する日本の法律。",
+    "detail": "不正競争防止法は、日本の産業活動における不正競争を規制する法律であり、AIとデータの文脈では主に以下の点が問われる。(1)営業秘密の保護：有用性・秘密管理性・非公知性の3要件を満たすデータが対象。(2)限定提供データの保護：2018年改正で追加された、一定条件下で共有されるデータセットの保護規定。AI学習用データや企業のデータ資産がこれらに該当する場合の取り扱いが実務的に重要となる。この法律はAIそのものを包括的に規制するAI規制法ではなく、AI学習データや企業データの保護に関係する法律として理解することが重要である。",
+    "relatedTermIds": [
+      "copyright_act_30_4",
+      "personal_information_protection_act",
+      "ai_ethics"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "bagging",
+    "term": "バギング",
+    "termEn": "Bagging (Bootstrap Aggregating)",
+    "categoryId": "ch3",
+    "definition": "ブートストラップサンプリングで複数の訓練データを作り、複数モデルを並列学習して多数決・平均で統合するアンサンブル手法。",
+    "detail": "バギング（Bagging、Bootstrap Aggregating）は、アンサンブル学習の一手法で、元のデータから復元抽出（ブートストラップ）で複数の訓練セットを作り、それぞれで独立したモデルを学習させ、予測を多数決（分類）または平均（回帰）で統合する。ランダムフォレストはバギングの代表的な拡張。バリアンスを減少させる効果が強く、過学習しやすい高分散モデル（決定木など）に有効。ブースティングと対比して理解する。",
+    "relatedTermIds": [
+      "ensemble_learning",
+      "random_forest",
+      "decision_tree",
+      "overfitting"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "epoch",
+    "term": "エポック",
+    "termEn": "Epoch",
+    "categoryId": "ch4",
+    "definition": "訓練データ全件を1回学習する単位。複数エポック繰り返して収束させる。",
+    "detail": "エポック（Epoch）は、ニューラルネットワークの学習において全訓練データを1回走査する単位である。通常、学習は複数エポック繰り返され、各エポックでデータをシャッフルして過学習を防ぐ。エポック数が少なすぎると未学習（Underfitting）、多すぎると過学習（Overfitting）になる。早期打ち切り（Early Stopping）ではバリデーション誤差が改善しなくなったエポック時点でトレーニングを停止する。",
+    "relatedTermIds": [
+      "early_stopping",
+      "overfitting",
+      "hyperparameter"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "annotation",
+    "term": "アノテーション",
+    "termEn": "Annotation (Data Labeling)",
+    "categoryId": "ch7",
+    "definition": "機械学習の訓練データに正解ラベル（タグ・境界ボックス・感情など）を付与する作業および成果物。",
+    "detail": "アノテーション（Annotation）は、教師あり学習の訓練データを作成するために、生データ（画像・テキスト・音声）に対して人間が正解情報を付与する作業を指す。画像認識ではバウンディングボックスの描画やセグメンテーションマスク、NLPでは固有表現・感情・文書分類のラベル付けが代表例。クラウドソーシングやアクティブラーニングで効率化できる。品質管理（アノテータ間一致率）もMLOpsにおける重要指標。",
+    "relatedTermIds": [
+      "supervised_learning",
+      "mlops",
+      "data_augmentation"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "peft",
+    "term": "PEFT",
+    "termEn": "PEFT (Parameter-Efficient Fine-Tuning)",
+    "categoryId": "ch6",
+    "definition": "LLMの全パラメータを更新せず、少数の追加パラメータのみを学習してファインチューニングを効率化する手法群の総称。",
+    "detail": "PEFT（Parameter-Efficient Fine-Tuning）は、LLMの大規模パラメータ全体を更新する代わりに、少数の追加パラメータや特定の層のみを学習することで、計算コストとメモリ消費を大幅に削減しながらタスク適応を行う手法群の総称。代表的な手法にLoRA（Low-Rank Adaptation）、Prefix Tuning、Prompt Tuning、Adapter Tuning がある。",
+    "relatedTermIds": [
+      "lora",
+      "fine_tuning",
+      "llm",
+      "transfer_learning"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "decoder",
+    "term": "デコーダ",
+    "termEn": "Decoder",
+    "categoryId": "ch5",
+    "definition": "エンコーダが圧縮した表現から元のデータまたは目標出力を生成する神経回路の構成要素。",
+    "detail": "デコーダ（Decoder）は、エンコーダ-デコーダアーキテクチャにおいて、エンコーダが生成した潜在表現から目標出力を生成するコンポーネント。オートエンコーダでは入力を再構成、Seq2Seqでは翻訳先言語を生成、TransformerのデコーダはEncoder-Decoder Attentionで入力情報を参照しながら自己回帰的にトークンを生成する。GPT系LLMはDecoderのみ（Decoder-only）、BERTはEncoderのみ（Encoder-only）アーキテクチャ。",
+    "relatedTermIds": [
+      "autoencoder",
+      "transformer",
+      "attention_mechanism"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "chatbot",
+    "term": "チャットボット",
+    "termEn": "Chatbot",
+    "categoryId": "ch1",
+    "definition": "テキストまたは音声で人間とリアルタイムに会話するAIシステム。ルールベースから生成AI型まで多様な実装がある。",
+    "detail": "チャットボット（Chatbot）は、人間との自然な対話をシミュレートするAIシステムの総称。初期のELIZA（1966）はルールベースのパターンマッチングで動作した。現代のチャットボットはNLP技術と機械学習を活用し、LLMを利用した生成型チャットボット（ChatGPT等）へ発展した。カスタマーサポート・FAQ対応・メンタルヘルスケアなど多様な業務で活用される。",
+    "relatedTermIds": [
+      "nlp_definition",
+      "llm",
+      "turing_test"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "object_detection",
+    "term": "物体検出",
+    "termEn": "Object Detection",
+    "categoryId": "ch6",
+    "definition": "画像内の物体の位置（バウンディングボックス）とクラスを同時に識別するコンピュータビジョンタスク。",
+    "detail": "物体検出（Object Detection）は、画像や動画内に存在する物体の種類（分類）と位置（バウンディングボックス）を同時に推定するタスク。2段階手法（R-CNN系）と1段階手法（YOLO、SSD）がある。評価指標はIoU（Intersection over Union）とmAP（mean Average Precision）。自動運転・監視カメラ・医療画像診断などに応用される。",
+    "relatedTermIds": [
+      "cnn",
+      "resnet"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "chinese_room",
+    "term": "中国語の部屋",
+    "termEn": "Chinese Room",
+    "categoryId": "ch1",
+    "definition": "ジョン・サールが提唱した思考実験で、記号操作だけでは「理解」は生まれないと主張し、強いAIへの批判として有名。",
+    "detail": "「中国語の部屋」（Chinese Room）は哲学者ジョン・サール（John Searle）が1980年に提唱した思考実験。英語しか分からない人が中国語の指示書に従って記号を操作すると、外から見ると中国語を理解しているように見えるが、実際には意味を理解していない。この実験は「シンタックス（構文）だけではセマンティクス（意味）は生じない」という主張に基づき、強いAIへの批判として有名。フレーム問題・シンボルグラウンディング問題とともにAI哲学の重要論題。",
+    "relatedTermIds": [
+      "strong_ai",
+      "weak_ai",
+      "turing_test",
+      "symbol_grounding_problem",
+      "frame_problem"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "weight_initialization",
+    "term": "重みの初期化",
+    "termEn": "Weight Initialization",
+    "categoryId": "ch4",
+    "definition": "ニューラルネットワークの学習前に重みパラメータの初期値を設定する操作。勾配消失・爆発を防ぎ学習収束を安定させる。",
+    "detail": "重みの初期化（Weight Initialization）は、各層の重みパラメータに適切な初期値を設定することである。全ゼロ初期化は対称性問題を引き起こすため不適。Glorot（Xavier）初期化（sigmoid/tanh用）とHe初期化（ReLU用）が一般的。適切な初期化は勾配消失・爆発を防ぎ、学習の安定と収束速度を改善する。",
+    "relatedTermIds": [
+      "vanishing_gradient",
+      "relu",
+      "backpropagation"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "data_quality",
+    "term": "データ品質",
+    "termEn": "Data Quality",
+    "categoryId": "ch7",
+    "definition": "AI・機械学習プロジェクトにおけるデータの正確性・完全性・一貫性・適時性・代表性などの品質特性の総称。",
+    "detail": "データ品質（Data Quality）は、機械学習・AIプロジェクトの成否を左右する基盤要素で、正確性・完全性・一貫性・適時性・代表性などの多側面から評価される。GIGO（Garbage In, Garbage Out）の格言が示すとおり、品質の低いデータは高精度モデルを構築しても無意味になる。データクレンジング・欠損値処理・外れ値検出・重複除去・代表性分析がデータ品質管理の主要作業である。",
+    "relatedTermIds": [
+      "data_augmentation_ops",
+      "mlops",
+      "ml_bias"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "adagrad",
+    "term": "AdaGrad",
+    "termEn": "AdaGrad (Adaptive Gradient)",
+    "categoryId": "ch4",
+    "definition": "各パラメータの過去勾配の二乗和に基づいて学習率を個別に調整する最適化アルゴリズム。",
+    "detail": "AdaGrad（Adaptive Gradient）は、各パラメータに個別の学習率を適用する最適化アルゴリズムで、過去の勾配の二乗和の平方根でパラメータの学習率を除算する。頻繁に更新されるパラメータの学習率を小さく、まれに更新されるパラメータの学習率を大きく保つ。スパースな特徴量（NLPなど）に有効だが、学習率が単調に減少し続け後期に学習が進まなくなる欠点がある。RMSPropやAdamはこれを改善した後継アルゴリズム。",
+    "relatedTermIds": [
+      "adam",
+      "sgd",
+      "gradient_descent"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "stride",
+    "term": "ストライド",
+    "termEn": "Stride (CNN)",
+    "categoryId": "ch5",
+    "definition": "CNNの畳み込み演算でフィルタを何ピクセルずつ移動させるかを決めるハイパーパラメータ。",
+    "detail": "ストライド（Stride）は、CNNにおける畳み込みまたはプーリングの演算で、フィルタを入力特徴マップ上に適用する際に何ピクセルずつ移動するかを指定するハイパーパラメータ。ストライドが1の場合は通常の畳み込み、ストライドが2以上の場合は出力特徴マップの空間サイズが縮小する（ダウンサンプリング効果）。パディングとストライドを組み合わせて出力サイズを制御する。出力サイズ = (入力 - フィルタ + 2×パディング) / ストライド + 1。",
+    "relatedTermIds": [
+      "cnn",
+      "convolutional_layer",
+      "pooling_layer"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "model_registry",
+    "term": "モデルレジストリ",
+    "termEn": "Model Registry",
+    "categoryId": "ch7",
+    "definition": "学習済みモデルのバージョン・メタデータ・デプロイ状態を一元管理するMLOpsコンポーネント。",
+    "detail": "モデルレジストリ（Model Registry）は、MLOpsにおいて学習済みモデルをバージョン管理し、メタデータ（精度・ハイパーパラメータ・訓練データ情報）とライフサイクル状態（Staging/Production/Archived）を一元管理するシステム。MLflow、DVC、Amazon SageMakerモデルレジストリなどのツールが広く使われる。再現性の確保・ロールバック・A/Bテストの効率化が主目的。",
+    "relatedTermIds": [
+      "mlops",
+      "model_drift",
+      "ai_project_lifecycle"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "yolo",
+    "term": "YOLO",
+    "termEn": "YOLO (You Only Look Once)",
+    "categoryId": "ch6",
+    "definition": "画像を1回のニューラルネットワーク推論で物体検出を行うリアルタイム物体検出アルゴリズム。",
+    "detail": "YOLO（You Only Look Once）は、リアルタイム物体検出（Object Detection）アルゴリズムで、入力画像を1回のCNN推論でグリッドに分割し、各グリッドでバウンディングボックスとクラス確率を同時予測する1段階手法。従来の2段階手法（R-CNNなど領域提案→分類）より高速性が特徴。YOLOv3〜YOLOv8と継続的に改良されている。G検定では「1-Stage vs 2-Stage Detector」の対比で登場する。",
+    "relatedTermIds": [
+      "cnn",
+      "resnet"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "ontology",
+    "term": "オントロジー",
+    "termEn": "Ontology (Knowledge Representation)",
+    "categoryId": "ch2",
+    "definition": "概念とその関係を形式的に定義した知識表現の枠組み。意味ネットワークを拡張した機械可読な共有概念体系。",
+    "detail": "オントロジー（Ontology）は、知識表現において概念（クラス）・インスタンス・プロパティ・関係（is-a, part-of等）を形式的に定義したものである。セマンティックウェブ（Web Ontology Language: OWL）での応用や、医療・生命科学分野での知識共有に活用される。AI分野では知識グラフ（Knowledge Graph）の基盤として、エンティティ間の意味的関係を機械可読な形で表現する。",
+    "relatedTermIds": [
+      "semantic_network",
+      "knowledge_representation",
+      "expert_system"
+    ],
+    "importance": 3
+  },
+  {
+    "id": "naive_bayes",
+    "term": "ナイーブベイズ",
+    "termEn": "Naive Bayes Classifier",
+    "categoryId": "ch3",
+    "definition": "各特徴量の条件付き独立を仮定してベイズの定理で事後確率を計算する確率的分類器。",
+    "detail": "ナイーブベイズ分類器（Naive Bayes Classifier）は、各特徴量がクラスに対して条件付き独立であるという強い仮定に基づいてベイズの定理を適用する確率的分類器。計算が単純で高速、訓練データが少なくても動作し、テキスト分類（スパムフィルタ・感情分析）で広く使われてきた。",
+    "relatedTermIds": [
+      "supervised_learning",
+      "logistic_regression"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "densenet",
+    "term": "DenseNet",
+    "termEn": "DenseNet (Densely Connected Convolutional Networks)",
+    "categoryId": "ch5",
+    "definition": "全ての前の層の出力を後続の全ての層に連結するDense Connectionを用いたCNNアーキテクチャ。",
+    "detail": "DenseNet（Densely Connected Convolutional Networks）は、各層が前の全層の特徴マップを連結（concatenate）して受け取るDense Block構造を採用したCNNアーキテクチャ。ResNetのスキップ結合（加算）を拡張した形。特徴の再利用によりパラメータ効率が高く、勾配消失も起きにくい。G検定では「ResNet（加算接続）vs DenseNet（連結接続）」の対比が問われる場合がある。",
+    "relatedTermIds": [
+      "cnn",
+      "resnet",
+      "skip_connection"
+    ],
+    "importance": 3
+  },
+  {
+    "id": "ai_bias",
+    "term": "AIバイアス",
+    "termEn": "AI Bias",
+    "categoryId": "ch8",
+    "definition": "AI・機械学習モデルが特定のグループに対して不公平な予測・判断を行う偏りの総称。データバイアス・アルゴリズムバイアス・社会的バイアスを包含する。",
+    "detail": "AIバイアス（AI Bias）は、AI・機械学習モデルが特定の人種・性別・年齢・社会集団に対して不公平または差別的な予測・判断を行う偏りの総称です。機械学習バイアス（ml_bias）より広義であり、統計的バイアスに加え、特徴量設計・モデル選択・運用文脈に起因する偏りも含みます。主な原因として、学習データの代表性不足や歴史的偏見の反映、アルゴリズムの設計バイアス、フィードバックループによる偏りの増幅が挙げられます。G検定ch8では公平性・透明性・説明責任との関係で出題されます。",
+    "relatedTermIds": [
+      "ml_bias",
+      "fairness",
+      "accountability",
+      "transparency",
+      "ai_ethics"
+    ],
+    "importance": 1,
+    "aliases": [
+      "algorithmic bias",
+      "アルゴリズムバイアス"
+    ]
+  },
+  {
+    "id": "data_drift",
+    "term": "データドリフト",
+    "termEn": "Data Drift",
+    "categoryId": "ch7",
+    "definition": "本番環境の入力データ分布が学習時のデータ分布から乖離する現象。モデル性能劣化の主要原因の一つ。",
+    "detail": "データドリフト（Data Drift）は、コバリエートシフトとも呼ばれ、AIモデルが本番運用される中で入力特徴量の統計的分布が学習データと乖離していく現象です。季節変動・ユーザー行動変化・データ収集環境の変化が主要因となります。検出手法としてKolmogorov-Smirnov検定（KS検定）やPSI（Population Stability Index）が広く使われます。コンセプトドリフト（目的変数の概念変化）とは区別することが重要であり、MLOpsにおけるヘルスモニタリングの重要な監視対象です。",
+    "relatedTermIds": [
+      "model_drift",
+      "concept_drift",
+      "mlops",
+      "health_monitoring"
+    ],
+    "importance": 2
+  },
+  {
+    "id": "concept_drift",
+    "term": "コンセプトドリフト",
+    "termEn": "Concept Drift",
+    "categoryId": "ch7",
+    "definition": "目的変数の意味・判断基準が時間と共に変化することでモデルの予測精度が劣化する現象。",
+    "detail": "コンセプトドリフト（Concept Drift）は、AIモデルが学習した入力と出力の関係（概念）が時間とともに変化し、モデルの予測精度が低下する現象です。データドリフト（入力特徴量の分布変化）との区別が重要であり、コンセプトドリフトはターゲット変数の意味・判断基準そのものが変化する点が異なります。例として、消費者の購買基準変化・詐欺パターンの進化・社会制度の変更が挙げられます。検出が難しく、定期的なモデル再学習やオンライン学習による適応が対処法となります。MLOpsにおけるモデル監視の主要課題の一つです。",
+    "relatedTermIds": [
+      "model_drift",
+      "data_drift",
+      "mlops"
+    ],
+    "importance": 2
   }
 ]

@@ -30,7 +30,8 @@ export function useGlossary({
         normalizedQuery === '' ||
         t.term.toLowerCase().includes(normalizedQuery) ||
         t.termEn.toLowerCase().includes(normalizedQuery) ||
-        t.definition.toLowerCase().includes(normalizedQuery);
+        t.definition.toLowerCase().includes(normalizedQuery) ||
+        (t.aliases ?? []).some(a => a.toLowerCase().includes(normalizedQuery));
 
       return matchesCategory && matchesSearch;
     });

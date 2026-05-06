@@ -14,4 +14,5 @@ export interface GlossaryTerm {
   relatedTermIds: string[];
   importance: Importance;
   source_ref_supplements?: string[];     // Felo 由来 URL 保存用 — 今回追加
+  aliases?: string[];                    // 検索・alias 用の別称リスト（任意）
 }

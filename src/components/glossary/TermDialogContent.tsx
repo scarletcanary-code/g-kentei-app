@@ -53,6 +53,11 @@ export default function TermDialogContent({ term }: TermDialogContentProps) {
         )}
         {importanceBadge(term.importance)}
       </div>
+      {term.aliases && term.aliases.length > 0 && (
+        <p className="text-xs text-muted-foreground">
+          別称: {term.aliases.join('、')}
+        </p>
+      )}
       <div className="flex justify-between items-center gap-2 flex-wrap">
         <label className="flex items-center gap-1.5 cursor-pointer select-none">
           <input
