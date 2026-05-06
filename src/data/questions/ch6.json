@@ -141,7 +141,9 @@
     "explanation": "GPT（Generative Pre-trained Transformer）はTransformerのデコーダ部分を応用し、直前のトークン列から次のトークンを予測することで言語を自己回帰的に生成するモデル。大規模なデータで事前学習後に各タスクへファインチューニングする。",
     "relatedTermIds": [
       "gpt",
-      "transformer"
+      "transformer",
+      "generative_model",
+      "decoder"
     ],
     "difficulty": 1,
     "tags": [
@@ -284,7 +286,8 @@
     "correctIndex": 1,
     "explanation": "RAGはLLMが学習済みパラメータに含まない最新情報や組織固有の情報に対してハルシネーション（もっともらしい嘘）を起こしやすいという課題を解決するために、回答生成時に外部知識ベースを検索して参照する手法。推論速度・モデル軽量化・多言語化はRAGが直接解決しようとする課題ではない。",
     "relatedTermIds": [
-      "rag"
+      "rag",
+      "hallucination"
     ],
     "difficulty": 1,
     "tags": [
@@ -347,7 +350,8 @@
     "explanation": "LoRAはモデルの全パラメータを更新せず、重み行列に追加した小さな低ランク行列のみを学習することで計算資源を大幅に削減してファインチューニングを実現する。GPU資源が限られる場合に特定タスクへのカスタマイズに適している。RAGも有効だが、特定タスクへのスタイル・形式の学習という面ではLoRAが適切。",
     "relatedTermIds": [
       "lora",
-      "fine_tuning"
+      "fine_tuning",
+      "hallucination"
     ],
     "difficulty": 2,
     "tags": [
@@ -618,7 +622,8 @@
     "explanation": "XAI（説明可能なAI）は、ブラックボックス化しやすいAI（特にディープラーニング）の判断・予測の根拠を人間が理解できるように説明する技術・アプローチ。医療・金融・法律などの高リスク領域でのAI活用において透明性・信頼性の確保のために重要。",
     "relatedTermIds": [
       "xai",
-      "transparency"
+      "transparency",
+      "auc"
     ],
     "difficulty": 1,
     "tags": [
@@ -692,7 +697,9 @@
     "explanation": "ILSVRCはImageNetを使った画像認識の国際コンペティション。2012年にAlexNetがディープラーニングを用いて圧倒的な精度差で優勝し、この出来事が現在の第3次AIブームの決定的な転換点となった。以後、VGG・GoogLeNet・ResNetなどのCNNモデルが相次いで登場した。",
     "relatedTermIds": [
       "imagenet",
-      "cnn"
+      "cnn",
+      "vgg",
+      "object_detection"
     ],
     "difficulty": 1,
     "tags": [
@@ -755,7 +762,8 @@
     "explanation": "ResNet（Residual Network）はスキップ結合（残差接続）を導入したCNNモデル。層を飛び越えて信号を伝えることで深いネットワークで発生する勾配消失問題を解決し、150層を超える極めて深いネットワークの学習を可能にした。なお3×3フィルタはVGG、インセプションモジュールはGoogLeNet、スケーリングはEfficientNetの特徴。",
     "relatedTermIds": [
       "resnet",
-      "skip_connection"
+      "skip_connection",
+      "vgg"
     ],
     "difficulty": 1,
     "tags": [
@@ -967,7 +975,8 @@
     "explanation": "セマンティックセグメンテーションは全ピクセルにクラスラベルを付けるが、同じクラスの複数の物体（例：2台の車）を1つの領域として扱う。インスタンスセグメンテーションはさらに進んで同クラスの個々の物体を別々のインスタンスとして識別・分離する。両方の能力を持つものをパノプティックセグメンテーションという。",
     "relatedTermIds": [
       "semantic_segmentation",
-      "instance_segmentation"
+      "instance_segmentation",
+      "object_detection"
     ],
     "difficulty": 2,
     "tags": [
@@ -1030,7 +1039,8 @@
     "relatedTermIds": [
       "rcnn",
       "yolo",
-      "ssd"
+      "ssd",
+      "object_detection"
     ],
     "difficulty": 2,
     "tags": [
@@ -1170,7 +1180,8 @@
     "explanation": "T5（Text-to-Text Transfer Transformer）はGoogleが開発したモデルで、翻訳・要約・質問応答・分類などあらゆる自然言語処理タスクを「テキストを入力してテキストを出力する」という共通フォーマットに統一して扱う。一つのモデルで多様なタスクに対応できる柔軟性が特徴。デコーダのみはGPT、エンコーダのみはBERTの特徴。",
     "relatedTermIds": [
       "t5",
-      "transformer"
+      "transformer",
+      "decoder"
     ],
     "difficulty": 2,
     "tags": [
@@ -1495,7 +1506,8 @@
     "explanation": "WaveNetはGoogleのDeepMindが開発した、生の音声波形（オーディオサンプル）を直接生成する深層生成モデル。拡張因果畳み込み（dilated causal convolution）を使い、長い時系列の依存関係を効率的に学習することで非常に自然で人間らしい音声合成を実現した。音声合成・音声認識の発展に大きく貢献した。",
     "relatedTermIds": [
       "wavenet",
-      "speech_synthesis"
+      "speech_synthesis",
+      "generative_model"
     ],
     "difficulty": 1,
     "tags": [
@@ -1565,7 +1577,8 @@
     "explanation": "自動運転では走行中にリアルタイムで周囲の車・歩行者・道路標識・信号機などを検出する必要があり、高速処理が求められる。YOLOのような1段階（one-stage）物体検出モデルは画像全体を一度見るだけで高速に検出できるため自動運転への応用に適している。ディープラーニングが「見る」能力を持ったことがこの分野を革新した。",
     "relatedTermIds": [
       "yolo",
-      "autonomous_driving"
+      "autonomous_driving",
+      "object_detection"
     ],
     "difficulty": 1,
     "tags": [
@@ -1623,7 +1636,8 @@
     "explanation": "Stable Diffusionは拡散モデルの枠組みに基づく画像生成モデルで、テキスト条件付きでノイズから段階的に画像を生成し、潜在空間で拡散過程を行う潜在拡散モデルとして実装される。GANの敵対的学習を基盤とするわけではないため、choice3は不適切。",
     "relatedTermIds": [
       "stable_diffusion",
-      "diffusion_model"
+      "diffusion_model",
+      "generative_model"
     ],
     "difficulty": 1,
     "tags": [
@@ -1691,7 +1705,9 @@
     "explanation": "EfficientNetはGoogleが提案したCNNモデルで、ネットワークの「深さ（Depth）」「幅（Width）」「入力画像の解像度（Resolution）」という3要素を複合スケーリング係数でバランスよく同時にスケーリングすることで、少ない計算量で高い精度を実現した。ResNet（スキップ結合）、VGG（3×3フィルタ）、GoogLeNet（インセプションモジュール）とは異なる。",
     "relatedTermIds": [
       "efficientnet",
-      "cnn"
+      "cnn",
+      "vgg",
+      "object_detection"
     ],
     "difficulty": 2,
     "tags": [
@@ -1960,7 +1976,8 @@
       "gpt",
       "bert",
       "t5",
-      "transformer"
+      "transformer",
+      "decoder"
     ],
     "difficulty": 2,
     "tags": [
@@ -2162,7 +2179,8 @@
     "relatedTermIds": [
       "clip",
       "multimodal",
-      "contrastive_learning"
+      "contrastive_learning",
+      "generative_model"
     ],
     "difficulty": 3,
     "tags": [
@@ -2228,7 +2246,8 @@
     "explanation": "転移学習は大規模データで事前学習（Pre-training）したモデルの知識を異なるタスクに転用するアプローチの総称。ファインチューニングはその代表的な手法で、事前学習済みモデルのパラメータの全部または一部を新タスクの（少量の）データで追加学習する。LoRAなどのPEFTも転移学習の枠組みに含まれる効率的なファインチューニング手法。",
     "relatedTermIds": [
       "transfer_learning",
-      "fine_tuning"
+      "fine_tuning",
+      "peft"
     ],
     "difficulty": 1,
     "tags": [

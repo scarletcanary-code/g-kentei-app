@@ -406,7 +406,9 @@
     "correctIndex": 0,
     "explanation": "VAEはエンコーダが潜在空間を平均・分散でパラメータ化した確率分布として学習し、デコーダで新規データを生成できる生成モデル。AEは確定的な圧縮・復元を行い、異常検知や次元削減に使われる。両者ともにエンコーダ・デコーダ構造を持ち、教師なし学習で訓練される点は共通。",
     "relatedTermIds": [
-      "autoencoder"
+      "autoencoder",
+      "generative_model",
+      "decoder"
     ],
     "difficulty": 2,
     "tags": [
@@ -478,7 +480,8 @@
     "relatedTermIds": [
       "dropout",
       "regularization",
-      "overfitting"
+      "overfitting",
+      "adagrad"
     ],
     "difficulty": 1,
     "tags": [
@@ -622,7 +625,9 @@
     "explanation": "VGGなどのスキップ結合なしの深いネットワークは、逆伝播時に勾配が層を遡るほど小さくなる勾配消失問題が起きやすく、層を増やしても精度が向上しない問題があった。ResNetのスキップ結合は恒等写像を入力に直接加算することで勾配が迂回路を通り消えにくくなり、100層以上の超深層ネットワークの学習を可能にした。",
     "relatedTermIds": [
       "skip_connection",
-      "resnet"
+      "resnet",
+      "batch_size",
+      "vgg"
     ],
     "difficulty": 2,
     "tags": [
@@ -827,7 +832,8 @@
     "explanation": "データ拡張（Data Augmentation）は、既存の学習データに対して反転・回転・色変換・クロッピングなどの変換を加えてデータのバリエーションを人工的に増やし、過学習を防いで汎化性能を向上させる手法。特にラベル付きデータが少ない場合に有効。",
     "relatedTermIds": [
       "data_augmentation",
-      "overfitting"
+      "overfitting",
+      "generative_model"
     ],
     "difficulty": 1,
     "tags": [
@@ -963,7 +969,8 @@
     "correctIndex": 0,
     "explanation": "VGG（Visual Geometry Group）は、3×3の小さな畳み込みフィルタを複数積み重ねてネットワークを深くすることで高精度を実現したCNNモデル。シンプルな構造が特徴で、転移学習のベースモデルとして広く利用された。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "vgg"
     ],
     "difficulty": 3,
     "tags": [
@@ -1025,7 +1032,8 @@
     "correctIndex": 0,
     "explanation": "ストライドはフィルタを移動させる間隔のこと。ストライド1なら1ピクセルずつ移動し、ストライド2なら2ピクセルずつ移動する。ストライドを大きくすると出力特徴マップのサイズが小さくなり、計算量を削減できる。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "stride"
     ],
     "difficulty": 1,
     "tags": [
@@ -1497,7 +1505,9 @@
     "explanation": "VAEは通常のオートエンコーダと異なり、潜在空間を確率分布（正規分布など）でモデル化する。潜在変数からサンプリングすることで新しいデータを生成できる深層生成モデルであり、GANと並ぶ代表的な生成モデルの1つ。",
     "relatedTermIds": [
       "autoencoder",
-      "vae"
+      "vae",
+      "generative_model",
+      "decoder"
     ],
     "difficulty": 2,
     "tags": [
@@ -1703,7 +1713,9 @@
     "correctIndex": 2,
     "explanation": "バッチ正規化がミニバッチ単位で正規化するのに対し、レイヤー正規化は各サンプル内の特徴量方向で正規化する。バッチサイズに依存しないためバッチサイズが小さい場合や、RNN・Transformerなどの系列モデルに適している。",
     "relatedTermIds": [
-      "batch_normalization"
+      "batch_normalization",
+      "batch_size",
+      "mini_batch"
     ],
     "difficulty": 1,
     "tags": [
@@ -1842,7 +1854,8 @@
     "explanation": "早期打ち切りは検証データでの性能をモニタリングし、一定エポック以上改善が見られなくなった時点で学習を停止する正則化手法。過学習の開始前に学習を終わらせることで、汎化性能が高い状態のモデルを保存できる。",
     "relatedTermIds": [
       "regularization",
-      "overfitting"
+      "overfitting",
+      "epoch"
     ],
     "difficulty": 1,
     "tags": [
@@ -1916,7 +1929,8 @@
     "explanation": "DenseNetはすべての層が後続のすべての層と接続されるDense接続を特徴とする。各層は前の全層の特徴マップを受け取るため、特徴の再利用が促進されパラメータ数を削減できる。ResNetのスキップ結合を発展させた構造。",
     "relatedTermIds": [
       "skip_connection",
-      "resnet"
+      "resnet",
+      "densenet"
     ],
     "difficulty": 1,
     "tags": [
@@ -2095,7 +2109,9 @@
     "correctIndex": 2,
     "explanation": "ドメイン適応は転移学習の一種で、ソースドメイン（例：昼の写真）とターゲットドメイン（例：夜の写真）の分布のずれに対処する手法。ターゲットドメインのラベルなしデータを活用して、ドメイン間の特徴分布を近づける。",
     "relatedTermIds": [
-      "transfer_learning"
+      "transfer_learning",
+      "rule_based_ai",
+      "ontology"
     ],
     "difficulty": 2,
     "tags": [
@@ -2200,7 +2216,8 @@
     "explanation": "Seq2Seqはエンコーダが入力シーケンス（例：英語文）を固定長の文脈ベクトルに圧縮し、デコーダがそこから別のシーケンス（例：日本語文）を生成するモデル。機械翻訳・要約・対話システムなどに応用される。後にAttention機構と組み合わせて大幅に改善された。",
     "relatedTermIds": [
       "rnn",
-      "self_attention"
+      "self_attention",
+      "decoder"
     ],
     "difficulty": 1,
     "tags": [
@@ -2328,7 +2345,8 @@
     "explanation": "Encoder-Decoder AttentionはTransformerのデコーダがエンコーダの出力全体を参照して、生成するトークンに関連する入力トークンに注目する機構。機械翻訳では訳語を生成する際に対応する原語に強く注目する振る舞いを学習する。",
     "relatedTermIds": [
       "transformer",
-      "self_attention"
+      "self_attention",
+      "decoder"
     ],
     "difficulty": 3,
     "tags": [
@@ -2580,7 +2598,8 @@
     "explanation": "転移学習の「特徴抽出（Feature Extraction）」とは、事前学習済みモデルの重みを固定（凍結）し、そのモデルが学習した特徴表現を新しいタスクの入力特徴として利用する手法である。ファインチューニングと異なり、事前学習済みの層は更新されず、新たに追加した出力層のみを学習する。少量のデータでも有効であり、画像・言語など多様なドメインで広く使われる。",
     "relatedTermIds": [
       "transfer_learning",
-      "fine_tuning"
+      "fine_tuning",
+      "vgg"
     ],
     "difficulty": 3,
     "tags": [
@@ -2896,7 +2915,8 @@
     "correctIndex": 3,
     "explanation": "畳み込み後の出力サイズは (W + 2P - F) / S + 1 で計算される。例えばW=6、F=3、P=1、S=1なら(6+2-3)/1+1=6となりサイズが維持される。パディングを増やせばサイズを保ち、ストライドを大きくすれば出力が小さくなる。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "stride"
     ],
     "difficulty": 3,
     "tags": [

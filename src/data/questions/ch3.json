@@ -20,7 +20,8 @@
     "correctIndex": 2,
     "explanation": "教師あり学習は入力と正解ラベルのペアを用いて入出力の写像を学習する。教師なし学習はラベルなしデータの構造を発見する（クラスタリング・次元削減など）。強化学習は報酬を最大化するよう行動方策を更新する。これらの違いを正確に区別することがG検定の頻出論点。",
     "relatedTermIds": [
-      "supervised_learning"
+      "supervised_learning",
+      "clustering"
     ],
     "difficulty": 1,
     "tags": [
@@ -89,7 +90,8 @@
     "correctIndex": 2,
     "explanation": "教師なし学習はラベルなしデータからデータの構造・パターン・クラスタを自律的に発見する。購買履歴のクラスタリングはその典型例。メール判別は教師あり学習（ラベルあり）、ゲームの方策学習は強化学習、価格予測は教師あり学習（回帰）に該当する。",
     "relatedTermIds": [
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "clustering"
     ],
     "difficulty": 1,
     "tags": [
@@ -160,7 +162,8 @@
     "correctIndex": 1,
     "explanation": "強化学習は、エージェントが環境の中で行動を試行し、報酬（良い結果）や罰（悪い結果）のフィードバックを受けながら、累積報酬が最大になる行動方策を学習する。ゲームAIや自律制御などに活用される。",
     "relatedTermIds": [
-      "reinforcement_learning"
+      "reinforcement_learning",
+      "agent"
     ],
     "difficulty": 1,
     "tags": [
@@ -225,7 +228,8 @@
     "correctIndex": 1,
     "explanation": "家賃（連続値）を面積から予測する問題は、正解ラベル（実際の家賃）付きデータで連続値を予測する教師あり学習の回帰タスクであり、線形回帰が適切。クラスタリングはラベルなし分類、ロジスティック回帰は2値分類（高い/安いなど）、強化学習は報酬最大化の逐次意思決定に用いる。",
     "relatedTermIds": [
-      "linear_regression"
+      "linear_regression",
+      "clustering"
     ],
     "difficulty": 1,
     "tags": [
@@ -354,7 +358,10 @@
     "explanation": "ランダムフォレストは、複数の決定木をランダムなデータサンプルとランダムな特徴量で並列学習し、分類は多数決・回帰は平均で最終予測を行うアンサンブル学習手法。決定木の過学習を抑制し、高い汎化性能を実現する。",
     "relatedTermIds": [
       "random_forest",
-      "ensemble_learning"
+      "ensemble_learning",
+      "rule_based_ai",
+      "bagging",
+      "boosting"
     ],
     "difficulty": 2,
     "tags": [
@@ -483,7 +490,8 @@
     "explanation": "k-means法はクラスタ数kを事前に指定し、重心を反復更新してデータをk個のクラスタに分割する教師なし学習。階層的クラスタリングはデンドログラムで可視化でき、後からクラスタ数を選択できる点が異なる。k-meansはクラスタ数の事前指定が必要という制約がある。",
     "relatedTermIds": [
       "k_means",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "clustering"
     ],
     "difficulty": 1,
     "tags": [
@@ -850,7 +858,8 @@
     "explanation": "ロジスティック回帰は、線形関数の出力にシグモイド関数を適用して0〜1の確率値に変換し、2クラス分類（Yes/No、Spam/非Spam）を行う教師あり学習手法。名前に「回帰」とあるが分類タスクに使われる点に注意。",
     "relatedTermIds": [
       "logistic_regression",
-      "sigmoid_function"
+      "sigmoid_function",
+      "clustering"
     ],
     "difficulty": 2,
     "tags": [
@@ -971,7 +980,9 @@
     "explanation": "勾配ブースティングは弱学習器（浅い決定木など）を逐次的に追加し、前の学習器の予測誤差を新しい学習器で補正する形で学習を進めるアンサンブル手法。XGBoostやLightGBMはこの手法の高性能実装で、コンペティションで広く使われる。",
     "relatedTermIds": [
       "gradient_boosting",
-      "ensemble_learning"
+      "ensemble_learning",
+      "bagging",
+      "boosting"
     ],
     "difficulty": 1,
     "tags": [
@@ -1100,7 +1111,8 @@
     "correctIndex": 0,
     "explanation": "k-近傍法（k-NN）は、予測対象のデータから距離が最も近いk個のデータを参照し、その多数決（分類）または平均（回帰）で予測値を決定する教師あり学習手法。モデルを事前に学習せず、予測時に毎回距離計算を行う「怠惰学習」の代表例。",
     "relatedTermIds": [
-      "k_nearest_neighbor"
+      "k_nearest_neighbor",
+      "clustering"
     ],
     "difficulty": 1,
     "tags": [
@@ -1749,7 +1761,8 @@
     "explanation": "階層的クラスタリングは、データ間の距離・類似度を用いて近いデータから順に結合（凝集型）または分割（分割型）していき、木構造（デンドログラム）として結果を表現する教師なし学習手法。クラスタ数の事前指定が不要な点がk-meansとの大きな違い。",
     "relatedTermIds": [
       "hierarchical_clustering",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "clustering"
     ],
     "difficulty": 1,
     "tags": [
@@ -1875,7 +1888,8 @@
     "explanation": "方策勾配法は強化学習の方策ベース手法で、エージェントの行動方策を直接パラメータ化し、期待累積報酬を最大化する方向に勾配法で方策を更新する。Q学習などの価値ベース手法と対比される代表的なアプローチ。",
     "relatedTermIds": [
       "policy_gradient",
-      "reinforcement_learning"
+      "reinforcement_learning",
+      "agent"
     ],
     "difficulty": 2,
     "tags": [
@@ -1933,7 +1947,8 @@
     "explanation": "強化学習では報酬設計がエージェントの行動方針を決定する。報酬が不適切に設計されると、人間の意図とは異なる「報酬ハッキング」と呼ばれる抜け道的な行動を学習してしまうことがある。目標に合った適切な報酬設計が良い性能の鍵となる。",
     "relatedTermIds": [
       "reward_design",
-      "reinforcement_learning"
+      "reinforcement_learning",
+      "agent"
     ],
     "difficulty": 1,
     "tags": [
@@ -2375,7 +2390,8 @@
     "explanation": "XGBoostは勾配ブースティングに正則化項（L1/L2）を組み込み、並列計算や欠損値の自動処理などの実装最適化を加えた高性能ライブラリ。Kaggleなどのデータサイエンスコンペで高い性能を発揮することで広く知られる。LightGBMはさらに大規模データ向けの高速実装。",
     "relatedTermIds": [
       "xgboost",
-      "gradient_boosting"
+      "gradient_boosting",
+      "boosting"
     ],
     "difficulty": 2,
     "tags": [
@@ -2623,7 +2639,9 @@
     "correctIndex": 3,
     "explanation": "データリーケージは、本来モデルが予測時に利用できない情報（目的変数の情報、将来の情報など）が訓練データに混入し、評価指標が実際より高く見える問題。時系列データで未来のデータが訓練に混入するケースが典型例。実運用では想定より性能が大幅に低下する。",
     "relatedTermIds": [
-      "data_leakage"
+      "data_leakage",
+      "auc",
+      "data_quality"
     ],
     "difficulty": 3,
     "tags": [
@@ -2732,7 +2750,9 @@
     "correctIndex": 3,
     "explanation": "ハイパーパラメータは学習によって自動更新されるモデルパラメータ（重みなど）とは異なり、学習前に人手で設定する制御パラメータ。ニューラルネットワークの学習率・エポック数・バッチサイズ、決定木の最大深さ、k-meansのクラスタ数などが代表例。グリッドサーチやランダムサーチで探索する。",
     "relatedTermIds": [
-      "hyperparameter"
+      "hyperparameter",
+      "batch_size",
+      "epoch"
     ],
     "difficulty": 1,
     "tags": [
@@ -2803,7 +2823,8 @@
     "explanation": "クラス不均衡問題では単純な精度（Accuracy）が意味をなさない場合があり（多数クラスを全部予測するだけで高精度になる）、F値やAUCなどの評価指標が適切。対処法として少数クラスの水増し（SMOTEなど）、多数クラスの削減（アンダーサンプリング）、コスト考慮型学習などが有効。",
     "relatedTermIds": [
       "class_imbalance",
-      "oversampling"
+      "oversampling",
+      "auc"
     ],
     "difficulty": 3,
     "tags": [

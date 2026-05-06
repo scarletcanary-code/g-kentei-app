@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const questionsDir = path.resolve(__dirname, '../src/data/questions');
+const termsJsonPath = path.resolve(__dirname, '../src/data/glossary/terms.json');
 
 // Collect all JSON files in questions dir
 const files = fs.readdirSync(questionsDir)
@@ -406,6 +407,31 @@ for (const q of allQuestions) {
       process.stdout.write(`[WARN V21] ${q.id}: 絶対表現を含む選択肢 "${preview}"\n`);
       warnCount++;
       break;
+    }
+  }
+}
+
+// V22: relatedTermIds の各 id が terms.json の id 集合に存在することを検証
+{
+  let termIdSet;
+  try {
+    const termsRaw = fs.readFileSync(termsJsonPath, 'utf8');
+    const terms = JSON.parse(termsRaw);
+    termIdSet = new Set(terms.map(t => t.id));
+  } catch (e) {
+    process.stderr.write(`[FAIL V22] terms.json 読み込み失敗: ${e.message}\n`);
+    failCount++;
+    termIdSet = null;
+  }
+  if (termIdSet) {
+    for (const q of allQuestions) {
+      if (!Array.isArray(q.relatedTermIds)) continue;
+      for (const rid of q.relatedTermIds) {
+        if (!termIdSet.has(rid)) {
+          process.stderr.write(`[FAIL V22] ${q.id}: relatedTermId "${rid}" not in terms.json\n`);
+          failCount++;
+        }
+      }
     }
   }
 }

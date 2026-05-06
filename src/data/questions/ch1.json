@@ -20,7 +20,8 @@
     "correctIndex": 1,
     "explanation": "AIに統一された単一の定義は存在しないが、一般的には「人間の知的活動（推論・学習・判断など）をコンピュータで再現・模倣する技術」の総称として使われる。ロボット制御やITサービス全般とは区別される。",
     "relatedTermIds": [
-      "artificial_intelligence"
+      "artificial_intelligence",
+      "rule_based_ai"
     ],
     "difficulty": 1,
     "tags": [
@@ -92,7 +93,8 @@
     "correctIndex": 2,
     "explanation": "AIの4レベル分類では、レベル3が機械学習に相当し、データからルールを自動的に学習する。レベル1は温度調節など単純制御、レベル2はルールベースの古典的AI、レベル4は特徴量もAIが自律学習するディープラーニングを指す。",
     "relatedTermIds": [
-      "ai_level_classification"
+      "ai_level_classification",
+      "rule_based_ai"
     ],
     "difficulty": 1,
     "tags": [
@@ -599,7 +601,8 @@
     "explanation": "AIの4レベル分類において、レベル4のディープラーニングは「入力データの特徴量自体をAIが自律的に学習する」点が最大の特徴。レベル3の機械学習では人間が特徴量を定義してAIに与えるが、レベル4ではその特徴量の抽出・学習もAIが行う。",
     "relatedTermIds": [
       "deep_learning",
-      "ai_level_classification"
+      "ai_level_classification",
+      "rule_based_ai"
     ],
     "difficulty": 3,
     "tags": [
@@ -720,7 +723,8 @@
     "explanation": "ELIZAは1960年代にMITのジョセフ・ワイゼンバウムが開発した初期のチャットボット。パターンマッチングにより会話を行い、ユーザーが機械と知りつつも感情移入してしまう「ELIZAエフェクト」が知られる。チューリングテストとも関連が深い。",
     "relatedTermIds": [
       "eliza",
-      "turing_test"
+      "turing_test",
+      "chatbot"
     ],
     "difficulty": 1,
     "tags": [
@@ -1100,7 +1104,8 @@
     "correctIndex": 2,
     "explanation": "AIの4レベル分類でレベル2（古典的なAI）は、プログラムされたルールに基づいて探索・推論を行うAI。将棋や迷路などに取り組めるが、データから学習する機能はない。レベル1は単純制御、レベル3は機械学習、レベル4はディープラーニングを指す。",
     "relatedTermIds": [
-      "ai_level_classification"
+      "ai_level_classification",
+      "rule_based_ai"
     ],
     "difficulty": 1,
     "tags": [
@@ -1172,7 +1177,8 @@
     "correctIndex": 2,
     "explanation": "チューリングテストはアラン・チューリング（Alan Turing）が1950年に発表した論文「Computing Machinery and Intelligence」で提唱した。ジョン・マッカーシーはダートマス会議でAIという言葉を提唱した人物、マービン・ミンスキーはMITのAI研究者、ジョン・サールは「中国語の部屋」を提唱した哲学者。",
     "relatedTermIds": [
-      "turing_test"
+      "turing_test",
+      "chinese_room"
     ],
     "difficulty": 1,
     "tags": [
@@ -1542,7 +1548,8 @@
     "correctIndex": 3,
     "explanation": "AIの4レベル分類でレベル1は「単純な制御プログラム」であり、設定値との比較など単純な条件分岐で動作する。エアコンの温度調節器はまさにその典型例。AlphaGoはレベル4（ディープラーニング）、画像認識も通常レベル4、自然言語チャットボットも現代ではレベル4に相当する。",
     "relatedTermIds": [
-      "ai_level_classification"
+      "ai_level_classification",
+      "chatbot"
     ],
     "difficulty": 1,
     "tags": [
@@ -2085,7 +2092,9 @@
     "correctIndex": 2,
     "explanation": "フレーム問題は、ルールベースのAIが現実の複雑な環境で機能しない理由を最もよく説明する。現実世界では考慮すべき事項が無限に存在し、何が「関係あるもの」かを判別するだけでも処理能力が追いつかない。チューリングテストは知能判定、中国語の部屋は意識の問題、シンギュラリティはAIの将来予測を扱う。",
     "relatedTermIds": [
-      "frame_problem"
+      "frame_problem",
+      "rule_based_ai",
+      "chinese_room"
     ],
     "difficulty": 3,
     "tags": [
@@ -2149,7 +2158,8 @@
     "relatedTermIds": [
       "strong_ai",
       "artificial_general_intelligence",
-      "singularity"
+      "singularity",
+      "chinese_room"
     ],
     "difficulty": 3,
     "tags": [

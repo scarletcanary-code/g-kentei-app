@@ -290,7 +290,8 @@
     "correctIndex": 2,
     "explanation": "バックプロパゲーションの役割は、出力層で計算された損失（誤差）を起点として連鎖律（チェーンルール）を用いることで、各層の重みパラメータに対する損失の偏微分（勾配）を効率的に計算することにある。この勾配を用いてSGDなどの最適化アルゴリズムが重みを更新する。順伝播・ミニバッチ分割・学習率スケジューリングは別の処理。",
     "relatedTermIds": [
-      "backpropagation"
+      "backpropagation",
+      "mini_batch"
     ],
     "difficulty": 1,
     "tags": [
@@ -351,7 +352,9 @@
     "correctIndex": 1,
     "explanation": "SGDはランダムに選んだ1サンプル（またはミニバッチ）の勾配で重みを更新するため、全データを使うバッチ勾配降下法より1回あたりの計算量が少なく、勾配のノイズが大きい分だけ局所最適解から脱出しやすい利点がある。一方で収束が不安定になりやすい欠点もある。大域最適解の保証・凸変換・過学習防止はSGDの利点ではない。",
     "relatedTermIds": [
-      "sgd"
+      "sgd",
+      "batch_size",
+      "mini_batch"
     ],
     "difficulty": 1,
     "tags": [
@@ -416,7 +419,8 @@
     "correctIndex": 1,
     "explanation": "Adam（Adaptive Moment Estimation）は、モーメンタム（勾配の一次モーメント）とRMSProp（勾配の二次モーメント）の両方のメリットを組み合わせ、パラメータごとに学習率を自動調整する最適化手法。現在最も広く使われる手法の一つ。",
     "relatedTermIds": [
-      "adam"
+      "adam",
+      "optimization_algorithm"
     ],
     "difficulty": 2,
     "tags": [
@@ -671,7 +675,10 @@
     ],
     "correctIndex": 2,
     "explanation": "ミニバッチ学習は訓練データを小さなバッチ（ミニバッチ）に分割し、バッチごとに勾配を計算して重みを更新する手法。全データ使用のバッチ学習より計算効率が高く、1件ずつのオンライン学習より安定した収束が期待でき、実用上最も広く使われる。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "mini_batch",
+      "bagging"
+    ],
     "difficulty": 2,
     "tags": [
       "ミニバッチ",
@@ -1200,7 +1207,8 @@
     "explanation": "Momentumは勾配降下法に物理の慣性（momentum）の概念を加えた最適化手法。過去の更新量を一定割合で引き継ぐことで、急峻な方向への振動を抑えながら緩やかな方向への収束を速める。単純なSGDと比べて学習が安定しやすい。",
     "relatedTermIds": [
       "momentum",
-      "sgd"
+      "sgd",
+      "optimization_algorithm"
     ],
     "difficulty": 2,
     "tags": [
@@ -1265,7 +1273,8 @@
     "correctIndex": 0,
     "explanation": "AdaGradはパラメータごとに学習率を自動調整する手法。過去の勾配を二乗して蓄積し、その平方根で学習率を割ることで頻繁に更新されたパラメータの学習率を小さく、まだ更新が少ないパラメータの学習率を大きく保つ。ただし学習が進むにつれ学習率が0に近づき学習が停止するという弱点がある。",
     "relatedTermIds": [
-      "adagrad"
+      "adagrad",
+      "optimization_algorithm"
     ],
     "difficulty": 2,
     "tags": [
@@ -1325,7 +1334,8 @@
     "explanation": "AdaGradは過去の全勾配を累積するため学習率が最終的に0に近づき、学習が進まなくなる。RMSPropは勾配の二乗を指数移動平均で管理することで過去の情報を徐々に忘却し、直近の勾配に適応した学習率を維持する。これによりAdaGradの過度な学習率減衰問題を解決した。",
     "relatedTermIds": [
       "rmsprop",
-      "adagrad"
+      "adagrad",
+      "optimization_algorithm"
     ],
     "difficulty": 2,
     "tags": [
@@ -1398,7 +1408,8 @@
     "explanation": "勾配爆発は誤差逆伝播の際に勾配が層を通るごとに掛け算で増幅され、入力層付近で非常に大きな値になる現象。重みが極端に大きく更新され学習が発散・不安定になる。対策として勾配クリッピング（勾配の大きさに上限を設ける）や重みの正則化が使われる。勾配消失の逆の現象。",
     "relatedTermIds": [
       "gradient_explosion",
-      "vanishing_gradient"
+      "vanishing_gradient",
+      "weight_initialization"
     ],
     "difficulty": 2,
     "tags": [
@@ -1576,7 +1587,8 @@
     "explanation": "エポックは訓練データセット全体を1回学習し終えた単位。ミニバッチ学習では1エポック中に複数回の重み更新（バッチ数×更新回数）が行われる。エポック数が少なすぎると未学習（underfitting）、多すぎると過学習（overfitting）が起きる可能性がある。",
     "relatedTermIds": [
       "epoch",
-      "batch_size"
+      "batch_size",
+      "mini_batch"
     ],
     "difficulty": 1,
     "tags": [
@@ -1648,7 +1660,8 @@
     "explanation": "バッチサイズは1回の重み更新に使用するサンプル数を指すハイパーパラメータ。バッチサイズが大きいほど勾配推定が安定するが計算コストが高く局所解に陥りやすい。小さいほど更新が頻繁で不安定だが汎化性能が上がる場合がある。一般的に32〜256程度が使われることが多い。",
     "relatedTermIds": [
       "batch_size",
-      "sgd"
+      "sgd",
+      "mini_batch"
     ],
     "difficulty": 1,
     "tags": [
@@ -1727,7 +1740,8 @@
     "explanation": "学習率スケジューリングは学習の進行状況に応じて学習率を変化させる手法。学習初期は大きな学習率で広く損失空間を探索し、学習が進むにつれて学習率を小さくすることで最適解付近で細かく収束させる。ステップ減衰・指数減衰・コサインアニーリングなど様々なスケジュールがある。",
     "relatedTermIds": [
       "learning_rate",
-      "learning_rate_scheduling"
+      "learning_rate_scheduling",
+      "epoch"
     ],
     "difficulty": 1,
     "tags": [
@@ -1914,7 +1928,8 @@
     "explanation": "全バッチ学習（バッチ勾配降下法）は全訓練データを使って勾配を計算してから1回だけ重みを更新する方法。勾配の推定が正確で安定しているが、大規模なデータセットでは1回の更新に全データを処理する必要があり計算コストが高い。実用ではミニバッチ学習が主流。",
     "relatedTermIds": [
       "batch_gradient_descent",
-      "sgd"
+      "sgd",
+      "mini_batch"
     ],
     "difficulty": 1,
     "tags": [
@@ -2157,7 +2172,9 @@
     "explanation": "オンライン学習（バッチサイズ1の確率的勾配降下法）は1サンプルごとに重みを更新する。更新頻度が非常に高くノイズが大きいため不安定だが、局所最適解を脱出しやすい側面がある。現在の大規模学習では計算効率の観点からミニバッチ学習が標準的。",
     "relatedTermIds": [
       "sgd",
-      "online_learning"
+      "online_learning",
+      "batch_size",
+      "mini_batch"
     ],
     "difficulty": 1,
     "tags": [

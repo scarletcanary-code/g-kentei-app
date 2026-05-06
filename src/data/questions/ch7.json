@@ -598,7 +598,8 @@
     "correctIndex": 2,
     "explanation": "MLOpsのCI/CDは従来のCI/CDに加え、データドリフトやモデル精度低下を継続的に監視してモデルの再学習・再デプロイをトリガーする「継続的トレーニング（CT）」の要素を持つ。コードの自動テスト・デプロイ・バージョン管理・プルリクエストベースのレビューは従来のCI/CDにも共通する要素である。",
     "relatedTermIds": [
-      "mlops"
+      "mlops",
+      "data_drift"
     ],
     "difficulty": 3,
     "tags": [
@@ -668,7 +669,8 @@
     "correctIndex": 1,
     "explanation": "CRISP-DMにおけるデータ準備フェーズは、欠損値処理・外れ値除去・特徴量エンジニアリング・データ変換など、モデリングが扱える形式にデータを整形する処理を行う。機械学習モデルは生データをそのまま扱えないため、モデリングの前段階としてデータの品質向上と形式整備が必須である。",
     "relatedTermIds": [
-      "crisp_dm"
+      "crisp_dm",
+      "auc"
     ],
     "difficulty": 1,
     "tags": [
@@ -743,7 +745,9 @@
     "explanation": "モデルレジストリはMLOpsの構成要素の一つで、学習済みモデルのバージョン管理・メタデータ（学習日時、使用データ、精度指標）・デプロイ履歴を一元管理する仕組み。複数のモデルバージョンを追跡し、どのモデルが本番で動いているかを把握・制御できるようにする。",
     "relatedTermIds": [
       "model_registry",
-      "mlops"
+      "mlops",
+      "auc",
+      "annotation"
     ],
     "difficulty": 1,
     "tags": [
@@ -1010,7 +1014,10 @@
     "correctIndex": 0,
     "explanation": "アノテーションとは、教師あり学習のために生データに対して人手で正解ラベルを付与する作業。画像分類では「犬/猫」のラベル付け、物体検出では境界ボックスの描画、テキスト分類では感情ラベルの付与などが例として挙げられる。クラウドソーシングで大量に実施する際は品質管理が課題となる。",
     "relatedTermIds": [
-      "annotation"
+      "annotation",
+      "auc",
+      "clustering",
+      "object_detection"
     ],
     "difficulty": 1,
     "tags": [
@@ -1079,7 +1086,8 @@
     "correctIndex": 0,
     "explanation": "データクレンジングは収集した生データの品質を高めるプロセス。誤記・表記ゆれの修正、重複レコードの削除、欠損値の補完または除去、外れ値の処理などを行い、AIモデルの学習精度を向上させる。「ゴミが入ればゴミが出る（Garbage In, Garbage Out）」という原則から、データ品質はモデル品質に直結する。",
     "relatedTermIds": [
-      "data_cleansing"
+      "data_cleansing",
+      "data_quality"
     ],
     "difficulty": 1,
     "tags": [
@@ -1145,7 +1153,8 @@
     "correctIndex": 2,
     "explanation": "エッジAIはデータを生成する端末（スマートフォン・IoT機器・産業機器など）の上で直接AI推論を行う技術。クラウドへのデータ送受信が不要なため、低遅延・オフライン対応・プライバシー保護の利点がある。エッジデバイスの計算資源の制約上、量子化・枝刈り・知識蒸留などのモデル軽量化技術が重要になる。",
     "relatedTermIds": [
-      "edge_ai"
+      "edge_ai",
+      "federated_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -1374,7 +1383,8 @@
     "correctIndex": 2,
     "explanation": "「Garbage In, Garbage Out（GIGO）」はコンピュータサイエンスの基本原則で、入力データの品質が低ければ出力結果も低品質になることを示す。AIにおいては、偏り・誤記・欠損の多い学習データを使ったモデルは、どれほど高度なアルゴリズムを使っても信頼できる予測を行えないことを意味する。データクレンジング・アノテーション品質管理の重要性の根拠となる。",
     "relatedTermIds": [
-      "data_quality"
+      "data_quality",
+      "annotation"
     ],
     "difficulty": 1,
     "tags": [

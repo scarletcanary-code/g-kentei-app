@@ -213,7 +213,8 @@
     "correctIndex": 1,
     "explanation": "エキスパートシステムは、専門家からヒアリングした「もし〜ならば〜」というIF-THENルールを大量に組み込み、専門家のような推論・判断を行うシステム。第2次AIブームで発展したが、知識の手動入力の限界と「常識」の教えにくさにより限界を迎えた。",
     "relatedTermIds": [
-      "expert_system"
+      "expert_system",
+      "rule_based_ai"
     ],
     "difficulty": 1,
     "tags": [
@@ -416,7 +417,8 @@
     "explanation": "第2次AIブームはエキスパートシステムが中心だったが、人間の「常識」を教えることの困難さと、膨大な知識を専門家から手動でヒアリング・入力・管理することの限界（知識獲得のボトルネック）が露呈し終焉した。",
     "relatedTermIds": [
       "second_ai_boom",
-      "expert_system"
+      "expert_system",
+      "rule_based_ai"
     ],
     "difficulty": 2,
     "tags": [
@@ -706,7 +708,8 @@
     "explanation": "MYCINは1970年代にスタンフォード大学で開発された細菌感染症診断のエキスパートシステム。専門医の知識をIF-THENルール約600条として明示的に記述し、専門医に匹敵する診断精度を示したことで第2次AIブームの象徴的存在となった。ディープラーニング・強化学習・統計的学習は使用していない。",
     "relatedTermIds": [
       "mycin",
-      "expert_system"
+      "expert_system",
+      "rule_based_ai"
     ],
     "difficulty": 1,
     "tags": [
@@ -968,7 +971,8 @@
     "explanation": "オントロジーとは、コンピュータが知識を扱えるよう「概念」と「概念間の関係性」を体系的に定義したもの。第2次AIブームの知識表現・エキスパートシステムにおいて、知識の共有と再利用を可能にするための中核的な考え方として発展した。セマンティックウェブにも応用されている。",
     "relatedTermIds": [
       "ontology",
-      "knowledge_representation"
+      "knowledge_representation",
+      "rule_based_ai"
     ],
     "difficulty": 2,
     "tags": [
@@ -1501,7 +1505,8 @@
     "explanation": "Deep Blueは1997年にIBMが開発したチェスAIで、世界チャンピオンのGarry Kasparovを2勝1敗3引き分けで破った。高度なゲーム木探索とチェスの専門知識を組み込んだハードウェアを使用していた。AlphaGoはDeepMindの囲碁AI（2016年）、ELIZAはMITの初期チャットボット。",
     "relatedTermIds": [
       "deep_blue",
-      "first_ai_boom"
+      "first_ai_boom",
+      "chatbot"
     ],
     "difficulty": 1,
     "tags": [
@@ -1758,7 +1763,8 @@
     "relatedTermIds": [
       "third_ai_boom",
       "machine_learning",
-      "deep_learning"
+      "deep_learning",
+      "rule_based_ai"
     ],
     "difficulty": 2,
     "tags": [
@@ -1831,7 +1837,8 @@
       "transformer",
       "gpt",
       "generative_ai",
-      "large_language_model"
+      "large_language_model",
+      "boosting"
     ],
     "difficulty": 2,
     "tags": [
