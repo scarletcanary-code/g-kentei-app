@@ -29,7 +29,7 @@ export const learnCh2: LearnChapter = {
       body: `AlphaGoは、価値ネットワーク、方策ネットワーク、モンテカルロ木探索、強化学習を組み合わせた代表的な成果です。囲碁のように探索空間が極めて大きい問題で高い性能を示した点に意義があります。ChatGPTに代表される生成AIは、Transformerを基盤とする大規模言語モデルにより、文脈に応じた自然言語生成を行います。ただし、生成AIは意味を完全に理解しているわけではなく、ハルシネーションや根拠確認の課題があります。G検定では、技術的進歩と限界を両方押さえる必要があります。`,
       beginnerBody: `AlphaGoは、囲碁でプロ棋士に勝ったAIとして有名です。その後、文章を作るChatGPTのような生成AIが広く使われるようになりました。AIはゲームだけでなく、文章作成、画像生成、検索支援などにも使われるようになっています。`,
       intermediateBody: `AlphaGoは、深層学習と強化学習を組み合わせ、囲碁で高い成果を示しました。これはAIが複雑な判断を必要とする領域でも成果を出せることを示した事例です。ChatGPTなどの生成AIは、大規模な言語モデルを用いて文章生成や要約、対話を行います。ゲームAIから生成AIへの流れは、AIの活用範囲が限定的な課題から日常的な知的作業へ広がったことを示しています。`,
-      termIds: ['reinforcement_learning', 'transformer', 'llm', 'gpt'],
+      termIds: ['reinforcement_learning', 'transformer', 'llm', 'gpt', 'hallucination', 'chatgpt'],
     },
     {
       heading: `AIブームを支えたハードウェアとデータ基盤`,

@@ -15,14 +15,14 @@ export const learnCh6: LearnChapter = {
       body: `GPTとBERTの違いは、Transformerの使い方と学習目的にあります。GPTはDecoderを中心とした自己回帰モデルで、これまでの文脈から次のトークンを予測します。この性質により自然な文章生成に向きます。BERTはEncoderを中心とし、マスクされたトークンを周囲の文脈から予測する事前学習を行います。双方向文脈を利用できるため、文理解や分類に強みがあります。近年のLLMではGPT系の生成能力が広く注目されていますが、BERT系モデルも検索、分類、埋め込みなどで重要です。`,
       beginnerBody: `GPTとBERTは、どちらもTransformerを使った代表的な言語モデルです。GPTは文章を続けて生成することが得意です。BERTは文全体を見て意味を理解することが得意です。生成が得意なGPT、理解が得意なBERTという大まかな違いを押さえます。`,
       intermediateBody: `GPTはDecoder型Transformerを基盤とし、次の単語を予測しながら文章を生成します。そのため、対話、文章作成、要約などの生成タスクに向いています。BERTはEncoder型Transformerを基盤とし、文の前後の文脈を双方向に見て表現を学習します。そのため、文分類、検索、質問応答などの理解タスクに向いています。`,
-      termIds: ['transformer', 'gpt', 'bert'],
+      termIds: ['transformer', 'gpt', 'bert', 'decoder', 'regression'],
     },
     {
       heading: `深層生成モデル：GAN・VAE・拡散モデルの仕組みと違い`,
       body: `深層生成モデルは、データ分布を学習し、新しいサンプルを生成するモデルです。GANは生成器と識別器の敵対的学習により、リアルなサンプルを作ることを目指しますが、学習が不安定になりやすい課題があります。VAEは、入力を潜在分布へ写像し、そこからサンプリングして復元する確率的生成モデルです。生成品質は安定しやすい一方、ぼやけた出力になることがあります。拡散モデルは、ノイズ付加とノイズ除去の過程を学習し、高品質な画像生成で成功しています。仕組みの違いを押さえることが重要です。`,
       beginnerBody: `GAN、VAE、拡散モデルは、画像などを生成するための深層生成モデルです。GANは生成するモデルと見分けるモデルを競わせます。VAEはデータを潜在空間に圧縮してから生成します。拡散モデルは、ノイズから少しずつきれいなデータを作ります。`,
       intermediateBody: `GANは、GeneratorとDiscriminatorを競わせることで本物らしいデータを生成します。VAEは、データを確率的な潜在変数に変換し、そこから新しいデータを生成します。拡散モデルは、データにノイズを加える過程を学び、逆にノイズを取り除くことで生成します。現在の画像生成では拡散モデルが広く使われています。各モデルの生成原理を比較して理解します。`,
-      termIds: ['vae', 'diffusion_model', 'gan'],
+      termIds: ['vae', 'diffusion_model', 'gan', 'generative_model'],
     },
     {
       heading: `RAG・LoRA・スケーリング則：LLM活用の実践技術`,
@@ -36,7 +36,7 @@ export const learnCh6: LearnChapter = {
       body: `Encoder-Decoder構造は、入力系列を意味表現へ圧縮し、それをもとに別の系列を生成する枠組みです。初期のseq2seqモデルでは、RNNのEncoderが入力文を隠れ状態へ変換し、RNNのDecoderが出力文を生成しました。しかし、長い文では情報を一つのベクトルに押し込めることが難しく、注意機構が導入されました。TransformerはRNNを使わず、注意機構を中心にEncoderとDecoderを構成します。BERTは主にEncoder、GPTは主にDecoderを利用するモデルとして整理できます。`,
       beginnerBody: `Encoder-Decoderは、入力を読み取る部分と出力を作る部分に分かれたモデルです。seq2seqは、文章を別の文章に変換するようなタスクで使われました。機械翻訳のように、入力系列から出力系列を作る問題で重要な考え方です。`,
       intermediateBody: `Encoder-Decoderモデルでは、Encoderが入力系列を内部表現に変換し、Decoderがその表現をもとに出力系列を生成します。seq2seqはこの考え方を用いた系列変換モデルで、機械翻訳や要約で使われました。従来はRNNベースで実装されることが多く、後に注意機構やTransformerへ発展しました。Transformerの理解にもつながる基礎です。`,
-      termIds: ['transformer', 'gpt', 'bert'],
+      termIds: ['transformer', 'gpt', 'bert', 'decoder'],
     },
   ],
   keyTermIds: [

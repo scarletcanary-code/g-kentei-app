@@ -29,7 +29,7 @@ export const learnCh8: LearnChapter = {
       body: `日本のAI事業者ガイドラインは、AIを社会で安全に活用するために、AI開発者、AI提供者、AI利用者それぞれの役割と留意点を整理しています。透明性、アカウンタビリティ、安全性、公平性、プライバシー保護、セキュリティなどの観点が含まれます。不正競争防止法は、営業秘密や限定提供データの保護と関係します。社内の機密情報、顧客データ、未公開資料を生成AIへ入力すると、契約違反や営業秘密管理上の問題が生じる可能性があります。G検定では、ガイドラインと法律の違い、情報管理の実務リスクを区別します。`,
       beginnerBody: `日本のAI事業者ガイドラインは、AIを開発・提供・利用する事業者が守るべき考え方を整理したものです。不正競争防止法は、営業秘密や限定提供データなどの保護に関わります。AIに社内情報や顧客情報を使う場合は、情報管理と利用ルールが重要です。`,
       intermediateBody: `AI事業者ガイドラインは、AIの開発者、提供者、利用者が安全性、公平性、透明性、説明責任などに配慮してAIを扱うための指針です。法的拘束力そのものよりも、実務上のリスク管理やガバナンスの参考として重要です。不正競争防止法は、営業秘密の不正取得や不正使用、限定提供データの保護などに関わり、生成AI利用時の情報入力にも注意が必要です。`,
-      termIds: ['ai_operator_guideline', 'fairness', 'transparency', 'accountability', 'privacy'],
+      termIds: ['ai_operator_guideline', 'fairness', 'transparency', 'accountability', 'privacy', 'unfair_competition_prevention_act'],
     },
     {
       heading: `AI倫理の3原則：公平性・透明性・説明責任`,
