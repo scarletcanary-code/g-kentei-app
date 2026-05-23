@@ -18,7 +18,9 @@
     "apply:questions-review": "node scripts/apply-questions-review-xlsx.mjs",
     "extract:question-fixes": "node scripts/extract-question-fixes.mjs",
     "apply:glossary-rewrite": "node scripts/apply-glossary-rewrite.mjs",
-    "apply:question-fixes": "node scripts/apply-question-fixes.mjs"
+    "apply:question-fixes": "node scripts/apply-question-fixes.mjs",
+    "apply:questions-review-direct": "node scripts/apply-questions-review-direct.mjs",
+    "apply:glossary-level-rewrite": "node scripts/apply-glossary-level-rewrite.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
