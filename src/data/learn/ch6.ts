@@ -15,7 +15,7 @@ export const learnCh6: LearnChapter = {
       body: `GPT系モデルは、自己回帰的に次のトークンを予測するデコーダ型モデルであり、文章生成、対話、要約、コード生成などに使われます。BERTは双方向エンコーダ型モデルで、穴埋め学習などを通じて文脈表現を獲得し、文書分類、固有表現抽出、検索、質問応答に利用されます。GPTは生成能力に優れる一方で、事実誤認やハルシネーションに注意が必要です。BERTは入力理解に強い一方、単独で長文生成するモデルではありません。エンコーダ、デコーダ、エンコーダ・デコーダの違いを押さえると、LLMの応用範囲を整理できます。`,
       beginnerBody: `GPTとBERTは、どちらもTransformerをもとにした大規模言語モデルです。GPTは文章を続けて生成するのが得意で、BERTは文章の意味を読み取るのが得意です。生成と理解で役割が違うと考えると整理しやすいです。`,
       intermediateBody: `GPTはデコーダ型Transformerを使い、前の単語から次の単語を予測するように学習します。そのため文章生成や対話に向いています。BERTはエンコーダ型Transformerを使い、文の前後関係を双方向に見て理解します。そのため分類、検索、質問応答などに向いています。どちらも自然言語処理の重要モデルですが、得意な処理が異なります。`,
-      termIds: ['transformer', 'gpt', 'bert', 'decoder', 'regression'],
+      termIds: ['transformer', 'gpt', 'bert', 'decoder', 'llm', 'masked_language_model'],
     },
     {
       heading: `深層生成モデル：GAN・VAE・拡散モデルの仕組みと違い`,
@@ -36,7 +36,7 @@ export const learnCh6: LearnChapter = {
       body: `Encoder-Decoder構造は、入力系列を潜在表現へ変換するEncoderと、その表現から出力系列を生成するDecoderで構成されます。RNNベースのseq2seqでは、長い入力を固定長ベクトルへ圧縮することがボトルネックとなりました。Attentionは、出力時に入力系列のどの部分を参照するかを動的に重みづけし、この制約を緩和しました。TransformerはRNNを使わずSelf-Attentionを中心に構成され、並列計算と長距離依存の扱いに優れます。エンコーダ型、デコーダ型、エンコーダ・デコーダ型の違いは、BERT、GPT、翻訳モデルを理解する基礎です。`,
       beginnerBody: `Encoder-Decoderは、入力を読み取る部分と、出力を作る部分を分けた仕組みです。seq2seqは、文章の列を別の文章の列に変換する考え方で、翻訳や要約に使われてきました。Transformerも、この流れから発展しました。`,
       intermediateBody: `Encoderは入力文を意味のまとまりとして表現し、Decoderはその表現をもとに出力文を生成します。seq2seqは、入力系列を出力系列へ変換するモデルで、機械翻訳や文章要約で使われました。初期のseq2seqはRNNベースでしたが、Attentionを導入することで長い文の情報を扱いやすくなり、その後Transformerへ発展しました。`,
-      termIds: ['transformer', 'gpt', 'bert', 'decoder'],
+      termIds: ['transformer', 'gpt', 'bert', 'decoder', 'seq2seq', 'encoder_decoder'],
     },
   ],
   keyTermIds: [

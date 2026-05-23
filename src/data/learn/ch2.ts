@@ -15,7 +15,7 @@ export const learnCh2: LearnChapter = {
       body: `第1次AIブームでは、状態空間探索や記号推論により、ゲーム、迷路、定理証明などの限定的な問題で成果がありました。しかし、現実世界のように条件が多く曖昧な問題には弱く、フレーム問題や組み合わせ爆発が限界として現れました。第2次AIブームでは、知識ベースと推論エンジンを用いるエキスパートシステムが注目されましたが、暗黙知の形式化、ルールの保守、例外処理が難しく、知識獲得ボトルネックに直面しました。AI冬の時代は、期待と実用成果の差が大きくなった結果として理解できます。`,
       beginnerBody: `第1次AIブームでは、迷路やパズルのようにルールがはっきりした問題を、探索や推論で解こうとしました。第2次AIブームでは、専門家の知識をコンピュータに入れて使うエキスパートシステムが注目されました。しかし、どちらも現実の複雑さや知識を集める難しさで限界が見えました。`,
       intermediateBody: `第1次AIブームの中心は探索と推論です。探索は候補の中から答えを探すこと、推論は分かっている事実やルールから結論を出すことです。第2次AIブームでは、専門家の判断をIF-THENルールとして登録するエキスパートシステムが発展しました。しかし、専門家の知識をすべて取り出して更新することは難しく、知識獲得のボトルネックが課題となりました。`,
-      termIds: ['frame_problem', 'toy_problem', 'first_ai_boom', 'second_ai_boom', 'search_and_inference', 'expert_system'],
+      termIds: ['frame_problem', 'toy_problem', 'first_ai_boom', 'second_ai_boom', 'search_and_inference', 'expert_system', 'ai_winter', 'knowledge_acquisition_bottleneck'],
     },
     {
       heading: `第3次AIブーム：ビッグデータ・GPU・ディープラーニングの三拍子`,
@@ -29,7 +29,7 @@ export const learnCh2: LearnChapter = {
       body: `AlphaGoは、ニューラルネットワークによる局面評価と強化学習を組み合わせ、囲碁のように探索空間が極めて大きい問題で成果を示しました。その後、Transformerが系列データを並列処理しやすくし、BERTやGPTなどの大規模言語モデルが発展しました。BERTはエンコーダ型で文脈理解や分類に強く、GPTはデコーダ型で次のトークン予測に基づく生成に強いという違いがあります。生成AIでは、流暢な出力と正確な知識を区別し、ハルシネーション、著作権、個人情報、説明責任を含めて扱う必要があります。`,
       beginnerBody: `AlphaGoは、囲碁で人間のトップ棋士に勝ったAIとして有名です。その後、Transformerという仕組みを使ったBERTやGPTが発展し、ChatGPTのような生成AIにつながりました。AIは、ゲームだけでなく、文章生成や画像生成にも広がっています。`,
       intermediateBody: `AlphaGoは、深層学習と強化学習を組み合わせて囲碁で成果を上げました。BERTは文章の理解に強いモデル、GPTは文章の生成に強いモデルとして整理できます。ChatGPTは、GPT系の大規模言語モデルを対話に応用したサービスです。ただし、生成AIは自然な文章を作れても、事実と異なる内容をもっともらしく出すハルシネーションに注意が必要です。`,
-      termIds: ['reinforcement_learning', 'transformer', 'llm', 'gpt', 'hallucination', 'chatgpt'],
+      termIds: ['reinforcement_learning', 'transformer', 'llm', 'gpt', 'hallucination', 'chatgpt', 'alphago', 'generative_ai', 'foundation_model'],
     },
     {
       heading: `AIブームを支えたハードウェアとデータ基盤`,

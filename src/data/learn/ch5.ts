@@ -15,14 +15,14 @@ export const learnCh5: LearnChapter = {
       body: `CNNは、局所受容野、重み共有、階層的特徴抽出により画像処理に適した構造を持ちます。畳み込み層はエッジや模様などの局所特徴を検出し、深い層では物体の部品や全体形状に対応する特徴を学習します。プーリングは空間サイズを縮小し、位置ずれへの頑健性を高めます。全結合層だけでは、画素間の空間構造を十分に利用できず、パラメータ数も増えやすくなります。画像認識では、CNNに加えてデータ拡張、転移学習、事前学習済みモデルの利用が実務上重要です。`,
       beginnerBody: `画像は、近くの画素どうしに意味があります。全結合だけで画像を扱うと、画素の位置関係をうまく使いにくく、計算量も大きくなります。CNNは、小さなフィルタで画像の一部を見ながら、線や形などの特徴を段階的に見つけます。`,
       intermediateBody: `CNNは、畳み込み層で画像の局所的な特徴を取り出し、プーリング層で特徴を圧縮します。全結合層は、抽出された特徴をもとに最終的な分類を行います。畳み込みでは同じフィルタを画像全体に使うため、位置が少し変わっても同じ特徴を見つけやすくなります。画像認識では、データ拡張により画像を回転・反転・切り抜きして汎化性能を高めることもあります。`,
-      termIds: ['neural_network', 'convolutional_layer', 'pooling_layer', 'fully_connected_layer'],
+      termIds: ['neural_network', 'convolutional_layer', 'pooling_layer', 'fully_connected_layer', 'cnn', 'image_recognition'],
     },
     {
       heading: `RNNの時系列処理の動機と限界`,
       body: `RNNは、同じ重みを時系列方向に共有し、隠れ状態を更新することで系列依存を表現するモデルです。過去の情報を内部状態として保持できるため、言語モデル、音声認識、時系列予測に利用されました。しかし、誤差逆伝播を時間方向に展開するBPTTでは、長い系列で勾配消失・勾配爆発が起こりやすく、長期依存の学習が困難です。また逐次処理の性質上、Transformerに比べて並列計算がしにくいという限界があります。現在は多くの自然言語処理でTransformerが主流ですが、RNNの考え方は系列モデルの基礎として重要です。`,
       beginnerBody: `RNNは、文章や時系列データのように順番が大切なデータを扱うための仕組みです。前の情報を次の計算に引き継げるため、過去の流れを使って予測できます。ただし、長い文章や長い時系列では、昔の情報をうまく保つのが難しくなります。`,
       intermediateBody: `RNNは、時刻ごとの入力を順番に処理し、隠れ状態に過去の情報を保持します。文章、音声、株価、センサーデータなどの系列データに使われてきました。一方で、系列を順に処理するため並列化しにくく、長い依存関係では勾配消失や勾配爆発が起こりやすい問題があります。LSTMやGRUは、この弱点を緩和するために考案されました。`,
-      termIds: ['lstm', 'gru', 'transformer', 'gradient_explosion'],
+      termIds: ['lstm', 'gru', 'transformer', 'gradient_explosion', 'rnn'],
     },
     {
       heading: `LSTMとGRU：ゲート機構による長期依存の解決`,
@@ -36,7 +36,7 @@ export const learnCh5: LearnChapter = {
       body: `Transformerは、Self-Attentionにより系列内の各要素間の関係を直接計算するモデルです。RNNのように隠れ状態を逐次的に受け渡すのではなく、Query、Key、Valueに基づいて注目度を計算し、長距離依存を扱いやすくします。順序情報は位置エンコーディングなどで補います。エンコーダは入力理解、デコーダは生成に向き、BERTは双方向エンコーダ、GPTは自己回帰型デコーダに分類されます。Transformerは自然言語処理だけでなく、画像、音声、マルチモーダルモデルにも応用されています。`,
       beginnerBody: `Transformerは、文章の中のどの単語に注目すべきかを計算する仕組みを使います。RNNのように前から順番に読むだけでなく、文全体の関係を見ながら処理できます。ChatGPTのような大規模言語モデルの基礎になっています。`,
       intermediateBody: `Transformerの中心はAttentionです。Attentionは、ある単語を理解するときに、文中のどの単語が重要かを重みづけして見る仕組みです。RNNが系列を順番に処理するのに対し、Transformerは系列内の関係をまとめて計算しやすく、並列化に向いています。位置情報を加えることで、単語の順番も扱います。BERTはエンコーダ型、GPTはデコーダ型として整理できます。`,
-      termIds: ['transformer', 'llm', 'gpt', 'bert', 'decoder'],
+      termIds: ['transformer', 'llm', 'gpt', 'bert', 'decoder', 'self_attention', 'positional_encoding'],
     },
     {
       heading: `転移学習・ファインチューニングとモデル圧縮`,

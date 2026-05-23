@@ -22,7 +22,10 @@
     "apply:questions-review-direct": "node scripts/apply-questions-review-direct.mjs",
     "apply:glossary-level-rewrite": "node scripts/apply-glossary-level-rewrite.mjs",
     "export:learn-review": "node scripts/export-learn-review-xlsx.mjs",
-    "apply:learn-revision": "node scripts/apply-learn-revision.mjs"
+    "apply:learn-revision": "node scripts/apply-learn-revision.mjs",
+    "export:glossary-new-terms-template": "node scripts/export-glossary-new-terms-template.mjs",
+    "apply:learn-termids": "node scripts/apply-learn-termids.mjs",
+    "apply:glossary-new-terms": "node scripts/apply-glossary-new-terms.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",

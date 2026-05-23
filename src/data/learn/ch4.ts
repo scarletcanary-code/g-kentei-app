@@ -36,7 +36,7 @@ export const learnCh4: LearnChapter = {
       body: `深いネットワークでは、表現力が高い一方で過学習、勾配消失、学習不安定性が問題になります。L1/L2正則化はパラメータに制約を与え、ドロップアウトはニューロンの共適応を抑え、バッチ正規化は中間層の分布を安定させて学習を進めやすくします。さらに、適切な初期化、学習率調整、早期終了、データ拡張も有効です。これらの技術は精度向上だけでなく、未知データに対する汎化性能を維持するために使われます。`,
       beginnerBody: `ニューラルネットワークは、学習データを覚えすぎると新しいデータに弱くなります。これを防ぐために、正則化、ドロップアウト、バッチ正規化などを使います。深いネットワークを安定して学習させるには、過学習を防ぎ、計算を安定させる工夫が必要です。`,
       intermediateBody: `ドロップアウトは、学習中に一部のニューロンをランダムに使わないことで、特定の経路に頼りすぎるのを防ぎます。バッチ正規化は、層への入力の分布を整えて学習を安定させます。正則化は、重みが大きくなりすぎることを抑えます。これらは、モデルの汎化性能を高めるための代表的な方法です。`,
-      termIds: ['neural_network', 'overfitting', 'regularization', 'neuron', 'dropout', 'batch_normalization'],
+      termIds: ['neural_network', 'overfitting', 'regularization', 'neuron', 'dropout', 'batch_normalization', 'skip_connection'],
     },
   ],
   keyTermIds: [
