@@ -45,7 +45,7 @@ export default function QuizPage() {
     }
     if (modeParam === 'weak') {
       const weakQuestions = ALL_QUESTIONS.filter((q) => weakQuestionIds.includes(q.id));
-      return shuffleQuestions(weakQuestions);
+      return shuffleQuestions(weakQuestions).map((q) => shuffleChoices(q));
     }
     const balanced = selectQuestionsBalanced(ALL_QUESTIONS, categoryIds ?? [], limit);
     return balanced.map((q) => shuffleChoices(q));

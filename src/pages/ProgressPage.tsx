@@ -56,7 +56,14 @@ export default function ProgressPage() {
         <CardHeader>
           <CardTitle className="text-base">苦手問題</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="space-y-3">
+          <Button
+            onClick={() => navigate('/quiz/session?mode=weak')}
+            disabled={weakQuestionIds.length === 0}
+            className="w-full"
+          >
+            苦手復習モードを開始 ({weakQuestionIds.length} 問)
+          </Button>
           <WeakPointList
             weakQuestionIds={weakQuestionIds}
             allQuestions={ALL_QUESTIONS}

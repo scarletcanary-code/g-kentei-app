@@ -18,6 +18,30 @@ import { computeNextSR } from '../lib/sr-engine';
 const PROGRESS_KEY = 'progress-v2';
 const LEGACY_STORAGE_KEY = 'g-kentei-progress-v1';
 
+// 直近 N 回の正答率で苦手判定する (累積式だと過去の不正解が永続して残るため)
+const WEAK_WINDOW = 5;
+
+function computeWeakQuestionIds(
+  categoryStats: Record<string, CategoryStats>,
+): string[] {
+  const byId: Record<string, QuestionHistory[]> = {};
+  for (const stats of Object.values(categoryStats)) {
+    for (const h of stats.questionHistory) {
+      (byId[h.questionId] ??= []).push(h);
+    }
+  }
+  return Object.entries(byId)
+    .filter(([, list]) => {
+      const recent = [...list]
+        .sort((a, b) => a.answeredAt.localeCompare(b.answeredAt))
+        .slice(-WEAK_WINDOW);
+      if (recent.length < 2) return false;
+      const correct = recent.filter((h) => h.isCorrect).length;
+      return correct / recent.length < 0.5;
+    })
+    .map(([id]) => id);
+}
+
 function createInitialProgress(): UserProgress {
   return {
     overallAccuracy: 0,
@@ -35,7 +59,8 @@ function loadInitialProgress(): UserProgress {
   const v2 = localStorage.getItem('g-kentei-progress-v2');
   if (v2) {
     try {
-      return JSON.parse(v2) as UserProgress;
+      const parsed = JSON.parse(v2) as UserProgress;
+      return { ...parsed, weakQuestionIds: computeWeakQuestionIds(parsed.categoryStats) };
     } catch {
       // fall through to v1 migration
     }
@@ -46,7 +71,11 @@ function loadInitialProgress(): UserProgress {
   if (v1) {
     try {
       const parsed = JSON.parse(v1) as Omit<UserProgress, 'srStates'>;
-      const migrated: UserProgress = { ...parsed, srStates: {} };
+      const migrated: UserProgress = {
+        ...parsed,
+        srStates: {},
+        weakQuestionIds: computeWeakQuestionIds(parsed.categoryStats),
+      };
       // Persist migrated data under the new key so usePersistedState picks it up
       localStorage.setItem('g-kentei-progress-v2', JSON.stringify(migrated));
       return migrated;
@@ -95,7 +124,7 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         // Merge: use whichever has more answers
         setProgress((local) => {
           if (cloud.totalAnswered >= local.totalAnswered) {
-            return cloud;
+            return { ...cloud, weakQuestionIds: computeWeakQuestionIds(cloud.categoryStats) };
           }
           // Local has more data — upload local to cloud
           saveProgressToCloud(user.uid, local);
@@ -171,23 +200,8 @@ export function ProgressProvider({ children }: { children: ReactNode }) {
         const overallAccuracy =
           overallTotalAnswered > 0 ? overallTotalCorrect / overallTotalAnswered : 0;
 
-        // --- weak question ids ---
-        const questionAttemptsMap: Record<string, { attempts: number; correct: number }> = {};
-        for (const stats of Object.values(newCategoryStats)) {
-          for (const h of stats.questionHistory) {
-            if (!questionAttemptsMap[h.questionId]) {
-              questionAttemptsMap[h.questionId] = { attempts: 0, correct: 0 };
-            }
-            questionAttemptsMap[h.questionId].attempts += 1;
-            if (h.isCorrect) {
-              questionAttemptsMap[h.questionId].correct += 1;
-            }
-          }
-        }
-
-        const weakQuestionIds: string[] = Object.entries(questionAttemptsMap)
-          .filter(([, v]) => v.attempts >= 2 && v.correct / v.attempts < 0.5)
-          .map(([id]) => id);
+        // --- weak question ids (直近 WEAK_WINDOW 回での正答率で判定) ---
+        const weakQuestionIds = computeWeakQuestionIds(newCategoryStats);
 
         // --- study dates ---
         const todayStr = new Date().toISOString().slice(0, 10);
