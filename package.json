@@ -12,7 +12,13 @@
     "validate:questions:strict": "node scripts/validate-questions.mjs --strict",
     "audit:questions": "node scripts/audit-questions.mjs",
     "quiz:template": "node scripts/generate-question-template.mjs",
-    "check:metadata": "node scripts/check-questions-metadata.mjs"
+    "check:metadata": "node scripts/check-questions-metadata.mjs",
+    "export:glossary-review": "node scripts/export-glossary-review-xlsx.mjs",
+    "export:questions-review": "node scripts/export-questions-review-xlsx.mjs",
+    "apply:questions-review": "node scripts/apply-questions-review-xlsx.mjs",
+    "extract:question-fixes": "node scripts/extract-question-fixes.mjs",
+    "apply:glossary-rewrite": "node scripts/apply-glossary-rewrite.mjs",
+    "apply:question-fixes": "node scripts/apply-question-fixes.mjs"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
@@ -41,11 +47,13 @@
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
+    "exceljs": "^4.4.0",
     "globals": "^17.4.0",
     "tailwindcss": "^3.4.19",
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.58.0",
     "vite": "^8.0.4",
-    "vite-plugin-pwa": "^1.2.0"
+    "vite-plugin-pwa": "^1.2.0",
+    "xlsx": "^0.18.5"
   }
 }
