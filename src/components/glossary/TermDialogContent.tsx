@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Badge } from '../ui/badge';
 import TierSegmented from '../shared/TierSegmented';
 import { useMemorizedTerms } from '../../hooks/useMemorizedTerms';
+import { dedupeEnglishParens } from '../../lib/glossary-text';
 import type { GlossaryTerm, Importance } from '../../types/glossary';
 
 type Tier = 'beginner' | 'intermediate' | 'advanced';
@@ -43,14 +44,11 @@ export default function TermDialogContent({ term }: TermDialogContentProps) {
       ? (term.beginnerDetail ?? term.intermediateDetail ?? term.detail)
       : cardTier === 'intermediate'
       ? (term.intermediateDetail ?? term.detail)
-      : term.detail;
+      : dedupeEnglishParens(term.detail, term.termEn);
 
   return (
     <div className="space-y-4">
       <div className="flex items-center gap-2 flex-wrap">
-        {term.termEn && (
-          <span className="text-sm text-muted-foreground">{term.termEn}</span>
-        )}
         {importanceBadge(term.importance)}
       </div>
       {term.aliases && term.aliases.length > 0 && (

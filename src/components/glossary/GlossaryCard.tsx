@@ -8,6 +8,7 @@ import {
 import { Badge } from '../ui/badge';
 import type { GlossaryTerm, Importance } from '../../types/glossary';
 import TierSegmented from '../shared/TierSegmented';
+import { dedupeEnglishParens } from '../../lib/glossary-text';
 
 type Tier = 'beginner' | 'intermediate' | 'advanced';
 
@@ -100,7 +101,7 @@ export default function GlossaryCard({ term, highlightTermId, cardTier, onCardTi
                   ? (term.beginnerDetail ?? term.intermediateDetail ?? term.detail)
                   : cardTier === 'intermediate'
                   ? (term.intermediateDetail ?? term.detail)
-                  : term.detail;
+                  : dedupeEnglishParens(term.detail, term.termEn);
               return displayDetail ? (
                 <p className="text-sm text-muted-foreground leading-relaxed">
                   {displayDetail}
