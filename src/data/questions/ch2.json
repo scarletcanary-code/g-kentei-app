@@ -21,7 +21,12 @@
     "explanation": "第1次AIブーム（1950〜60年代）は探索・推論、第2次AIブーム（1980年代）はエキスパートシステムが中心であり、I・IIは正しい。第3次AIブーム（2010年代以降）の中心はディープラーニングであり、エキスパートシステムではないためIIIは誤り。よってIとIIが正しい組み合わせとなる。",
     "relatedTermIds": [
       "first_ai_boom",
-      "toy_problem"
+      "toy_problem",
+      "expert_system",
+      "deep_learning",
+      "second_ai_boom",
+      "third_ai_boom",
+      "search_and_inference"
     ],
     "difficulty": 1,
     "tags": [
@@ -88,7 +93,8 @@
     "explanation": "第1次AIブームでは探索・推論により限定されたトイ・プロブレムは解けたが、現実世界の複雑な問題には対応できなかった。この技術的限界が本質的な終焉理由である。資金不足や社会的関心の低下は結果的な現象に過ぎない。",
     "relatedTermIds": [
       "first_ai_boom",
-      "toy_problem"
+      "toy_problem",
+      "search_and_inference"
     ],
     "difficulty": 1,
     "tags": [
@@ -150,7 +156,10 @@
     "relatedTermIds": [
       "second_ai_boom",
       "expert_system",
-      "knowledge_representation"
+      "knowledge_representation",
+      "knowledge_acquisition_bottleneck",
+      "third_ai_boom",
+      "image_recognition"
     ],
     "difficulty": 1,
     "tags": [
@@ -214,7 +223,8 @@
     "explanation": "エキスパートシステムは、専門家からヒアリングした「もし〜ならば〜」というIF-THENルールを大量に組み込み、専門家のような推論・判断を行うシステム。第2次AIブームで発展したが、知識の手動入力の限界と「常識」の教えにくさにより限界を迎えた。",
     "relatedTermIds": [
       "expert_system",
-      "rule_based_ai"
+      "rule_based_ai",
+      "second_ai_boom"
     ],
     "difficulty": 1,
     "tags": [
@@ -347,7 +357,10 @@
       "third_ai_boom",
       "big_data",
       "gpu",
-      "deep_learning"
+      "deep_learning",
+      "machine_learning_definition",
+      "speech_recognition",
+      "image_recognition"
     ],
     "difficulty": 2,
     "tags": [
@@ -418,7 +431,8 @@
     "relatedTermIds": [
       "second_ai_boom",
       "expert_system",
-      "rule_based_ai"
+      "rule_based_ai",
+      "knowledge_acquisition_bottleneck"
     ],
     "difficulty": 2,
     "tags": [
@@ -490,7 +504,12 @@
     "relatedTermIds": [
       "first_ai_boom",
       "second_ai_boom",
-      "third_ai_boom"
+      "third_ai_boom",
+      "expert_system",
+      "deep_learning",
+      "machine_learning_definition",
+      "search_and_inference",
+      "knowledge_representation"
     ],
     "difficulty": 3,
     "tags": [
@@ -557,7 +576,11 @@
     "explanation": "ダートマス会議（1956年）はジョン・マッカーシーが主催し、「人工知能（Artificial Intelligence）」という用語が初めて公式に使われた歴史的な会議。AIを独立した研究分野として確立する契機となった。商業化・軍事規制・ニューラルネットワーク理論の確立とは直接関係しない。",
     "relatedTermIds": [
       "dartmouth_conference",
-      "first_ai_boom"
+      "first_ai_boom",
+      "neural_network",
+      "john_mccarthy",
+      "artificial_intelligence",
+      "intelligence"
     ],
     "difficulty": 1,
     "tags": [
@@ -638,7 +661,12 @@
     "explanation": "ジョン・マッカーシー（John McCarthy）がダートマス会議を提案し、「Artificial Intelligence（人工知能）」という言葉を提唱した。アラン・チューリングはチューリングテストを提唱した人物、ジェフリー・ヒントンはディープラーニングの先駆者、レイ・カーツワイルはシンギュラリティを予測した人物。",
     "relatedTermIds": [
       "dartmouth_conference",
-      "john_mccarthy"
+      "john_mccarthy",
+      "turing_test",
+      "deep_learning",
+      "singularity",
+      "artificial_intelligence",
+      "intelligence"
     ],
     "difficulty": 1,
     "tags": [
@@ -709,7 +737,10 @@
     "relatedTermIds": [
       "mycin",
       "expert_system",
-      "rule_based_ai"
+      "rule_based_ai",
+      "deep_learning",
+      "second_ai_boom",
+      "reinforcement_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -772,7 +803,8 @@
     "explanation": "探索木は状態の変化を木構造で表現するが、チェスのように各ノードで多数の分岐がある場合、深さが増すにつれて状態数が指数関数的に増加する（組み合わせ爆発）。この問題が第1次AIブームの限界となった。メモリ制約・ソート・確率的動きは組み合わせ爆発の主因ではない。",
     "relatedTermIds": [
       "search_tree",
-      "first_ai_boom"
+      "first_ai_boom",
+      "combinatorial_explosion"
     ],
     "difficulty": 1,
     "tags": [
@@ -842,7 +874,8 @@
     "explanation": "ヒューリスティック探索とは、経験則（ヒューリスティクス）を利用して、すべての可能性を調べるのではなく正解に近いと思われるルートを優先的に調べる効率的な探索手法。代表例にA*（エースター）アルゴリズムがある。組み合わせ爆発の問題を緩和するために使われた。",
     "relatedTermIds": [
       "heuristic_search",
-      "first_ai_boom"
+      "first_ai_boom",
+      "combinatorial_explosion"
     ],
     "difficulty": 2,
     "tags": [
@@ -909,7 +942,8 @@
     "explanation": "A*（エースター）アルゴリズムは、スタート地点からの実際の移動コスト（g）とゴールまでの推定コスト（ヒューリスティック関数h）を組み合わせて最短経路を効率的に見つける探索アルゴリズム。ヒューリスティック探索の代表例として第1次AIブームで発展した。",
     "relatedTermIds": [
       "a_star_algorithm",
-      "heuristic_search"
+      "heuristic_search",
+      "first_ai_boom"
     ],
     "difficulty": 2,
     "tags": [
@@ -972,7 +1006,9 @@
     "relatedTermIds": [
       "ontology",
       "knowledge_representation",
-      "rule_based_ai"
+      "rule_based_ai",
+      "expert_system",
+      "second_ai_boom"
     ],
     "difficulty": 2,
     "tags": [
@@ -1125,7 +1161,9 @@
     "relatedTermIds": [
       "imagenet",
       "alexnet",
-      "third_ai_boom"
+      "third_ai_boom",
+      "deep_learning",
+      "image_recognition"
     ],
     "difficulty": 1,
     "tags": [
@@ -1195,7 +1233,9 @@
     "relatedTermIds": [
       "alphago",
       "deep_reinforcement_learning",
-      "third_ai_boom"
+      "third_ai_boom",
+      "deep_learning",
+      "reinforcement_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -1263,7 +1303,8 @@
     "explanation": "組み合わせ爆発とは、問題の状態空間が大きくなるにつれ、考慮すべき状態・経路の数が指数関数的（爆発的）に増大し、計算量が膨大になって現実的に解を求めることが不可能になる問題。第1次AIブームで探索・推論が現実の問題に対処できなかった主な原因の一つ。",
     "relatedTermIds": [
       "combinatorial_explosion",
-      "first_ai_boom"
+      "first_ai_boom",
+      "search_and_inference"
     ],
     "difficulty": 2,
     "tags": [
@@ -1453,7 +1494,8 @@
     "explanation": "組み合わせ爆発が起きる理由は、ゲームや迷路などで手を進めるたびに考えられる状態の数が指数関数的に増加するため。例えば囲碁では1手ごとの分岐数が約250で、数手先を読もうとするだけで状態数が天文学的な数字になる。これは計算資源の問題ではなく、問題の本質的な特性。",
     "relatedTermIds": [
       "combinatorial_explosion",
-      "first_ai_boom"
+      "first_ai_boom",
+      "search_and_inference"
     ],
     "difficulty": 2,
     "tags": [
@@ -1627,7 +1669,8 @@
     "explanation": "ディープラーニング以前の機械学習の大きな課題は「特徴量エンジニアリング」。人間が入力データのどの特徴に注目すべきかを設計してモデルに与える必要があり、ドメイン知識が必要で非常に困難だった。ディープラーニング（レベル4）はこの特徴量の抽出・学習もAI自身が行う点が革新的だった。",
     "relatedTermIds": [
       "feature_engineering",
-      "deep_learning"
+      "deep_learning",
+      "machine_learning_definition"
     ],
     "difficulty": 2,
     "tags": [
@@ -1692,7 +1735,10 @@
       "first_ai_boom",
       "second_ai_boom",
       "third_ai_boom",
-      "toy_problem"
+      "toy_problem",
+      "knowledge_acquisition_bottleneck",
+      "expert_system",
+      "search_and_inference"
     ],
     "difficulty": 3,
     "tags": [
@@ -1764,7 +1810,8 @@
       "third_ai_boom",
       "machine_learning_definition",
       "deep_learning",
-      "rule_based_ai"
+      "rule_based_ai",
+      "gpu"
     ],
     "difficulty": 2,
     "tags": [
@@ -1838,7 +1885,9 @@
       "gpt",
       "generative_ai",
       "llm",
-      "boosting"
+      "boosting",
+      "chatgpt",
+      "bert"
     ],
     "difficulty": 2,
     "tags": [
@@ -1908,7 +1957,10 @@
       "machine_learning_definition",
       "deep_learning",
       "big_data",
-      "gpu"
+      "gpu",
+      "neural_network",
+      "second_ai_boom",
+      "third_ai_boom"
     ],
     "difficulty": 3,
     "tags": [
@@ -1992,7 +2044,12 @@
       "first_ai_boom",
       "second_ai_boom",
       "third_ai_boom",
-      "ai_winter"
+      "ai_winter",
+      "expert_system",
+      "deep_learning",
+      "machine_learning_definition",
+      "search_and_inference",
+      "knowledge_representation"
     ],
     "difficulty": 3,
     "tags": [

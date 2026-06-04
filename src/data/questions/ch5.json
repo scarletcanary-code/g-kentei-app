@@ -20,7 +20,10 @@
     "correctIndex": 1,
     "explanation": "CNNは畳み込み演算によって局所的な特徴（エッジ・テクスチャなど）を位置に依存せず検出でき、全結合層と比べてパラメータ数を大幅に削減できる。これにより画像の位置ずれに頑健で効率的な学習が可能になる。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "neural_network",
+      "fully_connected_layer",
+      "image_recognition"
     ],
     "difficulty": 1,
     "tags": [
@@ -78,7 +81,9 @@
     ],
     "correctIndex": 1,
     "explanation": "プーリング層は特徴マップの空間的サイズを縮小（ダウンサンプリング）し、平行移動などの位置ずれに対して頑健性を高める。最大プーリング（Max Pooling）が一般的で、計算量を削減しながら重要な特徴を保持する。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "pooling_layer"
+    ],
     "difficulty": 1,
     "tags": [
       "プーリング",
@@ -141,7 +146,8 @@
     "correctIndex": 1,
     "explanation": "RNN（またはLSTM）は時系列・シーケンスデータの処理に適しており、前後の文脈を保持して感情分析のようなテキスト処理に有効。CNNは局所的な空間的特徴量（エッジ・テクスチャ）を畳み込みで抽出するため画像分類に適している。これら2アーキテクチャの適用領域の違いはG検定の頻出比較問題。",
     "relatedTermIds": [
-      "rnn"
+      "rnn",
+      "lstm"
     ],
     "difficulty": 1,
     "tags": [
@@ -275,7 +281,8 @@
     "correctIndex": 1,
     "explanation": "GRUはLSTMが持つ入力ゲート・忘却ゲート・出力ゲートの3ゲート＋セル状態の構造を、リセットゲートと更新ゲートの2ゲートに簡略化したモデル。セル状態を持たず隠れ状態のみを使う。LSTMより計算コストが低く、多くのタスクでLSTMと同等以上の性能を発揮する。",
     "relatedTermIds": [
-      "gru"
+      "gru",
+      "lstm"
     ],
     "difficulty": 2,
     "tags": [
@@ -347,7 +354,8 @@
     "explanation": "Attention機構は、入力データの中で重要な部分に動的に重みを付けて集中的に処理する仕組み。Seq2Seqの機械翻訳で原文の重要な単語に注目できるようにするために提案され、Transformerの核心技術となった。現在の生成AIの基盤技術。",
     "relatedTermIds": [
       "self_attention",
-      "transformer"
+      "transformer",
+      "attention_mechanism"
     ],
     "difficulty": 2,
     "tags": [
@@ -408,7 +416,12 @@
     "relatedTermIds": [
       "autoencoder",
       "generative_model",
-      "decoder"
+      "decoder",
+      "encoder_decoder",
+      "unsupervised_learning",
+      "anomaly_detection",
+      "dimensionality_reduction",
+      "vae"
     ],
     "difficulty": 2,
     "tags": [
@@ -481,7 +494,10 @@
       "dropout",
       "regularization",
       "overfitting",
-      "adagrad"
+      "adagrad",
+      "neuron",
+      "loss_function",
+      "learning_rate"
     ],
     "difficulty": 1,
     "tags": [
@@ -547,7 +563,9 @@
     "correctIndex": 1,
     "explanation": "Transformerがレイヤー正規化を採用する主な理由は、NLPタスクではバッチ内の系列長が可変でバッチ次元での統計量計算が不安定になるから。レイヤー正規化は各サンプルの特徴次元で正規化するため系列長の違いに影響されない。Attentionの仕組みとは直接関係しない。",
     "relatedTermIds": [
-      "batch_normalization"
+      "batch_normalization",
+      "transformer",
+      "normalization"
     ],
     "difficulty": 2,
     "tags": [
@@ -627,7 +645,8 @@
       "skip_connection",
       "resnet",
       "batch_size",
-      "vgg"
+      "vgg",
+      "vanishing_gradient"
     ],
     "difficulty": 2,
     "tags": [
@@ -764,7 +783,9 @@
     "explanation": "ResNetはスキップ結合（残差接続）を導入した画像認識CNNモデル。従来の深いネットワークで問題だった勾配消失を解決し、150層以上の極めて深いネットワークの学習を実現。ImageNetでトップの精度を達成した歴史的なモデル。",
     "relatedTermIds": [
       "resnet",
-      "skip_connection"
+      "skip_connection",
+      "imagenet",
+      "image_recognition"
     ],
     "difficulty": 2,
     "tags": [
@@ -900,7 +921,10 @@
     "explanation": "Self-Attention（自己注意機構）は同一シーケンス内の各位置が他の全位置との関連性（類似度）を計算し、文脈を考慮した表現を生成する機構。Transformerの核心技術であり、BERTやGPTなど現代の大規模言語モデルの基盤となっている。",
     "relatedTermIds": [
       "self_attention",
-      "transformer"
+      "transformer",
+      "llm",
+      "bert",
+      "gpt"
     ],
     "difficulty": 3,
     "tags": [
@@ -970,7 +994,8 @@
     "explanation": "VGG（Visual Geometry Group）は、3×3の小さな畳み込みフィルタを複数積み重ねてネットワークを深くすることで高精度を実現したCNNモデル。シンプルな構造が特徴で、転移学習のベースモデルとして広く利用された。",
     "relatedTermIds": [
       "cnn",
-      "vgg"
+      "vgg",
+      "transfer_learning"
     ],
     "difficulty": 3,
     "tags": [
@@ -1155,7 +1180,11 @@
     "correctIndex": 0,
     "explanation": "1×1畳み込みは空間方向には変換を行わず、チャネル方向の次元削減やチャネル間の情報統合に使われる。GoogLeNetやResNetで採用され、パラメータ数を抑えながらモデルの軽量化と表現力の維持を両立する。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "googlenet",
+      "model_lightweighting",
+      "resnet",
+      "dimensionality_reduction"
     ],
     "difficulty": 2,
     "tags": [
@@ -1236,7 +1265,8 @@
     "correctIndex": 0,
     "explanation": "特徴マップは、入力画像にフィルタを畳み込み演算した結果得られる出力。各フィルタは特定のパターン（水平エッジ、垂直エッジなど）に反応し、そのパターンが入力のどこにあるかを示す。複数のフィルタを使うと複数の特徴マップが生成される。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "convolutional_layer"
     ],
     "difficulty": 1,
     "tags": [
@@ -1362,7 +1392,9 @@
     "explanation": "TransformerはRNNのような再帰構造を使わず、Self-Attentionのみで構成されたアーキテクチャ。並列計算が可能なため学習が高速で、長距離の依存関係も効果的に学習できる。BERTやGPTなど現代のLLMの基盤技術である。",
     "relatedTermIds": [
       "transformer",
-      "self_attention"
+      "self_attention",
+      "bert",
+      "gpt"
     ],
     "difficulty": 2,
     "tags": [
@@ -1434,7 +1466,8 @@
     "explanation": "マルチヘッドアテンションは、複数のAttention「ヘッド」が並列に異なる表現空間で関係性を計算し、その結果を結合する手法。単一のAttentionより多様な関係パターンを捉えられ、TransformerやBERTで採用されている。",
     "relatedTermIds": [
       "self_attention",
-      "transformer"
+      "transformer",
+      "bert"
     ],
     "difficulty": 2,
     "tags": [
@@ -1507,7 +1540,8 @@
       "autoencoder",
       "vae",
       "generative_model",
-      "decoder"
+      "decoder",
+      "gan"
     ],
     "difficulty": 2,
     "tags": [
@@ -1715,7 +1749,9 @@
     "relatedTermIds": [
       "batch_normalization",
       "batch_size",
-      "mini_batch"
+      "mini_batch",
+      "transformer",
+      "normalization"
     ],
     "difficulty": 1,
     "tags": [
@@ -1788,7 +1824,9 @@
     "correctIndex": 2,
     "explanation": "重み減衰はL2正則化の一種で、損失関数に重みの二乗和の項を追加することで、学習中に重みが大きくなりすぎるのを抑制する。これにより特定の特徴への過度な依存を防ぎ、過学習を緩和する。",
     "relatedTermIds": [
-      "regularization"
+      "regularization",
+      "loss_function",
+      "overfitting"
     ],
     "difficulty": 2,
     "tags": [
@@ -1855,7 +1893,8 @@
     "relatedTermIds": [
       "regularization",
       "overfitting",
-      "epoch"
+      "epoch",
+      "early_stopping"
     ],
     "difficulty": 1,
     "tags": [
@@ -2002,7 +2041,8 @@
     "correctIndex": 2,
     "explanation": "知識蒸留（Distillation）は大きな教師モデルが出力するソフトラベル（確率分布）を使って小さな生徒モデルを訓練する手法。ハードラベル（正解のみ）より豊富な情報を学べるため、軽量なモデルで高い精度を達成できる。エッジAIなどの軽量化に活用される。",
     "relatedTermIds": [
-      "knowledge_distillation"
+      "knowledge_distillation",
+      "edge_ai"
     ],
     "difficulty": 2,
     "tags": [
@@ -2153,7 +2193,9 @@
     "correctIndex": 2,
     "explanation": "GoogLeNet（Inception v1）はInceptionモジュールを特徴とするCNNモデル。1×1・3×3・5×5の複数サイズの畳み込みを並列に適用し、1×1畳み込みによる次元削減で計算コストを抑えながら多スケールの特徴を抽出する。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "googlenet",
+      "dimensionality_reduction"
     ],
     "difficulty": 2,
     "tags": [
@@ -2217,7 +2259,8 @@
     "relatedTermIds": [
       "rnn",
       "self_attention",
-      "decoder"
+      "decoder",
+      "attention_mechanism"
     ],
     "difficulty": 1,
     "tags": [
@@ -2279,7 +2322,8 @@
     "correctIndex": 3,
     "explanation": "CNNでは同一のフィルタ（重み）を入力全体にスライドしながら適用する（重みの共有）。これにより全結合層と比べてパラメータ数を大幅に削減でき、また画像のどの位置に特徴が現れても検出できる位置不変性が得られる。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "fully_connected_layer"
     ],
     "difficulty": 1,
     "tags": [
@@ -2412,7 +2456,8 @@
     "correctIndex": 3,
     "explanation": "最大プーリングはプーリング領域内の最大値を選択するため、特定のパターンが「存在するか」を強調した特徴を生成する。平均プーリングは平均値を使うため、全体的な分布を反映した特徴を生成する。画像認識ではMax Poolingが一般的。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "image_recognition"
     ],
     "difficulty": 1,
     "tags": [
@@ -2475,7 +2520,8 @@
     "correctIndex": 3,
     "explanation": "積層オートエンコーダは複数のオートエンコーダを重ねたモデル。各層のオートエンコーダを事前学習（グリーディ事前学習）して、段階的により抽象的な特徴表現を学習する。ディープラーニングの初期段階で深いネットワークを学習する手法として用いられた。",
     "relatedTermIds": [
-      "autoencoder"
+      "autoencoder",
+      "deep_learning"
     ],
     "difficulty": 2,
     "tags": [
@@ -2533,7 +2579,9 @@
     "explanation": "RNNでは時系列が長くなると逆伝播の際に勾配がステップを遡るごとに掛け算されて指数的に小さくなる（勾配消失）。この問題により、長い時系列の初期部分の情報が学習に反映されなくなる。LSTMやGRUはこの問題を解決するために開発された。",
     "relatedTermIds": [
       "rnn",
-      "lstm"
+      "lstm",
+      "vanishing_gradient",
+      "gru"
     ],
     "difficulty": 1,
     "tags": [
@@ -2728,7 +2776,9 @@
     "correctIndex": 3,
     "explanation": "プルーニング（剪定）は学習済みモデルの重みのうち、絶対値が小さいものや重要度が低いニューロンを削除する手法。モデルの精度をできるだけ保ちながらパラメータ数を削減し、推論速度向上・メモリ削減を実現する。知識蒸留・量子化と並ぶ主要なモデル軽量化手法。",
     "relatedTermIds": [
-      "knowledge_distillation"
+      "knowledge_distillation",
+      "neuron",
+      "quantization"
     ],
     "difficulty": 1,
     "tags": [
@@ -2792,7 +2842,8 @@
     "correctIndex": 3,
     "explanation": "受容野（Receptive Field）とはネットワーク内の特定のニューロンが「見る」ことができる入力画像上の範囲のこと。層を重ねるほど受容野が広がり、より大きなパターンを認識できるようになる。小さなフィルタを多数積み重ねることで大きな受容野を効率よく得られる。",
     "relatedTermIds": [
-      "cnn"
+      "cnn",
+      "neuron"
     ],
     "difficulty": 2,
     "tags": [
@@ -2853,7 +2904,11 @@
     "correctIndex": 3,
     "explanation": "バッチ正規化やレイヤー正規化などの正規化層は、各層への入力分布の変化（内部共変量シフト）を抑制することで、学習を安定化・高速化させる。また勾配消失・爆発の緩和にも効果があり、より大きな学習率を使えるようになる利点もある。",
     "relatedTermIds": [
-      "batch_normalization"
+      "batch_normalization",
+      "deep_learning",
+      "normalization_layer",
+      "learning_rate",
+      "normalization"
     ],
     "difficulty": 1,
     "tags": [

@@ -20,7 +20,8 @@
     "correctIndex": 1,
     "explanation": "TransformerのAttentionでは、Q（クエリ）は問い合わせ、K（キー）は照合対象、V（バリュー）は実際に集約する情報。QとKの内積（類似度）からSoftmaxで注意重みを計算し、その重みでVを加重平均することで文脈を考慮した情報を抽出する。",
     "relatedTermIds": [
-      "transformer"
+      "transformer",
+      "attention_mechanism"
     ],
     "difficulty": 3,
     "tags": [
@@ -80,7 +81,8 @@
     "explanation": "BERTはTransformerのエンコーダ部分を応用し、文章の左右両側の文脈を同時に考慮する双方向の事前学習を行うモデル。マスク言語モデリング（MLM）と次文予測（NSP）で事前学習し、各種NLPタスクのファインチューニングに使われる。",
     "relatedTermIds": [
       "bert",
-      "transformer"
+      "transformer",
+      "fine_tuning"
     ],
     "difficulty": 2,
     "tags": [
@@ -143,7 +145,10 @@
       "gpt",
       "transformer",
       "generative_model",
-      "decoder"
+      "decoder",
+      "fine_tuning",
+      "chatgpt",
+      "regression"
     ],
     "difficulty": 1,
     "tags": [
@@ -351,7 +356,9 @@
     "relatedTermIds": [
       "lora",
       "fine_tuning",
-      "hallucination"
+      "hallucination",
+      "gpu",
+      "rag"
     ],
     "difficulty": 2,
     "tags": [
@@ -415,7 +422,9 @@
     "explanation": "RLHF（人間によるフィードバックを用いた強化学習）は、AIの出力に対する人間の評価・フィードバックを報酬信号として強化学習を行い、LLMの出力を人間の意図・価値観・安全性基準（アライメント）に合わせる手法。ChatGPTなどに使われた。",
     "relatedTermIds": [
       "rlhf",
-      "reinforcement_learning"
+      "reinforcement_learning",
+      "chatgpt",
+      "gpt"
     ],
     "difficulty": 2,
     "tags": [
@@ -481,7 +490,9 @@
     "correctIndex": 1,
     "explanation": "拡散モデルは、データに段階的にガウスノイズを加えていく前向き過程を学習し、その逆過程（逆拡散）をニューラルネットワークで学習する。推論時は純粋なノイズから逆拡散過程でデータを復元することで高品質な画像などを生成する。Stable Diffusionなどで採用。",
     "relatedTermIds": [
-      "diffusion_model"
+      "diffusion_model",
+      "stable_diffusion",
+      "neural_network"
     ],
     "difficulty": 2,
     "tags": [
@@ -550,7 +561,8 @@
     "correctIndex": 1,
     "explanation": "マルチモーダルAIは、テキスト・画像・音声・動画など異なる種類（モダリティ）のデータを統合して処理・学習するAI。例えばGPT-4VやGeminiは画像とテキストの両方を処理できるマルチモーダルモデル。",
     "relatedTermIds": [
-      "multimodal"
+      "multimodal",
+      "gpt"
     ],
     "difficulty": 1,
     "tags": [
@@ -623,7 +635,8 @@
     "relatedTermIds": [
       "xai",
       "transparency",
-      "auc"
+      "auc",
+      "deep_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -699,7 +712,13 @@
       "imagenet",
       "cnn",
       "vgg",
-      "object_detection"
+      "object_detection",
+      "deep_learning",
+      "googlenet",
+      "third_ai_boom",
+      "alexnet",
+      "resnet",
+      "image_recognition"
     ],
     "difficulty": 1,
     "tags": [
@@ -763,7 +782,10 @@
     "relatedTermIds": [
       "resnet",
       "skip_connection",
-      "vgg"
+      "vgg",
+      "efficientnet",
+      "googlenet",
+      "vanishing_gradient"
     ],
     "difficulty": 1,
     "tags": [
@@ -835,7 +857,9 @@
     "explanation": "VGGは3×3の小さなフィルタを重ねることでシンプルな構造のまま深いネットワークを実現したモデル。転移学習のベースとして広く利用される。GoogLeNetはインセプションモジュールを導入し、1×1畳み込みで次元削減（チャネル圧縮）を行いながら計算コストを抑えつつ多層化を実現したモデル。",
     "relatedTermIds": [
       "vgg",
-      "googlenet"
+      "googlenet",
+      "transfer_learning",
+      "dimensionality_reduction"
     ],
     "difficulty": 2,
     "tags": [
@@ -911,7 +935,10 @@
     "explanation": "YOLO（You Only Look Once）は画像全体を一度だけ見て、物体の位置特定とクラス分類を1回のネットワーク通過で同時に行う1段階（one-stage）の物体検出手法。リアルタイム処理が可能なほど高速で、自動運転などに活用される。R-CNNは2段階処理で精度は高いが低速。SSDも1段階処理だが階層的特徴マップを使う。",
     "relatedTermIds": [
       "yolo",
-      "object_detection"
+      "object_detection",
+      "rcnn",
+      "autonomous_driving",
+      "ssd"
     ],
     "difficulty": 1,
     "tags": [
@@ -1181,7 +1208,10 @@
     "relatedTermIds": [
       "t5",
       "transformer",
-      "decoder"
+      "decoder",
+      "nlp_definition",
+      "bert",
+      "gpt"
     ],
     "difficulty": 2,
     "tags": [
@@ -1248,7 +1278,8 @@
     "explanation": "In-Context Learningはモデルのパラメータを一切更新しないまま、プロンプトに含めたいくつかの入出力例（コンテキスト）を見るだけでモデルが新しいタスクを実行できる現象・手法。GPT-3以降の大規模モデルで顕著に現れ、Few-Shot Learningの一形態としても知られる。新シラバス追加の重要キーワード。",
     "relatedTermIds": [
       "in_context_learning",
-      "few_shot_learning"
+      "few_shot_learning",
+      "gpt"
     ],
     "difficulty": 1,
     "tags": [
@@ -1296,7 +1327,8 @@
     "correctIndex": 2,
     "explanation": "プロンプトエンジニアリングはLLMに与える入力テキスト（プロンプト）の設計・最適化を行う技術。役割指定（Role Prompting）・Chain-of-Thought（思考の連鎖）・Few-Shot例示などの技法で、モデルのパラメータを変えずに出力の品質・精度・安全性を改善できる。新シラバルの最重要技術の一つ。",
     "relatedTermIds": [
-      "prompt_engineering"
+      "prompt_engineering",
+      "chain_of_thought"
     ],
     "difficulty": 1,
     "tags": [
@@ -1363,7 +1395,10 @@
     "explanation": "QLoRA（Quantized LoRA）はLoRAに量子化技術を組み合わせた手法。事前学習済みモデルを4ビット量子化することでメモリ消費を大幅に削減し、低ランク行列のみ学習するLoRAの仕組みと組み合わせることで、一般的なコンシューマGPU（例：24GB VRAM）でも数十億パラメータのLLMをファインチューニングできる。PEFTの代表的手法の一つ。",
     "relatedTermIds": [
       "lora",
-      "peft"
+      "peft",
+      "fine_tuning",
+      "gpu",
+      "quantization"
     ],
     "difficulty": 2,
     "tags": [
@@ -1439,7 +1474,8 @@
     "explanation": "PEFT（Parameter-Efficient Fine-Tuning：パラメータ効率的ファインチューニング）は、大規模な事前学習済みモデルの全パラメータを更新せず、一部の少数パラメータだけを学習させることで計算資源とメモリを大幅に削減するファインチューニング手法の総称。LoRA・QLoRA・Prefix Tuningなどが代表的な手法。",
     "relatedTermIds": [
       "peft",
-      "lora"
+      "lora",
+      "fine_tuning"
     ],
     "difficulty": 1,
     "tags": [
@@ -1506,7 +1542,8 @@
     "relatedTermIds": [
       "wavenet",
       "speech_synthesis",
-      "generative_model"
+      "generative_model",
+      "speech_recognition"
     ],
     "difficulty": 1,
     "tags": [
@@ -1577,7 +1614,8 @@
     "relatedTermIds": [
       "yolo",
       "autonomous_driving",
-      "object_detection"
+      "object_detection",
+      "deep_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -1636,7 +1674,8 @@
     "relatedTermIds": [
       "stable_diffusion",
       "diffusion_model",
-      "generative_model"
+      "generative_model",
+      "gan"
     ],
     "difficulty": 1,
     "tags": [
@@ -1706,7 +1745,10 @@
       "efficientnet",
       "cnn",
       "vgg",
-      "object_detection"
+      "object_detection",
+      "googlenet",
+      "skip_connection",
+      "resnet"
     ],
     "difficulty": 2,
     "tags": [
@@ -1852,7 +1894,9 @@
     "explanation": "ChatGPT（InstructGPT）のRLHFプロセスは大きく3段階。(1)大量のテキストでGPTを事前学習、(2)人間のアノテーターが複数の生成文を比較評価して報酬モデル（Reward Model）を訓練、(3)強化学習（PPO：近似方策最適化など）を使って報酬モデルの評価を高めるようLLMのパラメータを調整し、人間の意図・価値観に沿った出力（アライメント）を実現する。",
     "relatedTermIds": [
       "rlhf",
-      "chatgpt"
+      "chatgpt",
+      "reinforcement_learning",
+      "gpt"
     ],
     "difficulty": 3,
     "tags": [
@@ -1905,7 +1949,9 @@
     "explanation": "音声認識（Speech Recognition / ASR）は音声データをテキストに変換する技術（Speech-to-Text）。音声合成（Speech Synthesis / TTS）はテキストから音声波形を生成する技術（Text-to-Speech）。ディープラーニングの進歩により両者とも大幅に品質が向上し、音声合成ではWaveNetなどが人間に近い自然な音声を実現した。",
     "relatedTermIds": [
       "speech_recognition",
-      "speech_synthesis"
+      "speech_synthesis",
+      "deep_learning",
+      "wavenet"
     ],
     "difficulty": 1,
     "tags": [
@@ -1976,7 +2022,8 @@
       "bert",
       "t5",
       "transformer",
-      "decoder"
+      "decoder",
+      "regression"
     ],
     "difficulty": 2,
     "tags": [
@@ -2109,7 +2156,8 @@
     "explanation": "Vision Transformer（ViT）はGoogleが提案した画像認識モデルで、画像を固定サイズのパッチ（例：16×16ピクセル）に分割してフラット化し、それをトークンとしてTransformerのエンコーダで処理する。CNNを使わずにTransformerのみで高精度な画像認識を達成し、大規模データで学習すれば既存のCNNモデルを凌ぐ性能を示した。",
     "relatedTermIds": [
       "vit",
-      "transformer"
+      "transformer",
+      "image_recognition"
     ],
     "difficulty": 2,
     "tags": [
@@ -2179,7 +2227,8 @@
       "clip_model",
       "multimodal",
       "contrastive_learning",
-      "generative_model"
+      "generative_model",
+      "stable_diffusion"
     ],
     "difficulty": 3,
     "tags": [
@@ -2246,7 +2295,8 @@
     "relatedTermIds": [
       "transfer_learning",
       "fine_tuning",
-      "peft"
+      "peft",
+      "lora"
     ],
     "difficulty": 1,
     "tags": [
@@ -2306,7 +2356,8 @@
     "relatedTermIds": [
       "lora",
       "peft",
-      "fine_tuning"
+      "fine_tuning",
+      "gpu"
     ],
     "difficulty": 3,
     "tags": [

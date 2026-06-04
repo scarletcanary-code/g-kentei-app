@@ -88,7 +88,11 @@
     ],
     "correctIndex": 1,
     "explanation": "個人情報保護法における仮名加工情報は他の情報と照合しない限り識別不可な情報で、社内分析などに限定して利用され第三者提供は原則不可。一方、匿名加工情報は特定の個人を識別できず復元もできないように加工した情報で、第三者提供が可能になる。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "personal_information_protection_act",
+      "pseudonymized_information",
+      "anonymized_information"
+    ],
     "difficulty": 1,
     "tags": [
       "個人情報保護法",
@@ -148,7 +152,8 @@
     "explanation": "EU AI法（AI Act）は世界初の包括的なAI規制法で、リスクベースアプローチを採用。AIを「許容できないリスク（禁止）」「高リスク（採用・医療・インフラなど、厳格な義務）」「限定的リスク（チャットボットなど、透明性義務）」「最小限のリスク（ほぼ規制なし）」の4段階に分類する。",
     "relatedTermIds": [
       "eu_ai_act",
-      "chatbot"
+      "chatbot",
+      "transparency"
     ],
     "difficulty": 1,
     "tags": [
@@ -335,7 +340,9 @@
     "correctIndex": 1,
     "explanation": "ディープフェイクはGANや拡散モデルを用いることで、従来の手動合成では不可能だったレベルの自然さで実在人物の顔差し替え・音声クローン・動画偽造を可能にした。この技術により、フィッシング詐欺・名誉毀損・偽情報拡散・選挙干渉などの悪用が社会問題化している点が主な懸念。",
     "relatedTermIds": [
-      "deepfake"
+      "deepfake",
+      "diffusion_model",
+      "gan"
     ],
     "difficulty": 1,
     "tags": [
@@ -463,7 +470,8 @@
     "correctIndex": 1,
     "explanation": "EU AI法で「許容できないリスク」として禁止されるのは、公共空間でのリアルタイム生体認証による大量監視や、政府が行う社会的スコアリング（中国の社会信用システムのようなもの）など。医療診断AI・融資審査AI・自動運転は「高リスク」カテゴリで禁止ではないが厳格な義務が課される。",
     "relatedTermIds": [
-      "eu_ai_act"
+      "eu_ai_act",
+      "autonomous_driving"
     ],
     "difficulty": 2,
     "tags": [
@@ -594,7 +602,9 @@
     ],
     "correctIndex": 0,
     "explanation": "敵対的サンプル（Adversarial Examples）とは、人間には知覚困難な微小なノイズや変化を画像などの入力データに意図的に加えることで、AIを誤った予測（例：「猫」を「犬」と誤認）させるように設計された入力。自動運転や顔認証システムへの攻撃として問題視されている。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "autonomous_driving"
+    ],
     "difficulty": 3,
     "tags": [
       "敵対的サンプル",
@@ -722,7 +732,9 @@
     ],
     "correctIndex": 0,
     "explanation": "要配慮個人情報とは、人種、信条、社会的身分、病歴、犯罪歴、身体・精神障害など、不当な差別・偏見やその他の不利益を生じさせる恐れのある個人情報。通常の個人情報と異なり、取得の際に原則として本人の明示的な同意が必要であり、オプトアウトによる第三者提供も認められない。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "personal_information_protection_act"
+    ],
     "difficulty": 1,
     "tags": [
       "個人情報保護法",
@@ -779,7 +791,9 @@
     ],
     "correctIndex": 0,
     "explanation": "GDPRにおける「忘れられる権利」（消去権、第17条）は、収集目的の達成・同意の撤回・不法な処理などの一定条件下で、本人がデータ管理者に対して自分の個人データの削除を求める権利。2014年のEU司法裁判所判決（Google Spain判決）で確立し、GDPRに明文化された。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "gdpr"
+    ],
     "difficulty": 1,
     "tags": [
       "GDPR",
@@ -836,7 +850,9 @@
     ],
     "correctIndex": 0,
     "explanation": "GDPRのデータポータビリティ権（第20条）は、本人が自分の個人データを構造化・機械可読可能・一般的に使用される形式（JSON、CSVなど）で受け取り、別のサービス事業者へ直接移転させることを求める権利。利用者のサービス間移動（スイッチング）を容易にしデータの独占を防ぐ目的がある。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "gdpr"
+    ],
     "difficulty": 1,
     "tags": [
       "GDPR",
@@ -887,7 +903,9 @@
     ],
     "correctIndex": 0,
     "explanation": "プライバシー・バイ・デザイン（アン・カブキアン提唱）は、システムの企画・設計段階から予防的にプライバシー保護を組み込む考え方である。事後対応・規約記載のみ・収集後の匿名化のみは、設計段階での予防的アプローチに合致しない。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "privacy"
+    ],
     "difficulty": 1,
     "tags": [
       "プライバシーバイデザイン",
@@ -948,7 +966,11 @@
     ],
     "correctIndex": 0,
     "explanation": "OECD AI原則は2019年に採択された信頼できるAIの開発・運用のための国際原則で、G20でも採択された。「人間中心の価値観と公平性」「透明性と説明可能性」「堅牢性・安全性・セキュリティ」「説明責任」「包括的な成長・持続可能な発展・福祉」の5原則を柱とし、現在の多くの国内外AIガイドラインの基礎となっている。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "accountability",
+      "fairness",
+      "transparency"
+    ],
     "difficulty": 1,
     "tags": [
       "OECD AI原則",
@@ -1012,7 +1034,9 @@
     "correctIndex": 2,
     "explanation": "Grad-CAM（Gradient-weighted Class Activation Mapping）は、CNNなどの画像認識モデルの判断根拠を可視化するXAI手法。最終畳み込み層の勾配情報を使って、モデルが「画像のどこを見て分類したか」をヒートマップとして表示する。医療画像診断AIで「どの部位を見て診断したか」を医師に示す際などに活用される。",
     "relatedTermIds": [
-      "xai"
+      "xai",
+      "convolutional_layer",
+      "image_recognition"
     ],
     "difficulty": 1,
     "tags": [
@@ -1081,7 +1105,8 @@
     "correctIndex": 2,
     "explanation": "限定提供データとは、2018年の不正競争防止法改正で追加された概念。IDやパスワード等の技術的管理措置により特定の者に対して提供されるビッグデータ等のデータ（地図データ、気象データ、走行データなど）が対象。不正取得・使用・開示が「不正競争」として禁止され、民事上の差止請求・損害賠償が可能になった。【誤答解説】選択肢[0]は「一般公開されたデータ」を指しており、限定提供データの「技術的管理措置による限定」という要件を満たさないため誤り。選択肢[1]はオープンデータ（誰でも取得可能）を説明しており、アクセス制限が設けられていない点で限定提供データの定義に合致しないため誤り。選択肢[3]は営業秘密の説明であり、限定提供データは秘密管理性を要件とせず外部特定者への提供も含む点で異なるため誤り。",
     "relatedTermIds": [
-      "unfair_competition_prevention_act"
+      "unfair_competition_prevention_act",
+      "big_data"
     ],
     "difficulty": 1,
     "tags": [
@@ -1268,7 +1293,9 @@
     "explanation": "LIME（Local Interpretable Model-agnostic Explanations）は、ブラックボックスモデルの個々の予測を説明するXAI手法。予測したいデータ点の近傍にサンプルを生成し、そこに解釈可能な単純モデル（線形回帰など）を局所的に当てはめることで予測の根拠を近似的に説明する。モデルの種類を問わず適用できる（model-agnostic）点が特徴。",
     "relatedTermIds": [
       "xai",
-      "lime_xai"
+      "lime_xai",
+      "linear_regression",
+      "regression"
     ],
     "difficulty": 2,
     "tags": [
@@ -1430,7 +1457,8 @@
     "explanation": "EU AI法はリスクベースアプローチを採用し、採用選考・人事評価、医療診断・治療支援、重要インフラ管理、教育評価、司法・法執行支援、国境管理など、人の生命・権利・機会に大きな影響を与える分野で利用されるAIを『高リスク』カテゴリに分類する。これらには透明性確保・人間による監視・データ品質・サイバーセキュリティなどの厳格な義務が課される。一方、個人の趣味的な利用やエンタメ系の機能に限られるAIは、通常は最小限のリスク等の低位カテゴリに位置づけられる。",
     "relatedTermIds": [
       "eu_ai_act",
-      "data_quality"
+      "data_quality",
+      "transparency"
     ],
     "difficulty": 2,
     "tags": [
@@ -1501,7 +1529,9 @@
     "correctIndex": 3,
     "explanation": "AIのアカウンタビリティ（説明責任）とは、AIの判断や行動について開発者・運用者が利害関係者（ユーザー・被影響者・規制当局・社会）に対して説明し、問題が生じた際に責任を負う体制・義務のこと。FAccT（公平性・アカウンタビリティ・透明性）の一要素で、特に高リスク領域でのAI利用に不可欠な概念である。",
     "relatedTermIds": [
-      "fairness"
+      "fairness",
+      "accountability",
+      "transparency"
     ],
     "difficulty": 2,
     "tags": [
@@ -1631,7 +1661,8 @@
     "correctIndex": 3,
     "explanation": "電子透かし（ウォーターマーク）は、AI生成コンテンツ（画像・動画・テキスト等）にAI生成であることを示す情報を人間には知覚できない形で埋め込む技術。ディープフェイクや誤情報の拡散に対抗し、コンテンツの出所・真正性を検証可能にする手段として注目される。EU AI法でも特定のAI生成コンテンツへのウォーターマーク付与が義務化された。",
     "relatedTermIds": [
-      "deepfake"
+      "deepfake",
+      "eu_ai_act"
     ],
     "difficulty": 2,
     "tags": [
@@ -1692,7 +1723,9 @@
     ],
     "correctIndex": 3,
     "explanation": "GDPRの第22条では、本人の法的効果または重大な影響を及ぼす決定（ローン審査・採用など）が自動化された処理（AIプロファイリング）のみによってなされることへの異議申し立て権・拒否権を規定。人間による関与、自己の見解の表明、決定への異議申し立てを求める権利が保障されている。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "gdpr"
+    ],
     "difficulty": 2,
     "tags": [
       "GDPR",
@@ -1818,7 +1851,9 @@
     ],
     "correctIndex": 3,
     "explanation": "著作権法30条の4は情報解析目的の利用を広く認めるが、権利者の利益を不当に害する場合には適用が否定される。特定の著作家の文体・作風を模倣するAIサービスのために当該著作家の作品のみを集中利用し、著作家自身の市場（書籍販売・創作活動）を代替・侵食する行為は「不当に害する」に該当する可能性がある。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "copyright_act_30_4"
+    ],
     "difficulty": 3,
     "tags": [
       "著作権法",
@@ -1883,7 +1918,8 @@
     "correctIndex": 0,
     "explanation": "Demographic Parityはグループ（性別・人種等）間のポジティブな予測結果（採用・融資承認等）の割合を均等にする基準。Equalized Oddsはグループ間で真陽性率（TPR）と偽陽性率（FPR）の両方を均等にするより厳しい基準。両指標は同時に満たせない場合があり（公平性の不可能定理）、実務では文脈に応じて選択する。",
     "relatedTermIds": [
-      "fairness"
+      "fairness",
+      "false_positive"
     ],
     "difficulty": 3,
     "tags": [

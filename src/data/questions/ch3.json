@@ -21,7 +21,10 @@
     "explanation": "教師あり学習は入力と正解ラベルのペアを用いて入出力の写像を学習する。教師なし学習はラベルなしデータの構造を発見する（クラスタリング・次元削減など）。強化学習は報酬を最大化するよう行動方策を更新する。これらの違いを正確に区別することがG検定の頻出論点。",
     "relatedTermIds": [
       "supervised_learning",
-      "clustering"
+      "clustering",
+      "unsupervised_learning",
+      "reinforcement_learning",
+      "dimensionality_reduction"
     ],
     "difficulty": 1,
     "tags": [
@@ -91,7 +94,10 @@
     "explanation": "教師なし学習はラベルなしデータからデータの構造・パターン・クラスタを自律的に発見する。購買履歴のクラスタリングはその典型例。メール判別は教師あり学習（ラベルあり）、ゲームの方策学習は強化学習、価格予測は教師あり学習（回帰）に該当する。",
     "relatedTermIds": [
       "unsupervised_learning",
-      "clustering"
+      "clustering",
+      "supervised_learning",
+      "reinforcement_learning",
+      "regression"
     ],
     "difficulty": 1,
     "tags": [
@@ -229,7 +235,12 @@
     "explanation": "家賃（連続値）を面積から予測する問題は、正解ラベル（実際の家賃）付きデータで連続値を予測する教師あり学習の回帰タスクであり、線形回帰が適切。クラスタリングはラベルなし分類、ロジスティック回帰は2値分類（高い/安いなど）、強化学習は報酬最大化の逐次意思決定に用いる。",
     "relatedTermIds": [
       "linear_regression",
-      "clustering"
+      "clustering",
+      "logistic_regression",
+      "machine_learning_definition",
+      "supervised_learning",
+      "reinforcement_learning",
+      "regression"
     ],
     "difficulty": 1,
     "tags": [
@@ -301,7 +312,8 @@
     "correctIndex": 3,
     "explanation": "決定木は条件分岐を木構造で表現して段階的に分類・予測を行う手法で、判断過程を可視化でき解釈性が高いことが大きな特徴。一方で木が深くなると過学習しやすい欠点もある。判断過程を可視化できる解釈性の高い手法であって、ブラックボックス手法ではない。",
     "relatedTermIds": [
-      "decision_tree"
+      "decision_tree",
+      "overfitting"
     ],
     "difficulty": 1,
     "tags": [
@@ -361,7 +373,10 @@
       "ensemble_learning",
       "rule_based_ai",
       "bagging",
-      "boosting"
+      "boosting",
+      "decision_tree",
+      "overfitting",
+      "regression"
     ],
     "difficulty": 2,
     "tags": [
@@ -491,7 +506,8 @@
     "relatedTermIds": [
       "k_means",
       "unsupervised_learning",
-      "clustering"
+      "clustering",
+      "hierarchical_clustering"
     ],
     "difficulty": 1,
     "tags": [
@@ -559,7 +575,9 @@
     "correctIndex": 1,
     "explanation": "PCA（主成分分析）は分散最大の直交方向を線形変換で求めるため、逆変換が可能で再現性がある決定論的手法。t-SNEは非線形変換で局所的な近傍関係を保持して可視化するが、確率的で再現性がなく逆変換もできない。out-of-sample拡張の困難さはt-SNEの特徴であり、PCAは新データへの適用が容易。",
     "relatedTermIds": [
-      "pca"
+      "pca",
+      "t_sne",
+      "dimensionality_reduction"
     ],
     "difficulty": 2,
     "tags": [
@@ -626,7 +644,9 @@
     "explanation": "見逃し（偽陰性）を減らすには「実際の陽性をAIが見落とさない率＝再現率（Recall）」を最大化する。適合率（Precision）はAIが陽性と言ったうち正しかった率で、誤警報（偽陽性）を減らす場合に重視する。がん検診では見逃しの方が損害が大きいため再現率を優先する。正解率は不均衡データで不適切。",
     "relatedTermIds": [
       "precision",
-      "recall"
+      "recall",
+      "false_positive",
+      "accuracy"
     ],
     "difficulty": 2,
     "tags": [
@@ -707,7 +727,8 @@
     "explanation": "F値（F-measure）は適合率（Precision）と再現率（Recall）の調和平均で計算される。F値 = 2 × (Precision × Recall) / (Precision + Recall)。両者のバランスを評価する指標として、特に不均衡なクラス分類問題で使われる。",
     "relatedTermIds": [
       "precision",
-      "recall"
+      "recall",
+      "f_score"
     ],
     "difficulty": 2,
     "tags": [
@@ -815,7 +836,9 @@
     "explanation": "過学習（オーバーフィッティング）とは、モデルが訓練データのノイズまで覚えてしまい、訓練データの精度は高いが未知のテストデータに対する汎化性能が低下した状態。正則化、ドロップアウト、データ拡張などで対処する。",
     "relatedTermIds": [
       "overfitting",
-      "regularization"
+      "regularization",
+      "dropout",
+      "data_augmentation"
     ],
     "difficulty": 1,
     "tags": [
@@ -859,7 +882,9 @@
     "relatedTermIds": [
       "logistic_regression",
       "sigmoid_function",
-      "clustering"
+      "clustering",
+      "supervised_learning",
+      "regression"
     ],
     "difficulty": 2,
     "tags": [
@@ -982,7 +1007,9 @@
       "gradient_boosting",
       "ensemble_learning",
       "bagging",
-      "boosting"
+      "boosting",
+      "xgboost",
+      "decision_tree"
     ],
     "difficulty": 1,
     "tags": [
@@ -1049,7 +1076,9 @@
     "relatedTermIds": [
       "bagging",
       "boosting",
-      "ensemble_learning"
+      "ensemble_learning",
+      "random_forest",
+      "xgboost"
     ],
     "difficulty": 1,
     "tags": [
@@ -1112,7 +1141,9 @@
     "explanation": "k-近傍法（k-NN）は、予測対象のデータから距離が最も近いk個のデータを参照し、その多数決（分類）または平均（回帰）で予測値を決定する教師あり学習手法。モデルを事前に学習せず、予測時に毎回距離計算を行う「怠惰学習」の代表例。",
     "relatedTermIds": [
       "k_nearest_neighbor",
-      "clustering"
+      "clustering",
+      "supervised_learning",
+      "regression"
     ],
     "difficulty": 1,
     "tags": [
@@ -1312,7 +1343,9 @@
     "explanation": "ROC曲線は横軸に偽陽性率（FPR）、縦軸に真陽性率（再現率・TPR）をとり、分類の閾値を変化させたときの挙動を描いた曲線。AUC（曲線下面積）が1に近いほど高性能で、0.5はランダム予測に相当する。",
     "relatedTermIds": [
       "roc_curve",
-      "auc"
+      "auc",
+      "recall",
+      "false_positive"
     ],
     "difficulty": 1,
     "tags": [
@@ -1443,7 +1476,9 @@
     "explanation": "スパムフィルタではFP（正常メールをスパムと誤判定）が問題で適合率（Precision）が重要。がん診断ではFN（患者を陰性と誤判定）が問題で再現率（Recall）が重要。FPとFNのどちらを最小化すべきかはユースケースのコスト構造による。",
     "relatedTermIds": [
       "confusion_matrix",
-      "false_positive"
+      "false_positive",
+      "precision",
+      "recall"
     ],
     "difficulty": 2,
     "tags": [
@@ -1509,7 +1544,8 @@
     "explanation": "再現率（Recall）は「実際のPositiveをどれだけ見逃さずに検出できるか」を示す指標。医療診断など見逃しのコストが高い場面で特に重要。一方スパムフィルタでは正常メールの誤判定（偽陽性）を減らす適合率（Precision）が重視される。",
     "relatedTermIds": [
       "recall",
-      "precision"
+      "precision",
+      "false_positive"
     ],
     "difficulty": 1,
     "tags": [
@@ -1638,7 +1674,8 @@
     "relatedTermIds": [
       "l1_regularization",
       "l2_regularization",
-      "regularization"
+      "regularization",
+      "overfitting"
     ],
     "difficulty": 3,
     "tags": [
@@ -1701,7 +1738,8 @@
     "explanation": "次元の呪いとは、特徴量の次元数が増加するにつれてデータが高次元空間に疎に分散し、十分な学習に必要なデータ量が指数関数的に増大する現象。過学習しやすくなったり距離計算の意味が薄れたりするため、PCAなどの次元削減が有効な対策となる。",
     "relatedTermIds": [
       "curse_of_dimensionality",
-      "dimensionality_reduction"
+      "dimensionality_reduction",
+      "overfitting"
     ],
     "difficulty": 2,
     "tags": [
@@ -1830,7 +1868,9 @@
     "explanation": "Q学習は強化学習の価値ベース手法で、ある状態sで行動aをとった場合の期待累積報酬を表すQ値（行動価値関数）を学習し、Q値が最大の行動を選択する。DQN（Deep Q-Network）はQ学習とニューラルネットワークを組み合わせた深層強化学習手法。",
     "relatedTermIds": [
       "q_learning",
-      "reinforcement_learning"
+      "reinforcement_learning",
+      "neural_network",
+      "deep_reinforcement_learning"
     ],
     "difficulty": 2,
     "tags": [
@@ -2008,7 +2048,8 @@
     "correctIndex": 2,
     "explanation": "特徴量エンジニアリングは、ドメイン知識を活用して元データから有用な特徴量を作成・選択・変換するプロセス。欠損値処理、カテゴリ変数のエンコーディング、スケーリング、交互作用特徴量の作成などが含まれ、モデルの精度向上に大きく貢献する。",
     "relatedTermIds": [
-      "feature_engineering"
+      "feature_engineering",
+      "missing_value"
     ],
     "difficulty": 1,
     "tags": [
@@ -2076,7 +2117,8 @@
     "correctIndex": 2,
     "explanation": "未学習（アンダーフィッティング）は、モデルの複雑さ（表現力）が不足してデータのパターンを十分に捉えられず、訓練データでもテストデータでも精度が低い状態。対策としてより複雑なモデルへの変更、特徴量の追加、正則化の緩和などが有効。",
     "relatedTermIds": [
-      "underfitting"
+      "underfitting",
+      "regularization"
     ],
     "difficulty": 1,
     "tags": [
@@ -2391,7 +2433,9 @@
     "relatedTermIds": [
       "xgboost",
       "gradient_boosting",
-      "boosting"
+      "boosting",
+      "regularization",
+      "missing_value"
     ],
     "difficulty": 2,
     "tags": [
@@ -2464,7 +2508,9 @@
     "explanation": "異常検知では、実際の現場で「正常」データは大量に収集できるが「異常」データは非常に少ない（クラス不均衡）ことが多い。そのため正常データのみから正常パターンを学習し、外れた挙動を異常とみなす教師なし手法（オートエンコーダ、孤立森など）が広く使われる。",
     "relatedTermIds": [
       "anomaly_detection",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "autoencoder",
+      "class_imbalance"
     ],
     "difficulty": 2,
     "tags": [
@@ -2525,7 +2571,8 @@
     "explanation": "RMSE（Root Mean Squared Error）はMSEの平方根をとることで、予測誤差を元のデータと同じ単位で表現できる回帰評価指標。MSEは外れ値に敏感であり、RMSEも同様の性質を持つ。値が小さいほどモデルの予測精度が高いことを示す。",
     "relatedTermIds": [
       "rmse",
-      "mse"
+      "mse",
+      "regression"
     ],
     "difficulty": 1,
     "tags": [
@@ -2597,7 +2644,8 @@
     "correctIndex": 3,
     "explanation": "半教師あり学習は、少量のラベルありデータと大量のラベルなしデータを組み合わせて学習する手法。ラベリングコストが高い実務場面で有効。ラベルなしデータのデータ分布情報を活用することで教師あり学習より高い精度を実現できる場合がある。",
     "relatedTermIds": [
-      "semi_supervised_learning"
+      "semi_supervised_learning",
+      "supervised_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -2752,7 +2800,10 @@
     "relatedTermIds": [
       "hyperparameter",
       "batch_size",
-      "epoch"
+      "epoch",
+      "neural_network",
+      "decision_tree",
+      "learning_rate"
     ],
     "difficulty": 1,
     "tags": [
@@ -2824,7 +2875,8 @@
     "relatedTermIds": [
       "class_imbalance",
       "oversampling",
-      "auc"
+      "auc",
+      "f_score"
     ],
     "difficulty": 3,
     "tags": [

@@ -21,7 +21,8 @@
     "explanation": "活性化関数の役割は、線形変換の積み重ねでは表現できない非線形関数を近似可能にすることにある。ReLU・シグモイド・tanh などが代表例で、選び方によって学習の収束しやすさや勾配消失の起きやすさが変わる。一方、重み行列の初期値生成や乱数初期化は Xavier 初期化や He 初期化など別の手法が担う役割であり、活性化関数の役割ではない。よって最も不適切な記述は「活性化関数が初期値を自動生成する」とする選択肢である。",
     "relatedTermIds": [
       "neuron",
-      "activation_function"
+      "activation_function",
+      "relu"
     ],
     "difficulty": 1,
     "tags": [
@@ -85,7 +86,8 @@
     "correctIndex": 1,
     "explanation": "単純パーセプトロンは線形分離可能な問題しか解けない。XOR問題は線形分離不可能（1本の直線で2クラスに分けられない）なため単純パーセプトロンでは解けないが、MLPは中間層による非線形変換でXORを学習できる。線形分類・1変数・2値分類全般は単純パーセプトロンでも対応可能なケースがある。",
     "relatedTermIds": [
-      "perceptron"
+      "perceptron",
+      "multilayer_perceptron"
     ],
     "difficulty": 1,
     "tags": [
@@ -156,7 +158,10 @@
     "relatedTermIds": [
       "relu",
       "activation_function",
-      "vanishing_gradient"
+      "vanishing_gradient",
+      "neural_network",
+      "sigmoid_function",
+      "learning_rate"
     ],
     "difficulty": 1,
     "tags": [
@@ -291,7 +296,12 @@
     "explanation": "バックプロパゲーションの役割は、出力層で計算された損失（誤差）を起点として連鎖律（チェーンルール）を用いることで、各層の重みパラメータに対する損失の偏微分（勾配）を効率的に計算することにある。この勾配を用いてSGDなどの最適化アルゴリズムが重みを更新する。順伝播・ミニバッチ分割・学習率スケジューリングは別の処理。",
     "relatedTermIds": [
       "backpropagation",
-      "mini_batch"
+      "mini_batch",
+      "neural_network",
+      "learning_rate_scheduling",
+      "forward_pass",
+      "chain_rule",
+      "learning_rate"
     ],
     "difficulty": 1,
     "tags": [
@@ -354,7 +364,10 @@
     "relatedTermIds": [
       "sgd",
       "batch_size",
-      "mini_batch"
+      "mini_batch",
+      "batch_gradient_descent",
+      "gradient_descent",
+      "overfitting"
     ],
     "difficulty": 1,
     "tags": [
@@ -420,7 +433,9 @@
     "explanation": "Adam（Adaptive Moment Estimation）は、モーメンタム（勾配の一次モーメント）とRMSProp（勾配の二次モーメント）の両方のメリットを組み合わせ、パラメータごとに学習率を自動調整する最適化手法。現在最も広く使われる手法の一つ。",
     "relatedTermIds": [
       "adam",
-      "optimization_algorithm"
+      "optimization_algorithm",
+      "rmsprop",
+      "learning_rate"
     ],
     "difficulty": 2,
     "tags": [
@@ -482,7 +497,11 @@
     "relatedTermIds": [
       "vanishing_gradient",
       "deep_learning",
-      "backpropagation"
+      "backpropagation",
+      "sigmoid_function",
+      "batch_normalization",
+      "relu",
+      "normalization"
     ],
     "difficulty": 2,
     "tags": [
@@ -547,7 +566,10 @@
     "correctIndex": 1,
     "explanation": "ディープニューラルネットワーク（DNN）は入力層・複数の隠れ層・出力層からなる多層のニューラルネットワーク。「深い（Deep）」は多くの隠れ層を持つことを意味し、ディープラーニングの基盤技術。多層化により高度な特徴抽出が可能になる。",
     "relatedTermIds": [
-      "dnn"
+      "dnn",
+      "neural_network",
+      "deep_learning",
+      "hidden_layer"
     ],
     "difficulty": 1,
     "tags": [
@@ -617,7 +639,9 @@
     "correctIndex": 1,
     "explanation": "tanh（双曲線正接）関数は出力が-1〜1の範囲に収まりゼロ中心化されている（出力の平均がほぼ0）。シグモイド関数よりも出力の対称性が良く、勾配消失はシグモイドと同様に起きるが学習効率が改善される場合がある。",
     "relatedTermIds": [
-      "activation_function"
+      "activation_function",
+      "sigmoid_function",
+      "tanh_function"
     ],
     "difficulty": 2,
     "tags": [
@@ -677,7 +701,8 @@
     "explanation": "ミニバッチ学習は訓練データを小さなバッチ（ミニバッチ）に分割し、バッチごとに勾配を計算して重みを更新する手法。全データ使用のバッチ学習より計算効率が高く、1件ずつのオンライン学習より安定した収束が期待でき、実用上最も広く使われる。",
     "relatedTermIds": [
       "mini_batch",
-      "bagging"
+      "bagging",
+      "online_learning"
     ],
     "difficulty": 2,
     "tags": [
@@ -743,7 +768,12 @@
     ],
     "correctIndex": 1,
     "explanation": "単純パーセプトロンはXOR問題など線形分離不可能な問題を解けない。多層パーセプトロン（MLP）は隠れ層を追加することで非線形な変換が可能になり、線形分離不可能な問題も扱えるようになった。これがディープラーニングへの発展の出発点。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "deep_learning",
+      "multilayer_perceptron",
+      "perceptron",
+      "hidden_layer"
+    ],
     "difficulty": 3,
     "tags": [
       "多層パーセプトロン",
@@ -831,7 +861,8 @@
     "explanation": "ReLU関数は入力が0以下のとき勾配が常に0になり、一度も更新されなくなるニューロンが生じる（Dying ReLU問題）。Leaky ReLUは入力が負の領域でも0.01などの小さな傾きを持たせることでこの問題を緩和し、勾配が流れ続けるようにした改良版。",
     "relatedTermIds": [
       "relu",
-      "activation_function"
+      "activation_function",
+      "neuron"
     ],
     "difficulty": 1,
     "tags": [
@@ -897,7 +928,8 @@
     "explanation": "Softmax関数は多クラス分類問題の出力層で使用される活性化関数。全クラスの出力値を指数変換した後に正規化するため、各出力の値が0〜1の範囲に収まり総和が1になる。これによって各クラスへの所属確率として解釈できる。",
     "relatedTermIds": [
       "activation_function",
-      "softmax"
+      "softmax",
+      "normalization"
     ],
     "difficulty": 1,
     "tags": [
@@ -963,7 +995,9 @@
     "explanation": "連鎖律（チェーンルール）は合成関数 f(g(x)) の微分を df/dg × dg/dx として求める微積分の法則。誤差逆伝播法はこの連鎖律を多層ニューラルネットワークに適用し、損失関数から各層の重みへの偏微分（勾配）を出力側から入力側へ効率的に計算するアルゴリズム。",
     "relatedTermIds": [
       "backpropagation",
-      "chain_rule"
+      "chain_rule",
+      "neural_network",
+      "loss_function"
     ],
     "difficulty": 2,
     "tags": [
@@ -1018,7 +1052,9 @@
     "explanation": "計算グラフはニューラルネットワークの演算をノード（計算）とエッジ（データの流れ）で表現した有向グラフ。順伝播では入力から出力へデータが流れ、逆伝播では連鎖律に従い出力側から入力側へ勾配が伝播する。PyTorchやTensorFlowの自動微分（autograd）はこの仕組みを実装している。",
     "relatedTermIds": [
       "backpropagation",
-      "chain_rule"
+      "chain_rule",
+      "neural_network",
+      "forward_pass"
     ],
     "difficulty": 2,
     "tags": [
@@ -1083,7 +1119,8 @@
     "relatedTermIds": [
       "loss_function",
       "mse",
-      "cross_entropy"
+      "cross_entropy",
+      "regression"
     ],
     "difficulty": 1,
     "tags": [
@@ -1141,7 +1178,9 @@
     "explanation": "XOR（排他的論理和）問題は4つのデータ点（(0,0)→0、(0,1)→1、(1,0)→1、(1,1)→0）を分類する問題で、これらは1本の直線では分けられない（線形分離不可能）。単純パーセプトロンは線形分離しか実現できないため解けない。隠れ層を持つ多層パーセプトロンにより初めて解決された。",
     "relatedTermIds": [
       "perceptron",
-      "xor_problem"
+      "xor_problem",
+      "multilayer_perceptron",
+      "hidden_layer"
     ],
     "difficulty": 1,
     "tags": [
@@ -1208,7 +1247,8 @@
     "relatedTermIds": [
       "momentum",
       "sgd",
-      "optimization_algorithm"
+      "optimization_algorithm",
+      "gradient_descent"
     ],
     "difficulty": 2,
     "tags": [
@@ -1274,7 +1314,8 @@
     "explanation": "AdaGradはパラメータごとに学習率を自動調整する手法。過去の勾配を二乗して蓄積し、その平方根で学習率を割ることで頻繁に更新されたパラメータの学習率を小さく、まだ更新が少ないパラメータの学習率を大きく保つ。ただし学習が進むにつれ学習率が0に近づき学習が停止するという弱点がある。",
     "relatedTermIds": [
       "adagrad",
-      "optimization_algorithm"
+      "optimization_algorithm",
+      "learning_rate"
     ],
     "difficulty": 2,
     "tags": [
@@ -1335,7 +1376,8 @@
     "relatedTermIds": [
       "rmsprop",
       "adagrad",
-      "optimization_algorithm"
+      "optimization_algorithm",
+      "learning_rate"
     ],
     "difficulty": 2,
     "tags": [
@@ -1409,7 +1451,8 @@
     "relatedTermIds": [
       "gradient_explosion",
       "vanishing_gradient",
-      "weight_initialization"
+      "weight_initialization",
+      "regularization"
     ],
     "difficulty": 2,
     "tags": [
@@ -1471,7 +1514,12 @@
     "explanation": "Xavier初期化（Glorot初期化）は活性化関数にシグモイド関数やtanh関数を使う場合に適した重みの初期化手法。前後の層のニューロン数（fan_in, fan_out）を考慮して重みの分散を調整し、信号の大きさが各層で適切に維持されるよう設計されている。ReLU系にはHe初期化が適している。",
     "relatedTermIds": [
       "xavier_initialization",
-      "weight_initialization"
+      "weight_initialization",
+      "sigmoid_function",
+      "tanh_function",
+      "neuron",
+      "activation_function",
+      "relu"
     ],
     "difficulty": 2,
     "tags": [
@@ -1536,7 +1584,8 @@
     "relatedTermIds": [
       "he_initialization",
       "weight_initialization",
-      "relu"
+      "relu",
+      "neuron"
     ],
     "difficulty": 2,
     "tags": [
@@ -1588,7 +1637,9 @@
     "relatedTermIds": [
       "epoch",
       "batch_size",
-      "mini_batch"
+      "mini_batch",
+      "overfitting",
+      "underfitting"
     ],
     "difficulty": 1,
     "tags": [
@@ -1661,7 +1712,8 @@
     "relatedTermIds": [
       "batch_size",
       "sgd",
-      "mini_batch"
+      "mini_batch",
+      "hyperparameter"
     ],
     "difficulty": 1,
     "tags": [
@@ -1801,7 +1853,9 @@
     "correctIndex": 2,
     "explanation": "万能近似定理（Universal Approximation Theorem）は、隠れ層が1層のニューラルネットワークでも、隠れユニット数を十分大きくすれば任意の連続関数を任意の精度で近似できることを理論的に示した定理。ニューラルネットワークの表現力の理論的根拠となっている。ただし実際の学習可能性は保証しない。",
     "relatedTermIds": [
-      "universal_approximation_theorem"
+      "universal_approximation_theorem",
+      "neural_network",
+      "hidden_layer"
     ],
     "difficulty": 2,
     "tags": [
@@ -1866,7 +1920,9 @@
     "explanation": "全重みをゼロに初期化すると、各層の全ニューロンが全く同じ出力を計算し、逆伝播でも全ニューロンに同じ勾配が伝わる。結果として全ニューロンが同一の重みに更新され続け、複数ニューロンを持つ意味がなくなる（対称性問題）。これを避けるためランダムな初期値を使用する。",
     "relatedTermIds": [
       "weight_initialization",
-      "symmetry_breaking"
+      "symmetry_breaking",
+      "neural_network",
+      "neuron"
     ],
     "difficulty": 2,
     "tags": [
@@ -1929,7 +1985,8 @@
     "relatedTermIds": [
       "batch_gradient_descent",
       "sgd",
-      "mini_batch"
+      "mini_batch",
+      "gradient_descent"
     ],
     "difficulty": 1,
     "tags": [
@@ -1997,7 +2054,10 @@
     "explanation": "隠れ層（中間層）は入力層と出力層の間に位置する層で、活性化関数による非線形変換を通じて入力データの特徴を段階的に抽出・変換する。層が多いほど（深いほど）複雑な特徴を表現でき、ディープラーニングが「深い」と呼ばれるのはこの隠れ層を多数積み重ねるためである。",
     "relatedTermIds": [
       "hidden_layer",
-      "dnn"
+      "dnn",
+      "neural_network",
+      "deep_learning",
+      "activation_function"
     ],
     "difficulty": 1,
     "tags": [
@@ -2060,7 +2120,8 @@
     "relatedTermIds": [
       "relu",
       "vanishing_gradient",
-      "activation_function"
+      "activation_function",
+      "sigmoid_function"
     ],
     "difficulty": 3,
     "tags": [
@@ -2174,7 +2235,8 @@
       "sgd",
       "online_learning",
       "batch_size",
-      "mini_batch"
+      "mini_batch",
+      "gradient_descent"
     ],
     "difficulty": 1,
     "tags": [
@@ -2246,7 +2308,10 @@
     "explanation": "学習率が大きすぎると、各ステップで損失関数の最小値付近を大きく飛び越してしまい、損失が収束せずに振動または発散する。逆に学習率が小さすぎると収束が遅く局所最適解に止まりやすい。適切な学習率の選択と学習率スケジューリングが重要。",
     "relatedTermIds": [
       "learning_rate",
-      "optimization_algorithm"
+      "optimization_algorithm",
+      "neural_network",
+      "learning_rate_scheduling",
+      "loss_function"
     ],
     "difficulty": 1,
     "tags": [
@@ -2313,7 +2378,9 @@
     "correctIndex": 3,
     "explanation": "損失関数（誤差関数）はモデルの予測値と正解値のずれを数値化する関数。学習ではこの損失を最小化するように重みパラメータを調整する（最適化）。損失関数の勾配を誤差逆伝播法で計算し、その勾配に従って重みを更新するのがニューラルネットワーク学習の基本的な流れ。",
     "relatedTermIds": [
-      "loss_function"
+      "loss_function",
+      "neural_network",
+      "backpropagation"
     ],
     "difficulty": 1,
     "tags": [
@@ -2377,7 +2444,9 @@
     "relatedTermIds": [
       "adam",
       "momentum",
-      "rmsprop"
+      "rmsprop",
+      "hyperparameter",
+      "learning_rate"
     ],
     "difficulty": 3,
     "tags": [
@@ -2439,7 +2508,10 @@
     "explanation": "順伝播（フォワードパス）は入力データを入力層から隠れ層・出力層へと順番に変換して予測値と損失を計算する処理。逆伝播（バックワードパス）は計算した損失から連鎖律を用いて各重みへの勾配を出力側から入力側へ逆方向に計算する処理。この2ステップを繰り返して重みを更新するのが学習の基本ループ。",
     "relatedTermIds": [
       "backpropagation",
-      "forward_pass"
+      "forward_pass",
+      "neural_network",
+      "chain_rule",
+      "hidden_layer"
     ],
     "difficulty": 3,
     "tags": [
@@ -2502,7 +2574,9 @@
     "explanation": "従来の機械学習では専門家が手動で特徴量を設計する「特徴量エンジニアリング」が必要だった。ディープラーニングは多層の非線形変換を通じて、生データ（画像のピクセル値など）から有用な特徴表現を自動的に階層的に学習できる。これがディープラーニングが多くの分野で従来手法を凌駕した主な理由の一つ。",
     "relatedTermIds": [
       "deep_learning",
-      "feature_learning"
+      "feature_learning",
+      "feature_engineering",
+      "machine_learning_definition"
     ],
     "difficulty": 1,
     "tags": [
@@ -2564,7 +2638,9 @@
     "explanation": "重みを全て同一の定数（ゼロ以外を含む）で初期化すると、同一層の全ニューロンが全く同じ出力を計算し、逆伝播でも同一の勾配が計算される（対称性問題）。層内の全ニューロンが同一の重みに更新され続けるため、複数のニューロンを持つ意義がなくなる。解決策として乱数を用いた初期化（Xavier・He初期化など）を使用する。",
     "relatedTermIds": [
       "weight_initialization",
-      "symmetry_breaking"
+      "symmetry_breaking",
+      "neural_network",
+      "neuron"
     ],
     "difficulty": 3,
     "tags": [

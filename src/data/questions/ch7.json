@@ -80,7 +80,9 @@
     "correctIndex": 1,
     "explanation": "MLOpsは機械学習モデルの開発と運用を連携させ、継続的な学習・評価・デプロイ・モニタリングを自動化する仕組み。本番モデルの精度低下は「モデルドリフト」が原因の場合が多く、MLOpsではデータパイプラインの整備・ドリフト検知・継続的再学習の仕組みを構築して対応する。一度だけ再学習や手動チューニングはMLOpsの継続的改善サイクルではない。",
     "relatedTermIds": [
-      "mlops"
+      "mlops",
+      "machine_learning_definition",
+      "model_drift"
     ],
     "difficulty": 1,
     "tags": [
@@ -200,7 +202,10 @@
     "correctIndex": 0,
     "explanation": "モデルドリフトは時間経過や環境変化により入力データの分布が学習時と乖離し、精度が低下する現象。最優先の対処は分布変化の検知と新データによる再学習・モデル更新。隠れ層追加やドロップアウト調整は過学習対策であり、モデルドリフトへの対処として不適切。",
     "relatedTermIds": [
-      "model_drift"
+      "model_drift",
+      "dropout",
+      "overfitting",
+      "hidden_layer"
     ],
     "difficulty": 2,
     "tags": [
@@ -348,7 +353,11 @@
     "explanation": "AI事業者ガイドラインは、日本の経済産業省・総務省が策定した、AI開発者・提供者・利用者が準拠すべき国内指針。広島AIプロセスなど国際的な議論を反映し、2024年に従来の複数ガイドラインを統合して策定された。プライバシー・公平性・透明性・安全性の確保を求める。",
     "relatedTermIds": [
       "ai_governance",
-      "hiroshima_ai_process"
+      "hiroshima_ai_process",
+      "ai_operator_guideline",
+      "privacy",
+      "fairness",
+      "transparency"
     ],
     "difficulty": 2,
     "tags": [
@@ -414,7 +423,9 @@
     "correctIndex": 1,
     "explanation": "AIの機械学習バイアス問題とは、学習データの偏り（特定の性別・人種の過少代表など）がモデルに引き継がれ不公平な予測を行う問題。対処には学習データの多様性確保・モデルの公平性評価の継続的な実施・偏りの検知が必要。開発チームの責任でもある。",
     "relatedTermIds": [
-      "fairness"
+      "fairness",
+      "machine_learning_definition",
+      "ml_bias"
     ],
     "difficulty": 1,
     "tags": [
@@ -478,7 +489,8 @@
     "explanation": "AIプロジェクトの運用フェーズ特有の課題として、時間経過や社会変化によるデータ分布の変化（モデルドリフト）への対処がある。実世界への導入後はモデルの継続的なモニタリング・精度の監視・必要に応じた再学習が不可欠。",
     "relatedTermIds": [
       "model_drift",
-      "mlops"
+      "mlops",
+      "poc"
     ],
     "difficulty": 3,
     "tags": [
@@ -543,7 +555,9 @@
     ],
     "correctIndex": 0,
     "explanation": "成功の評価基準（KPI）が曖昧なままでは、適切なモデル選定・データ収集・開発投資判断ができない。技術導入・教育投資・本番展開はその後の段階で扱うべきであり、最初に行うべきは目的・成功基準の明確化である。",
-    "relatedTermIds": [],
+    "relatedTermIds": [
+      "kpi"
+    ],
     "difficulty": 2,
     "tags": [
       "AIプロジェクト",
@@ -670,7 +684,10 @@
     "explanation": "CRISP-DMにおけるデータ準備フェーズは、欠損値処理・外れ値除去・特徴量エンジニアリング・データ変換など、モデリングが扱える形式にデータを整形する処理を行う。機械学習モデルは生データをそのまま扱えないため、モデリングの前段階としてデータの品質向上と形式整備が必須である。",
     "relatedTermIds": [
       "crisp_dm",
-      "auc"
+      "auc",
+      "feature_engineering",
+      "machine_learning_definition",
+      "missing_value"
     ],
     "difficulty": 1,
     "tags": [
@@ -823,7 +840,8 @@
     "relatedTermIds": [
       "data_drift",
       "concept_drift",
-      "model_drift"
+      "model_drift",
+      "health_monitoring"
     ],
     "difficulty": 2,
     "tags": [
@@ -878,7 +896,8 @@
     "correctIndex": 0,
     "explanation": "AIシステム運用でのA/Bテストは、実際のユーザーをランダムに2グループに分け、旧モデル（A）と新モデル（B）を同時に運用して業務KPIへの効果を比較検証する手法。統計的有意差を確認してから本格的な切り替えを行うため、新モデルのリスクを低減できる。",
     "relatedTermIds": [
-      "ab_test"
+      "ab_test",
+      "kpi"
     ],
     "difficulty": 1,
     "tags": [
@@ -1017,7 +1036,9 @@
       "annotation",
       "auc",
       "clustering",
-      "object_detection"
+      "object_detection",
+      "crowdsourcing",
+      "supervised_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -1087,7 +1108,8 @@
     "explanation": "データクレンジングは収集した生データの品質を高めるプロセス。誤記・表記ゆれの修正、重複レコードの削除、欠損値の補完または除去、外れ値の処理などを行い、AIモデルの学習精度を向上させる。「ゴミが入ればゴミが出る（Garbage In, Garbage Out）」という原則から、データ品質はモデル品質に直結する。",
     "relatedTermIds": [
       "data_augmentation_ops",
-      "data_quality"
+      "data_quality",
+      "missing_value"
     ],
     "difficulty": 1,
     "tags": [
@@ -1154,7 +1176,11 @@
     "explanation": "エッジAIはデータを生成する端末（スマートフォン・IoT機器・産業機器など）の上で直接AI推論を行う技術。クラウドへのデータ送受信が不要なため、低遅延・オフライン対応・プライバシー保護の利点がある。エッジデバイスの計算資源の制約上、量子化・枝刈り・知識蒸留などのモデル軽量化技術が重要になる。",
     "relatedTermIds": [
       "edge_ai",
-      "federated_learning"
+      "federated_learning",
+      "privacy",
+      "pruning",
+      "quantization",
+      "knowledge_distillation"
     ],
     "difficulty": 1,
     "tags": [
@@ -1220,7 +1246,8 @@
     "correctIndex": 2,
     "explanation": "フェデレーテッドラーニング（連合学習）は各端末（スマホ・病院・企業など）が保有する生データを外部に送らず、端末側でローカルに学習した結果（モデルの勾配・更新値）のみを中央サーバーに送って統合する手法。プライバシー保護と分散データの活用を両立できる。医療・金融などプライバシーに敏感な分野での活用が期待される。",
     "relatedTermIds": [
-      "federated_learning"
+      "federated_learning",
+      "privacy"
     ],
     "difficulty": 2,
     "tags": [
@@ -1284,7 +1311,11 @@
     "correctIndex": 2,
     "explanation": "AutoMLは機械学習モデルの構築プロセス（データ前処理・特徴量エンジニアリング・モデルアーキテクチャ選択・ハイパーパラメータ最適化）を自動化する技術。機械学習の専門知識が少ない担当者でも高品質なモデルを作成できるため、AI民主化を促進する。Google AutoML・H2O.ai・AutoKerasなどのツールが代表例。",
     "relatedTermIds": [
-      "automl"
+      "automl",
+      "feature_engineering",
+      "hyperparameter",
+      "machine_learning_definition",
+      "preprocessing"
     ],
     "difficulty": 1,
     "tags": [
@@ -1328,7 +1359,8 @@
     "explanation": "G検定はJDLAが主催するAI・ディープラーニング活用リテラシーの検定試験で、経済産業省・IPA等が策定したデジタルリテラシー標準指標「Di-Lite」の一翼を担う。ソフトバンク・TOTO・千代田化工建設などの企業がDX推進・リスキリングの指標として社員に取得を推進している。",
     "relatedTermIds": [
       "reskilling",
-      "dx"
+      "dx",
+      "deep_learning"
     ],
     "difficulty": 1,
     "tags": [
@@ -1384,7 +1416,8 @@
     "explanation": "「Garbage In, Garbage Out（GIGO）」はコンピュータサイエンスの基本原則で、入力データの品質が低ければ出力結果も低品質になることを示す。AIにおいては、偏り・誤記・欠損の多い学習データを使ったモデルは、どれほど高度なアルゴリズムを使っても信頼できる予測を行えないことを意味する。データクレンジング・アノテーション品質管理の重要性の根拠となる。",
     "relatedTermIds": [
       "data_quality",
-      "annotation"
+      "annotation",
+      "data_augmentation_ops"
     ],
     "difficulty": 1,
     "tags": [
@@ -1521,7 +1554,13 @@
     "correctIndex": 3,
     "explanation": "AIガバナンスとは組織がAIシステムのリスクを管理し、透明性・公平性・プライバシー・説明責任を確保しながらAIを責任を持って開発・運用するための方針・体制・プロセスの総体。AI事業者ガイドライン（経産省・総務省）やAI倫理アセスメントの実施が求められる。G検定新シラバスで強化された重要分野。",
     "relatedTermIds": [
-      "ai_governance"
+      "ai_governance",
+      "ai_operator_guideline",
+      "privacy",
+      "accountability",
+      "ai_ethics",
+      "fairness",
+      "transparency"
     ],
     "difficulty": 2,
     "tags": [
@@ -1642,7 +1681,8 @@
     "correctIndex": 3,
     "explanation": "AIプロジェクトのKPI設計では、技術指標（精度・再現率・F1スコアなど）とビジネス指標（売上向上率・コスト削減額・顧客満足度など）の両方を事前に設定し、両者の関係を整合させることが重要。モデルの技術精度が高くても、ビジネスKPIに貢献しなければプロジェクトの成功とはいえない。",
     "relatedTermIds": [
-      "kpi"
+      "kpi",
+      "recall"
     ],
     "difficulty": 3,
     "tags": [
@@ -1784,7 +1824,11 @@
     "explanation": "エッジデバイス（スマートフォン・IoTセンサー・組み込み機器）はクラウドサーバーと比べてメモリ・CPU/GPU演算能力・電力（バッテリー）に厳しい制約がある。そのため大規模モデルをそのままは搭載できず、量子化（浮動小数点→整数に変換）・枝刈り（Pruning）・知識蒸留（Knowledge Distillation）などの軽量化技術が必要となる。",
     "relatedTermIds": [
       "edge_ai",
-      "model_compression"
+      "model_compression",
+      "gpu",
+      "pruning",
+      "quantization",
+      "knowledge_distillation"
     ],
     "difficulty": 2,
     "tags": [
@@ -1922,7 +1966,10 @@
     "correctIndex": 3,
     "explanation": "データリーケージ防止の基本は(1)データ分割を学習の最初に行い、(2)テストデータは最終評価時に1回のみ使用し、(3)前処理（標準化・欠損補完など）の統計量は必ず訓練データのみから算出してテスト・検証データに適用すること。テストデータを繰り返し使うと「テストデータへの過適合」が起き、実運用で精度が大幅低下する典型例となる。【誤答解説】選択肢[0]は学習後fine-tuningで全データを使うとテスト情報が混入しリーケージが発生するため誤り。選択肢[1]は交差検証はデータ分割の代替ではなく、リーケージ防止にはデータ分割自体が必要であり誤り。選択肢[2]は全データから統計量を算出するとテストデータの情報が訓練に漏れ込む前処理リーケージが生じるため誤り。",
     "relatedTermIds": [
-      "data_leakage"
+      "data_leakage",
+      "cross_validation",
+      "preprocessing",
+      "standardization"
     ],
     "difficulty": 3,
     "tags": [
