@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Accordion,
   AccordionItem,
@@ -8,6 +9,7 @@ import {
 import { Badge } from '../ui/badge';
 import type { GlossaryTerm, Importance } from '../../types/glossary';
 import { dedupeEnglishParens } from '../../lib/glossary-text';
+import { ALL_TERMS } from '../../data/glossary/index';
 
 interface GlossaryCardProps {
   term: GlossaryTerm;
@@ -95,6 +97,23 @@ export default function GlossaryCard({ term, highlightTermId, isMemorized, onTog
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {displayDetail}
               </p>
+            )}
+            {term.relatedTermIds && term.relatedTermIds.length > 0 && (
+              <div className="flex flex-wrap gap-1.5 mt-3 pt-2 border-t border-border">
+                <span className="text-xs text-muted-foreground self-center">関連用語：</span>
+                {term.relatedTermIds.map((relId) => {
+                  const rel = ALL_TERMS.find((t) => t.id === relId);
+                  return (
+                    <Link
+                      key={relId}
+                      to={`/glossary?term=${relId}`}
+                      className="inline-flex items-center px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs hover:bg-primary/10 transition-colors"
+                    >
+                      {rel ? rel.term : relId}
+                    </Link>
+                  );
+                })}
+              </div>
             )}
           </AccordionContent>
         </AccordionItem>
