@@ -1,11 +1,7 @@
-import { useState, useEffect } from 'react';
 import { Badge } from '../ui/badge';
-import TierSegmented from '../shared/TierSegmented';
 import { useMemorizedTerms } from '../../hooks/useMemorizedTerms';
 import { dedupeEnglishParens } from '../../lib/glossary-text';
 import type { GlossaryTerm, Importance } from '../../types/glossary';
-
-type Tier = 'beginner' | 'intermediate' | 'advanced';
 
 interface TermDialogContentProps {
   term: GlossaryTerm;
@@ -22,29 +18,8 @@ function importanceBadge(importance: Importance) {
 }
 
 export default function TermDialogContent({ term }: TermDialogContentProps) {
-  const storageKey = `glossary-term-tier-v1-${term.id}`;
-
-  const [cardTier, setCardTier] = useState<Tier>(() => {
-    if (typeof window === 'undefined') return 'advanced';
-    const stored = localStorage.getItem(storageKey);
-    if (stored === 'beginner' || stored === 'intermediate' || stored === 'advanced') {
-      return stored as Tier;
-    }
-    return 'advanced';
-  });
-
-  useEffect(() => {
-    localStorage.setItem(storageKey, cardTier);
-  }, [storageKey, cardTier]);
-
   const { isMemorized, toggle } = useMemorizedTerms();
-
-  const displayDetail =
-    cardTier === 'beginner'
-      ? (term.beginnerDetail ?? term.intermediateDetail ?? term.detail)
-      : cardTier === 'intermediate'
-      ? (term.intermediateDetail ?? term.detail)
-      : dedupeEnglishParens(term.detail, term.termEn);
+  const displayDetail = dedupeEnglishParens(term.detail, term.termEn);
 
   return (
     <div className="space-y-4">
@@ -68,7 +43,6 @@ export default function TermDialogContent({ term }: TermDialogContentProps) {
           />
           <span className="text-sm">記憶した</span>
         </label>
-        <TierSegmented value={cardTier} onChange={setCardTier} ariaLabel="解説モード" />
       </div>
       <p className="text-sm text-foreground leading-relaxed">{term.definition}</p>
       {displayDetail && (

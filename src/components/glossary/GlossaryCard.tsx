@@ -7,16 +7,11 @@ import {
 } from '../ui/accordion';
 import { Badge } from '../ui/badge';
 import type { GlossaryTerm, Importance } from '../../types/glossary';
-import TierSegmented from '../shared/TierSegmented';
 import { dedupeEnglishParens } from '../../lib/glossary-text';
-
-type Tier = 'beginner' | 'intermediate' | 'advanced';
 
 interface GlossaryCardProps {
   term: GlossaryTerm;
   highlightTermId?: string;
-  cardTier: Tier;
-  onCardTierChange: (t: Tier) => void;
   isMemorized: boolean;
   onToggleMemorized: () => void;
 }
@@ -31,7 +26,7 @@ function importanceBadge(importance: Importance) {
   return <Badge variant="outline">発展</Badge>;
 }
 
-export default function GlossaryCard({ term, highlightTermId, cardTier, onCardTierChange, isMemorized, onToggleMemorized }: GlossaryCardProps) {
+export default function GlossaryCard({ term, highlightTermId, isMemorized, onToggleMemorized }: GlossaryCardProps) {
   const isHighlighted = highlightTermId === term.id;
   const ref = useRef<HTMLDivElement>(null);
   const [openValue, setOpenValue] = useState<string | undefined>(
@@ -53,6 +48,8 @@ export default function GlossaryCard({ term, highlightTermId, cardTier, onCardTi
       setShowRing(false);
     }
   }, [highlightTermId, term.id]);
+
+  const displayDetail = dedupeEnglishParens(term.detail, term.termEn);
 
   return (
     <div ref={ref} className={showRing ? 'ring-2 ring-primary rounded-md mb-2' : 'mb-2'}>
@@ -85,7 +82,6 @@ export default function GlossaryCard({ term, highlightTermId, cardTier, onCardTi
                 />
                 <span className="text-sm">記憶した</span>
               </label>
-              <TierSegmented value={cardTier} onChange={onCardTierChange} ariaLabel="解説モード" />
             </div>
             {term.aliases && term.aliases.length > 0 && (
               <p className="text-xs text-muted-foreground">
@@ -95,19 +91,11 @@ export default function GlossaryCard({ term, highlightTermId, cardTier, onCardTi
             <p className="text-sm text-foreground leading-relaxed mb-2">
               {term.definition}
             </p>
-            {(() => {
-              const displayDetail =
-                cardTier === 'beginner'
-                  ? (term.beginnerDetail ?? term.intermediateDetail ?? term.detail)
-                  : cardTier === 'intermediate'
-                  ? (term.intermediateDetail ?? term.detail)
-                  : dedupeEnglishParens(term.detail, term.termEn);
-              return displayDetail ? (
-                <p className="text-sm text-muted-foreground leading-relaxed">
-                  {displayDetail}
-                </p>
-              ) : null;
-            })()}
+            {displayDetail && (
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {displayDetail}
+              </p>
+            )}
           </AccordionContent>
         </AccordionItem>
       </Accordion>
