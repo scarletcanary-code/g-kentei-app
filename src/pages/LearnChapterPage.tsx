@@ -1,9 +1,15 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { ALL_LEARN_CHAPTERS } from '../data/learn';
-import termsData from '../data/glossary/terms.json';
-import type { GlossaryTerm } from '../types/glossary';
-
-const terms: GlossaryTerm[] = termsData as GlossaryTerm[];
+import { ALL_TERMS } from '../data/glossary/index';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+  DialogTrigger,
+} from '../components/ui/dialog';
+import TermDialogContent from '../components/glossary/TermDialogContent';
 
 const difficultyLabel: Record<string, string> = {
   beginner: '入門',
@@ -99,15 +105,25 @@ export default function LearnChapterPage() {
               {section.termIds && section.termIds.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-2">
                   {section.termIds.map((termId) => {
-                    const term = terms.find((t) => t.id === termId);
+                    const term = ALL_TERMS.find((t) => t.id === termId);
                     return (
-                      <Link
-                        key={termId}
-                        to={`/glossary?term=${termId}`}
-                        className="inline-flex items-center px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs hover:bg-primary/10 transition-colors"
-                      >
-                        {term ? term.term : termId}
-                      </Link>
+                      <Dialog key={termId}>
+                        <DialogTrigger asChild>
+                          <button
+                            type="button"
+                            className="inline-flex items-center px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs hover:bg-primary/10 transition-colors"
+                          >
+                            {term ? term.term : termId}
+                          </button>
+                        </DialogTrigger>
+                        <DialogContent className="max-w-md sm:max-w-lg w-[95vw] max-h-[85vh] overflow-y-auto">
+                          <DialogHeader>
+                            <DialogTitle>{term?.term ?? termId}</DialogTitle>
+                            <DialogDescription>{term?.termEn || ' '}</DialogDescription>
+                          </DialogHeader>
+                          {term && <TermDialogContent term={term} />}
+                        </DialogContent>
+                      </Dialog>
                     );
                   })}
                 </div>
