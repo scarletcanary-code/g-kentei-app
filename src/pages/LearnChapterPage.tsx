@@ -1,10 +1,7 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import { ALL_LEARN_CHAPTERS } from '../data/learn';
 import termsData from '../data/glossary/terms.json';
 import type { GlossaryTerm } from '../types/glossary';
-import { usePersistedState } from '../hooks/usePersistedState';
-import TierSegmented from '../components/shared/TierSegmented';
 
 const terms: GlossaryTerm[] = termsData as GlossaryTerm[];
 
@@ -14,117 +11,8 @@ const difficultyLabel: Record<string, string> = {
   advanced: '応用',
 };
 
-type Tier = 'beginner' | 'intermediate' | 'advanced';
-
 export default function LearnChapterPage() {
   const { categoryId } = useParams<{ categoryId: string }>();
-
-  // localStorage マイグレーション: learn-easy-mode → learn-tier-v1
-  // 新キーが未設定の場合のみ1回実行
-  if (typeof window !== 'undefined' && localStorage.getItem('learn-tier-v1') === null) {
-    const oldVal = localStorage.getItem('learn-easy-mode');
-    const migrated = oldVal === 'true' ? 'beginner' : 'advanced';
-    localStorage.setItem('learn-tier-v1', migrated);
-    localStorage.removeItem('learn-easy-mode');
-  }
-
-  // usePersistedState は動的キー未対応のため参照維持のみ（マイグレーション基準として保持）
-  const [, ] = usePersistedState<Tier>('learn-tier-v1', 'advanced');
-
-  // 概要セクションの tier 管理（章ごとに独立した localStorage キー）
-  const overviewTierStorageKey = `learn-overview-tier-v1-${categoryId}`;
-
-  const [overviewTier, setOverviewTier] = useState<Tier>(() => {
-    if (typeof window === 'undefined') return 'advanced';
-    const stored = localStorage.getItem(overviewTierStorageKey);
-    if (stored === 'beginner' || stored === 'intermediate' || stored === 'advanced') {
-      return stored;
-    }
-    return 'advanced';
-  });
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    localStorage.setItem(overviewTierStorageKey, overviewTier);
-  }, [overviewTierStorageKey, overviewTier]);
-
-  // categoryId が変わったとき（章ナビゲーション）に新しい章の保存値を読み込む
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const stored = localStorage.getItem(overviewTierStorageKey);
-    if (stored === 'beginner' || stored === 'intermediate' || stored === 'advanced') {
-      setOverviewTier(stored);
-    } else {
-      setOverviewTier('advanced');
-    }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [categoryId]);
-
-  // セクション単位の tier 管理（章ごとに localStorage キーが異なるため useState + useEffect で実装）
-  const sectionTierStorageKey = `learn-section-tier-v1-${categoryId}`;
-
-  const [sectionTiers, setSectionTiers] = useState<Record<number, Tier>>(() => {
-    if (typeof window === 'undefined') return {};
-    const stored = localStorage.getItem(sectionTierStorageKey);
-    if (stored !== null) {
-      try {
-        return JSON.parse(stored) as Record<number, Tier>;
-      } catch {
-        return {};
-      }
-    }
-    // マイグレーション: learn-section-tier-v1-${categoryId} が未設定の場合、
-    // g-kentei-learn-tier-v1（usePersistedState が書き込むキー）か learn-tier-v1 を defaultTier として使用する
-    const legacyRaw =
-      localStorage.getItem('g-kentei-learn-tier-v1') ??
-      localStorage.getItem('learn-tier-v1');
-    const isValidTier = (v: string | null): v is Tier =>
-      v === 'beginner' || v === 'intermediate' || v === 'advanced';
-    const defaultTier: Tier = isValidTier(legacyRaw) ? legacyRaw : 'advanced';
-    // セクション数が不明なためデフォルト値の Record は空のまま返し、
-    // defaultTier を sectionTiers[idx] ?? defaultTier で参照する
-    return { _default: defaultTier } as unknown as Record<number, Tier>;
-  });
-
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    localStorage.setItem(sectionTierStorageKey, JSON.stringify(sectionTiers));
-  }, [sectionTierStorageKey, sectionTiers]);
-
-  // categoryId が変わったとき（章ナビゲーション）に新しい章の保存値を読み込む
-  useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const stored = localStorage.getItem(sectionTierStorageKey);
-    if (stored !== null) {
-      try {
-        setSectionTiers(JSON.parse(stored) as Record<number, Tier>);
-        return;
-      } catch {
-        // fall through to migration
-      }
-    }
-    const legacyRaw =
-      localStorage.getItem('g-kentei-learn-tier-v1') ??
-      localStorage.getItem('learn-tier-v1');
-    const isValidTier = (v: string | null): v is Tier =>
-      v === 'beginner' || v === 'intermediate' || v === 'advanced';
-    const defaultTier: Tier = isValidTier(legacyRaw) ? legacyRaw : 'advanced';
-    setSectionTiers({ _default: defaultTier } as unknown as Record<number, Tier>);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [categoryId]);
-
-  // sectionTiers に数値キーが存在しない場合の fallback tier
-  const _defaultTierEntry = (sectionTiers as unknown as Record<string, Tier>)['_default'];
-  const defaultTier: Tier =
-    _defaultTierEntry === 'beginner' || _defaultTierEntry === 'intermediate' || _defaultTierEntry === 'advanced'
-      ? _defaultTierEntry
-      : 'advanced';
-
-  const setSectionTier = (idx: number, tier: Tier) => {
-    setSectionTiers((prev) => ({ ...prev, [idx]: tier }));
-  };
-
-  const [pageTier, setPageTier] = useState<Tier>('advanced');
 
   const chapter = ALL_LEARN_CHAPTERS.find((c) => c.categoryId === categoryId);
 
@@ -133,17 +21,6 @@ export default function LearnChapterPage() {
   }
 
   const chapterIndex = ALL_LEARN_CHAPTERS.findIndex((c) => c.categoryId === categoryId);
-
-  const handleBulkTierChange = (t: Tier) => {
-    setPageTier(t);
-    setOverviewTier(t);
-    const next: Record<number, Tier> = {};
-    chapter.sections.forEach((_, idx) => {
-      next[idx] = t;
-    });
-    (next as unknown as Record<string, Tier>)._default = t;
-    setSectionTiers(next);
-  };
 
   return (
     <div className="container py-6 max-w-2xl">
@@ -193,32 +70,16 @@ export default function LearnChapterPage() {
             </div>
           </div>
         )}
-
-        <div className="mt-4 flex items-center justify-between gap-2 flex-wrap">
-          <span className="text-sm text-muted-foreground">ページ全体の解説モード</span>
-          <TierSegmented
-            value={pageTier}
-            onChange={handleBulkTierChange}
-            ariaLabel="ページ全体の解説モードを一括変更"
-          />
-        </div>
       </div>
 
       {/* 1. 概要 */}
       <section className="mb-8">
-        <div className="flex items-center justify-between mb-3">
-          <h2 className="text-lg font-semibold flex items-center gap-2">
-            <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">1</span>
-            概要
-          </h2>
-          <TierSegmented value={overviewTier} onChange={setOverviewTier} ariaLabel="概要の解説モード" />
-        </div>
-        <p className="text-foreground leading-relaxed rounded-lg bg-muted/50 p-4 border border-border">
-          {overviewTier === 'beginner'
-            ? (chapter.beginnerOverview ?? chapter.intermediateOverview ?? chapter.overview)
-            : overviewTier === 'intermediate'
-            ? (chapter.intermediateOverview ?? chapter.overview)
-            : chapter.overview}
+        <h2 className="text-lg font-semibold mb-3 flex items-center gap-2">
+          <span className="w-6 h-6 rounded-full bg-primary text-primary-foreground text-xs flex items-center justify-center font-bold">1</span>
+          概要
+        </h2>
+        <p className="text-foreground leading-relaxed whitespace-pre-line rounded-lg bg-muted/50 p-4 border border-border">
+          {chapter.overview}
         </p>
       </section>
 
@@ -229,22 +90,11 @@ export default function LearnChapterPage() {
           詳細解説
         </h2>
         <div className="space-y-6">
-          {chapter.sections.map((section, idx) => {
-            const sectionTier: Tier = sectionTiers[idx] ?? defaultTier;
-            const bodyText =
-              sectionTier === 'beginner'
-                ? (section.beginnerBody ?? section.intermediateBody ?? section.body)
-                : sectionTier === 'intermediate'
-                ? (section.intermediateBody ?? section.body)
-                : section.body;
-            return (
+          {chapter.sections.map((section, idx) => (
             <div key={idx} className="rounded-lg border border-border bg-card p-4">
-              <div className="flex items-center justify-between gap-2 mb-3">
-                <h3 className="text-base font-semibold text-card-foreground">{section.heading}</h3>
-                <TierSegmented value={sectionTiers[idx] ?? defaultTier} onChange={(t) => setSectionTier(idx, t)} ariaLabel="セクションの解説モード" />
-              </div>
-              <p className="text-sm text-foreground leading-relaxed mb-3">
-                {bodyText}
+              <h3 className="text-base font-semibold text-card-foreground mb-3">{section.heading}</h3>
+              <p className="text-sm text-foreground leading-relaxed whitespace-pre-line mb-3">
+                {section.body}
               </p>
               {section.termIds && section.termIds.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-2">
@@ -253,7 +103,7 @@ export default function LearnChapterPage() {
                     return (
                       <Link
                         key={termId}
-                        to={`/glossary?term=${termId}&tier=${sectionTier}`}
+                        to={`/glossary?term=${termId}`}
                         className="inline-flex items-center px-2 py-0.5 rounded-full border border-primary/30 bg-primary/5 text-primary text-xs hover:bg-primary/10 transition-colors"
                       >
                         {term ? term.term : termId}
@@ -263,8 +113,7 @@ export default function LearnChapterPage() {
                 </div>
               )}
             </div>
-            );
-          })}
+          ))}
         </div>
       </section>
 

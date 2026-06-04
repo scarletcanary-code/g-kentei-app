@@ -131,18 +131,6 @@ function parseSection(objStr) {
   const bodyMatch = objStr.match(/body:\s*['"`]([\s\S]*?)['"`],/);
   if (bodyMatch) body = bodyMatch[1];
 
-  // intermediateBody を抽出
-  let intermediateBody = null;
-  // バックティック形式
-  const ibBtMatch = objStr.match(/intermediateBody:\s*`([\s\S]*?)`/);
-  if (ibBtMatch) {
-    intermediateBody = ibBtMatch[1];
-  } else {
-    // シングルクォート形式
-    const ibSqMatch = objStr.match(/intermediateBody:\s*'([\s\S]*?)'/);
-    if (ibSqMatch) intermediateBody = ibSqMatch[1];
-  }
-
   // termIds を抽出
   const termIdsMatch = objStr.match(/termIds:\s*\[([^\]]*)\]/);
   let termIds = [];
@@ -154,7 +142,7 @@ function parseSection(objStr) {
     }
   }
 
-  return { heading, body, intermediateBody, termIds };
+  return { heading, body, termIds };
 }
 
 let failures = 0;
@@ -171,6 +159,10 @@ function pass(msg) {
 const chapters = [];
 
 const validChapterIds = new Set(['ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'ch7', 'ch8']);
+
+// リライト完了章（新基準＝section body 400字以上・章合計3000字以上 を強制する章）。
+// 未リライト章は WARN 止まりにして段階移行する（0099 以降で章ごとに追加）。
+const PILOT_CHAPTERS = new Set(['ch1', 'ch2', 'ch3', 'ch4', 'ch5', 'ch6', 'ch7', 'ch8']);
 
 for (let i = 1; i <= 8; i++) {
   const filePath = join(projectRoot, `src/data/learn/ch${i}.ts`);
@@ -351,18 +343,16 @@ for (const ch of chapters) {
     fail(`${label}: sections.length = ${ch.sections.length} < 3`);
   }
 
-  // 9b. overview + sections.body 合計字数 >= 1800
-  // Phase6.5 タスク 0020 の対象章（ch2/ch3/ch5/ch6/ch7/ch8）のみ強制適用
-  // ch1/ch4 は現時点で 1800 字未満だが Phase6.5 スコープ外のため警告のみ
-  const TARGET_1800_CHAPTERS = new Set(['ch2', 'ch3', 'ch5', 'ch6', 'ch7', 'ch8']);
+  // 9b. overview + sections.body 合計字数 >= 3000（リライト済み章の詳説下限）
+  // PILOT_CHAPTERS（リライト完了章）のみ強制。未リライト章は警告のみ（段階移行）。
   const totalSectionsBodyLength = ch.sections.reduce((sum, s) => sum + (s.body ? s.body.length : 0), 0);
   const totalChars = ch.overviewLength + totalSectionsBodyLength;
-  if (totalChars >= 1800) {
-    pass(`${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} >= 1800`);
-  } else if (TARGET_1800_CHAPTERS.has(label)) {
-    fail(`${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} < 1800`);
+  if (totalChars >= 3000) {
+    pass(`${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} >= 3000`);
+  } else if (PILOT_CHAPTERS.has(label)) {
+    fail(`${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} < 3000`);
   } else {
-    process.stdout.write(`WARN: ${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} < 1800 (Phase6.5スコープ外章のため警告のみ)\n`);
+    process.stdout.write(`WARN: ${label}: overview(${ch.overviewLength}) + sections.body(${totalSectionsBodyLength}) = ${totalChars} < 3000 (未リライト章のため警告のみ)\n`);
   }
 
   // 10. 各 section.heading が 10〜60 文字
@@ -379,15 +369,20 @@ for (const ch of chapters) {
       }
     }
 
-    // 11. 各 section.body が 200〜500 文字
+    // 11. 各 section.body の文字数
+    //   上限 1200 は全章 FAIL。下限 400 は PILOT_CHAPTERS のみ FAIL、未リライト章は WARN（段階移行）。
     if (section.body === null) {
       fail(`${label}: sections[${si}].body is null`);
     } else {
       const bLen = section.body.length;
-      if (bLen >= 200 && bLen <= 500) {
-        pass(`${label}: sections[${si}].body.length = ${bLen} (200〜500)`);
+      if (bLen > 1200) {
+        fail(`${label}: sections[${si}].body.length = ${bLen} > 1200`);
+      } else if (bLen >= 400) {
+        pass(`${label}: sections[${si}].body.length = ${bLen} (400〜1200)`);
+      } else if (PILOT_CHAPTERS.has(label)) {
+        fail(`${label}: sections[${si}].body.length = ${bLen} < 400`);
       } else {
-        fail(`${label}: sections[${si}].body.length = ${bLen} (expected 200〜500)`);
+        process.stdout.write(`WARN: ${label}: sections[${si}].body.length = ${bLen} < 400 (未リライト章のため警告のみ)\n`);
       }
     }
 
@@ -397,19 +392,6 @@ for (const ch of chapters) {
         pass(`${label}: sections[${si}].termId "${tid}" found in terms.json`);
       } else {
         fail(`${label}: sections[${si}].termId "${tid}" NOT found in terms.json`);
-      }
-    }
-
-    // 16. intermediateBody 存在確認
-    if (section.intermediateBody === null || section.intermediateBody === undefined) {
-      fail(`${label}: sections[${si}].intermediateBody is not set (heading="${section.heading}")`);
-    } else {
-      const ibLen = section.intermediateBody.length;
-      // 17. intermediateBody 文字数レンジ確認（80〜800字）
-      if (ibLen >= 80 && ibLen <= 800) {
-        pass(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (80〜800)`);
-      } else {
-        fail(`${label}: sections[${si}].intermediateBody.length = ${ibLen} (expected 80〜800) heading="${section.heading}"`);
       }
     }
   }
