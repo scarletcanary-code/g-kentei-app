@@ -130,6 +130,8 @@ export default function QuizPage() {
           explanation={currentQuestion.explanation}
           isCorrect={isCorrect}
           relatedTermIds={isMockMode ? undefined : currentQuestion.relatedTermIds}
+          optionRationales={isMockMode ? undefined : currentQuestion.optionRationales}
+          choices={currentQuestion.choices}
         />
       )}
 
