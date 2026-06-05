@@ -47,7 +47,7 @@ G検定では著作権法30条の4の内容（情報解析目的なら許諾不�
 また大規模な「汎用目的AI（GPAI）」（GPT-4 などの基盤モデル）には透明性義務や著作権方針の開示が求められます。日本はガイドライン（自主的な指針）が中心で法的強制力が弱い点が EU との大きな違いです。
 
 G検定では4段階のリスク分類の内容と、EU法（法的規制）と日本ガイドライン（自主規制）の違いが問われます。`,
-      termIds: ['eu_ai_act', 'ai_governance', 'transparency'],
+      termIds: ['eu_ai_act', 'ai_governance', 'transparency', 'chatbot', 'foundation_model', 'gpt'],
     },
     {
       heading: `AI倫理の3原則：公平性・透明性・説明責任`,
@@ -60,7 +60,7 @@ G検定では4段階のリスク分類の内容と、EU法（法的規制）と�
 説明責任（Accountability）：AIが誤った判断をして誰かが被害を受けたとき、誰が責任を持つか明確にすること。AIは自分で責任を取れないため、開発者・提供者・利用者のそれぞれに役割があります。自動運転車が事故を起こした場合の責任の所在が典型的な議論です。
 
 G検定では3原則（公平性・透明性・説明責任）の名前と意味をセットで問う問題が頻出です。また広島AIプロセス（G7が2023年に立ち上げた国際的なAIガバナンスの枠組み）も押さえておきましょう。`,
-      termIds: ['fairness', 'transparency', 'accountability', 'ai_ethics', 'ai_governance'],
+      termIds: ['fairness', 'transparency', 'accountability', 'ai_ethics', 'ai_governance', 'hiroshima_ai_process', 'eu_ai_act', 'autonomous_driving'],
     },
     {
       heading: `不正競争防止法・AI事業者ガイドライン・GDPR`,
@@ -73,7 +73,7 @@ G検定では3原則（公平性・透明性・説明責任）の名前と意味
 GDPR（EU一般データ保護規則）：EU市民の個人データを保護する法律で、EU域外の日本企業でもEU向けのサービスを提供する場合は対応が必要です。主な規定：データ収集への明示的同意の取得、忘れられる権利（削除権）、データポータビリティ（データを別の事業者に移す権利）、データ漏洩時の72時間以内の当局への報告義務などです。
 
 G検定では各法律・ガイドラインの目的と適用場面、GDPR の主な権利（削除権・データポータビリティ）が問われます。`,
-      termIds: ['unfair_competition_prevention_act', 'ai_operator_guideline', 'privacy'],
+      termIds: ['unfair_competition_prevention_act', 'ai_operator_guideline', 'privacy', 'eu_ai_act', 'gdpr', 'fairness', 'transparency'],
     },
   ],
   keyTermIds: [

@@ -785,7 +785,8 @@
     "explanation": "MSEは予測誤差を二乗して平均するため、外れ値（大きな誤差）の影響を特に大きく受ける。一方、MAEは予測誤差の絶対値を平均するため、外れ値の影響がMSEより小さい。RMSEはMSEに平方根をとったもので、元のデータと同じ単位になる利点がある。",
     "relatedTermIds": [
       "mse",
-      "rmse"
+      "rmse",
+      "mae"
     ],
     "difficulty": 2,
     "tags": [

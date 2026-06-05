@@ -1442,7 +1442,9 @@
     "explanation": "「中国語の部屋」はアメリカの哲学者ジョン・サール（John Searle）が1980年に提唱した思考実験。「強いAI（意識・意味理解を持つAI）」への批判として有名。アラン・チューリングは1950年にチューリングテストを提唱した人物、ダニエル・デネットは意識の哲学者、ノーム・チョムスキーは言語学者であり、いずれも「中国語の部屋」の提唱者ではない。",
     "relatedTermIds": [
       "chinese_room",
-      "frame_problem"
+      "frame_problem",
+      "turing_test",
+      "strong_ai"
     ],
     "difficulty": 2,
     "tags": [

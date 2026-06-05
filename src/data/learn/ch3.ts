@@ -20,7 +20,7 @@ export const learnCh3: LearnChapter = {
 最後に「強化学習」。「試行錯誤しながら報酬を最大化する」方法を学びます。AIがゲームを何千回も繰り返しながら上達する仕組みで、AlphaGoやロボット制御が代表例。状態・行動・報酬・方策という4つの概念が基本です。
 
 G検定では3種類の違いと代表的な用途を問う問題が多いです。特に「教師なし＝クラスタリング・次元削減」の対応は必須です。`,
-      termIds: ['supervised_learning', 'unsupervised_learning', 'reinforcement_learning', 'regression'],
+      termIds: ['supervised_learning', 'unsupervised_learning', 'reinforcement_learning', 'regression', 'clustering', 'alphago', 'dimensionality_reduction'],
     },
     {
       heading: `決定木・ランダムフォレスト・SVM：代表的なアルゴリズム`,
@@ -31,7 +31,7 @@ G検定では3種類の違いと代表的な用途を問う問題が多いです
 「SVM（サポートベクターマシン）」はデータを2グループに分ける境界線を「できるだけ広い余白（マージン）を最大化して」引く手法です。余白を大きく取ることで新しいデータにも強くなります。「カーネルトリック」という技術により、直線では分けられない複雑な分布のデータも曲線的に分類できます。
 
 G検定ではそれぞれの特徴・限界・適した場面を問う選択問題が頻出です。アンサンブル学習の仕組みも合わせて覚えましょう。`,
-      termIds: ['decision_tree', 'random_forest', 'svm', 'ensemble_learning', 'overfitting'],
+      termIds: ['decision_tree', 'random_forest', 'svm', 'ensemble_learning', 'overfitting', 'kernel_trick'],
     },
     {
       heading: `過学習と正則化：モデルの「暗記」を防ぐ`,
@@ -47,7 +47,7 @@ G検定ではそれぞれの特徴・限界・適した場面を問う選択問�
 - 早期終了：検証誤差が上昇し始めたら学習を止める
 
 G検定では、過学習が「訓練誤差は小さいが汎化誤差は大きい」状態であること、L1とL2正則化の違い、各対策手法の名前と目的を問われます。`,
-      termIds: ['overfitting', 'underfitting', 'regularization', 'cross_validation', 'dropout'],
+      termIds: ['overfitting', 'underfitting', 'regularization', 'cross_validation', 'dropout', 'neuron', 'data_augmentation'],
     },
     {
       heading: `評価指標：精度だけではダメな理由`,
@@ -63,7 +63,7 @@ G検定では、過学習が「訓練誤差は小さいが汎化誤差は大き�
 回帰タスクでは MSE（平均二乗誤差）や RMSE（その平方根）を使います。外れ値があると値が大きく変わるため、外れ値への感度を考慮して MAE（平均絶対誤差）と使い分けます。
 
 G検定では混同行列から各指標を計算する問題と、「どの指標を使うべきか」を状況から判断する問題が出ます。適合率と再現率のトレードオフを理解しておくことが重要です。`,
-      termIds: ['precision', 'recall', 'f_score', 'confusion_matrix', 'accuracy', 'auc', 'roc_curve'],
+      termIds: ['precision', 'recall', 'f_score', 'confusion_matrix', 'accuracy', 'auc', 'roc_curve', 'mse'],
     },
     {
       heading: `ロジスティック回帰・ナイーブベイズ・勾配ブースティング`,
@@ -76,7 +76,7 @@ G検定では混同行列から各指標を計算する問題と、「どの指�
 「勾配ブースティング」は精度が低い「弱い学習器」を順番に積み重ねる手法です。前のモデルが間違えた部分を次のモデルが重点的に学ぶことで、全体として高精度なモデルを作ります。XGBoostやLightGBMが有名で実用精度は高いですが、ハイパーパラメータ調整が難しく過学習への注意が必要です。
 
 G検定ではこれらの特徴と「どの場面に向いているか」を問う問題が出ます。`,
-      termIds: ['logistic_regression', 'sigmoid_function', 'naive_bayes', 'boosting', 'loss_function'],
+      termIds: ['logistic_regression', 'sigmoid_function', 'naive_bayes', 'boosting', 'loss_function', 'hyperparameter', 'gradient_boosting', 'xgboost', 'overfitting'],
     },
   ],
   keyTermIds: [

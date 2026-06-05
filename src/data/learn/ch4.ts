@@ -18,7 +18,7 @@ export const learnCh4: LearnChapter = {
 なお、すべての前の層と次の層が繋がる「全結合層」は汎用的ですが、画像には畳み込み層（CNN）、文章・音声には RNN や Transformer など、データの構造に合わせた変形版も使われます（詳しくは ch5）。
 
 G検定では層の役割と「ディープ=多層」という意味を正確に把握しましょう。`,
-      termIds: ['neural_network', 'deep_learning', 'neuron', 'activation_function', 'hidden_layer'],
+      termIds: ['neural_network', 'deep_learning', 'neuron', 'activation_function', 'hidden_layer', 'transformer', 'convolutional_layer', 'fully_connected_layer'],
     },
     {
       heading: `活性化関数：「非線形」がなぜ必要か`,
@@ -30,7 +30,7 @@ G検定では層の役割と「ディープ=多層」という意味を正確に
 - tanh：出力が−1〜1。シグモイドより中心化されているが同様の問題あり。
 
 G検定では各活性化関数の特徴と用途、「勾配消失との関係」が問われます。ReLU が現在の主流である理由を理解しておきましょう。`,
-      termIds: ['activation_function', 'sigmoid_function', 'relu', 'neuron'],
+      termIds: ['activation_function', 'sigmoid_function', 'relu', 'neuron', 'hidden_layer'],
     },
     {
       heading: `学習の仕組み：誤差逆伝播法と勾配降下法`,
@@ -43,7 +43,7 @@ G検定では各活性化関数の特徴と用途、「勾配消失との関係�
 実際には全データではなく一部（ミニバッチ）を使って更新する「SGD（確率的勾配降下法）」や、更新幅を自動調整するAdamなどが使われます。学習率（1回の更新の大きさ）が大きすぎると発散し、小さすぎると収束が遅くなります。
 
 G検定では誤差逆伝播法の目的と勾配降下法の仕組み、学習率の役割が問われます。`,
-      termIds: ['backpropagation', 'gradient_descent', 'loss_function', 'sgd', 'mini_batch'],
+      termIds: ['backpropagation', 'gradient_descent', 'loss_function', 'sgd', 'mini_batch', 'neural_network', 'adam', 'learning_rate'],
     },
     {
       heading: `深い層の課題：勾配消失と勾配爆発`,
@@ -56,7 +56,7 @@ G検定では誤差逆伝播法の目的と勾配降下法の仕組み、学習�
 また「スキップ結合（残差結合）」は、ある層の出力をいくつか先の層に直接足し合わせる構造で、勾配の通り道を確保してとても深いネットワーク（ResNetなど）の学習を可能にしました。
 
 G検定では勾配消失の原因・症状・対策（ReLU・スキップ結合）がセットで問われます。`,
-      termIds: ['backpropagation', 'relu', 'skip_connection', 'neural_network'],
+      termIds: ['backpropagation', 'relu', 'skip_connection', 'neural_network', 'resnet', 'gradient_explosion'],
     },
     {
       heading: `過学習対策：ドロップアウトとバッチ正規化`,
@@ -72,7 +72,7 @@ G検定では勾配消失の原因・症状・対策（ReLU・スキップ結合
 - 早期終了：検証誤差が上がり始めたら学習を止める
 
 G検定ではドロップアウトとバッチ正規化の仕組みと目的が問われます。`,
-      termIds: ['dropout', 'batch_normalization', 'overfitting', 'regularization'],
+      termIds: ['dropout', 'batch_normalization', 'overfitting', 'regularization', 'deep_learning', 'neuron', 'data_augmentation', 'normalization'],
     },
     {
       heading: `ハイパーパラメータとはどんな設定か`,
@@ -89,7 +89,7 @@ G検定ではドロップアウトとバッチ正規化の仕組みと目的が�
 良いハイパーパラメータを見つけるには「グリッドサーチ（候補の組み合わせを全部試す）」や「ランダムサーチ」が使われます。グリッドサーチは候補が多いと計算量が爆発的に増えるため、ランダムサーチのほうが効率的な場合があります。最近は AutoML と呼ばれる自動探索ツールも普及しています。
 
 G検定では「ハイパーパラメータはデータから学習されない（人間が設定する）」という点と、具体的なハイパーパラメータの例を問う問題が出ます。モデルパラメータとの違いを明確に理解しておきましょう。`,
-      termIds: ['neural_network', 'gradient_descent', 'overfitting'],
+      termIds: ['neural_network', 'gradient_descent', 'overfitting', 'hyperparameter', 'dropout', 'batch_size', 'automl', 'epoch', 'regularization', 'learning_rate'],
     },
   ],
   keyTermIds: [

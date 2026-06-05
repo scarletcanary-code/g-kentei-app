@@ -148,7 +148,8 @@
       "decoder",
       "fine_tuning",
       "chatgpt",
-      "regression"
+      "regression",
+      "token"
     ],
     "difficulty": 1,
     "tags": [
@@ -2023,7 +2024,8 @@
       "t5",
       "transformer",
       "decoder",
-      "regression"
+      "regression",
+      "token"
     ],
     "difficulty": 2,
     "tags": [
@@ -2157,7 +2159,8 @@
     "relatedTermIds": [
       "vit",
       "transformer",
-      "image_recognition"
+      "image_recognition",
+      "token"
     ],
     "difficulty": 2,
     "tags": [

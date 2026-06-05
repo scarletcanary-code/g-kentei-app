@@ -4316,5 +4316,71 @@
     ],
     "importance": 2,
     "source_ref_supplements": []
+  },
+  {
+    "id": "mae",
+    "term": "MAE（平均絶対誤差）",
+    "termEn": "Mean Absolute Error",
+    "categoryId": "ch3",
+    "definition": "MAEとは、予測値と実際の値の差の絶対値を平均した回帰タスクの評価指標。",
+    "detail": "MAE（Mean Absolute Error、平均絶対誤差）は、予測値と実測値の差の絶対値を全サンプルで平均した回帰評価指標です。MSE（平均二乗誤差）と異なり、誤差を二乗しないため外れ値の影響を受けにくいという特徴があります。単位が元の予測値と同じなので解釈しやすいですが、勾配計算で微分不可能な点（ゼロ付近）があるためMSEより最適化が難しい場合もあります。G検定ではMSE・RMSE・MAEの3つがセットで出ます。「外れ値に強い＝MAE、外れ値に敏感＝MSE/RMSE」という使い分けを押さえましょう。",
+    "relatedTermIds": [
+      "mse",
+      "rmse",
+      "regression"
+    ],
+    "importance": 2,
+    "source_ref_supplements": []
+  },
+  {
+    "id": "token",
+    "term": "トークン",
+    "termEn": "Token",
+    "categoryId": "ch6",
+    "definition": "トークンとは、LLMなどのNLPモデルが文章を処理する際の基本単位。単語・サブワード・文字などに分割される。",
+    "detail": "トークンとは、大規模言語モデル（LLM）や自然言語処理モデルが文章を処理する際の最小単位です。英語では単語や句読点が1トークンになることが多く、日本語ではサブワード（文字や単語の一部）に分割されます。GPTシリーズでは1トークン≒0.75英単語が目安です。モデルが一度に処理できるトークン数の上限を「コンテキスト長（コンテキストウィンドウ）」と呼び、GPT-4などでは数万〜数十万トークンに対応しています。G検定ではトークンがLLMの入出力の基本単位であること、コンテキスト長との関係が問われます。",
+    "relatedTermIds": [
+      "llm",
+      "gpt",
+      "bert",
+      "transformer",
+      "nlp_definition"
+    ],
+    "importance": 2,
+    "source_ref_supplements": []
+  },
+  {
+    "id": "embedding",
+    "term": "埋め込み（エンベディング）",
+    "termEn": "Embedding",
+    "categoryId": "ch6",
+    "definition": "埋め込みとは、単語・文・画像などを高次元の実数ベクトルで表現する技術。意味的に近いものはベクトル空間でも近くなる。",
+    "detail": "埋め込み（Embedding）とは、カテゴリや記号（単語・文・画像など）を高次元の実数ベクトルに変換する技術です。word2vecやBERTの出力がその代表例で、「意味的に近い単語はベクトル空間でも近くなる」という特性を持ちます。「王様−男性＋女性≈女王」のようなベクトル演算も可能です。現代のLLMでは入力トークンをまず埋め込みに変換し、それをTransformerで処理します。G検定では「分散表現＝埋め込み」「word2vec・BERTとの関連」「意味的類似性がベクトル距離で表現される」として出ます。",
+    "relatedTermIds": [
+      "word2vec",
+      "distributed_representation",
+      "transformer",
+      "bert",
+      "llm"
+    ],
+    "importance": 2,
+    "source_ref_supplements": []
+  },
+  {
+    "id": "weight",
+    "term": "重み（ウェイト）",
+    "termEn": "Weight",
+    "categoryId": "ch4",
+    "definition": "重みとは、ニューラルネットワークの各結合に付与されるパラメータ。学習によって自動的に調整される。",
+    "detail": "ニューラルネットワークでは、各ニューロン間の結合に「重み（Weight）」と呼ばれるパラメータが付与されます。入力値に重みを掛けて足し合わせることで、各ニューロンの出力値を計算します。学習とは「損失関数を小さくするように重みを調整する」プロセスです。重みは勾配降下法によって自動で更新されるため、人間が手で設定する「ハイパーパラメータ」とは区別されます。G検定では「重みはデータから学習で自動決定されるモデルパラメータ」「ハイパーパラメータとの違い（ハイパーパラメータ＝人間が事前に設定）」として問われます。",
+    "relatedTermIds": [
+      "neural_network",
+      "backpropagation",
+      "gradient_descent",
+      "hyperparameter",
+      "loss_function"
+    ],
+    "importance": 1,
+    "source_ref_supplements": []
   }
 ]

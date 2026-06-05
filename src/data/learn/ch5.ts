@@ -20,7 +20,7 @@ CNN の中心は「畳み込み層」。小さなフィルタ（カーネル）�
 2012年の ILSVRC で CNN ベースの AlexNet が優勝し、画像認識の精度が飛躍的に向上しました。現在では自動運転・医療診断・監視カメラなど幅広く使われています。
 
 G検定では畳み込み・プーリング・重み共有の役割と、CNN が画像に向いている理由を問う問題が頻出です。`,
-      termIds: ['cnn', 'convolutional_layer', 'pooling_layer', 'image_recognition'],
+      termIds: ['cnn', 'convolutional_layer', 'pooling_layer', 'image_recognition', 'neural_network', 'alexnet', 'fully_connected_layer', 'autonomous_driving'],
     },
     {
       heading: `RNN：時系列・文章を扱うための再帰構造`,
@@ -31,7 +31,7 @@ RNN は「前の時刻の出力（隠れ状態）を次の時刻の入力に加�
 ただし RNN には大きな欠点があります。文が長くなると過去の情報が薄れてしまう「勾配消失問題」が起きやすく、文の冒頭の情報が消えてしまいます。また一語ずつ順番に処理するため GPU での並列計算が難しく、長文になるほど処理速度が遅くなります。これらの限界を解決するために LSTM や、後に Transformer が登場しました。
 
 G検定では RNN の構造とこれらの限界（勾配消失・逐次処理）が問われます。RNN→LSTM→Transformer という改善の流れを時系列で把握しておきましょう。`,
-      termIds: ['rnn', 'lstm', 'transformer'],
+      termIds: ['rnn', 'lstm', 'transformer', 'neural_network', 'vanishing_gradient', 'fully_connected_layer', 'gpu'],
     },
     {
       heading: `LSTM と GRU：長期記憶の問題を解決するゲート機構`,
@@ -42,7 +42,7 @@ LSTM には「セル状態」という長期記憶のための経路があり、
 GRU（ゲート付き再帰ユニット）は LSTM を簡略化した版で、ゲートを2つに減らしてパラメータ数を削減しています。軽量で同程度の性能が出ることが多く、計算資源が限られる場面で使われます。
 
 G検定では LSTM のゲート（入力・忘却・出力）の役割と、GRU との違いが問われます。ただし現在は Transformer がこの役割の多くを担っています。`,
-      termIds: ['lstm', 'gru', 'rnn'],
+      termIds: ['lstm', 'gru', 'rnn', 'transformer'],
     },
     {
       heading: `Transformer と自己注意機構：現代 AI の心臓部`,
@@ -53,7 +53,7 @@ Transformer の核心は「自己注意機構（Self-Attention）」です。文
 Transformer には「エンコーダ」と「デコーダ」の2種類があります。エンコーダは入力を理解する側（BERT が代表例）で、デコーダは文章を生成する側（GPT が代表例）です。位置の情報は「位置エンコーディング」で別途補います。
 
 G検定では Self-Attention の仕組み、BERT（エンコーダ型）と GPT（デコーダ型）の違い、Transformer が RNN より優れる点が問われます。`,
-      termIds: ['transformer', 'self_attention', 'bert', 'gpt', 'positional_encoding'],
+      termIds: ['transformer', 'self_attention', 'bert', 'gpt', 'positional_encoding', 'chatgpt', 'decoder', 'gpu'],
     },
     {
       heading: `転移学習とファインチューニング：学習済みモデルの再利用`,
@@ -66,7 +66,7 @@ G検定では Self-Attention の仕組み、BERT（エンコーダ型）と GPT�
 さらに、大きなモデルを小さくする「モデル圧縮」技術もあります。不要なパラメータを削る「プルーニング」、数値の精度を落とす「量子化」、大きなモデルの知識を小さなモデルに移す「知識蒸留」などがあります。スマートフォンや組み込み機器でAIを動かすために重要です。
 
 G検定では転移学習・ファインチューニングの意味と、プルーニング・量子化・知識蒸留の概要が問われます。`,
-      termIds: ['transfer_learning', 'fine_tuning', 'model_compression', 'pruning', 'quantization', 'knowledge_distillation'],
+      termIds: ['transfer_learning', 'fine_tuning', 'model_compression', 'pruning', 'quantization', 'knowledge_distillation', 'neural_network'],
     },
     {
       heading: `バッチ正規化・ドロップアウト・スキップ結合の役割`,
@@ -79,7 +79,7 @@ G検定では転移学習・ファインチューニングの意味と、プル�
 「スキップ結合（残差結合）」は、ある層の出力をいくつか飛ばして後の層に足し合わせる構造です。勾配消失を防ぎ、100層を超えるような非常に深いネットワーク（ResNet など）の学習を可能にした技術です。
 
 G検定ではそれぞれの目的（正規化・汎化・深層化）をセットで理解しておくことが大切です。`,
-      termIds: ['batch_normalization', 'dropout', 'skip_connection', 'overfitting'],
+      termIds: ['batch_normalization', 'dropout', 'skip_connection', 'overfitting', 'resnet', 'neuron', 'normalization'],
     },
   ],
   keyTermIds: [

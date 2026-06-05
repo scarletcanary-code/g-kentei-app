@@ -2390,7 +2390,8 @@
     "relatedTermIds": [
       "transformer",
       "self_attention",
-      "decoder"
+      "decoder",
+      "token"
     ],
     "difficulty": 3,
     "tags": [
@@ -2711,7 +2712,8 @@
     "explanation": "TransformerのSelf-Attentionは並列計算のために位置の順序を考慮しない。そのため、sinとcosを使ったポジショナルエンコーディングを各トークンの埋め込みに加算し、位置情報をモデルに与える。これによりTransformerは系列の順序を学習できる。",
     "relatedTermIds": [
       "transformer",
-      "self_attention"
+      "self_attention",
+      "token"
     ],
     "difficulty": 3,
     "tags": [

@@ -20,7 +20,7 @@ BERT はエンコーダ型 Transformer で、文章の穴埋め（マスク言�
 覚え方：GPT＝Generate（生成）、BERT＝Bidirectional（双方向）。GPT は左から右に読んで次を予測するのに対し、BERT は文全体を双方向に見て意味を把握します。
 
 G検定ではどちらの構造がエンコーダ型か、得意な用途（生成 vs 理解・分類）の違い、RLHF の概要が問われます。混同しやすいので表で整理しておきましょう。`,
-      termIds: ['llm', 'gpt', 'bert', 'transformer', 'hallucination', 'masked_language_model'],
+      termIds: ['llm', 'gpt', 'bert', 'transformer', 'hallucination', 'masked_language_model', 'scaling_law', 'chatgpt', 'rlhf', 'decoder', 'reinforcement_learning'],
     },
     {
       heading: `GAN・VAE・拡散モデル：3つの画像生成アーキテクチャ`,
@@ -33,7 +33,7 @@ VAE（変分オートエンコーダ）は入力データの特徴を「潜在�
 拡散モデル（Diffusion Model）は画像に少しずつガウスノイズを加えて最終的にランダムノイズにする「順方向過程（拡散過程）」と、逆にノイズから元の画像を少しずつ復元する「逆方向過程（逆拡散過程）」を学習します。Stable Diffusion・DALL-E・Midjourney が代表例。現在最も高品質な生成ができますが、1枚生成するのに多くの計算ステップ（サンプリングステップ）が必要でGANより生成が遅い傾向があります。
 
 G検定では3つの違いを比較する問題が出ます。「敵対的学習＝GAN」「潜在空間の確率的サンプリング＝VAE」「段階的ノイズ除去プロセス＝拡散モデル」のキーワードで整理しましょう。`,
-      termIds: ['gan', 'vae', 'diffusion_model', 'generative_model'],
+      termIds: ['gan', 'vae', 'diffusion_model', 'generative_model', 'stable_diffusion', 'autoencoder'],
     },
     {
       heading: `RAG：LLM に「最新の知識」を与える仕組み`,

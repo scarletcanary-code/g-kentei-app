@@ -16,7 +16,7 @@ export const learnCh2: LearnChapter = {
 期待が実用につながらず研究資金が削減されると「AI冬の時代」が訪れます。停滞のもうひとつの原因が「フレーム問題」です。「何を考えて何を無視すればよいか」をAIが自分で判断するのが難しいという問題で、現実世界の複雑さには対処できないことを示しました。
 
 G検定では第1次ブームの中心が「探索・推論」であること、トイ・プロブレムの限界・組み合わせ爆発・フレーム問題からAI冬へという流れが問われます。`,
-      termIds: ['first_ai_boom', 'search_and_inference', 'toy_problem', 'ai_winter', 'frame_problem'],
+      termIds: ['first_ai_boom', 'search_and_inference', 'toy_problem', 'ai_winter', 'frame_problem', 'combinatorial_explosion'],
     },
     {
       heading: `第2次AIブーム：エキスパートシステムの栄枯盛衰`,
@@ -36,7 +36,7 @@ G検定では第2次ブームの主役がエキスパートシステムで、挫
 2012年の画像認識コンテスト「ILSVRC」で AlexNet が圧倒的な精度で優勝したことが世界的な転換点となり、「ディープラーニングの時代」の幕が開きました。
 
 G検定では「三拍子」の内容と2012年のILSVRC での成功が頻出です。「なぜ第3次は続いているのか」（データと計算資源があり続けるため）も理解しておきましょう。`,
-      termIds: ['third_ai_boom', 'deep_learning', 'neural_network', 'big_data', 'gpu'],
+      termIds: ['third_ai_boom', 'deep_learning', 'neural_network', 'big_data', 'gpu', 'alexnet', 'image_recognition'],
     },
     {
       heading: `AlphaGoとTransformerが変えたAIの世界`,
@@ -45,7 +45,7 @@ G検定では「三拍子」の内容と2012年のILSVRC での成功が頻出�
 2017年には「Transformer（トランスフォーマー）」というアーキテクチャが登場します。論文のタイトルは "Attention Is All You Need"（注意機構さえあればよい）。文章の中で「どの単語に注目するか」を並列に計算する「自己注意機構（Self-Attention）」を持ち、長い文脈も捉えやすく並列計算もできます。このTransformerを基盤に、BERTやGPTなどの「大規模言語モデル（LLM）」が発展しました。BERTは文脈理解・分類に強く、GPTは文章生成に強いという違いがあります。
 
 G検定ではAlphaGoの強化学習、TransformerとLLMへの発展という流れが問われます。`,
-      termIds: ['alphago', 'reinforcement_learning', 'transformer', 'llm', 'gpt'],
+      termIds: ['alphago', 'reinforcement_learning', 'transformer', 'llm', 'gpt', 'deep_learning', 'bert'],
     },
     {
       heading: `生成AIの登場と社会への普及`,
@@ -54,7 +54,7 @@ G検定ではAlphaGoの強化学習、TransformerとLLMへの発展という流�
 一方で課題もあります。代表的なのが「ハルシネーション（幻覚）」で、AIが事実でない情報をもっともらしく生成してしまう現象です。情報源なしに「もっともらしい答え」を作り出すため、専門的な検証なしには信じてはいけません。他にも著作権への影響、個人情報漏洩のリスク、誰が責任を持つかという説明責任、偽情報の生成といった問題が議論されています。
 
 G検定ではハルシネーションの定義、基盤モデルの特徴（大規模・汎用・転用可能）、生成AIが引き起こす社会的課題が問われます。`,
-      termIds: ['chatgpt', 'generative_ai', 'foundation_model', 'hallucination'],
+      termIds: ['chatgpt', 'generative_ai', 'foundation_model', 'hallucination', 'accountability', 'gpt'],
     },
     {
       heading: `AIを支えるハードウェアと運用基盤（MLOps）`,
@@ -65,7 +65,7 @@ GPU（グラフィックス処理装置）はもともとゲームの映像処�
 AIを実際のビジネスで使い続けるには、モデルを作って終わりではなく、データの更新・性能監視・再学習・セキュリティを継続的に管理する必要があります。この運用管理の仕組みを「MLOps（機械学習の運用＝Machine Learning Operations）」と呼びます。
 
 G検定ではGPUが行列計算に強い理由と、MLOpsの目的（継続的な開発・監視・更新）が問われます。`,
-      termIds: ['gpu', 'mlops', 'deep_learning'],
+      termIds: ['gpu', 'mlops', 'deep_learning', 'machine_learning_definition'],
     },
   ],
   keyTermIds: [
