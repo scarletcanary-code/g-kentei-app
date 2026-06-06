@@ -15,19 +15,14 @@ interface ExplanationPanelProps {
   explanation: string;
   isCorrect: boolean;
   relatedTermIds?: string[];
-  optionRationales?: string[];
-  choices?: { text: string }[];
 }
 
 export default function ExplanationPanel({
   explanation,
   isCorrect,
   relatedTermIds,
-  optionRationales,
-  choices,
 }: ExplanationPanelProps) {
   const hasRelatedTerms = relatedTermIds && relatedTermIds.length > 0;
-  const hasRationales = optionRationales && optionRationales.length > 0;
 
   return (
     <Card className={cn(
@@ -42,16 +37,6 @@ export default function ExplanationPanel({
           {isCorrect ? '正解！' : '不正解'}
         </p>
         <p className="text-sm text-foreground leading-relaxed">{explanation}</p>
-        {hasRationales && (
-          <div className="mt-3 pt-3 border-t border-border/50 space-y-2">
-            <p className="text-xs font-semibold text-muted-foreground">各選択肢の解説：</p>
-            {optionRationales.map((rationale, i) => (
-              <p key={i} className="text-xs text-muted-foreground leading-relaxed">
-                <span className="font-medium">{choices?.[i] ? `${i + 1}. ${choices[i].text.slice(0, 20)}…` : `選択肢${i + 1}`}</span>　{rationale}
-              </p>
-            ))}
-          </div>
-        )}
         {hasRelatedTerms && (
           <div className="mt-3 pt-3 border-t border-border/50">
             <span className="text-xs font-semibold text-muted-foreground mr-2">
