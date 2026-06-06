@@ -9,7 +9,19 @@
     "relatedTermIds": [
       "narrow_ai",
       "artificial_general_intelligence",
-      "ai_level_classification"
+      "ai_level_classification",
+      "turing_test",
+      "frame_problem",
+      "intelligence",
+      "robot",
+      "nlp_definition",
+      "machine_learning_definition",
+      "agent",
+      "dartmouth_conference",
+      "ai_effect",
+      "john_mccarthy",
+      "strong_ai",
+      "weak_ai"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -26,7 +38,12 @@
     "relatedTermIds": [
       "artificial_intelligence",
       "machine_learning_definition",
-      "narrow_ai"
+      "narrow_ai",
+      "ai_effect",
+      "artificial_general_intelligence",
+      "strong_ai",
+      "weak_ai",
+      "intelligence"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -42,7 +59,12 @@
     "detail": "特化型AI（ナローAI）とは、翻訳・画像認識・音声認識・囲碁など、特定の一つの仕事だけが得意なAIのことです。その分野では人間を大幅に超える精度を発揮できますが、「別のタスクには流用できない」のが最大の特徴です。囲碁で世界最強のAIに翻訳を頼むことはできませんし、医療診断AIに自動運転はさせられません。現在実用化されているAIはスマートフォンの顔認証から工場の不良品検出・ChatGPTまで、すべて特化型AIです。これに対して「汎用型AI（AGI＝Artificial General Intelligence）」とは、人間のように多様な分野の問題に柔軟に対応できるAIを指します。ドラえもんやSF映画のロボットのようなイメージですが、現時点では実現していません。AGIの実現には「一般常識の獲得」「転移学習の飛躍的向上」「フレーム問題の解決」など多くの技術的課題が残っています。また「弱いAI（道具としてのAI）」「強いAI（意識・心を持つAI）」という別軸の分類があります。特化型AIはすべて弱いAI（意識を持たない）であり、汎用型AIとは異なる概念なので混同しないでください。G検定では「現在実用化されているAIはすべて特化型AIであり、汎用型AI（AGI）は未実現」という文がそのまま問われる最頻出事項です。「ChatGPTはAGIである」「現在のAIは汎用的に使える」という誤答選択肢に引っかからないよう注意してください。",
     "relatedTermIds": [
       "artificial_general_intelligence",
-      "artificial_intelligence"
+      "artificial_intelligence",
+      "ai_level_classification",
+      "weak_ai",
+      "strong_ai",
+      "ai_effect",
+      "intelligence"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -59,7 +81,12 @@
     "relatedTermIds": [
       "narrow_ai",
       "strong_ai",
-      "singularity"
+      "singularity",
+      "artificial_intelligence",
+      "weak_ai",
+      "ai_effect",
+      "intelligence",
+      "ai_level_classification"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -76,7 +103,15 @@
     "relatedTermIds": [
       "weak_ai",
       "artificial_general_intelligence",
-      "turing_test"
+      "turing_test",
+      "symbol_grounding_problem",
+      "singularity",
+      "intelligence",
+      "chinese_room",
+      "ai_effect",
+      "artificial_intelligence",
+      "narrow_ai",
+      "ai_level_classification"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -92,7 +127,13 @@
     "detail": "弱いAI（ウィークAI）とは、心や意識は持たないが、特定の知的作業を人間のようにこなすAIのことです。哲学者ジョン・サールの分類で、「道具としてのAI」と言えます。音声アシスタント（Siri・Alexa）・チェスプログラム・画像認識・ChatGPTなど、現在実用化されているAIはすべて弱いAIです。うまく会話できても意味を「理解」しているわけではなく、パターンを処理しているだけ、というのが弱いAIの本質です。G検定では弱いAI＝「現在実用化されているAIの主流」「意識・心を持たない」という定義が問われます。「弱い」という言葉から能力が低いと誤解しがちですが、特定分野では人間を超える精度を出せます。強いAIとの対比をセットで覚えましょう。",
     "relatedTermIds": [
       "strong_ai",
-      "narrow_ai"
+      "narrow_ai",
+      "chinese_room",
+      "ai_effect",
+      "artificial_intelligence",
+      "artificial_general_intelligence",
+      "intelligence",
+      "ai_level_classification"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -108,7 +149,15 @@
     "detail": "チューリングテストとは、機械（AI）が人間のように会話できるかを判定する方法です。1950年にアラン・チューリングが「模倣ゲーム」（Imitation Game）として発表しました。仕組みはシンプルで、判定者が画面越しに相手が人間か機械か分からない状態でテキスト会話し、機械を人間と見誤れば「その機械は知的にふるまっている」と見なします。核心は「内部で何が起きているかではなく、外から見たふるまいで知能を判定する」行動主義的なアプローチである点です。声・外見・身体的な手がかりは排除されテキストのみで判定します。ただしチューリングテストには重要な限界があります。うまく会話できることと「本当に意味を理解していること」は別だ、という批判が「中国語の部屋」（サールの思考実験）です。中国語を知らない人でもマニュアル通りに記号を並べれば中国語を理解しているように見える、という例えで、記号操作（シンタックス）と意味理解（セマンティクス）は異なることを示します。2014年に「ユージーン・グーツマン」というプログラムが初めてテストに「合格」したとされ話題になりましたが、本当の意味での知能を実現したわけではありません。G検定ではチューリングテストが「行動ベースで知能を評価する方法」であること、チューリングが1950年に提案したこと、中国語の部屋による批判（「合格≠本当の理解・意識」）がセットで問われます。",
     "relatedTermIds": [
       "strong_ai",
-      "artificial_intelligence"
+      "artificial_intelligence",
+      "chatbot",
+      "chinese_room",
+      "eliza",
+      "frame_problem",
+      "symbol_grounding_problem",
+      "embodiment",
+      "toy_problem",
+      "combinatorial_explosion"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -125,7 +174,11 @@
     "relatedTermIds": [
       "symbol_grounding_problem",
       "toy_problem",
-      "artificial_intelligence"
+      "artificial_intelligence",
+      "chinese_room",
+      "embodiment",
+      "combinatorial_explosion",
+      "turing_test"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -141,7 +194,12 @@
     "detail": "シンボルグラウンディング問題（記号接地問題）とは、AIが扱う「記号（言葉・シンボル）」を現実世界の具体的な意味と結びつけられないという問題です。1990年にスティーブン・ハーナッドが提唱しました。「りんご」という文字を処理できても、あの赤さ・丸さ・甘い香り・手ざわり・かじったときのシャキシャキ感……という実際の感覚経験と結びついていなければ、本当に「りんご」を理解しているとは言えません。AIは大量のテキストからパターンを処理していますが、言葉と現実世界の感覚・経験が切り離された状態です。これは現在のChatGPTなどの大規模言語モデル（LLM）にも当てはまる根本的な課題です。「赤い」「甘い」「熱い」といった言葉を正しく文章中で使えても、本当にその感覚を「知っている」わけではありません。解決策として研究されているのが「身体性」（身体を通じた経験で記号を現実と結びつける）アプローチと、視覚・音声・テキストを組み合わせる「マルチモーダル学習」です。後者はある程度の接地を実現しつつありますが、完全な解決には至っていません。G検定では「記号を処理できることと実世界の意味を理解することは別」という本質、ハーナッドが1990年に提唱したこと、フレーム問題・中国語の部屋・身体性とのセット理解が求められます。「LLMはシンボルグラウンディング問題を完全に解決した」は誤りです。身体性・フレーム問題・中国語の部屋とセットで整理することで、「AIが現実世界を本当に理解するとはどういうことか」という問いへの深い洞察が得られます。",
     "relatedTermIds": [
       "frame_problem",
-      "strong_ai"
+      "strong_ai",
+      "chinese_room",
+      "embodiment",
+      "turing_test",
+      "toy_problem",
+      "combinatorial_explosion"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -173,7 +231,12 @@
     "detail": "トイ・プロブレム（おもちゃの問題）とは、ルールが明確で条件が限られた、シンプルに定式化された問題のことです。迷路の最短ルート・チェス・ハノイの塔などが代表例です。AI研究の初期（1950〜60年代）に、探索や推論アルゴリズムのテストとして多く使われました。トイ・プロブレムの範囲ではAIはうまく機能しますが、現実世界は条件が複雑すぎてトイ・プロブレムの手法が通用しません。この限界を示したのがフレーム問題（考慮すべきことと無視すべきことを選べない）です。G検定では「第1次AIブームでトイ・プロブレムでは成果が出たが現実問題には対処できず冬の時代を迎えた」という歴史的な文脈で頻出です。フレーム問題との関連を押さえておきましょう。",
     "relatedTermIds": [
       "frame_problem",
-      "first_ai_boom"
+      "first_ai_boom",
+      "combinatorial_explosion",
+      "symbol_grounding_problem",
+      "embodiment",
+      "chinese_room",
+      "turing_test"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -189,7 +252,12 @@
     "detail": "知能とは、状況を理解し、学び、推論・判断して問題を解決する能力の総称です。AIの研究では「人間の知能をどう定義しコンピュータで再現するか」が中心的なテーマです。知能の定義は専門家によって異なり、チューリングテストのように「ふるまいで判断する」行動主義的なアプローチもあれば、意識や理解を求める哲学的アプローチもあります。ハワード・ガードナーの多重知能理論（言語・論理・空間など8種類）のように知能を多様に捉える考え方もあります。G検定では知能の定義そのものより、チューリングテストや強いAI・弱いAIの文脈で「AIが本当に知能を持つとはどういうことか」という問いとして登場します。「知能＝単純な計算能力や記憶力ではなく、環境への適応力も含む」という広い意味を理解しておきましょう。",
     "relatedTermIds": [
       "artificial_intelligence",
-      "strong_ai"
+      "strong_ai",
+      "narrow_ai",
+      "artificial_general_intelligence",
+      "weak_ai",
+      "ai_effect",
+      "ai_level_classification"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -204,7 +272,8 @@
     "definition": "ロボットとは、機械の体を使って、決められた作業や自動的な動作を行う装置のこと。",
     "detail": "ロボットとは、センサー・アクチュエータ・制御システムを組み合わせ、物理的な作業を自律または半自律的に行う機械のことです。産業用ロボット（工場の溶接・組み立て）、サービスロボット（掃除ロボット）、医療用ロボットなどが代表例です。重要なのは「AIとロボットは異なる概念」という点です。ロボットはAIなしでも動き（決まった動作をプログラムするだけ）、逆にAIは物理的な体を持たずソフトウェアとして動きます。AIを搭載したロボットは「インテリジェントロボット」と呼ばれ、状況に応じた柔軟な行動が可能になります。G検定では「ロボット（物理的な機械）とAI（知的処理ソフトウェア）は別概念」であること、AIを搭載することでロボットの能力がどう変わるかが問われます。",
     "relatedTermIds": [
-      "artificial_intelligence"
+      "artificial_intelligence",
+      "embodiment"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -220,7 +289,12 @@
     "detail": "自然言語処理（NLP）とは、日本語・英語など人間が日常的に使う言葉（自然言語）をコンピュータで処理する技術のことです。翻訳・文章要約・音声認識・感情分析・質問応答などが代表的な応用です。近年のChatGPTやGeminiなどの大規模言語モデル（LLM）も自然言語処理の延長線上にあります。「自然言語」とは、プログラミング言語のような「人工的に設計した言語」ではなく、人間が自然に使う言葉を指します。G検定では「自然言語処理とは人間の言語をコンピュータで扱う技術」という定義、形態素解析・構文解析などの基礎技術、そしてLLMとの関連が問われます。NLPはAI応用の中でも特にG検定で出題頻度が高い分野なので、基礎的な用語（トークン・埋め込み・Transformer）も合わせて確認しましょう。",
     "relatedTermIds": [
       "artificial_intelligence",
-      "machine_learning_definition"
+      "machine_learning_definition",
+      "chatbot",
+      "distributed_representation",
+      "word2vec",
+      "masked_language_model",
+      "token"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -237,7 +311,16 @@
     "relatedTermIds": [
       "artificial_intelligence",
       "ai_level_classification",
-      "supervised_learning"
+      "supervised_learning",
+      "nlp_definition",
+      "feature_engineering",
+      "holdout_method",
+      "underfitting",
+      "online_learning",
+      "automl",
+      "unsupervised_learning",
+      "reinforcement_learning",
+      "semi_supervised_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -258,7 +341,18 @@
     "relatedTermIds": [
       "toy_problem",
       "search_and_inference",
-      "second_ai_boom"
+      "second_ai_boom",
+      "halting_problem",
+      "dartmouth_conference",
+      "ai_winter",
+      "eliza",
+      "combinatorial_explosion",
+      "john_mccarthy",
+      "xor_problem",
+      "third_ai_boom",
+      "expert_system",
+      "knowledge_acquisition_bottleneck",
+      "rule_based_ai"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -276,7 +370,14 @@
       "expert_system",
       "knowledge_representation",
       "first_ai_boom",
-      "third_ai_boom"
+      "third_ai_boom",
+      "rule_based_ai",
+      "ai_winter",
+      "deep_blue",
+      "knowledge_acquisition_bottleneck",
+      "mycin",
+      "dartmouth_conference",
+      "search_and_inference"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -294,7 +395,19 @@
       "deep_learning",
       "big_data",
       "gpu",
-      "second_ai_boom"
+      "second_ai_boom",
+      "imagenet",
+      "alphago",
+      "deep_reinforcement_learning",
+      "generative_ai",
+      "alexnet",
+      "first_ai_boom",
+      "ai_winter",
+      "expert_system",
+      "dartmouth_conference",
+      "knowledge_acquisition_bottleneck",
+      "search_and_inference",
+      "rule_based_ai"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -310,7 +423,20 @@
     "detail": "第1次AIブームの中心技術です。与えられた条件から論理的に結論を導く「推論」と、問題の解を状態空間の中から見つける「探索」を組み合わせて、チェス・パズル・定理証明などを解こうとしました。G検定では「探索・推論＝第1次ブームの主役技術」「トイ・プロブレムでは成果を出したが現実問題には対応できなかった」という文脈で問われます。",
     "relatedTermIds": [
       "first_ai_boom",
-      "expert_system"
+      "expert_system",
+      "halting_problem",
+      "a_star_algorithm",
+      "combinatorial_explosion",
+      "deep_blue",
+      "heuristic_search",
+      "production_rule",
+      "search_tree",
+      "second_ai_boom",
+      "third_ai_boom",
+      "ai_winter",
+      "dartmouth_conference",
+      "knowledge_acquisition_bottleneck",
+      "rule_based_ai"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -327,7 +453,17 @@
     "relatedTermIds": [
       "knowledge_representation",
       "second_ai_boom",
-      "semantic_network"
+      "semantic_network",
+      "search_and_inference",
+      "rule_based_ai",
+      "ontology",
+      "ai_winter",
+      "knowledge_acquisition_bottleneck",
+      "mycin",
+      "production_rule",
+      "first_ai_boom",
+      "third_ai_boom",
+      "dartmouth_conference"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -343,7 +479,8 @@
     "detail": "概念をノード（○）、概念同士の関係をリンク（矢印）で結んだ図として知識を表現する手法です。たとえば「犬はペットである」「ペットは動物である」を矢印で連鎖的に表せます。現代のナレッジグラフの原型です。G検定では「知識表現の手法のひとつ」「ノードが概念、エッジが関係を表す」として知識表現・プロダクションルール・オントロジーとセットで整理しましょう。",
     "relatedTermIds": [
       "knowledge_representation",
-      "expert_system"
+      "expert_system",
+      "ontology"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -360,7 +497,11 @@
     "relatedTermIds": [
       "semantic_network",
       "expert_system",
-      "second_ai_boom"
+      "second_ai_boom",
+      "rule_based_ai",
+      "ontology",
+      "knowledge_acquisition_bottleneck",
+      "production_rule"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -377,7 +518,24 @@
     "relatedTermIds": [
       "deep_learning",
       "neuron",
-      "backpropagation"
+      "backpropagation",
+      "forward_pass",
+      "chain_rule",
+      "cross_entropy",
+      "hidden_layer",
+      "softmax",
+      "symmetry_breaking",
+      "universal_approximation_theorem",
+      "xavier_initialization",
+      "xor_problem",
+      "weight",
+      "dnn",
+      "activation_function",
+      "relu",
+      "sigmoid_function",
+      "gradient_descent",
+      "overfitting",
+      "dropout"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -394,7 +552,18 @@
     "relatedTermIds": [
       "neural_network",
       "third_ai_boom",
-      "gpu"
+      "gpu",
+      "big_data",
+      "cnn",
+      "gan",
+      "feature_learning",
+      "hidden_layer",
+      "universal_approximation_theorem",
+      "backpropagation",
+      "gradient_descent",
+      "overfitting",
+      "dropout",
+      "batch_normalization"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -410,7 +579,8 @@
     "detail": "従来の技術では処理が困難なほど大量・多様・高速に生成されるデータの総称で、Volume（量）・Variety（多様性）・Velocity（速度）の「3V」で特徴づけられます。インターネットやスマートフォンの普及により2000年代以降に爆発的に増加し、ディープラーニングの学習データとして第3次AIブームを支えました。G検定では「3V」「第3次AIブームを支えた三拍子のひとつ」として出題されます。3Vを答えられるようにしておいてください。",
     "relatedTermIds": [
       "deep_learning",
-      "third_ai_boom"
+      "third_ai_boom",
+      "gpu"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -461,7 +631,21 @@
       "unsupervised_learning",
       "reinforcement_learning",
       "linear_regression",
-      "decision_tree"
+      "decision_tree",
+      "machine_learning_definition",
+      "semi_supervised_learning",
+      "logistic_regression",
+      "svm",
+      "precision",
+      "recall",
+      "mse",
+      "annotation",
+      "naive_bayes",
+      "k_nearest_neighbor",
+      "kernel_trick",
+      "regression",
+      "accuracy",
+      "image_recognition"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -479,7 +663,14 @@
       "supervised_learning",
       "k_means",
       "pca",
-      "semi_supervised_learning"
+      "semi_supervised_learning",
+      "reinforcement_learning",
+      "clustering",
+      "hierarchical_clustering",
+      "anomaly_detection",
+      "dimensionality_reduction",
+      "t_sne",
+      "machine_learning_definition"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -495,7 +686,16 @@
     "detail": "エージェントが環境と相互作用し、報酬を最大化する行動方策を試行錯誤から学ぶ手法です。状態（State）・行動（Action）・報酬（Reward）・方策（Policy）が基本概念です。AlphaGo・ゲームAI・ロボット制御が代表例です。G検定では「強化学習＝試行錯誤で報酬最大化・状態・行動・報酬・方策の4概念」「AlphaGoとの関連」が頻出です。",
     "relatedTermIds": [
       "supervised_learning",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "rlhf",
+      "agent",
+      "alphago",
+      "deep_reinforcement_learning",
+      "policy_gradient",
+      "q_learning",
+      "reward_design",
+      "semi_supervised_learning",
+      "machine_learning_definition"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -511,7 +711,9 @@
     "detail": "ラベルあり（少量）とラベルなし（多量）のデータを組み合わせて学習する手法です。ラベル付けコストが高く大量のラベルなしデータがある場合に有効です。教師あり学習と教師なし学習の中間に位置します。G検定では「半教師あり学習＝少量のラベルあり＋大量のラベルなしデータを活用」「自己教師あり学習との関連」として出ます。",
     "relatedTermIds": [
       "supervised_learning",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "reinforcement_learning",
+      "machine_learning_definition"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -529,7 +731,10 @@
       "supervised_learning",
       "logistic_regression",
       "mse",
-      "rmse"
+      "rmse",
+      "l1_regularization",
+      "r_squared",
+      "regression"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -546,7 +751,12 @@
     "relatedTermIds": [
       "linear_regression",
       "sigmoid_function",
-      "supervised_learning"
+      "supervised_learning",
+      "svm",
+      "naive_bayes",
+      "l1_regularization",
+      "regression",
+      "cross_entropy"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -563,7 +773,11 @@
     "relatedTermIds": [
       "random_forest",
       "ensemble_learning",
-      "supervised_learning"
+      "supervised_learning",
+      "boosting",
+      "bagging",
+      "gradient_boosting",
+      "xgboost"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -580,7 +794,11 @@
     "relatedTermIds": [
       "decision_tree",
       "ensemble_learning",
-      "overfitting"
+      "overfitting",
+      "boosting",
+      "bagging",
+      "gradient_boosting",
+      "xgboost"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -596,7 +814,8 @@
     "detail": "サポートベクトルマシン（Support Vector Machine）の略で、クラス間の余白（マージン）を最大化する識別境界を学習する分類手法です。カーネルトリックにより線形分離できないデータも曲線的に分類できます。G検定では「SVM＝マージン最大化・カーネルトリックで非線形分類可能」として出ます。",
     "relatedTermIds": [
       "supervised_learning",
-      "logistic_regression"
+      "logistic_regression",
+      "kernel_trick"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -612,7 +831,12 @@
     "detail": "データをk個のクラスターに分割する代表的な教師なしクラスタリング手法です。各データ点を最も近い重心（セントロイド）のクラスターに割り当て、重心を更新する処理を繰り返します。kの数を事前に決める必要があります。G検定では「k-means＝教師なし学習のクラスタリング代表手法・k個のクラスターに分割」として出ます。",
     "relatedTermIds": [
       "unsupervised_learning",
-      "pca"
+      "pca",
+      "clustering",
+      "hierarchical_clustering",
+      "k_nearest_neighbor",
+      "dimensionality_reduction",
+      "t_sne"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -628,7 +852,12 @@
     "detail": "主成分分析（Principal Component Analysis）の略で、データの分散が最大になる方向（主成分）を見つけて高次元データを低次元に線形変換する次元削減手法です。t-SNEと異なり線形変換のみです。特徴量の数が多い場合の計算量削減や可視化に使われます。G検定では「PCA＝線形の次元削減・分散最大の方向に射影」「t-SNEとの対比（線形vsノン線形）」として出ます。",
     "relatedTermIds": [
       "unsupervised_learning",
-      "k_means"
+      "k_means",
+      "curse_of_dimensionality",
+      "dimensionality_reduction",
+      "t_sne",
+      "clustering",
+      "hierarchical_clustering"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -645,7 +874,23 @@
     "relatedTermIds": [
       "regularization",
       "cross_validation",
-      "random_forest"
+      "random_forest",
+      "ensemble_learning",
+      "dropout",
+      "data_augmentation",
+      "early_stopping",
+      "batch_size",
+      "bagging",
+      "epoch",
+      "l2_regularization",
+      "underfitting",
+      "l1_regularization",
+      "holdout_method",
+      "deep_learning",
+      "neural_network",
+      "backpropagation",
+      "gradient_descent",
+      "batch_normalization"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -661,7 +906,14 @@
     "detail": "モデルの過学習を抑制するために、損失関数にパラメータの大きさに対するペナルティ項を加える手法です。L1正則化はパラメータをスパース（多くがゼロ）にする効果があり、L2正則化は全パラメータを均等に小さくします。G検定では「正則化＝過学習抑制のためのペナルティ」「L1（スパース）とL2（均等縮小）の違い」が頻出です。",
     "relatedTermIds": [
       "overfitting",
-      "cross_validation"
+      "cross_validation",
+      "dropout",
+      "l1_regularization",
+      "l2_regularization",
+      "underfitting",
+      "early_stopping",
+      "data_augmentation",
+      "holdout_method"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -677,7 +929,16 @@
     "detail": "データをk分割し、1分割を検証用・残りを訓練用として学習と評価をk回繰り返す（k分割交差検証）モデル評価手法です。データが少ない場合でも評価の信頼性が高く、過学習を検知できます。G検定では「交差検証＝データをk分割して複数回評価・汎化性能の推定」「ホールドアウト法との違い」として出ます。",
     "relatedTermIds": [
       "overfitting",
-      "regularization"
+      "regularization",
+      "hyperparameter",
+      "early_stopping",
+      "data_leakage",
+      "holdout_method",
+      "underfitting",
+      "l1_regularization",
+      "l2_regularization",
+      "dropout",
+      "data_augmentation"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -694,7 +955,11 @@
     "relatedTermIds": [
       "random_forest",
       "decision_tree",
-      "overfitting"
+      "overfitting",
+      "boosting",
+      "bagging",
+      "gradient_boosting",
+      "xgboost"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -711,7 +976,13 @@
     "relatedTermIds": [
       "recall",
       "f_score",
-      "supervised_learning"
+      "supervised_learning",
+      "auc",
+      "roc_curve",
+      "class_imbalance",
+      "confusion_matrix",
+      "false_positive",
+      "accuracy"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -728,7 +999,13 @@
     "relatedTermIds": [
       "precision",
       "f_score",
-      "supervised_learning"
+      "supervised_learning",
+      "auc",
+      "roc_curve",
+      "class_imbalance",
+      "confusion_matrix",
+      "false_positive",
+      "accuracy"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -744,7 +1021,13 @@
     "detail": "適合率（Precision）と再現率（Recall）の調和平均です。2×(Precision×Recall)÷(Precision+Recall)で計算します。両者のバランスを取りたい場合に使います。単純な平均ではなく調和平均を使うため、どちらかが極端に低いと値が小さくなります。G検定では「F値＝適合率と再現率の調和平均」「計算式」「適合率・再現率・F値の使い分け」として頻出です。",
     "relatedTermIds": [
       "precision",
-      "recall"
+      "recall",
+      "auc",
+      "class_imbalance",
+      "confusion_matrix",
+      "accuracy",
+      "roc_curve",
+      "false_positive"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -761,7 +1044,11 @@
     "relatedTermIds": [
       "rmse",
       "linear_regression",
-      "supervised_learning"
+      "supervised_learning",
+      "loss_function",
+      "r_squared",
+      "regression",
+      "mae"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -777,7 +1064,10 @@
     "detail": "二乗平均平方根誤差（Root Mean Squared Error）の略で、MSEの平方根です。MSEより解釈しやすく（予測誤差と同じ単位）、外れ値に強いMAEより外れ値に敏感です。G検定では「RMSE＝MSEの平方根・回帰タスクの評価指標」「MSE・MAEとの使い分け」として出ます。",
     "relatedTermIds": [
       "mse",
-      "linear_regression"
+      "linear_regression",
+      "r_squared",
+      "regression",
+      "mae"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -794,7 +1084,11 @@
     "relatedTermIds": [
       "perceptron",
       "activation_function",
-      "neural_network"
+      "neural_network",
+      "hidden_layer",
+      "dnn",
+      "relu",
+      "sigmoid_function"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -811,7 +1105,8 @@
     "relatedTermIds": [
       "neuron",
       "multilayer_perceptron",
-      "activation_function"
+      "activation_function",
+      "xor_problem"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -829,7 +1124,11 @@
       "perceptron",
       "dnn",
       "backpropagation",
-      "activation_function"
+      "activation_function",
+      "fully_connected_layer",
+      "hidden_layer",
+      "universal_approximation_theorem",
+      "xor_problem"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -846,7 +1145,15 @@
     "relatedTermIds": [
       "multilayer_perceptron",
       "vanishing_gradient",
-      "activation_function"
+      "activation_function",
+      "autoencoder",
+      "batch_normalization",
+      "skip_connection",
+      "neural_network",
+      "neuron",
+      "hidden_layer",
+      "relu",
+      "sigmoid_function"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -864,7 +1171,15 @@
       "sigmoid_function",
       "relu",
       "tanh_function",
-      "neuron"
+      "neuron",
+      "perceptron",
+      "multilayer_perceptron",
+      "dnn",
+      "convolutional_layer",
+      "forward_pass",
+      "softmax",
+      "neural_network",
+      "hidden_layer"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -881,7 +1196,13 @@
     "relatedTermIds": [
       "activation_function",
       "relu",
-      "vanishing_gradient"
+      "vanishing_gradient",
+      "logistic_regression",
+      "tanh_function",
+      "neural_network",
+      "dnn",
+      "neuron",
+      "hidden_layer"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -898,7 +1219,14 @@
     "relatedTermIds": [
       "activation_function",
       "sigmoid_function",
-      "vanishing_gradient"
+      "vanishing_gradient",
+      "tanh_function",
+      "weight_initialization",
+      "he_initialization",
+      "neural_network",
+      "dnn",
+      "neuron",
+      "hidden_layer"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -932,7 +1260,23 @@
     "relatedTermIds": [
       "gradient_descent",
       "vanishing_gradient",
-      "loss_function"
+      "loss_function",
+      "neural_network",
+      "multilayer_perceptron",
+      "weight_initialization",
+      "forward_pass",
+      "chain_rule",
+      "weight",
+      "sgd",
+      "adam",
+      "momentum",
+      "adagrad",
+      "rmsprop",
+      "learning_rate",
+      "deep_learning",
+      "overfitting",
+      "dropout",
+      "batch_normalization"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -950,7 +1294,23 @@
       "sgd",
       "adam",
       "backpropagation",
-      "loss_function"
+      "loss_function",
+      "hyperparameter",
+      "batch_size",
+      "mini_batch",
+      "optimization_algorithm",
+      "adagrad",
+      "batch_gradient_descent",
+      "gradient_explosion",
+      "learning_rate",
+      "learning_rate_scheduling",
+      "momentum",
+      "rmsprop",
+      "normalization",
+      "standardization",
+      "weight",
+      "deep_learning",
+      "neural_network"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -967,7 +1327,18 @@
     "relatedTermIds": [
       "gradient_descent",
       "adam",
-      "hyperparameter"
+      "hyperparameter",
+      "batch_size",
+      "mini_batch",
+      "optimization_algorithm",
+      "adagrad",
+      "batch_gradient_descent",
+      "momentum",
+      "online_learning",
+      "rmsprop",
+      "backpropagation",
+      "loss_function",
+      "learning_rate"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -984,7 +1355,16 @@
     "relatedTermIds": [
       "sgd",
       "gradient_descent",
-      "hyperparameter"
+      "hyperparameter",
+      "batch_size",
+      "mini_batch",
+      "optimization_algorithm",
+      "adagrad",
+      "momentum",
+      "rmsprop",
+      "backpropagation",
+      "loss_function",
+      "learning_rate"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1002,7 +1382,15 @@
       "backpropagation",
       "relu",
       "sigmoid_function",
-      "dnn"
+      "dnn",
+      "rnn",
+      "lstm",
+      "batch_normalization",
+      "normalization_layer",
+      "skip_connection",
+      "weight_initialization",
+      "gradient_explosion",
+      "gru"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1019,7 +1407,15 @@
     "relatedTermIds": [
       "gradient_descent",
       "sgd",
-      "cross_validation"
+      "cross_validation",
+      "adam",
+      "early_stopping",
+      "epoch",
+      "learning_rate",
+      "automl",
+      "weight",
+      "batch_size",
+      "mini_batch"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1036,7 +1432,17 @@
     "relatedTermIds": [
       "backpropagation",
       "gradient_descent",
-      "mse"
+      "mse",
+      "optimization_algorithm",
+      "forward_pass",
+      "cross_entropy",
+      "weight",
+      "sgd",
+      "adam",
+      "momentum",
+      "adagrad",
+      "rmsprop",
+      "learning_rate"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1054,7 +1460,23 @@
       "convolutional_layer",
       "pooling_layer",
       "fully_connected_layer",
-      "deep_learning"
+      "deep_learning",
+      "skip_connection",
+      "transfer_learning",
+      "data_augmentation",
+      "resnet",
+      "vgg",
+      "object_detection",
+      "stride",
+      "yolo",
+      "densenet",
+      "rcnn",
+      "imagenet",
+      "alexnet",
+      "efficientnet",
+      "googlenet",
+      "instance_segmentation",
+      "semantic_segmentation"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1071,7 +1493,13 @@
     "relatedTermIds": [
       "cnn",
       "pooling_layer",
-      "activation_function"
+      "activation_function",
+      "stride",
+      "fully_connected_layer",
+      "image_recognition",
+      "alexnet",
+      "resnet",
+      "vgg"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1088,7 +1516,12 @@
     "relatedTermIds": [
       "cnn",
       "convolutional_layer",
-      "fully_connected_layer"
+      "fully_connected_layer",
+      "stride",
+      "image_recognition",
+      "alexnet",
+      "resnet",
+      "vgg"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1105,7 +1538,13 @@
     "relatedTermIds": [
       "cnn",
       "dropout",
-      "multilayer_perceptron"
+      "multilayer_perceptron",
+      "pooling_layer",
+      "convolutional_layer",
+      "image_recognition",
+      "alexnet",
+      "resnet",
+      "vgg"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1123,7 +1562,11 @@
       "lstm",
       "gru",
       "vanishing_gradient",
-      "attention_mechanism"
+      "attention_mechanism",
+      "gradient_explosion",
+      "speech_recognition",
+      "speech_synthesis",
+      "seq2seq"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1141,7 +1584,10 @@
       "rnn",
       "gru",
       "vanishing_gradient",
-      "transformer"
+      "transformer",
+      "attention_mechanism",
+      "gradient_explosion",
+      "seq2seq"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1158,7 +1604,10 @@
     "relatedTermIds": [
       "rnn",
       "lstm",
-      "attention_mechanism"
+      "attention_mechanism",
+      "seq2seq",
+      "vanishing_gradient",
+      "gradient_explosion"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1176,7 +1625,16 @@
       "self_attention",
       "transformer",
       "rnn",
-      "lstm"
+      "lstm",
+      "gru",
+      "decoder",
+      "seq2seq",
+      "encoder_decoder",
+      "positional_encoding",
+      "bert",
+      "gpt",
+      "llm",
+      "masked_language_model"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1194,7 +1652,11 @@
       "attention_mechanism",
       "transformer",
       "bert",
-      "gpt"
+      "gpt",
+      "encoder_decoder",
+      "masked_language_model",
+      "positional_encoding",
+      "llm"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1213,7 +1675,21 @@
       "attention_mechanism",
       "bert",
       "gpt",
-      "llm"
+      "llm",
+      "lstm",
+      "normalization_layer",
+      "transformer_application",
+      "scaling_law",
+      "decoder",
+      "speech_recognition",
+      "t5",
+      "vit",
+      "encoder_decoder",
+      "foundation_model",
+      "masked_language_model",
+      "positional_encoding",
+      "token",
+      "embedding"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1230,7 +1706,10 @@
     "relatedTermIds": [
       "vae",
       "dropout",
-      "dnn"
+      "dnn",
+      "decoder",
+      "anomaly_detection",
+      "feature_learning"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1247,7 +1726,24 @@
     "relatedTermIds": [
       "overfitting",
       "regularization",
-      "batch_normalization"
+      "batch_normalization",
+      "fully_connected_layer",
+      "autoencoder",
+      "l2_regularization",
+      "underfitting",
+      "l1_regularization",
+      "cross_validation",
+      "early_stopping",
+      "data_augmentation",
+      "holdout_method",
+      "skip_connection",
+      "weight_initialization",
+      "he_initialization",
+      "xavier_initialization",
+      "deep_learning",
+      "neural_network",
+      "backpropagation",
+      "gradient_descent"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1265,7 +1761,18 @@
       "normalization_layer",
       "dropout",
       "vanishing_gradient",
-      "dnn"
+      "dnn",
+      "normalization",
+      "standardization",
+      "skip_connection",
+      "weight_initialization",
+      "he_initialization",
+      "xavier_initialization",
+      "deep_learning",
+      "neural_network",
+      "backpropagation",
+      "gradient_descent",
+      "overfitting"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1300,7 +1807,13 @@
       "resnet",
       "vanishing_gradient",
       "cnn",
-      "dnn"
+      "dnn",
+      "densenet",
+      "batch_normalization",
+      "dropout",
+      "weight_initialization",
+      "he_initialization",
+      "xavier_initialization"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1318,7 +1831,23 @@
       "fine_tuning",
       "bert",
       "gpt",
-      "cnn"
+      "cnn",
+      "data_augmentation",
+      "lora",
+      "resnet",
+      "vgg",
+      "peft",
+      "imagenet",
+      "feature_learning",
+      "contrastive_learning",
+      "few_shot_learning",
+      "t5",
+      "vit",
+      "foundation_model",
+      "image_recognition",
+      "rag",
+      "rlhf",
+      "scaling_law"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1336,7 +1865,16 @@
       "transfer_learning",
       "lora",
       "bert",
-      "gpt"
+      "gpt",
+      "rlhf",
+      "peft",
+      "foundation_model",
+      "rag",
+      "scaling_law",
+      "hallucination",
+      "in_context_learning",
+      "prompt_engineering",
+      "few_shot_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1353,7 +1891,23 @@
     "relatedTermIds": [
       "overfitting",
       "cnn",
-      "transfer_learning"
+      "transfer_learning",
+      "annotation",
+      "oversampling",
+      "contrastive_learning",
+      "underfitting",
+      "regularization",
+      "l1_regularization",
+      "l2_regularization",
+      "dropout",
+      "cross_validation",
+      "early_stopping",
+      "holdout_method",
+      "preprocessing",
+      "normalization",
+      "standardization",
+      "missing_value",
+      "feature_engineering"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1370,7 +1924,15 @@
     "relatedTermIds": [
       "overfitting",
       "hyperparameter",
-      "cross_validation"
+      "cross_validation",
+      "epoch",
+      "underfitting",
+      "regularization",
+      "l1_regularization",
+      "l2_regularization",
+      "dropout",
+      "data_augmentation",
+      "holdout_method"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1388,7 +1950,8 @@
       "pruning",
       "quantization",
       "knowledge_distillation",
-      "edge_ai"
+      "edge_ai",
+      "model_lightweighting"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1405,7 +1968,9 @@
     "relatedTermIds": [
       "model_compression",
       "quantization",
-      "knowledge_distillation"
+      "knowledge_distillation",
+      "edge_ai",
+      "model_lightweighting"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -1422,7 +1987,9 @@
     "relatedTermIds": [
       "model_compression",
       "pruning",
-      "edge_ai"
+      "edge_ai",
+      "knowledge_distillation",
+      "model_lightweighting"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -1439,7 +2006,9 @@
     "relatedTermIds": [
       "model_compression",
       "pruning",
-      "quantization"
+      "quantization",
+      "model_lightweighting",
+      "edge_ai"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1456,7 +2025,10 @@
     "relatedTermIds": [
       "model_compression",
       "quantization",
-      "pruning"
+      "pruning",
+      "model_lightweighting",
+      "autonomous_driving",
+      "knowledge_distillation"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1473,7 +2045,11 @@
     "relatedTermIds": [
       "autoencoder",
       "gan",
-      "diffusion_model"
+      "diffusion_model",
+      "generative_model",
+      "stable_diffusion",
+      "generative_ai",
+      "chatgpt"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1492,7 +2068,22 @@
       "bert",
       "transformer",
       "scaling_law",
-      "rag"
+      "rag",
+      "lora",
+      "rlhf",
+      "multimodal",
+      "in_context_learning",
+      "prompt_engineering",
+      "hallucination",
+      "generative_model",
+      "peft",
+      "chatbot",
+      "chatgpt",
+      "generative_ai",
+      "chain_of_thought",
+      "few_shot_learning",
+      "token",
+      "embedding"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1511,7 +2102,22 @@
       "llm",
       "bert",
       "rlhf",
-      "in_context_learning"
+      "in_context_learning",
+      "self_attention",
+      "transfer_learning",
+      "fine_tuning",
+      "transformer_application",
+      "rag",
+      "scaling_law",
+      "generative_model",
+      "chatgpt",
+      "generative_ai",
+      "t5",
+      "foundation_model",
+      "masked_language_model",
+      "positional_encoding",
+      "token",
+      "attention_mechanism"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1529,7 +2135,18 @@
       "transformer",
       "gpt",
       "llm",
-      "transfer_learning"
+      "transfer_learning",
+      "self_attention",
+      "fine_tuning",
+      "transformer_application",
+      "t5",
+      "encoder_decoder",
+      "foundation_model",
+      "masked_language_model",
+      "positional_encoding",
+      "token",
+      "embedding",
+      "attention_mechanism"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1547,7 +2164,8 @@
       "transformer",
       "multimodal",
       "bert",
-      "gpt"
+      "gpt",
+      "nerf"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1564,7 +2182,13 @@
     "relatedTermIds": [
       "gan",
       "vae",
-      "multimodal"
+      "multimodal",
+      "nerf",
+      "deepfake",
+      "generative_model",
+      "generative_ai",
+      "stable_diffusion",
+      "chatgpt"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1581,7 +2205,12 @@
     "relatedTermIds": [
       "vae",
       "diffusion_model",
-      "deep_learning"
+      "deep_learning",
+      "deepfake",
+      "generative_model",
+      "generative_ai",
+      "stable_diffusion",
+      "chatgpt"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1614,7 +2243,17 @@
     "relatedTermIds": [
       "llm",
       "gpt",
-      "prompt_engineering"
+      "prompt_engineering",
+      "hallucination",
+      "lora",
+      "rlhf",
+      "fine_tuning",
+      "transfer_learning",
+      "peft",
+      "scaling_law",
+      "in_context_learning",
+      "foundation_model",
+      "few_shot_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1631,7 +2270,16 @@
     "relatedTermIds": [
       "fine_tuning",
       "llm",
-      "transfer_learning"
+      "transfer_learning",
+      "peft",
+      "rag",
+      "rlhf",
+      "scaling_law",
+      "hallucination",
+      "in_context_learning",
+      "prompt_engineering",
+      "foundation_model",
+      "few_shot_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1653,7 +2301,18 @@
       "llm",
       "gpt",
       "reinforcement_learning",
-      "fine_tuning"
+      "fine_tuning",
+      "chatgpt",
+      "rag",
+      "lora",
+      "transfer_learning",
+      "peft",
+      "scaling_law",
+      "hallucination",
+      "in_context_learning",
+      "prompt_engineering",
+      "foundation_model",
+      "few_shot_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1670,7 +2329,19 @@
     "relatedTermIds": [
       "llm",
       "gpt",
-      "transformer"
+      "transformer",
+      "efficientnet",
+      "rag",
+      "lora",
+      "rlhf",
+      "fine_tuning",
+      "transfer_learning",
+      "peft",
+      "hallucination",
+      "in_context_learning",
+      "prompt_engineering",
+      "foundation_model",
+      "few_shot_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1687,7 +2358,8 @@
     "relatedTermIds": [
       "llm",
       "transformer_application",
-      "diffusion_model"
+      "diffusion_model",
+      "clip_model"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1704,7 +2376,17 @@
     "relatedTermIds": [
       "gpt",
       "llm",
-      "prompt_engineering"
+      "prompt_engineering",
+      "few_shot_learning",
+      "rag",
+      "lora",
+      "rlhf",
+      "fine_tuning",
+      "transfer_learning",
+      "peft",
+      "scaling_law",
+      "hallucination",
+      "foundation_model"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1721,7 +2403,18 @@
     "relatedTermIds": [
       "llm",
       "in_context_learning",
-      "rag"
+      "rag",
+      "hallucination",
+      "chatgpt",
+      "chain_of_thought",
+      "few_shot_learning",
+      "lora",
+      "rlhf",
+      "fine_tuning",
+      "transfer_learning",
+      "peft",
+      "scaling_law",
+      "foundation_model"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1738,7 +2431,17 @@
     "relatedTermIds": [
       "skip_connection",
       "cnn",
-      "transfer_learning"
+      "transfer_learning",
+      "vgg",
+      "object_detection",
+      "yolo",
+      "densenet",
+      "alexnet",
+      "googlenet",
+      "convolutional_layer",
+      "pooling_layer",
+      "fully_connected_layer",
+      "image_recognition"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1755,7 +2458,15 @@
     "relatedTermIds": [
       "mlops",
       "ai_project_lifecycle",
-      "data_leakage"
+      "data_leakage",
+      "health_monitoring",
+      "ai_utilization_levels",
+      "ab_test",
+      "crisp_dm",
+      "kpi",
+      "model_drift",
+      "data_drift",
+      "concept_drift"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1773,7 +2484,22 @@
       "model_drift",
       "health_monitoring",
       "poc",
-      "data_leakage"
+      "data_leakage",
+      "ai_project_lifecycle",
+      "ai_utilization_levels",
+      "data_augmentation_ops",
+      "model_lightweighting",
+      "federated_learning",
+      "annotation",
+      "data_quality",
+      "model_registry",
+      "data_drift",
+      "concept_drift",
+      "ab_test",
+      "automl",
+      "crisp_dm",
+      "kpi",
+      "no_code_ai"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1790,7 +2516,14 @@
     "relatedTermIds": [
       "model_drift",
       "mlops",
-      "cross_validation"
+      "cross_validation",
+      "poc",
+      "data_augmentation_ops",
+      "data_drift",
+      "concept_drift",
+      "health_monitoring",
+      "ai_project_lifecycle",
+      "ab_test"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1809,7 +2542,11 @@
       "health_monitoring",
       "data_leakage",
       "data_drift",
-      "concept_drift"
+      "concept_drift",
+      "ai_project_lifecycle",
+      "model_registry",
+      "poc",
+      "ab_test"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1826,7 +2563,12 @@
     "relatedTermIds": [
       "model_drift",
       "mlops",
-      "poc"
+      "poc",
+      "data_drift",
+      "data_leakage",
+      "concept_drift",
+      "ai_project_lifecycle",
+      "ab_test"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1843,7 +2585,16 @@
     "relatedTermIds": [
       "poc",
       "mlops",
-      "model_drift"
+      "model_drift",
+      "ai_utilization_levels",
+      "model_registry",
+      "crisp_dm",
+      "dx",
+      "data_leakage",
+      "data_drift",
+      "concept_drift",
+      "health_monitoring",
+      "ab_test"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1878,7 +2629,11 @@
       "fairness",
       "ai_governance",
       "xai",
-      "ai_bias"
+      "ai_bias",
+      "data_augmentation_ops",
+      "data_quality",
+      "lime_xai",
+      "shap"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1895,7 +2650,8 @@
     "relatedTermIds": [
       "data_leakage",
       "mlops",
-      "ml_bias"
+      "ml_bias",
+      "data_quality"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1912,7 +2668,12 @@
     "relatedTermIds": [
       "ai_governance",
       "hiroshima_ai_process",
-      "xai"
+      "xai",
+      "eu_ai_act",
+      "personal_information_protection_act",
+      "gdpr",
+      "copyright_act_30_4",
+      "unfair_competition_prevention_act"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1930,7 +2691,9 @@
       "model_compression",
       "edge_ai",
       "knowledge_distillation",
-      "mlops"
+      "mlops",
+      "pruning",
+      "quantization"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1948,7 +2711,12 @@
       "ai_governance",
       "fairness",
       "transparency",
-      "ml_bias"
+      "ml_bias",
+      "ai_operator_guideline",
+      "xai_ethics",
+      "lime_xai",
+      "shap",
+      "ai_bias"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1965,7 +2733,11 @@
     "relatedTermIds": [
       "personal_information_protection_act",
       "ai_ethics",
-      "ai_governance"
+      "ai_governance",
+      "unfair_competition_prevention_act",
+      "eu_ai_act",
+      "gdpr",
+      "ai_operator_guideline"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1982,7 +2754,8 @@
     "relatedTermIds": [
       "anonymized_information",
       "personal_information_protection_act",
-      "privacy"
+      "privacy",
+      "gdpr"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1999,7 +2772,8 @@
     "relatedTermIds": [
       "pseudonymized_information",
       "personal_information_protection_act",
-      "privacy"
+      "privacy",
+      "gdpr"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2017,7 +2791,11 @@
       "pseudonymized_information",
       "anonymized_information",
       "privacy",
-      "gdpr"
+      "gdpr",
+      "copyright_act_30_4",
+      "unfair_competition_prevention_act",
+      "eu_ai_act",
+      "ai_operator_guideline"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2035,7 +2813,11 @@
       "gdpr",
       "hiroshima_ai_process",
       "ai_governance",
-      "xai_ethics"
+      "xai_ethics",
+      "personal_information_protection_act",
+      "copyright_act_30_4",
+      "unfair_competition_prevention_act",
+      "ai_operator_guideline"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2052,7 +2834,11 @@
     "relatedTermIds": [
       "eu_ai_act",
       "ai_governance",
-      "ai_operator_guideline"
+      "ai_operator_guideline",
+      "fairness",
+      "transparency",
+      "accountability",
+      "ai_ethics"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2069,7 +2855,12 @@
     "relatedTermIds": [
       "personal_information_protection_act",
       "eu_ai_act",
-      "privacy"
+      "privacy",
+      "copyright_act_30_4",
+      "unfair_competition_prevention_act",
+      "ai_operator_guideline",
+      "pseudonymized_information",
+      "anonymized_information"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2087,7 +2878,10 @@
       "xai",
       "eu_ai_act",
       "transparency",
-      "accountability"
+      "accountability",
+      "fairness",
+      "lime_xai",
+      "shap"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2104,7 +2898,8 @@
     "relatedTermIds": [
       "gan",
       "diffusion_model",
-      "ai_ethics"
+      "ai_ethics",
+      "speech_synthesis"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2123,7 +2918,14 @@
       "accountability",
       "ml_bias",
       "xai_ethics",
-      "ai_bias"
+      "ai_bias",
+      "xai",
+      "privacy",
+      "ai_ethics",
+      "lime_xai",
+      "shap",
+      "ai_governance",
+      "hiroshima_ai_process"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2140,7 +2942,12 @@
     "relatedTermIds": [
       "fairness",
       "accountability",
-      "xai_ethics"
+      "xai_ethics",
+      "xai",
+      "ai_ethics",
+      "ai_bias",
+      "ai_governance",
+      "hiroshima_ai_process"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2158,7 +2965,12 @@
       "transparency",
       "fairness",
       "xai_ethics",
-      "ai_governance"
+      "ai_governance",
+      "ai_ethics",
+      "lime_xai",
+      "shap",
+      "ai_bias",
+      "hiroshima_ai_process"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2179,7 +2991,11 @@
     "relatedTermIds": [
       "personal_information_protection_act",
       "gdpr",
-      "fairness"
+      "fairness",
+      "pseudonymized_information",
+      "anonymized_information",
+      "ai_ethics",
+      "federated_learning"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2197,7 +3013,14 @@
       "fairness",
       "transparency",
       "accountability",
-      "privacy"
+      "privacy",
+      "copyright_act_30_4",
+      "deepfake",
+      "ai_governance",
+      "unfair_competition_prevention_act",
+      "ai_bias",
+      "autonomous_driving",
+      "hiroshima_ai_process"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2215,7 +3038,16 @@
       "ai_ethics",
       "eu_ai_act",
       "hiroshima_ai_process",
-      "accountability"
+      "accountability",
+      "ml_bias",
+      "ai_operator_guideline",
+      "xai",
+      "copyright_act_30_4",
+      "dx",
+      "no_code_ai",
+      "reskilling",
+      "fairness",
+      "transparency"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2233,7 +3065,12 @@
       "sgd",
       "gradient_descent",
       "adam",
-      "overfitting"
+      "overfitting",
+      "hyperparameter",
+      "learning_rate",
+      "mini_batch",
+      "epoch",
+      "automl"
     ],
     "importance": 2
   },
@@ -2247,7 +3084,12 @@
     "relatedTermIds": [
       "precision",
       "recall",
-      "f_score"
+      "f_score",
+      "roc_curve",
+      "class_imbalance",
+      "confusion_matrix",
+      "accuracy",
+      "false_positive"
     ],
     "importance": 2
   },
@@ -2260,7 +3102,11 @@
     "detail": "ラベルなしデータを類似性に基づいてグループ（クラスター）に分ける教師なし学習の手法です。k-means・階層的クラスタリング・DBSCANなどの手法があります。顧客セグメンテーション・文書分類・異常検知に使われます。G検定では「クラスタリング＝教師なし学習でデータをグループ化」「k-meansが代表手法」として出ます。",
     "relatedTermIds": [
       "unsupervised_learning",
-      "k_means"
+      "k_means",
+      "hierarchical_clustering",
+      "dimensionality_reduction",
+      "pca",
+      "t_sne"
     ],
     "importance": 2
   },
@@ -2274,7 +3120,13 @@
     "relatedTermIds": [
       "cnn",
       "resnet",
-      "transfer_learning"
+      "transfer_learning",
+      "alexnet",
+      "googlenet",
+      "convolutional_layer",
+      "pooling_layer",
+      "fully_connected_layer",
+      "image_recognition"
     ],
     "importance": 2
   },
@@ -2288,7 +3140,14 @@
     "relatedTermIds": [
       "sgd",
       "adam",
-      "gradient_descent"
+      "gradient_descent",
+      "batch_gradient_descent",
+      "online_learning",
+      "hyperparameter",
+      "learning_rate",
+      "batch_size",
+      "epoch",
+      "automl"
     ],
     "importance": 2
   },
@@ -2302,7 +3161,13 @@
     "relatedTermIds": [
       "expert_system",
       "knowledge_representation",
-      "second_ai_boom"
+      "second_ai_boom",
+      "first_ai_boom",
+      "third_ai_boom",
+      "ai_winter",
+      "dartmouth_conference",
+      "knowledge_acquisition_bottleneck",
+      "search_and_inference"
     ],
     "importance": 2
   },
@@ -2315,7 +3180,12 @@
     "detail": "エージェントとは、環境を観測して行動を選択し、目標達成のために自律的に動く主体のことです。AIの文脈では「状態（State）を観測して行動（Action）を選び、報酬（Reward）を得て方策（Policy）を改善する」という強化学習の基本概念と結びついています。たとえばゲームAIは盤面（状態）を見て次の手（行動）を選び、勝ちに近づく（報酬）ように学習します。最近は「AIエージェント」という言葉でLLMがツールを使いながら自律的にタスクをこなすシステムも指します。G検定では「エージェント＝環境を観測して自律的に行動する主体」という定義と、強化学習との関連（状態・行動・報酬・方策）が問われます。マルチエージェントシステム（複数エージェントの相互作用）も関連する概念です。",
     "relatedTermIds": [
       "reinforcement_learning",
-      "artificial_intelligence"
+      "artificial_intelligence",
+      "q_learning",
+      "deep_reinforcement_learning",
+      "alphago",
+      "policy_gradient",
+      "reward_design"
     ],
     "importance": 2
   },
@@ -2330,7 +3200,12 @@
       "sgd",
       "adam",
       "gradient_descent",
-      "loss_function"
+      "loss_function",
+      "batch_gradient_descent",
+      "learning_rate",
+      "learning_rate_scheduling",
+      "momentum",
+      "rmsprop"
     ],
     "importance": 2
   },
@@ -2344,7 +3219,17 @@
     "relatedTermIds": [
       "llm",
       "rag",
-      "prompt_engineering"
+      "prompt_engineering",
+      "chatgpt",
+      "lora",
+      "rlhf",
+      "fine_tuning",
+      "transfer_learning",
+      "peft",
+      "scaling_law",
+      "in_context_learning",
+      "foundation_model",
+      "few_shot_learning"
     ],
     "importance": 1
   },
@@ -2360,7 +3245,12 @@
       "vae",
       "diffusion_model",
       "gpt",
-      "llm"
+      "llm",
+      "clip_model",
+      "generative_ai",
+      "stable_diffusion",
+      "wavenet",
+      "chatgpt"
     ],
     "importance": 2
   },
@@ -2374,7 +3264,10 @@
     "relatedTermIds": [
       "ensemble_learning",
       "random_forest",
-      "decision_tree"
+      "decision_tree",
+      "gradient_boosting",
+      "xgboost",
+      "bagging"
     ],
     "importance": 2
   },
@@ -2388,7 +3281,11 @@
     "relatedTermIds": [
       "xai",
       "xai_ethics",
-      "accountability"
+      "accountability",
+      "shap",
+      "ml_bias",
+      "ai_bias",
+      "fairness"
     ],
     "importance": 2
   },
@@ -2415,7 +3312,11 @@
     "relatedTermIds": [
       "xai",
       "xai_ethics",
-      "accountability"
+      "accountability",
+      "lime_xai",
+      "ml_bias",
+      "ai_bias",
+      "fairness"
     ],
     "importance": 2
   },
@@ -2429,7 +3330,10 @@
     "relatedTermIds": [
       "copyright_act_30_4",
       "personal_information_protection_act",
-      "ai_ethics"
+      "ai_ethics",
+      "eu_ai_act",
+      "gdpr",
+      "ai_operator_guideline"
     ],
     "importance": 2
   },
@@ -2444,7 +3348,10 @@
       "ensemble_learning",
       "random_forest",
       "decision_tree",
-      "overfitting"
+      "overfitting",
+      "gradient_boosting",
+      "boosting",
+      "xgboost"
     ],
     "importance": 2
   },
@@ -2458,7 +3365,11 @@
     "relatedTermIds": [
       "early_stopping",
       "overfitting",
-      "hyperparameter"
+      "hyperparameter",
+      "learning_rate",
+      "batch_size",
+      "mini_batch",
+      "automl"
     ],
     "importance": 2
   },
@@ -2472,7 +3383,8 @@
     "relatedTermIds": [
       "supervised_learning",
       "mlops",
-      "data_augmentation"
+      "data_augmentation",
+      "crowdsourcing"
     ],
     "importance": 2
   },
@@ -2487,7 +3399,15 @@
       "lora",
       "fine_tuning",
       "llm",
-      "transfer_learning"
+      "transfer_learning",
+      "rag",
+      "rlhf",
+      "scaling_law",
+      "hallucination",
+      "in_context_learning",
+      "prompt_engineering",
+      "foundation_model",
+      "few_shot_learning"
     ],
     "importance": 2
   },
@@ -2515,7 +3435,8 @@
     "relatedTermIds": [
       "nlp_definition",
       "llm",
-      "turing_test"
+      "turing_test",
+      "eliza"
     ],
     "importance": 2
   },
@@ -2528,7 +3449,15 @@
     "detail": "画像内の物体の位置（バウンディングボックス）と種類（クラス）を同時に検出するタスクです。単純な画像分類より難しく、自動運転・監視カメラ・医療診断などに使われます。R-CNN系・YOLO系などのアーキテクチャがあります。G検定では「物体検出＝位置＋種類の同時検出」「セマンティックセグメンテーションとの違い」として出ます。",
     "relatedTermIds": [
       "cnn",
-      "resnet"
+      "resnet",
+      "rcnn",
+      "autonomous_driving",
+      "instance_segmentation",
+      "semantic_segmentation",
+      "ssd",
+      "image_recognition",
+      "yolo",
+      "vit"
     ],
     "importance": 2
   },
@@ -2544,7 +3473,10 @@
       "weak_ai",
       "turing_test",
       "symbol_grounding_problem",
-      "frame_problem"
+      "frame_problem",
+      "embodiment",
+      "toy_problem",
+      "combinatorial_explosion"
     ],
     "importance": 2
   },
@@ -2558,7 +3490,13 @@
     "relatedTermIds": [
       "vanishing_gradient",
       "relu",
-      "backpropagation"
+      "backpropagation",
+      "he_initialization",
+      "symmetry_breaking",
+      "xavier_initialization",
+      "batch_normalization",
+      "skip_connection",
+      "dropout"
     ],
     "importance": 2
   },
@@ -2572,7 +3510,12 @@
     "relatedTermIds": [
       "data_augmentation_ops",
       "mlops",
-      "ml_bias"
+      "ml_bias",
+      "feature_engineering",
+      "crowdsourcing",
+      "image_recognition",
+      "missing_value",
+      "preprocessing"
     ],
     "importance": 2
   },
@@ -2586,7 +3529,12 @@
     "relatedTermIds": [
       "adam",
       "sgd",
-      "gradient_descent"
+      "gradient_descent",
+      "rmsprop",
+      "momentum",
+      "backpropagation",
+      "loss_function",
+      "learning_rate"
     ],
     "importance": 2
   },
@@ -2627,7 +3575,14 @@
     "detail": "You Only Look Onceの略で、画像全体を一度だけ処理してリアルタイムで物体検出を行うモデルです。R-CNN系が2段階（領域提案→分類）なのに対し、YOLOは1段階で処理するため高速です。リアルタイム検出（動画・カメラ）に適しています。G検定では「YOLO＝1段階処理で高速な物体検出」「R-CNNとの対比（1段階vs2段階）」として出ます。",
     "relatedTermIds": [
       "cnn",
-      "resnet"
+      "resnet",
+      "rcnn",
+      "ssd",
+      "image_recognition",
+      "object_detection",
+      "semantic_segmentation",
+      "instance_segmentation",
+      "vit"
     ],
     "importance": 2
   },
@@ -2684,7 +3639,10 @@
       "fairness",
       "accountability",
       "transparency",
-      "ai_ethics"
+      "ai_ethics",
+      "xai",
+      "lime_xai",
+      "shap"
     ],
     "importance": 1,
     "aliases": [
@@ -2703,7 +3661,11 @@
       "model_drift",
       "concept_drift",
       "mlops",
-      "health_monitoring"
+      "health_monitoring",
+      "poc",
+      "data_leakage",
+      "ai_project_lifecycle",
+      "ab_test"
     ],
     "importance": 2
   },
@@ -2717,7 +3679,13 @@
     "relatedTermIds": [
       "model_drift",
       "data_drift",
-      "mlops"
+      "mlops",
+      "online_learning",
+      "poc",
+      "data_leakage",
+      "health_monitoring",
+      "ai_project_lifecycle",
+      "ab_test"
     ],
     "importance": 2
   },
@@ -2730,7 +3698,9 @@
     "detail": "Contrastive Language-Image Pre-trainingの略で、OpenAIが開発したテキストと画像を共通のベクトル空間に埋め込むモデルです。テキストと画像の対照学習により、「犬の画像」と「dog」という単語が近くなるよう学習します。ゼロショット画像分類やStable Diffusionの一部として使われます。G検定では「CLIP＝テキストと画像の対照学習・マルチモーダルの基盤」として出ます。",
     "relatedTermIds": [
       "multimodal",
-      "generative_model"
+      "generative_model",
+      "contrastive_learning",
+      "stable_diffusion"
     ],
     "importance": 2,
     "aliases": [
@@ -2765,7 +3735,13 @@
       "llm",
       "rlhf",
       "prompt_engineering",
-      "hallucination"
+      "hallucination",
+      "generative_ai",
+      "gan",
+      "vae",
+      "diffusion_model",
+      "stable_diffusion",
+      "generative_model"
     ],
     "importance": 2
   },
@@ -2780,7 +3756,8 @@
       "backpropagation",
       "neural_network",
       "activation_function",
-      "loss_function"
+      "loss_function",
+      "chain_rule"
     ],
     "importance": 2
   },
@@ -2796,7 +3773,8 @@
       "decision_tree",
       "ensemble_learning",
       "bagging",
-      "random_forest"
+      "random_forest",
+      "xgboost"
     ],
     "importance": 1
   },
@@ -2810,7 +3788,10 @@
     "relatedTermIds": [
       "clustering",
       "k_means",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "dimensionality_reduction",
+      "pca",
+      "t_sne"
     ],
     "importance": 2
   },
@@ -2825,7 +3806,14 @@
       "regularization",
       "l2_regularization",
       "linear_regression",
-      "logistic_regression"
+      "logistic_regression",
+      "overfitting",
+      "underfitting",
+      "dropout",
+      "cross_validation",
+      "early_stopping",
+      "data_augmentation",
+      "holdout_method"
     ],
     "importance": 2,
     "aliases": [
@@ -2844,7 +3832,12 @@
       "regularization",
       "l1_regularization",
       "overfitting",
-      "dropout"
+      "dropout",
+      "underfitting",
+      "cross_validation",
+      "early_stopping",
+      "data_augmentation",
+      "holdout_method"
     ],
     "importance": 2,
     "aliases": [
@@ -2863,7 +3856,12 @@
     "relatedTermIds": [
       "object_detection",
       "yolo",
-      "cnn"
+      "cnn",
+      "instance_segmentation",
+      "ssd",
+      "image_recognition",
+      "semantic_segmentation",
+      "vit"
     ],
     "importance": 2,
     "aliases": [
@@ -2882,7 +3880,11 @@
     "relatedTermIds": [
       "auc",
       "precision",
-      "recall"
+      "recall",
+      "false_positive",
+      "f_score",
+      "accuracy",
+      "confusion_matrix"
     ],
     "importance": 2,
     "aliases": [
@@ -2901,7 +3903,9 @@
       "gradient_boosting",
       "boosting",
       "decision_tree",
-      "ensemble_learning"
+      "ensemble_learning",
+      "random_forest",
+      "bagging"
     ],
     "importance": 2
   },
@@ -2915,7 +3919,11 @@
     "relatedTermIds": [
       "cnn",
       "third_ai_boom",
-      "transfer_learning"
+      "transfer_learning",
+      "alexnet",
+      "efficientnet",
+      "googlenet",
+      "vit"
     ],
     "importance": 1
   },
@@ -2928,7 +3936,15 @@
     "detail": "1956年の夏にアメリカ・ダートマス大学で開かれた研究会議で、「Artificial Intelligence（人工知能）」という言葉が初めて正式に使われた場所として歴史的に重要です。ジョン・マッカーシー・マービン・ミンスキー・クロード・シャノン・ナサニエル・ロチェスターらが参加しました。このとき「機械に人間のような知能を持たせることができる」という仮説を研究テーマとして提唱し、AI研究の起点となりました。第1次AIブームの出発点として位置づけられます。G検定では「1956年」「ダートマス大学」「マッカーシーが「Artificial Intelligence」という言葉を提案」「第1次AIブームの起点」という4点がセットで問われます。",
     "relatedTermIds": [
       "artificial_intelligence",
-      "first_ai_boom"
+      "first_ai_boom",
+      "john_mccarthy",
+      "second_ai_boom",
+      "third_ai_boom",
+      "ai_winter",
+      "expert_system",
+      "knowledge_acquisition_bottleneck",
+      "search_and_inference",
+      "rule_based_ai"
     ],
     "importance": 1
   },
@@ -2942,7 +3958,12 @@
     "relatedTermIds": [
       "first_ai_boom",
       "second_ai_boom",
-      "expert_system"
+      "expert_system",
+      "knowledge_acquisition_bottleneck",
+      "third_ai_boom",
+      "dartmouth_conference",
+      "search_and_inference",
+      "rule_based_ai"
     ],
     "importance": 1,
     "aliases": [
@@ -2960,7 +3981,10 @@
       "artificial_intelligence",
       "ai_level_classification",
       "weak_ai",
-      "strong_ai"
+      "strong_ai",
+      "narrow_ai",
+      "artificial_general_intelligence",
+      "intelligence"
     ],
     "importance": 1
   },
@@ -2989,7 +4013,10 @@
       "symbol_grounding_problem",
       "chinese_room",
       "robot",
-      "frame_problem"
+      "frame_problem",
+      "turing_test",
+      "toy_problem",
+      "combinatorial_explosion"
     ],
     "importance": 1
   },
@@ -3021,7 +4048,11 @@
     "relatedTermIds": [
       "deep_reinforcement_learning",
       "reinforcement_learning",
-      "third_ai_boom"
+      "third_ai_boom",
+      "q_learning",
+      "policy_gradient",
+      "agent",
+      "reward_design"
     ],
     "importance": 2
   },
@@ -3037,7 +4068,12 @@
       "heuristic_search",
       "frame_problem",
       "toy_problem",
-      "first_ai_boom"
+      "first_ai_boom",
+      "search_tree",
+      "symbol_grounding_problem",
+      "embodiment",
+      "chinese_room",
+      "turing_test"
     ],
     "importance": 1
   },
@@ -3064,7 +4100,11 @@
     "relatedTermIds": [
       "reinforcement_learning",
       "alphago",
-      "third_ai_boom"
+      "third_ai_boom",
+      "policy_gradient",
+      "q_learning",
+      "reward_design",
+      "agent"
     ],
     "importance": 2
   },
@@ -3080,7 +4120,11 @@
       "gpt",
       "diffusion_model",
       "generative_model",
-      "third_ai_boom"
+      "third_ai_boom",
+      "stable_diffusion",
+      "gan",
+      "vae",
+      "chatgpt"
     ],
     "importance": 1,
     "aliases": [
@@ -3128,7 +4172,12 @@
       "expert_system",
       "knowledge_representation",
       "second_ai_boom",
-      "ai_winter"
+      "ai_winter",
+      "first_ai_boom",
+      "third_ai_boom",
+      "dartmouth_conference",
+      "search_and_inference",
+      "rule_based_ai"
     ],
     "importance": 1
   },
@@ -3202,7 +4251,8 @@
       "f_score",
       "auc",
       "precision",
-      "recall"
+      "recall",
+      "anomaly_detection"
     ],
     "importance": 2
   },
@@ -3218,7 +4268,9 @@
       "recall",
       "f_score",
       "false_positive",
-      "auc"
+      "auc",
+      "accuracy",
+      "roc_curve"
     ],
     "importance": 1
   },
@@ -3248,7 +4300,10 @@
       "pca",
       "t_sne",
       "curse_of_dimensionality",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "clustering",
+      "k_means",
+      "hierarchical_clustering"
     ],
     "importance": 1
   },
@@ -3263,7 +4318,10 @@
       "confusion_matrix",
       "precision",
       "recall",
-      "roc_curve"
+      "roc_curve",
+      "f_score",
+      "accuracy",
+      "auc"
     ],
     "importance": 2,
     "aliases": [
@@ -3279,7 +4337,13 @@
     "detail": "生のデータから機械学習モデルが学習しやすい特徴量（変数）を作成・選択・変換する作業です。日付から「曜日」「月末フラグ」を生成する・テキストをTF-IDF値に変換するなどが例です。ディープラーニングは特徴量を自動学習しますが、表形式データでは今も重要なスキルです。G検定では「特徴量エンジニアリング＝ドメイン知識を活かした特徴量の設計・変換」として出ます。",
     "relatedTermIds": [
       "data_quality",
-      "machine_learning_definition"
+      "machine_learning_definition",
+      "feature_learning",
+      "missing_value",
+      "normalization",
+      "preprocessing",
+      "standardization",
+      "data_augmentation"
     ],
     "importance": 1
   },
@@ -3292,7 +4356,15 @@
     "detail": "データを訓練用と検証用に一度だけ分割してモデルを評価する手法です。シンプルで計算コストが低いですが、分割方法によって評価結果が変動しやすいです。データが十分にある場合は有効ですが、少ない場合は交差検証が推奨されます。G検定では「ホールドアウト法＝単純な訓練・検証分割」「交差検証との比較」として出ます。",
     "relatedTermIds": [
       "cross_validation",
-      "machine_learning_definition"
+      "machine_learning_definition",
+      "overfitting",
+      "underfitting",
+      "regularization",
+      "l1_regularization",
+      "l2_regularization",
+      "dropout",
+      "early_stopping",
+      "data_augmentation"
     ],
     "importance": 2
   },
@@ -3354,7 +4426,9 @@
       "reinforcement_learning",
       "q_learning",
       "deep_reinforcement_learning",
-      "reward_design"
+      "reward_design",
+      "alphago",
+      "agent"
     ],
     "importance": 2
   },
@@ -3368,7 +4442,10 @@
     "relatedTermIds": [
       "reinforcement_learning",
       "deep_reinforcement_learning",
-      "policy_gradient"
+      "policy_gradient",
+      "alphago",
+      "agent",
+      "reward_design"
     ],
     "importance": 1,
     "aliases": [
@@ -3386,7 +4463,8 @@
       "linear_regression",
       "mse",
       "rmse",
-      "regression"
+      "regression",
+      "mae"
     ],
     "importance": 2,
     "aliases": [
@@ -3406,7 +4484,9 @@
       "logistic_regression",
       "supervised_learning",
       "mse",
-      "rmse"
+      "rmse",
+      "r_squared",
+      "mae"
     ],
     "importance": 1
   },
@@ -3420,7 +4500,10 @@
     "relatedTermIds": [
       "reinforcement_learning",
       "policy_gradient",
-      "deep_reinforcement_learning"
+      "deep_reinforcement_learning",
+      "q_learning",
+      "alphago",
+      "agent"
     ],
     "importance": 2
   },
@@ -3434,7 +4517,11 @@
     "relatedTermIds": [
       "dimensionality_reduction",
       "pca",
-      "unsupervised_learning"
+      "unsupervised_learning",
+      "curse_of_dimensionality",
+      "clustering",
+      "k_means",
+      "hierarchical_clustering"
     ],
     "importance": 1,
     "aliases": [
@@ -3451,7 +4538,14 @@
     "relatedTermIds": [
       "overfitting",
       "machine_learning_definition",
-      "regularization"
+      "regularization",
+      "l1_regularization",
+      "l2_regularization",
+      "dropout",
+      "cross_validation",
+      "early_stopping",
+      "data_augmentation",
+      "holdout_method"
     ],
     "importance": 1
   },
@@ -3495,7 +4589,9 @@
       "deep_learning",
       "feature_engineering",
       "transfer_learning",
-      "autoencoder"
+      "autoencoder",
+      "contrastive_learning",
+      "distributed_representation"
     ],
     "importance": 3,
     "aliases": [
@@ -3514,7 +4610,8 @@
       "vanishing_gradient",
       "rnn",
       "lstm",
-      "gradient_descent"
+      "gradient_descent",
+      "gru"
     ],
     "importance": 1
   },
@@ -3528,7 +4625,11 @@
     "relatedTermIds": [
       "weight_initialization",
       "xavier_initialization",
-      "relu"
+      "relu",
+      "symmetry_breaking",
+      "batch_normalization",
+      "skip_connection",
+      "dropout"
     ],
     "importance": 2,
     "aliases": [
@@ -3546,7 +4647,11 @@
       "neural_network",
       "multilayer_perceptron",
       "deep_learning",
-      "neuron"
+      "neuron",
+      "dnn",
+      "activation_function",
+      "relu",
+      "sigmoid_function"
     ],
     "importance": 1
   },
@@ -3561,7 +4666,18 @@
       "gradient_descent",
       "learning_rate_scheduling",
       "optimization_algorithm",
-      "hyperparameter"
+      "hyperparameter",
+      "sgd",
+      "adam",
+      "momentum",
+      "adagrad",
+      "rmsprop",
+      "backpropagation",
+      "loss_function",
+      "batch_size",
+      "mini_batch",
+      "epoch",
+      "automl"
     ],
     "importance": 1
   },
@@ -3594,7 +4710,11 @@
       "sgd",
       "rmsprop",
       "adam",
-      "optimization_algorithm"
+      "optimization_algorithm",
+      "adagrad",
+      "backpropagation",
+      "loss_function",
+      "learning_rate"
     ],
     "importance": 1
   },
@@ -3624,7 +4744,12 @@
       "adagrad",
       "adam",
       "optimization_algorithm",
-      "gradient_descent"
+      "gradient_descent",
+      "momentum",
+      "sgd",
+      "backpropagation",
+      "loss_function",
+      "learning_rate"
     ],
     "importance": 2
   },
@@ -3681,7 +4806,11 @@
     "relatedTermIds": [
       "weight_initialization",
       "he_initialization",
-      "neural_network"
+      "neural_network",
+      "symmetry_breaking",
+      "batch_normalization",
+      "skip_connection",
+      "dropout"
     ],
     "importance": 2,
     "aliases": [
@@ -3715,7 +4844,12 @@
       "imagenet",
       "third_ai_boom",
       "vgg",
-      "resnet"
+      "resnet",
+      "googlenet",
+      "convolutional_layer",
+      "pooling_layer",
+      "fully_connected_layer",
+      "image_recognition"
     ],
     "importance": 1
   },
@@ -3780,7 +4914,9 @@
     "relatedTermIds": [
       "word2vec",
       "feature_learning",
-      "nlp_definition"
+      "nlp_definition",
+      "embedding",
+      "token"
     ],
     "importance": 1
   },
@@ -3809,7 +4945,16 @@
       "in_context_learning",
       "transfer_learning",
       "llm",
-      "prompt_engineering"
+      "prompt_engineering",
+      "chain_of_thought",
+      "rag",
+      "lora",
+      "rlhf",
+      "fine_tuning",
+      "peft",
+      "scaling_law",
+      "hallucination",
+      "foundation_model"
     ],
     "importance": 1,
     "aliases": [
@@ -3847,7 +4992,11 @@
       "semantic_segmentation",
       "object_detection",
       "rcnn",
-      "cnn"
+      "cnn",
+      "image_recognition",
+      "yolo",
+      "ssd",
+      "vit"
     ],
     "importance": 2
   },
@@ -3862,7 +5011,12 @@
       "instance_segmentation",
       "cnn",
       "object_detection",
-      "autonomous_driving"
+      "autonomous_driving",
+      "image_recognition",
+      "yolo",
+      "rcnn",
+      "ssd",
+      "vit"
     ],
     "importance": 1
   },
@@ -3913,7 +5067,11 @@
       "object_detection",
       "yolo",
       "rcnn",
-      "cnn"
+      "cnn",
+      "image_recognition",
+      "semantic_segmentation",
+      "instance_segmentation",
+      "vit"
     ],
     "importance": 2,
     "aliases": [
@@ -3932,7 +5090,9 @@
       "generative_model",
       "generative_ai",
       "clip_model",
-      "vae"
+      "vae",
+      "gan",
+      "chatgpt"
     ],
     "importance": 2
   },
@@ -3965,7 +5125,14 @@
       "transformer",
       "cnn",
       "imagenet",
-      "transfer_learning"
+      "transfer_learning",
+      "image_recognition",
+      "object_detection",
+      "semantic_segmentation",
+      "instance_segmentation",
+      "yolo",
+      "rcnn",
+      "ssd"
     ],
     "importance": 1,
     "aliases": [
@@ -3982,7 +5149,8 @@
     "relatedTermIds": [
       "speech_synthesis",
       "cnn",
-      "generative_model"
+      "generative_model",
+      "speech_recognition"
     ],
     "importance": 2
   },
@@ -3995,7 +5163,9 @@
     "detail": "単語を高次元の実数ベクトルに変換する手法で、Googleが2013年に発表しました。「意味的に近い単語はベクトル空間でも近くなる」という特性を持ち、「王様－男性＋女性≈女王」のような意味の演算が可能です。CBOW（周辺語から中心語を予測）とSkip-gram（中心語から周辺語を予測）の2つの学習方式があります。G検定では「word2vec＝単語の分散表現・意味的類似性・ベクトル演算」が頻出です。",
     "relatedTermIds": [
       "distributed_representation",
-      "nlp_definition"
+      "nlp_definition",
+      "embedding",
+      "token"
     ],
     "importance": 1
   },
@@ -4009,7 +5179,13 @@
     "relatedTermIds": [
       "mlops",
       "kpi",
-      "poc"
+      "poc",
+      "data_leakage",
+      "model_drift",
+      "data_drift",
+      "concept_drift",
+      "health_monitoring",
+      "ai_project_lifecycle"
     ],
     "importance": 2,
     "aliases": [
@@ -4027,7 +5203,11 @@
       "no_code_ai",
       "machine_learning_definition",
       "hyperparameter",
-      "mlops"
+      "mlops",
+      "learning_rate",
+      "batch_size",
+      "mini_batch",
+      "epoch"
     ],
     "importance": 1,
     "aliases": [
@@ -4142,7 +5322,10 @@
       "recall",
       "f_score",
       "confusion_matrix",
-      "supervised_learning"
+      "supervised_learning",
+      "auc",
+      "roc_curve",
+      "false_positive"
     ],
     "importance": 1,
     "source_ref_supplements": []
@@ -4176,7 +5359,11 @@
       "transformer",
       "attention_mechanism",
       "self_attention",
-      "bert"
+      "bert",
+      "positional_encoding",
+      "gpt",
+      "llm",
+      "masked_language_model"
     ],
     "importance": 1,
     "source_ref_supplements": []
@@ -4193,7 +5380,16 @@
       "bert",
       "gpt",
       "fine_tuning",
-      "transfer_learning"
+      "transfer_learning",
+      "rag",
+      "lora",
+      "rlhf",
+      "peft",
+      "scaling_law",
+      "hallucination",
+      "in_context_learning",
+      "prompt_engineering",
+      "few_shot_learning"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4210,7 +5406,19 @@
       "object_detection",
       "transfer_learning",
       "supervised_learning",
-      "data_quality"
+      "data_quality",
+      "convolutional_layer",
+      "pooling_layer",
+      "fully_connected_layer",
+      "alexnet",
+      "resnet",
+      "vgg",
+      "semantic_segmentation",
+      "instance_segmentation",
+      "yolo",
+      "rcnn",
+      "ssd",
+      "vit"
     ],
     "importance": 1,
     "source_ref_supplements": []
@@ -4227,7 +5435,11 @@
       "transformer",
       "self_attention",
       "nlp_definition",
-      "gpt"
+      "gpt",
+      "attention_mechanism",
+      "positional_encoding",
+      "encoder_decoder",
+      "llm"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4244,7 +5456,8 @@
       "data_quality",
       "feature_engineering",
       "normalization",
-      "standardization"
+      "standardization",
+      "data_augmentation"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4261,7 +5474,9 @@
       "preprocessing",
       "gradient_descent",
       "batch_normalization",
-      "feature_engineering"
+      "feature_engineering",
+      "missing_value",
+      "data_augmentation"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4278,7 +5493,10 @@
       "self_attention",
       "attention_mechanism",
       "bert",
-      "gpt"
+      "gpt",
+      "encoder_decoder",
+      "llm",
+      "masked_language_model"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4295,7 +5513,8 @@
       "normalization",
       "standardization",
       "feature_engineering",
-      "data_quality"
+      "data_quality",
+      "data_augmentation"
     ],
     "importance": 1,
     "source_ref_supplements": []
@@ -4312,7 +5531,9 @@
       "preprocessing",
       "gradient_descent",
       "feature_engineering",
-      "batch_normalization"
+      "batch_normalization",
+      "missing_value",
+      "data_augmentation"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4327,7 +5548,8 @@
     "relatedTermIds": [
       "mse",
       "rmse",
-      "regression"
+      "regression",
+      "r_squared"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4344,7 +5566,10 @@
       "gpt",
       "bert",
       "transformer",
-      "nlp_definition"
+      "nlp_definition",
+      "embedding",
+      "word2vec",
+      "distributed_representation"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -4361,7 +5586,8 @@
       "distributed_representation",
       "transformer",
       "bert",
-      "llm"
+      "llm",
+      "token"
     ],
     "importance": 2,
     "source_ref_supplements": []
