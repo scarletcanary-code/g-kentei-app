@@ -9,19 +9,10 @@
     "relatedTermIds": [
       "narrow_ai",
       "artificial_general_intelligence",
-      "ai_level_classification",
-      "turing_test",
-      "frame_problem",
-      "intelligence",
-      "robot",
-      "nlp_definition",
-      "machine_learning_definition",
-      "agent",
-      "dartmouth_conference",
+      "speech_recognition",
+      "image_recognition",
       "ai_effect",
-      "john_mccarthy",
-      "strong_ai",
-      "weak_ai"
+      "ai_level_classification"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -36,14 +27,13 @@
     "definition": "AIの4レベル分類とは、AIを「単純制御・古典的AI・機械学習・ディープラーニング」の4段階に分けて理解する考え方。",
     "detail": "AIの能力を仕組みの違いで4段階に分けた分類です。レベル1「単純な制御プログラム」は設定温度になったらエアコンをオフにするような、あらかじめ決めたルール通りに動くだけのものです。マーケティング上「AI搭載」と呼ばれていても内部は単純なプログラムであることがあります。レベル2「古典的AI」は多数のルールを人間が設計して詰め込んだもので、将棋プログラムや障害物回避ロボットがこれにあたります。条件分岐の量と質で賢さが決まります。レベル3「機械学習AI」はデータから自分でルールを学びます。ただしここでは「特徴量（学習の手がかりとなる変数）」の設計は人間が行い、そのデータを使ってモデルが学習します。レベル4「ディープラーニングAI」は、注目すべき特徴量そのものもAI自身がデータから自動で見つけ出します。この「特徴量の自動抽出」がレベル3との決定的な違いであり、ディープラーニングの本質です。上のレベルになるほど「人間が手で設計・入力する部分」が減り、AIの自律性が高まります。G検定では特にレベル4で「特徴量もAI自身が自動で学習する」という点がディープラーニングの本質として問われます。「レベル3とレベル4の違いは特徴量を人間が設計するかAIが設計するかにある」という説明が選択問題で頻出です。レベルごとの具体例（レベル1＝温度センサー、レベル2＝将棋AI、レベル3＝スパムフィルター、レベル4＝顔認識・ChatGPT）もセットで暗記しましょう。",
     "relatedTermIds": [
-      "artificial_intelligence",
+      "deep_learning",
+      "chatgpt",
+      "robot",
       "machine_learning_definition",
-      "narrow_ai",
+      "gpt",
       "ai_effect",
-      "artificial_general_intelligence",
-      "strong_ai",
-      "weak_ai",
-      "intelligence"
+      "artificial_intelligence"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -58,13 +48,19 @@
     "definition": "特化型AIとは、翻訳や画像認識など、決められた分野や作業に特化して働くAIのこと。",
     "detail": "特化型AI（ナローAI）とは、翻訳・画像認識・音声認識・囲碁など、特定の一つの仕事だけが得意なAIのことです。その分野では人間を大幅に超える精度を発揮できますが、「別のタスクには流用できない」のが最大の特徴です。囲碁で世界最強のAIに翻訳を頼むことはできませんし、医療診断AIに自動運転はさせられません。現在実用化されているAIはスマートフォンの顔認証から工場の不良品検出・ChatGPTまで、すべて特化型AIです。これに対して「汎用型AI（AGI＝Artificial General Intelligence）」とは、人間のように多様な分野の問題に柔軟に対応できるAIを指します。ドラえもんやSF映画のロボットのようなイメージですが、現時点では実現していません。AGIの実現には「一般常識の獲得」「転移学習の飛躍的向上」「フレーム問題の解決」など多くの技術的課題が残っています。また「弱いAI（道具としてのAI）」「強いAI（意識・心を持つAI）」という別軸の分類があります。特化型AIはすべて弱いAI（意識を持たない）であり、汎用型AIとは異なる概念なので混同しないでください。G検定では「現在実用化されているAIはすべて特化型AIであり、汎用型AI（AGI）は未実現」という文がそのまま問われる最頻出事項です。「ChatGPTはAGIである」「現在のAIは汎用的に使える」という誤答選択肢に引っかからないよう注意してください。",
     "relatedTermIds": [
+      "chatgpt",
+      "frame_problem",
       "artificial_general_intelligence",
-      "artificial_intelligence",
-      "ai_level_classification",
-      "weak_ai",
       "strong_ai",
+      "weak_ai",
+      "robot",
+      "transfer_learning",
+      "autonomous_driving",
+      "speech_recognition",
+      "image_recognition",
+      "gpt",
       "ai_effect",
-      "intelligence"
+      "ai_level_classification"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -80,12 +76,7 @@
     "detail": "汎用型AI（AGI）とは、人間のように「どんな分野の問題にも柔軟に対応できるAI」のことです。翻訳・学習・創作・会話・推論など、分野をまたいで何でもこなせることを目指します。アニメや映画に出てくる「ドラえもん」や「HAL 9000」のようなAIがイメージに近いです。ただし、現時点ではAGIはまだ実現しておらず、研究段階にあります。現在使われているAIはすべて特定の仕事に特化した「特化型AI（ナローAI）」です。G検定では「汎用型AI（AGI）は現時点では実現していない」「特化型AIと汎用型AIの違い」が問われます。「現在のAIはAGIである」という選択肢は誤りなので注意してください。",
     "relatedTermIds": [
       "narrow_ai",
-      "strong_ai",
-      "singularity",
-      "artificial_intelligence",
-      "weak_ai",
       "ai_effect",
-      "intelligence",
       "ai_level_classification"
     ],
     "importance": 2,
@@ -101,16 +92,9 @@
     "definition": "強いAIとは、人間のような心や意識を持ち、本当に意味を理解して考えているとされるAIの概念。",
     "detail": "強いAI（ストロングAI）とは、人間のように本当に「意識」や「心」を持ち、意味を理解して考えるAIという概念です。哲学者ジョン・サールが提唱した分類で、感情・意図・自己認識を持つとされます。これに対して現在のAIは「弱いAI（ウィークAI）」であり、知的に見える作業をこなしていても心や意識を持っているわけではありません。サールはこれを「中国語の部屋」という思考実験で説明しました。強いAIは「理論的な概念」であり、現在実現しているAIはすべて弱いAIです。G検定では強いAI＝「意識・心を持つ（概念・未実現）」、弱いAI＝「道具として知的作業を行う（現在の主流）」という対比と、中国語の部屋との関連が問われます。特化型／汎用型という軸と混同しないよう注意してください。",
     "relatedTermIds": [
-      "weak_ai",
-      "artificial_general_intelligence",
-      "turing_test",
-      "symbol_grounding_problem",
-      "singularity",
-      "intelligence",
       "chinese_room",
+      "weak_ai",
       "ai_effect",
-      "artificial_intelligence",
-      "narrow_ai",
       "ai_level_classification"
     ],
     "importance": 2,
@@ -126,13 +110,11 @@
     "definition": "弱いAIとは、心や意識を持つわけではなく、特定の作業を人間のようにこなすAIのこと。",
     "detail": "弱いAI（ウィークAI）とは、心や意識は持たないが、特定の知的作業を人間のようにこなすAIのことです。哲学者ジョン・サールの分類で、「道具としてのAI」と言えます。音声アシスタント（Siri・Alexa）・チェスプログラム・画像認識・ChatGPTなど、現在実用化されているAIはすべて弱いAIです。うまく会話できても意味を「理解」しているわけではなく、パターンを処理しているだけ、というのが弱いAIの本質です。G検定では弱いAI＝「現在実用化されているAIの主流」「意識・心を持たない」という定義が問われます。「弱い」という言葉から能力が低いと誤解しがちですが、特定分野では人間を超える精度を出せます。強いAIとの対比をセットで覚えましょう。",
     "relatedTermIds": [
+      "chatgpt",
       "strong_ai",
-      "narrow_ai",
-      "chinese_room",
+      "image_recognition",
+      "gpt",
       "ai_effect",
-      "artificial_intelligence",
-      "artificial_general_intelligence",
-      "intelligence",
       "ai_level_classification"
     ],
     "importance": 2,
@@ -148,16 +130,9 @@
     "definition": "チューリングテストとは、機械が人間のように会話できるかを調べるためのテスト。",
     "detail": "チューリングテストとは、機械（AI）が人間のように会話できるかを判定する方法です。1950年にアラン・チューリングが「模倣ゲーム」（Imitation Game）として発表しました。仕組みはシンプルで、判定者が画面越しに相手が人間か機械か分からない状態でテキスト会話し、機械を人間と見誤れば「その機械は知的にふるまっている」と見なします。核心は「内部で何が起きているかではなく、外から見たふるまいで知能を判定する」行動主義的なアプローチである点です。声・外見・身体的な手がかりは排除されテキストのみで判定します。ただしチューリングテストには重要な限界があります。うまく会話できることと「本当に意味を理解していること」は別だ、という批判が「中国語の部屋」（サールの思考実験）です。中国語を知らない人でもマニュアル通りに記号を並べれば中国語を理解しているように見える、という例えで、記号操作（シンタックス）と意味理解（セマンティクス）は異なることを示します。2014年に「ユージーン・グーツマン」というプログラムが初めてテストに「合格」したとされ話題になりましたが、本当の意味での知能を実現したわけではありません。G検定ではチューリングテストが「行動ベースで知能を評価する方法」であること、チューリングが1950年に提案したこと、中国語の部屋による批判（「合格≠本当の理解・意識」）がセットで問われます。",
     "relatedTermIds": [
-      "strong_ai",
-      "artificial_intelligence",
-      "chatbot",
       "chinese_room",
-      "eliza",
-      "frame_problem",
-      "symbol_grounding_problem",
-      "embodiment",
-      "toy_problem",
-      "combinatorial_explosion"
+      "artificial_intelligence",
+      "embodiment"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -173,11 +148,14 @@
     "detail": "フレーム問題とは、AIが現実世界で行動しようとするとき「考えるべきことと無視してよいことを自分では選べない」という根本的な問題です。1969年にジョン・マッカーシーとパトリック・ヘイズが提起しました。現実世界では何かをしようとするとき、関係しうる要素が無限にあります。たとえばロボットに「隣の部屋からボールを取ってきて」と頼むとします。廊下にいる人を避ける・床に物があれば踏まない・ドアの開け方・ボールが転がっていたら追いかけるか・ボールをどう持つか……と考え始めると止まらず、行動できなくなります。人間は「関係ない」と自然に判断してスルーできますが、これをAIに行わせるのは驚くほど難しいです。ルールが明確な「トイ・プロブレム（おもちゃの問題）」ではうまくいっても、現実世界では対処できないというAI第1次ブームの失敗の大きな原因でした。「組み合わせ爆発」（考慮すべき要素が増えると処理量が指数的に膨れ上がる問題）とも密接に関連します。フレーム問題は今も根本的には解決されておらず、ディープラーニングでも原理的には同じ問題を抱えています。G検定では「フレーム問題＝現実世界で考慮すべき情報と無視すべき情報を区別できない問題」という定義、「第1次AIブームの限界を示す代表的な課題」、トイ・プロブレムとの対比、シンボルグラウンディング問題・身体性との関連がよく出ます。フレーム問題はシンボルグラウンディング問題・身体性とセットで理解すると、AIが現実世界を扱う際の根本的な壁の全体像がつかめます。",
     "relatedTermIds": [
       "symbol_grounding_problem",
+      "john_mccarthy",
+      "deep_learning",
       "toy_problem",
-      "artificial_intelligence",
-      "chinese_room",
-      "embodiment",
+      "first_ai_boom",
       "combinatorial_explosion",
+      "robot",
+      "embodiment",
+      "artificial_intelligence",
       "turing_test"
     ],
     "importance": 1,
@@ -193,13 +171,15 @@
     "definition": "シンボルグラウンディング問題とは、AIが扱う言葉や記号を、現実の意味や感覚と結びつけにくいという問題。",
     "detail": "シンボルグラウンディング問題（記号接地問題）とは、AIが扱う「記号（言葉・シンボル）」を現実世界の具体的な意味と結びつけられないという問題です。1990年にスティーブン・ハーナッドが提唱しました。「りんご」という文字を処理できても、あの赤さ・丸さ・甘い香り・手ざわり・かじったときのシャキシャキ感……という実際の感覚経験と結びついていなければ、本当に「りんご」を理解しているとは言えません。AIは大量のテキストからパターンを処理していますが、言葉と現実世界の感覚・経験が切り離された状態です。これは現在のChatGPTなどの大規模言語モデル（LLM）にも当てはまる根本的な課題です。「赤い」「甘い」「熱い」といった言葉を正しく文章中で使えても、本当にその感覚を「知っている」わけではありません。解決策として研究されているのが「身体性」（身体を通じた経験で記号を現実と結びつける）アプローチと、視覚・音声・テキストを組み合わせる「マルチモーダル学習」です。後者はある程度の接地を実現しつつありますが、完全な解決には至っていません。G検定では「記号を処理できることと実世界の意味を理解することは別」という本質、ハーナッドが1990年に提唱したこと、フレーム問題・中国語の部屋・身体性とのセット理解が求められます。「LLMはシンボルグラウンディング問題を完全に解決した」は誤りです。身体性・フレーム問題・中国語の部屋とセットで整理することで、「AIが現実世界を本当に理解するとはどういうことか」という問いへの深い洞察が得られます。",
     "relatedTermIds": [
+      "llm",
+      "multimodal",
+      "chatgpt",
       "frame_problem",
-      "strong_ai",
       "chinese_room",
+      "gpt",
       "embodiment",
       "turing_test",
-      "toy_problem",
-      "combinatorial_explosion"
+      "strong_ai"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -230,13 +210,10 @@
     "definition": "トイ・プロブレムとは、ルールがはっきりした小さな問題のこと。AI研究の初期に多く扱われた。",
     "detail": "トイ・プロブレム（おもちゃの問題）とは、ルールが明確で条件が限られた、シンプルに定式化された問題のことです。迷路の最短ルート・チェス・ハノイの塔などが代表例です。AI研究の初期（1950〜60年代）に、探索や推論アルゴリズムのテストとして多く使われました。トイ・プロブレムの範囲ではAIはうまく機能しますが、現実世界は条件が複雑すぎてトイ・プロブレムの手法が通用しません。この限界を示したのがフレーム問題（考慮すべきことと無視すべきことを選べない）です。G検定では「第1次AIブームでトイ・プロブレムでは成果が出たが現実問題には対処できず冬の時代を迎えた」という歴史的な文脈で頻出です。フレーム問題との関連を押さえておきましょう。",
     "relatedTermIds": [
-      "frame_problem",
       "first_ai_boom",
-      "combinatorial_explosion",
-      "symbol_grounding_problem",
+      "frame_problem",
       "embodiment",
-      "chinese_room",
-      "turing_test"
+      "symbol_grounding_problem"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -251,10 +228,8 @@
     "definition": "知能とは、状況を理解し、学び、考え、判断して問題を解決する力のこと。",
     "detail": "知能とは、状況を理解し、学び、推論・判断して問題を解決する能力の総称です。AIの研究では「人間の知能をどう定義しコンピュータで再現するか」が中心的なテーマです。知能の定義は専門家によって異なり、チューリングテストのように「ふるまいで判断する」行動主義的なアプローチもあれば、意識や理解を求める哲学的アプローチもあります。ハワード・ガードナーの多重知能理論（言語・論理・空間など8種類）のように知能を多様に捉える考え方もあります。G検定では知能の定義そのものより、チューリングテストや強いAI・弱いAIの文脈で「AIが本当に知能を持つとはどういうことか」という問いとして登場します。「知能＝単純な計算能力や記憶力ではなく、環境への適応力も含む」という広い意味を理解しておきましょう。",
     "relatedTermIds": [
-      "artificial_intelligence",
+      "turing_test",
       "strong_ai",
-      "narrow_ai",
-      "artificial_general_intelligence",
       "weak_ai",
       "ai_effect",
       "ai_level_classification"
@@ -288,13 +263,14 @@
     "definition": "自然言語処理とは、日本語や英語のような人間の言葉を、コンピュータで扱うための技術。",
     "detail": "自然言語処理（NLP）とは、日本語・英語など人間が日常的に使う言葉（自然言語）をコンピュータで処理する技術のことです。翻訳・文章要約・音声認識・感情分析・質問応答などが代表的な応用です。近年のChatGPTやGeminiなどの大規模言語モデル（LLM）も自然言語処理の延長線上にあります。「自然言語」とは、プログラミング言語のような「人工的に設計した言語」ではなく、人間が自然に使う言葉を指します。G検定では「自然言語処理とは人間の言語をコンピュータで扱う技術」という定義、形態素解析・構文解析などの基礎技術、そしてLLMとの関連が問われます。NLPはAI応用の中でも特にG検定で出題頻度が高い分野なので、基礎的な用語（トークン・埋め込み・Transformer）も合わせて確認しましょう。",
     "relatedTermIds": [
+      "transformer",
+      "llm",
+      "chatgpt",
+      "speech_recognition",
+      "token",
+      "gpt",
       "artificial_intelligence",
-      "machine_learning_definition",
-      "chatbot",
-      "distributed_representation",
-      "word2vec",
-      "masked_language_model",
-      "token"
+      "machine_learning_definition"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -309,18 +285,19 @@
     "definition": "機械学習とは、コンピュータが多くの例を見て、判断のコツを学ぶ技術のこと。",
     "detail": "機械学習とは、コンピュータが大量のデータを見て、そこからパターンやルールを「自分で学ぶ」技術です。従来のプログラミングでは人間が「もし○○なら△△する」というルールをすべて書いてコンピュータに教えます。機械学習では逆に「大量の例を見せれば、コンピュータが自分でルールを見つけ出す」点が根本的に違います。猫の画像を何万枚も見せれば「これが猫の特徴だ」を自分で学んで、新しい写真の猫を見分けられるようになります。機械学習は3つのパラダイムに分類されます。「教師あり学習」は正解ラベル付きのデータから学習し、未知データを予測します（スパムフィルター・医療診断など）。「教師なし学習」はラベルなしデータからパターンを発見します（クラスタリング・異常検知など）。「強化学習」は試行錯誤と報酬を通じて最適な行動を学びます（AlphaGo・ゲームAI・ロボット制御など）。ディープラーニングは機械学習の「一手法」であり、特に「特徴量（学習の手がかり）をAI自身が自動で見つける」点が従来の機械学習との違いです。G検定では「機械学習はデータからルールを自動で学ぶ技術（人間が明示的にプログラムしない）」「3パラダイムの違いと代表的な用途」「ディープラーニングは機械学習の部分集合（上位概念ではない）」という点が頻出です。機械学習とディープラーニングを混同した選択肢に注意してください。また機械学習は第3次AIブームの中核技術であり、ビッグデータ・GPU・アルゴリズムの三拍子が揃ったことで実用化が飛躍的に進んだ背景も押さえておくと試験に役立ちます。",
     "relatedTermIds": [
-      "artificial_intelligence",
-      "ai_level_classification",
+      "deep_learning",
+      "third_ai_boom",
+      "clustering",
+      "alphago",
+      "big_data",
       "supervised_learning",
-      "nlp_definition",
-      "feature_engineering",
-      "holdout_method",
-      "underfitting",
-      "online_learning",
-      "automl",
       "unsupervised_learning",
+      "robot",
       "reinforcement_learning",
-      "semi_supervised_learning"
+      "anomaly_detection",
+      "gpu",
+      "ai_level_classification",
+      "artificial_intelligence"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -340,19 +317,11 @@
     "detail": "1950年代後半〜60年代に起きたAI研究の最初の盛り上がりです。「コンピュータに論理的な推論をさせれば知能が生まれる」という期待から始まり、探索と推論を使ってチェス・定理証明・迷路解法などの問題に取り組みました。ルールが明確な「トイ・プロブレム（おもちゃの問題）」では成果を出しましたが、現実世界の複雑な問題には対応できず、組み合わせ爆発やフレーム問題に阻まれて研究資金が削減され、1970年代に「AIの冬」を迎えました。G検定では「第1次ブームの中心は探索・推論」「トイ・プロブレムでは成功したが現実問題には失敗」「冬の原因は組み合わせ爆発・フレーム問題」という流れが頻出です。",
     "relatedTermIds": [
       "toy_problem",
-      "search_and_inference",
-      "second_ai_boom",
-      "halting_problem",
-      "dartmouth_conference",
-      "ai_winter",
-      "eliza",
       "combinatorial_explosion",
-      "john_mccarthy",
-      "xor_problem",
-      "third_ai_boom",
-      "expert_system",
-      "knowledge_acquisition_bottleneck",
-      "rule_based_ai"
+      "frame_problem",
+      "search_and_inference",
+      "ai_winter",
+      "dartmouth_conference"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -367,17 +336,10 @@
     "definition": "第2次AIブームとは、1980年代に専門家の知識をコンピュータに入れて使おうとしたAIブーム。",
     "detail": "1980年代の第2次AIブームでは「エキスパートシステム」が主役でした。専門家の知識をIF-THENルールの形で大量にコンピュータに入力し、医療診断・設備保全・法律判断などの専門的な推論を実現しました。企業や政府が競って導入しましたが、専門家の暗黙知をルールに落とし込む「知識獲得のボトルネック」が深刻な壁になり、ルールが増えるほど矛盾・保守コストが膨れ上がって実用限界を迎え、1980年代末〜90年代に2度目のAIの冬を迎えました。G検定では「第2次の主役はエキスパートシステム」「失敗の原因は知識獲得のボトルネック（暗黙知をルール化できない）」が最頻出です。",
     "relatedTermIds": [
-      "expert_system",
-      "knowledge_representation",
-      "first_ai_boom",
-      "third_ai_boom",
-      "rule_based_ai",
-      "ai_winter",
-      "deep_blue",
       "knowledge_acquisition_bottleneck",
-      "mycin",
-      "dartmouth_conference",
-      "search_and_inference"
+      "expert_system",
+      "ai_winter",
+      "dartmouth_conference"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -393,21 +355,13 @@
     "detail": "2010年代から現在まで続くAIブームです。「ビッグデータ」「GPU」「ディープラーニング」の三要素が同時に揃ったことで実現しました。2012年の画像認識コンテスト「ILSVRC」でAlexNetがそれまでの手法を圧倒し、世界中の研究者がディープラーニングに注目するきっかけとなりました。第1・2次ブームとの決定的な違いは「人間が特徴量を手で設計しなくてよい（AIが自動で学ぶ）」点です。現在はAGI・生成AI・マルチモーダルへと発展し、ブームは継続中です。G検定では「三拍子（ビッグデータ・GPU・ディープラーニング）」「2012年ILSVRCでのブレークスルー」「第3次では特徴量をAIが自動抽出」が問われます。",
     "relatedTermIds": [
       "deep_learning",
-      "big_data",
-      "gpu",
-      "second_ai_boom",
-      "imagenet",
-      "alphago",
-      "deep_reinforcement_learning",
-      "generative_ai",
+      "multimodal",
       "alexnet",
-      "first_ai_boom",
+      "big_data",
+      "image_recognition",
+      "gpu",
       "ai_winter",
-      "expert_system",
-      "dartmouth_conference",
-      "knowledge_acquisition_bottleneck",
-      "search_and_inference",
-      "rule_based_ai"
+      "dartmouth_conference"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -422,21 +376,10 @@
     "definition": "探索・推論とは、答えの候補を探したり、分かっている情報から新しい結論を出したりする考え方。",
     "detail": "第1次AIブームの中心技術です。与えられた条件から論理的に結論を導く「推論」と、問題の解を状態空間の中から見つける「探索」を組み合わせて、チェス・パズル・定理証明などを解こうとしました。G検定では「探索・推論＝第1次ブームの主役技術」「トイ・プロブレムでは成果を出したが現実問題には対応できなかった」という文脈で問われます。",
     "relatedTermIds": [
+      "toy_problem",
       "first_ai_boom",
-      "expert_system",
-      "halting_problem",
-      "a_star_algorithm",
-      "combinatorial_explosion",
-      "deep_blue",
-      "heuristic_search",
-      "production_rule",
-      "search_tree",
-      "second_ai_boom",
-      "third_ai_boom",
       "ai_winter",
-      "dartmouth_conference",
-      "knowledge_acquisition_bottleneck",
-      "rule_based_ai"
+      "combinatorial_explosion"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -451,18 +394,11 @@
     "definition": "エキスパートシステムとは、専門家の知識をルールとして入れ、専門家のように判断させるシステム。",
     "detail": "専門家の知識をIF-THENルール（「もし○○なら△△」の形）で大量にコンピュータに入力し、推論エンジンがそのルールを組み合わせて答えを出すシステムです。「知識ベース（ルールの集合）」と「推論エンジン（ルールを適用して結論を導く部分）」の2つから構成されます。MYCINという医療診断システムが代表例です。第2次AIブームを牽引しましたが、専門家の暗黙知をルールに落とし込む困難さ（知識獲得のボトルネック）と、ルール数増加に伴うメンテナンスの問題で衰退しました。G検定では「構造（知識ベース＋推論エンジン）」「プロダクションルール（IF-THEN形式）」「限界は知識獲得のボトルネック」「MYCINが代表例」をセットで覚えてください。",
     "relatedTermIds": [
-      "knowledge_representation",
-      "second_ai_boom",
-      "semantic_network",
-      "search_and_inference",
-      "rule_based_ai",
-      "ontology",
-      "ai_winter",
       "knowledge_acquisition_bottleneck",
-      "mycin",
       "production_rule",
-      "first_ai_boom",
-      "third_ai_boom",
+      "second_ai_boom",
+      "mycin",
+      "ai_winter",
       "dartmouth_conference"
     ],
     "importance": 1,
@@ -478,9 +414,10 @@
     "definition": "意味ネットワークとは、言葉や概念を点として置き、それらの関係を線で結んで表す知識表現の方法。",
     "detail": "概念をノード（○）、概念同士の関係をリンク（矢印）で結んだ図として知識を表現する手法です。たとえば「犬はペットである」「ペットは動物である」を矢印で連鎖的に表せます。現代のナレッジグラフの原型です。G検定では「知識表現の手法のひとつ」「ノードが概念、エッジが関係を表す」として知識表現・プロダクションルール・オントロジーとセットで整理しましょう。",
     "relatedTermIds": [
+      "production_rule",
+      "ontology",
       "knowledge_representation",
-      "expert_system",
-      "ontology"
+      "expert_system"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -495,13 +432,13 @@
     "definition": "知識表現とは、人間の知識をコンピュータが扱える形に整理して表す方法。",
     "detail": "AIが推論や問題解決に使えるよう、知識を形式的に記述・整理する技術の総称です。代表的な手法としてプロダクションルール（IF-THEN）・意味ネットワーク・フレーム・オントロジーなどがあります。第2次AIブームのエキスパートシステムでは、いかに専門知識を表現するかが最重要課題でした。G検定では「知識表現＝第2次ブームのキーワード」「エキスパートシステム・知識獲得のボトルネックとセット」で出題されます。",
     "relatedTermIds": [
-      "semantic_network",
-      "expert_system",
-      "second_ai_boom",
-      "rule_based_ai",
-      "ontology",
       "knowledge_acquisition_bottleneck",
-      "production_rule"
+      "expert_system",
+      "production_rule",
+      "second_ai_boom",
+      "semantic_network",
+      "ontology",
+      "rule_based_ai"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -517,25 +454,12 @@
     "detail": "脳の神経細胞（ニューロン）のつながりをコンピュータで模したモデルです。入力を受け取って重みを掛けて足し合わせ、活性化関数を通して次の層に渡す処理を何層も積み重ねます。「入力層→隠れ層→出力層」の3種類から構成されます。ディープラーニングは隠れ層を多数重ねたニューラルネットワークのことで、浅い層から深い層に向かってより抽象的な特徴を学習します。G検定では「ニューロン（生物の神経細胞を模倣）」「入力層・隠れ層・出力層の役割」「重みと活性化関数の組み合わせ」「ディープラーニングは多層ニューラルネットワーク」という対応関係が問われます。誤差逆伝播法（バックプロパゲーション）とセットで理解すると理解が深まります。",
     "relatedTermIds": [
       "deep_learning",
-      "neuron",
       "backpropagation",
-      "forward_pass",
-      "chain_rule",
-      "cross_entropy",
-      "hidden_layer",
-      "softmax",
-      "symmetry_breaking",
-      "universal_approximation_theorem",
-      "xavier_initialization",
-      "xor_problem",
-      "weight",
-      "dnn",
+      "neuron",
       "activation_function",
-      "relu",
-      "sigmoid_function",
-      "gradient_descent",
-      "overfitting",
-      "dropout"
+      "hidden_layer",
+      "cross_entropy",
+      "dnn"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -551,19 +475,15 @@
     "detail": "ディープラーニング（深層学習）は機械学習の一手法で、多数の隠れ層を持つニューラルネットワークを使い、データから特徴量を自動で抽出して予測・分類を行います。従来の機械学習では人間が「どの変数に注目するか（特徴量設計）」を手で行う必要がありましたが、ディープラーニングはこれをAI自身が自動で行います。この「特徴量の自動抽出」が最大の特徴です。ビッグデータ・GPU・アルゴリズムの進化が重なった2010年代に実用化が急速に進み、画像認識・音声認識・自然言語処理で人間を超える精度を実現しました。G検定では「ディープラーニング＝機械学習の一手法（上位概念ではない）」「特徴量をAI自身が自動で学習する点が従来の機械学習との違い」「多層ニューラルネットワーク」がほぼ必ず出ます。",
     "relatedTermIds": [
       "neural_network",
-      "third_ai_boom",
-      "gpu",
+      "nlp_definition",
       "big_data",
-      "cnn",
-      "gan",
-      "feature_learning",
+      "machine_learning_definition",
+      "speech_recognition",
+      "image_recognition",
+      "gpu",
       "hidden_layer",
-      "universal_approximation_theorem",
-      "backpropagation",
-      "gradient_descent",
-      "overfitting",
-      "dropout",
-      "batch_normalization"
+      "third_ai_boom",
+      "backpropagation"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -612,8 +532,8 @@
     "definition": "ハルティング問題とは、あるプログラムが必ず止まるかを、一般には完全に判定できないという問題。",
     "detail": "アラン・チューリングが1936年に証明した「解くことが原理的に不可能（計算不可能）な問題」の代表例です。「任意のプログラムが有限時間内に停止するかどうかを判定する汎用アルゴリズムは存在しない」ことを証明しました。チューリングとAI・コンピュータ科学の歴史の文脈で出ることがありますが、G検定での出題頻度は低いです。「チューリングが計算可能性の限界を示した」という位置づけを覚えておけば十分です。",
     "relatedTermIds": [
-      "search_and_inference",
-      "first_ai_boom"
+      "first_ai_boom",
+      "search_and_inference"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -630,22 +550,8 @@
     "relatedTermIds": [
       "unsupervised_learning",
       "reinforcement_learning",
-      "linear_regression",
-      "decision_tree",
-      "machine_learning_definition",
-      "semi_supervised_learning",
-      "logistic_regression",
-      "svm",
-      "precision",
-      "recall",
-      "mse",
-      "annotation",
-      "naive_bayes",
-      "k_nearest_neighbor",
-      "kernel_trick",
-      "regression",
       "accuracy",
-      "image_recognition"
+      "k_nearest_neighbor"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -660,17 +566,11 @@
     "definition": "教師なし学習とは、正解ラベルがないデータから、似たもの同士のまとまりや隠れた構造を見つける方法。",
     "detail": "正解ラベルがないデータから、データの構造・パターン・グルーピングを自動で発見する手法です。代表的な手法はクラスタリング（似たデータをグループ化）と次元削減（情報を圧縮）です。顧客セグメンテーション・異常検知・特徴抽出などに使われます。G検定では「教師なし学習＝ラベルなしでパターン発見」「クラスタリング・次元削減が代表手法」として頻出です。",
     "relatedTermIds": [
-      "supervised_learning",
-      "k_means",
-      "pca",
-      "semi_supervised_learning",
-      "reinforcement_learning",
       "clustering",
-      "hierarchical_clustering",
       "anomaly_detection",
       "dimensionality_reduction",
-      "t_sne",
-      "machine_learning_definition"
+      "reinforcement_learning",
+      "supervised_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -685,17 +585,11 @@
     "definition": "強化学習とは、行動の結果として得られる報酬を手がかりに、よりよい行動を学ぶ方法。",
     "detail": "エージェントが環境と相互作用し、報酬を最大化する行動方策を試行錯誤から学ぶ手法です。状態（State）・行動（Action）・報酬（Reward）・方策（Policy）が基本概念です。AlphaGo・ゲームAI・ロボット制御が代表例です。G検定では「強化学習＝試行錯誤で報酬最大化・状態・行動・報酬・方策の4概念」「AlphaGoとの関連」が頻出です。",
     "relatedTermIds": [
-      "supervised_learning",
-      "unsupervised_learning",
-      "rlhf",
-      "agent",
       "alphago",
-      "deep_reinforcement_learning",
-      "policy_gradient",
+      "agent",
+      "robot",
       "q_learning",
-      "reward_design",
-      "semi_supervised_learning",
-      "machine_learning_definition"
+      "supervised_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -728,13 +622,9 @@
     "definition": "線形回帰とは、数値同士の関係を直線に近い形で表し、数値を予測する方法。",
     "detail": "入力変数と出力変数の間に線形の関係を仮定し、最小二乗法でパラメータを推定する回帰手法です。「y = w1x1 + w2x2 + ... + b」という形のモデルです。シンプルで解釈しやすく、特徴量と目的変数の関係を係数から読み取れます。G検定では「線形回帰＝線形モデル・最小二乗法」「ロジスティック回帰との違い（回帰vs分類）」として出ます。",
     "relatedTermIds": [
-      "supervised_learning",
       "logistic_regression",
-      "mse",
-      "rmse",
-      "l1_regularization",
-      "r_squared",
-      "regression"
+      "regression",
+      "supervised_learning"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -749,14 +639,10 @@
     "definition": "ロジスティック回帰とは、あるものがどちらの分類に入るかを確率で予測する方法。",
     "detail": "名前に「回帰」とありますが実際は分類手法です。線形回帰の出力をシグモイド関数に通し、0〜1の確率に変換して2値分類を行います。シンプルで解釈しやすく、各特徴量が予測に与える影響を係数から読み取れます。G検定では「ロジスティック回帰＝分類手法（名前に回帰とあるが分類）」「シグモイド関数との関連」として出ます。",
     "relatedTermIds": [
-      "linear_regression",
       "sigmoid_function",
-      "supervised_learning",
-      "svm",
-      "naive_bayes",
-      "l1_regularization",
+      "linear_regression",
       "regression",
-      "cross_entropy"
+      "supervised_learning"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -772,12 +658,11 @@
     "detail": "特徴量に対するYes/Noの条件分岐を繰り返して予測するモデルです。決定経路を図として可視化できるため解釈性が高いです。ただし木を深くしすぎると訓練データへの過学習が起きやすいです。ランダムフォレストや勾配ブースティングのベースモデルです。G検定では「決定木＝条件分岐による高解釈性のモデル・過学習しやすい」「ランダムフォレストとの関連」として出ます。",
     "relatedTermIds": [
       "random_forest",
-      "ensemble_learning",
-      "supervised_learning",
-      "boosting",
-      "bagging",
       "gradient_boosting",
-      "xgboost"
+      "boosting",
+      "overfitting",
+      "supervised_learning",
+      "bagging"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -792,13 +677,11 @@
     "definition": "ランダムフォレストとは、たくさんの決定木を使って、より安定した予測を行う方法。",
     "detail": "複数の決定木をバギング（ランダムサンプリングで異なる訓練データを使う）と特徴量のランダム選択で学習し、多数決で予測するアンサンブル手法です。単一の決定木より過学習しにくく安定した精度が得られます。G検定では「ランダムフォレスト＝複数の決定木のアンサンブル・バギング」「過学習への強さ」として出ます。",
     "relatedTermIds": [
-      "decision_tree",
-      "ensemble_learning",
-      "overfitting",
-      "boosting",
       "bagging",
+      "decision_tree",
+      "overfitting",
       "gradient_boosting",
-      "xgboost"
+      "boosting"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -813,9 +696,9 @@
     "definition": "サポートベクトルマシンとは、データを分ける境界をできるだけ余裕を持って引く分類方法。",
     "detail": "サポートベクトルマシン（Support Vector Machine）の略で、クラス間の余白（マージン）を最大化する識別境界を学習する分類手法です。カーネルトリックにより線形分離できないデータも曲線的に分類できます。G検定では「SVM＝マージン最大化・カーネルトリックで非線形分類可能」として出ます。",
     "relatedTermIds": [
+      "kernel_trick",
       "supervised_learning",
-      "logistic_regression",
-      "kernel_trick"
+      "logistic_regression"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -830,13 +713,10 @@
     "definition": "k-means法とは、データをあらかじめ決めたk個のグループに分ける方法。",
     "detail": "データをk個のクラスターに分割する代表的な教師なしクラスタリング手法です。各データ点を最も近い重心（セントロイド）のクラスターに割り当て、重心を更新する処理を繰り返します。kの数を事前に決める必要があります。G検定では「k-means＝教師なし学習のクラスタリング代表手法・k個のクラスターに分割」として出ます。",
     "relatedTermIds": [
-      "unsupervised_learning",
-      "pca",
       "clustering",
-      "hierarchical_clustering",
-      "k_nearest_neighbor",
+      "unsupervised_learning",
       "dimensionality_reduction",
-      "t_sne"
+      "k_nearest_neighbor"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -851,13 +731,10 @@
     "definition": "主成分分析とは、多くの項目を、重要な情報を残しながら少ない軸にまとめる方法。",
     "detail": "主成分分析（Principal Component Analysis）の略で、データの分散が最大になる方向（主成分）を見つけて高次元データを低次元に線形変換する次元削減手法です。t-SNEと異なり線形変換のみです。特徴量の数が多い場合の計算量削減や可視化に使われます。G検定では「PCA＝線形の次元削減・分散最大の方向に射影」「t-SNEとの対比（線形vsノン線形）」として出ます。",
     "relatedTermIds": [
-      "unsupervised_learning",
-      "k_means",
-      "curse_of_dimensionality",
-      "dimensionality_reduction",
       "t_sne",
-      "clustering",
-      "hierarchical_clustering"
+      "dimensionality_reduction",
+      "unsupervised_learning",
+      "clustering"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -872,25 +749,12 @@
     "definition": "過学習とは、学習データに合わせすぎて、新しいデータへの対応が悪くなる状態。",
     "detail": "訓練データには高い精度を示すが、未知の新しいデータには精度が低い状態です。「過度に訓練データを暗記してしまい、汎化できない」状態です。モデルが複雑すぎる、データが少ない、学習しすぎる場合に起きます。対策として正則化・ドロップアウト・交差検証・データ拡張・早期終了などがあります。G検定では「過学習の定義（訓練誤差は小さいが汎化誤差は大きい）」「対策手法」が必ず出ます。",
     "relatedTermIds": [
-      "regularization",
-      "cross_validation",
-      "random_forest",
-      "ensemble_learning",
       "dropout",
       "data_augmentation",
-      "early_stopping",
-      "batch_size",
-      "bagging",
-      "epoch",
-      "l2_regularization",
+      "cross_validation",
+      "regularization",
       "underfitting",
-      "l1_regularization",
-      "holdout_method",
-      "deep_learning",
-      "neural_network",
-      "backpropagation",
-      "gradient_descent",
-      "batch_normalization"
+      "bagging"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -905,15 +769,10 @@
     "definition": "正則化とは、過学習を防ぐために、モデルが複雑になりすぎないよう調整する方法。",
     "detail": "モデルの過学習を抑制するために、損失関数にパラメータの大きさに対するペナルティ項を加える手法です。L1正則化はパラメータをスパース（多くがゼロ）にする効果があり、L2正則化は全パラメータを均等に小さくします。G検定では「正則化＝過学習抑制のためのペナルティ」「L1（スパース）とL2（均等縮小）の違い」が頻出です。",
     "relatedTermIds": [
+      "loss_function",
       "overfitting",
-      "cross_validation",
-      "dropout",
-      "l1_regularization",
-      "l2_regularization",
       "underfitting",
-      "early_stopping",
-      "data_augmentation",
-      "holdout_method"
+      "cross_validation"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -928,17 +787,10 @@
     "definition": "交差検証とは、データの分け方を変えながら、モデルの性能を複数回確認する方法。",
     "detail": "データをk分割し、1分割を検証用・残りを訓練用として学習と評価をk回繰り返す（k分割交差検証）モデル評価手法です。データが少ない場合でも評価の信頼性が高く、過学習を検知できます。G検定では「交差検証＝データをk分割して複数回評価・汎化性能の推定」「ホールドアウト法との違い」として出ます。",
     "relatedTermIds": [
-      "overfitting",
-      "regularization",
-      "hyperparameter",
-      "early_stopping",
-      "data_leakage",
       "holdout_method",
+      "overfitting",
       "underfitting",
-      "l1_regularization",
-      "l2_regularization",
-      "dropout",
-      "data_augmentation"
+      "l1_regularization"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -954,12 +806,12 @@
     "detail": "複数のモデル（弱学習器）を組み合わせて予測精度を上げる手法の総称です。「集合知」を活用する発想です。代表手法としてバギング（ランダムフォレスト）・ブースティング（勾配ブースティング・XGBoost）・スタッキングがあります。G検定では「アンサンブル学習＝複数モデルの組み合わせ」「バギング・ブースティングの違い」として出ます。",
     "relatedTermIds": [
       "random_forest",
-      "decision_tree",
-      "overfitting",
-      "boosting",
-      "bagging",
       "gradient_boosting",
-      "xgboost"
+      "boosting",
+      "xgboost",
+      "bagging",
+      "overfitting",
+      "decision_tree"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -975,14 +827,9 @@
     "detail": "適合率とも呼ばれ、「陽性と予測したもののうち本当に陽性の割合」です。TP÷(TP+FP)で計算します。偽陽性（誤検知）を減らしたい場面で重視します。例えばスパムフィルターで「正常メールをスパムと誤判定したくない」場合に適合率を重視します。G検定では「適合率の定義・計算式・重視する場面」「再現率・F値とのセット」が頻出です。",
     "relatedTermIds": [
       "recall",
-      "f_score",
-      "supervised_learning",
-      "auc",
-      "roc_curve",
-      "class_imbalance",
-      "confusion_matrix",
       "false_positive",
-      "accuracy"
+      "accuracy",
+      "confusion_matrix"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -998,14 +845,8 @@
     "detail": "再現率とも呼ばれ、「本当に陽性のもののうち正しく陽性と予測できた割合」です。TP÷(TP+FN)で計算します。偽陰性（見逃し）を減らしたい場面で重視します。例えばがん診断で「見逃しをゼロにしたい」場合に再現率を重視します。G検定では「再現率の定義・計算式・重視する場面」「適合率とのトレードオフ（一方を上げると他方が下がる）」が頻出です。",
     "relatedTermIds": [
       "precision",
-      "f_score",
-      "supervised_learning",
-      "auc",
-      "roc_curve",
-      "class_imbalance",
-      "confusion_matrix",
-      "false_positive",
-      "accuracy"
+      "accuracy",
+      "confusion_matrix"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1022,12 +863,8 @@
     "relatedTermIds": [
       "precision",
       "recall",
-      "auc",
-      "class_imbalance",
-      "confusion_matrix",
       "accuracy",
-      "roc_curve",
-      "false_positive"
+      "confusion_matrix"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1042,13 +879,8 @@
     "definition": "平均二乗誤差とは、予測のずれを二乗して平均した、回帰モデルの誤差指標。",
     "detail": "平均二乗誤差（Mean Squared Error）の略で、予測値と実際の値の差の2乗の平均です。回帰タスクの評価指標として広く使われます。差を2乗するため外れ値の影響を大きく受けます。G検定では「MSE＝回帰タスクの評価指標・外れ値に敏感」「RMSEとの関係（MSEの平方根がRMSE）」として出ます。",
     "relatedTermIds": [
-      "rmse",
-      "linear_regression",
-      "supervised_learning",
-      "loss_function",
-      "r_squared",
       "regression",
-      "mae"
+      "supervised_learning"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1063,11 +895,8 @@
     "definition": "二乗平均平方根誤差とは、平均二乗誤差の平方根を取り、元の単位に戻した誤差指標。",
     "detail": "二乗平均平方根誤差（Root Mean Squared Error）の略で、MSEの平方根です。MSEより解釈しやすく（予測誤差と同じ単位）、外れ値に強いMAEより外れ値に敏感です。G検定では「RMSE＝MSEの平方根・回帰タスクの評価指標」「MSE・MAEとの使い分け」として出ます。",
     "relatedTermIds": [
-      "mse",
-      "linear_regression",
-      "r_squared",
       "regression",
-      "mae"
+      "linear_regression"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1082,13 +911,10 @@
     "definition": "ニューロンとは、ニューラルネットワークの中で情報を受け取り、計算して次へ渡す小さな部品。",
     "detail": "脳の神経細胞（ニューロン）をモデル化した、ニューラルネットワークの基本単位です。複数の入力値を受け取り、それぞれに重みを掛けて足し合わせ、バイアスを加えた後に活性化関数を通して出力します。多数のニューロンを層状に接続することでニューラルネットワークを構成します。G検定では「ニューロン＝入力×重み＋バイアス→活性化関数→出力」という処理の流れと、生物の神経細胞を模倣した点が問われます。",
     "relatedTermIds": [
-      "perceptron",
-      "activation_function",
       "neural_network",
-      "hidden_layer",
+      "activation_function",
       "dnn",
-      "relu",
-      "sigmoid_function"
+      "hidden_layer"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1103,10 +929,9 @@
     "definition": "パーセプトロンとは、入力を重みづけして足し合わせ、結果を出す基本的なニューラルネットワーク。",
     "detail": "1957年にフランク・ローゼンブラットが提案した最初のニューラルネットワークモデルです。入力に重みを掛けて足し合わせ、閾値を超えたら1、超えなければ0を出力するシンプルな2値分類器です。線形分離可能な問題しか解けないという限界があり、XOR問題を解けないことが指摘されてAI研究が停滞しました。G検定では「パーセプトロン＝最初のニューラルネットワーク」「線形分離可能な問題のみ対応・XOR問題を解けない限界」として出ます。",
     "relatedTermIds": [
-      "neuron",
-      "multilayer_perceptron",
+      "neural_network",
       "activation_function",
-      "xor_problem"
+      "neuron"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1121,13 +946,12 @@
     "definition": "多層パーセプトロンとは、パーセプトロンを複数の層に重ねたニューラルネットワーク。",
     "detail": "隠れ層を持つ多層のパーセプトロンで、単層パーセプトロンが解けなかったXOR問題や非線形問題を解決できます。誤差逆伝播法との組み合わせで学習が実現しました。現在のディープニューラルネットワーク（DNN）の原型です。G検定では「多層パーセプトロン＝隠れ層を持つ・非線形問題を解決」「単層パーセプトロンとの違い」として出ます。",
     "relatedTermIds": [
-      "perceptron",
       "dnn",
+      "neural_network",
+      "perceptron",
       "backpropagation",
-      "activation_function",
-      "fully_connected_layer",
       "hidden_layer",
-      "universal_approximation_theorem",
+      "activation_function",
       "xor_problem"
     ],
     "importance": 2,
@@ -1143,17 +967,12 @@
     "definition": "ディープニューラルネットワークとは、多くの層を持つニューラルネットワーク。",
     "detail": "Deep Neural Networkの略で、隠れ層を複数持つ多層ニューラルネットワークです。「ディープ」は層の深さを指し、浅い層でエッジや色などの単純な特徴を、深い層でより抽象的な概念を学習します。ディープラーニング＝DNNを使った機械学習です。G検定では「DNN＝多層ニューラルネットワーク」「層が深いほど抽象的な特徴を学習」として出ます。",
     "relatedTermIds": [
-      "multilayer_perceptron",
-      "vanishing_gradient",
-      "activation_function",
-      "autoencoder",
-      "batch_normalization",
-      "skip_connection",
       "neural_network",
-      "neuron",
+      "deep_learning",
+      "machine_learning_definition",
       "hidden_layer",
-      "relu",
-      "sigmoid_function"
+      "activation_function",
+      "neuron"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1168,17 +987,10 @@
     "definition": "活性化関数とは、ニューラルネットワークの各部品の出力を変換し、複雑な判断を可能にする関数。",
     "detail": "ニューラルネットワークの各ニューロンの出力に適用する非線形変換です。活性化関数がないと、何層積み重ねても全体が線形変換になってしまい、複雑なパターンを学習できません。非線形性を与えることで深層ネットワークの表現力を実現します。代表的な関数はシグモイド・tanh・ReLUです。G検定では「活性化関数の役割（非線形性の導入）」「代表的な種類とその特徴」が頻出です。",
     "relatedTermIds": [
-      "sigmoid_function",
-      "relu",
-      "tanh_function",
-      "neuron",
-      "perceptron",
-      "multilayer_perceptron",
-      "dnn",
-      "convolutional_layer",
-      "forward_pass",
-      "softmax",
       "neural_network",
+      "neuron",
+      "relu",
+      "dnn",
       "hidden_layer"
     ],
     "importance": 1,
@@ -1194,15 +1006,12 @@
     "definition": "シグモイド関数とは、入力を0から1の範囲に変換する活性化関数。",
     "detail": "入力値を0から1の範囲に変換するS字型の活性化関数です。出力が確率と解釈できるため、2値分類の出力層に使われます。ただし入力が大きい・小さい領域では勾配がほぼゼロになる「勾配消失問題」が起きやすいため、隠れ層では現在ReLUに置き換えられています。G検定では「シグモイド＝0〜1に変換・2値分類出力に使用・勾配消失の問題あり」として出ます。",
     "relatedTermIds": [
+      "vanishing_gradient",
       "activation_function",
       "relu",
-      "vanishing_gradient",
-      "logistic_regression",
-      "tanh_function",
-      "neural_network",
+      "hidden_layer",
       "dnn",
-      "neuron",
-      "hidden_layer"
+      "neuron"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1217,15 +1026,9 @@
     "definition": "ReLUとは、0以下を0にし、正の値はそのまま通す活性化関数。",
     "detail": "Rectified Linear Unitの略で、入力が0以下なら0、正なら入力をそのまま出力するシンプルな活性化関数です。計算が軽く、勾配消失問題を起きにくくするため、現在の深層学習で最もよく使われます。シグモイドやtanhは飽和領域で勾配がほぼゼロになり勾配消失が起きやすいのに対し、ReLUは正の領域で勾配が常に1です。G検定では「ReLU＝現在の主流の活性化関数」「勾配消失を起きにくくする理由（正領域で勾配=1）」が問われます。",
     "relatedTermIds": [
-      "activation_function",
-      "sigmoid_function",
       "vanishing_gradient",
-      "tanh_function",
-      "weight_initialization",
-      "he_initialization",
-      "neural_network",
+      "activation_function",
       "dnn",
-      "neuron",
       "hidden_layer"
     ],
     "importance": 1,
@@ -1241,9 +1044,10 @@
     "definition": "tanh関数とは、入力を-1から1の範囲に変換する活性化関数。",
     "detail": "入力値を-1から1の範囲に変換する活性化関数です。シグモイドと同じS字型ですが出力範囲が-1〜1で中心化されているため学習が安定しやすいです。ただし勾配消失問題はシグモイド同様に起きます。G検定では「tanh＝シグモイドの改良版・-1〜1の範囲・勾配消失は同様」として出ることがあります。",
     "relatedTermIds": [
+      "vanishing_gradient",
       "activation_function",
-      "sigmoid_function",
-      "relu"
+      "relu",
+      "sigmoid_function"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1258,25 +1062,12 @@
     "definition": "誤差逆伝播法とは、出力の間違いを後ろの層から前の層へ伝えて、重みを直す方法。",
     "detail": "誤差逆伝播法とも呼ばれ、ニューラルネットワークの学習で損失関数の勾配を出力層から入力層方向へ効率的に計算するアルゴリズムです。微分の連鎖律を利用して、各パラメータが損失にどれだけ影響しているかを計算します。この勾配を基に勾配降下法でパラメータを更新します。G検定では「誤差逆伝播法＝出力側から入力側へ誤差を伝播させて勾配を計算する手法」「連鎖律との関連」が頻出です。",
     "relatedTermIds": [
-      "gradient_descent",
-      "vanishing_gradient",
-      "loss_function",
       "neural_network",
-      "multilayer_perceptron",
-      "weight_initialization",
-      "forward_pass",
+      "gradient_descent",
+      "loss_function",
       "chain_rule",
-      "weight",
-      "sgd",
-      "adam",
-      "momentum",
-      "adagrad",
-      "rmsprop",
       "learning_rate",
-      "deep_learning",
-      "overfitting",
-      "dropout",
-      "batch_normalization"
+      "momentum"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1291,26 +1082,12 @@
     "definition": "勾配降下法とは、誤差が小さくなる方向へ、少しずつ数値を調整する方法。",
     "detail": "損失関数の勾配（傾き）の方向に反対向きに、少しずつパラメータを更新することで損失を最小化する最適化手法です。山を下りるように、最も急な下り坂の方向へ一歩ずつ進むイメージです。学習率が大きすぎると発散し、小さすぎると収束が遅くなります。G検定では「勾配降下法の仕組み（損失が減る方向へパラメータ更新）」「学習率の影響」「SGD・Adamとの関係」が問われます。",
     "relatedTermIds": [
-      "sgd",
-      "adam",
-      "backpropagation",
-      "loss_function",
-      "hyperparameter",
-      "batch_size",
-      "mini_batch",
       "optimization_algorithm",
-      "adagrad",
-      "batch_gradient_descent",
-      "gradient_explosion",
+      "adam",
+      "loss_function",
       "learning_rate",
-      "learning_rate_scheduling",
-      "momentum",
-      "rmsprop",
-      "normalization",
-      "standardization",
-      "weight",
-      "deep_learning",
-      "neural_network"
+      "backpropagation",
+      "gradient_explosion"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1326,18 +1103,8 @@
     "detail": "確率的勾配降下法（Stochastic Gradient Descent）の略で、全データの代わりにランダムに選んだ1件（または少数のミニバッチ）のデータで勾配を計算してパラメータを更新する手法です。全データ使用に比べて計算が速く、局所解から抜け出しやすいというメリットがあります。G検定では「SGD＝ランダムサンプリングで計算コストを削減した勾配降下法」として出ます。",
     "relatedTermIds": [
       "gradient_descent",
-      "adam",
-      "hyperparameter",
-      "batch_size",
       "mini_batch",
-      "optimization_algorithm",
-      "adagrad",
-      "batch_gradient_descent",
-      "momentum",
-      "online_learning",
-      "rmsprop",
       "backpropagation",
-      "loss_function",
       "learning_rate"
     ],
     "importance": 2,
@@ -1353,18 +1120,11 @@
     "definition": "Adamとは、学習の進み方を自動で調整しながら重みを更新する最適化手法。",
     "detail": "Adaptive Moment Estimationの略で、モメンタムと学習率の自動調整を組み合わせた最適化アルゴリズムです。各パラメータに対して適応的に学習率を調整するため、調整なしでも安定して学習できます。現在最もよく使われる最適化手法のひとつです。G検定では「Adam＝現在最もよく使われる最適化手法」「学習率を自動調整」として出ます。",
     "relatedTermIds": [
-      "sgd",
-      "gradient_descent",
-      "hyperparameter",
-      "batch_size",
-      "mini_batch",
       "optimization_algorithm",
-      "adagrad",
       "momentum",
-      "rmsprop",
+      "learning_rate",
       "backpropagation",
-      "loss_function",
-      "learning_rate"
+      "gradient_descent"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1379,18 +1139,13 @@
     "definition": "勾配消失問題とは、深いニューラルネットワークで学習に必要な信号が前の層まで届きにくくなる問題。",
     "detail": "深いネットワークで誤差逆伝播を行うとき、勾配が層を遡るにつれて指数的に小さくなり、入力層に近い層のパラメータがほとんど更新されなくなる問題です。シグモイドやtanhは飽和領域で微分がほぼゼロになるため特に起きやすいです。ReLUの導入・バッチ正規化・スキップ結合（ResNet）が主な対策です。G検定では「勾配消失問題の原因・症状・対策（ReLU・バッチ正規化・スキップ結合）」が頻出です。",
     "relatedTermIds": [
-      "backpropagation",
-      "relu",
-      "sigmoid_function",
-      "dnn",
-      "rnn",
-      "lstm",
       "batch_normalization",
-      "normalization_layer",
       "skip_connection",
-      "weight_initialization",
-      "gradient_explosion",
-      "gru"
+      "resnet",
+      "relu",
+      "normalization",
+      "backpropagation",
+      "dnn"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1405,17 +1160,14 @@
     "definition": "ハイパーパラメータとは、学習前に人が決めておく設定値のこと。",
     "detail": "ニューラルネットワークの学習時に人間が事前に設定するパラメータで、データから自動で学習されるモデルパラメータ（重み）とは区別されます。代表例として学習率・バッチサイズ・層数・ニューロン数・ドロップアウト率・エポック数などがあります。G検定では「ハイパーパラメータ＝人間が設定・データから学習されない」「モデルパラメータとの区別」が頻出です。",
     "relatedTermIds": [
-      "gradient_descent",
-      "sgd",
-      "cross_validation",
-      "adam",
-      "early_stopping",
+      "neural_network",
+      "dropout",
+      "batch_size",
+      "neuron",
       "epoch",
       "learning_rate",
-      "automl",
-      "weight",
-      "batch_size",
-      "mini_batch"
+      "gradient_descent",
+      "weight"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1430,18 +1182,11 @@
     "definition": "損失関数とは、AIの答えが正解からどれだけ外れているかを数値で表す関数。",
     "detail": "機械学習でモデルの予測と正解のずれ（誤差）を定量化する関数です。学習の目標はこの損失を最小化することで、勾配降下法で損失が減る方向にパラメータを更新します。回帰タスクにはMSE（平均二乗誤差）、分類タスクには交差エントロピーが代表的です。G検定では「損失関数の役割（誤差を数値化）」「タスクごとの代表的な損失関数」として出ます。",
     "relatedTermIds": [
-      "backpropagation",
-      "gradient_descent",
-      "mse",
-      "optimization_algorithm",
-      "forward_pass",
       "cross_entropy",
-      "weight",
-      "sgd",
-      "adam",
-      "momentum",
-      "adagrad",
-      "rmsprop",
+      "mse",
+      "gradient_descent",
+      "machine_learning_definition",
+      "backpropagation",
       "learning_rate"
     ],
     "importance": 2,
@@ -1457,26 +1202,13 @@
     "definition": "畳み込みニューラルネットワークとは、画像の特徴を段階的に見つけるのが得意なニューラルネットワーク。",
     "detail": "畳み込みニューラルネットワーク（Convolutional Neural Network）の略で、画像認識に特化した深層学習のアーキテクチャです。畳み込み層・プーリング層・全結合層から構成されます。フィルタ（カーネル）を画像全体でスライドさせて局所的な特徴を抽出し、重みを共有することでパラメータ数を削減します。浅い層ではエッジ・色などの単純な特徴を、深い層では物体・顔などの複雑な特徴を学習します。G検定では「CNN＝画像処理向け・畳み込み層＋プーリング層の構造・重み共有」が頻出です。",
     "relatedTermIds": [
-      "convolutional_layer",
+      "neural_network",
       "pooling_layer",
+      "convolutional_layer",
       "fully_connected_layer",
-      "deep_learning",
+      "image_recognition",
       "skip_connection",
-      "transfer_learning",
-      "data_augmentation",
-      "resnet",
-      "vgg",
-      "object_detection",
-      "stride",
-      "yolo",
-      "densenet",
-      "rcnn",
-      "imagenet",
-      "alexnet",
-      "efficientnet",
-      "googlenet",
-      "instance_segmentation",
-      "semantic_segmentation"
+      "transfer_learning"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1492,14 +1224,7 @@
     "detail": "CNNの主要な構成要素で、フィルタ（カーネル）と呼ばれる小さな行列を入力データ上をスライドさせながら積和演算（畳み込み）を行い、特徴マップを生成する層です。同一フィルタを画像全体に適用することで「重み共有」が実現し、パラメータ数を大幅に削減できます。エッジ検出・テクスチャ抽出などの特徴抽出を自動で学習します。G検定では「畳み込み層の役割（特徴抽出）」「重み共有でパラメータ削減」として出ます。",
     "relatedTermIds": [
       "cnn",
-      "pooling_layer",
-      "activation_function",
-      "stride",
-      "fully_connected_layer",
-      "image_recognition",
-      "alexnet",
-      "resnet",
-      "vgg"
+      "pooling_layer"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1514,14 +1239,9 @@
     "definition": "プーリング層とは、情報を小さくまとめ、重要な特徴を残す層。",
     "detail": "CNNで特徴マップの空間サイズを縮小する層です。代表的なのが最大値プーリング（Max Pooling）で、小領域の最大値を取り出します。主な目的は（1）計算量の削減、（2）位置の小さなずれへの頑健性（平行移動不変性）の獲得です。G検定では「プーリング層の目的（次元削減・位置不変性）」「最大値プーリングが代表的」として出ます。",
     "relatedTermIds": [
+      "dimensionality_reduction",
       "cnn",
-      "convolutional_layer",
-      "fully_connected_layer",
-      "stride",
-      "image_recognition",
-      "alexnet",
-      "resnet",
-      "vgg"
+      "convolutional_layer"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1536,15 +1256,10 @@
     "definition": "全結合層とは、前の層の情報をまとめて、最終的な判断に近づける層。",
     "detail": "前の層の全ニューロンと次の層の全ニューロンが結合している層です。CNNなどの特徴抽出層の後に置き、最終的な分類や回帰出力を行うことが多いです。パラメータ数が多く計算コストが高いため、CNNでは空間的な処理を畳み込み層に任せて全結合層は最後に使います。G検定では「全結合層の役割と特徴（全ニューロン結合・最終分類層）」として出ます。",
     "relatedTermIds": [
-      "cnn",
-      "dropout",
-      "multilayer_perceptron",
-      "pooling_layer",
+      "neuron",
       "convolutional_layer",
-      "image_recognition",
-      "alexnet",
-      "resnet",
-      "vgg"
+      "cnn",
+      "dropout"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1559,14 +1274,9 @@
     "definition": "リカレントニューラルネットワークとは、文章や時系列のように順番が重要なデータを扱う仕組み。",
     "detail": "リカレントニューラルネットワーク（Recurrent Neural Network）の略で、前の時刻の出力を次の時刻の入力に加える再帰構造を持ち、系列データ（文章・音声・時系列）を扱うことに特化した深層学習のアーキテクチャです。過去の情報を「隠れ状態」として保持しながら処理します。ただし長い系列では勾配消失が起きやすく、遠い過去を覚えにくいという限界があります。G検定では「RNN＝系列データ向け・隠れ状態で過去情報を保持・勾配消失の問題あり」が問われます。",
     "relatedTermIds": [
-      "lstm",
-      "gru",
-      "vanishing_gradient",
+      "neural_network",
       "attention_mechanism",
-      "gradient_explosion",
-      "speech_recognition",
-      "speech_synthesis",
-      "seq2seq"
+      "lstm"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1581,13 +1291,10 @@
     "definition": "LSTMとは、RNNが長い情報を覚えにくい問題を補うための仕組み。",
     "detail": "Long Short-Term Memoryの略で、RNNの勾配消失問題を解決するために設計されたアーキテクチャです。「入力ゲート」「忘却ゲート」「出力ゲート」の3つのゲート機構と「セル状態」を持ち、長期的な依存関係を学習できます。忘却ゲートで不要な情報を消去し、入力ゲートで新しい情報を選択的に取り込みます。G検定では「LSTM＝RNNの勾配消失問題の解決・ゲート機構（入力・忘却・出力）」が頻出です。GRUと比較されることも多いです。",
     "relatedTermIds": [
-      "rnn",
-      "gru",
       "vanishing_gradient",
-      "transformer",
+      "gru",
       "attention_mechanism",
-      "gradient_explosion",
-      "seq2seq"
+      "rnn"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1602,12 +1309,9 @@
     "definition": "GRUとは、LSTMを少し簡略化した、時系列データを扱うニューラルネットワーク。",
     "detail": "Gated Recurrent Unitの略で、LSTMを簡略化した再帰型ネットワークです。「更新ゲート」と「リセットゲート」の2つのゲートで過去情報の保持と更新を制御します。LSTMより少ないパラメータで同等の性能が出ることが多く、計算が軽いです。G検定では「GRU＝LSTMの簡略版・2つのゲート・パラメータ少なく計算が軽い」として出ます。",
     "relatedTermIds": [
-      "rnn",
       "lstm",
       "attention_mechanism",
-      "seq2seq",
-      "vanishing_gradient",
-      "gradient_explosion"
+      "rnn"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1622,19 +1326,9 @@
     "definition": "Attention機構とは、たくさんの情報の中から重要な部分に注目する仕組み。",
     "detail": "系列データを処理する際に「どの部分に注目するか」を動的に重み付けする仕組みです。翻訳タスクで「出力の各単語生成時に入力のどの単語を参照するか」を学習するために提案されました。Transformerの自己注意機構（Self-Attention）はAttentionを全ての要素間で適用したものです。G検定では「Attention＝入力の重要な部分に動的に注目する機構」「Transformerの基礎」として出ます。",
     "relatedTermIds": [
-      "self_attention",
       "transformer",
-      "rnn",
-      "lstm",
-      "gru",
-      "decoder",
-      "seq2seq",
       "encoder_decoder",
-      "positional_encoding",
-      "bert",
-      "gpt",
-      "llm",
-      "masked_language_model"
+      "lstm"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1649,14 +1343,10 @@
     "definition": "セルフアテンションとは、文章内の単語同士の関係を見ながら意味を捉える仕組み。",
     "detail": "系列内のすべての要素ペア間の関連度を並列に計算するAttentionで、Transformerの中心的な仕組みです。Query・Key・Valueの3つの行列を使って各要素間の注意度（重み）を計算します。RNNと異なり全要素を並列処理できるためGPUとの相性が良く、長距離依存関係も捉えやすいです。G検定では「セルフアテンション＝Transformerの核心・並列処理可能・長距離依存の学習」として出ます。",
     "relatedTermIds": [
-      "attention_mechanism",
       "transformer",
-      "bert",
-      "gpt",
-      "encoder_decoder",
-      "masked_language_model",
-      "positional_encoding",
-      "llm"
+      "gpu",
+      "attention_mechanism",
+      "encoder_decoder"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1671,25 +1361,13 @@
     "definition": "Transformerとは、セルフアテンションを中心にした、現在の言語AIの基礎となるモデル構造。",
     "detail": "「Attention Is All You Need」（2017年）で提案された、Self-Attentionを中心とした深層学習アーキテクチャです。RNNを使わずすべての位置間の関係を並列計算するため、GPUで高速に学習でき、長い文脈を捉えやすいです。エンコーダ（入力理解）とデコーダ（生成）から構成され、BERTはエンコーダのみ、GPTはデコーダのみを使います。現代のLLM（大規模言語モデル）の基盤技術です。G検定では「Transformer＝2017年登場・Self-Attention・RNN不使用・LLMの基盤」が頻出です。",
     "relatedTermIds": [
-      "self_attention",
-      "attention_mechanism",
-      "bert",
-      "gpt",
       "llm",
-      "lstm",
-      "normalization_layer",
-      "transformer_application",
-      "scaling_law",
+      "bert",
       "decoder",
-      "speech_recognition",
-      "t5",
-      "vit",
-      "encoder_decoder",
-      "foundation_model",
-      "masked_language_model",
-      "positional_encoding",
-      "token",
-      "embedding"
+      "gpu",
+      "gpt",
+      "attention_mechanism",
+      "encoder_decoder"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1704,12 +1382,14 @@
     "definition": "オートエンコーダとは、入力を一度小さく圧縮し、元に戻すことで特徴を学ぶモデル。",
     "detail": "入力データを一度低次元の潜在表現（ボトルネック層）に圧縮（エンコード）し、元の入力を再構成（デコード）するニューラルネットワークです。圧縮された潜在表現が特徴抽出や次元削減に使えます。ノイズ除去・異常検知・生成モデル（VAEの基礎）などに応用されます。G検定では「オートエンコーダ＝教師なし学習による特徴抽出・次元削減」として出ます。",
     "relatedTermIds": [
+      "neural_network",
+      "unsupervised_learning",
+      "generative_model",
+      "anomaly_detection",
+      "dimensionality_reduction",
       "vae",
       "dropout",
-      "dnn",
-      "decoder",
-      "anomaly_detection",
-      "feature_learning"
+      "decoder"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1724,26 +1404,11 @@
     "definition": "ドロップアウトとは、学習中に一部のつながりをあえて使わず、過学習を防ぐ方法。",
     "detail": "学習中にランダムにニューロンを一定割合（ドロップアウト率）で無効化する正則化手法です。特定のニューロンへの過度な依存を防ぎ、過学習を抑制します。推論時は全ニューロンを使用（出力をドロップアウト率でスケール調整）します。G検定では「ドロップアウト＝過学習抑制の正則化手法・学習中のみランダム無効化」として出ます。",
     "relatedTermIds": [
+      "neuron",
       "overfitting",
       "regularization",
       "batch_normalization",
-      "fully_connected_layer",
-      "autoencoder",
-      "l2_regularization",
-      "underfitting",
-      "l1_regularization",
-      "cross_validation",
-      "early_stopping",
-      "data_augmentation",
-      "holdout_method",
-      "skip_connection",
-      "weight_initialization",
-      "he_initialization",
-      "xavier_initialization",
-      "deep_learning",
-      "neural_network",
-      "backpropagation",
-      "gradient_descent"
+      "skip_connection"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1758,21 +1423,13 @@
     "definition": "バッチ正規化とは、学習中の数値のばらつきを整え、学習を安定させる方法。",
     "detail": "ミニバッチ内のデータを使って各層の入力を正規化（平均0・分散1にスケール調整）する手法です。学習を安定化・高速化し、適切な学習率の範囲を広げます。また正則化効果もあり過学習を抑制します。現代のネットワークでは標準的に使われます。G検定では「バッチ正規化＝学習の安定化・高速化・過学習抑制」として出ます。",
     "relatedTermIds": [
-      "normalization_layer",
-      "dropout",
-      "vanishing_gradient",
-      "dnn",
+      "mini_batch",
+      "overfitting",
+      "regularization",
+      "learning_rate",
       "normalization",
-      "standardization",
-      "skip_connection",
-      "weight_initialization",
-      "he_initialization",
-      "xavier_initialization",
-      "deep_learning",
-      "neural_network",
-      "backpropagation",
-      "gradient_descent",
-      "overfitting"
+      "dropout",
+      "skip_connection"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1787,8 +1444,10 @@
     "definition": "正規化層とは、ニューラルネットワーク内の数値の大きさを整える層。",
     "detail": "ネットワーク内の特定の層で中間表現を正規化する機構の総称です。バッチ正規化（ミニバッチ単位で正規化）・レイヤー正規化（1サンプル内で正規化・Transformerに使用）・グループ正規化などがあります。G検定では「正規化層＝学習安定化の手法」「バッチ正規化が代表例」として出ます。",
     "relatedTermIds": [
-      "batch_normalization",
       "transformer",
+      "batch_normalization",
+      "mini_batch",
+      "normalization",
       "vanishing_gradient"
     ],
     "importance": 2,
@@ -1805,15 +1464,8 @@
     "detail": "ある層の入力を、いくつかの層を飛び越えて後段の層に直接加算する接続です。ResNetで提案されました。これにより（1）勾配が消失せず深い層まで伝わりやすくなる、（2）恒等写像を学習しやすくなる、という効果があります。100層以上の非常に深いネットワークの学習を可能にしました。G検定では「スキップ結合（残差結合）＝勾配消失対策・ResNetで使用」として出ます。",
     "relatedTermIds": [
       "resnet",
-      "vanishing_gradient",
-      "cnn",
-      "dnn",
-      "densenet",
       "batch_normalization",
-      "dropout",
-      "weight_initialization",
-      "he_initialization",
-      "xavier_initialization"
+      "cnn"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1829,25 +1481,8 @@
     "detail": "あるドメイン・タスクで学習済みのモデルを別のタスクに転用する手法です。大規模データで学習した「表現」を流用することで、少ないデータ・短い学習時間で高精度なモデルを構築できます。事前学習済みのモデルを固定して出力層だけを再学習する方法と、全体を微調整するファインチューニングがあります。G検定では「転移学習＝学習済みモデルを別タスクに転用・少データで高精度」として出ます。",
     "relatedTermIds": [
       "fine_tuning",
-      "bert",
-      "gpt",
       "cnn",
-      "data_augmentation",
-      "lora",
-      "resnet",
-      "vgg",
-      "peft",
-      "imagenet",
-      "feature_learning",
-      "contrastive_learning",
-      "few_shot_learning",
-      "t5",
-      "vit",
-      "foundation_model",
-      "image_recognition",
-      "rag",
-      "rlhf",
-      "scaling_law"
+      "data_augmentation"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -1862,18 +1497,11 @@
     "definition": "ファインチューニングとは、既存モデルを新しい目的に合わせて追加で調整すること。",
     "detail": "転移学習の一手法で、事前学習済みモデルのパラメータを起点として、新しいタスクのデータで再学習（パラメータを更新）します。全層を更新する場合と、後半の層だけ更新する場合があります。LLMのChatGPTはGPTをRLHFでファインチューニングした例です。G検定では「ファインチューニング＝事前学習済みモデルをタスク用データで再調整」「転移学習との関係」として出ます。",
     "relatedTermIds": [
+      "chatgpt",
       "transfer_learning",
-      "lora",
-      "bert",
-      "gpt",
       "rlhf",
-      "peft",
-      "foundation_model",
-      "rag",
-      "scaling_law",
-      "hallucination",
-      "in_context_learning",
-      "prompt_engineering",
+      "gpt",
+      "bert",
       "few_shot_learning"
     ],
     "importance": 1,
@@ -1891,23 +1519,7 @@
     "relatedTermIds": [
       "overfitting",
       "cnn",
-      "transfer_learning",
-      "annotation",
-      "oversampling",
-      "contrastive_learning",
-      "underfitting",
-      "regularization",
-      "l1_regularization",
-      "l2_regularization",
-      "dropout",
-      "cross_validation",
-      "early_stopping",
-      "holdout_method",
-      "preprocessing",
-      "normalization",
-      "standardization",
-      "missing_value",
-      "feature_engineering"
+      "dropout"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1922,17 +1534,11 @@
     "definition": "早期打ち切りとは、過学習が進む前に学習を止める方法。",
     "detail": "訓練中に検証データでの損失を監視し、損失が増加し始めたら（過学習の兆候）学習を止める手法です。最適な学習エポック数を自動で決定する正則化効果があります。G検定では「早期終了＝過学習を防ぐ正則化手法」として出ます。",
     "relatedTermIds": [
-      "overfitting",
-      "hyperparameter",
-      "cross_validation",
       "epoch",
-      "underfitting",
+      "overfitting",
       "regularization",
-      "l1_regularization",
-      "l2_regularization",
       "dropout",
-      "data_augmentation",
-      "holdout_method"
+      "data_augmentation"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -1947,10 +1553,10 @@
     "definition": "モデル圧縮とは、AIモデルを軽くして、動かしやすくする技術。",
     "detail": "精度をなるべく保ちながらモデルを小さく・軽くする技術の総称です。エッジデバイスやスマートフォンでのAI動作に重要です。代表手法：枝刈り（不要な重みを削除）・量子化（精度を下げてビット数削減）・蒸留（大きなモデルの知識を小さなモデルに転送）。G検定では「モデル圧縮の目的（エッジAI実装）と代表手法（枝刈り・量子化・蒸留）」として出ます。",
     "relatedTermIds": [
+      "edge_ai",
       "pruning",
       "quantization",
       "knowledge_distillation",
-      "edge_ai",
       "model_lightweighting"
     ],
     "importance": 2,
@@ -1966,11 +1572,11 @@
     "definition": "枝刈りとは、ニューラルネットワークの不要なつながりを削って軽くする方法。",
     "detail": "学習済みニューラルネットワークの中で貢献度の低い重みや接続を削除（枝刈り）し、モデルをスリムにする圧縮手法です。推論速度の向上・メモリ削減・エッジデバイスへの展開に役立ちます。G検定では「枝刈り＝不要な重みを削除するモデル圧縮手法」として量子化・蒸留とセットで出ます。",
     "relatedTermIds": [
+      "neural_network",
       "model_compression",
       "quantization",
-      "knowledge_distillation",
       "edge_ai",
-      "model_lightweighting"
+      "knowledge_distillation"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -1985,11 +1591,8 @@
     "definition": "量子化とは、モデル内の数値を粗く表して、計算量や容量を減らす方法。",
     "detail": "32ビット浮動小数点数で表現される重みを、8ビット整数などより低精度の表現に変換してモデルを軽量化する手法です。モデルサイズの削減と推論速度向上が主な目的です。精度の低下がわずかであれば実用的な圧縮手法です。G検定では「量子化＝数値精度を下げてモデルを軽量化」として出ます。",
     "relatedTermIds": [
-      "model_compression",
-      "pruning",
       "edge_ai",
-      "knowledge_distillation",
-      "model_lightweighting"
+      "knowledge_distillation"
     ],
     "importance": 3,
     "source_ref_supplements": [
@@ -2005,10 +1608,8 @@
     "detail": "大きく性能の高い「教師モデル（ティーチャー）」の出力分布・知識を小さな「生徒モデル（スチューデント）」に移す学習法です。生徒モデルは教師モデルの「ソフトラベル（確率分布）」を正解として学習するため、ハードラベル（正解のみ）より豊富な情報を得られます。G検定では「蒸留＝教師モデルの知識を小さなモデルに圧縮転送」「モデル圧縮の手法」として出ます。",
     "relatedTermIds": [
       "model_compression",
-      "pruning",
-      "quantization",
-      "model_lightweighting",
-      "edge_ai"
+      "edge_ai",
+      "pruning"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2023,12 +1624,12 @@
     "definition": "エッジAIとは、クラウドではなくスマホや機器側で動くAI。",
     "detail": "AIの処理をクラウドサーバーではなく、スマートフォン・センサー・カメラなどのエッジデバイス（末端機器）で直接行うアーキテクチャです。レイテンシ（応答時間）の削減・通信コスト削減・プライバシー保護のメリットがあります。モデル圧縮技術（量子化・枝刈りなど）との組み合わせが重要です。G検定では「エッジAI＝端末上での推論・低遅延・プライバシー保護」として出ます。",
     "relatedTermIds": [
+      "privacy",
       "model_compression",
-      "quantization",
       "pruning",
-      "model_lightweighting",
-      "autonomous_driving",
-      "knowledge_distillation"
+      "quantization",
+      "knowledge_distillation",
+      "autonomous_driving"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2044,12 +1645,10 @@
     "detail": "変分オートエンコーダ（Variational Autoencoder）の略で、入力データをガウス分布の潜在変数に変換し、そこからサンプリングしてデータを生成する生成モデルです。潜在空間が連続的で滑らかなため、潜在変数を補間することで新しいデータを生成できます。GANと並ぶ代表的な生成モデルです。G検定では「VAE＝確率的な潜在空間を持つ生成モデル」「GANとの対比」として出ます。",
     "relatedTermIds": [
       "autoencoder",
+      "generative_model",
       "gan",
       "diffusion_model",
-      "generative_model",
-      "stable_diffusion",
-      "generative_ai",
-      "chatgpt"
+      "generative_ai"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2064,26 +1663,13 @@
     "definition": "大規模言語モデルとは、数十億〜数千億規模のパラメータを持つTransformerベースの言語モデルで、膨大なテキストデータから自然言語の幅広い能力を獲得したAI。",
     "detail": "大規模言語モデル（Large Language Model）の略で、膨大なテキストデータで事前学習された巨大なTransformerベースのモデルです。数百億〜数千億のパラメータを持ち、文章生成・翻訳・要約・質問応答・コード生成など多様なタスクをこなせます。GPT・BERT・LLaMAなどが代表例です。G検定では「LLM＝大規模Transformerで多様なNLPタスクに対応」「基盤モデルとの関係」「スケーリング則（大きくなるほど性能向上）」として出ます。",
     "relatedTermIds": [
-      "gpt",
-      "bert",
       "transformer",
       "scaling_law",
-      "rag",
-      "lora",
-      "rlhf",
-      "multimodal",
-      "in_context_learning",
-      "prompt_engineering",
-      "hallucination",
-      "generative_model",
-      "peft",
-      "chatbot",
-      "chatgpt",
-      "generative_ai",
-      "chain_of_thought",
+      "foundation_model",
+      "bert",
+      "gpt",
       "few_shot_learning",
-      "token",
-      "embedding"
+      "generative_ai"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2099,25 +1685,15 @@
     "detail": "Generative Pre-trained Transformerの略で、OpenAIが開発したデコーダ型Transformerの大規模言語モデルです。「次のトークンを予測する」自己回帰型の事前学習をした後、RLHFでファインチューニングすることでChatGPTになります。文章生成・対話・コード生成に優れます。G検定では「GPT＝デコーダ型・自己回帰的文章生成・RLHFでChatGPTに」「BERTとの対比（エンコーダ型vs デコーダ型）」が頻出です。",
     "relatedTermIds": [
       "transformer",
+      "fine_tuning",
       "llm",
+      "chatgpt",
       "bert",
       "rlhf",
-      "in_context_learning",
-      "self_attention",
-      "transfer_learning",
-      "fine_tuning",
-      "transformer_application",
-      "rag",
-      "scaling_law",
-      "generative_model",
-      "chatgpt",
-      "generative_ai",
-      "t5",
-      "foundation_model",
-      "masked_language_model",
-      "positional_encoding",
+      "decoder",
       "token",
-      "attention_mechanism"
+      "generative_ai",
+      "rag"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2133,20 +1709,10 @@
     "detail": "Bidirectional Encoder Representations from Transformersの略で、Googleが開発したエンコーダ型Transformerモデルです。文章の穴埋め（マスク言語モデル）と隣接文章予測で事前学習し、双方向の文脈を理解します。文書分類・固有表現抽出・質問応答・検索に強みがあります。G検定では「BERT＝エンコーダ型・双方向文脈理解・文書分類に強い」「GPTとの対比（理解vsGPTの生成）」が頻出です。",
     "relatedTermIds": [
       "transformer",
+      "masked_language_model",
       "gpt",
       "llm",
-      "transfer_learning",
-      "self_attention",
-      "fine_tuning",
-      "transformer_application",
-      "t5",
-      "encoder_decoder",
-      "foundation_model",
-      "masked_language_model",
-      "positional_encoding",
-      "token",
-      "embedding",
-      "attention_mechanism"
+      "t5"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2163,9 +1729,11 @@
     "relatedTermIds": [
       "transformer",
       "multimodal",
+      "nlp_definition",
+      "reinforcement_learning",
+      "vit",
       "bert",
-      "gpt",
-      "nerf"
+      "gpt"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2180,14 +1748,10 @@
     "definition": "拡散モデルとは、データにノイズを段階的に加える前向き過程と、ノイズから元データを段階的に復元する逆過程を学習する深層生成モデル。",
     "detail": "拡散モデルとも呼ばれ、データに段階的にノイズを加える「拡散過程」と、ノイズから元データを復元する「逆拡散過程」を学習する生成モデルです。Stable Diffusion・DALL-Eなどの画像生成AIに使われ、GANより安定して高品質な生成が可能です。G検定では「拡散モデル＝ノイズを徐々に除去して生成・高品質・GANより安定」として出ます。",
     "relatedTermIds": [
-      "gan",
-      "vae",
-      "multimodal",
-      "nerf",
-      "deepfake",
-      "generative_model",
-      "generative_ai",
       "stable_diffusion",
+      "generative_model",
+      "gan",
+      "generative_ai",
       "chatgpt"
     ],
     "importance": 1,
@@ -2203,14 +1767,9 @@
     "definition": "GANとは、生成器（Generator）と識別器（Discriminator）が互いに競い合うことで、本物に近い高品質なデータを生成できる深層生成モデル。",
     "detail": "Generative Adversarial Networkの略で、データを生成する「ジェネレータ」と本物か偽物かを識別する「ディスクリミネータ」が競い合いながら学習する生成モデルです。高品質な画像生成で注目されましたが、学習が不安定で「モード崩壊（同じような画像ばかり生成する）」という問題があります。G検定では「GAN＝敵対的学習・ジェネレータとディスクリミネータ・モード崩壊の問題」として出ます。",
     "relatedTermIds": [
-      "vae",
-      "diffusion_model",
-      "deep_learning",
-      "deepfake",
       "generative_model",
-      "generative_ai",
-      "stable_diffusion",
-      "chatgpt"
+      "diffusion_model",
+      "generative_ai"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2225,6 +1784,7 @@
     "definition": "NeRFとは、複数の視点画像からニューラルネットワークが3Dシーンの放射輝度場を学習し、任意の視点からの画像を合成する手法。",
     "detail": "Neural Radiance Fieldの略で、2D画像の集合から3Dシーンを暗黙的にニューラルネットワークで表現し、新しい視点からの画像を合成する技術です。3D再構成・バーチャルビュー合成に使われます。G検定での出題頻度は低いですが、3D表現のAI活用として知っておきましょう。",
     "relatedTermIds": [
+      "neural_network",
       "diffusion_model",
       "transformer_application"
     ],
@@ -2241,19 +1801,9 @@
     "definition": "RAGとは、回答生成時に外部知識ベースから関連文書を検索して参照することで、LLMのハルシネーションを抑制し最新情報への対応を実現する技術。",
     "detail": "Retrieval-Augmented Generationの略で、LLMが回答を生成する際に外部の知識ベースから関連文書を検索して文脈に加える手法です。LLMが学習していない最新情報や社内文書にも対応でき、ハルシネーション（事実と異なる回答）を抑制できます。G検定では「RAG＝外部検索で知識を補完しハルシネーション抑制」「LLMの実用化技術」として出ます。",
     "relatedTermIds": [
-      "llm",
-      "gpt",
-      "prompt_engineering",
       "hallucination",
-      "lora",
-      "rlhf",
-      "fine_tuning",
-      "transfer_learning",
-      "peft",
-      "scaling_law",
-      "in_context_learning",
-      "foundation_model",
-      "few_shot_learning"
+      "few_shot_learning",
+      "gpt"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2269,17 +1819,8 @@
     "detail": "Low-Rank Adaptationの略で、事前学習済みLLMの重みを固定したまま、低ランクの追加行列のみを学習することで効率的にファインチューニングする手法です。学習するパラメータ数を大幅に削減でき（フルファインチューニングの0.1%程度）、個人・中小規模でのLLMカスタマイズを現実的にしました。G検定では「LoRA＝元モデル固定・低ランク行列のみ学習・効率的なファインチューニング」として出ます。",
     "relatedTermIds": [
       "fine_tuning",
-      "llm",
-      "transfer_learning",
-      "peft",
-      "rag",
-      "rlhf",
-      "scaling_law",
-      "hallucination",
-      "in_context_learning",
-      "prompt_engineering",
-      "foundation_model",
-      "few_shot_learning"
+      "few_shot_learning",
+      "hallucination"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2298,21 +1839,11 @@
     "definition": "RLHFとは、人間の評価者がAIの出力を採点した報酬モデルを用いて強化学習することで、LLMを人間の意図や価値観に合わせて調整する手法。",
     "detail": "Reinforcement Learning from Human Feedbackの略で、人間の好みに合った出力を生成するようLLMを強化学習で調整する手法です。人間が2つの回答を比較して好ましい方を選ぶことで「報酬モデル」を学習し、それを使ってLLMを強化学習で最適化します。ChatGPTの開発に使われました。G検定では「RLHF＝人間のフィードバックで強化学習・ChatGPTに使用」「GPTとChatGPTの違いの文脈」として出ます。",
     "relatedTermIds": [
-      "llm",
-      "gpt",
-      "reinforcement_learning",
-      "fine_tuning",
       "chatgpt",
-      "rag",
-      "lora",
-      "transfer_learning",
-      "peft",
-      "scaling_law",
-      "hallucination",
-      "in_context_learning",
-      "prompt_engineering",
-      "foundation_model",
-      "few_shot_learning"
+      "reinforcement_learning",
+      "gpt",
+      "few_shot_learning",
+      "hallucination"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2327,21 +1858,8 @@
     "definition": "スケーリング則とは、モデルのパラメータ数・学習データ量・計算量を増やすほど、LLMの性能が予測可能な冪乗則に従って向上するという経験的な法則。",
     "detail": "モデルのパラメータ数・学習データ量・計算量を増やすほど、予測可能な比率でモデルの性能が向上するという経験則です。OpenAIが2020年に発表し、「とにかく大きくすれば良くなる」というLLMの大規模化を推進する理論的根拠となりました。G検定では「スケーリング則＝パラメータ数・データ・計算量の増加で性能が予測可能に向上」として出ます。",
     "relatedTermIds": [
-      "llm",
-      "gpt",
-      "transformer",
-      "efficientnet",
-      "rag",
-      "lora",
-      "rlhf",
-      "fine_tuning",
-      "transfer_learning",
-      "peft",
-      "hallucination",
-      "in_context_learning",
-      "prompt_engineering",
-      "foundation_model",
-      "few_shot_learning"
+      "few_shot_learning",
+      "gpt"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2356,10 +1874,10 @@
     "definition": "マルチモーダルとは、テキスト・画像・音声・動画など複数種類のデータを統合して処理・理解・生成するAIのアーキテクチャや手法の総称。",
     "detail": "テキスト・画像・音声・動画など複数の種類のデータ（モダリティ）を組み合わせて処理・生成するAIです。GPT-4V（テキスト＋画像入力）・CLIP（テキストと画像の対応学習）・Geminiなどが代表例です。G検定では「マルチモーダル＝複数のデータ種を統合処理するAI」として出ます。",
     "relatedTermIds": [
-      "llm",
-      "transformer_application",
+      "clip_model",
+      "gpt",
       "diffusion_model",
-      "clip_model"
+      "llm"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2374,19 +1892,9 @@
     "definition": "In-Context Learningとは、LLMのプロンプト内にタスクの例示（デモンストレーション）を含めるだけで、モデルの再学習なしに新しいタスクを遂行させる能力。",
     "detail": "プロンプトに少数の例示（Few-shot examples）を含めるだけで、LLMがタスクに対応できる能力です。追加学習なしにプロンプトだけでモデルを誘導します。例示が0件のZero-shot、少数のFew-shot、多数のMany-shotがあります。G検定では「In-Context Learning＝プロンプトに例示を含めて誘導・追加学習不要」「Few-shot学習の実現形態」として出ます。",
     "relatedTermIds": [
-      "gpt",
-      "llm",
-      "prompt_engineering",
       "few_shot_learning",
-      "rag",
-      "lora",
-      "rlhf",
-      "fine_tuning",
-      "transfer_learning",
-      "peft",
-      "scaling_law",
-      "hallucination",
-      "foundation_model"
+      "gpt",
+      "hallucination"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2401,20 +1909,9 @@
     "definition": "プロンプトエンジニアリングとは、LLMから望ましい出力を引き出すために、入力文（プロンプト）の内容・構造・例示を設計・最適化する技術。",
     "detail": "LLMに望ましい出力を得るためのプロンプト（入力文）の設計・最適化技術です。Zero-shotプロンプト・Few-shotプロンプト・Chain-of-Thought（思考過程を促す）・Role-playing（役割指定）などの技法があります。G検定では「プロンプトエンジニアリング＝LLMへの指示設計」「Chain-of-Thoughtとの関連」として出ます。",
     "relatedTermIds": [
-      "llm",
-      "in_context_learning",
-      "rag",
-      "hallucination",
-      "chatgpt",
-      "chain_of_thought",
       "few_shot_learning",
-      "lora",
-      "rlhf",
-      "fine_tuning",
-      "transfer_learning",
-      "peft",
-      "scaling_law",
-      "foundation_model"
+      "hallucination",
+      "llm"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2430,18 +1927,8 @@
     "detail": "Residual Networkの略で、スキップ結合（残差結合）を導入したCNNアーキテクチャです。2015年のILSVRCで優勝し、152層という非常に深いネットワークの学習を可能にしました。スキップ結合により勾配消失を解消し、深くするほど精度が向上します。G検定では「ResNet＝スキップ結合（残差結合）で深層ネットワークを実現・ILSVRC2015優勝」として出ます。",
     "relatedTermIds": [
       "skip_connection",
-      "cnn",
-      "transfer_learning",
-      "vgg",
-      "object_detection",
-      "yolo",
-      "densenet",
       "alexnet",
-      "googlenet",
-      "convolutional_layer",
-      "pooling_layer",
-      "fully_connected_layer",
-      "image_recognition"
+      "googlenet"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2456,17 +1943,8 @@
     "definition": "PoCとは、本格的な開発・投資の前に、収集したデータで期待する精度が出るか、ビジネス上の価値があるかをプロトタイプで検証するフェーズ。",
     "detail": "Proof of Conceptの略で、AIプロジェクトを本格開発する前に「技術的に実現可能か」「データで目標精度が出るか」「ビジネス価値があるか」を小規模に検証する試作フェーズです。PoC成功≠本番導入ではなく、その後の業務統合・運用設計・セキュリティ対応が別途必要です。多くの企業が「PoC止まり」に陥る課題があります。G検定では「PoC＝本番前の仮説検証フェーズ」「PoC成功後に本番化の壁（データパイプライン・監視・組織変革）がある」として出ます。",
     "relatedTermIds": [
-      "mlops",
-      "ai_project_lifecycle",
       "data_leakage",
-      "health_monitoring",
-      "ai_utilization_levels",
-      "ab_test",
-      "crisp_dm",
-      "kpi",
-      "model_drift",
-      "data_drift",
-      "concept_drift"
+      "kpi"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2481,25 +1959,10 @@
     "definition": "MLOpsとは、機械学習モデルの開発・テスト・デプロイ・モニタリングを自動化・効率化し、継続的にモデルを改善・運用する体制・文化・ツール群の総称。",
     "detail": "Machine Learning Operationsの略で、機械学習システムを継続的に開発・デプロイ・監視・改善するための仕組み・プロセス・ツールの総称です。ソフトウェア開発のDevOpsをAIに適用したものです。コード・データ・モデルのバージョン管理、CI/CD（継続的インテグレーション/デプロイ）、本番モデルの性能監視、再学習の自動化などを含みます。G検定では「MLOps＝機械学習の継続的な開発・運用・監視の仕組み」「モデルドリフト検知・再学習との関連」として出ます。",
     "relatedTermIds": [
+      "machine_learning_definition",
       "model_drift",
-      "health_monitoring",
-      "poc",
-      "data_leakage",
-      "ai_project_lifecycle",
-      "ai_utilization_levels",
-      "data_augmentation_ops",
-      "model_lightweighting",
-      "federated_learning",
-      "annotation",
-      "data_quality",
-      "model_registry",
-      "data_drift",
-      "concept_drift",
-      "ab_test",
       "automl",
-      "crisp_dm",
-      "kpi",
-      "no_code_ai"
+      "data_leakage"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2514,16 +1977,8 @@
     "definition": "データリーケージとは、本来学習時に使用すべきでない情報（予測時には得られない将来情報など）が訓練・検証データに混入し、実際の本番精度と評価精度が乖離する問題。",
     "detail": "学習・評価データに「本番では使えない情報（未来のデータや目的変数に直結する変数）」が混入し、評価指標が実際より良く見える問題です。たとえば「将来の売上を予測するモデル」に「受注確定フラグ（売上が分かった後にしか存在しない変数）」を入れると評価では高精度に見えますが本番では使えません。時系列データでは「未来情報が過去の学習に混入」するリーケージが特に起きやすく、ランダム分割ではなく時系列分割が必要です。G検定では「データリーケージ＝未来情報・目的変数漏洩で評価が過大評価される問題」が問われます。",
     "relatedTermIds": [
-      "model_drift",
       "mlops",
-      "cross_validation",
-      "poc",
-      "data_augmentation_ops",
-      "data_drift",
-      "concept_drift",
-      "health_monitoring",
-      "ai_project_lifecycle",
-      "ab_test"
+      "model_drift"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2538,15 +1993,10 @@
     "definition": "モデルドリフトとは、社会環境・ユーザー行動・入力データの性質が変化することで、導入済みAIモデルの精度が時間とともに低下する現象。",
     "detail": "学習時のデータ分布と本番運用時のデータ分布がずれ、時間とともにモデルの予測精度が低下する現象です。社会状況の変化・季節性・ユーザー行動の変化などが原因で起きます。コロナ禍で消費行動が急変した際に、コロナ前データで学習したモデルが大きく外れた例が典型です。定期的な再学習と性能監視で対処します。G検定では「モデルドリフト＝本番環境でのデータ分布変化による精度低下」「モデルの継続監視・再学習の必要性」として出ます。データドリフト・コンセプトドリフトと合わせて整理してください。",
     "relatedTermIds": [
-      "mlops",
-      "health_monitoring",
-      "data_leakage",
-      "data_drift",
       "concept_drift",
-      "ai_project_lifecycle",
-      "model_registry",
-      "poc",
-      "ab_test"
+      "data_drift",
+      "data_leakage",
+      "mlops"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2563,12 +2013,8 @@
     "relatedTermIds": [
       "model_drift",
       "mlops",
-      "poc",
-      "data_drift",
       "data_leakage",
-      "concept_drift",
-      "ai_project_lifecycle",
-      "ab_test"
+      "poc"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2583,18 +2029,12 @@
     "definition": "AIプロジェクトライフサイクルとは、AIシステムの企画・データ収集・モデル開発・評価・デプロイ・運用・保守という一連の工程を体系化したプロジェクト管理の枠組み。",
     "detail": "AIプロジェクトが企画から運用まで進む一連のフェーズです。一般的に「課題定義→データ収集→前処理→モデル開発→評価→PoC→本番デプロイ→監視・再学習」の流れで進みます。G検定では「ライフサイクルの各フェーズの役割」「PoC・MLOps・モデルドリフトとの関連」として出ます。",
     "relatedTermIds": [
-      "poc",
-      "mlops",
       "model_drift",
-      "ai_utilization_levels",
-      "model_registry",
-      "crisp_dm",
-      "dx",
+      "mlops",
+      "poc",
+      "preprocessing",
       "data_leakage",
-      "data_drift",
-      "concept_drift",
-      "health_monitoring",
-      "ab_test"
+      "dx"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2609,9 +2049,8 @@
     "definition": "AIの4段階活用とは、組織がAIをどのように活用するかを、AIサービスの利用・ツール開発・カスタムモデル構築・基盤モデル開発の4段階で分類した枠組み。",
     "detail": "AIの活用を「データ整備」「分析・予測」「意思決定支援」「自律的意思決定」のように段階的に捉えるフレームワークです。組織のAI成熟度を評価する際に使われます。G検定では「AIの段階的活用」の概念として出ることがあります。",
     "relatedTermIds": [
-      "poc",
-      "ai_project_lifecycle",
-      "mlops"
+      "mlops",
+      "poc"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2626,14 +2065,11 @@
     "definition": "機械学習バイアスとは、学習データに含まれる偏りや不均衡が原因で、AIが特定の人種・性別・社会集団に対して差別的・不公平な予測を行ってしまう問題。",
     "detail": "機械学習モデルが特定のグループ（人種・性別・年齢・地域など）に対して不当に偏った予測や判断をする問題です。学習データの偏りがモデルに引き継がれることで発生します。採用・ローン審査・刑事司法などでの差別的判断が社会問題となっています。G検定では「AIバイアス」とほぼ同義として「データの偏りが原因」「公平性との関連」で出ます。",
     "relatedTermIds": [
-      "fairness",
-      "ai_governance",
-      "xai",
       "ai_bias",
-      "data_augmentation_ops",
-      "data_quality",
-      "lime_xai",
-      "shap"
+      "machine_learning_definition",
+      "fairness",
+      "xai",
+      "data_augmentation_ops"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2648,10 +2084,11 @@
     "definition": "データクレンジングとは、収集したデータから欠損値・外れ値・重複・誤りなどを検出・修正・除去し、モデル学習に適した高品質なデータセットを整備するプロセス。",
     "detail": "データクレンジングとも呼ばれ、学習データの品質を高めるために、欠損値補完・外れ値除去・重複削除・フォーマット統一・ラベルの誤り修正などを行う前処理作業です。「ゴミを入れればゴミが出る（Garbage In, Garbage Out）」という原則の通り、データ品質がモデル品質の基盤です。G検定では「データ前処理の重要性・具体的な作業内容」として出ます。",
     "relatedTermIds": [
+      "data_quality",
+      "missing_value",
+      "preprocessing",
       "data_leakage",
-      "mlops",
-      "ml_bias",
-      "data_quality"
+      "mlops"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2666,14 +2103,12 @@
     "definition": "AI事業者ガイドラインとは、日本政府が2024年に公表した、AI開発者・提供者・利用者それぞれが守るべき行動規範を定めたガイドライン。",
     "detail": "内閣府・総務省・経産省が策定した、AI開発者・提供者・利用者それぞれの役割と取り組むべき事項を示す指針です。法的強制力はなく「ソフトロー」として自主的な取り組みを促します。透明性・安全性・公平性・プライバシー保護・セキュリティ・人間中心の考え方を求めています。G検定では「日本のAIガイドライン＝法的強制力なし（EU AI法との違い）」「開発者・提供者・利用者ごとの役割」として出ます。",
     "relatedTermIds": [
-      "ai_governance",
-      "hiroshima_ai_process",
-      "xai",
       "eu_ai_act",
-      "personal_information_protection_act",
-      "gdpr",
-      "copyright_act_30_4",
-      "unfair_competition_prevention_act"
+      "privacy",
+      "fairness",
+      "transparency",
+      "xai",
+      "ai_governance"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2688,12 +2123,10 @@
     "definition": "モデルの軽量化とは、大規模AIモデルをエッジデバイスや低リソース環境で動作させるため、精度を保ちながらモデルサイズ・計算量・メモリを削減する手法の総称。",
     "detail": "大きなモデルを、精度をなるべく落とさずに小さく軽くする技術の総称です。スマートフォン・組み込み機器・エッジデバイスでのAI動作実現に重要です。代表的な手法として「枝刈り（不要なパラメータの削除）」「量子化（パラメータの数値精度を下げる）」「知識蒸留（大きなモデルの知識を小さなモデルに移す）」があります。G検定では「モデル軽量化の目的と代表手法」として出ます。",
     "relatedTermIds": [
-      "model_compression",
-      "edge_ai",
-      "knowledge_distillation",
-      "mlops",
       "pruning",
-      "quantization"
+      "quantization",
+      "mlops",
+      "edge_ai"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2708,15 +2141,13 @@
     "definition": "説明可能AIとは、AIモデルの判断根拠やプロセスを人間が理解できる形で説明・可視化する技術で、透明性確保とブラックボックス問題の解決を目指す。",
     "detail": "Explainable AIの略で、ブラックボックスになりやすいAI（特にディープラーニング）の判断根拠を人間が理解できる形で説明する技術・取り組みの総称です。医療診断・ローン審査・採用選考など、判断根拠を示す必要がある場面で重要です。代表的な手法としてSHAP（各特徴量の寄与を定量化）とLIME（局所的に単純なモデルで近似）があります。G検定では「XAI＝AIの透明性・説明責任を実現する技術」「SHAP・LIMEが代表例」として出ます。",
     "relatedTermIds": [
-      "ai_governance",
-      "fairness",
-      "transparency",
-      "ml_bias",
-      "ai_operator_guideline",
-      "xai_ethics",
+      "deep_learning",
+      "accountability",
       "lime_xai",
       "shap",
-      "ai_bias"
+      "transparency",
+      "ai_operator_guideline",
+      "ml_bias"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2731,13 +2162,9 @@
     "definition": "著作権法30条の4とは、日本の著作権法の規定で、思想・感情の享受を目的としない情報解析（AI学習を含む）に著作物を無許諾で利用できることを定めた条文。",
     "detail": "2018年の著作権法改正で設けられた日本独自の規定で、AIの機械学習などの「情報解析」を目的とする場合、著作者の許諾なしに著作物を利用できることを認めています。これにより日本はAI学習データの収集が他国より法的にしやすい環境です。ただし「情報解析を目的としない単なる複製」や「学習結果として他人の著作物そっくりの出力をする行為」は保護対象外・問題になり得ます。G検定では「著作権法30条の4＝情報解析目的なら許諾不要」「2018年改正・日本独自の規定」という点が頻出です。",
     "relatedTermIds": [
-      "personal_information_protection_act",
-      "ai_ethics",
+      "machine_learning_definition",
       "ai_governance",
-      "unfair_competition_prevention_act",
-      "eu_ai_act",
-      "gdpr",
-      "ai_operator_guideline"
+      "eu_ai_act"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2752,10 +2179,10 @@
     "definition": "仮名加工情報とは、他の情報と照合しない限り特定の個人を識別できないように加工した個人情報で、社内での利活用が主な用途。",
     "detail": "個人情報保護法上の区分で、氏名や生年月日など個人を特定できる情報を削除・置換し、単体では個人を識別しにくくした情報です。仮名加工情報は匿名加工情報より規制が緩和され、内部分析などに利用できますが、元データと照合すれば復元できるため、第三者提供などの制限が残ります。G検定では「個人情報・仮名加工情報・匿名加工情報の3段階」の違いとして、個人情報保護法とセットで出ます。",
     "relatedTermIds": [
-      "anonymized_information",
       "personal_information_protection_act",
-      "privacy",
-      "gdpr"
+      "anonymized_information",
+      "gdpr",
+      "privacy"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2770,10 +2197,10 @@
     "definition": "匿名加工情報とは、特定の個人を識別できず、かつ復元できないように加工した情報で、第三者への提供が認められる個人情報の加工区分。",
     "detail": "個人情報保護法上の区分で、特定の個人を識別できず、かつ復元もできないよう加工した情報です。仮名加工情報より制限が少なく、作成・提供時の公表等のルールを守れば自由に活用できます。ただし作成・管理には一定の要件が必要です。G検定では「個人情報→仮名加工情報→匿名加工情報の順に規制が緩やかになる」「匿名加工情報は復元不可が条件」として出ます。",
     "relatedTermIds": [
-      "pseudonymized_information",
       "personal_information_protection_act",
-      "privacy",
-      "gdpr"
+      "pseudonymized_information",
+      "gdpr",
+      "privacy"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2790,12 +2217,8 @@
     "relatedTermIds": [
       "pseudonymized_information",
       "anonymized_information",
-      "privacy",
-      "gdpr",
       "copyright_act_30_4",
-      "unfair_competition_prevention_act",
-      "eu_ai_act",
-      "ai_operator_guideline"
+      "eu_ai_act"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2810,14 +2233,10 @@
     "definition": "EU AI法とは、世界初の包括的なAI規制法で、AIをリスクの高さに応じて4段階に分類し、高リスクAIに厳格な義務を課すEUの規制枠組み。",
     "detail": "2024年に成立したEU（欧州連合）の包括的AI規制法で、AIシステムをリスクに応じて4段階に分類します。「許容できないリスク（禁止）」は社会信用スコアリングなど、「高リスク」は採用・医療・法執行などで厳格な安全・透明性要件が必要、「限定リスク」はチャットボット等でAIであることの開示義務、「最小リスク」はスパムフィルター等で規制最小限です。EU域外の日本企業でもEU向けサービスには適用されます。G検定では「リスクベースアプローチの4段階分類」「高リスクAIへの義務」「EU法＝法的強制力あり（日本のガイドラインとの違い）」が問われます。",
     "relatedTermIds": [
-      "gdpr",
-      "hiroshima_ai_process",
+      "chatbot",
+      "transparency",
       "ai_governance",
-      "xai_ethics",
-      "personal_information_protection_act",
-      "copyright_act_30_4",
-      "unfair_competition_prevention_act",
-      "ai_operator_guideline"
+      "copyright_act_30_4"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2832,13 +2251,10 @@
     "definition": "広島AIプロセスとは、2023年のG7広島サミットで発足した、生成AIの急速な普及に対して国際的なガードレールを構築するための政策プロセス。",
     "detail": "2023年のG7広島サミットで立ち上げられた、国際的なAIガバナンスの枠組みです。生成AIを念頭に置いた「広島AIプロセス包括的政策枠組み」を策定し、安全性・信頼性・透明性のある生成AIの開発・利用を促進するための国際指針を示しました。G検定では「広島AIプロセス＝2023年G7で立ち上げ」「生成AI・AIガバナンスの国際的な取り組み」という点で出ます。名前と設立背景（G7・2023年・生成AI）をセットで覚えてください。",
     "relatedTermIds": [
-      "eu_ai_act",
       "ai_governance",
-      "ai_operator_guideline",
-      "fairness",
       "transparency",
       "accountability",
-      "ai_ethics"
+      "eu_ai_act"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2853,14 +2269,8 @@
     "definition": "GDPRとは、EUの一般データ保護規則で、EU市民の個人データの収集・処理・移転に関する厳格な義務をEU内外の企業に課す法規制。",
     "detail": "EU（欧州連合）の一般データ保護規則（General Data Protection Regulation）で、EU市民の個人データ保護を強化した法律です。EU域外の日本企業でもEU向けサービスを提供する場合は対応が必要です。主な権利として「削除権（忘れられる権利）」「データポータビリティ（データを別の事業者に移す権利）」があります。データ漏洩時は72時間以内の当局報告義務もあります。G検定では「GDPR＝EUの個人データ保護規則」「域外適用（日本企業も対象）」「削除権・データポータビリティ」が問われます。",
     "relatedTermIds": [
-      "personal_information_protection_act",
-      "eu_ai_act",
-      "privacy",
       "copyright_act_30_4",
-      "unfair_competition_prevention_act",
-      "ai_operator_guideline",
-      "pseudonymized_information",
-      "anonymized_information"
+      "eu_ai_act"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2876,12 +2286,12 @@
     "detail": "XAI（Explainable AI・説明可能AI）を倫理的観点から論じる概念です。なぜAIがその判断をしたか人間が理解できるようにする取り組みで、医療診断・ローン審査・採用選考などでの説明責任を果たすために重要です。SHAPやLIMEなどの手法があります。G検定では「XAI＝AI判断の透明性・説明可能性を高める技術・取り組み」として透明性・説明責任とセットで出ます。",
     "relatedTermIds": [
       "xai",
-      "eu_ai_act",
-      "transparency",
       "accountability",
-      "fairness",
       "lime_xai",
-      "shap"
+      "shap",
+      "transparency",
+      "eu_ai_act",
+      "fairness"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2896,10 +2306,10 @@
     "definition": "ディープフェイクとは、ディープラーニング（特にGANや拡散モデル）を用いて、人物の顔・声・動作を本物そっくりに合成・改変した偽の画像・動画・音声。",
     "detail": "ディープラーニングを使って人物の顔・声・動画を合成・改ざんする技術、またはその成果物です。実在しない人物の画像生成や、特定人物の言動を偽造した動画作成に使われ、フェイクニュース・詐欺・プライバシー侵害などの悪用が社会問題となっています。G検定では「ディープフェイクの定義と社会的リスク（偽情報・詐欺）」「生成AIの悪用事例のひとつ」として出ます。",
     "relatedTermIds": [
-      "gan",
-      "diffusion_model",
+      "deep_learning",
+      "privacy",
       "ai_ethics",
-      "speech_synthesis"
+      "diffusion_model"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -2914,16 +2324,10 @@
     "definition": "公平性とは、AIの予測・意思決定が特定の属性（人種・性別・年齢など）に基づいて差別的・不平等にならないことを確保するAI倫理の核心原則。",
     "detail": "AIが特定の人種・性別・年齢・地域などを不当に差別しないことを指すAI倫理の3原則のひとつです。学習データに歴史的な偏りがあるとAIがその差別パターンを学んでしまう「AIバイアス」が問題になります。採用選考・ローン審査・医療診断などでの差別的判断が実際に問題となった事例があります。「公平性の定義自体が多様（機会の公平/結果の公平など）」であることも重要な論点です。G検定では「AI倫理の3原則（公平性・透明性・説明責任）」のひとつとして、具体的な差別事例とともに問われます。",
     "relatedTermIds": [
-      "transparency",
-      "accountability",
-      "ml_bias",
-      "xai_ethics",
       "ai_bias",
-      "xai",
-      "privacy",
+      "accountability",
       "ai_ethics",
-      "lime_xai",
-      "shap",
+      "transparency",
       "ai_governance",
       "hiroshima_ai_process"
     ],
@@ -2940,14 +2344,14 @@
     "definition": "透明性とは、AIシステムの仕組み・学習データ・判断根拠・リスクを外部から検証・確認できる状態を確保するAI倫理の基本原則。",
     "detail": "AIがどう判断したかを説明できること、AIを使っていることを利用者に開示することを指すAI倫理の3原則のひとつです。ディープラーニングはブラックボックスになりやすく、なぜその判断をしたかが見えにくい問題があります。これを解決するのがXAI（説明可能AI）で、SHAP・LIMEなどの手法が使われます。EU AI法でも高リスクAIには透明性の義務が課されます。G検定では「AI倫理の3原則」のひとつとして、XAIや説明可能性との関連で問われます。",
     "relatedTermIds": [
-      "fairness",
-      "accountability",
-      "xai_ethics",
+      "deep_learning",
       "xai",
+      "eu_ai_act",
       "ai_ethics",
-      "ai_bias",
-      "ai_governance",
-      "hiroshima_ai_process"
+      "lime_xai",
+      "shap",
+      "accountability",
+      "ai_bias"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2962,15 +2366,12 @@
     "definition": "説明責任とは、AIシステムの開発者・運営者が、AIの判断・影響・リスクについて説明し、問題が生じた際に責任を負う義務と体制。",
     "detail": "AIが誤った判断をして誰かが被害を受けたとき、誰が責任を持つかを明確にすることを指すAI倫理の3原則のひとつです。AIは自分で責任を取れないため、開発者・提供者・利用者それぞれに責任の所在を明確にする必要があります。自動運転車の事故・AIによる医療ミスなど、責任の所在が問われる場面が増えています。G検定では「AI倫理の3原則（公平性・透明性・説明責任）」のひとつとして問われます。3原則をセットで覚え、それぞれの意味を区別できるようにしてください。",
     "relatedTermIds": [
-      "transparency",
-      "fairness",
-      "xai_ethics",
-      "ai_governance",
       "ai_ethics",
-      "lime_xai",
-      "shap",
+      "autonomous_driving",
+      "fairness",
+      "transparency",
       "ai_bias",
-      "hiroshima_ai_process"
+      "ai_governance"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -2992,10 +2393,7 @@
       "personal_information_protection_act",
       "gdpr",
       "fairness",
-      "pseudonymized_information",
-      "anonymized_information",
-      "ai_ethics",
-      "federated_learning"
+      "ai_ethics"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -3010,17 +2408,12 @@
     "definition": "AI倫理とは、AIの開発・利用・影響に関して社会的に望ましい行動・原則・価値観を定める学際的な研究・実践分野。",
     "detail": "AIを技術的に可能だからといって無制限に使うのではなく、人間の尊厳・権利・安全・社会的影響を考慮して設計・運用するための考え方の体系です。公平性・透明性・説明責任の3原則が中心で、そのほかプライバシー保護・安全性・人間中心の設計なども重要な要素です。G検定では「AI倫理の3原則（公平性・透明性・説明責任）」が最頻出です。それぞれの意味をきちんと区別できるようにしましょう。",
     "relatedTermIds": [
+      "privacy",
+      "accountability",
       "fairness",
       "transparency",
-      "accountability",
-      "privacy",
-      "copyright_act_30_4",
-      "deepfake",
-      "ai_governance",
-      "unfair_competition_prevention_act",
       "ai_bias",
-      "autonomous_driving",
-      "hiroshima_ai_process"
+      "ai_governance"
     ],
     "importance": 2,
     "source_ref_supplements": [
@@ -3035,19 +2428,14 @@
     "definition": "AIガバナンスとは、AIシステムの開発・利用における原則・ポリシー・リスク管理体制・監督機能を組織・社会レベルで整備・運営する取り組み。",
     "detail": "AIの開発・利用において、リスクを管理しつつ社会的な価値を最大化するための仕組み・ルール・体制の総称です。法律（EU AI法など）・ガイドライン（日本AI事業者ガイドライン）・自主的な取り組みを含む幅広い概念です。国際的な協調（広島AIプロセスなど）も重要な側面です。G検定では「AIガバナンス＝AIを適切に管理・制御する仕組み全体」として、EU AI法・公平性・透明性・説明責任とともに出題されます。",
     "relatedTermIds": [
-      "ai_ethics",
-      "eu_ai_act",
-      "hiroshima_ai_process",
-      "accountability",
-      "ml_bias",
       "ai_operator_guideline",
-      "xai",
-      "copyright_act_30_4",
-      "dx",
-      "no_code_ai",
-      "reskilling",
+      "hiroshima_ai_process",
+      "eu_ai_act",
+      "accountability",
       "fairness",
-      "transparency"
+      "transparency",
+      "copyright_act_30_4",
+      "ai_ethics"
     ],
     "importance": 1,
     "source_ref_supplements": [
@@ -3062,15 +2450,13 @@
     "definition": "バッチサイズとは、1回のパラメータ更新に使うサンプル数。学習の安定性・速度・汎化性能に影響するハイパーパラメータ。",
     "detail": "1回のパラメータ更新で使うサンプルの数です。バッチサイズが大きいと学習が安定しますが計算メモリが多く必要で、小さいと更新が速く正則化効果がありますが勾配がノイジーになります。全データを1バッチとするのがバッチ勾配降下法、1サンプルがオンライン学習、その中間がミニバッチ学習です。G検定では「バッチサイズ＝1回の更新に使うサンプル数」「ミニバッチ学習が実用的なバランス」として出ます。",
     "relatedTermIds": [
-      "sgd",
+      "batch_gradient_descent",
+      "online_learning",
       "gradient_descent",
-      "adam",
-      "overfitting",
-      "hyperparameter",
-      "learning_rate",
       "mini_batch",
-      "epoch",
-      "automl"
+      "regularization",
+      "learning_rate",
+      "adam"
     ],
     "importance": 2
   },
@@ -3082,14 +2468,10 @@
     "definition": "AUCとは、ROC曲線の下の面積。分類モデルの性能を閾値に依存しない形で評価する指標（0〜1、高いほど良い）。",
     "detail": "Area Under the Curve（ROC曲線の下の面積）の略で、分類モデルの総合的な識別能力を表します。0.5がランダム予測と同等、1.0が完全な分類を意味します。しきい値に依存せず、クラス不均衡に比較的ロバストです。G検定では「AUC＝ROC曲線の面積・0.5〜1.0の範囲・しきい値非依存」「クラス不均衡時の評価に有効」として出ます。",
     "relatedTermIds": [
-      "precision",
-      "recall",
-      "f_score",
-      "roc_curve",
       "class_imbalance",
-      "confusion_matrix",
+      "roc_curve",
       "accuracy",
-      "false_positive"
+      "confusion_matrix"
     ],
     "importance": 2
   },
@@ -3101,11 +2483,10 @@
     "definition": "クラスタリングとは、ラベルなしデータをグループ（クラスタ）に分類する教師なし学習の代表的手法群。",
     "detail": "ラベルなしデータを類似性に基づいてグループ（クラスター）に分ける教師なし学習の手法です。k-means・階層的クラスタリング・DBSCANなどの手法があります。顧客セグメンテーション・文書分類・異常検知に使われます。G検定では「クラスタリング＝教師なし学習でデータをグループ化」「k-meansが代表手法」として出ます。",
     "relatedTermIds": [
-      "unsupervised_learning",
-      "k_means",
       "hierarchical_clustering",
+      "unsupervised_learning",
+      "anomaly_detection",
       "dimensionality_reduction",
-      "pca",
       "t_sne"
     ],
     "importance": 2
@@ -3118,15 +2499,10 @@
     "definition": "VGGとは、3×3フィルタを積み重ねて深さを追求した深層CNN。ILSVRC 2014で好成績を収めた。",
     "detail": "2014年に提案された深層CNNアーキテクチャで、3×3の小さな畳み込みフィルタを重ねるシンプルな構造が特徴です。ImageNetchallenge（ILSVRC）で優秀な成績を収めました。現在でも転移学習のベースモデルとして使われます。G検定では「VGG＝小さなフィルタを多数重ねたシンプルな深層CNN」「ImageNetとの関連」として出ることがあります。",
     "relatedTermIds": [
-      "cnn",
-      "resnet",
+      "imagenet",
       "transfer_learning",
-      "alexnet",
-      "googlenet",
-      "convolutional_layer",
-      "pooling_layer",
-      "fully_connected_layer",
-      "image_recognition"
+      "cnn",
+      "convolutional_layer"
     ],
     "importance": 2
   },
@@ -3138,16 +2514,9 @@
     "definition": "ミニバッチとは、全データを小さなまとまり（バッチ）に分割して行う学習方式。現代の深層学習で最も一般的。",
     "detail": "全データでも1サンプルでもなく、数十〜数百サンプルをランダムに選んで1回の勾配計算に使う学習方法です。計算効率（GPUの並列処理を活かせる）と勾配の安定性のバランスが良く、現在の深層学習では標準的です。G検定では「ミニバッチ学習＝計算効率と勾配安定性のバランス」として出ます。",
     "relatedTermIds": [
-      "sgd",
-      "adam",
+      "gpu",
       "gradient_descent",
-      "batch_gradient_descent",
-      "online_learning",
-      "hyperparameter",
-      "learning_rate",
-      "batch_size",
-      "epoch",
-      "automl"
+      "learning_rate"
     ],
     "importance": 2
   },
@@ -3160,14 +2529,9 @@
     "detail": "人間が明示的に書いたIF-THENルールに従って動くAIです。エキスパートシステムの基礎となる考え方で、ルールが明確な問題では高い精度を出せますが、現実の複雑・曖昧な問題には限界があります。機械学習AIとの対比でよく出題されます。G検定では「ルールベース＝人間がルールを書く（機械学習は自動でルールを学ぶ）」「第2次ブームとエキスパートシステムとの関連」として整理してください。",
     "relatedTermIds": [
       "expert_system",
-      "knowledge_representation",
-      "second_ai_boom",
-      "first_ai_boom",
-      "third_ai_boom",
+      "machine_learning_definition",
       "ai_winter",
-      "dartmouth_conference",
-      "knowledge_acquisition_bottleneck",
-      "search_and_inference"
+      "dartmouth_conference"
     ],
     "importance": 2
   },
@@ -3181,11 +2545,7 @@
     "relatedTermIds": [
       "reinforcement_learning",
       "artificial_intelligence",
-      "q_learning",
-      "deep_reinforcement_learning",
-      "alphago",
-      "policy_gradient",
-      "reward_design"
+      "q_learning"
     ],
     "importance": 2
   },
@@ -3197,15 +2557,14 @@
     "definition": "最適化手法とは、損失関数を最小化するためにモデルのパラメータを更新するアルゴリズムの総称。",
     "detail": "損失関数を最小化するためにパラメータを更新する手法の総称です。勾配降下法を基本として、SGD・モメンタム・AdaGrad・RMSProp・Adamなどの発展形があります。G検定では「最適化手法の種類と特徴の概要」として、特にSGDとAdamが問われます。",
     "relatedTermIds": [
-      "sgd",
-      "adam",
+      "adagrad",
+      "rmsprop",
       "gradient_descent",
-      "loss_function",
-      "batch_gradient_descent",
-      "learning_rate",
-      "learning_rate_scheduling",
       "momentum",
-      "rmsprop"
+      "adam",
+      "loss_function",
+      "learning_rate",
+      "batch_gradient_descent"
     ],
     "importance": 2
   },
@@ -3217,19 +2576,10 @@
     "definition": "ハルシネーションとは、LLMが事実と異なる情報を自信を持って生成してしまう現象。幻覚とも呼ばれる。",
     "detail": "AIが事実と異なる情報をもっともらしく生成してしまう現象です。LLMは「もっともらしい次のトークン」を予測する仕組みのため、学習データにない内容でも流暢に生成してしまいます。存在しない論文の引用・誤った事実の自信満々な回答などが典型例です。RAGや事実確認で抑制を試みますが根本的な解決は難しいです。G検定では「ハルシネーション＝LLMが事実と異なる情報をもっともらしく生成する問題」が頻出です。",
     "relatedTermIds": [
-      "llm",
+      "token",
       "rag",
-      "prompt_engineering",
-      "chatgpt",
-      "lora",
-      "rlhf",
-      "fine_tuning",
-      "transfer_learning",
-      "peft",
-      "scaling_law",
-      "in_context_learning",
-      "foundation_model",
-      "few_shot_learning"
+      "few_shot_learning",
+      "llm"
     ],
     "importance": 1
   },
@@ -3241,16 +2591,11 @@
     "definition": "生成モデルとは、データの生成過程をモデル化し、新たなデータサンプルを生成できる機械学習モデルの総称。",
     "detail": "訓練データの確率分布を学習し、新しいデータを生成できるモデルの総称です。GAN・VAE・拡散モデルが代表的です。画像・文章・音楽の生成に応用されます。識別モデル（入力がどのクラスか判断する）との対比で理解してください。G検定では「生成モデルの定義と代表例（GAN・VAE・拡散モデル）」として出ます。",
     "relatedTermIds": [
-      "gan",
-      "vae",
       "diffusion_model",
-      "gpt",
-      "llm",
-      "clip_model",
+      "vae",
+      "gan",
       "generative_ai",
-      "stable_diffusion",
-      "wavenet",
-      "chatgpt"
+      "gpt"
     ],
     "importance": 2
   },
@@ -3262,12 +2607,10 @@
     "definition": "ブースティングとは、弱学習器を逐次的に学習させ、前のモデルの誤りを次のモデルが補正するアンサンブル学習手法。",
     "detail": "複数の弱学習器を逐次的に追加し、前のモデルが誤分類したデータに次のモデルが重点的に取り組む形でアンサンブルを構築する手法です。AdaBoost・勾配ブースティングが代表例です。バギング（並列学習）との対比で「ブースティング＝逐次学習・誤りに焦点」として覚えてください。G検定では「ブースティングの仕組み」「バギングとの違い（逐次vs並列）」として出ます。",
     "relatedTermIds": [
-      "ensemble_learning",
-      "random_forest",
-      "decision_tree",
       "gradient_boosting",
-      "xgboost",
-      "bagging"
+      "bagging",
+      "decision_tree",
+      "ensemble_learning"
     ],
     "importance": 2
   },
@@ -3279,13 +2622,10 @@
     "definition": "LIMEとは、個々の予測結果について、その近傍で解釈可能な単純モデルを学習し、元のモデルの判断理由を局所的に近似して説明するXAI手法。",
     "detail": "Local Interpretable Model-agnostic Explanationsの略で、ブラックボックスモデルの予測を局所的に解釈するXAIの手法です。注目する予測データ点の近傍を単純なモデル（線形回帰など）で近似し、「この予測でどの特徴量が影響したか」を説明します。モデルの種類を問わずに使える（モデル非依存）点が特徴です。G検定では「XAIの代表的な手法のひとつ」「SHAPとともに出る」として出題されます。",
     "relatedTermIds": [
-      "xai",
-      "xai_ethics",
-      "accountability",
+      "linear_regression",
       "shap",
-      "ml_bias",
-      "ai_bias",
-      "fairness"
+      "accountability",
+      "ai_bias"
     ],
     "importance": 2
   },
@@ -3298,6 +2638,7 @@
     "detail": "データを一か所に集めるのではなく、各デバイス・機関でローカルに学習させ、学習した「重み（パラメータ）」だけを集約してグローバルなモデルを作る分散学習手法です。医療データや個人データのようにプライバシー上一か所に集められないデータでも機械学習できます。G検定では「フェデレーテッドラーニング＝プライバシー保護しながら分散学習する手法」として出ます。",
     "relatedTermIds": [
       "privacy",
+      "machine_learning_definition",
       "mlops"
     ],
     "importance": 2
@@ -3310,13 +2651,9 @@
     "definition": "SHAPとは、ゲーム理論のShapley値を応用し、各特徴量が個々の予測にどの程度寄与したかを定量的に説明するXAI手法。",
     "detail": "SHapley Additive exPlanationsの略で、ゲーム理論のシャープレイ値に基づくXAI手法です。各特徴量が予測にどれだけ貢献したかを数値で示します。「年収が高いほど審査通過確率を+30%押し上げた」のように定量的で解釈しやすい説明が得られます。G検定では「XAIの代表的な手法のひとつ」「LIMEとともに出る」として出題されます。",
     "relatedTermIds": [
-      "xai",
-      "xai_ethics",
-      "accountability",
       "lime_xai",
-      "ml_bias",
-      "ai_bias",
-      "fairness"
+      "accountability",
+      "ai_bias"
     ],
     "importance": 2
   },
@@ -3329,11 +2666,7 @@
     "detail": "営業秘密や限定提供データの不正取得・使用・開示などを禁止する法律です。AIに関連する主な論点は2つです。①「営業秘密（秘密管理性・有用性・非公知性の3要件を満たすもの）」を生成AIに入力すると外部サーバーに送られ漏洩リスクがあること。②「限定提供データ（特定の相手にのみ提供するデータ）」の不正利用。G検定では「不正競争防止法＝営業秘密の漏洩リスクとAI利用の注意点」として出ます。",
     "relatedTermIds": [
       "copyright_act_30_4",
-      "personal_information_protection_act",
-      "ai_ethics",
-      "eu_ai_act",
-      "gdpr",
-      "ai_operator_guideline"
+      "eu_ai_act"
     ],
     "importance": 2
   },
@@ -3345,13 +2678,10 @@
     "definition": "バギングとは、ブートストラップサンプリングで複数の訓練データを作り、複数モデルを並列学習して多数決・平均で統合するアンサンブル手法。",
     "detail": "Bootstrap Aggregatingの略で、訓練データをランダムサンプリング（復元抽出）して複数の異なるデータセットを作り、それぞれで独立に学習したモデルの予測を多数決・平均で統合するアンサンブル手法です。ランダムフォレストがバギングの代表例です。G検定では「バギング＝並列に学習したモデルを統合・ランダムフォレストが代表」「ブースティングとの違い」として出ます。",
     "relatedTermIds": [
-      "ensemble_learning",
       "random_forest",
-      "decision_tree",
-      "overfitting",
-      "gradient_boosting",
       "boosting",
-      "xgboost"
+      "gradient_boosting",
+      "overfitting"
     ],
     "importance": 2
   },
@@ -3363,13 +2693,11 @@
     "definition": "エポックとは、訓練データ全件を1回学習する単位。複数エポック繰り返して収束させる。",
     "detail": "訓練データ全体を1回学習することを1エポックと呼びます。複数エポック繰り返すことで学習が進みます。エポック数が少なすぎると未学習、多すぎると過学習のリスクがあります。G検定では「エポック＝訓練データ全体の1回の学習」「ハイパーパラメータのひとつ」として出ます。",
     "relatedTermIds": [
-      "early_stopping",
-      "overfitting",
       "hyperparameter",
+      "overfitting",
+      "underfitting",
       "learning_rate",
-      "batch_size",
-      "mini_batch",
-      "automl"
+      "batch_size"
     ],
     "importance": 2
   },
@@ -3381,10 +2709,12 @@
     "definition": "アノテーションとは、機械学習の訓練データに正解ラベル（タグ・境界ボックス・感情など）を付与する作業および成果物。",
     "detail": "機械学習の教師あり学習に使う訓練データに正解ラベルを付ける作業です。画像に「犬」「猫」などのラベルを付ける・音声を文字に起こす・文章の感情を分類するなど、タスクによって多様です。データ品質はアノテーションの質に大きく依存します。クラウドソーシングを使って大量にアノテーションする手法もよく使われます。G検定では「アノテーション＝教師あり学習のためのラベル付け作業」として出ます。",
     "relatedTermIds": [
+      "crowdsourcing",
       "supervised_learning",
+      "data_quality",
+      "machine_learning_definition",
       "mlops",
-      "data_augmentation",
-      "crowdsourcing"
+      "data_augmentation"
     ],
     "importance": 2
   },
@@ -3396,18 +2726,10 @@
     "definition": "PEFTとは、LLMの全パラメータを更新せず、少数の追加パラメータのみを学習してファインチューニングを効率化する手法群の総称。",
     "detail": "Parameter-Efficient Fine-Tuningの略で、モデルの一部パラメータのみを更新して効率的にファインチューニングする手法の総称です。LoRAがその代表例です。全パラメータを更新するフルファインチューニングに比べて計算資源を大幅に削減できます。G検定では「PEFT＝効率的なファインチューニング手法の総称・LoRAが代表」として出ます。",
     "relatedTermIds": [
-      "lora",
       "fine_tuning",
-      "llm",
-      "transfer_learning",
-      "rag",
-      "rlhf",
-      "scaling_law",
-      "hallucination",
-      "in_context_learning",
-      "prompt_engineering",
-      "foundation_model",
-      "few_shot_learning"
+      "lora",
+      "few_shot_learning",
+      "hallucination"
     ],
     "importance": 2
   },
@@ -3419,9 +2741,12 @@
     "definition": "デコーダとは、エンコーダが圧縮した表現から元のデータまたは目標出力を生成する神経回路の構成要素。",
     "detail": "エンコーダ・デコーダ構造の後半部分で、エンコーダが圧縮した潜在表現から出力（テキスト・画像など）を生成する役割を担います。Transformerでは次のトークンを自己回帰的に生成するデコーダ（GPTが代表例）と、エンコーダの出力を参照するクロスアテンション型デコーダがあります。G検定では「デコーダ＝潜在表現から出力を生成・GPTはデコーダ型」として出ます。",
     "relatedTermIds": [
-      "autoencoder",
       "transformer",
-      "attention_mechanism"
+      "encoder_decoder",
+      "token",
+      "gpt",
+      "attention_mechanism",
+      "autoencoder"
     ],
     "importance": 2
   },
@@ -3433,10 +2758,13 @@
     "definition": "チャットボットとは、テキストまたは音声で人間とリアルタイムに会話するAIシステム。ルールベースから生成AI型まで多様な実装がある。",
     "detail": "チャットボットとは、テキストや音声を通じて人間と会話するAIシステムのことです。1966年に開発されたELIZAが最初期の例で、パターンマッチングで疑似的に会話しました。現在のチャットボットはNLP技術や機械学習を活用し、ChatGPTなどのLLMベースのものへと大きく進化しています。カスタマーサポート・FAQ自動応答・予約受付・学習支援など幅広く使われています。G検定では「チャットボットの歴史（ELIZA→現代のLLMベース）」「チャットボットと自然言語処理の関連」が問われます。またELIZAの「ELIZA効果」（シンプルな応答でも人間が深い理解があると感じてしまう現象）は、AIへの過信リスクとして重要な概念です。チャットボット≒AGI（何でもできるAI）ではない点も押さえておきましょう。",
     "relatedTermIds": [
+      "chatgpt",
       "nlp_definition",
-      "llm",
+      "eliza",
+      "machine_learning_definition",
+      "gpt",
       "turing_test",
-      "eliza"
+      "llm"
     ],
     "importance": 2
   },
@@ -3448,15 +2776,11 @@
     "definition": "物体検出とは、画像内の物体の位置（バウンディングボックス）とクラスを同時に識別するコンピュータビジョンタスク。",
     "detail": "画像内の物体の位置（バウンディングボックス）と種類（クラス）を同時に検出するタスクです。単純な画像分類より難しく、自動運転・監視カメラ・医療診断などに使われます。R-CNN系・YOLO系などのアーキテクチャがあります。G検定では「物体検出＝位置＋種類の同時検出」「セマンティックセグメンテーションとの違い」として出ます。",
     "relatedTermIds": [
-      "cnn",
-      "resnet",
-      "rcnn",
-      "autonomous_driving",
-      "instance_segmentation",
       "semantic_segmentation",
-      "ssd",
-      "image_recognition",
+      "rcnn",
       "yolo",
+      "autonomous_driving",
+      "image_recognition",
       "vit"
     ],
     "importance": 2
@@ -3469,14 +2793,13 @@
     "definition": "中国語の部屋とは、ジョン・サールが提唱した思考実験で、記号操作だけでは「理解」は生まれないと主張し、強いAIへの批判として有名。",
     "detail": "中国語の部屋とは、哲学者ジョン・サールが1980年に提唱した思考実験です。中国語をまったく知らない人が部屋に入り、マニュアルに従って中国語の記号を並べて回答すると、外からは「中国語を理解している」ように見えます。しかし部屋の中の人は意味を一切理解していません。これは「記号を正しく操作できること（シンタックス）と意味を理解すること（セマンティクス）は別物」であることを示し、「強いAI（意識・理解を持つAI）の実現は難しい」という批判です。G検定では「中国語の部屋は強いAIへの批判的思考実験」「チューリングテストに合格しても本当に理解しているとは限らない」という論点が問われます。フレーム問題・シンボルグラウンディング問題・身体性とセットで「AIの限界」として整理しましょう。",
     "relatedTermIds": [
-      "strong_ai",
-      "weak_ai",
-      "turing_test",
       "symbol_grounding_problem",
+      "turing_test",
       "frame_problem",
+      "strong_ai",
       "embodiment",
       "toy_problem",
-      "combinatorial_explosion"
+      "weak_ai"
     ],
     "importance": 2
   },
@@ -3488,15 +2811,11 @@
     "definition": "重みの初期化とは、ニューラルネットワークの学習前に重みパラメータの初期値を設定する操作。勾配消失・爆発を防ぎ学習収束を安定させる。",
     "detail": "ニューラルネットワークの学習開始時の重みの初期値の設定方法です。すべてゼロや同一値にすると「対称性の破れ」が起きずすべてのニューロンが同じ更新をしてしまいます。適切な初期化（HeやXavierなど）により学習の安定性が向上します。G検定では「重み初期化の重要性」「ゼロ初期化の問題」として出ることがあります。",
     "relatedTermIds": [
-      "vanishing_gradient",
-      "relu",
-      "backpropagation",
-      "he_initialization",
+      "neural_network",
       "symmetry_breaking",
-      "xavier_initialization",
-      "batch_normalization",
-      "skip_connection",
-      "dropout"
+      "neuron",
+      "backpropagation",
+      "relu"
     ],
     "importance": 2
   },
@@ -3509,13 +2828,10 @@
     "detail": "機械学習の精度を左右するデータの品質のことで、正確性・完全性・一貫性・最新性などの観点で評価されます。「GIGO（Garbage In, Garbage Out）」という原則の通り、データ品質がモデル品質の上限を決めます。G検定では「データ品質がモデル性能の基盤」「データクレンジング・アノテーションとの関連」として出ます。",
     "relatedTermIds": [
       "data_augmentation_ops",
+      "annotation",
+      "machine_learning_definition",
       "mlops",
-      "ml_bias",
-      "feature_engineering",
-      "crowdsourcing",
-      "image_recognition",
-      "missing_value",
-      "preprocessing"
+      "crowdsourcing"
     ],
     "importance": 2
   },
@@ -3527,14 +2843,11 @@
     "definition": "AdaGradとは、各パラメータの過去勾配の二乗和に基づいて学習率を個別に調整する最適化アルゴリズム。",
     "detail": "Adaptive Gradientの略で、各パラメータの学習率を過去の勾配の蓄積に応じて自動調整する最適化アルゴリズムです。頻繁に更新されるパラメータは学習率を下げ、まれにしか更新されないパラメータは学習率を上げます。RMSProp・Adamの前身です。G検定では「学習率の自動調整系アルゴリズム」として出ることがあります。",
     "relatedTermIds": [
-      "adam",
-      "sgd",
-      "gradient_descent",
       "rmsprop",
-      "momentum",
+      "adam",
+      "learning_rate",
       "backpropagation",
-      "loss_function",
-      "learning_rate"
+      "gradient_descent"
     ],
     "importance": 2
   },
@@ -3547,8 +2860,7 @@
     "detail": "CNNの畳み込み演算でフィルタをスライドさせる際の移動幅です。ストライドが大きいと出力の空間サイズが小さくなり計算量が減りますが、詳細な空間情報が失われます。ストライド1では1ピクセルずつ移動し、2では2ピクセルずつ移動します。G検定では「ストライド＝フィルタの移動幅・大きいと出力サイズ縮小」として出ることがあります。",
     "relatedTermIds": [
       "cnn",
-      "convolutional_layer",
-      "pooling_layer"
+      "convolutional_layer"
     ],
     "importance": 2
   },
@@ -3574,15 +2886,10 @@
     "definition": "YOLOとは、画像を1回のニューラルネットワーク推論で物体検出を行うリアルタイム物体検出アルゴリズム。",
     "detail": "You Only Look Onceの略で、画像全体を一度だけ処理してリアルタイムで物体検出を行うモデルです。R-CNN系が2段階（領域提案→分類）なのに対し、YOLOは1段階で処理するため高速です。リアルタイム検出（動画・カメラ）に適しています。G検定では「YOLO＝1段階処理で高速な物体検出」「R-CNNとの対比（1段階vs2段階）」として出ます。",
     "relatedTermIds": [
-      "cnn",
-      "resnet",
       "rcnn",
-      "ssd",
-      "image_recognition",
       "object_detection",
-      "semantic_segmentation",
-      "instance_segmentation",
-      "vit"
+      "image_recognition",
+      "semantic_segmentation"
     ],
     "importance": 2
   },
@@ -3594,6 +2901,7 @@
     "definition": "オントロジーとは、概念とその関係を形式的に定義した知識表現の枠組み。意味ネットワークを拡張した機械可読な共有概念体系。",
     "detail": "あるドメイン（領域）の概念・クラス・インスタンス・関係・制約を形式的に定義した知識モデルです。意味ネットワークを発展させたもので、コンピュータが機械的に推論・知識共有できるよう設計されています。ナレッジグラフやセマンティックウェブの基盤技術です。G検定では「知識表現の高度な形式」として意味ネットワーク・プロダクションルールとともに出ることがありますが、出題頻度は高くありません。",
     "relatedTermIds": [
+      "production_rule",
       "semantic_network",
       "knowledge_representation",
       "expert_system"
@@ -3621,9 +2929,9 @@
     "definition": "DenseNetとは、全ての前の層の出力を後続の全ての層に連結するDense Connectionを用いたCNNアーキテクチャ。",
     "detail": "Dense Connectionを特徴とするCNNアーキテクチャで、前の全ての層の出力を後の層への入力として連結します。ResNetのスキップ結合を発展させた構造で、勾配消失の解消と特徴量の再利用を実現します。G検定では「DenseNet＝全層を密に接続・特徴量の再利用」として出ることがあります。",
     "relatedTermIds": [
-      "cnn",
+      "skip_connection",
       "resnet",
-      "skip_connection"
+      "cnn"
     ],
     "importance": 3
   },
@@ -3635,14 +2943,9 @@
     "definition": "AIバイアスとは、AI・機械学習モデルが特定のグループに対して不公平な予測・判断を行う偏りの総称。データバイアス・アルゴリズムバイアス・社会的バイアスを包含する。",
     "detail": "学習データに含まれる偏りや不均衡がAIの予測・判断に反映され、特定のグループを不当に差別する結果を生む問題です。たとえば採用選考AIで「過去の採用データが男性中心」だと女性を低評価しやすくなります。バイアスはデータ収集・ラベリング・モデル設計・評価の各段階で発生し得ます。G検定では「AIバイアスの原因はデータの偏り」「採用・ローン審査・医療診断での事例」「公平性との関連」として問われます。",
     "relatedTermIds": [
-      "ml_bias",
       "fairness",
       "accountability",
-      "transparency",
-      "ai_ethics",
-      "xai",
-      "lime_xai",
-      "shap"
+      "transparency"
     ],
     "importance": 1,
     "aliases": [
@@ -3659,13 +2962,8 @@
     "detail": "本番環境に入ってくる入力データの統計的な性質（分布）が、学習時のデータと変化していく現象です。モデルドリフトの原因のひとつで、スコア分布の監視などで検知します。G検定では「データドリフト→モデルドリフトの流れ」「モデルの継続的な監視の必要性」として出ます。",
     "relatedTermIds": [
       "model_drift",
-      "concept_drift",
-      "mlops",
-      "health_monitoring",
-      "poc",
       "data_leakage",
-      "ai_project_lifecycle",
-      "ab_test"
+      "mlops"
     ],
     "importance": 2
   },
@@ -3677,15 +2975,9 @@
     "definition": "コンセプトドリフトとは、目的変数の意味・判断基準が時間と共に変化することでモデルの予測精度が劣化する現象。",
     "detail": "目的変数と特徴量の関係そのものが時間とともに変化することです。たとえば「不審メールの特徴」は攻撃者の手口が変わることで変化します。データドリフト（入力データの分布変化）と区別が必要です。G検定では「コンセプトドリフト＝入力と目的変数の関係自体が変化」として、データドリフトとの違いとともに出ます。",
     "relatedTermIds": [
-      "model_drift",
       "data_drift",
-      "mlops",
-      "online_learning",
-      "poc",
       "data_leakage",
-      "health_monitoring",
-      "ai_project_lifecycle",
-      "ab_test"
+      "mlops"
     ],
     "importance": 2
   },
@@ -3697,10 +2989,10 @@
     "definition": "CLIPとは、画像とテキストのペアを対照学習で同一意味空間に埋め込むマルチモーダルモデル。",
     "detail": "Contrastive Language-Image Pre-trainingの略で、OpenAIが開発したテキストと画像を共通のベクトル空間に埋め込むモデルです。テキストと画像の対照学習により、「犬の画像」と「dog」という単語が近くなるよう学習します。ゼロショット画像分類やStable Diffusionの一部として使われます。G検定では「CLIP＝テキストと画像の対照学習・マルチモーダルの基盤」として出ます。",
     "relatedTermIds": [
+      "stable_diffusion",
       "multimodal",
-      "generative_model",
       "contrastive_learning",
-      "stable_diffusion"
+      "generative_model"
     ],
     "importance": 2,
     "aliases": [
@@ -3716,9 +3008,9 @@
     "definition": "バッチ勾配降下法とは、全訓練データを使って 1 回の勾配計算と重み更新を行う勾配降下法。",
     "detail": "全訓練データを使って勾配を計算しパラメータを1回更新する手法です。勾配が正確ですがデータが大きいと計算コストが高く、各エポックで1回しか更新できません。実際にはミニバッチ学習が主流です。G検定では「バッチ/ミニバッチ/オンラインの3種類の違い」として出ます。",
     "relatedTermIds": [
-      "gradient_descent",
-      "sgd",
       "mini_batch",
+      "epoch",
+      "gradient_descent",
       "optimization_algorithm"
     ],
     "importance": 2
@@ -3731,17 +3023,12 @@
     "definition": "ChatGPTとは、OpenAI が公開した対話型生成 AI。GPT 系大規模言語モデルを RLHF などで対話用に調整したもの。",
     "detail": "OpenAIが2022年11月に公開した対話型AIです。GPT（デコーダ型Transformer）を基盤に、RLHFで人間の好みに合うよう調整したモデルです。高品質な会話・文章生成・プログラミング支援が可能で、一般への公開からわずか2ヶ月で1億ユーザーを達成し、生成AIの社会的普及の転換点となりました。G検定では「ChatGPT＝GPT＋RLHF・2022年11月公開・生成AIの普及の起点」が頻出です。",
     "relatedTermIds": [
-      "gpt",
-      "llm",
+      "transformer",
       "rlhf",
-      "prompt_engineering",
-      "hallucination",
-      "generative_ai",
-      "gan",
-      "vae",
+      "decoder",
+      "gpt",
       "diffusion_model",
-      "stable_diffusion",
-      "generative_model"
+      "generative_ai"
     ],
     "importance": 2
   },
@@ -3753,10 +3040,9 @@
     "definition": "順伝播とは、入力をネットワークの各層に順に通し予測値や損失を計算する処理。",
     "detail": "入力データをニューラルネットワークの入力層から出力層まで順方向に通して予測値を計算する過程です。誤差逆伝播法の前に必ず行われます。G検定では「順伝播→損失計算→逆伝播→パラメータ更新」という学習の流れとして出ます。",
     "relatedTermIds": [
-      "backpropagation",
       "neural_network",
+      "backpropagation",
       "activation_function",
-      "loss_function",
       "chain_rule"
     ],
     "importance": 2
@@ -3770,11 +3056,9 @@
     "detail": "弱学習器（精度がさほど高くないモデル）を逐次的に追加し、前のモデルの誤差を次のモデルが補う形で精度を向上させるアンサンブル手法です。XGBoost・LightGBMが実装として有名で、表形式データのコンペティションで高精度を出します。G検定では「勾配ブースティング＝逐次的に弱学習器を追加・誤差を補う」「XGBoostが代表実装」として出ます。",
     "relatedTermIds": [
       "boosting",
-      "decision_tree",
-      "ensemble_learning",
+      "xgboost",
       "bagging",
-      "random_forest",
-      "xgboost"
+      "decision_tree"
     ],
     "importance": 1
   },
@@ -3787,10 +3071,7 @@
     "detail": "データを段階的に合併（凝集型）または分割（分割型）してクラスター構造を作る手法です。結果をデンドログラム（樹形図）で可視化できます。クラスター数を事前に決めなくてよい点がk-meansとの違いです。G検定では「階層的クラスタリング＝クラスター数不要・デンドログラムで可視化」「k-meansとの違い」として出ます。",
     "relatedTermIds": [
       "clustering",
-      "k_means",
-      "unsupervised_learning",
       "dimensionality_reduction",
-      "pca",
       "t_sne"
     ],
     "importance": 2
@@ -3803,17 +3084,10 @@
     "definition": "L1 正則化とは、重みの絶対値和に比例するペナルティを加える正則化。不要な特徴量の重みを 0 に近づけやすい。",
     "detail": "L1ノルム（絶対値の和）をペナルティとして損失関数に加える正則化手法です。ラッソ回帰とも呼ばれます。多くのパラメータをゼロにする（スパース）効果があるため、特徴量選択の効果もあります。G検定では「L1正則化（ラッソ）＝パラメータをスパースに・特徴量選択効果」「L2との違い」として出ます。",
     "relatedTermIds": [
+      "loss_function",
       "regularization",
-      "l2_regularization",
-      "linear_regression",
-      "logistic_regression",
       "overfitting",
-      "underfitting",
-      "dropout",
-      "cross_validation",
-      "early_stopping",
-      "data_augmentation",
-      "holdout_method"
+      "underfitting"
     ],
     "importance": 2,
     "aliases": [
@@ -3829,15 +3103,10 @@
     "definition": "L2 正則化とは、重みの二乗和に比例するペナルティを加える正則化。重みをなめらかに小さくして過学習を抑える。",
     "detail": "L2ノルム（二乗和）をペナルティとして損失関数に加える正則化手法です。リッジ回帰とも呼ばれます。全パラメータを均等に小さくしますが、L1と違い完全にゼロにはなりにくいです。G検定では「L2正則化（リッジ）＝全パラメータを均等縮小・スパースにはならない」「L1との違い」として出ます。",
     "relatedTermIds": [
+      "loss_function",
       "regularization",
-      "l1_regularization",
       "overfitting",
-      "dropout",
-      "underfitting",
-      "cross_validation",
-      "early_stopping",
-      "data_augmentation",
-      "holdout_method"
+      "underfitting"
     ],
     "importance": 2,
     "aliases": [
@@ -3856,12 +3125,8 @@
     "relatedTermIds": [
       "object_detection",
       "yolo",
-      "cnn",
-      "instance_segmentation",
-      "ssd",
       "image_recognition",
-      "semantic_segmentation",
-      "vit"
+      "semantic_segmentation"
     ],
     "importance": 2,
     "aliases": [
@@ -3878,11 +3143,10 @@
     "definition": "ROC 曲線とは、分類モデルの閾値を変えたときの偽陽性率と真陽性率の関係を描く曲線。",
     "detail": "Receiver Operating Characteristic曲線の略で、分類のしきい値を変化させたときの「真陽性率（再現率）」と「偽陽性率」のトレードオフを表す曲線です。曲線の下面積がAUCです。しきい値に依存しないモデル比較が可能で、クラス不均衡でも有効です。G検定では「ROC曲線＝真陽性率vs偽陽性率のトレードオフ曲線」「AUCとのセット」として出ます。",
     "relatedTermIds": [
-      "auc",
-      "precision",
+      "class_imbalance",
       "recall",
+      "auc",
       "false_positive",
-      "f_score",
       "accuracy",
       "confusion_matrix"
     ],
@@ -3902,10 +3166,8 @@
     "relatedTermIds": [
       "gradient_boosting",
       "boosting",
-      "decision_tree",
-      "ensemble_learning",
-      "random_forest",
-      "bagging"
+      "bagging",
+      "decision_tree"
     ],
     "importance": 2
   },
@@ -3917,11 +3179,10 @@
     "definition": "ImageNetとは、WordNet 階層に基づく大規模画像データセット。ILSVRC で画像認識研究を牽引した。",
     "detail": "1400万枚以上の画像に1000クラスのラベルが付いた大規模画像データセットです。毎年開催される画像認識コンテスト「ILSVRC（ImageNet Large Scale Visual Recognition Challenge）」のベンチマークとして使われ、2012年にAlexNetがディープラーニングで圧勝したことが第3次AIブームの象徴的な出来事です。G検定では「ImageNet＝大規模画像データセット」「ILSVRC2012でのAlexNet勝利が第3次ブームの転換点」として出ます。",
     "relatedTermIds": [
-      "cnn",
+      "deep_learning",
       "third_ai_boom",
-      "transfer_learning",
       "alexnet",
-      "efficientnet",
+      "image_recognition",
       "googlenet",
       "vit"
     ],
@@ -3935,16 +3196,11 @@
     "definition": "ダートマス会議とは、1956 年に開催された人工知能という用語が初めて公式に使われた会議。",
     "detail": "1956年の夏にアメリカ・ダートマス大学で開かれた研究会議で、「Artificial Intelligence（人工知能）」という言葉が初めて正式に使われた場所として歴史的に重要です。ジョン・マッカーシー・マービン・ミンスキー・クロード・シャノン・ナサニエル・ロチェスターらが参加しました。このとき「機械に人間のような知能を持たせることができる」という仮説を研究テーマとして提唱し、AI研究の起点となりました。第1次AIブームの出発点として位置づけられます。G検定では「1956年」「ダートマス大学」「マッカーシーが「Artificial Intelligence」という言葉を提案」「第1次AIブームの起点」という4点がセットで問われます。",
     "relatedTermIds": [
-      "artificial_intelligence",
-      "first_ai_boom",
       "john_mccarthy",
-      "second_ai_boom",
-      "third_ai_boom",
+      "first_ai_boom",
+      "artificial_intelligence",
       "ai_winter",
-      "expert_system",
-      "knowledge_acquisition_bottleneck",
-      "search_and_inference",
-      "rule_based_ai"
+      "expert_system"
     ],
     "importance": 1
   },
@@ -3956,14 +3212,14 @@
     "definition": "AI の冬とは、AI への期待が落ち込み研究予算や投資が大きく縮小した時期の呼称。",
     "detail": "AI研究への期待が現実の成果を大きく上回り、研究資金・関心が急激に低下した停滞期を指します。歴史的に2回起きました。第1次の冬（1970年代）は、探索・推論ベースのAIがトイ・プロブレムを超えられなかったことが原因です。第2次の冬（1980年代末〜90年代）は、エキスパートシステムが知識獲得のボトルネックに阻まれて衰退したことが原因です。両方の冬に共通するのは「過度な期待→実用化の壁→資金削減」というサイクルです。G検定では「冬が2回あること」「第1次冬の原因（探索・推論の限界）」「第2次冬の原因（エキスパートシステムの限界・知識獲得のボトルネック）」が問われます。第3次ブームが冬を迎えていない理由（ビッグデータ・GPUにより継続的に成果が出ている）も押さえておくと万全です。",
     "relatedTermIds": [
-      "first_ai_boom",
-      "second_ai_boom",
-      "expert_system",
       "knowledge_acquisition_bottleneck",
-      "third_ai_boom",
-      "dartmouth_conference",
+      "expert_system",
+      "toy_problem",
+      "big_data",
       "search_and_inference",
-      "rule_based_ai"
+      "gpu",
+      "dartmouth_conference",
+      "first_ai_boom"
     ],
     "importance": 1,
     "aliases": [
@@ -3978,13 +3234,12 @@
     "definition": "AI 効果とは、AI が解けるようになった課題は途端に AI とは見なされなくなる現象。",
     "detail": "AI効果とは、AIが解決できるようになった問題は「もはやAIではない」と見なされる心理的・社会的現象のことです。チェスプログラム・音声認識・機械翻訳・手書き文字認識はかつて「AIにしかできない知的作業」の代表例として語られていました。しかしそれぞれが実現して普及した途端に「単なるアルゴリズム」「ただのパターンマッチング」と扱われるようになりました。「AIと呼ばれる範囲は、まだ実現していないものに向かって常に移動し続ける」というパラドックスが生じます。コンピュータ科学者のラリー・テスラーは「AIとは、まだ機械にはできないことの総称だ」と表現しました（テスラーの定理）。AI効果が示す重要な含意は2つあります。第1に、AIの定義が固定されておらず時代・社会・技術の成熟度によって変わることを示しています。第2に、現在「最先端のAI」と呼ばれる技術も普及すれば将来はAIと呼ばれなくなる可能性があります。これはAIの定義の曖昧さ・特化型AIの概念・シンギュラリティとセットで理解すべき概念です。G検定では「AI効果とは実現した技術がAIと見なされなくなる現象」「AIの定義が時代とともに変化することの根拠」として問われます。「AI効果があるため、今後AIと呼ばれる技術はなくなる」というような極端な誤答選択肢にも注意しましょう。AIの定義・特化型AI・汎用型AI・シンギュラリティという概念はすべてAI効果の文脈で繋がっており、「AIとは何か」という問いを多角的に理解するための重要なセットとして学ぶと効果的です。",
     "relatedTermIds": [
-      "artificial_intelligence",
-      "ai_level_classification",
-      "weak_ai",
-      "strong_ai",
+      "singularity",
       "narrow_ai",
       "artificial_general_intelligence",
-      "intelligence"
+      "speech_recognition",
+      "ai_level_classification",
+      "artificial_intelligence"
     ],
     "importance": 1
   },
@@ -3996,8 +3251,8 @@
     "definition": "ELIZAとは、1960 年代に開発された対話プログラムで疑似的な精神療法士として応答した。",
     "detail": "ELIZAとは、MITのジョセフ・ワイゼンバウムが1966年頃に開発した初期の対話プログラムです。心理療法士を模した「DOCTOR」というスクリプトが有名で、ユーザーの発言をパターンマッチングで解析して質問を返す仕組みです。仕組みは単純ですが、ユーザーがELIZAに感情移入し「本当に理解されている」と感じる「ELIZA効果」を生み出しました。これはAIへの過信や感情移入の危険性を示す事例として今も語られます。G検定ではELIZAが「1960年代の初期対話プログラム・パターンマッチングベース」であること、「ELIZA効果」の概念（簡単な応答でも人間が深い理解と感じてしまう現象）が問われます。チャットボットの歴史の出発点として、ELIZA→現代のLLMへの発展の流れを押さえましょう。",
     "relatedTermIds": [
-      "turing_test",
       "chatbot",
+      "turing_test",
       "first_ai_boom"
     ],
     "importance": 2
@@ -4011,12 +3266,12 @@
     "detail": "身体性とは「知能や意味理解は身体を通じた環境との相互作用なしには生まれない」という考え方です。脳内での純粋な記号操作だけで知能は実現できない、という従来のAI観（記号主義・シンボリックAI）への批判として、ロドニー・ブルックス・マトゥラーナらが1980〜90年代に提唱しました。たとえば「熱い」という言葉の意味は、火に触れて熱さと痛みを感じた身体的経験があって初めて理解できます。「赤いりんご」の「赤さ」も視覚を通じて実際に見た経験が必要です。これはシンボルグラウンディング問題（記号が現実と結びつかない問題）と深く関連しています。身体性の視点からすると、ソフトウェアだけで動くAIには本質的な限界があり、センサーと身体を持つロボットが環境と相互作用しながら学ぶアプローチが、より根本的な知能実現の道だとされます。ブルックスは「内部に表現や世界モデルを持たず、環境との相互作用から振る舞いが生まれる」という「包摂アーキテクチャ」を提唱しました。現在のマルチモーダルAI（視覚・音声・テキストを統合）や具身化AIの研究もこの流れを汲んでいます。G検定では身体性が「シンボルグラウンディング問題の解決アプローチ」「記号処理中心のAIへの批判」として中国語の部屋・フレーム問題とセットで問われます。「身体性によってシンボルグラウンディング問題が完全に解決された」は誤りです。シンボルグラウンディング問題・フレーム問題・中国語の部屋とともに、「AIには何が足りないのか」という問いを考える際の重要な観点として理解しておきましょう。",
     "relatedTermIds": [
       "symbol_grounding_problem",
+      "multimodal",
+      "frame_problem",
       "chinese_room",
       "robot",
-      "frame_problem",
       "turing_test",
-      "toy_problem",
-      "combinatorial_explosion"
+      "toy_problem"
     ],
     "importance": 1
   },
@@ -4046,13 +3301,11 @@
     "definition": "AlphaGoとは、DeepMind が開発した囲碁 AI で 2016 年にトップ棋士に勝利した。",
     "detail": "Google DeepMindが開発した囲碁AIで、2016年にプロ棋士の李世乭に4勝1敗で勝利し世界を驚かせました。囲碁は選択肢が天文学的に多く、従来の探索手法では不可能とされていた分野です。AlphaGoは「深層強化学習（ディープラーニング＋強化学習）」と「モンテカルロ木探索」を組み合わせ、自分自身との対戦を繰り返して強くなりました。G検定では「2016年・囲碁・深層強化学習・第3次ブームを象徴する成果」がセットで問われます。Deep Blueとの違い（探索ベースvs深層強化学習）も頻出です。",
     "relatedTermIds": [
+      "deep_learning",
       "deep_reinforcement_learning",
       "reinforcement_learning",
       "third_ai_boom",
-      "q_learning",
-      "policy_gradient",
-      "agent",
-      "reward_design"
+      "q_learning"
     ],
     "importance": 2
   },
@@ -4064,16 +3317,13 @@
     "definition": "組み合わせ爆発とは、状態空間や場合分けが指数的に増え探索が現実時間で終わらなくなる現象。",
     "detail": "問題の規模が少し大きくなるだけで、探索すべき選択肢の数が指数的に膨れ上がる現象です。チェスを例にすると、一手先は30通りほどですが、数手先を読もうとすると数百万・数億通りになり、最後まで読もうとすると宇宙の原子の数よりも多くなります。これが第1次AIブームの探索・推論AIが現実問題に対処できなかった根本的な理由です。ヒューリスティック探索（経験則で探索範囲を絞る）や枝刈りなどで軽減を試みましたが、根本的な解決にはなりませんでした。G検定では「組み合わせ爆発＝問題規模の増加に対して候補数が指数的に増大する現象」「第1次ブームの失敗原因（フレーム問題とセット）」として出題されます。",
     "relatedTermIds": [
-      "search_and_inference",
       "heuristic_search",
-      "frame_problem",
-      "toy_problem",
       "first_ai_boom",
+      "frame_problem",
+      "search_and_inference",
+      "pruning",
       "search_tree",
-      "symbol_grounding_problem",
-      "embodiment",
-      "chinese_room",
-      "turing_test"
+      "embodiment"
     ],
     "importance": 1
   },
@@ -4085,8 +3335,14 @@
     "definition": "ディープ・ブルーとは、IBM が開発したチェス AI で 1997 年に世界王者に勝利した。",
     "detail": "IBMが開発したチェス専用AIで、1997年に当時の世界チャンピオン・カスパロフを破りました。ミニマックス探索・αβ枝刈り・専用ハードウェアによる大量局面評価を組み合わせた「古典的な探索ベースAI」の頂点です。機械学習やディープラーニングは使っていません。G検定では「1997年・チェス・探索ベース（機械学習は不使用）」として、AlphaGoと比較して出ることが多いです。AlphaGoは深層強化学習、Deep Blueは探索+専用HWという違いを押さえてください。",
     "relatedTermIds": [
-      "search_and_inference",
-      "second_ai_boom"
+      "deep_learning",
+      "alphago",
+      "deep_reinforcement_learning",
+      "machine_learning_definition",
+      "reinforcement_learning",
+      "pruning",
+      "second_ai_boom",
+      "search_and_inference"
     ],
     "importance": 2
   },
@@ -4098,13 +3354,13 @@
     "definition": "深層強化学習とは、強化学習の状態評価や方策をディープニューラルネットで近似する枠組み。",
     "detail": "強化学習の価値関数や方策をディープラーニング（ニューラルネットワーク）で近似する手法です。Atariのゲームを人間レベルで攻略したDQN（Deep Q-Network）が最初の大きな成果で、その後AlphaGoにも採用されました。膨大な状態空間を持つ問題（囲碁・ロボット制御・複雑なゲーム）に対応できます。G検定では「深層強化学習＝ディープラーニング×強化学習」「AlphaGoが代表例」として出ます。",
     "relatedTermIds": [
-      "reinforcement_learning",
+      "neural_network",
+      "deep_learning",
       "alphago",
+      "robot",
+      "reinforcement_learning",
       "third_ai_boom",
-      "policy_gradient",
-      "q_learning",
-      "reward_design",
-      "agent"
+      "q_learning"
     ],
     "importance": 2
   },
@@ -4116,15 +3372,13 @@
     "definition": "生成 AIとは、学習データの分布から新しいテキスト・画像・音声などを生成する AI 系統の総称。",
     "detail": "テキスト・画像・音声・動画・コードなどのコンテンツを新たに生成するAIの総称です。LLM（GPT・Geminiなど）・画像生成AI（Stable Diffusion・DALL-Eなど）・音声合成AIなどが含まれます。2022年のChatGPT公開で一般に広まりました。G検定では「生成AIの定義（コンテンツを生成するAI）」「代表例」「ハルシネーションなどの課題」として出ます。",
     "relatedTermIds": [
-      "llm",
+      "stable_diffusion",
+      "hallucination",
+      "chatgpt",
+      "speech_synthesis",
       "gpt",
       "diffusion_model",
-      "generative_model",
-      "third_ai_boom",
-      "stable_diffusion",
-      "gan",
-      "vae",
-      "chatgpt"
+      "llm"
     ],
     "importance": 1,
     "aliases": [
@@ -4140,10 +3394,9 @@
     "definition": "ヒューリスティック探索とは、経験則による評価関数で有望な候補を優先する探索手法群。",
     "detail": "全ての候補を網羅的に調べる「全探索」ではなく、経験則や推定値（ヒューリスティック）を使ってゴールに近そうな方向を優先して探索する手法です。「この道はゴールに近そう」という推定で探索範囲を大幅に絞れるため、組み合わせ爆発を抑えられます。代表的な手法がA*アルゴリズムで「出発点からの実コストg(n)＋目標への推定コストh(n)」で優先度を決めます。ただしヒューリスティックはあくまで推定なので、必ずしも最適解が保証されるわけではありません。G検定では「ヒューリスティック探索＝推定値を使って探索を効率化」「A*がその代表例」「組み合わせ爆発への対策として登場した技術」として出題されます。",
     "relatedTermIds": [
-      "a_star_algorithm",
+      "combinatorial_explosion",
       "search_tree",
-      "search_and_inference",
-      "combinatorial_explosion"
+      "a_star_algorithm"
     ],
     "importance": 1
   },
@@ -4170,14 +3423,9 @@
     "detail": "エキスパートシステムを作る際に、専門家が持つ知識（特に「なんとなく分かる」という暗黙知）をIF-THENルールの形に落とし込む作業が極めて困難だったという問題です。専門家に「あなたはどうやって診断しているか」と聞いても「長年の経験で分かる」としか答えられないことが多く、ルール化・形式化が難しい。またルール数が増えるほど矛盾が生じ、更新・保守のコストが膨大になりました。これが第2次AIブームのエキスパートシステムが普及しなかった主因であり、2度目のAIの冬を招きました。G検定では「知識獲得のボトルネック＝専門家の暗黙知をルール化できない問題」「エキスパートシステムが衰退した原因」として、第2次ブームとセットで問われます。",
     "relatedTermIds": [
       "expert_system",
-      "knowledge_representation",
       "second_ai_boom",
       "ai_winter",
-      "first_ai_boom",
-      "third_ai_boom",
-      "dartmouth_conference",
-      "search_and_inference",
-      "rule_based_ai"
+      "dartmouth_conference"
     ],
     "importance": 1
   },
@@ -4204,9 +3452,8 @@
     "detail": "IF（条件）→THEN（行動・結論）の形で知識を表現するルールです。「もし発熱があり喉が赤いなら風邪の疑い」のような形式で、エキスパートシステムの知識ベースの基本単位です。推論エンジンが現在の事実とルールを照合して結論を導きます。G検定では「エキスパートシステムの構成要素（知識ベース＝プロダクションルール群）」として出ます。",
     "relatedTermIds": [
       "expert_system",
-      "mycin",
       "knowledge_representation",
-      "search_and_inference"
+      "mycin"
     ],
     "importance": 2
   },
@@ -4218,10 +3465,9 @@
     "definition": "探索木とは、状態と遷移をノードと枝で表し可能な手順を木構造で展開した探索の表現。",
     "detail": "AIが問題を解くときに、考えられる状態（局面）と行動の選択肢を木の形で表現したものです。根（ルート）が初期状態、枝が選べる行動、葉が到達できる状態を表します。深さ優先探索（深く潜ってから戻る）・幅優先探索（浅い階層から順に調べる）・A*（推定値で優先順位付け）などの方法で解を探します。問題が複雑になるほど木が大きくなり、組み合わせ爆発が起きます。G検定では「探索木の基本的な概念（ノード＝状態、エッジ＝行動）」「深さ優先・幅優先の違い」「組み合わせ爆発との関連」として第1次ブームの文脈で出題されます。",
     "relatedTermIds": [
+      "combinatorial_explosion",
       "heuristic_search",
-      "a_star_algorithm",
-      "search_and_inference",
-      "combinatorial_explosion"
+      "a_star_algorithm"
     ],
     "importance": 1
   },
@@ -4233,8 +3479,8 @@
     "definition": "異常検知とは、正常データの分布から外れる稀なサンプルを検出する手法群。",
     "detail": "正常なパターンから大きく外れたデータ（異常）を検出するタスクです。正常データのみで学習して、異常なパターンを検出する教師なし学習的な手法が多く使われます。製造ラインの不良品検出・ネットワーク侵入検知・クレジットカード不正検出などに応用されます。G検定では「異常検知＝正常パターンから外れたデータの検出」「教師なし学習の応用」として出ます。",
     "relatedTermIds": [
-      "class_imbalance",
       "unsupervised_learning",
+      "class_imbalance",
       "autoencoder"
     ],
     "importance": 1
@@ -4248,11 +3494,9 @@
     "detail": "訓練データのクラス分布が偏っている状態です（例：正常99%・異常1%）。このままモデルを学習すると「常に多数派クラスを予測」する偏ったモデルができ、正解率は高くても少数派クラスを検出できません。オーバーサンプリング（少数派を水増し）・アンダーサンプリング（多数派を削減）・コスト考慮型学習などで対処します。G検定では「クラス不均衡の問題と対策」「正解率だけでは不十分な理由」として出ます。",
     "relatedTermIds": [
       "oversampling",
-      "f_score",
-      "auc",
-      "precision",
-      "recall",
-      "anomaly_detection"
+      "accuracy",
+      "anomaly_detection",
+      "f_score"
     ],
     "importance": 2
   },
@@ -4266,11 +3510,10 @@
     "relatedTermIds": [
       "precision",
       "recall",
-      "f_score",
       "false_positive",
-      "auc",
       "accuracy",
-      "roc_curve"
+      "f_score",
+      "auc"
     ],
     "importance": 1
   },
@@ -4282,10 +3525,10 @@
     "definition": "次元の呪いとは、次元数が増えると必要データ量や計算量が指数的に増大し距離概念も働きにくくなる現象。",
     "detail": "特徴量（次元）の数が増えると、データ空間が指数的に広くなりデータが「疎」になる問題です。各データ点が遠く離れてしまい、距離ベースの手法や学習が効きにくくなります。次元削減（PCA・t-SNE）や特徴量選択で対処します。G検定では「次元の呪い＝次元増加で空間が疎になり学習が困難」「次元削減の必要性の根拠」として出ます。",
     "relatedTermIds": [
-      "dimensionality_reduction",
-      "pca",
       "t_sne",
-      "k_nearest_neighbor"
+      "dimensionality_reduction",
+      "k_nearest_neighbor",
+      "pca"
     ],
     "importance": 2
   },
@@ -4297,13 +3540,11 @@
     "definition": "次元削減とは、高次元データを情報量を保ちつつ低次元に変換する手法群。",
     "detail": "高次元のデータを情報をできるだけ保ちながら低次元に変換する手法です。データの可視化・計算量削減・ノイズ除去・特徴抽出に使われます。代表的な手法としてPCA（主成分分析）・t-SNEがあります。G検定では「次元削減＝教師なし学習の代表手法のひとつ」「PCA・t-SNEが代表例」として出ます。",
     "relatedTermIds": [
+      "unsupervised_learning",
       "pca",
       "t_sne",
-      "curse_of_dimensionality",
-      "unsupervised_learning",
       "clustering",
-      "k_means",
-      "hierarchical_clustering"
+      "curse_of_dimensionality"
     ],
     "importance": 1
   },
@@ -4317,11 +3558,8 @@
     "relatedTermIds": [
       "confusion_matrix",
       "precision",
-      "recall",
-      "roc_curve",
-      "f_score",
       "accuracy",
-      "auc"
+      "f_score"
     ],
     "importance": 2,
     "aliases": [
@@ -4336,14 +3574,10 @@
     "definition": "特徴量エンジニアリングとは、問題に効くように元データから特徴量を設計・加工する作業。",
     "detail": "生のデータから機械学習モデルが学習しやすい特徴量（変数）を作成・選択・変換する作業です。日付から「曜日」「月末フラグ」を生成する・テキストをTF-IDF値に変換するなどが例です。ディープラーニングは特徴量を自動学習しますが、表形式データでは今も重要なスキルです。G検定では「特徴量エンジニアリング＝ドメイン知識を活かした特徴量の設計・変換」として出ます。",
     "relatedTermIds": [
-      "data_quality",
+      "deep_learning",
       "machine_learning_definition",
-      "feature_learning",
-      "missing_value",
-      "normalization",
       "preprocessing",
-      "standardization",
-      "data_augmentation"
+      "missing_value"
     ],
     "importance": 1
   },
@@ -4356,15 +3590,8 @@
     "detail": "データを訓練用と検証用に一度だけ分割してモデルを評価する手法です。シンプルで計算コストが低いですが、分割方法によって評価結果が変動しやすいです。データが十分にある場合は有効ですが、少ない場合は交差検証が推奨されます。G検定では「ホールドアウト法＝単純な訓練・検証分割」「交差検証との比較」として出ます。",
     "relatedTermIds": [
       "cross_validation",
-      "machine_learning_definition",
       "overfitting",
-      "underfitting",
-      "regularization",
-      "l1_regularization",
-      "l2_regularization",
-      "dropout",
-      "early_stopping",
-      "data_augmentation"
+      "underfitting"
     ],
     "importance": 2
   },
@@ -4376,9 +3603,9 @@
     "definition": "k 近傍法とは、予測時にもっとも近い k 個の訓練データの多数決で分類するノンパラメトリック手法。",
     "detail": "k近傍法は、未知のデータ点から距離が近い訓練データk件を参照し、多数決（分類）または平均（回帰）で予測するシンプルな手法です。学習フェーズがなく（遅延学習）、kの値と距離の定義がハイパーパラメータです。G検定では「k近傍法＝距離が近いk件で予測」「ノンパラメトリックな手法」として出ることがあります。",
     "relatedTermIds": [
+      "hyperparameter",
       "supervised_learning",
-      "curse_of_dimensionality",
-      "k_means"
+      "curse_of_dimensionality"
     ],
     "importance": 1,
     "aliases": [
@@ -4394,8 +3621,8 @@
     "definition": "カーネルトリックとは、高次元への明示的な写像を計算せずカーネル関数で内積計算を置き換える手法。",
     "detail": "SVMなどで、データを明示的に高次元空間へ変換せずに、高次元での内積計算と同等の結果を得る技術です。線形分離できないデータを高次元空間で線形分離できるようにする仕組みです。RBFカーネル（ガウスカーネル）・多項式カーネルが代表例です。G検定では「カーネルトリック＝SVMで非線形分類を実現する技術」として出ます。",
     "relatedTermIds": [
-      "svm",
-      "supervised_learning"
+      "supervised_learning",
+      "svm"
     ],
     "importance": 2
   },
@@ -4423,12 +3650,12 @@
     "definition": "方策勾配法とは、方策（行動確率分布）を直接パラメータ化し勾配上昇で報酬期待値を最大化する強化学習手法。",
     "detail": "強化学習で方策（Policy）を直接最適化する手法群です。方策をニューラルネットワークでパラメータ化し、報酬を最大化する方向にパラメータを更新します。AlphaGoやロボット制御に使われます。G検定では「方策勾配法＝強化学習で方策を直接最適化」として出ることがあります。",
     "relatedTermIds": [
+      "neural_network",
+      "alphago",
+      "robot",
       "reinforcement_learning",
       "q_learning",
-      "deep_reinforcement_learning",
-      "reward_design",
-      "alphago",
-      "agent"
+      "reward_design"
     ],
     "importance": 2
   },
@@ -4441,10 +3668,7 @@
     "detail": "強化学習の代表的なアルゴリズムで、状態sでの行動aの価値Q(s,a)を反復更新によって学習します。最適なQ値が学習できれば、各状態で最も良い行動を選べるようになります。DQN（Deep Q-Network）はQネットワークをニューラルネットで近似したもので、Atariゲームで人間超えを達成しました。G検定では「Q学習＝行動価値関数Q(s,a)を学習する強化学習手法」「DQNとの関連」として出ます。",
     "relatedTermIds": [
       "reinforcement_learning",
-      "deep_reinforcement_learning",
       "policy_gradient",
-      "alphago",
-      "agent",
       "reward_design"
     ],
     "importance": 1,
@@ -4460,11 +3684,8 @@
     "definition": "決定係数とは、回帰モデルがデータの分散をどれだけ説明できるかを示す指標。",
     "detail": "決定係数とも呼ばれ、回帰モデルがデータの分散をどの程度説明できているかを示す指標です。0〜1の範囲を取り（理論上はマイナスも）、1に近いほど当てはまりが良いです。G検定では「R²＝回帰モデルの説明力を示す指標」として出ることがあります。",
     "relatedTermIds": [
-      "linear_regression",
-      "mse",
-      "rmse",
       "regression",
-      "mae"
+      "linear_regression"
     ],
     "importance": 2,
     "aliases": [
@@ -4480,13 +3701,9 @@
     "definition": "回帰とは、連続値の目的変数を予測する教師あり学習タスクの総称。",
     "detail": "連続値の数値を予測する機械学習のタスクです。分類タスク（カテゴリを予測）との対比で理解してください。住宅価格予測・気温予測・売上予測などが代表例です。評価指標にはMSE・RMSE・MAEなどが使われます。G検定では「回帰＝連続値を予測するタスク」「分類との違い」「評価指標（MSE・RMSE）」として出ます。",
     "relatedTermIds": [
-      "linear_regression",
-      "logistic_regression",
+      "machine_learning_definition",
       "supervised_learning",
-      "mse",
-      "rmse",
-      "r_squared",
-      "mae"
+      "linear_regression"
     ],
     "importance": 1
   },
@@ -4498,12 +3715,10 @@
     "definition": "報酬設計とは、強化学習エージェントの行動を望ましい方向に導くため報酬関数を設計する作業。",
     "detail": "強化学習でエージェントに与える報酬関数の設計です。報酬の与え方が学習結果を大きく左右し、意図しない行動を学習してしまう「報酬ハッキング」のリスクがあります。G検定では「報酬設計の重要性・報酬ハッキングのリスク」「強化学習の実用上の課題」として出ます。",
     "relatedTermIds": [
+      "agent",
       "reinforcement_learning",
-      "policy_gradient",
-      "deep_reinforcement_learning",
       "q_learning",
-      "alphago",
-      "agent"
+      "policy_gradient"
     ],
     "importance": 2
   },
@@ -4516,12 +3731,8 @@
     "detail": "t-Distributed Stochastic Neighbor Embeddingの略で、高次元データを2〜3次元に非線形に圧縮して可視化する次元削減手法です。似たデータ点を近くに、異なるデータ点を遠くに配置します。PCAより複雑な構造を可視化できます。G検定では「t-SNE＝高次元データの可視化用次元削減」「PCAとの対比（線形vsノン線形）」として出ます。",
     "relatedTermIds": [
       "dimensionality_reduction",
-      "pca",
       "unsupervised_learning",
-      "curse_of_dimensionality",
-      "clustering",
-      "k_means",
-      "hierarchical_clustering"
+      "clustering"
     ],
     "importance": 1,
     "aliases": [
@@ -4537,14 +3748,7 @@
     "detail": "未学習（アンダーフィッティング）とも呼ばれ、モデルが単純すぎて訓練データのパターンすら捉えられない状態です。訓練誤差も検証誤差も高い状態です。モデルの複雑さを上げる・特徴量を増やす・学習時間を延ばすことで改善できます。G検定では「未学習の定義（訓練・検証ともに精度が低い）」「過学習との対比（バイアス・バリアンストレードオフ）」として出ます。",
     "relatedTermIds": [
       "overfitting",
-      "machine_learning_definition",
-      "regularization",
-      "l1_regularization",
-      "l2_regularization",
-      "dropout",
       "cross_validation",
-      "early_stopping",
-      "data_augmentation",
       "holdout_method"
     ],
     "importance": 1
@@ -4571,10 +3775,10 @@
     "definition": "交差エントロピーとは、正解分布と予測分布の差を測る損失関数。多クラス分類で標準的に使われる。",
     "detail": "分類タスクで使われる損失関数で、モデルが予測した確率分布と正解ラベルとのずれを測ります。正解クラスの予測確率が低いほど損失が大きくなります。ソフトマックス関数と組み合わせて多クラス分類の出力層でよく使われます。G検定では「分類タスクの損失関数」「ソフトマックスとのセット」として出ます。",
     "relatedTermIds": [
-      "loss_function",
       "softmax",
-      "logistic_regression",
-      "neural_network"
+      "loss_function",
+      "neural_network",
+      "logistic_regression"
     ],
     "importance": 1
   },
@@ -4587,9 +3791,7 @@
     "detail": "ディープラーニングがデータから有用な特徴表現を自動で学習する能力のことです。従来の機械学習では人間が特徴量を設計する必要がありましたが、深層ネットワークはデータから直接特徴を抽出します。G検定ではAIレベル分類（レベル4）の説明文脈で出ます。",
     "relatedTermIds": [
       "deep_learning",
-      "feature_engineering",
-      "transfer_learning",
-      "autoencoder",
+      "machine_learning_definition",
       "contrastive_learning",
       "distributed_representation"
     ],
@@ -4607,11 +3809,8 @@
     "definition": "勾配爆発とは、誤差逆伝播で勾配が過大になり重みが発散して学習が破綻する現象。",
     "detail": "深いネットワークで逆伝播するとき、勾配が層を遡るにつれて指数的に大きくなりパラメータの更新が不安定になる問題です。勾配消失の逆の問題です。勾配クリッピング（勾配の大きさに上限を設ける）が主な対策です。RNNで特に起きやすいです。G検定では「勾配爆発＝勾配消失の対の問題」「対策は勾配クリッピング」として出ます。",
     "relatedTermIds": [
-      "vanishing_gradient",
-      "rnn",
-      "lstm",
       "gradient_descent",
-      "gru"
+      "vanishing_gradient"
     ],
     "importance": 1
   },
@@ -4623,13 +3822,9 @@
     "definition": "He の初期化とは、ReLU 系活性化に適した重み初期化で前層ユニット数に応じた分散を持つ正規分布から重みを引く。",
     "detail": "ReLUを使う深層ネットワーク向けの重み初期化方法で、入力ユニット数に応じてスケーリングした正規分布から重みを初期化します。Xavier初期化がシグモイド・tanh向けなのに対し、HeはReLU向けに最適化されています。G検定では「He初期化＝ReLU向け」「Xavier初期化との使い分け」として出ることがあります。",
     "relatedTermIds": [
-      "weight_initialization",
-      "xavier_initialization",
       "relu",
-      "symmetry_breaking",
-      "batch_normalization",
-      "skip_connection",
-      "dropout"
+      "weight_initialization",
+      "xavier_initialization"
     ],
     "importance": 2,
     "aliases": [
@@ -4645,13 +3840,8 @@
     "detail": "ニューラルネットワークの入力層と出力層の間にある中間の層です。データの特徴を段階的に抽象化・変換します。浅い層は単純な特徴（エッジ・色など）、深い層は複雑な特徴（顔・物体など）を学習します。隠れ層を多数持つのがDNN（深層ニューラルネットワーク）です。G検定では「入力層・隠れ層・出力層の役割の違い」として出ます。",
     "relatedTermIds": [
       "neural_network",
-      "multilayer_perceptron",
-      "deep_learning",
-      "neuron",
-      "dnn",
       "activation_function",
-      "relu",
-      "sigmoid_function"
+      "dnn"
     ],
     "importance": 1
   },
@@ -4663,21 +3853,10 @@
     "definition": "学習率とは、勾配降下法で重みをどの程度更新するかを決めるハイパーパラメータ。",
     "detail": "勾配降下法でパラメータを更新する際の「1ステップの大きさ」を決めるハイパーパラメータです。大きすぎると最小値を通り越して発散し、小さすぎると収束が遅く局所解に陥りやすくなります。適切な学習率の設定は学習の成否を大きく左右します。G検定では「学習率＝勾配降下法の更新幅」「大きすぎると発散・小さすぎると収束遅い」というトレードオフが問われます。",
     "relatedTermIds": [
-      "gradient_descent",
-      "learning_rate_scheduling",
-      "optimization_algorithm",
       "hyperparameter",
-      "sgd",
-      "adam",
-      "momentum",
-      "adagrad",
-      "rmsprop",
+      "gradient_descent",
       "backpropagation",
-      "loss_function",
-      "batch_size",
-      "mini_batch",
-      "epoch",
-      "automl"
+      "momentum"
     ],
     "importance": 1
   },
@@ -4707,13 +3886,9 @@
     "detail": "勾配降下法を改良した最適化手法で、直前の更新方向を「慣性」として次の更新に加算します。局所解に陥りにくくなり、収束が安定・高速化します。SGD with momentumとして使われ、Adamなどの発展形の基礎にもなっています。G検定では「モメンタム＝勾配降下法に慣性を加えた改良版」として最適化手法の文脈で出ます。",
     "relatedTermIds": [
       "gradient_descent",
-      "sgd",
-      "rmsprop",
-      "adam",
       "optimization_algorithm",
-      "adagrad",
+      "adam",
       "backpropagation",
-      "loss_function",
       "learning_rate"
     ],
     "importance": 1
@@ -4726,10 +3901,8 @@
     "definition": "オンライン学習とは、データが到着するたびにモデルを逐次更新する学習方式。",
     "detail": "1サンプルずつリアルタイムでモデルを更新していく学習方法です。データストリームや逐次的に届くデータに対応できます。バッチ学習との対比で理解してください。G検定では「オンライン学習＝逐次・リアルタイムでモデルを更新」として出ることがあります。",
     "relatedTermIds": [
-      "sgd",
-      "concept_drift",
-      "machine_learning_definition",
-      "mini_batch"
+      "mini_batch",
+      "sgd"
     ],
     "importance": 2
   },
@@ -4742,14 +3915,11 @@
     "detail": "Root Mean Square Propagationの略で、AdaGradの改良版です。過去の勾配の蓄積を指数移動平均で調整し、学習率が極端に小さくなる問題を解決しました。Adamの前身のひとつです。G検定では「最適化手法の系譜（SGD→AdaGrad→RMSProp→Adam）」として出ることがあります。",
     "relatedTermIds": [
       "adagrad",
-      "adam",
       "optimization_algorithm",
-      "gradient_descent",
-      "momentum",
-      "sgd",
+      "adam",
+      "learning_rate",
       "backpropagation",
-      "loss_function",
-      "learning_rate"
+      "gradient_descent"
     ],
     "importance": 2
   },
@@ -4761,8 +3931,8 @@
     "definition": "ソフトマックス関数とは、実数ベクトルを各成分が正で総和 1 となる確率分布に変換する関数。",
     "detail": "多クラス分類の出力層で使われる活性化関数で、各クラスへの出力を「合計が1になる確率」に変換します。最も大きな値を持つクラスを予測クラスとして選択します。交差エントロピー損失と組み合わせて使います。G検定では「ソフトマックス＝多クラス分類の出力層で確率に変換」「交差エントロピーとのセット」として出ます。",
     "relatedTermIds": [
-      "activation_function",
       "cross_entropy",
+      "activation_function",
       "neural_network"
     ],
     "importance": 1
@@ -4775,10 +3945,9 @@
     "definition": "対称性の破れとは、ニューラルネットの重みを全て同じ値で初期化すると各ニューロンが同じ働きになる問題。",
     "detail": "重みをすべてゼロや同一値で初期化すると、全ニューロンが同じ勾配を受けて同じパラメータに収束してしまう問題です。ランダムな初期化により各ニューロンが異なる特徴を学ぶことを実現します。G検定では「ゼロ初期化の問題・重み初期化の重要性」の文脈で出ることがあります。",
     "relatedTermIds": [
-      "weight_initialization",
-      "xavier_initialization",
+      "neuron",
       "he_initialization",
-      "neural_network"
+      "weight_initialization"
     ],
     "importance": 3
   },
@@ -4791,6 +3960,9 @@
     "detail": "活性化関数が非線形であれば、隠れ層が1層でも十分な数のニューロンがあれば、任意の連続関数を任意の精度で近似できるという定理です。ニューラルネットワークの表現力の理論的な根拠です。ただし「近似できる」と「効率よく学習できる」は別の話です。G検定では「ニューラルネットワークの表現力の理論的根拠」として出ることがあります。",
     "relatedTermIds": [
       "neural_network",
+      "neuron",
+      "activation_function",
+      "hidden_layer",
       "multilayer_perceptron",
       "deep_learning"
     ],
@@ -4804,13 +3976,9 @@
     "definition": "Xavier の初期化とは、前後層のユニット数に応じた分散を持つ分布から重みを引く初期化方式。",
     "detail": "シグモイドやtanh用の重み初期化方法で、入力ユニット数と出力ユニット数に応じて重みをスケーリングします。各層の出力の分散を一定に保ち、学習を安定させます。ReLU向けにはHe初期化を使います。G検定では「Xavier初期化＝シグモイド・tanh向け」「He初期化との使い分け」として出ることがあります。",
     "relatedTermIds": [
-      "weight_initialization",
+      "relu",
       "he_initialization",
-      "neural_network",
-      "symmetry_breaking",
-      "batch_normalization",
-      "skip_connection",
-      "dropout"
+      "weight_initialization"
     ],
     "importance": 2,
     "aliases": [
@@ -4825,10 +3993,10 @@
     "definition": "XOR 問題とは、排他的論理和を単層パーセプトロンでは解けないことを示した古典的問題。",
     "detail": "XOR（排他的論理和）の入出力関係は、単層パーセプトロンでは学習できないという問題です。XORは「0と0→0、0と1→1、1と0→1、1と1→0」で、線形分離不可能なパターンです。この問題の発見がAI第1次ブーム後の停滞（ミンスキーとパパートの「パーセプトロン」批判）につながりました。多層パーセプトロンではXOR問題を解決できます。G検定では「XOR問題＝線形分離不可能な問題・単層パーセプトロンの限界」「多層化で解決」として出ます。",
     "relatedTermIds": [
-      "perceptron",
       "multilayer_perceptron",
-      "neural_network",
-      "first_ai_boom"
+      "perceptron",
+      "first_ai_boom",
+      "neural_network"
     ],
     "importance": 1
   },
@@ -4840,16 +4008,16 @@
     "definition": "AlexNetとは、2012 年の ILSVRC で深層 CNN が画像認識を席巻するきっかけになったモデル。",
     "detail": "2012年のILSVRC（ImageNet画像認識コンテスト）でGeoffrey Hintonらが発表し圧勝したCNNアーキテクチャです。ReLU活性化関数・ドロップアウト・GPU学習を組み合わせ、それまでの手法に比べてエラー率を大幅に下げました。この勝利がディープラーニングの有効性を世界に証明し、第3次AIブームの転換点となりました。G検定では「AlexNet＝2012年ILSVRC優勝・第3次ブームの象徴・ReLU・ドロップアウト採用」が頻出です。",
     "relatedTermIds": [
-      "cnn",
-      "imagenet",
+      "deep_learning",
       "third_ai_boom",
-      "vgg",
-      "resnet",
+      "imagenet",
+      "dropout",
+      "activation_function",
+      "relu",
+      "image_recognition",
+      "gpu",
       "googlenet",
-      "convolutional_layer",
-      "pooling_layer",
-      "fully_connected_layer",
-      "image_recognition"
+      "resnet"
     ],
     "importance": 1
   },
@@ -4861,9 +4029,10 @@
     "definition": "自動運転とは、AI による知覚・判断・制御で車両が運転タスクを担う技術。",
     "detail": "人間の操作なしに車両が自律的に走行する技術です。カメラ・LiDAR・レーダーなどのセンサーでの環境認識、CNN・物体検出・強化学習などのAI技術、制御システムを組み合わせます。SAEの自動化レベル（0〜5）が国際的な基準として使われます。G検定では「自動運転でのAI技術（画像認識・物体検出）の役割」「SAEレベル分類」として出ます。",
     "relatedTermIds": [
+      "reinforcement_learning",
       "object_detection",
+      "image_recognition",
       "semantic_segmentation",
-      "edge_ai",
       "ai_ethics"
     ],
     "importance": 1,
@@ -4879,9 +4048,8 @@
     "definition": "Chain-of-Thought プロンプティングとは、LLM に途中の推論過程を書かせることで複雑な問題の正答率を高めるプロンプト技法。",
     "detail": "LLMが「まず○○を考えて、次に△△として…」と段階的に思考過程を出力させることで、複雑な推論タスクの精度を向上させるプロンプト手法です。「ステップごとに考えてください」という指示を加えるだけで効果があります。G検定では「Chain-of-Thought＝段階的思考を促すプロンプト技法・複雑な推論に有効」として出ます。",
     "relatedTermIds": [
-      "llm",
-      "prompt_engineering",
-      "few_shot_learning"
+      "few_shot_learning",
+      "llm"
     ],
     "importance": 2,
     "aliases": [
@@ -4897,6 +4065,8 @@
     "definition": "対照学習とは、正例ペアの埋め込みを近づけ負例ペアを遠ざけるように表現を学習する自己教師あり学習の枠組み。",
     "detail": "正例ペア（同じカテゴリの画像）は近く、負例ペア（異なるカテゴリ）は遠くなるよう表現を学習する自己教師あり学習手法です。ラベルなしデータで良質な特徴表現を獲得できます。CLIPなどのマルチモーダルモデルの基盤にもなっています。G検定では「対照学習＝ラベルなし自己教師あり学習・正例・負例ペアで表現学習」として出ます。",
     "relatedTermIds": [
+      "multimodal",
+      "supervised_learning",
       "clip_model",
       "feature_learning",
       "transfer_learning",
@@ -4913,8 +4083,7 @@
     "detail": "単語や概念を高次元の実数ベクトルで表現する手法です。意味的に近い単語は空間上で近くなります。word2vecやBERTの埋め込みが代表例で、「王様－男性＋女性≈女王」のような意味的な演算も可能になります。G検定では「分散表現＝単語を密なベクトルで表現・意味的類似性が反映」「word2vecとの関連」として出ます。",
     "relatedTermIds": [
       "word2vec",
-      "feature_learning",
-      "nlp_definition",
+      "bert",
       "embedding",
       "token"
     ],
@@ -4928,7 +4097,6 @@
     "definition": "EfficientNetとは、深さ・幅・解像度を複合的にスケーリングして高効率を実現した CNN モデル系列。",
     "detail": "ネットワークの深さ・幅・解像度を同時に効率よくスケールアップするEfficientNet係数を使ったCNNアーキテクチャです。同じ計算量でより高い精度を達成します。G検定では「EfficientNet＝効率的なスケールアップによる高性能CNN」として出ることがあります。",
     "relatedTermIds": [
-      "cnn",
       "imagenet",
       "scaling_law"
     ],
@@ -4943,18 +4111,8 @@
     "detail": "少数のサンプル（数件〜数十件）だけで新しいタスクを学習・適応する能力です。大規模な再学習なしにプロンプトに例示するだけで機能する「In-Context Learning」もFew-shotの一形態です。G検定では「Few-shot学習＝少数のサンプルで新タスクに対応」「LLMのIn-Context Learningとの関連」として出ます。",
     "relatedTermIds": [
       "in_context_learning",
-      "transfer_learning",
-      "llm",
-      "prompt_engineering",
-      "chain_of_thought",
-      "rag",
-      "lora",
-      "rlhf",
-      "fine_tuning",
-      "peft",
-      "scaling_law",
       "hallucination",
-      "foundation_model"
+      "llm"
     ],
     "importance": 1,
     "aliases": [
@@ -4969,10 +4127,7 @@
     "definition": "GoogLeNetとは、2014 年 ILSVRC 優勝の CNN。Inception モジュールで多スケール特徴を効率的に抽出する。",
     "detail": "2014年にGoogleが発表したCNNアーキテクチャ（Inception v1）で、Inceptionモジュール（異なるサイズの畳み込みを並列適用）により精度と計算効率を両立しました。ILSVRC2014で優勝しました。G検定では「GoogLeNet＝InceptionモジュールによるCNN・ILSVRC2014優勝」として出ることがあります。",
     "relatedTermIds": [
-      "cnn",
       "alexnet",
-      "vgg",
-      "resnet",
       "imagenet"
     ],
     "importance": 1,
@@ -4990,12 +4145,7 @@
     "detail": "画像内の各物体インスタンスを個別にピクセル単位でセグメントするタスクです。セマンティックセグメンテーション（同じクラスは同一扱い）と異なり、同じ「人」クラスでも個々の人を別々にセグメントします。G検定では「インスタンスセグメンテーション＝個別インスタンスのピクセル単位分離」「セマンティックセグメンテーションとの違い」として出ます。",
     "relatedTermIds": [
       "semantic_segmentation",
-      "object_detection",
-      "rcnn",
-      "cnn",
       "image_recognition",
-      "yolo",
-      "ssd",
       "vit"
     ],
     "importance": 2
@@ -5009,13 +4159,9 @@
     "detail": "画像の各ピクセルをどのクラスに属するか分類するタスクです。物体検出が「物体の矩形領域」を検出するのに対し、セマンティックセグメンテーションは「各ピクセルのクラス」を判定します。自動運転での道路・歩行者の認識、医療画像での臓器分離などに使われます。G検定では「セマンティックセグメンテーション＝ピクセル単位のクラス分類」「物体検出・インスタンスセグメンテーションとの違い」として出ます。",
     "relatedTermIds": [
       "instance_segmentation",
-      "cnn",
       "object_detection",
       "autonomous_driving",
       "image_recognition",
-      "yolo",
-      "rcnn",
-      "ssd",
       "vit"
     ],
     "importance": 1
@@ -5028,9 +4174,8 @@
     "definition": "音声認識とは、音声波形を文字列に変換する処理。",
     "detail": "音声信号をテキストに変換する技術（ASR: Automatic Speech Recognition）です。深層学習（特にRNN・Transformer・CTC）の進展で精度が飛躍的に向上しました。スマートフォンの音声アシスタント・議事録自動作成・翻訳などに使われます。G検定では「音声認識＝音声→テキスト変換」「深層学習による精度向上」として出ます。",
     "relatedTermIds": [
-      "speech_synthesis",
-      "rnn",
       "transformer",
+      "speech_synthesis",
       "wavenet"
     ],
     "importance": 1,
@@ -5047,9 +4192,9 @@
     "detail": "テキストを音声に変換する技術（TTS: Text-to-Speech）です。波形生成モデル（WaveNetなど）の登場で自然な音声合成が実現しました。ナビゲーション・読み上げ機能・音声アシスタントなどに使われます。G検定では「音声合成＝テキスト→音声変換」「WaveNetとの関連」として出ます。",
     "relatedTermIds": [
       "wavenet",
+      "generative_model",
       "speech_recognition",
-      "rnn",
-      "deepfake"
+      "rnn"
     ],
     "importance": 1,
     "aliases": [
@@ -5066,12 +4211,8 @@
     "relatedTermIds": [
       "object_detection",
       "yolo",
-      "rcnn",
-      "cnn",
       "image_recognition",
-      "semantic_segmentation",
-      "instance_segmentation",
-      "vit"
+      "semantic_segmentation"
     ],
     "importance": 2,
     "aliases": [
@@ -5087,11 +4228,7 @@
     "detail": "拡散モデルをベースにしたオープンソースの画像生成AIです。テキストプロンプトから高品質な画像を生成できます。潜在空間で拡散を行う「Latent Diffusion Model」を採用し、計算コストを削減しています。G検定では「Stable Diffusion＝テキストから画像生成・拡散モデルベース」として出ます。",
     "relatedTermIds": [
       "diffusion_model",
-      "generative_model",
       "generative_ai",
-      "clip_model",
-      "vae",
-      "gan",
       "chatgpt"
     ],
     "importance": 2
@@ -5105,9 +4242,10 @@
     "detail": "Text-to-Text Transfer Transformerの略で、Googleが開発した全タスクをテキスト→テキスト変換として統一的に扱うエンコーダ・デコーダ型Transformerモデルです。翻訳・要約・分類・質問応答すべてを同じフォーマットで扱えます。G検定では「T5＝テキストtoテキストで多様なタスクを統一的に処理」として出ることがあります。",
     "relatedTermIds": [
       "transformer",
+      "encoder_decoder",
+      "decoder",
       "bert",
-      "gpt",
-      "transfer_learning"
+      "gpt"
     ],
     "importance": 1,
     "aliases": [
@@ -5123,16 +4261,10 @@
     "detail": "Vision Transformerの略で、画像をパッチ（小ブロック）に分割してトークン列として扱い、TransformerのSelf-Attentionで処理するモデルです。CNNを使わず純粋なTransformerで画像認識を実現し、大規模データでCNNに匹敵・凌駕する性能を示しました。G検定では「ViT＝画像をパッチに分割してTransformerで処理」「CNNに代わる画像認識アーキテクチャ」として出ます。",
     "relatedTermIds": [
       "transformer",
-      "cnn",
-      "imagenet",
-      "transfer_learning",
       "image_recognition",
-      "object_detection",
-      "semantic_segmentation",
-      "instance_segmentation",
-      "yolo",
-      "rcnn",
-      "ssd"
+      "token",
+      "imagenet",
+      "semantic_segmentation"
     ],
     "importance": 1,
     "aliases": [
@@ -5147,10 +4279,10 @@
     "definition": "WaveNetとは、波形を直接生成する深層生成モデル。",
     "detail": "Google DeepMindが2016年に発表した音声波形を生成する深層生成モデルです。条件付き確率で波形を1サンプルずつ生成する自己回帰モデルで、自然な音声合成を実現しました。G検定では「WaveNet＝高品質音声生成モデル・DeepMind開発」として出ることがあります。",
     "relatedTermIds": [
-      "speech_synthesis",
-      "cnn",
       "generative_model",
-      "speech_recognition"
+      "speech_synthesis",
+      "speech_recognition",
+      "cnn"
     ],
     "importance": 2
   },
@@ -5163,7 +4295,6 @@
     "detail": "単語を高次元の実数ベクトルに変換する手法で、Googleが2013年に発表しました。「意味的に近い単語はベクトル空間でも近くなる」という特性を持ち、「王様－男性＋女性≈女王」のような意味の演算が可能です。CBOW（周辺語から中心語を予測）とSkip-gram（中心語から周辺語を予測）の2つの学習方式があります。G検定では「word2vec＝単語の分散表現・意味的類似性・ベクトル演算」が頻出です。",
     "relatedTermIds": [
       "distributed_representation",
-      "nlp_definition",
       "embedding",
       "token"
     ],
@@ -5177,15 +4308,9 @@
     "definition": "A/B テストとは、2 案を一定割合のユーザーに割り振り効果を比較する実験的検証手法。",
     "detail": "2つのバージョン（AとB）を実際のユーザーに対してランダムに提示し、どちらがKPI（クリック率・購買率など）が高いかを統計的に比較する手法です。新しいモデルや機能をリリースする前に有効性を検証するために使われます。G検定では「A/Bテスト＝施策の効果を統計的に検証する手法」として出ます。",
     "relatedTermIds": [
-      "mlops",
       "kpi",
-      "poc",
       "data_leakage",
-      "model_drift",
-      "data_drift",
-      "concept_drift",
-      "health_monitoring",
-      "ai_project_lifecycle"
+      "mlops"
     ],
     "importance": 2,
     "aliases": [
@@ -5200,14 +4325,11 @@
     "definition": "AutoMLとは、特徴量設計・モデル選択・ハイパーパラメータ調整などを自動化する機械学習の枠組み。",
     "detail": "Automated Machine Learningの略で、機械学習のモデル選択・ハイパーパラメータ調整・特徴量エンジニアリングなどを自動化するツール・手法の総称です。機械学習の専門知識がなくても高精度なモデルを構築できるようにすることを目的としています。G検定では「AutoML＝機械学習パイプラインの自動化」「データサイエンティスト不足への対応策」として出ることがあります。",
     "relatedTermIds": [
-      "no_code_ai",
       "machine_learning_definition",
+      "feature_engineering",
       "hyperparameter",
       "mlops",
-      "learning_rate",
-      "batch_size",
-      "mini_batch",
-      "epoch"
+      "no_code_ai"
     ],
     "importance": 1,
     "aliases": [
@@ -5222,8 +4344,8 @@
     "definition": "CRISP-DMとは、ビジネス理解・データ理解・準備・モデリング・評価・展開の 6 工程からなるデータマイニングの標準プロセス。",
     "detail": "Cross Industry Standard Process for Data Miningの略で、データ分析・機械学習プロジェクトの標準的な進め方を示したフレームワークです。「ビジネス理解→データ理解→データ準備→モデリング→評価→展開」の6フェーズで構成されます。G検定では「CRISP-DM＝データ分析プロジェクトの標準プロセス」として出ることがあります。",
     "relatedTermIds": [
+      "machine_learning_definition",
       "mlops",
-      "ai_project_lifecycle",
       "poc"
     ],
     "importance": 2,
@@ -5240,6 +4362,7 @@
     "detail": "インターネットを通じて不特定多数の人々に作業を依頼する手法です。機械学習では大量のアノテーション（ラベル付け）を効率的に行うためによく使われます。Amazon Mechanical TurkやLancersなどのプラットフォームが代表例です。G検定では「アノテーションの効率的な収集手段」として出ます。",
     "relatedTermIds": [
       "annotation",
+      "machine_learning_definition",
       "data_quality"
     ],
     "importance": 2
@@ -5252,9 +4375,8 @@
     "definition": "DXとは、デジタル技術を活用して業務やビジネスモデルを変革し競争力を高める取り組み。",
     "detail": "Digital Transformationの略で、デジタル技術を活用してビジネスモデル・業務プロセス・企業文化を根本的に変革することです。AIやデータ活用はDXの重要な手段のひとつです。単なるIT化（デジタイゼーション）とは異なり、ビジネスの価値創出の仕方そのものを変えることを指します。G検定ではAI社会実装の文脈で「DXにおけるAIの役割」として出ることがあります。",
     "relatedTermIds": [
-      "reskilling",
-      "ai_governance",
-      "ai_project_lifecycle"
+      "ai_project_lifecycle",
+      "reskilling"
     ],
     "importance": 1,
     "aliases": [
@@ -5270,7 +4392,6 @@
     "definition": "KPIとは、目標達成度を定量的に測るために設定する重要業績評価指標。",
     "detail": "Key Performance Indicatorの略で、目標達成度を測る重要な業績評価指標です。AIプロジェクトでは「モデルの精度（Accuracy・F値など）」だけでなく「ビジネス上のKPI（売上向上率・コスト削減額・顧客満足度など）」も重要です。モデルが技術的に高精度でもビジネスKPIを改善しなければ意味がありません。G検定では「AI導入時にビジネスKPIと技術的評価指標を両立させる視点」として出ます。",
     "relatedTermIds": [
-      "ab_test",
       "mlops",
       "poc"
     ],
@@ -5288,8 +4409,8 @@
     "detail": "プログラミングなしでAIモデルを構築・デプロイできるツール・プラットフォームです。AutoMLの発展形で、専門知識がない現場担当者でもAI活用できることを目指します。G検定では「AI民主化・DXとの関連」として出ることがあります。",
     "relatedTermIds": [
       "automl",
-      "ai_governance",
-      "mlops"
+      "mlops",
+      "ai_governance"
     ],
     "importance": 2,
     "aliases": [
@@ -5318,14 +4439,11 @@
     "definition": "分類や判定の結果が全体のうちどれだけ正しかったかを表す評価指標。",
     "detail": "正解率とも呼ばれ、全予測のうち正解した割合（(TP+TN)÷全サンプル数）です。最もシンプルな評価指標ですが、クラス不均衡（正常99%・異常1%のようなデータ）では「すべて正常と予測」するだけで99%になってしまい意味がありません。G検定では「正解率の限界（クラス不均衡で意味がなくなる）」「適合率・再現率・F値との使い分け」として頻出です。",
     "relatedTermIds": [
+      "class_imbalance",
       "precision",
       "recall",
-      "f_score",
       "confusion_matrix",
-      "supervised_learning",
-      "auc",
-      "roc_curve",
-      "false_positive"
+      "f_score"
     ],
     "importance": 1,
     "source_ref_supplements": []
@@ -5338,11 +4456,10 @@
     "definition": "入力された系列を別の系列へ変換するためのニューラルネットワークの構成。",
     "detail": "Sequence to Sequenceの略で、可変長の入力系列を可変長の出力系列に変換するモデルです。エンコーダが入力系列を潜在ベクトルに圧縮し、デコーダが出力系列を生成します。機械翻訳・要約・対話生成に使われました。TransformerはRNNベースのseq2seqの問題（長い文脈でボトルネックが生じる）を解決しました。G検定では「seq2seq＝入力系列→出力系列の変換・翻訳に応用」「Transformerとの関連」として出ます。",
     "relatedTermIds": [
-      "encoder_decoder",
-      "rnn",
-      "lstm",
-      "gru",
-      "attention_mechanism"
+      "transformer",
+      "decoder",
+      "attention_mechanism",
+      "encoder_decoder"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -5355,15 +4472,12 @@
     "definition": "入力を内部表現に変える部分と、そこから出力を作る部分を組み合わせた構成。",
     "detail": "入力を内部表現（潜在ベクトル）に圧縮する「エンコーダ」と、それから出力を生成する「デコーダ」で構成するアーキテクチャです。機械翻訳・文章要約・画像変換などに使われます。Transformerのエンコーダ（BERT的）はテキスト理解、デコーダ（GPT的）はテキスト生成に向いています。G検定では「エンコーダ・デコーダの役割分担」「Transformerとの関連（BERTはエンコーダ・GPTはデコーダ）」として出ます。",
     "relatedTermIds": [
-      "seq2seq",
       "transformer",
-      "attention_mechanism",
-      "self_attention",
       "bert",
-      "positional_encoding",
+      "decoder",
       "gpt",
-      "llm",
-      "masked_language_model"
+      "attention_mechanism",
+      "self_attention"
     ],
     "importance": 1,
     "source_ref_supplements": []
@@ -5376,20 +4490,11 @@
     "definition": "大規模な事前学習により多様な用途へ転用できる汎用的なモデル。",
     "detail": "大量のデータと大規模な計算資源で事前学習され、ファインチューニングや指示により多様なタスクに転用できる汎用的な大規模モデルです。GPT・BERTが代表例で、単一タスク専用モデルとは異なり共通の知識・表現を幅広いタスクに応用できます。G検定では「事前学習→ファインチューニングで多タスクに対応」「GPT・BERTが代表例」「第3次ブームの発展形として現在のAIの中心」として出ます。",
     "relatedTermIds": [
-      "transformer",
+      "fine_tuning",
       "bert",
       "gpt",
-      "fine_tuning",
-      "transfer_learning",
-      "rag",
-      "lora",
-      "rlhf",
-      "peft",
-      "scaling_law",
-      "hallucination",
-      "in_context_learning",
-      "prompt_engineering",
-      "few_shot_learning"
+      "few_shot_learning",
+      "hallucination"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -5402,22 +4507,8 @@
     "definition": "画像に写る物体や特徴を識別・分類・検出するコンピュータ技術のこと。",
     "detail": "画像に何が写っているかをAIが識別する技術です。CNNの登場とILSVRCにおける深層学習の成功（AlexNet 2012年）により精度が飛躍的に向上しました。分類（画像全体のカテゴリ判定）・検出（位置特定）・セグメンテーション（ピクセル単位分類）の3段階があります。G検定では「画像認識＝CNNの主要応用」「AlexNet・ILSVRCとの関連」として出ます。",
     "relatedTermIds": [
-      "cnn",
-      "object_detection",
-      "transfer_learning",
-      "supervised_learning",
-      "data_quality",
-      "convolutional_layer",
-      "pooling_layer",
-      "fully_connected_layer",
       "alexnet",
-      "resnet",
-      "vgg",
       "semantic_segmentation",
-      "instance_segmentation",
-      "yolo",
-      "rcnn",
-      "ssd",
       "vit"
     ],
     "importance": 1,
@@ -5432,13 +4523,8 @@
     "detail": "BERTの事前学習手法のひとつで、入力テキストの一部の単語を「[MASK]」トークンで隠し、その単語を予測するよう学習します。文章の両方向の文脈を考慮した双方向の表現を獲得できます。G検定では「マスク言語モデル＝BERTの事前学習手法・穴埋め学習で双方向文脈を獲得」として出ます。",
     "relatedTermIds": [
       "bert",
-      "transformer",
-      "self_attention",
-      "nlp_definition",
+      "token",
       "gpt",
-      "attention_mechanism",
-      "positional_encoding",
-      "encoder_decoder",
       "llm"
     ],
     "importance": 2,
@@ -5452,11 +4538,9 @@
     "definition": "データの一部が記録されておらず、値が空白になっている状態のこと。",
     "detail": "データセット中に値が存在しないデータのことです。機械学習では欠損値をそのまま扱えないモデルが多く、前処理が必要です。対処法として平均値・中央値・最頻値での補完・欠損をそのままフラグとして扱う・欠損が多い場合は行/列を削除するなどがあります。G検定では「欠損値処理＝前処理の重要な工程」「補完・削除の使い分け」として出ます。",
     "relatedTermIds": [
+      "machine_learning_definition",
       "preprocessing",
-      "data_quality",
       "feature_engineering",
-      "normalization",
-      "standardization",
       "data_augmentation"
     ],
     "importance": 2,
@@ -5470,13 +4554,10 @@
     "definition": "データの値を一定範囲に収まるよう拡大・縮小して整える前処理。",
     "detail": "入力データや各層の出力値を一定の範囲（例：0〜1）に収める変換です。スケールの異なる特徴量が混在する場合に学習を安定化させます。バッチ正規化は各層の内部を正規化します。G検定では「正規化と標準化の違い（正規化＝0〜1に変換、標準化＝平均0・分散1に変換）」として出ます。",
     "relatedTermIds": [
-      "standardization",
-      "preprocessing",
-      "gradient_descent",
       "batch_normalization",
-      "feature_engineering",
-      "missing_value",
-      "data_augmentation"
+      "standardization",
+      "gradient_descent",
+      "feature_engineering"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -5490,13 +4571,9 @@
     "detail": "Transformerは並列処理のため入力の「順序情報」を持ちません。位置エンコーディングは各トークンの位置（何番目か）を表す情報をベクトルとして埋め込み、単語の順序を学習できるようにする仕組みです。正弦波・コサイン波を使った固定式や、学習で獲得する方式があります。G検定では「位置エンコーディング＝Transformerで順序情報を補う仕組み」として出ます。",
     "relatedTermIds": [
       "transformer",
-      "self_attention",
+      "token",
       "attention_mechanism",
-      "bert",
-      "gpt",
-      "encoder_decoder",
-      "llm",
-      "masked_language_model"
+      "encoder_decoder"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -5509,11 +4586,11 @@
     "definition": "学習や分析の前に、データを扱いやすい形へ整える準備作業のこと。",
     "detail": "機械学習の学習前にデータを整形・変換する作業の総称です。欠損値補完・外れ値処理・正規化・標準化・カテゴリ変数のエンコード・特徴量スケーリングなどを含みます。「GIGO（Garbage In, Garbage Out）」の通り前処理の質がモデル精度を大きく左右します。G検定では「前処理の内容と目的」「標準化・正規化の違い」として出ます。",
     "relatedTermIds": [
+      "machine_learning_definition",
       "missing_value",
       "normalization",
       "standardization",
       "feature_engineering",
-      "data_quality",
       "data_augmentation"
     ],
     "importance": 1,
@@ -5530,10 +4607,7 @@
       "normalization",
       "preprocessing",
       "gradient_descent",
-      "feature_engineering",
-      "batch_normalization",
-      "missing_value",
-      "data_augmentation"
+      "batch_normalization"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -5547,7 +4621,6 @@
     "detail": "MAE（Mean Absolute Error、平均絶対誤差）は、予測値と実測値の差の絶対値を全サンプルで平均した回帰評価指標です。MSE（平均二乗誤差）と異なり、誤差を二乗しないため外れ値の影響を受けにくいという特徴があります。単位が元の予測値と同じなので解釈しやすいですが、勾配計算で微分不可能な点（ゼロ付近）があるためMSEより最適化が難しい場合もあります。G検定ではMSE・RMSE・MAEの3つがセットで出ます。「外れ値に強い＝MAE、外れ値に敏感＝MSE/RMSE」という使い分けを押さえましょう。",
     "relatedTermIds": [
       "mse",
-      "rmse",
       "regression",
       "r_squared"
     ],
@@ -5563,12 +4636,9 @@
     "detail": "トークンとは、大規模言語モデル（LLM）や自然言語処理モデルが文章を処理する際の最小単位です。英語では単語や句読点が1トークンになることが多く、日本語ではサブワード（文字や単語の一部）に分割されます。GPTシリーズでは1トークン≒0.75英単語が目安です。モデルが一度に処理できるトークン数の上限を「コンテキスト長（コンテキストウィンドウ）」と呼び、GPT-4などでは数万〜数十万トークンに対応しています。G検定ではトークンがLLMの入出力の基本単位であること、コンテキスト長との関係が問われます。",
     "relatedTermIds": [
       "llm",
+      "nlp_definition",
       "gpt",
       "bert",
-      "transformer",
-      "nlp_definition",
-      "embedding",
-      "word2vec",
       "distributed_representation"
     ],
     "importance": 2,
@@ -5582,12 +4652,12 @@
     "definition": "埋め込みとは、単語・文・画像などを高次元の実数ベクトルで表現する技術。意味的に近いものはベクトル空間でも近くなる。",
     "detail": "埋め込み（Embedding）とは、カテゴリや記号（単語・文・画像など）を高次元の実数ベクトルに変換する技術です。word2vecやBERTの出力がその代表例で、「意味的に近い単語はベクトル空間でも近くなる」という特性を持ちます。「王様−男性＋女性≈女王」のようなベクトル演算も可能です。現代のLLMでは入力トークンをまず埋め込みに変換し、それをTransformerで処理します。G検定では「分散表現＝埋め込み」「word2vec・BERTとの関連」「意味的類似性がベクトル距離で表現される」として出ます。",
     "relatedTermIds": [
-      "word2vec",
-      "distributed_representation",
       "transformer",
+      "word2vec",
       "bert",
-      "llm",
-      "token"
+      "distributed_representation",
+      "token",
+      "llm"
     ],
     "importance": 2,
     "source_ref_supplements": []
@@ -5601,10 +4671,11 @@
     "detail": "ニューラルネットワークでは、各ニューロン間の結合に「重み（Weight）」と呼ばれるパラメータが付与されます。入力値に重みを掛けて足し合わせることで、各ニューロンの出力値を計算します。学習とは「損失関数を小さくするように重みを調整する」プロセスです。重みは勾配降下法によって自動で更新されるため、人間が手で設定する「ハイパーパラメータ」とは区別されます。G検定では「重みはデータから学習で自動決定されるモデルパラメータ」「ハイパーパラメータとの違い（ハイパーパラメータ＝人間が事前に設定）」として問われます。",
     "relatedTermIds": [
       "neural_network",
-      "backpropagation",
-      "gradient_descent",
       "hyperparameter",
-      "loss_function"
+      "neuron",
+      "gradient_descent",
+      "loss_function",
+      "backpropagation"
     ],
     "importance": 1,
     "source_ref_supplements": []
