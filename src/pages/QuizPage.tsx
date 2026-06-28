@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import { useSearchParams, useNavigate } from 'react-router-dom';
 import { ALL_QUESTIONS } from '../data/questions/index';
 import { shuffleQuestions, shuffleChoices, selectForMemoryReview, selectQuestionsBalanced } from '../lib/quiz-engine';
@@ -12,6 +12,7 @@ import QuizProgress from '../components/quiz/QuizProgress';
 import QuizResult from '../components/quiz/QuizResult';
 import ExamTimer from '../components/quiz/ExamTimer';
 import { Button } from '../components/ui/button';
+import { useQuizGuard } from '../store/quiz-guard-context';
 
 const MOCK_EXAM_SECONDS = 7200;
 
@@ -55,8 +56,15 @@ export default function QuizPage() {
   const { currentIndex, currentQuestion, answers, isFinished, setIsFinished, answerQuestion, nextQuestion, result } =
     useQuiz(questions);
 
+  const { setEnabled } = useQuizGuard();
+
   const [selectedIndex, setSelectedIndex] = useState<number | undefined>(undefined);
   const [showExplanation, setShowExplanation] = useState(false);
+
+  useEffect(() => {
+    setEnabled(!isFinished);
+    return () => setEnabled(false);
+  }, [isFinished, setEnabled]);
 
   const handleTimeUp = () => {
     const elapsed = Math.floor((Date.now() - startedAt) / 1000);
@@ -79,7 +87,7 @@ export default function QuizPage() {
       : Math.floor((Date.now() - startedAt) / 1000);
     return (
       <div className="max-w-xl mx-auto py-8 px-4">
-        <QuizResult result={result} elapsedSeconds={isMockMode ? elapsed : undefined} />
+        <QuizResult result={result} elapsedSeconds={isMockMode ? elapsed : undefined} questions={questions} answers={answers} />
       </div>
     );
   }

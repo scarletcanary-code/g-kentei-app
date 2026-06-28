@@ -2,6 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 import ThemeToggle from '../shared/ThemeToggle';
 import UserMenu from '../shared/UserMenu';
 import { cn } from '../../lib/utils';
+import { useQuizGuard } from '../../store/quiz-guard-context';
 
 const NAV_ITEMS = [
   { to: '/', label: 'ホーム' },
@@ -13,6 +14,7 @@ const NAV_ITEMS = [
 
 export default function Header() {
   const location = useLocation();
+  const { requestNavigate } = useQuizGuard();
 
   const isActive = (item: typeof NAV_ITEMS[number]) => {
     if ('matchPrefix' in item && item.matchPrefix) {
@@ -24,7 +26,7 @@ export default function Header() {
   return (
     <header className="border-b border-border bg-background/80 backdrop-blur-sm sticky top-0 z-50">
       <div className="container flex items-center justify-between py-3">
-        <Link to="/" className="text-xl font-bold text-foreground">
+        <Link to="/" className="text-xl font-bold text-foreground" onClick={(e) => requestNavigate('/', e)}>
           G検定学習
         </Link>
         <nav className="hidden sm:flex items-center gap-1">
@@ -32,6 +34,7 @@ export default function Header() {
             <Link
               key={item.to}
               to={item.to}
+              onClick={(e) => requestNavigate(item.to, e)}
               className={cn(
                 'text-sm px-3 py-1.5 rounded-md transition-colors',
                 isActive(item)

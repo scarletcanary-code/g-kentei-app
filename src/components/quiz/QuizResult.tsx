@@ -1,12 +1,18 @@
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import type { QuizResult as QuizResultType } from '../../hooks/useQuiz';
+import type { Question } from '../../types/question';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
+import { summarizeByCategory } from '../../lib/quiz-engine';
+import { ALL_TERMS } from '../../data/glossary/index';
 
 interface QuizResultProps {
   result: QuizResultType;
   elapsedSeconds?: number;
+  questions?: Question[];
+  answers?: number[];
 }
 
 function formatElapsed(seconds: number): string {
@@ -22,7 +28,7 @@ function getScoreMessage(accuracy: number): { message: string; color: string } {
   return { message: '復習しましょう', color: 'text-error' };
 }
 
-export default function QuizResult({ result, elapsedSeconds }: QuizResultProps) {
+export default function QuizResult({ result, elapsedSeconds, questions, answers }: QuizResultProps) {
   const navigate = useNavigate();
   const { totalQuestions, correctCount, accuracy } = result;
   const accuracyPercent = Math.round(accuracy * 100);
@@ -72,6 +78,78 @@ export default function QuizResult({ result, elapsedSeconds }: QuizResultProps) 
             所要時間: {formatElapsed(elapsedSeconds)}
           </div>
         )}
+
+        {questions && answers && (() => {
+          const summaries = summarizeByCategory(questions, answers);
+          if (summaries.length === 0) return null;
+          return (
+            <div className="text-left space-y-2 pt-2 border-t">
+              <p className="text-sm font-semibold">ジャンル別結果</p>
+              {summaries.map((s) => (
+                <div key={s.categoryId} className="flex justify-between text-sm">
+                  <span className="text-muted-foreground">{s.name}</span>
+                  <span>{s.correct}/{s.total}（{Math.round(s.accuracy * 100)}%）</span>
+                </div>
+              ))}
+            </div>
+          );
+        })()}
+
+        {questions && answers && (() => {
+          const incorrectTermIds = Array.from(new Set(
+            questions.flatMap((q, idx) =>
+              answers[idx] !== q.correctIndex ? (q.relatedTermIds ?? []) : []
+            )
+          )).slice(0, 12);
+          const terms = incorrectTermIds.flatMap((id) => {
+            const found = ALL_TERMS.find((t) => t.id === id);
+            return found ? [found] : [];
+          });
+          return (
+            <div className="text-left space-y-2 pt-2 border-t">
+              <p className="text-sm font-semibold">読んでおきたい用語</p>
+              {terms.length === 0 ? (
+                <p className="text-sm text-muted-foreground">なし（全問正解）</p>
+              ) : (
+                <div className="flex flex-wrap gap-2">
+                  {terms.map((t) => (
+                    <Link
+                      key={t.id}
+                      to={`/glossary?term=${t.id}`}
+                      className="text-xs text-primary underline underline-offset-2 hover:text-primary/80"
+                    >
+                      {t.term}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          );
+        })()}
+
+        {questions && answers && (() => {
+          const summaries = summarizeByCategory(questions, answers)
+            .filter((s) => s.accuracy < 1.0)
+            .sort((a, b) => a.accuracy - b.accuracy)
+            .slice(0, 3);
+          if (summaries.length === 0) return null;
+          return (
+            <div className="text-left space-y-2 pt-2 border-t">
+              <p className="text-sm font-semibold">復習推奨</p>
+              <div className="flex flex-wrap gap-2">
+                {summaries.map((s) => (
+                  <Link
+                    key={s.categoryId}
+                    to={`/learn/${s.categoryId}`}
+                    className="text-xs text-primary underline underline-offset-2 hover:text-primary/80"
+                  >
+                    {s.name}（{Math.round(s.accuracy * 100)}%）
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
 
         <div className="flex gap-2 pt-2">
           <Button

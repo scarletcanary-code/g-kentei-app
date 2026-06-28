@@ -2,6 +2,7 @@ import type { Question, Difficulty } from '../types/question';
 import type { CategoryId } from '../types/category';
 import type { QuestionSRState } from '../types/progress';
 import { getDueQuestions } from './sr-engine';
+import { CATEGORIES, getCategoryById } from '../data/categories';
 
 export interface FilterOptions {
   categoryIds?: CategoryId[];
@@ -103,6 +104,41 @@ export function selectQuestionsBalanced(
   }
 
   return shuffleQuestions(picked);
+}
+
+export interface CategorySummary {
+  categoryId: CategoryId;
+  name: string;
+  correct: number;
+  total: number;
+  accuracy: number;
+}
+
+export function summarizeByCategory(
+  questions: Question[],
+  answers: number[]
+): CategorySummary[] {
+  const map = new Map<CategoryId, { correct: number; total: number }>();
+
+  questions.forEach((q, idx) => {
+    const entry = map.get(q.categoryId) ?? { correct: 0, total: 0 };
+    entry.total += 1;
+    if (answers[idx] !== undefined && answers[idx] === q.correctIndex) {
+      entry.correct += 1;
+    }
+    map.set(q.categoryId, entry);
+  });
+
+  const categoryOrder = CATEGORIES.map((c) => c.id);
+  return Array.from(map.entries())
+    .sort((a, b) => categoryOrder.indexOf(a[0]) - categoryOrder.indexOf(b[0]))
+    .map(([categoryId, { correct, total }]) => ({
+      categoryId,
+      name: getCategoryById(categoryId)?.shortName ?? categoryId,
+      correct,
+      total,
+      accuracy: total === 0 ? 0 : correct / total,
+    }));
 }
 
 export function shuffleChoices(question: Question): Question {
