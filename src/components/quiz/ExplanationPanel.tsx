@@ -1,4 +1,6 @@
+import { ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '../ui/card';
+import { Button } from '../ui/button';
 import { cn } from '../../lib/utils';
 import { ALL_TERMS } from '../../data/glossary/index';
 import {
@@ -10,17 +12,21 @@ import {
   DialogTrigger,
 } from '../ui/dialog';
 import TermDialogContent from '../glossary/TermDialogContent';
+import type { Question } from '../../types/question';
+import { buildChatGptUrl } from '../../lib/chatgpt-link';
 
 interface ExplanationPanelProps {
   explanation: string;
   isCorrect: boolean;
   relatedTermIds?: string[];
+  question: Question;
 }
 
 export default function ExplanationPanel({
   explanation,
   isCorrect,
   relatedTermIds,
+  question,
 }: ExplanationPanelProps) {
   const hasRelatedTerms = relatedTermIds && relatedTermIds.length > 0;
 
@@ -37,6 +43,12 @@ export default function ExplanationPanel({
           {isCorrect ? '正解！' : '不正解'}
         </p>
         <p className="text-sm text-foreground leading-relaxed">{explanation}</p>
+        <Button asChild variant="outline" className="mt-3">
+          <a href={buildChatGptUrl(question)} target="_blank" rel="noopener noreferrer">
+            <ExternalLink className="h-4 w-4 mr-1" />
+            ChatGPT で質問する
+          </a>
+        </Button>
         {hasRelatedTerms && (
           <div className="mt-3 pt-3 border-t border-border/50">
             <span className="text-xs font-semibold text-muted-foreground mr-2">
