@@ -10,6 +10,9 @@ import {
   DialogTrigger,
 } from '../components/ui/dialog';
 import TermDialogContent from '../components/glossary/TermDialogContent';
+import { ExternalLink } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { buildLearnChatGptUrl } from '../lib/chatgpt-link';
 
 const difficultyLabel: Record<string, string> = {
   beginner: '入門',
@@ -128,6 +131,16 @@ export default function LearnChapterPage() {
                   })}
                 </div>
               )}
+              <Button asChild variant="outline" size="sm" className="mt-3">
+                <a
+                  href={buildLearnChatGptUrl(chapter.title, section)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <ExternalLink className="h-4 w-4 mr-1" />
+                  ChatGPT で質問する
+                </a>
+              </Button>
             </div>
           ))}
         </div>
